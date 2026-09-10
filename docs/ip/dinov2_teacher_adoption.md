@@ -30,3 +30,11 @@ No universal or skin accuracy conclusion follows from this acquisition.
 Apache attribution/license obligations are recorded, and original notices are
 preserved in [the source archive](../research/cc_v6_sources/dinov2/source/LICENSE).
 No upstream data collection or third-party patent clearance is implied.
+
+V7 update: local CPU extraction completed in 238.88 seconds for 1126 TRAIN
+images, raw/GT-corrected views and two orientations each. Frozen feature arrays
+are outside Git; config/manifest/role audit are archived with the V7 evidence.
+No VAL/RISK/CAL/TEST or phone features were extracted. Standard student training
+is now underway under the matched five-arm protocol. The no-dataset-use
+statement above describes the earlier acquisition stage only. No V7 camera
+accuracy claim is established yet; teacher pretraining overlap remains unknown.

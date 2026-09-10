@@ -157,3 +157,42 @@ V2 remains stronger than V5 on phone selective risk; no universal/skin claim.
 [Mechanism-search ledger](../research/aggressive_search_2026_09_11.md) and
 [V6 execution](../research/cc_v6_execution_status.md) preserve combination failures
 and investigate non-CNN Fourier regression and correction decision sets.
+
+## Semantic/sensor and alternative-representation review, 2026-09-11
+
+The earlier teacher-acquisition-only status is superseded: four views per
+1126 TRAIN images have now been extracted locally. No held-out teacher features
+were extracted. The five-arm V7 source screen is running; no teacher-based
+camera-transfer improvement is yet measured.
+
+- [Integral Fast Fourier Color Constancy](https://arxiv.org/html/2502.03494v1),
+  Wei et al., CVPR 2025: integral UV histograms, parallel Fourier prediction and
+  spatial smoothing already provide efficient regional/multi-illuminant AWB.
+  Regional Fourier histograms are not our novelty. The full primary HTML was
+  inspected; author size/speed figures are not locally reproduced numbers.
+- [GCC](https://arxiv.org/abs/2502.17435), 2025: generative color-checker
+  inference is an existing alternative representation; its abstract describes
+  deterministic one-step diffusion and cross-camera use. No assets adopted.
+- [Deep Image Harmonization with Globally Guided Feature Transformation and
+  Relation Distillation](https://openaccess.thecvf.com/content/ICCV2023/papers/Niu_Deep_Image_Harmonization_with_Globally_Guided_Feature_Transformation_and_Relation_ICCV_2023_paper.pdf),
+  ICCV 2023: clean-target feature/relation distillation is established adjacent
+  prior art. The exact V7 GT-corrected-teacher experiment remains a hypothesis,
+  not evidence that canonical supervision is a new general method.
+- [NightCC](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_NightCC_Nighttime_Color_Constancy_via_Adaptive_Channel_Masking_CVPR_2024_paper.pdf),
+  CVPR 2024, already studies mean-teacher nighttime adaptation and correction
+  feedback. V7 uses no test-camera adaptation; teacher use itself is not new.
+- [Conformal Risk Control](https://arxiv.org/abs/2208.02814) and
+  [Non-Exchangeable Conformal Risk Control](https://arxiv.org/abs/2310.01262)
+  make their sampling/shift assumptions essential. Our existing 11 CAL groups
+  cannot support a nontrivial standard group-level 95% split-conformal bound
+  without additional assumptions: ceil((11+1)*.95)=12 exceeds 11 calibration
+  scores. Do not advertise guaranteed unseen-camera rejection from an empirical
+  risk head. A correction-set branch remains exploratory.
+
+The restricted sensor transform M=D((1-epsilon)I+epsilon*A), A nonnegative
+row-stochastic, is a mathematically admissible combination of source spectral
+sensitivities. It spans neither all camera responses nor nonlinear ISPs.
+Sensor simulation, semantic color constancy, privileged training targets and
+knowledge distillation have established precedents. The useful unresolved
+question is whether this particular matched compact training setup improves
+real camera transfer and selective error at fixed deployment cost.

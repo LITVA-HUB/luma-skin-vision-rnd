@@ -102,3 +102,30 @@ V2 remains stronger than V5 on phone selective risk; no universal/skin claim.
 [Mechanism-search ledger](../research/aggressive_search_2026_09_11.md) and
 [V6 execution](../research/cc_v6_execution_status.md) preserve combination failures
 and investigate non-CNN Fourier regression and correction decision sets.
+
+## Current hypothesis decision, 2026-09-11
+
+[V6 is complete and negative](../benchmarks/cc_v6_report.md): the canonical-frame
+combination does not improve source accuracy over V5, and no V6 real-camera
+advantage is measured. V5's phone failure and V6's source failure are retained.
+
+V7 challenges a different assumption: the deployment architecture may not need
+additional iterative modules if training can transfer useful scene structure
+from a GT-corrected, training-only semantic teacher. Its strongest C+ has the
+same teacher, student, projection, sensor augmentation, data and training budget,
+but uses raw teacher views. A canonical/raw target difference is the candidate
+mechanism. No novelty or accuracy advantage is established by implementing it.
+
+The deployment estimator has 3,033,651 parameters; training adds 369,024
+projection parameters, removed at inference. [Training protocol](cc_v7_semantic_sensor_protocol.md)
+and [transfer protocol](cc_v7_transfer_diagnostics_protocol.md) separate source
+development, virtual sensor diagnostics and later fresh real-camera evaluation.
+Complete all five arms and three seeds, retain failures, fit matched risk heads
+only on held-out source residuals, and freeze every method before external
+decoding. A benefit must survive the raw-teacher C+ and no-teacher controls.
+
+Invariance is desired for scene features; the camera-RGB illuminant must remain
+equivariant to the sensor. Exact full color-frame equivariance was already
+implemented and failed in V3, so algebra alone does not justify repeating it.
+Single-image ambiguity still requires rejection. Neither DINO pretraining nor
+virtual RGB mixing supplies genuine corresponding surface-Lab ground truth.

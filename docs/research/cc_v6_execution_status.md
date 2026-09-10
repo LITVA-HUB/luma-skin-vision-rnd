@@ -1,5 +1,13 @@
 # V6 execution status
 
+Final update: all three seeds completed. All 24 best/final checkpoints passed
+independent CPU replay and FP64 rescoring; all three warmup replays were bitwise
+equal. [Final three-seed report](../benchmarks/cc_v6_report.md): generic action
+3.2214° full / 2.5211° raw risk80; physical transport 3.2105° / 2.5440°.
+The combination loses to V5 on reused source validation. No V6 external-camera
+result or inference latency is claimed. Session 99152 finished with exit 0.
+The seed17-only status below is preserved as historical progress.
+
 Seed17 completed four120-epoch arms,3.097M parameters, same1126/119 real source
 split, shared full20-epoch state, bitwise CUDA warmup replay passed. All8 best/
 last checkpoints replayed on CPU and independently rescored. Source GT float32
