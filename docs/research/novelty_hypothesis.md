@@ -1,5 +1,38 @@
 # Active public-benchmark hypothesis
 
+## V5 status and narrowed next question
+
+The paired-state experiment now has two completed seeds, six arms each;
+seed43 remains running. [Measured interim results](../benchmarks/cc_v5/two_seed_screen/report.md)
+and all24 CPU checkpoint replays are preserved. Selected-action supervision and
+physical derivative matching do not consistently beat ordinary random-action
+training. The best arm changes by seed. Do not infer a robust new contribution.
+
+The [equal-query control](../benchmarks/cc_v5/two_seed_search_control/report.md)
+further weakens recurrence as the present contribution: all10 trained critics
+retain the original point at the coarse stage on all119 validation images;
+adaptive and fixed51-query answers are identical. At103 queries the mean-error
+differences are small and mixed. A declining predicted cost alone is not
+evidence of successful self-correction. Preserve this negative and finish the
+third seed before deciding which estimator/critic to carry forward.
+
+The next defensible question is whether stronger training-time scene context
+improves a compact physical estimator and its risk prediction without a large
+inference model. Semantic weighting and teacher distillation already exist in
+2026 color-constancy work; [focused prior-art update](prior_art.md). Any raw or
+GT-canonicalized teacher must be compared with ordinary distillation and a
+matched no-teacher control. GT canonicalization is training-only privileged
+information and does not create physical surface-color measurements. No new
+teacher architecture or accuracy result is claimed yet.
+
+Phone generalization is now a concrete evaluation axis: Samsung/Oppo data is
+being acquired, a fixed reference policy was derived from three TRAIN scenes,
+and an auxiliary iPhone repeatability archive is acquired. No held-out phone
+accuracy, generic JPEG/HEIC correction or facial measurement is established.
+An eventual contribution must survive these external tests and the strongest
+matched C+, beyond source-development gains. The positive V2 result remains
+the strongest completed evidence; it is not a universal or patent claim.
+
 ## V4 investigated mechanism
 
 Latest user steering broadens intended generalization across scenes, surfaces, illumination and processing, with camera as one axis. The [selected mechanism](cc_v4_universal_method.md) is compact correction-conditioned routing of cached local evidence, nonlinear physical correction of color statistics, exact reproduction-cost supervision and1/2/4-stage refinement. It is implemented as a3.097M network with matched posterior and generic action controls; see [specification](cc_v4_spec.md) and [source-development protocol](cc_v4_source_lock.md). The initial linear transport idea was rejected at preflight because a first MLP layer absorbs it exactly. The nonlinear transform remains an inductive-bias hypothesis, not a new information source. Teacher transfer, EMA, Sobolev supervision, candidate scoring and iterative refinement are established prior art. Actual results belong in the separate [V4 report](../benchmarks/cc_v4_report.md); no universal or facial-color claim follows. V3's planned graph revision below is preserved historical direction, superseded as first priority by this experiment.

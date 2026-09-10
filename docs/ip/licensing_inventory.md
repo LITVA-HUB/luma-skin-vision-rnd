@@ -1,5 +1,12 @@
 ## Current CC v2 artifact update
 
+Phone-loader dependency h5py3.16.0 is pinned in uv.lock. Installed wheel metadata
+and bundled notices (h5py BSD-style license, HDF5, LZF and other notices) are
+preserved in [the exact notice receipt](../data/provenance/mobile_screen_2026_09_11/h5py316_notices/manifest.json).
+This addition supports local data preparation; it did not upgrade torch/numpy
+or change V5 training code. The iPhone SE2/XS Max auxiliary archive has original
+CC0 data terms, with scientific-target limitations documented separately.
+
 2026-09-11: an optional standard Apache2.0 DINOv2-S teacher was acquired and CPU-smoke-checked; it has not entered V1–V5 training or deployment. [Exact model/source rights and hashes](dinov2_teacher_adoption.md). Beyond RGB phone data has a verified original-author CC BY4.0 release; its separate code license is not assumed. [Phone data rights](../data/smartphone_benchmark_plan.md).
 
 V2 estimator, risk and threshold parameters are fitted solely on CC BY4.0 SimpleCube++; INTEL-TAU CC BY-SA4.0 remains evaluation-only. No pretrained or teacher weights are imported. The known Cotogni/Cusano normalization/restoration mechanism is explicitly prior art. Positive selective transfer versus matched C+ does not establish patentability; cheap-control competition, source/Canon failures and original negative milestones remain documented. [V2 report](../benchmarks/cc_v2_report.md).

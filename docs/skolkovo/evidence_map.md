@@ -2,6 +2,11 @@
 
 # Public-real-data update
 
+The [V5/phone progress addendum](cc_v5_phone_progress.md) records paired training
+verification, the negative matched-query recurrence test, phone data rights and
+reference preparation. Its development-only results must remain separate from
+the V2 independent camera-transfer evidence and future facial validation.
+
 The active maturity/evidence map is [public_evidence_addendum.md](public_evidence_addendum.md). Real illumination-reference experiments now exist; physical facial color is still unvalidated. Historical synthetic-stage mapping below is retained, not the current blocker list.
 
 ---

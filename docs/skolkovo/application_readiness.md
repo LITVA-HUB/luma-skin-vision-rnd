@@ -2,6 +2,11 @@
 
 # Public-real-data maturity update
 
+See also [V5 and phone engineering progress](cc_v5_phone_progress.md): stronger
+experimental controls and mobile data preparation are implemented, while novel
+mechanism superiority, independent phone efficacy and facial colorimetry remain
+unproven. Negative experiments are preserved as part of the technical record.
+
 See [public evidence addendum](public_evidence_addendum.md) and [current technology overview](technology_overview.md). Public benchmark and camera-transfer measurements are now available, with negative mixture findings explicitly retained. This improves technical evidence completeness but does not establish novelty, product skin accuracy or eligibility. Earlier facial-data readiness analysis below is future-stage context.
 
 ---
