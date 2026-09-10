@@ -23,6 +23,12 @@ from luma_skin_vision.experiment import write_json
 ROOT=Path(__file__).resolve().parents[1]
 
 
+def read_in_role_order(path,key,selected):
+    ordered=np.sort(selected)
+    values=read_npz_rows(path,key,ordered,2234)
+    return values[np.searchsorted(ordered,selected)]
+
+
 @torch.no_grad()
 def predict(model,x,batch=32):
     arrays={k:[] for k in ("pred","context","cheap","valid")}
@@ -89,8 +95,8 @@ def run(folder,out):
     selected=np.r_[roles["risk"],roles["cal"]]
     source_rows=[rows[i] for i in selected]
     torch.set_num_threads(2)
-    x=torch.from_numpy(read_npz_rows(data/"cube.npz","images",selected,2234).astype(np.float32))
-    gt=read_npz_rows(data/"cube.npz","gt",selected,2234).astype(np.float64)
+    x=torch.from_numpy(read_in_role_order(data/"cube.npz","images",selected).astype(np.float32))
+    gt=read_in_role_order(data/"cube.npz","gt",selected).astype(np.float64)
     out.mkdir(parents=True)
     started=time.perf_counter()
     numerical=[ROOT/"scripts"/p for p in ("cc_v7_risk.py","cc_v2_select.py","cc_v2_statistics.py")]
