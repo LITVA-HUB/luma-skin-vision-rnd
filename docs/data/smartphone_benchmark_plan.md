@@ -1,5 +1,12 @@
 # Smartphone coverage, 2026-09-11
 
+Acquisition completed:47 selected scenes,560 records,3,229,998,120 payload
+bytes. Every requested record passed CRC/size/SHA verification; the full160GB
+archive was not downloaded. [Completion receipt](provenance/mobile_screen_2026_09_11/verification_all.json).
+Three TRAIN scenes were used for loader development; all44 reserved paired-phone
+test scenes remain numerically untouched. A separate model/weight lock is still
+required before their first score. Acquisition does not establish phone accuracy.
+
 The user explicitly prioritised iPhone and Android photographs. Canon-only
 source training is a convenient real-GT development protocol, not evidence of
 phone deployment. Earlier INTEL-TAU includes mobile Sony IMX135 sensor data,

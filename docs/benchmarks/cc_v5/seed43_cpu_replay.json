@@ -1,0 +1,202 @@
+{
+  "device": "CPU",
+  "torch": "2.8.0+cu128",
+  "script_sha256": "10ff62f31e077d98ff078ef1471e822f9da5ac4d3560bcf33dbe18b2ac975cb1",
+  "scope": "Only119 reused source validation images; no phone/test rows",
+  "tolerance": 0.001,
+  "models": [
+    {
+      "seed": 43,
+      "arm": "point",
+      "checkpoint": "best",
+      "checkpoint_sha256": "bcabfbd41d84c5a89f608c71bfe76bf7c5eb76e52ab9729588ff48ecb2b77cdf",
+      "predictions_sha256": "54da800f527f442ae2df868c2204f44a0baea4cd123ae4ecd44bb0a744465d82",
+      "max_absolute_defects": {
+        "point_action": 4.76837158203125e-07,
+        "trajectory_actions": 4.76837158203125e-07,
+        "trajectory_risk": 1.1920928955078125e-06,
+        "base_reproduction": 1.4627947527739993e-05,
+        "trajectory_reproduction": 1.4627947527739993e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "point",
+      "checkpoint": "last",
+      "checkpoint_sha256": "15bddd7137674e886f16f294ae72ce0529c8dd285d6152cbb62284e64703d7dc",
+      "predictions_sha256": "ad5923946888625c87c5cd56913d92c6d1643eee05638a6fb00a9d16444be318",
+      "max_absolute_defects": {
+        "point_action": 7.152557373046875e-07,
+        "trajectory_actions": 7.152557373046875e-07,
+        "trajectory_risk": 1.430511474609375e-06,
+        "base_reproduction": 2.2117674208232962e-05,
+        "trajectory_reproduction": 2.2117674208232962e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "posterior_random",
+      "checkpoint": "best",
+      "checkpoint_sha256": "b9a5e29679385d40dbc13ca74147881af4f5247aa1da5d79ee20be41fbe90105",
+      "predictions_sha256": "ec949874f27b5006d20036c1f0fa06bb8c0514e9c6db2f310c083e3292f1ca97",
+      "max_absolute_defects": {
+        "point_action": 5.960464477539062e-07,
+        "trajectory_actions": 5.960464477539062e-07,
+        "trajectory_risk": 1.1920928955078125e-06,
+        "base_reproduction": 1.5423089674726498e-05,
+        "trajectory_reproduction": 1.589414126679234e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "posterior_random",
+      "checkpoint": "last",
+      "checkpoint_sha256": "1b322bc480f6052f35370f0b34be55b4fec1911bfb6ce3e0b379ce7b724009f7",
+      "predictions_sha256": "5b9bbf876532d4e80763f99e8be2f6dd6d3586380c580d2e12c5b5ffcaf5454e",
+      "max_absolute_defects": {
+        "point_action": 5.960464477539062e-07,
+        "trajectory_actions": 5.960464477539062e-07,
+        "trajectory_risk": 1.3113021850585938e-06,
+        "base_reproduction": 1.5096929216085186e-05,
+        "trajectory_reproduction": 1.5096929216085186e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "action_random",
+      "checkpoint": "best",
+      "checkpoint_sha256": "3f1cc06d5e87ea59a0e35ccdcf61057c88a9d4f13da0017b27b832f2549234bb",
+      "predictions_sha256": "c15af962bd93b84ae6aeb62b4b1f93b9dd2ecc23c33e2bf11aaecb94b81ce591",
+      "max_absolute_defects": {
+        "point_action": 5.364418029785156e-07,
+        "trajectory_actions": 5.364418029785156e-07,
+        "trajectory_risk": 1.3113021850585938e-06,
+        "base_reproduction": 1.3190836006593543e-05,
+        "trajectory_reproduction": 1.3190836006593543e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "action_random",
+      "checkpoint": "last",
+      "checkpoint_sha256": "fd866a53b4c927ef0b6f024710ad459f8e2503ef722211a28383fab9bab96442",
+      "predictions_sha256": "892385811bd87a47ce60d15ff6aa8eeb185b79f6695c428805a0c66c1b44b026",
+      "max_absolute_defects": {
+        "point_action": 4.76837158203125e-07,
+        "trajectory_actions": 4.76837158203125e-07,
+        "trajectory_risk": 1.3113021850585938e-06,
+        "base_reproduction": 1.2018153738468929e-05,
+        "trajectory_reproduction": 1.278727998699214e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "transport_random",
+      "checkpoint": "best",
+      "checkpoint_sha256": "7856ce7a0e8b3397563230ac324f02f5d0d5aaa4ecf81b6a6de628478278f6ab",
+      "predictions_sha256": "0dab8e97c162a4369a61a4f9d3b1fd8517b08ad9399bb452ad7d5e977c61d16e",
+      "max_absolute_defects": {
+        "point_action": 4.76837158203125e-07,
+        "trajectory_actions": 4.76837158203125e-07,
+        "trajectory_risk": 1.6689300537109375e-06,
+        "base_reproduction": 1.4045902572590307e-05,
+        "trajectory_reproduction": 1.4194040141468633e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "transport_random",
+      "checkpoint": "last",
+      "checkpoint_sha256": "92b85f28637d988be566d5a140715744384b775467fc19c2982c899d71648191",
+      "predictions_sha256": "879fa358ec62f996baa6e864d1058cbc4573c2109145a23e5e25a7ef6ccb18f0",
+      "max_absolute_defects": {
+        "point_action": 4.76837158203125e-07,
+        "trajectory_actions": 4.76837158203125e-07,
+        "trajectory_risk": 9.5367431640625e-07,
+        "base_reproduction": 1.3156353513732455e-05,
+        "trajectory_reproduction": 1.3156353513732455e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "transport_policy",
+      "checkpoint": "best",
+      "checkpoint_sha256": "bb5a8de046ae87e88ba34e1e940c91c91b89bd7c6055fff60f54ae3a4d44ff7d",
+      "predictions_sha256": "e25bf551a9a3b823f1fd67e2453a58f956b75493aea2a2484f169f1a1529affb",
+      "max_absolute_defects": {
+        "point_action": 4.76837158203125e-07,
+        "trajectory_actions": 4.76837158203125e-07,
+        "trajectory_risk": 1.1920928955078125e-06,
+        "base_reproduction": 1.649333176478862e-05,
+        "trajectory_reproduction": 1.649333176478862e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "transport_policy",
+      "checkpoint": "last",
+      "checkpoint_sha256": "6155d8adfde2390f9a67a1dfd24e5244f7fc45e131a27cf1c743937b32616447",
+      "predictions_sha256": "6bef921310e84fe06ebdf235e48f46fd749de7e6b33d8a1fee0b3dc64b6c5358",
+      "max_absolute_defects": {
+        "point_action": 4.76837158203125e-07,
+        "trajectory_actions": 4.76837158203125e-07,
+        "trajectory_risk": 1.1920928955078125e-06,
+        "base_reproduction": 1.1417758406184753e-05,
+        "trajectory_reproduction": 1.1791943609562594e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "transport_gradient",
+      "checkpoint": "best",
+      "checkpoint_sha256": "0b0d222e973b7f4933a13cb623fdd14af46b618bb72097167eb1c86c1ef3a16e",
+      "predictions_sha256": "2ffa3bb5a1c4daebf978b24e88106db487121e95fc5c6f118c35e084d5ed8af8",
+      "max_absolute_defects": {
+        "point_action": 3.8743019104003906e-07,
+        "trajectory_actions": 3.8743019104003906e-07,
+        "trajectory_risk": 1.430511474609375e-06,
+        "base_reproduction": 1.4624401129204045e-05,
+        "trajectory_reproduction": 1.4705381761626057e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    },
+    {
+      "seed": 43,
+      "arm": "transport_gradient",
+      "checkpoint": "last",
+      "checkpoint_sha256": "a61bdd7e25a208da397444c20e6b1bb26ebbf14231435f94aa99c0d9cecd68f4",
+      "predictions_sha256": "db1eab5aa3179ea7702c15ca05bf0def37ece45792fac4966d535f3a221c5a45",
+      "max_absolute_defects": {
+        "point_action": 5.960464477539062e-07,
+        "trajectory_actions": 5.960464477539062e-07,
+        "trajectory_risk": 1.0728836059570312e-06,
+        "base_reproduction": 1.2467828418571969e-05,
+        "trajectory_reproduction": 1.2595618715138812e-05
+      },
+      "validity_equal": true,
+      "status": "passed"
+    }
+  ],
+  "status": "passed"
+}

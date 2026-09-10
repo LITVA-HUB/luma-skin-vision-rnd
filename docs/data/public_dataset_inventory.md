@@ -1,5 +1,11 @@
 # Public color-constancy dataset inventory
 
+Phone acquisition completion: the selected Beyond RGB subset is now fully
+downloaded and verified (47 scenes,560 records,3,229,998,120 payload bytes).
+References to planned/in-progress acquisition below describe the original intake;
+the [completion receipt](provenance/mobile_screen_2026_09_11/verification_all.json)
+is authoritative. No reserved phone test image/GT has entered numeric evaluation.
+
 2026-09-11 smartphone extension: original-author-linked Beyond RGB is verified CC BY4.0 and a3.23GB sparse phone subset is frozen (Samsung Galaxy S21 Plus/Oppo Find X5 Pro). Six TRAIN captures passed loader/reference preparation; no held-out phone accuracy is measured yet. A CC0 iPhone SE2/XS Max archive is acquired for auxiliary repeatability; an adequate iPhone absolute-color benchmark remains open. NC/academic-only phone datasets are not silently cleared. See [phone inventory and protocol](smartphone_benchmark_plan.md).
 
 | Phone release | Format and reference | Metadata / CCM | Size, rights, local suitability |

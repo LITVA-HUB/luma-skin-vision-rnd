@@ -1,5 +1,12 @@
 # V5 and phone-validation engineering evidence, 2026-09-11
 
+Completion update: all18 primary arms finished, all36 prediction records and
+CPU checkpoint replays passed, and206 tests passed. The Samsung/Oppo3.23GB
+selection is fully acquired; no held-out phone score has been computed.
+The [final V5 report](../benchmarks/cc_v5_report.md) supersedes the interim
+counts below. The new training mechanisms do not improve consistently;
+physical transport retains only a modest development selective-ranking signal.
+
 This interim addendum records engineering and development evidence, not a new
 claim of inventive superiority or filing readiness. Broader positioning remains
 compact adaptive color normalization and reliability estimation for color-sensitive

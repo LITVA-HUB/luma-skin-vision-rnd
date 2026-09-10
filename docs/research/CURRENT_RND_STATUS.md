@@ -1,4 +1,20 @@
-# Current R&D status — V5 paired training in progress, 2026-09-11
+# Current R&D status — V5 completed, phone transfer next, 2026-09-11
+
+All18 primary arms completed. All36 best/final records passed independent
+scoring and CPU weight replay; the full suite passed206 tests. Mean best
+reproduction: generic action2.4136°, ordinary physical transport2.4548°;
+mean raw risk80:2.1333° versus2.0192°. Selected-action/derivative training
+failed to improve consistently. Equal-query controls do not support a useful
+feedback-specific gain. [Final V5 report](../benchmarks/cc_v5_report.md).
+This is reused development validation, not independent calibrated superiority.
+
+The3.23GB Samsung/Oppo selection is fully acquired and byte-verified. Only
+three TRAIN scenes were inspected;44 paired-phone test scenes remain reserved.
+The next action is a frozen method/weight lock and separate phone evaluation.
+No training/download process remains live. [Authoritative execution state](cc_v5_execution_status.md).
+
+Historical V5 interim updates follow; they are superseded by the completion
+report above and retained as development context.
 
 Execution update: seeds17/29 completed all six arms each. All24 best/final
 prediction records passed independent scoring and CPU checkpoint replay. New

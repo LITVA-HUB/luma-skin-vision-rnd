@@ -1,5 +1,14 @@
 # Active public-benchmark hypothesis
 
+**V5 final update:** all18 runs finished. Generic action has lower mean error
+(2.4136° versus transport2.4548°), while transport has lower mean raw risk80
+(2.0192° versus2.1333°). Selected-action/derivative training does not improve
+consistently. Equal-query control across all three seeds shows no useful
+feedback-specific advantage. [Final evidence and next decision](../benchmarks/cc_v5_report.md).
+Retain the modest risk-ranking hypothesis, change the failed training direction,
+and first test frozen models on the acquired phone data. No new validated
+innovation or universal model is claimed by this source-development screen.
+
 ## V5 status and narrowed next question
 
 The paired-state experiment now has two completed seeds, six arms each;
