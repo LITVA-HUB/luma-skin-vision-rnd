@@ -1,4 +1,8 @@
-## Current CC v2 artifact update
+## V3 architecture exploration update
+
+The locally implemented full color-frame graph has a negative real development-validation result, not a new superiority or IP claim. Known GL-frame/canonicalization ancestry is explicit. The FFCC numerical control is marked adapted from original Apache-2.0 Google source; no pretrained weights or source datasets were adopted. All current graph training remains SimpleCube++ CC BY4.0; later BY-SA multicamera training has a separate rights/lineage decision. [V3 provenance](cc_v3_architecture_provenance.md), [measurements](../benchmarks/cc_v3_report.md).
+
+## Preserved CC v2 artifact update
 
 V2 estimator, risk and threshold parameters are fitted solely on CC BY4.0 SimpleCube++; INTEL-TAU CC BY-SA4.0 remains evaluation-only. No pretrained or teacher weights are imported. The known Cotogni/Cusano normalization/restoration mechanism is explicitly prior art. Positive selective transfer versus matched C+ does not establish patentability; cheap-control competition, source/Canon failures and original negative milestones remain documented. [V2 report](../benchmarks/cc_v2_report.md).
 

@@ -4,6 +4,8 @@ Reviewed 2026-09-10 against primary author pages and original dataset registrati
 
 ## Decision
 
+V3 update: a separate [usage decision](cc_v3_usage_decision.md) permits a later research training track on previously unused INTEL-TAU material under its original BY-SA4.0 grant, without blanket unrestricted proprietary weight-distribution clearance. The384 new images are acquired but not yet fitted/evaluated; [identity/group auditing](cc_v3_grouping_audit.md) precedes any new protocol. V1/V2 retain their original evaluation-only use and SimpleCube-only training lineage. The V3 architecture source screen still trains only on SimpleCube++.
+
 Use SimpleCube++ for model training, validation, risk fitting and calibration. INTEL-TAU supplies a separate camera-shift evaluation source. Its original registration declares CC BY-SA 4.0, now directly confirmed through the original Metax V3 API. The v1 milestone used C5Sony30 because original file discovery was then unavailable. The later v2 acquisition obtained 384 prespecified field scenes from a pinned mirror, as detailed below; neither milestone is a full INTEL-TAU evaluation.
 
 The historical v1 pilot contains 30 Sony IMX135 examples redistributed by the **C5 paper authors**, whose README identifies them as INTEL-TAU. This permits a preliminary unseen-camera check under the upstream data license, not a representative camera-generalization claim. Keep these examples strictly test-only. Their processing provenance is less complete than that of the original archive. Their measured bit depth/shape and separate C5 code-license basis are retained below and in the license ledger.

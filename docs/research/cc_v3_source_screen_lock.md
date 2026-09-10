@@ -1,0 +1,13 @@
+# V3 source architecture screen — choices before learning
+
+Recorded 2026-09-10 before the first V3 GPU training run. Only the existing 1,126 training and 119 validation SimpleCube++ images enter this screen. The 462 source test images, held-out risk/calibration subsets and every INTEL-TAU image are excluded from decoding. This validation set has been used in prior development; it is not fresh test evidence.
+
+Three modes share exactly the same graph, heads, 1,215,535 parameters, seed17 initialization procedure and budget: direct RGB, GW diagonal coordinates, and full max-volume color frame. Each receives120epochs, batch32, AdamW0.001/weight_decay0.0001, cosine floor0.00002, gradient norm cap5, no pretrained weights or AMP. Common exposure exp(U[-0.5,0.5]) and independent horizontal flips p0.5 are shared augmentations; channel gains are absent. A separate declared2epoch feasibility smoke may precede the full runs and cannot replace them.
+
+Loss is camera-space reproduction angle in degrees +0.02 canonical directional mixture NLL +10 positivity penalty. Camera-space density reporting includes the frame Jacobian. A small NLL weight is specified because the pre-training source conditioning audit found a65.36° median canonical GT/GW separation despite4.52° mean ordinary GW reproduction error. This is a hypothesis-driven choice before observing learned results, not an optimal coefficient claim.
+
+For the point loss, normalize the raw mapped direction and clip its channels to1e-6 only inside a finite training surrogate. The positivity term is mean relu(1e-4-normalized_raw). This supplies gradients when mapped channels are negative. Evaluation uses the model's explicit validity and Gray World diagnostic fallback; clipping does not make invalid predictions accepted. The likelihood masks invalid frames/GT, never invalid point predictions alone, and raises on all-invalid batches.
+
+Choose the epoch with lowest all-population validation mean reproduction error among epochs with at least99% valid predictions. Include the untrained epoch0 in this comparison so a failed optimization remains visible as no improvement over initialization. Save the full validation curve, best predictions, exact code/data/ID snapshots and training memory. Do not select an unsupported model just because fallback predictions are accurate. Three-seed confirmation and calibration follow only if this screen warrants them.
+
+The initial full-frame model is an experiment. Its mathematical equivariance does not establish real camera accuracy, robustness, reliable rejection, or novelty. Changes after this screen require new run IDs and an explicit hypothesis revision; preserve these runs, including failures.

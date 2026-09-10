@@ -1,5 +1,9 @@
 # Public color-constancy revision — 2026-09-10
 
+## V3 extension: color frames, posterior geometry and FFCC
+
+The newest [source-grounded review](cc_v3_prior_art.md) identifies explicit GL-frame/canonicalization ancestry, the difference between canonical and camera-space likelihoods, conditioning/continuity limitations, and the pinned Apache-2.0 FFCC formulas. Full-frame graph canonicalization is not a new theorem. The [real source screen](../benchmarks/cc_v3_report.md) is negative: full-frame Proposed loses to its matched direct graph and does not beat Shades of Gray. [The next hypothesis](cc_v3_revision_decision.md) retains global color information and requires new measurement. These results do not replace the limited positive V2 camera-transfer evidence below.
+
 The public review is [public_color_prior_art.md](public_color_prior_art.md), including FC4, Reweight-CC, C5, CCMNet, uncertainty2025, VLM-CC2026, GC3, GCC and BRE. The current bounded extension is [cc_v2_prior_art.md](cc_v2_prior_art.md). Both narrow rather than establish novelty. The prior facial-specific analysis below is retained as historical context.
 
 ## V2 extension: known equivariance, measured selective transfer

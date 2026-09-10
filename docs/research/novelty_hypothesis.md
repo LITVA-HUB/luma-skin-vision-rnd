@@ -1,5 +1,9 @@
 # Active public-benchmark hypothesis
 
+## V3 result and revised direction
+
+**INITIAL FULL-FRAME HYPOTHESIS FAILED ITS SOURCE SCREEN.** An image-derived color basis, graph diffusion and transported directional posterior were implemented and trained at1.216M parameters. Full-frame mean/risk80=4.281°/4.155° versus matched direct2.547°/2.304° on119 reused development-validation images. This establishes neither a new positive benchmark result nor novelty. GL frame/canonicalization has published antecedents. A graph retaining a separate global color state, with learned fusion and camera-space risk supervision, is the next **PLANNED, UNVERIFIED** candidate. See [decision](cc_v3_revision_decision.md), [measurements](../benchmarks/cc_v3_report.md) and [prior art](cc_v3_prior_art.md). Old negative results and V2's bounded positive camera-transfer result remain intact.
+
 See [ranked public decision](public_hypothesis_decision.md), [fresh prior art](public_color_prior_art.md) and [frozen experimental protocol](public_protocol_v1.md). Compact single-image transfer and selective reproduction-risk estimation are UNVERIFIED research hypotheses; algorithm mixtures, error prediction and abstention are not independently novel. No physical ΔE00 or facial-color claim follows from illuminant ground truth. Historical facial hypothesis below is deferred while proprietary collection is unavailable.
 
 ## V2 investigated hypothesis — bounded empirical support

@@ -1,4 +1,10 @@
-# Current R&D status — camera-transfer CC v2, 2026-09-10
+# Current R&D status — V3 architecture screen, 2026-09-10
+
+**Latest experiment: the new full color-frame graph loses on real development validation.** Three matched1.216M/120epoch runs give mean reproduction4.281° full-frame Proposed versus2.547° direct RGB and2.942° diagonal. At80% raw-posterior acceptance, full-frame gives4.155° versus2.304° direct. These119 validation images were reused for development; this is not a fresh test result. The negative design is preserved and a relaxed graph with explicit global color state is the next unverified hypothesis. [V3 report](../benchmarks/cc_v3_report.md), [revision decision](cc_v3_revision_decision.md).
+
+The384 newly acquired INTEL-TAU images have not yet entered training or error evaluation. Identity auditing found67 rows sharing old reference-file hashes, despite zero image duplicates; fold/group policy remains to be locked. A source-grounded FFCC numerical control is implemented but not yet trained. The broader R&D goal remains active.
+
+## Preserved V2 measured milestone
 
 **Measured improvement against the strongest matched direct CNN: reproduction error at 80% acceptance on 384 fresh unseen-camera images falls from 5.558° to 3.805° (31.5%). No universal best-method, patent-novelty or facial skin-color claim is established.**
 
