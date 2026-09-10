@@ -17,12 +17,15 @@ repository code has no separately verified blanket license and is not imported.
 
 The cameras are Samsung Galaxy S21 Plus SM-G996B and Oppo Find X5 Pro CPH2305,
 alongside a16-channel research sensor. Use only the ordinary phone RGB captures
-at inference. RAW mosaics are supplied as HDF5 with metadata, plus captures with
+at inference. Camera-RAW captures are supplied as HDF5 with metadata, plus captures with
 and without an X-Rite chart, chart coordinates and measured illuminant spectra.
 [Paper](https://openaccess.thecvf.com/content/WACV2024/papers/Glatt_Beyond_RGB_A_Real_World_Dataset_for_Multispectral_Imaging_in_WACV_2024_paper.pdf),
 [author structure](https://github.com/shirawerman/Beyond-RGB#beyond-rgb).
-Specific CCM/black/white/CFA metadata and reference-patch validity must be
-verified from acquired files before building the evaluation loader. Illuminant
+Loader audit now confirms the inspected HDF5 files are already demosaiced HWC
+float32 camera RGB, with sampled values on a1/255 grid; do not treat them as
+Bayer mosaics or apply the metadata10-bit scale again. CCM/black/white/CFA tags
+exist. Reference saturation and dark-patch disagreement require a fixed quality
+rule before evaluation. [Measured loader findings](phone_loader_findings.md). Illuminant
 spectra plus uncalibrated camera RGB alone do not justify a skin DeltaE target.
 
 The original split archive totals160,286,004,863 bytes. **Do not download it in
