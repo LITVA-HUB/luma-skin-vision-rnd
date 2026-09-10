@@ -2,17 +2,29 @@
 
 The overall R&D goal is active. Revalidate handles before restarting any work.
 
-- Training session74620 runs seeds17,29,43 serially. Seed17 has completed all
-  six120-epoch arms; seed29 has started. Seed43 is queued within the same live
+- Training session74620 runs seeds17,29,43 serially. Seeds17 and29 completed all
+  six120-epoch arms each; seed43 is now running within the same live
   PowerShell process. No duplicate training should be launched merely because
   a later seed directory does not yet exist.
-- Independent scoring of all12 best/final seed17 prediction records passed;
-  [interim report](../benchmarks/cc_v5/seed17_screen/report.md). Mean best
+- Independent scoring of all24 best/final prediction records for seeds17/29
+  passed; [two-seed report](../benchmarks/cc_v5/two_seed_screen/report.md).
+  All24 checkpoints also passed CPU replay against saved GPU predictions;
+  largest absolute discrepancy across checked actions, risks and degree errors
+  was3.745e-5 (predeclared tolerance1e-3).
+  [Replay receipt](../benchmarks/cc_v5/two_seed_cpu_replay.json). Seed17 mean best
   reproduction: point2.5192°, posterior2.7126°, generic action2.4461°,
   transport random2.3649°, selected-action2.4607°, selected-action+gradient2.4676°.
   The special new training schemes lose to ordinary random-action supervision
   in this seed. This is reused119-image development validation, not a final
   three-seed effect, independent phone benchmark or novelty finding.
+- Seed29 best means: point2.5158°, posterior2.4950°, action2.4039°,
+  transport random2.5243°, policy2.4804°, gradient2.5212°. The most successful
+  arm changes between seeds; no stable large mechanism improvement is shown.
+- Seed43 starts at repository d738641 with dirty phone-development docs; its
+  seven training-script hashes equal seed17 exactly. Source-snapshot differences
+  are pyproject.toml/uv.lock adding h5py for independent CPU phone loading.
+  Training torch/numpy/model code were not upgraded. Per-seed provenance is
+  retained; do not describe every seed as launched from one clean Git checkout.
 - V5 inference timing/export/calibrated reliability remains unmeasured.
 - Smartphone acquisition session92820 terminated with HTTP429 after partial
   acquisition. Resume session98768 now uses a tested transport wrapper with
@@ -29,6 +41,17 @@ The overall R&D goal is active. Revalidate handles before restarting any work.
   are an auxiliary repeatability candidate, not verified absolute-color GT.
   No image decoding/training yet. Initial phone list also records restricted
   S24/LSMI/RenderedWB/Flash-Ambient sources; these were not adopted.
+- Phone loader audit and preparation completed on all six TRAIN captures only.
+  Files contain already demosaiced HWC camera RGB, sampled on a1/255 grid.
+  Reference polygons visually align; one white patch is saturated and dark
+  neutral patches disagree. [Findings](../data/phone_loader_findings.md).
+  A fixed gray-reference quality rule is committed before any test decoding:
+  [protocol](phone_reference_protocol_v1.md), SHA256
+  c641f1ae17a86d6597b0f629879bd25765a8fff6e0559ef4f5ab8789b5116b19.
+  Six references passed, and classical methods plus model thumbnails prepared.
+  Their loader-only diagnostic numbers are not a held-out phone benchmark.
+  Reserved44 test scenes remain untouched numerically. Any test preparation
+  additionally needs completed acquisition verification and a model/weight lock.
 - Optional standard Apache2.0 DINOv2-S teacher acquired and CPU load-smoke-checked;
   no teacher image features or training yet. It is22.06M parameters and intended
   only for a future training/reference experiment, not compact deployment.
@@ -36,9 +59,8 @@ The overall R&D goal is active. Revalidate handles before restarting any work.
 
 Next: complete all queued V5 arms, independently score both best/final outcomes
 across all seeds, preserve negatives and decide training direction. Finish and
-verify phone acquisition, inspect only the three loader scenes to implement
-correct RAW/CFA/black-white and target extraction. Freeze a meaningful phone
-evaluation protocol before scoring the reserved scenes. Continue independent
+verify phone acquisition and freeze method/weight/calibration identities before
+scoring reserved scenes under the now-fixed reference protocol. Continue independent
 iPhone ground-truth search; no proprietary facial collection is required now.
 The original FFCC-inspired numerical control remains untrained. Teacher/EMA and
 equal-query nonadaptive controls remain required future candidates, not results.

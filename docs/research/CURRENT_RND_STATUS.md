@@ -1,11 +1,13 @@
 # Current R&D status — V5 paired training in progress, 2026-09-11
 
-Execution update: seed17 completed all six arms and independent prediction
-recomputation passed; its proposed selected-action/gradient training did not beat
-ordinary action sampling. Seeds29/43 continue in the same serial session. Phone
+Execution update: seeds17/29 completed all six arms each. All24 best/final
+prediction records passed independent scoring and CPU checkpoint replay. New
+selected-action/gradient training has no consistent advantage so far; seed43
+continues in the same serial session. Phone
 coverage is now an explicit priority: a licensed Samsung S21 Plus/Oppo Find X5
 Pro subset is downloading, and a small CC0 iPhone SE2/XS Max repeatability archive
-is acquired. No phone accuracy has been measured. [Current handles, interim
+is acquired. Phone loading/reference extraction and classical diagnostics passed
+on six TRAIN captures; no held-out phone accuracy has been measured. [Current handles, interim
 numbers and next steps](cc_v5_execution_status.md),
 [phone-data rights and protocol](../data/smartphone_benchmark_plan.md).
 
