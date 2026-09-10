@@ -66,8 +66,31 @@ This is an acquisition population, not a completed measured phone result.
 | [Nixon smartphone colorimetry replication](https://doi.org/10.7910/DVN/JJRH4N) |Real colorimetric study | Original Dataverse CC0, but inspected release contains four tabular result files, no camera-image benchmark. Does not solve the image-training need. |
 | [Single Pixel Spectral CC](https://doi.org/10.1007/s11263-023-01867-x) |Huawei Mate20 Pro and measured spectra | Authors explicitly state collected data/code cannot be made public for business reasons. DO NOT USE as an available public dataset. |
 
-Further iPhone search remains active. Lack of a cleared iPhone benchmark must
-be reported as a coverage gap, not used to infer iPhone performance from Android.
+## Acquired small iPhone repeatability set
+
+The [original Dryad dataset](https://doi.org/10.5061/dryad.z8w9ghxg9) accompanying
+[Zhang et al., PLOS ONE2023](https://doi.org/10.1371/journal.pone.0287099) explicitly
+identifies iPhone SE2 and XS Max. Its linked Zenodo/Dryad release declares CC0.
+The76,450,555-byte archive was downloaded and matched to the published MD5;
+SHA25692ace21f94a652e585e95a51047223c7b7f5c0310929e6c2b510d333963f052f.
+The3_objects directory contains15 SE2 and15 XS Max input PNGs, plus two already
+corrected illustrative outputs. Those two outputs are not independent input
+photos or a measured physical-color GT. The archive also contains synthetic
+experiments, pH experiments and reference-board assets: they remain separate.
+[Acquisition receipt](provenance/mobile_screen_2026_09_11/iphone_colorimetry_acquisition.json).
+
+Category: CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING under CC0, **but scientific
+target suitability is limited**. Initially use the30 real object photos only as
+a repeatability/ingestion stress set after checking correspondence, transformations
+and reference-board leakage. No instrument-paired illuminant/absolute color target
+was verified. Lower cross-image color variance alone is not sufficient: a model
+that collapses all object colors can trivially lower variance. Do not optimise
+primarily to that proxy or describe it as an illuminant/skin-DeltaE benchmark.
+No images have yet been decoded or entered training. The authors' disclosed
+provisional patent is not adopted by downloading the CC0 data; no code imported.
+
+Further iPhone search remains active. Lack of a cleared, adequate iPhone accuracy
+benchmark remains a gap, not a reason to infer iPhone performance from Android.
 Evaluate RAW/linear and rendered JPEG/HEIC separately. Camera model, lens,
 capture mode and ISP/rendering version can matter more than the operating-system
 label. Skin-specific reference measurements remain future work.
