@@ -1,4 +1,23 @@
-# Current R&D status — V4 evidence routing/refinement screen, 2026-09-11
+# Current R&D status — V5 paired training in progress, 2026-09-11
+
+V5 is now testing selected-action error supervision and physical cost derivatives
+against point-only, posterior and generic action controls. Six arms per seed,
+seeds17/29/43, 120 epochs. All arms clone complete20-epoch warmup state;
+strict CUDA warmup replay passed bitwise. Primary execution was launched in
+session74620 from committed training code2b23f90. This is an execution receipt,
+not evidence that all runs completed. Read run result.json/session state before
+assuming completion or restarting. [Protocol](cc_v5_protocol.md),
+[preflight](../benchmarks/cc_v5_preflight.md),
+[source binding](../benchmarks/cc_v5/launch_receipt.json).
+
+The full suite passed190 tests before primary launch. Two additional independent
+scorer tests subsequently passed. V5 primary accuracy, calibration and camera
+generalization remain pending. The separate scorer verifies run hashes and
+recomputes errors from real validation GT, retaining best and final checkpoints.
+The strongest completed positive milestone remains V2; the latest completed
+architecture screen remains the negative V4 result below.
+
+## Preserved V4 screen
 
 **Latest V4 architecture does not beat its controls.** Three 3.097M-parameter, 120-epoch runs give step-2 mean reproduction error 2.389° for physical evidence transport, 2.317° for generic action feedback, and 2.181° for the action-independent posterior. Raw risk80 is 2.000° / 2.009° / 1.895°, respectively. These 119 validation images were reused for development, with one seed; nondeterministic CUDA histories diverged even during the common warmup. This is a negative screen for the proposed mechanism, not a stable causal comparison or an independent benchmark. [V4 report](../benchmarks/cc_v4_report.md), [architecture/training synthesis](cc_v4_universal_method.md).
 
