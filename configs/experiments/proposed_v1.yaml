@@ -1,0 +1,14 @@
+schema_version: '1.0'
+dataset: data/synthetic_demo/manifest.jsonl
+method: proposed_v1
+seed: 42
+resolution: 64
+epochs: 2
+batch_size: 8
+learning_rate: 0.001
+weight_decay: 0.0001
+gradient_accumulation: 1
+precision: fp32
+device: auto
+oof_folds: 3
+correction: none

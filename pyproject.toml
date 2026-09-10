@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "luma-skin-vision"
+version = "0.1.0"
+description = "Standalone selective facial-color research; no validated real-world model yet"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.2,<3", "pillow>=11,<13", "pydantic>=2.10,<3", "pyyaml>=6,<7"]
+
+[project.optional-dependencies]
+train = ["torch==2.8.0", "torchvision==0.23.0"]
+face = ["opencv-python-headless>=4.11,<5"]
+export = ["onnx>=1.17,<2", "onnxruntime>=1.20,<2"]
+report = ["matplotlib>=3.10,<4"]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

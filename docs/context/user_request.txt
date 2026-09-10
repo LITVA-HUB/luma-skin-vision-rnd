@@ -1,0 +1,2487 @@
+# MISSION
+
+You are the Principal Computer Vision / ML Research Engineer and Research Software Architect for a new R&D project related to the existing product Luma / Beauty Concierge.
+
+You are working in a NEW, EMPTY development environment.
+
+You DO NOT have the original Luma repository.
+
+You DO NOT currently have a proprietary skin-image dataset.
+
+You DO NOT currently have colorimeter or spectrophotometer measurements.
+
+This is expected.
+
+Do not stop because those resources are missing.
+
+Your responsibility is to create a standalone, professionally engineered Computer Vision R&D repository from scratch and drive it as far as scientifically possible without fabricating missing data.
+
+The ultimate business purpose is to create a REAL technological component that may later be integrated into Luma and may form an important part of a technology project submitted for expert review by the Russian Skolkovo Foundation.
+
+This is NOT a task to fabricate “innovation for Skolkovo.”
+
+The objective is to create an actual technically defensible R&D result.
+
+The desired final state is:
+
+REAL TECHNICAL PROBLEM
+→ RESEARCH HYPOTHESIS
+→ OWN METHOD
+→ WORKING PROTOTYPE
+→ REAL DATA
+→ STRONG BASELINES
+→ CONTROLLED EXPERIMENT
+→ MEASURABLE IMPROVEMENT
+→ ABLATION
+→ COMPACT PRODUCTION MODEL
+→ REPRODUCIBLE EVIDENCE
+→ INTEGRATION CONTRACT
+→ TECHNICAL EVIDENCE PACKAGE
+
+If the proposed method fails experimentally, report the negative result.
+
+Never manipulate baselines, datasets or metrics to create the appearance of innovation.
+
+---
+
+# BUSINESS AND SKOLKOVO CONTEXT
+
+Luma / Beauty Concierge is a beauty/cosmetics recommendation product.
+
+The intended technological direction is Computer Vision analysis of a facial photograph without identifying the person.
+
+The desired technology is related to:
+
+* facial skin localization;
+* photograph usability;
+* reliable skin-region selection;
+* visible skin-color estimation;
+* illumination robustness;
+* white-balance / color normalization;
+* cross-camera robustness;
+* uncertainty estimation;
+* selective prediction / abstention;
+* downstream cosmetics recommendation.
+
+The technology must NOT perform:
+
+* face identity recognition;
+* medical diagnosis;
+* disease detection;
+* unsupported biological conclusions;
+* ethnicity inference.
+
+The R&D objective is specifically to investigate:
+
+> Can we estimate a defined representation of facial skin color from ordinary smartphone images under unknown or partially unknown camera and illumination conditions, while estimating when that measurement is unreliable and refusing to predict in those cases?
+
+A Skolkovo application is NOT considered automatically successful because:
+
+* a neural network exists;
+* an open-source model was fine-tuned;
+* an ONNX model exists;
+* the software uses AI;
+* the company owns software;
+* the product has users.
+
+The technical project should eventually provide evidence relevant to:
+
+1. technological novelty;
+2. theoretical and practical feasibility;
+3. commercial potential;
+4. competence required to implement the project.
+
+Do NOT make legal statements that Skolkovo residency, tax benefits, software registry status, IT accreditation, R&D tax treatment or trade-secret status are guaranteed.
+
+Treat all such topics as separate legal/technical workstreams.
+
+Use current official Skolkovo sources when researching those questions.
+
+Do not rely primarily on SEO articles when primary official sources are available.
+
+---
+
+# PROVIDED CONTEXT ABOUT THE EXISTING LUMA PRODUCT
+
+The original repository is NOT available in this environment.
+
+The following information comes from a previous manual audit of the existing project.
+
+Treat it as PROVIDED CONTEXT.
+
+Do not pretend you independently verified it from source code.
+
+Existing Luma reportedly already has:
+
+* an iOS SwiftUI client;
+* a FastAPI backend;
+* deterministic recommendation logic;
+* an Advisor/LLM layer consuming structured backend information;
+* a server-side OpenCV YuNet face detector;
+* image decoding and orientation handling;
+* ICC-to-sRGB handling;
+* basic photograph-quality checks;
+* blur/clipping checks;
+* a requirement for a sufficiently large frontal face;
+* two cheek regions used for visible-color measurement;
+* robust/trimmed RGB statistics;
+* conversion to Lab;
+* a ready/retake response;
+* a visible swatch/depth-band result;
+* undertone currently returned as unknown;
+* explicit user confirmation before updating the user profile.
+
+The current Luma vision implementation reportedly DOES NOT have:
+
+* a trained skin-color regressor;
+* learned measurement-quality skin segmentation;
+* calibrated illumination estimation;
+* validated color constancy;
+* cross-camera color calibration;
+* instrument-based ground truth;
+* a representative multi-device benchmark;
+* calibrated prediction uncertainty;
+* risk/coverage evaluation;
+* selective prediction based on expected color error;
+* validated automatic undertone estimation.
+
+The existing YuNet detector should be treated as a reasonable existing detection component.
+
+Do NOT assume replacing YuNet is innovative or necessary.
+
+The proposed R&D engine must be architecturally separable from the Luma application so it can later be integrated through a versioned contract.
+
+---
+
+# CENTRAL TECHNICAL OBJECTIVE
+
+Create a technology tentatively called:
+
+LUMA SELECTIVE SKIN COLOR ENGINE
+or
+LUMA SKIN VISION ENGINE
+
+Do not treat the name as an IP claim.
+
+The desired inference concept is:
+
+SMARTPHONE IMAGE
+↓
+FACE LOCALIZATION
+↓
+HARD IMAGE QUALITY GATE
+↓
+MEASUREMENT-AWARE SKIN REGION SELECTION
+↓
+PHOTOMETRIC / ILLUMINATION ANALYSIS
+↓
+BOUNDED COLOR NORMALIZATION HYPOTHESES
+↓
+COMPACT COLOR ESTIMATION MODEL
+↓
+ERROR / UNCERTAINTY ESTIMATION
+↓
+SELECTIVE DECISION
+↓
+ACCEPT MEASUREMENT
+or
+RETAKE / UNSUPPORTED
+
+The output must not merely contain a skin-tone class.
+
+The engine should eventually be able to express:
+
+“I estimate this color and the evidence indicates the expected measurement error is sufficiently low.”
+
+or:
+
+“This image does not contain sufficient reliable information. Do not use it. Request another photograph.”
+
+---
+
+# IMPORTANT SCIENTIFIC CORRECTION
+
+Do NOT formulate the task as:
+
+“Recover the true physical skin color from any JPEG under arbitrary unknown illumination and arbitrary unknown camera.”
+
+That statement is physically too strong.
+
+A processed smartphone image depends on multiple unknown factors:
+
+* spectral illumination;
+* camera spectral sensitivity;
+* automatic white balance;
+* exposure;
+* tone mapping;
+* local ISP processing;
+* geometry;
+* specular reflection;
+* shadows;
+* cosmetics;
+* compression;
+* potentially HDR/multi-frame processing.
+
+Different physical situations can result in similar pixels.
+
+Therefore the scientifically defensible task is:
+
+> Estimate a predefined colorimetric target for specified facial skin regions within a documented operating domain, and estimate whether an input lies in a regime where the target can be estimated reliably.
+
+The system must be allowed to abstain.
+
+---
+
+# TARGET MEASUREMENT
+
+The first R&D version should focus on continuous color measurement rather than coarse skin-tone classes.
+
+Primary candidate representation:
+
+CIELAB:
+
+L*
+a*
+b*
+
+Reference conditions must be explicitly documented.
+
+Prefer a defined reference such as D65 / 2° observer if compatible with the selected measurement protocol.
+
+Do not write simply “Lab ground truth” without documenting:
+
+* illuminant/reference white;
+* observer;
+* instrument;
+* measurement mode;
+* facial measurement location;
+* repeat measurement procedure.
+
+Primary error metric:
+
+CIEDE2000 / ΔE00.
+
+Secondary output representations such as:
+
+* skin depth band;
+* ITA;
+* display swatch;
+
+may be derived for product use.
+
+They should not replace continuous color evaluation.
+
+Do NOT implement “undertone AI” in the first R&D phase.
+
+Undertone requires a separate operational definition and ground-truth protocol.
+
+---
+
+# HYPOTHESIZED TECHNOLOGICAL CONTRIBUTION
+
+Do NOT assume this is novel.
+
+Treat it as a research hypothesis requiring prior-art and experimental validation.
+
+Investigate whether the following specific combination can produce a measurable technical advantage:
+
+## 1. Measurement-aware skin ROI reliability
+
+Do not train a model only to answer:
+
+“Is this pixel skin?”
+
+Instead investigate a model that estimates:
+
+“How suitable is this skin region for measuring the defined colorimetric target?”
+
+Potential unreliable regions include:
+
+* highlights;
+* deep shadows;
+* clipped areas;
+* facial hair;
+* eyebrows;
+* lips;
+* eyes;
+* hair;
+* makeup where prohibited by protocol;
+* occlusions;
+* strongly non-uniform illumination;
+* unfavorable local geometry.
+
+A region can be anatomically skin and still be poor for color measurement.
+
+This distinction is important.
+
+Investigate training ROI reliability against measurement error where possible.
+
+---
+
+## 2. Bounded photometric hypotheses
+
+Do not blindly apply a single white-balance correction.
+
+Preserve the original color signal.
+
+Investigate a small bounded family of physically/plausibly motivated photometric transformations.
+
+Potential examples:
+
+* no correction;
+* Gray World;
+* Shades of Gray;
+* constrained channel gains;
+* global color correction;
+* device-conditioned correction when metadata exists;
+* regional correction where justified.
+
+Do NOT use generative beautification or arbitrary image enhancement as measurement correction.
+
+For the same facial regions, compute how the estimated target changes across plausible photometric explanations.
+
+---
+
+## 3. Photometric ambiguity representation
+
+Define features describing instability such as:
+
+* disagreement between correction hypotheses;
+* disagreement between facial regions;
+* sensitivity to small ROI perturbations;
+* local illumination gradients;
+* clipping;
+* highlight indicators;
+* shadow indicators;
+* out-of-distribution features;
+* camera/domain features when available.
+
+Investigate whether these features predict real ΔE00 error better than:
+
+* detector confidence;
+* softmax confidence;
+* regression magnitude;
+* generic image-quality scores.
+
+---
+
+## 4. Error / reliability prediction
+
+Build a dedicated error model.
+
+Potential targets:
+
+* predicted ΔE00;
+* probability that ΔE00 <= predefined tolerance;
+* rank of expected measurement error;
+* calibrated prediction interval.
+
+Train this component using held-out/out-of-fold residuals.
+
+Do NOT train the error head on optimistically fitted training residuals and call it calibrated uncertainty.
+
+---
+
+## 5. Selective prediction / abstention
+
+Define:
+
+ACCEPT
+RETAKE
+UNSUPPORTED
+
+The system must be evaluated using risk-versus-coverage analysis.
+
+The key question is:
+
+At the SAME coverage, is the proposed method more accurate than the best baseline?
+
+Not:
+
+“Does accuracy improve if we reject almost everything?”
+
+---
+
+# WHY THIS COULD BE A REAL R&D RESULT
+
+The potential technical result is NOT:
+
+“We fine-tuned MobileNet.”
+
+It is also NOT:
+
+“We combined face detection, segmentation and white balance.”
+
+Those ingredients already exist in prior art.
+
+The candidate contribution to investigate is:
+
+> A compact measurement system in which facial ROI suitability, bounded photometric ambiguity and real colorimetric residuals are used jointly to predict both facial skin color and the reliability of that measurement, enabling calibrated rejection of inputs that are likely to cause unacceptable color error.
+
+The exact novelty must only be formulated AFTER serious prior-art research.
+
+If prior art contains the same mechanism, modify or narrow the research hypothesis.
+
+---
+
+# RESEARCH QUESTIONS
+
+Explicitly answer the following questions experimentally:
+
+RQ1.
+How unstable is naïve facial skin-color estimation across cameras and illumination?
+
+RQ2.
+How much of the error can deterministic classical color science remove?
+
+RQ3.
+Does a standard compact learned regressor outperform deterministic methods?
+
+RQ4.
+Does measurement-aware ROI selection improve colorimetric error?
+
+RQ5.
+Does photometric ambiguity predict real measurement error?
+
+RQ6.
+Does the proposed error model outperform standard confidence/calibration methods?
+
+RQ7.
+At equal accepted-image coverage, does the proposed method reduce ΔE00?
+
+RQ8.
+Does the improvement hold on devices and/or lighting conditions not used for training?
+
+RQ9.
+Can the useful behavior be transferred into a production model under approximately 10M parameters?
+
+RQ10.
+How much accuracy/calibration is lost after ONNX / FP16 / INT8 optimization?
+
+---
+
+# REPOSITORY TO CREATE
+
+Create a new Git repository from scratch.
+
+Suggested project name:
+
+luma-skin-vision-rnd
+
+Use a professional Python project structure approximately like:
+
+luma-skin-vision-rnd/
+AGENTS.md
+README.md
+pyproject.toml
+.gitignore
+
+```
+configs/
+    datasets/
+    experiments/
+    models/
+
+src/luma_skin_vision/
+    __init__.py
+    contracts/
+    preprocessing/
+    face/
+    roi/
+    photometry/
+    models/
+    uncertainty/
+    calibration/
+    selective/
+    evaluation/
+    export/
+    api/
+
+scripts/
+    inspect_environment.py
+    prepare_dataset.py
+    validate_dataset.py
+    train.py
+    evaluate.py
+    calibrate.py
+    benchmark.py
+    export_onnx.py
+    benchmark_onnx.py
+
+tests/
+    unit/
+    integration/
+
+data/
+    README.md
+    schemas/
+    synthetic_demo/
+
+experiments/
+    README.md
+
+artifacts/
+    .gitkeep
+
+docs/
+    context/
+    research/
+    data/
+    architecture/
+    benchmarks/
+    skolkovo/
+    ip/
+```
+
+Do not follow this structure blindly if a better structure emerges.
+
+Keep the public API clean.
+
+Separate:
+
+training dependencies
+from
+production inference dependencies.
+
+---
+
+# AGENTS.MD
+
+Create a concise root AGENTS.md.
+
+Do NOT copy this entire specification into AGENTS.md.
+
+AGENTS.md should act as a map.
+
+It should state persistent rules such as:
+
+* scientific honesty;
+* no invented metrics;
+* subject-disjoint data splits;
+* no test leakage;
+* commercial license checks;
+* reproduce before optimize;
+* current research docs locations;
+* commands for tests/evaluation;
+* hardware constraint;
+* privacy constraints.
+
+Put detailed research knowledge in docs/.
+
+---
+
+# CURRENT HARDWARE
+
+The intended primary machine is:
+
+GPU:
+NVIDIA RTX 4060
+8 GB VRAM
+
+CPU:
+AMD Ryzen 9 7900X
+
+RAM:
+32 GB DDR5
+
+Design all required core experiments to be executable on this hardware.
+
+Cloud GPUs may be considered optional accelerators only.
+
+Do not make them required.
+
+---
+
+# MODEL STRATEGY
+
+Do not train a foundation model from scratch.
+
+Research current lightweight commercially usable model families.
+
+Candidate student families to investigate include:
+
+* MobileNetV4;
+* MobileOne;
+* FastViT;
+* other current lightweight CNN/hybrid architectures found during research.
+
+Target preference:
+
+ideal:
+1–5M parameters
+
+preferred:
+<10M parameters
+
+acceptable if justified:
+<20M parameters
+
+Do not sacrifice meaningful accuracy for parameter-count aesthetics.
+
+For teacher models investigate:
+
+* ensembles of independently trained regressors;
+* larger compact models;
+* frozen generic DINOv2 features;
+* other current commercially usable teacher candidates.
+
+Teacher/student is NOT the claimed innovation.
+
+Teacher/student is a deployment technique.
+
+Potential student targets include:
+
+* Lab;
+* regional reliability;
+* error ranking;
+* auxiliary photometric sensitivity representations.
+
+---
+
+# OPEN-SOURCE AND PRIOR-ART RESEARCH
+
+Internet access may or may not be available.
+
+If internet access exists, perform current research before selecting dependencies.
+
+Date-stamp all research.
+
+Prioritize:
+
+* official repositories;
+* official model cards;
+* original papers;
+* arXiv;
+* CVF/OpenAccess;
+* Papers With Code;
+* Hugging Face;
+* GitHub upstream repositories;
+* official framework documentation;
+* official Skolkovo documentation.
+
+Research at minimum:
+
+FACE:
+
+* YuNet;
+* lightweight landmarking;
+* face parsing;
+* skin segmentation.
+
+COLOR:
+
+* color constancy;
+* illuminant estimation;
+* white-balance correction;
+* camera color calibration;
+* cross-camera color normalization;
+* regional color correction.
+
+MODELS:
+
+* MobileNetV4;
+* MobileOne;
+* FastViT;
+* lightweight CNN/ViT alternatives.
+
+UNCERTAINTY:
+
+* calibrated regression;
+* temperature scaling where applicable;
+* selective prediction;
+* SelectiveNet;
+* conformal methods;
+* risk control;
+* uncertainty under distribution shift.
+
+SKIN COLOR:
+
+* skin-tone estimation;
+* skin-color estimation;
+* smartphone colorimetry;
+* illumination-invariant skin color;
+* camera-invariant facial color;
+* colorimeter-supervised skin measurement.
+
+Important previously identified prior-art directions that must be reviewed include:
+
+* Deep White Balance;
+* C5 color constancy;
+* TRUST;
+* SelectiveNet;
+* calibration work by Guo et al.;
+* Learn Then Test / statistical risk-control approaches;
+* colorimeter-supervised skin-tone estimation;
+* regional facial color calibration across cameras;
+* recent smartphone skin-color measurement research.
+
+Do not assume this list is complete.
+
+Search for newer and more directly overlapping work.
+
+Create:
+
+docs/research/prior_art.md
+
+For each strong analogue record:
+
+* publication date;
+* technical problem;
+* method;
+* model;
+* dataset;
+* ground truth;
+* metrics;
+* published results;
+* hardware if reported;
+* open-source status;
+* code license;
+* weight license;
+* data license;
+* commercial restrictions;
+* what overlaps our hypothesis;
+* what does not;
+* whether it weakens our novelty claim.
+
+Find at least 10 serious close analogues if internet access permits.
+
+After the prior-art review, reassess the proposed novelty.
+
+Do not use phrases such as:
+
+“first in the world”
+“unique”
+“no competitors”
+
+unless adequately supported.
+
+---
+
+# LICENSE POLICY
+
+Commercial use is intended.
+
+Before adopting external code, weights or datasets, record separately:
+
+CODE LICENSE
+WEIGHTS LICENSE
+DATASET LICENSE
+
+Never infer that open-source code automatically makes model weights or training data commercially usable.
+
+Do not silently add:
+
+* GPL;
+* AGPL;
+* non-commercial-only models;
+* research-only weights;
+* datasets prohibiting intended use.
+
+Potentially restricted projects may still be referenced as prior art or experimental comparators when legally appropriate.
+
+They should not become production dependencies without explicit justification.
+
+Create:
+
+docs/ip/licensing_inventory.md
+
+For every dependency include:
+
+* component;
+* source;
+* version/commit;
+* license;
+* weights license;
+* dataset provenance;
+* commercial-use assessment;
+* attribution;
+* unresolved questions.
+
+When uncertain, mark:
+
+COMMERCIAL USE NOT CLEARED
+
+Do not guess.
+
+---
+
+# NO PROPRIETARY DATASET CURRENTLY EXISTS
+
+This is critical.
+
+There is currently NO proprietary measured facial skin-color dataset.
+
+Do NOT block the entire project.
+
+Instead separate work into:
+
+A. tasks executable now;
+B. tasks requiring physical data;
+C. tasks requiring later Luma integration.
+
+Complete A fully.
+
+Prepare B so data can be added immediately when collected.
+
+---
+
+# OPEN DATA POLICY
+
+Search for current datasets that could help with:
+
+* face detection;
+* facial landmarks;
+* anatomical skin segmentation;
+* augmentation research;
+* generic robustness tests.
+
+Only use them if licenses permit the intended use.
+
+For the PRIMARY claim of cross-camera colorimetric facial skin estimation:
+
+do not substitute a generic face dataset for real colorimetric ground truth.
+
+A public dataset can be used for auxiliary pretraining or proxy experiments.
+
+It cannot automatically prove final product accuracy.
+
+If a useful public skin-color dataset contains legitimate instrument measurements and compatible commercial terms, document it carefully and use it as an additional experiment.
+
+Do not allow public datasets to replace our eventual independent measured test set.
+
+---
+
+# SYNTHETIC DATA POLICY
+
+Synthetic data is allowed for:
+
+* unit tests;
+* pipeline smoke tests;
+* checking metric implementations;
+* testing dataset loaders;
+* testing training loops;
+* controlled photometric experiments;
+* validating augmentation code.
+
+Synthetic data must always be marked:
+
+SYNTHETIC
+
+Never report synthetic performance as evidence that real smartphone skin measurement works.
+
+Create a small deterministic synthetic-demo dataset so the complete pipeline can be executed end-to-end without proprietary data.
+
+The synthetic generator may model:
+
+* known Lab/RGB patches;
+* illumination chromaticity;
+* exposure;
+* channel gains;
+* shading;
+* clipping;
+* JPEG noise;
+* simple camera transforms.
+
+Its purpose is engineering validation.
+
+Not scientific proof.
+
+---
+
+# REAL DATASET TO BE COLLECTED LATER
+
+Prepare a professional dataset protocol now.
+
+The fundamental unit should be:
+
+SUBJECT
+×
+SESSION
+×
+FACIAL REGION
+×
+DEVICE/CAMERA
+×
+ILLUMINATION
+×
+REPEAT
+
+Recommended first physical pilot:
+
+10–15 people
+3 smartphone/camera pipelines
+approximately 4 lighting conditions
+2 repeats
+
+This pilot is intended to validate:
+
+* measurement repeatability;
+* data collection workflow;
+* image/measurement alignment;
+* initial baseline error magnitude.
+
+It is NOT enough for broad claims.
+
+After the pilot, estimate variance and determine sample size scientifically.
+
+A reasonable planning scenario for a stronger development dataset may later involve approximately:
+
+80+ people
+3+ devices
+4+ lighting conditions
+2 repeats
+
+Treat this as a planning recommendation, not existing data and not a fixed statistical requirement.
+
+For a stronger validation program, scale further after power/variance analysis.
+
+---
+
+# GROUND TRUTH HIERARCHY
+
+Preferred:
+
+1. spectrophotometer;
+2. calibrated colorimeter;
+3. controlled calibrated photographic reference as fallback.
+
+A smartphone photograph is NOT ground truth.
+
+For instrument measurements document:
+
+* device model;
+* calibration procedure;
+* measurement aperture;
+* measurement geometry;
+* relevant SCI/SCE-type mode where applicable;
+* reference illuminant;
+* observer;
+* facial location;
+* number of repeats;
+* operator procedure;
+* measurement timestamp/session relationship.
+
+Take repeated measurements to estimate instrument/session noise floor.
+
+Do not train a model until the target measurement itself is sufficiently repeatable.
+
+---
+
+# COLORCHECKER / GRAY CARD / RAW
+
+Use a ColorChecker to investigate:
+
+* session validation;
+* camera correction;
+* color transform estimation;
+* drift.
+
+Use a gray card to investigate:
+
+* neutral reference;
+* exposure;
+* simple white-balance estimation.
+
+Use RAW photographs where available to study:
+
+* ISP effects;
+* RAW versus JPEG;
+* camera-response differences.
+
+Do not assume:
+
+ColorChecker = skin ground truth.
+
+Do not assume:
+
+RAW = true physical color.
+
+---
+
+# DATA SCHEMA
+
+Implement an explicit versioned schema.
+
+At minimum support:
+
+subject_id
+session_id
+image_id
+image_path
+device_manufacturer
+device_model
+camera_module
+front_or_rear
+os_version_if_relevant
+capture_app_version
+lighting_id
+lighting_type
+repeat_id
+makeup_protocol
+distance
+pose_metadata_if_known
+exposure_metadata_if_available
+white_balance_metadata_if_available
+reference_region
+ground_truth_L
+ground_truth_a
+ground_truth_b
+reference_instrument
+reference_measurement_id
+split
+notes
+
+Personal identity must not be required by the ML pipeline.
+
+Use opaque subject IDs.
+
+Do not commit participant photographs into Git.
+
+---
+
+# DATA SPLITTING
+
+Create explicit:
+
+TRAIN
+VALIDATION
+CALIBRATION
+TEST
+
+All photographs belonging to the same person must stay in ONE split.
+
+Never allow a subject to occur in both train and test.
+
+Where data permits create:
+
+* unseen-device evaluation;
+* unseen-lighting evaluation;
+* repeated-session evaluation.
+
+Do not fit:
+
+* preprocessing coefficients;
+* CCM parameters;
+* calibration thresholds;
+* error models;
+* abstention thresholds;
+
+on test data.
+
+---
+
+# PHASE 0 — BOOTSTRAP
+
+Create the repository.
+
+Create:
+
+* pyproject.toml;
+* dependency groups;
+* lint/test configuration;
+* AGENTS.md;
+* README;
+* initial docs;
+* source structure;
+* tests;
+* reproducibility utilities.
+
+Detect actual hardware/software environment.
+
+Record:
+
+* OS;
+* Python;
+* PyTorch;
+* CUDA;
+* GPU;
+* VRAM;
+* CPU;
+* RAM where possible.
+
+Create:
+
+docs/research/environment.md
+
+Do not claim RTX 4060 measurements unless actually running on RTX 4060.
+
+---
+
+# PHASE 1 — SCIENTIFIC SPECIFICATION
+
+Create:
+
+docs/research/research_problem.md
+
+It must define:
+
+* observable image;
+* target variable;
+* operating domain;
+* sources of ambiguity;
+* intended output;
+* rejection semantics;
+* prohibited interpretations;
+* falsifiable hypotheses.
+
+Create:
+
+docs/research/novelty_hypothesis.md
+
+Separate:
+
+KNOWN METHOD
+from
+PROPOSED CONTRIBUTION
+from
+UNVERIFIED NOVELTY CLAIM.
+
+---
+
+# PHASE 2 — DATASET PROTOCOL AND TOOLING
+
+Create:
+
+docs/data/dataset_protocol.md
+docs/data/measurement_protocol.md
+docs/data/data_card_template.md
+docs/data/DATA_REQUIRED.md
+
+Implement:
+
+* dataset schema;
+* importer;
+* validator;
+* split generator;
+* leakage checks;
+* dataset summary;
+* measurement-repeatability analysis.
+
+Dataset validation should fail loudly when:
+
+* ground truth is missing;
+* the same subject leaks across splits;
+* reference conditions are incompatible;
+* IDs collide;
+* required metadata is inconsistent.
+
+---
+
+# PHASE 3 — METRICS AND EVALUATION HARNESS
+
+Implement scientifically tested versions of:
+
+* CIELAB conversion;
+* ΔE00;
+* MAE L*/a*/b*;
+* RMSE L*/a*/b*;
+* per-subject aggregation;
+* per-device aggregation;
+* per-lighting aggregation;
+* cross-device variance;
+* cross-lighting variance;
+* catastrophic-error rate;
+* coverage;
+* selective risk;
+* bootstrap confidence intervals.
+
+Where segmentation is evaluated:
+
+* IoU;
+* Dice.
+
+Where binary reliability is evaluated:
+
+* Brier score;
+* reliability diagram;
+* ECE only when its interpretation is justified.
+
+Test mathematical functions against trusted reference values where possible.
+
+---
+
+# PHASE 4 — BASELINES
+
+The proposed technology must beat strong baselines.
+
+Implement:
+
+## A0 — Luma-style visible-color baseline
+
+Because the original Luma source is unavailable, implement a clean-room reference baseline inspired only by the provided context:
+
+* face/landmark location;
+* two cheek regions;
+* remove obvious invalid pixels;
+* robust RGB statistics;
+* convert to Lab;
+* no learned color correction.
+
+Call it:
+
+luma_style_a0
+
+Do NOT claim byte-for-byte reproduction of original Luma.
+
+## A1 — Classical photometric baselines
+
+Include at least:
+
+* no correction;
+* Gray World;
+* Shades of Gray where justified;
+* other lightweight methods supported by literature.
+
+## A2 — Color calibration baselines
+
+Where calibration targets/data allow:
+
+* global color correction matrix;
+* regularized CCM;
+* region-specific CCM.
+
+## C — Standard learned baseline
+
+Compact backbone
+→ color regression.
+
+No proposed ambiguity mechanism.
+
+## C+ — STRONG MATCHED BASELINE
+
+This is essential.
+
+Use approximately comparable:
+
+* backbone;
+* ROI information;
+* training data;
+* preprocessing budget.
+
+Include:
+
+* reasonable learned ROI;
+* best standard correction found;
+* standard Lab regression;
+* conventional error/confidence calibration.
+
+The proposed method must not claim novelty merely by outperforming weak A0.
+
+---
+
+# PHASE 5 — PROPOSED MODEL
+
+Build the proposed approach only after the evaluation harness and baselines exist.
+
+Suggested architecture:
+
+IMAGE
+↓
+FACE / COARSE ROI
+↓
+COMPACT SHARED BACKBONE
+├── ROI RELIABILITY HEAD
+├── COLOR/REGRESSION FEATURES
+├── QUALITY/DOMAIN FEATURES
+└── PHOTOMETRIC CONTEXT
+↓
+MULTIPLE BOUNDED PHOTOMETRIC ESTIMATES
+↓
+REGIONAL COLOR ESTIMATES
+↓
+AMBIGUITY / DISAGREEMENT REPRESENTATION
+↓
+COLOR OUTPUT
++
+PREDICTED ERROR / RELIABILITY
+↓
+CALIBRATION
+↓
+SELECTIVE POLICY
+
+Avoid enormous models.
+
+Keep the implementation modular so alternatives are easy to ablate.
+
+---
+
+# LOSS RESEARCH
+
+Do not create a complicated loss function just to appear novel.
+
+Start with understandable objectives.
+
+Potential components to test separately:
+
+color regression loss
++
+regional reliability loss
++
+paired consistency loss
++
+error-prediction loss
++
+optional teacher distillation loss.
+
+The scientifically important issue is whether a component improves held-out colorimetric risk.
+
+Not whether the mathematical expression looks complex.
+
+---
+
+# PAIRED / CONSISTENCY LEARNING
+
+Once repeated images of the same subject/session are available, investigate consistency objectives.
+
+Examples:
+
+The same physical facial region captured under multiple devices/lighting conditions should map toward a consistent target.
+
+However:
+
+Do NOT force all images of one person to the same representation if ground-truth measurements demonstrate genuine temporal/session variation.
+
+Use measured target data whenever available.
+
+---
+
+# UNCERTAINTY AND ABSTENTION
+
+Build uncertainty as a first-class component.
+
+Separate:
+
+IMAGE QUALITY FAILURE
+from
+OUT-OF-DOMAIN FAILURE
+from
+MODEL MEASUREMENT UNCERTAINTY.
+
+Potential outputs:
+
+predicted_delta_e
+probability_within_tolerance
+prediction_interval
+domain_score
+
+Do not call an arbitrary neural score “confidence.”
+
+Calibrate it.
+
+The primary research visualization must include:
+
+COLOR ERROR
+versus
+ACCEPTED COVERAGE.
+
+For example:
+
+100% coverage → error
+90% coverage → error
+80% coverage → error
+60% coverage → error
+
+Compare methods at SAME coverage.
+
+---
+
+# PRIMARY EXPERIMENT
+
+When real data becomes available, conduct:
+
+Baseline A0
+versus
+A1
+versus
+A2
+versus
+C
+versus
+C+
+versus
+PROPOSED.
+
+Primary candidate endpoint:
+
+ΔE00 at 80% coverage on held-out evaluation.
+
+Do not hard-code 80% as the only result.
+
+Show the full risk/coverage curve.
+
+A reasonable internal R&D success target is:
+
+approximately 15–20% relative reduction of primary error against the strongest relevant baseline at equal coverage.
+
+This is a GO/NO-GO target.
+
+It is NOT an expected or pre-existing result.
+
+If the improvement is smaller, report the real result.
+
+---
+
+# STATISTICS
+
+Repeated photographs are clustered by subject.
+
+Use subject-level resampling for bootstrap confidence intervals.
+
+Prefer paired method comparisons on identical images.
+
+Report uncertainty of the measured improvement.
+
+For central conclusions run multiple seeds where computationally feasible.
+
+Do not report hundreds of photographs of the same people as hundreds of independent participants.
+
+---
+
+# SUBGROUP VALIDATION
+
+Evaluate results across:
+
+* device;
+* camera type;
+* illumination;
+* measured L*/color range;
+* quality categories.
+
+Do not use ethnicity as a proxy for measured skin color.
+
+Look specifically for:
+
+* systematic error;
+* systematic rejection;
+* collapse toward average skin color.
+
+A system that outputs nearly identical colors for everyone can appear stable while being useless.
+
+Therefore always evaluate:
+
+STABILITY
+AND
+ABSOLUTE COLOR ERROR
+AND
+BETWEEN-SUBJECT COLOR PRESERVATION.
+
+---
+
+# TEACHER / STUDENT PHASE
+
+After obtaining a useful high-quality model:
+
+Teacher
+→ soft targets / reliability targets / ambiguity targets
+→ compact student.
+
+Investigate whether student can preserve:
+
+* Lab accuracy;
+* ordering of unreliable images;
+* risk/coverage curve.
+
+Teacher ensemble is allowed during training.
+
+Production should not require teacher ensemble.
+
+Do not classify distillation itself as the innovation.
+
+---
+
+# RTX 4060 TRAINING STRATEGY
+
+All core experiments must fit an 8 GB card.
+
+Start conservatively.
+
+Candidate starting configuration:
+
+224–256 px input
+mixed precision
+microbatch approximately 8 if memory permits
+gradient accumulation to larger effective batch where useful.
+
+Measure actual VRAM.
+
+If out of memory:
+
+* reduce microbatch;
+* freeze backbone;
+* reduce resolution if scientifically acceptable;
+* cache teacher features;
+* use gradient accumulation.
+
+Do not make a huge architecture and then design the entire project around workarounds.
+
+---
+
+# EXPERIMENT TRACKING
+
+Every training/evaluation run must record:
+
+experiment_id
+timestamp
+git_commit
+dataset_version
+dataset_hash
+split_hash
+model
+checkpoint source
+pretrained license
+seed
+resolution
+augmentation
+optimizer
+learning_rate
+weight_decay
+epochs
+batch_size
+gradient_accumulation
+precision
+hardware
+peak_vram
+training_duration
+metrics
+checkpoint
+notes
+
+Prefer a simple transparent experiment registry over unnecessary infrastructure.
+
+MLflow/W&B may be used only if useful and permitted.
+
+The repository must remain reproducible without a proprietary hosted dashboard.
+
+---
+
+# EXPERIMENT CONFIGURATION
+
+Use versioned YAML/TOML configuration.
+
+Avoid important settings hidden only in:
+
+* notebook cells;
+* shell history;
+* Python globals;
+* manual local edits.
+
+Create explicit experiment configs for:
+
+baseline_a0
+baseline_a1
+baseline_a2
+baseline_c
+baseline_c_plus
+proposed_v1
+
+---
+
+# ABLATION STUDY
+
+When real data supports it, run at minimum:
+
+PROPOSED full
+
+minus measurement-aware ROI
+
+minus photometric hypotheses
+
+minus ambiguity features
+
+minus dedicated error head
+
+standard confidence method instead of proposed reliability
+
+no correction branch
+
+classical correction only
+
+no teacher
+
+FP32
+versus
+FP16
+
+optional INT8.
+
+Report:
+
+ΔE00
+coverage
+tail error
+parameters
+latency
+VRAM
+model size.
+
+The point is to demonstrate WHICH element caused the measured advantage.
+
+---
+
+# MODEL COMPRESSION
+
+Only optimize after establishing accuracy.
+
+Investigate:
+
+* distillation;
+* structured pruning if justified;
+* FP16;
+* INT8;
+* ONNX;
+* TensorRT.
+
+For every optimized variant compare predictions against the original model on a frozen evaluation set.
+
+Quantization success must be measured using the COLOR task.
+
+Do not judge INT8 only by generic classification metrics.
+
+If calibration changes after quantization:
+
+recalibrate.
+
+---
+
+# PRODUCTION OUTPUT CONTRACT
+
+Design a versioned engine API that could later integrate into Luma.
+
+Conceptually:
+
+INPUT:
+image
++
+allowed capture metadata
+
+OUTPUT:
+
+{
+"schema_version": "...",
+"status": "accepted | retake | unsupported",
+
+"measurement": {
+"space": "CIELAB",
+"L": ...,
+"a": ...,
+"b": ...,
+"reference": ...
+},
+
+"reliability": {
+"predicted_error_delta_e00": ...,
+"probability_within_tolerance": ...,
+"calibration_version": ...
+},
+
+"quality": {
+"flags": [...],
+"usable_skin_fraction": ...
+},
+
+"photometry": {
+"diagnostics": ...
+},
+
+"rejection": {
+"reason": ...,
+"recommended_action": ...
+},
+
+"provenance": {
+"model_version": ...,
+"preprocessing_version": ...,
+"device_profile_version": ...
+}
+}
+
+Refine the contract based on the research.
+
+Do not expose meaningless raw logits as user-facing confidence.
+
+---
+
+# CAPTURE GUIDANCE
+
+Prepare for a later guided-recapture system.
+
+For each rejection reason identify a practical next action such as:
+
+* move away from mixed light;
+* avoid direct strong highlight;
+* increase face size;
+* hold still;
+* remove strong color filter;
+* use diffuse illumination.
+
+Do NOT build a complex active-recapture research system until the primary single-image R&D question is tested.
+
+Treat active guided recapture as a potential Phase 2 innovation if single-image ambiguity remains a dominant limitation.
+
+---
+
+# PRODUCT CONNECTION
+
+The eventual Luma flow is conceptually:
+
+LUMA CAMERA
+↓
+SKIN VISION ENGINE
+↓
+ACCEPT / RETAKE
+↓
+STRUCTURED SKIN COLOR RESULT
+↓
+USER CONFIRMATION
+↓
+PROFILE
+↓
+COSMETICS RECOMMENDATION ENGINE
+↓
+ADVISOR
+
+The vision engine should remain separately testable.
+
+Do not couple the core measurement model to:
+
+* LLM prompts;
+* catalog CRUD;
+* payment code;
+* UI rendering.
+
+---
+
+# IMPORTANT PRODUCT LIMITATION
+
+Accurate skin-color estimation does NOT by itself guarantee accurate foundation/concealer shade matching.
+
+Product shade matching additionally requires trustworthy product-color information.
+
+Later R&D may require:
+
+* measured product swatches;
+* coverage/opacity;
+* formulation effects;
+* finish;
+* oxidation;
+* application thickness.
+
+Do not hide this limitation.
+
+The first project should prove the skin-measurement technology separately.
+
+---
+
+# PRIVACY
+
+Face photographs must be handled as sensitive research data.
+
+Do not:
+
+* commit real participant images;
+* publish raw participant photographs;
+* send photographs to unrelated external services;
+* store direct personal identifiers in ML metadata.
+
+Use opaque subject IDs.
+
+Create:
+
+docs/data/privacy_requirements.md
+
+The research pipeline does NOT need identity recognition.
+
+---
+
+# IP / KNOW-HOW ANALYSIS
+
+Create:
+
+docs/ip/ip_map.md
+
+For every component classify as one of:
+
+PUBLIC / THIRD-PARTY
+ORDINARY OWN CODE
+POTENTIAL PATENT CANDIDATE
+POTENTIAL TRADE SECRET
+PRIVATE DATA / DATA ASSET
+REQUIRES LEGAL REVIEW
+
+Do not call the whole codebase “know-how.”
+
+Potential trade-secret candidates may include, IF actually developed:
+
+* proprietary measurement protocol;
+* calibration parameters;
+* applicability thresholds;
+* specialized ROI reliability process;
+* private instrumented dataset;
+* hard-case mining procedure;
+* synthetic camera/light perturbation distributions;
+* teacher/student training recipe;
+* model-combination rules.
+
+Potential patent candidates require:
+
+* a concrete technical method;
+* measurable technical effect;
+* prior-art analysis;
+* patent-attorney review.
+
+Do not state that something is patentable as a legal conclusion.
+
+Do not publicly disclose a potentially valuable mechanism unnecessarily before IP strategy is considered.
+
+---
+
+# R&D DOCUMENTATION
+
+Create and continuously maintain:
+
+docs/research/
+CURRENT_RND_STATUS.md
+research_problem.md
+hypotheses.md
+novelty_hypothesis.md
+prior_art.md
+experiment_plan.md
+experiment_registry.md
+negative_results.md
+
+docs/data/
+dataset_protocol.md
+measurement_protocol.md
+DATA_REQUIRED.md
+data_card_template.md
+privacy_requirements.md
+
+docs/architecture/
+architecture.md
+api_contract.md
+deployment.md
+
+docs/benchmarks/
+baseline_report.md
+benchmark_results.md
+ablation_report.md
+deployment_benchmark.md
+
+docs/ip/
+licensing_inventory.md
+ip_map.md
+
+docs/skolkovo/
+technology_overview.md
+evidence_map.md
+commercialization_questions.md
+application_readiness.md
+
+Never populate result documents with fake numbers.
+
+Use:
+
+NOT MEASURED
+
+when appropriate.
+
+---
+
+# SKOLKOVO TECHNICAL EVIDENCE PACKAGE
+
+The engineering project must eventually be able to provide evidence for a technical reviewer.
+
+Create:
+
+docs/skolkovo/evidence_map.md
+
+Structure it around:
+
+TECHNOLOGICAL NOVELTY
+
+What exactly is our proposed technical contribution?
+Which prior art is closest?
+How does the method technically differ?
+What experimental result supports the difference?
+
+FEASIBILITY
+
+Does a working prototype exist?
+Can it train/run with realistic resources?
+What dataset and equipment are required?
+What limitations remain?
+
+COMMERCIALIZATION
+
+What concrete problem does this solve in Luma?
+Who can use/pay for the technology?
+Could it be packaged as API/SDK/engine?
+What is required beyond the ML model?
+
+TEAM / EXECUTION
+
+What roles are required?
+CV/ML
+backend/product integration
+data collection
+colorimetry
+legal/IP where necessary.
+
+Do not invent unavailable team biographies.
+
+Create placeholders for facts that must later be supplied by the founder.
+
+---
+
+# WHAT A GOOD FINAL TECHNICAL RESULT WOULD LOOK LIKE
+
+The ideal final evidence would be a statement of the form:
+
+“On a locked held-out evaluation dataset containing N participants, M camera pipelines and K illumination conditions, the proposed Luma method achieved measured ΔE00 = X at 80% accepted-image coverage compared with ΔE00 = Y for the strongest matched baseline, corresponding to Z% relative improvement, with subject-level confidence interval [...]. The compact production model contains P parameters, has ONNX size S, measured batch-1 latency T and peak VRAM V.”
+
+EVERY VARIABLE IN THAT SENTENCE MUST COME FROM A REAL EXPERIMENT.
+
+Until measured, write:
+
+N = NOT MEASURED
+M = NOT MEASURED
+K = NOT MEASURED
+X = NOT MEASURED
+Y = NOT MEASURED
+Z = NOT MEASURED
+P = NOT MEASURED
+S = NOT MEASURED
+T = NOT MEASURED
+V = NOT MEASURED
+
+Never substitute targets for results.
+
+---
+
+# GO / NO-GO GATES
+
+Implement explicit research gates.
+
+## GATE 1 — MEASUREMENT VALIDITY
+
+Question:
+
+Can the chosen ground-truth protocol itself measure the target with acceptable repeatability?
+
+If NO:
+
+fix the measurement protocol before training.
+
+## GATE 2 — PROBLEM EXISTS
+
+Question:
+
+Does the same subject actually show material cross-device / cross-lighting error under naïve baselines?
+
+If NO:
+
+do not build an unnecessary complicated model.
+
+## GATE 3 — ML VALUE
+
+Question:
+
+Does standard compact ML materially improve over classical methods?
+
+If NO:
+
+a classical/hybrid technology may be more appropriate.
+
+## GATE 4 — PROPOSED INNOVATION
+
+Question:
+
+Does the proposed ambiguity/reliability method improve over strong matched baseline C+?
+
+If NO:
+
+do not claim the mechanism as successful innovation.
+
+Analyze why and pivot.
+
+## GATE 5 — SELECTIVE VALUE
+
+Question:
+
+At a commercially useful coverage level, does abstention materially reduce unacceptable measurement error?
+
+If NO:
+
+the confidence system may not provide enough product value.
+
+## GATE 6 — DEPLOYMENT
+
+Question:
+
+Can the result be transferred into a compact model without destroying the advantage?
+
+If NO:
+
+measure the accuracy/compute tradeoff and choose honestly.
+
+---
+
+# COMMERCIAL SUCCESS IS NOT THE SAME AS TECHNICAL SUCCESS
+
+Technical success:
+
+accurate, calibrated, reproducible color measurement.
+
+Product success:
+
+the measurement improves recommendation decisions.
+
+Later create a separate validation plan for:
+
+SKIN MEASUREMENT
+→ PRODUCT SHADE CANDIDATES
+→ USER OUTCOME.
+
+Do not conflate those stages.
+
+---
+
+# SKOLKOVO IS NOT THE ONLY REASON TO BUILD THIS
+
+The technology should have commercial value even without Skolkovo status.
+
+Potential uses to evaluate:
+
+* Luma consumer recommendations;
+* cosmetics retailer SDK;
+* cosmetics brand shade-selection API;
+* controlled beauty consultation stations;
+* device-adaptive color measurement service.
+
+Do not invent customer demand.
+
+Create a list of commercialization hypotheses requiring validation.
+
+---
+
+# NO MEDICAL CLAIMS
+
+Avoid statements such as:
+
+* diagnoses acne;
+* identifies dermatological disease;
+* measures melanin clinically;
+* diagnoses pigmentation disorders.
+
+Unless a separate regulated medical project and validation exists.
+
+This project is a non-medical appearance/color measurement system.
+
+---
+
+# INTERNET FAILURE MODE
+
+If internet access is unavailable:
+
+do not invent papers, licenses or Skolkovo rules.
+
+Create:
+
+docs/research/EXTERNAL_RESEARCH_REQUIRED.md
+
+List exact queries and sources that must later be checked.
+
+Continue all local engineering work.
+
+---
+
+# ABSENCE OF REAL DATA — REQUIRED BEHAVIOR
+
+When the proprietary dataset is absent, you should still be able to complete:
+
+* repository bootstrap;
+* architecture;
+* AGENTS.md;
+* dependency setup;
+* dataset schemas;
+* dataset validators;
+* subject leakage detection;
+* mathematical metrics;
+* ΔE00 implementation/tests;
+* synthetic demo generator;
+* training framework;
+* baseline implementations;
+* model wrappers;
+* experiment configs;
+* evaluation framework;
+* uncertainty interfaces;
+* calibration framework;
+* selective-risk implementation;
+* ONNX export skeleton;
+* benchmark tooling;
+* API contract;
+* documentation;
+* prior-art research if internet exists;
+* licensing inventory;
+* data collection protocol;
+* Skolkovo evidence templates.
+
+You may use synthetic data to smoke-test:
+
+train.py
+evaluate.py
+calibrate.py
+export_onnx.py
+
+The expected result is:
+
+THE ENTIRE MACHINE WORKS.
+
+Only scientific claims remain blocked on real measured data.
+
+---
+
+# FIRST ITERATION — DO THIS NOW
+
+Start in planning mode.
+
+Inspect the empty environment.
+
+Then create a concrete implementation plan.
+
+After the plan, continue executing all tasks that are not blocked by missing physical data.
+
+Do NOT stop after writing a plan.
+
+Your first major milestone must leave behind a runnable repository.
+
+At minimum by the end of the first milestone:
+
+1. Git/project structure exists.
+2. AGENTS.md exists.
+3. README explains the mission.
+4. research_problem.md exists.
+5. dataset_protocol.md exists.
+6. versioned dataset schema exists.
+7. dataset validation works.
+8. ΔE00 and evaluation metrics are implemented and tested.
+9. synthetic demo data can be generated.
+10. at least the deterministic baselines run on synthetic/demo inputs.
+11. training CLI runs end-to-end on synthetic data.
+12. experiment registry works.
+13. prior-art/licensing research is documented if network is available.
+14. DATA_REQUIRED.md clearly specifies what I must physically collect next.
+15. CURRENT_RND_STATUS.md distinguishes COMPLETED from BLOCKED.
+
+Run tests.
+
+Show actual commands and results.
+
+---
+
+# SECOND ITERATION — MODEL INFRASTRUCTURE
+
+After the first milestone is verified:
+
+implement compact model training architecture.
+
+Research/select a small backbone.
+
+Implement:
+
+standard C baseline.
+
+Implement interfaces for:
+
+ROI reliability;
+photometric hypotheses;
+ambiguity representation;
+error prediction;
+selective policy.
+
+Keep them modular.
+
+Demonstrate end-to-end training on synthetic/demo data solely as an engineering smoke test.
+
+Do NOT call synthetic metrics research results.
+
+---
+
+# THIRD ITERATION — DATA ARRIVAL
+
+When I later provide the first real dataset:
+
+DO NOT redesign everything from scratch.
+
+Run:
+
+dataset validation
+→ repeatability study
+→ A0/A1/A2
+→ C
+→ C+
+→ Proposed
+→ calibration
+→ risk/coverage
+→ ablation.
+
+Give me the actual evidence.
+
+---
+
+# FOURTH ITERATION — PRODUCTIONIZATION
+
+Only after positive evidence:
+
+teacher/student;
+optimization;
+ONNX;
+FP16;
+optional INT8;
+TensorRT;
+latency benchmark;
+VRAM benchmark;
+model card;
+integration contract.
+
+---
+
+# CODING STANDARDS
+
+Use modern Python.
+
+Prefer:
+
+Python 3.11+ where compatible
+PyTorch
+NumPy
+OpenCV where justified
+scikit-learn/scipy only when they add value
+pytest
+Ruff
+type hints
+
+Avoid dependency bloat.
+
+Avoid building an enterprise platform around an R&D prototype.
+
+Avoid premature distributed training.
+
+Avoid Kubernetes.
+
+Avoid microservices until deployment requirements justify them.
+
+Prefer:
+
+simple
+reproducible
+testable
+measurable.
+
+---
+
+# TESTING
+
+Test:
+
+color conversions;
+ΔE00 reference cases;
+dataset schema;
+subject leakage;
+split reproducibility;
+ROI geometry;
+photometric transforms;
+selective metrics;
+calibration serialization;
+model loading;
+ONNX equivalence when implemented.
+
+A training script that starts is not sufficient proof that the system is correct.
+
+---
+
+# REPRODUCIBILITY COMMANDS
+
+Design the project so a new engineer can approximately do:
+
+uv sync
+or equivalent
+
+pytest
+
+python scripts/inspect_environment.py
+
+python scripts/generate_synthetic_demo.py
+
+python scripts/validate_dataset.py --config ...
+
+python scripts/train.py --config configs/experiments/baseline_c.yaml
+
+python scripts/evaluate.py --experiment ...
+
+python scripts/calibrate.py --experiment ...
+
+python scripts/benchmark.py --experiment ...
+
+python scripts/export_onnx.py --experiment ...
+
+Choose actual CLI conventions consistently.
+
+Document exact commands.
+
+---
+
+# STATUS REPORTING
+
+At the end of every major work session update:
+
+docs/research/CURRENT_RND_STATUS.md
+
+Use:
+
+COMPLETED
+IN PROGRESS
+BLOCKED
+FAILED
+NOT STARTED
+
+For every COMPLETED claim include evidence.
+
+At the end of your response report:
+
+## COMPLETED
+
+What actually exists.
+
+## TESTED
+
+Commands and results.
+
+## MEASURED
+
+Only real numbers produced by this environment.
+
+## BLOCKED BY REAL DATA
+
+What cannot proceed without physical data.
+
+## RESEARCH RISKS
+
+What could invalidate the current hypothesis.
+
+## NEXT BEST ACTION
+
+The highest-value next executable action.
+
+Do not give a generic progress report.
+
+---
+
+# IMPORTANT AUTONOMY RULE
+
+Do not ask me routine technical questions.
+
+Make reasonable professional choices and document them.
+
+Ask only when you need:
+
+* a physical dataset;
+* credentials;
+* paid external resources;
+* an irreversible publication/action;
+* a business decision that materially changes the scientific target.
+
+Do not ask:
+
+“Which Python package should I use?”
+“Should I create tests?”
+“Should I use YAML?”
+“Should I create the directory?”
+
+Decide and continue.
+
+---
+
+# IMPORTANT ANTI-HALLUCINATION RULE
+
+Never convert:
+
+PLANNED
+into
+IMPLEMENTED.
+
+Never convert:
+
+TARGET
+into
+MEASURED RESULT.
+
+Never convert:
+
+PUBLIC DATA RESULT
+into
+LUMA PROPRIETARY RESULT.
+
+Never convert:
+
+SYNTHETIC RESULT
+into
+REAL-WORLD RESULT.
+
+Never convert:
+
+POTENTIAL NOVELTY
+into
+PROVEN NOVELTY.
+
+Never convert:
+
+POTENTIAL SKOLKOVO FIT
+into
+SKOLKOVO APPROVAL.
+
+Never convert:
+
+POTENTIAL IP
+into
+PATENTABILITY.
+
+Maintain those distinctions in every document.
+
+---
+
+# THE ONE RESULT WE ARE ULTIMATELY TRYING TO OBTAIN
+
+Everything in this repository should converge toward one falsifiable technical result:
+
+> A compact proprietary method for facial skin-color estimation from smartphone images that, on a properly constructed independent real-world evaluation dataset, demonstrates lower colorimetric error than strong conventional alternatives at the same accepted-image coverage, while identifying and rejecting measurements likely to be unreliable.
+
+If that result is achieved and reproducible, create the technical evidence package around it.
+
+If that result is NOT achieved, tell me clearly and propose the smallest technically meaningful pivot.
+
+Possible pivots include:
+
+* simpler classical + ML hybrid;
+* explicit calibrated-device mode;
+* few-shot device calibration;
+* two-image guided capture;
+* active recapture based on uncertainty.
+
+Do not invent a new “innovation” merely because the first hypothesis failed.
+
+---
+
+# BEGIN
+
+Start now.
+
+First create the R&D plan and repository map.
+
+Then execute the non-blocked first milestone.
+
+Do not wait for the original Luma repository.
+
+Do not wait for a dataset before building the infrastructure required to collect, validate, train and evaluate it.
+
+Do not report a successful technology until real measured data supports that conclusion.

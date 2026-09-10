@@ -1,0 +1,328 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "data_kind": {
+      "enum": [
+        "SYNTHETIC",
+        "INSTRUMENT",
+        "PHOTO_REFERENCE"
+      ],
+      "title": "Data Kind",
+      "type": "string"
+    },
+    "subject_id": {
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_-]+$",
+      "title": "Subject Id",
+      "type": "string"
+    },
+    "session_id": {
+      "minLength": 1,
+      "title": "Session Id",
+      "type": "string"
+    },
+    "image_id": {
+      "minLength": 1,
+      "title": "Image Id",
+      "type": "string"
+    },
+    "image_path": {
+      "minLength": 1,
+      "title": "Image Path",
+      "type": "string"
+    },
+    "image_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Image Sha256",
+      "type": "string"
+    },
+    "image_mirrored": {
+      "description": "Whether stored post-EXIF pixels are mirrored; normalize before anatomical ROI",
+      "title": "Image Mirrored",
+      "type": "boolean"
+    },
+    "device_manufacturer": {
+      "title": "Device Manufacturer",
+      "type": "string"
+    },
+    "device_model": {
+      "minLength": 1,
+      "title": "Device Model",
+      "type": "string"
+    },
+    "camera_module": {
+      "title": "Camera Module",
+      "type": "string"
+    },
+    "front_or_rear": {
+      "enum": [
+        "front",
+        "rear",
+        "synthetic"
+      ],
+      "title": "Front Or Rear",
+      "type": "string"
+    },
+    "os_version_if_relevant": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Os Version If Relevant"
+    },
+    "capture_app_version": {
+      "title": "Capture App Version",
+      "type": "string"
+    },
+    "lighting_id": {
+      "minLength": 1,
+      "title": "Lighting Id",
+      "type": "string"
+    },
+    "lighting_type": {
+      "title": "Lighting Type",
+      "type": "string"
+    },
+    "repeat_id": {
+      "minimum": 0,
+      "title": "Repeat Id",
+      "type": "integer"
+    },
+    "makeup_protocol": {
+      "enum": [
+        "none",
+        "present",
+        "unknown",
+        "synthetic"
+      ],
+      "title": "Makeup Protocol",
+      "type": "string"
+    },
+    "distance": {
+      "description": "meters",
+      "exclusiveMinimum": 0,
+      "title": "Distance",
+      "type": "number"
+    },
+    "pose_metadata_if_known": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Pose Metadata If Known"
+    },
+    "exposure_metadata_if_available": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Exposure Metadata If Available"
+    },
+    "white_balance_metadata_if_available": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "White Balance Metadata If Available"
+    },
+    "reference_region": {
+      "enum": [
+        "left_cheek",
+        "right_cheek"
+      ],
+      "title": "Reference Region",
+      "type": "string"
+    },
+    "ground_truth_L": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Ground Truth L",
+      "type": "number"
+    },
+    "ground_truth_a": {
+      "maximum": 160,
+      "minimum": -160,
+      "title": "Ground Truth A",
+      "type": "number"
+    },
+    "ground_truth_b": {
+      "maximum": 160,
+      "minimum": -160,
+      "title": "Ground Truth B",
+      "type": "number"
+    },
+    "reference_illuminant": {
+      "const": "D65",
+      "title": "Reference Illuminant",
+      "type": "string"
+    },
+    "reference_observer": {
+      "const": "2",
+      "title": "Reference Observer",
+      "type": "string"
+    },
+    "reference_instrument": {
+      "minLength": 1,
+      "title": "Reference Instrument",
+      "type": "string"
+    },
+    "reference_measurement_id": {
+      "minLength": 1,
+      "title": "Reference Measurement Id",
+      "type": "string"
+    },
+    "reference_geometry": {
+      "minLength": 1,
+      "title": "Reference Geometry",
+      "type": "string"
+    },
+    "reference_mode": {
+      "minLength": 1,
+      "title": "Reference Mode",
+      "type": "string"
+    },
+    "reference_aperture_mm": {
+      "exclusiveMinimum": 0,
+      "title": "Reference Aperture Mm",
+      "type": "number"
+    },
+    "reference_calibration_id": {
+      "minLength": 1,
+      "title": "Reference Calibration Id",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "minLength": 1,
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "reference_repeats_lab": {
+      "items": {
+        "maxItems": 3,
+        "minItems": 3,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "minItems": 2,
+      "title": "Reference Repeats Lab",
+      "type": "array"
+    },
+    "face_bbox": {
+      "maxItems": 4,
+      "minItems": 4,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Face Bbox",
+      "type": "array"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "validation",
+        "calibration",
+        "test"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "data_kind",
+    "subject_id",
+    "session_id",
+    "image_id",
+    "image_path",
+    "image_sha256",
+    "image_mirrored",
+    "device_manufacturer",
+    "device_model",
+    "camera_module",
+    "front_or_rear",
+    "capture_app_version",
+    "lighting_id",
+    "lighting_type",
+    "repeat_id",
+    "makeup_protocol",
+    "distance",
+    "reference_region",
+    "ground_truth_L",
+    "ground_truth_a",
+    "ground_truth_b",
+    "reference_illuminant",
+    "reference_observer",
+    "reference_instrument",
+    "reference_measurement_id",
+    "reference_geometry",
+    "reference_mode",
+    "reference_aperture_mm",
+    "reference_calibration_id",
+    "reference_timestamp",
+    "reference_repeats_lab",
+    "face_bbox",
+    "split"
+  ],
+  "title": "Record",
+  "type": "object"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0-proposed",
+  "analysis_id": "illustrative-not-a-real-scan",
+  "status": "retake",
+  "usable": false,
+  "measurement": null,
+  "uncertainty": {
+    "calibration_id": null,
+    "probability_error_within_tolerance": null,
+    "tolerance_delta_e00": null,
+    "domain_status": "unsupported"
+  },
+  "quality": {
+    "flags": [
+      "mixed_lighting_suspected"
+    ],
+    "usable_skin_fraction": null
+  },
+  "lighting": {
+    "estimate_type": "model_hypothesis_not_physical_measurement",
+    "illuminant_chromaticity": null
+  },
+  "rejection": {
+    "code": "photometric_ambiguity",
+    "suggested_action": "retake_in_diffuse_daylight_without_filters"
+  },
+  "provenance": {
+    "model_version": "not-trained",
+    "preprocessing_version": "proposed",
+    "device_profile_id": null
+  },
+  "profile_update": {
+    "requires_user_confirmation": true,
+    "may_update": false
+  }
+}
