@@ -26,6 +26,13 @@ The overall R&D goal is active. Revalidate handles before restarting any work.
   Training torch/numpy/model code were not upgraded. Per-seed provenance is
   retained; do not describe every seed as launched from one clean Git checkout.
 - V5 inference timing/export/calibrated reliability remains unmeasured.
+- Equal-query search control completed on all10 trained-critic best checkpoints
+  from seeds17/29. Every25-query first stage retained the original point on all
+  119 images;51-query adaptive and fixed selections were bitwise identical.
+  At103 queries, differences are small and mixed (largest absolute mean-error
+  difference0.01061°). This does not support crediting feedback/recentering for
+  the25-to51-query gain. [Control report](../benchmarks/cc_v5/two_seed_search_control/report.md).
+  Session76511 finished successfully; no new training or phone test data used.
 - Smartphone acquisition session92820 terminated with HTTP429 after partial
   acquisition. Resume session98768 now uses a tested transport wrapper with
   request spacing and bounded Retry-After retries; existing files are reverified
@@ -63,4 +70,7 @@ verify phone acquisition and freeze method/weight/calibration identities before
 scoring reserved scenes under the now-fixed reference protocol. Continue independent
 iPhone ground-truth search; no proprietary facial collection is required now.
 The original FFCC-inspired numerical control remains untrained. Teacher/EMA and
-equal-query nonadaptive controls remain required future candidates, not results.
+an independent-domain search comparison remain future work. The equal-query
+nonadaptive control is now measured on the two-seed source-development screen.
+The focused2026 prior-art update confirms compact teacher distillation and
+semantic weighting already exist; no claim that those ideas alone are novel.

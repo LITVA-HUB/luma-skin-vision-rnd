@@ -106,6 +106,42 @@ Problem/method: smartphone RGB Colorimeter compared with e-skin spectrocolorimet
 
 Code: proprietary app/no verified grant. Weights: no verified learned component. Data: NOT VERIFIED. COMMERCIAL USE NOT CLEARED for artifacts. Overlap: phone-based skin-color measurement is longstanding. Limitation: swatches do not reproduce living cheek geometry, specularity or physiology; useful instrument protocol precedent, not a ready Luma benchmark.
 
+## Focused update: compact teaching and phone references, 2026-09-11
+
+- Zhao, Luo, Shang and Qu, **Device-specific lightweight color constancy via
+  knowledge distillation and fuzzy PID-guided training**, SPIE IPIC2026,
+  published2026-07-13, [primary abstract](https://doi.org/10.1117/12.3119239).
+  The authors combine teacher illumination features, a compact student,
+  pseudo-labels and device-specific adaptation. This directly rules out
+  claiming that teaching a small color-constancy model from a large model is
+  new. Full tables/protocol and artifact licenses were not verified; no reported
+  numbers reproduced. The abstract's linked QLUKD/FPID-KDCC repository returned
+  HTTP404 during this check. No code or weights adopted.
+- **CSNet: A content and structure-aware approach for color constancy**,
+  [primary2026 publisher record](https://www.sciencedirect.com/science/article/pii/S1077314226000056).
+  The indexed abstract describes semantic-aware weighting for RGB illuminant
+  estimation. Full-page access returned403; architecture/compute/results are
+  not sufficiently inspected for an exact comparison. Treat content/semantic
+  weighting as known prior art, not a novelty claim for a DINO-trained student.
+- Jung, **Comparative Study of Multispectral Image-Based Auto White Balance
+  With Optimized Conditions**,2025,
+  [primary article](https://doi.org/10.1155/jspe/7775119), uses paired Beyond RGB
+  images without a chart as inputs and a median gray patch from the chart
+  capture as illumination supervision. Its manually filtered population and
+  multispectral protocol differ from our paired-phone field screen. No
+  author numbers are entered into locally reproduced tables. This supports
+  the reference construction but does not validate our specific quality filter,
+  camera transfer result or a physical skin-color claim.
+
+The optional Apache2.0 DINOv2 teacher is only acquired and load-checked so far;
+it has not supervised a model. Any later raw-versus-canonical teacher experiment
+must keep true illumination available only during training, compare ordinary
+distillation and no-teacher controls, and keep the photometric input stream
+separate from desired semantic invariance. Canonicalizing a training image by
+its illuminant is an approximation, not measured intrinsic surface color.
+The current priority is finishing paired V5 and equal-query controls and the
+phone reference/evaluation pipeline. New teacher results remain NOT MEASURED.
+
 ## Research consequence
 
 Broad novelty claims are untenable: smartphone skin colorimetry, regional CCM, albedo/illumination disambiguation, compact regressors and selective prediction all have close precedents. The narrow remaining hypothesis is whether *measurement-error-supervised regional reliability plus bounded photometric instability* adds useful held-out ΔE00 risk reduction beyond a tuned compact correction/regression/residual-selector baseline. No reviewed source proves this combination absent; patent/FTO search remains separate and NOT STARTED.

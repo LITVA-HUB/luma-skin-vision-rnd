@@ -11,6 +11,13 @@ on six TRAIN captures; no held-out phone accuracy has been measured. [Current ha
 numbers and next steps](cc_v5_execution_status.md),
 [phone-data rights and protocol](../data/smartphone_benchmark_plan.md).
 
+New diagnostic: on both completed seeds, all five trained critics retain the
+original point after the coarse25-query search on every validation image.
+Thus51-query adaptive and fixed multiscale searches select exactly the same
+actions. At103 queries the difference is small and mixed. This specifically
+weakens the repeated-refinement hypothesis for the present design;
+[equal-query control](../benchmarks/cc_v5/two_seed_search_control/report.md).
+
 V5 is now testing selected-action error supervision and physical cost derivatives
 against point-only, posterior and generic action controls. Six arms per seed,
 seeds17/29/43, 120 epochs. All arms clone complete20-epoch warmup state;
