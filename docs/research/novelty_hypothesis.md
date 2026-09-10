@@ -1,3 +1,11 @@
+# Active public-benchmark hypothesis
+
+See [ranked public decision](public_hypothesis_decision.md), [fresh prior art](public_color_prior_art.md) and [frozen experimental protocol](public_protocol_v1.md). Compact single-image transfer and selective reproduction-risk estimation are UNVERIFIED research hypotheses; algorithm mixtures, error prediction and abstention are not independently novel. No physical ΔE00 or facial-color claim follows from illuminant ground truth. Historical facial hypothesis below is deferred while proprietary collection is unavailable.
+
+---
+
+Historical synthetic/facial-stage material follows.
+
 # Novelty hypothesis — provisional, 2026-09-10
 
 Status: NOT VALIDATED. Literature analysis is evidence about prior art, not a scientific result or patentability opinion. See [prior art](prior_art.md).

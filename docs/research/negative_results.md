@@ -1,3 +1,19 @@
+# Public milestone negative findings — 2026-09-10
+
+Preserve the historical synthetic observations below. New real-data results are in [public benchmark](../benchmarks/public_benchmark_report.md).
+
+- Three-seed official SimpleCube++ risk80: Proposed1.586° versus ordinary estimator/combined-risk control1.556°; AURC1.333 versus1.260. Special mixture selective advantage is not established. Full-error improvement2.085° versus2.166° is small; paired primary-seed intervals include no gain.
+- Primary seed17 tail worsens: p95 Proposed9.614° versus C+8.250°; >10° frequency4.5% versus3.0%.
+- Sony30 external pilot: Proposed5.520° versus Gray World4.073°. The ordinary learned estimator is worse8.859°. Rejection does not rescue generalization; at80% Proposed4.430° versus Gray World+learned selector2.987°.
+- Source-calibrated acceptance is not a camera-independent guarantee. Standard C+ keeps about51% of Sony examples with8.455° mean residual; the promised reliability does not transfer.
+- Same-sensor550D→600D has a small positive point result, but cannot offset different-sensor failure or establish broad camera independence.
+
+Decision: do not optimize/export the mixture as a demonstrated advance. Continue public-data R&D with the standard compact estimator and stronger error-calibration baselines, diverse cleared sensors and locked new protocols. Do not rebrand the negative mixture as a novel ensemble.
+
+---
+
+Historical synthetic/facial-stage material follows.
+
 # Negative-results register
 
 Status: **NO REAL EXPERIMENTS RUN; results NOT MEASURED.** Add one immutable entry for every failed gate, null result, harmful ablation, protocol failure, or unsupported domain.

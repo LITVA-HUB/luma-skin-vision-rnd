@@ -1,0 +1,33 @@
+{
+  "hardware": "RTX4060 + Ryzen9 7900X, torch/OpenCV4 threads",
+  "scope": "Unoptimized FP32, compressed PNG bytes already in RAM; decode/black mask/resize/expert bank/H2D/model/D2H/risk/full-resolution diagonal correction included. Disk read, UI and face analysis excluded.",
+  "results": {
+    "baseline_context": {
+      "samples": 50,
+      "warmup": 5,
+      "preprocess_median_ms": 17.551000011735596,
+      "experts_median_ms": 0.007800001185387373,
+      "gpu_transfer_model_risk_correction_median_ms": 5.613200002699159,
+      "full_path_median_ms": 23.212000000057742,
+      "full_path_p95_ms": 24.22875499469228
+    },
+    "baseline_combined": {
+      "samples": 50,
+      "warmup": 5,
+      "preprocess_median_ms": 17.57779999752529,
+      "experts_median_ms": 41.865499995765276,
+      "gpu_transfer_model_risk_correction_median_ms": 5.7085500011453405,
+      "full_path_median_ms": 65.13790000462905,
+      "full_path_p95_ms": 66.09047998354072
+    },
+    "proposed_combined": {
+      "samples": 50,
+      "warmup": 5,
+      "preprocess_median_ms": 18.08744999289047,
+      "experts_median_ms": 43.11504999350291,
+      "gpu_transfer_model_risk_correction_median_ms": 8.01040000806097,
+      "full_path_median_ms": 69.00480001058895,
+      "full_path_p95_ms": 72.90354499273235
+    }
+  }
+}

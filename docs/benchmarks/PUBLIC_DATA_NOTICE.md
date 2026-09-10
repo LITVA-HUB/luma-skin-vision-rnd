@@ -1,0 +1,8 @@
+# Public benchmark evidence attribution
+
+This directory's public color-constancy tables and JSON contain numerical derivatives/ground-truth vectors from the following datasets. They are separate from the repository's independently written code and from historical synthetic results.
+
+- **SimpleCube++ / Cube++**, Ershov, Savchik, Semenkov, Banić, Belokopytov, Senshina, Koščević, Subašić and Lončarić, *The Cube++ Illumination Estimation Dataset*, IEEE Access8(2020)227511–227527. [Original dataset](https://github.com/Visillect/CubePlusPlus), [Zenodo v2](https://zenodo.org/records/4153431), [CC BY4.0](https://creativecommons.org/licenses/by/4.0/). Local modifications: documented masking/black normalization, thumbnails, partitions, numerical predictions/errors.
+- **INTEL-TAU**, Laakom, Raitoharju, Nikkanen, Iosifidis and Gabbouj, *INTEL-TAU: A Color Constancy Dataset*, IEEE Access9(2021)39560–39567. [Original data registration](https://research.fi/en/results/dataset/f0570a3f-3d77-4f44-9ef1-99ab4878f17c), [CC BY-SA4.0](https://creativecommons.org/licenses/by-sa/4.0/). Only30 Sony examples redistributed by Afifi, Barron, LeGendre, Tsai and Bleibel's [C5 ICCV2021 repository](https://github.com/mahmoudnafifi/C5), pinned commit recorded in provenance. Local changes: resizing and numerical evaluation. No Intel-TAU image or label trains/calibrates our weights. Retain BY-SA for these data-derived records; the Apache code badge does not replace upstream terms.
+
+Images and weights remain local, outside Git. No external publication has occurred. Provenance manifests distinguish original archive verification from author-redistributed pilot provenance. No author endorsement is implied.

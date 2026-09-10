@@ -1,0 +1,54 @@
+# Public data rights ledger
+
+Review date: 2026-09-10. Scope: local color-constancy R&D and potential commercial model training. No external publication, image redistribution, paid service, account creation or contacting authors was performed by this review. This records evidence and operational decisions; it does not conflate paper, code, weights and image rights.
+
+## Classification rules
+
+- **CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING**: a data-specific original grant permits commercial reproduction/adaptation, subject to its conditions. This does not grant unrestricted publication of derivatives or certify other rights.
+- **RESEARCH EVALUATION ONLY**: explicit noncommercial/research terms; retain outside the commercial pipeline. Internal evaluation supporting a commercial product is not automatically noncommercial.
+- **LICENSE UNCLEAR**: no adequate data-specific grant verified; commercial use is not cleared, and this milestone does not ingest the data.
+- **DO NOT USE**: explicit incompatibility with this project or a withdrawn release.
+
+## Evidence and decisions
+
+| Dataset | Category | Original data-rights evidence | Consequence |
+|---|---|---|---|
+| Cube++ / SimpleCube++ | CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING | [Author README source file](https://raw.githubusercontent.com/Visillect/CubePlusPlus/master/README.md), Download section: “Data is avalilable on zenodo.org and the FTP mirror under CC BY 4.0 license.” | Statement expressly applies to data. Keep author attribution, source/license URL and transformation history. It is not merely a repository-code badge. |
+| INTEL-TAU | CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING | [Finnish national research-data registration](https://research.fi/en/results/dataset/f0570a3f-3d77-4f44-9ef1-99ab4878f17c), License: “Creative Commons Attribution ShareAlike 4.0 International (CC BY SA 4.0)”. Page identifies source as Fairdata IDA datasets and links the original dataset URN. | Commercial use allowed by the registered DATA license; preserve attribution and ShareAlike duties where applicable. The separate IEEE article uses CC BY and is not the basis for this decision. |
+| MLS author-created images, annotations and measurements | CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING | [Original README source file](https://raw.githubusercontent.com/visillect/mls-dataset/master/README.md), License & citation: “Licensed under a Creative Commons Attribution-ShareAlike 4.0 International License”. Copyright: Visillect Service LLC (2018), developed for IITP RAS. | Commercial reproduction/adaptation is allowed subject to BY-SA. The camera spectral-sensitivity CSV is explicitly derived from Baek et al.; do not assume the README grants additional third-party figure rights. Exclude that file from commercial adoption until separately resolved. |
+| MIT Multi-Illumination | CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING | [Original MIT author data page](https://projects.csail.mit.edu/illumination/), Data section: “All data licensed under CC-BY”. Its link resolves to CC BY 4.0. | This grant covers data, including linked image distributions. Retain authors/source/license/modification record. |
+| NUS-8 | LICENSE UNCLEAR | [Original author page](https://yorkucvil.github.io/projects/public_html/illuminant/illuminant.html), [original readme.txt](https://yorkucvil.github.io/projects/public_html/illuminant/readme.txt) inspected. No explicit data license or commercial grant found. | Availability, citation language and RAW reprocessing instructions are not a complete commercial-rights grant. A Hugging Face Apache badge cannot replace upstream permission. |
+| Gehler-Shi / RECommended | LICENSE UNCLEAR | [SFU original reprocessing page](https://www.cs.sfu.ca/~colour/data/shi_gehler/), [UEA reprocessing page](https://colour.cmp.uea.ac.uk/datasets/reprocessed-gerler.html); citation instructions found, explicit commercial data terms not verified. [RECommended paper](https://arxiv.org/abs/1805.12262) describes regenerated targets. | Recomputed GT does not relicense original photographs. The reported original GT pointer is `http://colorconstancy.com/wp-content/uploads/2018/09/groundtruthcoordinates.zip`; original site was inaccessible in this review. Do not adopt a mirror's Apache/MIT label as image rights. |
+| LSMI | RESEARCH EVALUATION ONLY | [Original README source file](https://raw.githubusercontent.com/DY112/LSMI-dataset/main/README.md), explicitly titled Dataset License: “Creative Commons Attribution-NonCommercial 4.0 International License”. | No commercial training. Any isolated noncommercial experiment must satisfy NC rather than assume that local use qualifies. |
+| MIMI | RESEARCH EVALUATION ONLY | [Original Spectricity README](https://github.com/Spectricity/MIMI-dataset#-dataset-license), Dataset License states CC BY-NC 4.0. | No commercial training; download is also larger than the permitted budget. |
+| Mixed-illuminant WB synthetic test set | RESEARCH EVALUATION ONLY | [Original README](https://github.com/mahmoudnafifi/mixedillWB#commercial-use): “This software and data are provided for research purposes only and CANNOT be used for commercial purposes.” | Restriction explicitly includes data. Do not transfer its data or resulting fitted artifacts into a commercial pipeline. |
+| Shadows & Lumination | LICENSE UNCLEAR | [Original author page](https://ilijad.github.io/shal.html) and [paper](https://doi.org/10.1016/j.eswa.2023.120045) inspected; public availability asserted, no original dataset-license text located. | Defer ingestion; public availability alone is insufficient. |
+| Sony DoLP | LICENSE UNCLEAR | [Original source README](https://raw.githubusercontent.com/sony/dolp-colorconstancy/main/README.md) gives MIT for software and requires contacting authors for data access. | Software license does not clear image data; access procedure is outside this task. |
+| Withdrawn INTEL-TUT | DO NOT USE | [INTEL-TAU author paper](https://arxiv.org/abs/1910.10404) describes withdrawal of its 1,558-image predecessor due to privacy noncompliance. | Do not use old unmasked downloads/mirrors in place of INTEL-TAU. |
+
+## Exact license sources and interpretation
+
+Rendered WB is explicitly research-only for BOTH software and data, with separate commercial licensing required: [original author statement](https://github.com/mahmoudnafifi/WB_sRGB#commercial-use), checked2026-09-10. FaceOLAT's [author repository](https://github.com/prraoo/FaceOLAT) states academic/research intention but directs to a gated agreement; no commercial rights were verified and no account was created. Both are excluded from images, weights, teachers and production dependencies in this milestone.
+
+Data-license declaration sources are the linked original author README/page or the INTEL-TAU original registration mirrored by the national Research.fi service. A separate original `LICENSE` file for INTEL-TAU was **not** obtained. The direct [Fairdata landing record](https://etsin.fairdata.fi/dataset/f0570a3f-3d77-4f44-9ef1-99ab4878f17c) returned a JavaScript shell through web retrieval; local Etsin and Metax requests timed out. The registry evidence is stronger than an arbitrary image reupload because its explicitly named source is Fairdata IDA and its URN matches Tampere University's dataset listing. Keep this access limitation visible in provenance.
+
+An [official Fairdata description of Metax V3](https://www.fairdata.fi/en/metax-api-new-version-now-also-for-end-users/) confirms that Metax holds the published dataset metadata shown in both Etsin and Research.fi. This corroborates the provenance of the registry's data-license field. A follow-up using the documented V3 and legacy-host APIs was still unsuccessful; it does not alter the distinction between verified registration rights and unavailable original file/checksum evidence.
+
+Canonical legal texts: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.en), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en), [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Interpretation for this milestone: BY and BY-SA authorize reproduction and adaptation without a noncommercial restriction. Store creator identity, source, license and modifications with every dataset manifest. Sharing licensed material activates attribution conditions. Sharing adapted BY-SA material activates ShareAlike; this review does **not** assume every trained model is, or is not, adapted material. Local training clearance is not approval to distribute weights under incompatible terms. No publication is planned. CC licenses do not grant patent, trademark, privacy or publicity rights beyond their stated scope.
+
+Suggested attribution records:
+
+- Cube++: Ershov et al., *The Cube++ Illumination Estimation Dataset*, IEEE Access 8, 227511–227527 (2020); author repository; CC BY 4.0; record subset selection, resizing and feature extraction.
+- INTEL-TAU: Laakom, Raitoharju, Nikkanen, Iosifidis and Gabbouj, *INTEL-TAU: A Color Constancy Dataset*, IEEE Access 9, 39560–39567 (2021); original URN and Fairdata UUID above; CC BY-SA 4.0; record source variant and all further changes.
+- MLS: Smagina, Ershov and Grigoryev, *Multiple Light Source Dataset for Colour Research* (2019), Visillect Service LLC / IITP RAS; CC BY-SA 4.0.
+- MIT: Murmann, Gharbi, Aittala and Durand, *A Multi-Illumination Dataset of Indoor Object Appearance*, ICCV 2019; original MIT data page; CC BY 4.0.
+
+## C5 redistribution: limited pilot, no license laundering
+
+[C5's author README](https://raw.githubusercontent.com/mahmoudnafifi/C5/main/README.md) explicitly identifies its 30 `images/` examples as INTEL-TAU Sony IMX135. Its [Apache-2.0 LICENSE](https://raw.githubusercontent.com/mahmoudnafifi/C5/main/LICENSE) must be recorded separately for C5 code/authored modifications. The image-data basis remains the original INTEL-TAU **CC BY-SA 4.0** grant, not Apache. Keep both notices where appropriate; do not use the broad repo badge to remove the original conditions.
+
+Operational decision: a locally retained, test-only author-redistributed subset is permissible under that upstream grant, provided provenance is recorded as C5-derived and original INTEL-TAU attribution/BY-SA are retained. This is not byte identity verification against an original Fairdata archive. Original-host provenance is preferable for a formal benchmark. If the project requires original-host-only image acquisition, this subset does not satisfy that stricter provenance requirement and must remain unadopted.
+
+Never label these images as private instrument-paired face data. Never mix a research-only source's images, derived training examples, learned normalization, thresholds or weights into a commercially cleared training run. A license decision does not validate the target, the camera conversion, or any skin-color claim.

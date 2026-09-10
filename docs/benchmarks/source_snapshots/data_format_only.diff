@@ -1,0 +1,13 @@
+--- data_preformat.py
++++ data.py
+@@ -102,7 +102,9 @@
+ def prepare_sony(root, output, size=128):
+     images, gt, est, rows = [], [], [], []
+     for path in sorted(Path(root).glob("*.png")):
+-        rgb = cv2.imdecode(np.frombuffer(path.read_bytes(), np.uint8), cv2.IMREAD_UNCHANGED)[..., ::-1]
++        rgb = cv2.imdecode(np.frombuffer(path.read_bytes(), np.uint8), cv2.IMREAD_UNCHANGED)[
++            ..., ::-1
++        ]
+         # INTEL-TAU/C5 derivative is already black-subtracted linear raw RGB.
+         if rgb.dtype != np.uint16:
+             raise ValueError("Unexpected Sony encoding")

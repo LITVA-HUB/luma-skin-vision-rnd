@@ -1,3 +1,11 @@
+# Public-real-data update
+
+The active maturity/evidence map is [public_evidence_addendum.md](public_evidence_addendum.md). Real illumination-reference experiments now exist; physical facial color is still unvalidated. Historical synthetic-stage mapping below is retained, not the current blocker list.
+
+---
+
+Historical synthetic/facial-stage material follows.
+
 # Technical evidence map — 2026-09-10
 
 The [official applicant page](https://sk.ru/applicants-actions/) describes formal completeness review, innovation-priority review and substantive expert review. Its substantive criteria are innovation, commercialization potential, theoretical feasibility and relevant team competence. The map below is our evidence plan, not a statement that any criterion has been satisfied.

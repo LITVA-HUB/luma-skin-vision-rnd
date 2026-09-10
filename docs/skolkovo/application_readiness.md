@@ -1,3 +1,11 @@
+# Public-real-data maturity update
+
+See [public evidence addendum](public_evidence_addendum.md) and [current technology overview](technology_overview.md). Public benchmark and camera-transfer measurements are now available, with negative mixture findings explicitly retained. This improves technical evidence completeness but does not establish novelty, product skin accuracy or eligibility. Earlier facial-data readiness analysis below is future-stage context.
+
+---
+
+Historical synthetic/facial-stage material follows.
+
 # Application readiness — 2026-09-10
 
 Status: technical R&D preparation; not an approval-ready claim of successful technology. The official process evaluates application completeness, innovation-priority alignment and substantive criteria; the Foundation decides. Review current requirements again at actual filing. [Official applicant instructions](https://sk.ru/applicants-actions/), [official regulatory-document hub](https://dochub.sk.ru/).

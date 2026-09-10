@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-09-10T17:55:54.042959+00:00",
+  "git_commit": "2685bf0de1a74d00f6b78407850569c915901ae5",
+  "git_dirty": true,
+  "source_hash": "2911a188e27a3ddacd085133c895e579f9064ddf76218222cac9e29d5929a532",
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "stdout": "........................................................                 [100%]\n============================== warnings summary ===============================\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c]\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c_plus]\ntests/integration/test_export.py::test_onnx_equivalence[proposed_v1]\ntests/integration/test_pipeline.py::test_train_calibrate_evaluate_load_and_conservative_api\n  C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\src\\luma_skin_vision\\export\\__init__.py:28: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.\n    torch.onnx.export(\n\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c]\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c_plus]\ntests/integration/test_export.py::test_onnx_equivalence[proposed_v1]\ntests/integration/test_pipeline.py::test_train_calibrate_evaluate_load_and_conservative_api\n  C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Lib\\site-packages\\torch\\onnx\\utils.py:179: DeprecationWarning: The feature will be removed. Please remove usage of this function\n    setup_onnx_logging(verbose) as log_ctx,\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n56 passed, 8 warnings in 14.21s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "117 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'docs/research/CURRENT_RND_STATUS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/research/negative_results.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/research/novelty_hypothesis.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/research/prior_art.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/application_readiness.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/evidence_map.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/technology_overview.md', CRLF will be replaced by LF the next time Git touches it\n"
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Resolved 56 packages in 1ms\n"
+    }
+  ],
+  "dataset_binding": "8/8 run manifests match current immutable caches",
+  "data_hashes": {
+    "cube.npz": "8323048ad50deb5aa7a0f5c8b9787ed311e4c8779a8ff2d87160068a07e92128",
+    "cube_manifest.json": "912927e16f32a55b0289910f32790be0ddaf34062ce71a1bf3fb98ae75a7edee",
+    "sony.npz": "68a31043dd8dbe7df631bd85c8a59dc69ea584537713a87494443598d47937aa",
+    "sony_manifest.json": "ef3d6354d5bf62a664df83f22e5c182d0dd4041fdf9656ed66cbc1e1618a3750"
+  },
+  "all_passed": true
+}

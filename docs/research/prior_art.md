@@ -1,3 +1,11 @@
+# Public color-constancy revision — 2026-09-10
+
+The active fresh pass is [public_color_prior_art.md](public_color_prior_art.md), including FC4, Reweight-CC, C5, CCMNet, uncertainty2025, VLM-CC2026, GC3, GCC and BRE. It narrows rather than establishes novelty. The prior facial-specific analysis below is retained as historical context.
+
+---
+
+Historical synthetic/facial-stage material follows.
+
 # Prior art — evidence review, 2026-09-10
 
 This is a targeted primary-source literature review, not an exhaustive patent search or independent replication. Publication results below belong to their authors. NOT EXTRACTED means the value was not verified in this review; it does not mean the paper lacks it. NOT MEASURED describes Luma results. No paper, dataset, or checkpoint listed here has been reproduced on Luma data. Sources were checked on 2026-09-10; preprints can change.
