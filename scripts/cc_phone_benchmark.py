@@ -149,6 +149,7 @@ def freeze():
     bind(PROV/'verification_all.json')
     if len(methods) != 30 or len({m['id'] for m in methods}) != 30:
         raise ValueError('Expected 30 unique methods')
+    BENCH.mkdir(parents=True, exist_ok=True)
     write_json(LOCK, {'status': 'FROZEN BEFORE RESERVED PHONE PIXEL/GT DECODING',
                      'methods': methods, 'sha256': frozen, 'planned_inputs': 88,
                      'primary': 'v2_sog versus v2_direct and gw_ridge1; all seed outcomes retained',
