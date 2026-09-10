@@ -1,0 +1,75 @@
+{
+  "scope": "Frozen v1 baseline17, ONLY259 held-out source risk-fit images; 5 capture-date-group folds. No calibration/test/Sony labels. Exploratory selector screen.",
+  "results": [
+    {
+      "features": "context",
+      "method": "ridge",
+      "parameter": 1,
+      "oof_risk80": 2.5781736300617695,
+      "oof_aurc": 2.4798782806806448
+    },
+    {
+      "features": "context",
+      "method": "ridge",
+      "parameter": 10,
+      "oof_risk80": 2.592272542988915,
+      "oof_aurc": 2.7245220610335994
+    },
+    {
+      "features": "context",
+      "method": "ridge",
+      "parameter": 100,
+      "oof_risk80": 2.7304895185047036,
+      "oof_aurc": 2.975181571051583
+    },
+    {
+      "features": "context",
+      "method": "hgb",
+      "parameter": 3,
+      "oof_risk80": 2.7847409355260724,
+      "oof_aurc": 2.556181131668279
+    },
+    {
+      "features": "context",
+      "method": "hgb",
+      "parameter": 7,
+      "oof_risk80": 2.656739234892483,
+      "oof_aurc": 2.515251809518369
+    },
+    {
+      "features": "combined",
+      "method": "ridge",
+      "parameter": 1,
+      "oof_risk80": 2.5433060887787837,
+      "oof_aurc": 2.059734907043475
+    },
+    {
+      "features": "combined",
+      "method": "ridge",
+      "parameter": 10,
+      "oof_risk80": 2.541652881067084,
+      "oof_aurc": 1.8834958667537591
+    },
+    {
+      "features": "combined",
+      "method": "ridge",
+      "parameter": 100,
+      "oof_risk80": 2.507110996616909,
+      "oof_aurc": 1.8743303460380722
+    },
+    {
+      "features": "combined",
+      "method": "hgb",
+      "parameter": 3,
+      "oof_risk80": 2.390986395945789,
+      "oof_aurc": 1.743236483096624
+    },
+    {
+      "features": "combined",
+      "method": "hgb",
+      "parameter": 7,
+      "oof_risk80": 2.3885821332325725,
+      "oof_aurc": 1.7242497387931561
+    }
+  ]
+}

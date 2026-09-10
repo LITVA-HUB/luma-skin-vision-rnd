@@ -1,3 +1,5 @@
+**Current CC v2 update:** [camera-transfer evidence addendum](cc_v2_evidence_addendum.md) records measured matched-C+ improvement, source/Canon failures, competitive cheap controls, ONNX parity and hardware evidence. Facial colorimetry and novelty remain unvalidated. Earlier milestone text below is preserved as history.
+
 # Public-real-data maturity update
 
 See [public evidence addendum](public_evidence_addendum.md) and [current technology overview](technology_overview.md). Public benchmark and camera-transfer measurements are now available, with negative mixture findings explicitly retained. This improves technical evidence completeness but does not establish novelty, product skin accuracy or eligibility. Earlier facial-data readiness analysis below is future-stage context.

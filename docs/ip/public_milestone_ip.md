@@ -1,3 +1,13 @@
+## Current CC v2 artifact update
+
+V2 estimator, risk and threshold parameters are fitted solely on CC BY4.0 SimpleCube++; INTEL-TAU CC BY-SA4.0 remains evaluation-only. No pretrained or teacher weights are imported. The known Cotogni/Cusano normalization/restoration mechanism is explicitly prior art. Positive selective transfer versus matched C+ does not establish patentability; cheap-control competition, source/Canon failures and original negative milestones remain documented. [V2 report](../benchmarks/cc_v2_report.md).
+
+The FP32 ONNX combines independently written wrapper code, torchvision MobileNetV3-large, and locally fitted StandardScaler/Ridge parameters. New research libraries are scikit-learn1.9.0, joblib1.6.0 and threadpoolctl3.6.0 (BSD-3-Clause); SciPy1.18.1 includes its BSD notice plus bundled-library notices. Installed license metadata/texts are preserved in [research dependency receipts](../benchmarks/cc_v2/reproducibility/installed_research_licenses.json). Retain applicable third-party notices and dataset attribution. Dataset-dependent evaluation reports retain INTEL-TAU provenance/conditions; no blanket ruling on hypothetical BY-SA-trained weight licensing is made. No external publication or legal clearance assertion occurred.
+
+Historical inventory and V1 conclusions follow; they are not retroactively rewritten.
+
+---
+
 # Public milestone IP and ownership boundary
 
 The new CC loader, experiment orchestration, compact regressor and error-head code are independently written here. Standard MobileNetV3 comes from installed torchvision; no downloaded pretrained weights, foundation weights or restricted-data teachers were adopted. This does not make the architecture or error prediction novel.

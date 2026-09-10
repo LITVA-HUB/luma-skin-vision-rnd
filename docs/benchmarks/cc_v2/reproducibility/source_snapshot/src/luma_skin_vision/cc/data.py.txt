@@ -1,0 +1,138 @@
+"""Publisher split/GT + local reproducible capture-day partitions; never sRGB-decode."""
+
+import csv
+import hashlib
+import io
+import json
+import zipfile
+from pathlib import Path
+
+import cv2
+import numpy as np
+
+from .core import experts
+
+
+def partition(group):
+    bucket = int(hashlib.sha256(("luma-cc-v1:" + group).encode()).hexdigest()[:8], 16) % 100
+    return "train" if bucket < 55 else "val" if bucket < 65 else "risk" if bucket < 85 else "cal"
+
+
+def decode(rgb, black=2048, white=14582):
+    if rgb.dtype != np.uint16 or rgb.shape[-1] != 3:
+        raise ValueError("Expected linear uint16 RGB")
+    valid = (rgb.max(axis=-1) < white * 0.98) & (rgb.max(axis=-1) > black + 8)
+    x = np.maximum(rgb.astype(np.float32) - black, 0) / (white - black)
+    x[~valid] = 0
+    return x
+
+
+def sample(x, size=128):
+    # Preserve linear values, target mask; global exposure normalization is image-only.
+    thumb = cv2.resize(x, (size, size), interpolation=cv2.INTER_AREA)
+    valid = thumb.max(axis=-1) > 0
+    scale = np.percentile(thumb[valid].max(axis=-1), 95) if valid.any() else 1
+    thumb = np.clip(thumb / max(float(scale), 1e-6), 0, 4)
+    return thumb.transpose(2, 0, 1).astype(np.float32)
+
+
+def prepare_cube(root, output, size=128):
+    root, output = Path(root), Path(output)
+    output.mkdir(parents=True, exist_ok=True)
+    meta = zipfile.ZipFile(root / "markup.zip")
+    properties = {
+        r["image"]: r
+        for r in csv.DictReader(io.StringIO(meta.read("Cube++/properties.csv").decode()))
+    }
+    data = zipfile.ZipFile(root / "SimpleCube++.zip")
+    gtfiles = sorted(
+        n
+        for n in data.namelist()
+        if n.endswith("/gt.csv") and any("/" + s + "/" in "/" + n for s in ("train", "test"))
+    )
+    if len(gtfiles) != 2:
+        raise ValueError(f"Unexpected official split files: {gtfiles}")
+    images, targets, estimators, rows = [], [], [], []
+    for gtfile in gtfiles:
+        split = "test" if "/test/" in "/" + gtfile else "train"
+        prefix = gtfile.rsplit("/", 1)[0]
+        for r in csv.DictReader(io.StringIO(data.read(gtfile).decode())):
+            ident = r["image"]
+            raw = data.read(prefix + "/PNG/" + ident + ".png")
+            rgb = cv2.imdecode(np.frombuffer(raw, np.uint8), cv2.IMREAD_UNCHANGED)[..., ::-1]
+            p = properties[ident]
+            exif = json.loads(meta.read("Cube++/auxiliary/extra/exif/" + ident + ".json"))
+            day = str(exif.get("EXIF:DateTimeOriginal", ident.split("_")[0]))[:10]
+            # Publisher documents approximate 2048 black; use common constant, not camera identity.
+            white = float(p["MakerNotes:NormalWhiteLevel"])
+            x = decode(rgb, white=white)
+            # Explicit target rectangle, also when publisher already zeros it.
+            x[-250:, -175:] = 0
+            images.append(sample(x, size))
+            # Actual v2 archive uses mean_r/g/b, although README abbreviates r/g/b.
+            targets.append([float(r["mean_" + c]) for c in "rgb"])
+            estimators.append(experts(x))
+            rows.append(
+                {
+                    "id": ident,
+                    "official_split": split,
+                    "subset": "test" if split == "test" else partition(day),
+                    "camera": p["EXIF:Model"],
+                    "group": day,
+                    "sha256": hashlib.sha256(raw).hexdigest(),
+                    "black": 2048,
+                    "white": white,
+                    "shape": list(rgb.shape),
+                }
+            )
+            if len(rows) % 200 == 0:
+                print(f"Prepared {len(rows)} real images", flush=True)
+    if len(rows) != 2234 or len({r["id"] for r in rows}) != 2234:
+        raise ValueError("Expected 2234 unique SimpleCube++ images")
+    np.savez_compressed(
+        output / "cube.npz",
+        images=np.stack(images).astype(np.float16),
+        gt=np.array(targets),
+        experts=np.array(estimators),
+    )
+    (output / "cube_manifest.json").write_text(json.dumps(rows, indent=2), encoding="utf-8")
+    return rows
+
+
+def prepare_sony(root, output, size=128):
+    images, gt, est, rows = [], [], [], []
+    for path in sorted(Path(root).glob("*.png")):
+        rgb = cv2.imdecode(np.frombuffer(path.read_bytes(), np.uint8), cv2.IMREAD_UNCHANGED)[
+            ..., ::-1
+        ]
+        # INTEL-TAU/C5 derivative is already black-subtracted linear raw RGB.
+        if rgb.dtype != np.uint16:
+            raise ValueError("Unexpected Sony encoding")
+        x = rgb.astype(np.float32) / 65535
+        x[x.max(axis=-1) >= 0.98] = 0
+        images.append(sample(x, size))
+        gt.append(
+            json.loads(path.with_name(path.stem + "_metadata.json").read_text())[
+                "illuminant_color_raw"
+            ]
+        )
+        est.append(experts(x))
+        rows.append(
+            {
+                "id": path.stem,
+                "camera": "Sony IMX135 BLCCSC",
+                "subset": "test",
+                "group": path.stem,
+                "shape": list(rgb.shape),
+                "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+            }
+        )
+    if len(rows) != 30:
+        raise ValueError("Expected exactly 30 Sony pilot examples")
+    np.savez_compressed(
+        Path(output) / "sony.npz",
+        images=np.stack(images).astype(np.float16),
+        gt=np.array(gt),
+        experts=np.array(est),
+    )
+    (Path(output) / "sony_manifest.json").write_text(json.dumps(rows, indent=2), encoding="utf-8")

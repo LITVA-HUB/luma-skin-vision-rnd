@@ -1,0 +1,247 @@
+{
+  "opset": 18,
+  "runtime": "1.29.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "torch": "2.8.0+cu128",
+  "onnx": "1.22.0",
+  "cases": {
+    "real_batch1": {
+      "absolute_error_vectors": {
+        "illuminant": [
+          [
+            5.960464477539063e-08,
+            0.0,
+            5.960464477539063e-08
+          ]
+        ],
+        "expected_reproduction_deg": [
+          4.291534423828125e-06
+        ]
+      },
+      "max_absolute_error": 4.291534423828125e-06,
+      "flags_exact": true,
+      "passed": true,
+      "torch_scores": [
+        5.23085880279541
+      ],
+      "onnx_scores": [
+        5.230863094329834
+      ]
+    },
+    "real_batch4": {
+      "absolute_error_vectors": {
+        "illuminant": [
+          [
+            8.940696716308594e-08,
+            0.0,
+            5.960464477539063e-08
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.9802322387695312e-08,
+            5.960464477539063e-08,
+            5.960464477539063e-08
+          ],
+          [
+            2.9802322387695312e-08,
+            5.960464477539063e-08,
+            5.960464477539063e-08
+          ]
+        ],
+        "expected_reproduction_deg": [
+          4.291534423828125e-06,
+          1.0728836059570312e-06,
+          4.76837158203125e-07,
+          1.1920928955078125e-07
+        ]
+      },
+      "max_absolute_error": 4.291534423828125e-06,
+      "flags_exact": true,
+      "passed": true,
+      "torch_scores": [
+        5.23085880279541,
+        1.9293385744094849,
+        2.030503034591675,
+        1.6504435539245605
+      ],
+      "onnx_scores": [
+        5.230863094329834,
+        1.929337501525879,
+        2.0305025577545166,
+        1.650443434715271
+      ]
+    },
+    "invalid_batch4": {
+      "absolute_error_vectors": {
+        "illuminant": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.9802322387695312e-08,
+            2.6645352591003757e-15,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.1920928955078125e-07
+          ],
+          [
+            0.0,
+            5.960464477539063e-08,
+            2.9802322387695312e-08
+          ]
+        ],
+        "expected_reproduction_deg": [
+          2.384185791015625e-07,
+          0.0,
+          0.0,
+          2.384185791015625e-07
+        ]
+      },
+      "max_absolute_error": 2.384185791015625e-07,
+      "flags_exact": true,
+      "passed": true,
+      "torch_scores": [
+        1.84335458278656,
+        234.68104553222656,
+        2.032824754714966,
+        1.6502755880355835
+      ],
+      "onnx_scores": [
+        1.843354344367981,
+        234.68104553222656,
+        2.032824754714966,
+        1.6502758264541626
+      ]
+    },
+    "infinite_batch1": {
+      "absolute_error_vectors": {
+        "illuminant": [
+          [
+            2.9802322387695312e-08,
+            5.960464477539063e-08,
+            0.0
+          ]
+        ],
+        "expected_reproduction_deg": [
+          3.337860107421875e-06
+        ]
+      },
+      "max_absolute_error": 3.337860107421875e-06,
+      "flags_exact": true,
+      "passed": true,
+      "torch_scores": [
+        5.234350681304932
+      ],
+      "onnx_scores": [
+        5.234354019165039
+      ]
+    }
+  },
+  "floating_dtypes": [
+    "FLOAT"
+  ],
+  "head_dtype": "torch.float32",
+  "contract": "Nx3x128x128 preprocessed FP32 image; explicit finite/nonnegative/channel-mean validity; invalid always refused. Byte decode/preprocess outside ONNX.",
+  "passed": true,
+  "onnx_sha256": "c619937943c34668d4e9970ee065218c6322e41a715e1f3c24f7b39062ecadbe",
+  "onnx_bytes": 12141768,
+  "provenance": {
+    "bindings": {
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\experiments\\runs\\ccv2_sog_large_g0_s17\\config.json": "b2ae2f959f01445ab600fe3c18f8c13af8b3146e9151d306a7d74f1a49cc90c2",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\experiments\\runs\\ccv2_sog_large_g0_s17\\model.pt": "daa09378b5e68aaeff4377b4e289d437628fa524bc26560f7ca5f5c5f048b1c8",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\experiments\\runs\\ccv2_sog_large_g0_s17\\checkpoint_manifest.json": "78bcf18d87d057dd7593ed11b6727d239360679d42d99815146501bc156e2613",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\experiments\\runs\\ccv2_sog_large_g0_s17\\training.json": "d6dd17328e5ad4c6b1bce13c34e84feb46602cee2a0754fd53d489b307bf4167",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\experiments\\runs\\ccv2_sog_large_g0_s17\\risk_v2\\selection.json": "afe08b4dbd0dd8cfaf0b773352612b70fcad539d082cce2594192e14b87bc2d4",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\experiments\\runs\\ccv2_sog_large_g0_s17\\risk_v2\\combined.joblib": "fe1797c160f60c3e6de0c0d13cb73b966d19ed113666f520ed479ec6c296ea9b",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\docs\\benchmarks\\cc_v2\\final_head_lock.json": "3bb2219e4ccf2b4db43842e3e6666de701988a5af9bdf92f28faa4b3b4e29184",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\scripts\\profile_cc_v2.py": "aeaae6674d453ca3f7a6877099d5d7518ebc3fe25baf3036e3bdf50ae294a4b8",
+      "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\scripts\\cc_v2_select.py": "cea9e3b55e7a887766fc9cee79346390cd5197fc666d3121134852946bc15686"
+    },
+    "source_hash": "598a44f190d624db58fd4d2a60368f59bf41b1f3e8620c8c49c55d6e1e680398"
+  },
+  "source_rows": [
+    {
+      "id": "00_0002",
+      "official_split": "train",
+      "subset": "train",
+      "camera": "Canon EOS 550D",
+      "group": "2014:03:01",
+      "sha256": "fff50c78d3c02d4c2a9786d79f8d9973a87080b389b51414159c12a24a6b898e",
+      "black": 2048,
+      "white": 14582.0,
+      "shape": [
+        432,
+        648,
+        3
+      ]
+    },
+    {
+      "id": "00_0004",
+      "official_split": "train",
+      "subset": "train",
+      "camera": "Canon EOS 550D",
+      "group": "2014:02:01",
+      "sha256": "1ed921fb011f37e1b15607a2ab58cb6368a7453f8b470c7991936bf416bb9d89",
+      "black": 2048,
+      "white": 14582.0,
+      "shape": [
+        432,
+        648,
+        3
+      ]
+    },
+    {
+      "id": "00_0013",
+      "official_split": "train",
+      "subset": "train",
+      "camera": "Canon EOS 550D",
+      "group": "2014:06:17",
+      "sha256": "6518654350ee555b386dff238c3967f1a3e11fd9fc6e77efd66b58f791703491",
+      "black": 2048,
+      "white": 14582.0,
+      "shape": [
+        432,
+        648,
+        3
+      ]
+    },
+    {
+      "id": "00_0015",
+      "official_split": "train",
+      "subset": "train",
+      "camera": "Canon EOS 550D",
+      "group": "2019:01:02",
+      "sha256": "8511dffe0d72d5cdcb27cab41e85ce3fc1e17575c6f7242f13108f872b9f3643",
+      "black": 2048,
+      "white": 14582.0,
+      "shape": [
+        432,
+        648,
+        3
+      ]
+    }
+  ],
+  "threshold80": 2.873881240803161,
+  "sklearn_reference": {
+    "score_absolute_errors": [
+      7.325209390174336e-07,
+      1.290368738526837e-07,
+      6.504158411857475e-08,
+      1.052400022683031e-07
+    ],
+    "accept80_exact": true,
+    "passed": true
+  },
+  "threshold_definition": "NumPy linear quantile80 on268 frozen source calibration scores; no promised target coverage"
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-09-10T18:31:00.325445+00:00",
+  "git_commit": "7637d6dbd79ea112cd14d4b9f5bec00e3fe37965",
+  "git_dirty": true,
+  "source_hash": "598a44f190d624db58fd4d2a60368f59bf41b1f3e8620c8c49c55d6e1e680398",
+  "completed_small_validation": {
+    "ccv2_direct_small_g0.7_s17": 3.3279565104781303,
+    "ccv2_direct_small_g0_s17": 2.677933364160336,
+    "ccv2_gw_small_g0.7_s17": 3.3143445238469824,
+    "ccv2_gw_small_g0_s17": 3.476467582403235,
+    "ccv2_sog_small_g0.7_s17": 3.2269082045985003,
+    "ccv2_sog_small_g0_s17": 3.232447176685915
+  },
+  "modes": [
+    "direct",
+    "gw",
+    "sog"
+  ],
+  "gain_aug": 0,
+  "backbone": "large",
+  "epochs": 120,
+  "seed": 17,
+  "selection": "real source-validation mean reproduction only; gain0 used identically in all three matched larger models",
+  "reason": "small anchored nets lose source mean; test increased capacity as specified in originalplan",
+  "target_errors_observed": false
+}

@@ -1,3 +1,5 @@
+**Current CC v2 update:** [camera-transfer evidence addendum](cc_v2_evidence_addendum.md) records measured matched-C+ improvement, source/Canon failures, competitive cheap controls, ONNX parity and hardware evidence. Facial colorimetry and novelty remain unvalidated. Earlier milestone text below is preserved as history.
+
 # Public-real-data evidence for technical project discussion
 
 This addendum supersedes synthetic-only maturity statements in earlier planning documents. It does not establish legal eligibility or approval.

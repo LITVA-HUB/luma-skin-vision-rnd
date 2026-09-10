@@ -1,3 +1,5 @@
+**Current CC v2 update:** [camera-transfer evidence addendum](cc_v2_evidence_addendum.md) records measured matched-C+ improvement, source/Canon failures, competitive cheap controls, ONNX parity and hardware evidence. Facial colorimetry and novelty remain unvalidated. Earlier milestone text below is preserved as history.
+
 # Public-real-data update
 
 The active maturity/evidence map is [public_evidence_addendum.md](public_evidence_addendum.md). Real illumination-reference experiments now exist; physical facial color is still unvalidated. Historical synthetic-stage mapping below is retained, not the current blocker list.

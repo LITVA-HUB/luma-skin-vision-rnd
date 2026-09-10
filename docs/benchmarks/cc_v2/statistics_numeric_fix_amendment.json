@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-09-10T18:44:31.312802+00:00",
+  "target_errors_observed": false,
+  "original_estimator_selection_lock_sha256": "e527d2ef2514d1b0d88489ca2693e02bfb5a668ed1325ddb54d4e470c547a619",
+  "original_statistics_screen_sha256": "2ed1e093f34cee41ccf5caa49cdb6bc7e198b6aa26d3883b13963d61824eeddc",
+  "finding": "Independent synthetic gain test: mathematicallyzero GWp1logfeatures have~1e-16roundoff; standardization scales~8e-17 amplifyit; fittedRidge equivariance deviation0.105889degrees despitefeaturedifference4.44e-16",
+  "remediation": "Set threeGWp1logfeatures analyticallyzero; addfittedendtoendtest; verifyinputhashesbeforeprediction; same12-candidate SOURCE-ONLYgrid andselectionrule",
+  "preservation": "Originalstatsmodels/screenimmutable; newoutputs statistics_fixed andstatistics_source_screen_fixed.json",
+  "target_scope": "Freshdataacquisition/decodingallowedafteroriginalestimatorlock; nofreshorregressionmodelerrorsobserved duringfix; nosettingschosenusingtargetlabels"
+}

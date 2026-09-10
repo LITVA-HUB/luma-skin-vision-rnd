@@ -2,6 +2,22 @@
 
 See [ranked public decision](public_hypothesis_decision.md), [fresh prior art](public_color_prior_art.md) and [frozen experimental protocol](public_protocol_v1.md). Compact single-image transfer and selective reproduction-risk estimation are UNVERIFIED research hypotheses; algorithm mixtures, error prediction and abstention are not independently novel. No physical ΔE00 or facial-color claim follows from illuminant ground truth. Historical facial hypothesis below is deferred while proprietary collection is unavailable.
 
+## V2 investigated hypothesis — bounded empirical support
+
+**V2 MEASURED; NO NOVELTY CLAIM.** Fresh384-image risk80 improves5.558°→3.805° against the strongest matched direct C+; combined risk improves4.266°→3.805° against context-only risk on the same residual model. Source/Canon regress, cheap GW+ridge remains statistically competitive at80%, and exploratory GW residual has lower full mean. See [full effect and limits](../benchmarks/cc_v2_report.md). Prioritize C with the measured B ablation; A remains reproduction-angular proxy supervision, not physical surface color-error supervision. Test whether an anchor-normalized compact residual estimator and a separately fitted risk head transfer better than a matched direct estimator and its strongest feasible C+ selector. For a channelwise positive-diagonal-equivariant anchor `a`, the investigated estimator is
+
+```
+e(x) = normalize(a(x) * exp(r(x / a(x)))).
+```
+
+This wrapper is known: [Cotogni and Cusano 2022, Eq. (19)](https://arxiv.org/pdf/2207.00292) already gives normalization, arbitrary prediction and restoration; their [2024 illuminant-equivariant paper](https://link.springer.com/chapter/10.1007/978-3-031-72845-7_18) supplies additional direct task overlap. The [v2 prior-art analysis](cc_v2_prior_art.md) documents exact assumptions, recent overlap, access limitations and strong baselines. Mathematical gain equivariance is an implementation property, not evidence of new-camera accuracy or calibrated uncertainty.
+
+Preserve the candidate meanings: **A** is downstream-color-risk selective normalization, currently assessed only through reproduction angular risk; **B** is cheap hypotheses/disagreement plus contextual residual prediction; **C** is compact single-image unseen-camera generalization. V2 investigates B within C, with A as the selection objective. **C+ remains the strong matched control**, never the proposed method.
+
+The empirical question is whether invariant context and relative candidate log-ratios improve selective reproduction risk at comparable coverage and cost beyond cheap anchors, fixed source correction, matched direct/residual models, and simple uncertainty scores. Recovery error is reported separately because it is not diagonal-gain invariant. Fit the estimator on source training, choose hyperparameters/checkpoints on source validation, fit the risk head on disjoint source residual groups and calibrate on a separate source split. Freeze all choices before fresh target evaluation; use no target-camera batch statistics, calibration matrix or target labels during fitting. Match augmentation, capacity, seeds and budget; preserve unhelpful variants. See the [v2 experimental plan](cc_v2_plan.md).
+
+The [v1 mixture decision and negative results](public_hypothesis_decision.md) remain unchanged, including failure to beat the strongest selective control and loss to Gray World on Sony. Official462 and Sony30 are previously observed regression sets, not fresh discovery evidence; official split scene/date overlap remains a limitation. Passing equivariance tests or improving a source metric cannot override those findings. The investigated effect must survive locked camera evaluation and strong baselines before any contribution is proposed; it would still not establish patentability or physical facial ΔE00 accuracy.
+
 ---
 
 Historical synthetic/facial-stage material follows.

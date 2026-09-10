@@ -2,7 +2,9 @@
 
 The active milestone uses **real public color-constancy ground truth** to evaluate a compact single-image normalization and reliability component. **Skin-color accuracy remains NOT MEASURED.** A proprietary instrument-paired facial dataset is unavailable; public-data research continues under that hard constraint.
 
-Read the [real benchmark report](docs/benchmarks/public_benchmark_report.md), [current status](docs/research/CURRENT_RND_STATUS.md), [original-license inventory](docs/data/public_dataset_inventory.md) and [Skolkovo evidence](docs/skolkovo/public_evidence_addendum.md). Three seeds on SimpleCube++: Proposed2.085° mean reproduction error, C+2.166°, Shades of Gray3.573°. At80% coverage the strong control without a mixture wins1.556° versus Proposed1.586°. External Sony transfer remains unsuccessful against the strongest classical method. Special-mechanism advantage is not established.
+**New CC v2:** [camera-transfer report](docs/benchmarks/cc_v2_report.md) measures3.805° reproduction error at80% acceptance on384 fresh unseen-camera images versus5.558° for strong matched C+ (31.5% reduction). Source and Canon regress; cheap GW+ridge remains competitive. The3.034M model has verified FP32 ONNX,4.181ms RTX4060 model-only latency,24.691ms PNG-to-score. [Reproduce V2](docs/benchmarks/cc_v2/REPRODUCE.md), [current Skolkovo evidence](docs/skolkovo/cc_v2_evidence_addendum.md). No skin-color or novelty claim is established.
+
+Historical V1: read the [real benchmark report](docs/benchmarks/public_benchmark_report.md), [current status](docs/research/CURRENT_RND_STATUS.md), [original-license inventory](docs/data/public_dataset_inventory.md) and [Skolkovo evidence](docs/skolkovo/public_evidence_addendum.md). Three seeds on SimpleCube++: Proposed2.085° mean reproduction error, C+2.166°, Shades of Gray3.573°. At80% coverage the strong control without a mixture wins1.556° versus Proposed1.586°. External Sony transfer remains unsuccessful against the strongest classical method. Special-mechanism advantage is not established.
 
 ## Reproduce the public milestone
 

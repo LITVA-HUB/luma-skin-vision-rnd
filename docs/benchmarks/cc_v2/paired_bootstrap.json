@@ -1,0 +1,866 @@
+[
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.6252412994384997,
+      "ci95": [
+        0.38743525707664417,
+        0.8646784450278939
+      ]
+    },
+    "risk80": {
+      "difference": 0.6495230564242551,
+      "ci95": [
+        0.4198207318141675,
+        0.888746277225398
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.6252412994384997,
+      "ci95": [
+        0.12847246465180986,
+        1.0278174883331475
+      ]
+    },
+    "risk80": {
+      "difference": 0.6495230564242551,
+      "ci95": [
+        0.17861174843126448,
+        1.0513442178174215
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.9423099787617453,
+      "ci95": [
+        -1.3262973227118418,
+        -0.5566499828057521
+      ]
+    },
+    "risk80": {
+      "difference": -1.7526949972089754,
+      "ci95": [
+        -2.139719052594264,
+        -1.3544199021634111
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.9423099787617453,
+      "ci95": [
+        -1.3182283243947681,
+        -0.5725096791037091
+      ]
+    },
+    "risk80": {
+      "difference": -1.7526949972089754,
+      "ci95": [
+        -2.131463703607898,
+        -1.3355744249900425
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::context",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.6252412994384997,
+      "ci95": [
+        0.38743525707664417,
+        0.8646784450278939
+      ]
+    },
+    "risk80": {
+      "difference": 0.49466875030839286,
+      "ci95": [
+        0.26141153328531436,
+        0.7412554763229803
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::context",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.6252412994384997,
+      "ci95": [
+        0.12847246465180986,
+        1.0278174883331475
+      ]
+    },
+    "risk80": {
+      "difference": 0.49466875030839286,
+      "ci95": [
+        -0.06794226541212273,
+        0.9770769128873693
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::context",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.9423099787617453,
+      "ci95": [
+        -1.3262973227118418,
+        -0.5566499828057521
+      ]
+    },
+    "risk80": {
+      "difference": -1.7957178186033418,
+      "ci95": [
+        -2.170692719657736,
+        -1.3765905546402661
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_direct_large_g0::context",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.9423099787617453,
+      "ci95": [
+        -1.3182283243947681,
+        -0.5725096791037091
+      ]
+    },
+    "risk80": {
+      "difference": -1.7957178186033418,
+      "ci95": [
+        -2.180344766917368,
+        -1.3871630310252847
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::upgraded_combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.6553015555083794,
+      "ci95": [
+        0.39007869180540267,
+        0.9249650988236896
+      ]
+    },
+    "risk80": {
+      "difference": 0.7377215341795602,
+      "ci95": [
+        0.49504014370040367,
+        0.9761591420028914
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::upgraded_combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.6553015555083794,
+      "ci95": [
+        -0.024780265476322037,
+        1.1943270868276605
+      ]
+    },
+    "risk80": {
+      "difference": 0.7377215341795602,
+      "ci95": [
+        0.13324889080193766,
+        1.2101370023340916
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::upgraded_combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -1.2467380571337223,
+      "ci95": [
+        -1.6843313491781067,
+        -0.8278209270108648
+      ]
+    },
+    "risk80": {
+      "difference": -1.786037157377352,
+      "ci95": [
+        -2.1577768267632935,
+        -1.3553335227590606
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::upgraded_combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -1.2467380571337223,
+      "ci95": [
+        -1.6742054291294437,
+        -0.8330577438727218
+      ]
+    },
+    "risk80": {
+      "difference": -1.786037157377352,
+      "ci95": [
+        -2.1535130484440144,
+        -1.3784588278124
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_proposed::upgraded_combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.7363225598081158,
+      "ci95": [
+        0.5032796671985821,
+        0.9764696526886687
+      ]
+    },
+    "risk80": {
+      "difference": 0.7133580422242818,
+      "ci95": [
+        0.5346899635057213,
+        0.9208027477620844
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_proposed::upgraded_combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.7363225598081158,
+      "ci95": [
+        0.16350901124928346,
+        1.1972212057939227
+      ]
+    },
+    "risk80": {
+      "difference": 0.7133580422242818,
+      "ci95": [
+        0.30325176817953026,
+        1.0708884007659802
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_proposed::upgraded_combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.6601169756460381,
+      "ci95": [
+        -1.0037648955716025,
+        -0.31807992943507685
+      ]
+    },
+    "risk80": {
+      "difference": -1.023726632707716,
+      "ci95": [
+        -1.3713827081539582,
+        -0.6821421451548287
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_proposed::upgraded_combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.6601169756460381,
+      "ci95": [
+        -0.9935850772487823,
+        -0.3366682594268096
+      ]
+    },
+    "risk80": {
+      "difference": -1.023726632707716,
+      "ci95": [
+        -1.35692229974223,
+        -0.7124270354192674
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "gw_ridge1::cheap",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.15873384912642452,
+      "ci95": [
+        -0.30707402208840684,
+        -0.015274543579810384
+      ]
+    },
+    "risk80": {
+      "difference": -0.17166192196478747,
+      "ci95": [
+        -0.35200160493498495,
+        0.013799264500762878
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "gw_ridge1::cheap",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.15873384912642452,
+      "ci95": [
+        -0.32256412295441833,
+        0.009249418011357525
+      ]
+    },
+    "risk80": {
+      "difference": -0.17166192196478747,
+      "ci95": [
+        -0.3623710470691748,
+        0.009741992041408123
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "gw_ridge1::cheap",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.1608677293282179,
+      "ci95": [
+        -0.07872465037292065,
+        0.4019501353725086
+      ]
+    },
+    "risk80": {
+      "difference": -0.17213570181481552,
+      "ci95": [
+        -0.4542871480878389,
+        0.13257082599066528
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "gw_ridge1::cheap",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.1608677293282179,
+      "ci95": [
+        -0.07632163042115574,
+        0.3985226816066346
+      ]
+    },
+    "risk80": {
+      "difference": -0.17213570181481552,
+      "ci95": [
+        -0.42812403935491555,
+        0.14700895416871398
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_sog_large_g0::context",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "risk80": {
+      "difference": -0.0822879853034113,
+      "ci95": [
+        -0.15659253555913014,
+        0.020981467718848384
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_sog_large_g0::context",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "risk80": {
+      "difference": -0.0822879853034113,
+      "ci95": [
+        -0.14340162950523516,
+        0.027558178476768027
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_sog_large_g0::context",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "risk80": {
+      "difference": -0.4611809841202743,
+      "ci95": [
+        -0.6272238190165672,
+        -0.29968479703247414
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_sog_large_g0::context",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "risk80": {
+      "difference": -0.4611809841202743,
+      "ci95": [
+        -0.609609822011855,
+        -0.28580046737491294
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_gw_large_g0::combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.172172847616761,
+      "ci95": [
+        -0.36804833765230344,
+        0.01532504482559313
+      ]
+    },
+    "risk80": {
+      "difference": -0.18760425459233288,
+      "ci95": [
+        -0.44049501045533923,
+        0.042025226328512764
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_gw_large_g0::combined",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.172172847616761,
+      "ci95": [
+        -0.33987149697889113,
+        -0.005522574156056963
+      ]
+    },
+    "risk80": {
+      "difference": -0.18760425459233288,
+      "ci95": [
+        -0.42768123555042853,
+        -0.024357637758052855
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_gw_large_g0::combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.49028658903482203,
+      "ci95": [
+        0.13352886242344056,
+        0.8394970803733908
+      ]
+    },
+    "risk80": {
+      "difference": 0.059576925048387075,
+      "ci95": [
+        -0.27322913764048284,
+        0.3837420728201792
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_gw_large_g0::combined",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 1,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": 0.49028658903482203,
+      "ci95": [
+        0.12816169295121363,
+        0.8473440086444978
+      ]
+    },
+    "risk80": {
+      "difference": 0.059576925048387075,
+      "ci95": [
+        -0.3040480091821608,
+        0.4178065744237083
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::v1_shades_gray",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "image resampling",
+    "clusters": 462,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.7523963283058501,
+      "ci95": [
+        -1.0006987940784968,
+        -0.5050155825022393
+      ]
+    },
+    "risk80": {
+      "difference": -0.04012415520500312,
+      "ci95": [
+        -0.265017328839204,
+        0.18209299475705767
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::v1_shades_gray",
+    "domain": "source_regression",
+    "n": 462,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "capture-date clusters",
+    "clusters": 67,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -0.7523963283058501,
+      "ci95": [
+        -1.0662572261951888,
+        -0.4069389416420016
+      ]
+    },
+    "risk80": {
+      "difference": -0.04012415520500312,
+      "ci95": [
+        -0.32895309302863096,
+        0.23977838803417395
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::v1_shades_gray",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified image resampling",
+    "clusters": 384,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -1.7613887124898762,
+      "ci95": [
+        -2.1201583759884834,
+        -1.4123952217378093
+      ]
+    },
+    "risk80": {
+      "difference": -0.9495874170606853,
+      "ci95": [
+        -1.3495743841659253,
+        -0.5530221013042206
+      ]
+    }
+  },
+  {
+    "first": "ccv2_sog_large_g0::combined",
+    "second": "ccv2_legacy_baseline::v1_shades_gray",
+    "domain": "fresh_all",
+    "n": 384,
+    "runs_first": 3,
+    "runs_second": 3,
+    "draws": 2000,
+    "seed": 1209,
+    "grouping": "camera-stratified exact-reference-hash proxy clusters",
+    "clusters": 342,
+    "interpretation": "First minus second; negative favors first. Percentile95% interval, conditional on trained seeds. Referencehash is a sensitivity proxy, not verified scene independence. No population or deployment guarantee.",
+    "mean": {
+      "difference": -1.7613887124898762,
+      "ci95": [
+        -2.134377313122602,
+        -1.4045972072696529
+      ]
+    },
+    "risk80": {
+      "difference": -0.9495874170606853,
+      "ci95": [
+        -1.4011437489862006,
+        -0.5173799835529495
+      ]
+    }
+  }
+]

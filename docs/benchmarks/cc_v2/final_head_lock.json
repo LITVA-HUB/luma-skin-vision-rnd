@@ -1,0 +1,117 @@
+{
+  "timestamp_utc": "2026-09-10T18:58:45.715505+00:00",
+  "target_errors_observed": false,
+  "git_commit": "7637d6dbd79ea112cd14d4b9f5bec00e3fe37965",
+  "git_dirty": true,
+  "source_hash": "598a44f190d624db58fd4d2a60368f59bf41b1f3e8620c8c49c55d6e1e680398",
+  "cnn_selectors": {
+    "ccv2_direct_large_g0_s17": "eeea25d6cc876ee4ef66fe6e6096fd0aebce12833046d0ccf9bebdfba7632a51",
+    "ccv2_direct_large_g0_s29": "84cc5258dcef6a77eb7816de7e8139a0a1a5a3af7e7d489f24f7e3939403ab66",
+    "ccv2_direct_large_g0_s43": "759d85ecdfe0f1bff4b727d3442ffd2a5aa19c039fbeb4525c621c32636dd52a",
+    "ccv2_direct_small_g0.7_s17": "4b75327f4b8e48f42ba88dcc1df43c5d032707f8ff0b6365e54e1c822c21fa4b",
+    "ccv2_direct_small_g0_s17": "8dece5fbcc88f6328fe7974cd85f295f79c9831328a48a85476c93f27fdd3c7a",
+    "ccv2_direct_small_g0_s29": "8e662dafeaf63886799e30cc77c9f918e997bea8ac5e7c9064d9e76bc7fabf47",
+    "ccv2_direct_small_g0_s43": "cb73d04f790f8dbc30357ccf0d1b0121f51a10bc84e5203f4eae648efa62a068",
+    "ccv2_gw_large_g0_s17": "eda386dba84bd744ea9baf303da8993dffd8d4519bc20b7938da20debe83efc8",
+    "ccv2_gw_small_g0.7_s17": "a4a9e707c86c072ba62cbf81f0d6c719f5270ca74fe5804ce2f558c594091119",
+    "ccv2_gw_small_g0_s17": "c1a416edf18cfd00229740276a0d1ac06f5af5dee239fb75557e21b87f717445",
+    "ccv2_sog_large_g0_s17": "afe08b4dbd0dd8cfaf0b773352612b70fcad539d082cce2594192e14b87bc2d4",
+    "ccv2_sog_large_g0_s29": "4f3761a3bebe99aab9585b6f68368d0b95a3f9a891cf0fc50df9b08b75f6ca83",
+    "ccv2_sog_large_g0_s43": "fe5d84015c5c83e65d79fcce3e21f7d1532348a4d813d57739759f281a64e05b",
+    "ccv2_sog_small_g0.7_s17": "901142921afe26946c7623e6363cedca414dd952daca1cd20ca66b4a1586a919",
+    "ccv2_sog_small_g0.7_s29": "8064d00abecfe3b863d6bda2b66ba9bacbe21615eca5a0dbbf294a311993c4c0",
+    "ccv2_sog_small_g0.7_s43": "4d9ae9d964f335ef96d71766fa42082b5efe37a762fcdc956dc16572311ea7cd",
+    "ccv2_sog_small_g0_s17": "983214349efeb22e5ef6d5fd3d1dedd828d9fca1f58b67bb95885563b211e793"
+  },
+  "legacy_selectors": {
+    "ccv2_legacy_baseline_s17": "36c05395b5a756b917f5d7dab91b7f4d20e00cbcd335fda9964c008fbcfcfe10",
+    "ccv2_legacy_baseline_s29": "d56ce5a3fc2e64b8af10397b841941a806e59c269c63b16e5feff8f5ddc5bcf5",
+    "ccv2_legacy_baseline_s43": "270ba918d44fd4ac6eb8a3226e36d20fa3d98af18d6cd3dc99e5c1a3e1d650b9",
+    "ccv2_legacy_proposed_s17": "9ebd204f63626632d2d1092167a158f077d3a861f1ec79e618b40f5aad4fd843",
+    "ccv2_legacy_proposed_s29": "8390365b7ae8d4b152ffc0d828f578ba2e52a6ae99fa52d0ce2b4ddeba438adb",
+    "ccv2_legacy_proposed_s43": "d4d5682049505ce6104cd8f078823d2a814e947a6b0b56b320821d9e195c0b84"
+  },
+  "statistics_selectors": {
+    "direct_hgb7": "08ec68817351b3c5b67eeebe3386ec27d180f87718bad047a68e70cce562e44a",
+    "gw_ridge1": "384a1bbeae2fbf9d8eb780c5c293d4791bd20a8a2cc360b56a494fa8b714710a"
+  },
+  "primary_source_selected": {
+    "ccv2_sog_large_g0": {
+      "source_oof_risk80": {
+        "context": [
+          1.6889319655371835,
+          2.097785173706973,
+          1.8205779994968874
+        ],
+        "cheap": [
+          1.5381658968098546,
+          2.144497013971148,
+          1.722818161203229
+        ],
+        "combined": [
+          1.5947680278796716,
+          1.9815801551591612,
+          1.8209471367885088
+        ]
+      },
+      "source_oof_means": {
+        "context": 1.8690983795803477,
+        "cheap": 1.801827023994744,
+        "combined": 1.799098439942447
+      },
+      "selected_block": "combined"
+    },
+    "ccv2_direct_large_g0": {
+      "source_oof_risk80": {
+        "context": [
+          2.5709330841418767,
+          2.8243076799225473,
+          2.446644881855794
+        ],
+        "cheap": [
+          2.2042991045120353,
+          2.3366757171454844,
+          2.171633405928309
+        ],
+        "combined": [
+          2.156543909357694,
+          2.2908924518726237,
+          2.2046964622819303
+        ]
+      },
+      "source_oof_means": {
+        "context": 2.613961881973406,
+        "cheap": 2.237536075861943,
+        "combined": 2.2173776078374163
+      },
+      "selected_block": "combined"
+    }
+  },
+  "primary_proposed": "ccv2_sog_large_g0::combined",
+  "matched_strong_control": "ccv2_direct_large_g0::combined",
+  "standard_C_plus": "ccv2_direct_large_g0::context",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "representative_export_seed": 17,
+  "amendments": {
+    "estimator_selection_lock.json": "e527d2ef2514d1b0d88489ca2693e02bfb5a668ed1325ddb54d4e470c547a619",
+    "statistics_numeric_fix_amendment.json": "1c98df607dfd0cc53e2a7f93b3bda282a740853d7d92b6090aeef67da7b13237",
+    "statistics_fixed_selection_lock.json": "fee977e5edd15742fd3d0be38b455b26fa0e59267e9c5433ad38979fb4907eea",
+    "selective_capacity_amendment.json": "b20b4a1cd43d4dcdc147a15487ce7db899ae37adcc4bff92374bc82a9f2a12e5"
+  },
+  "fresh_data": {
+    "cache": "26a7ec6fa44e6c1f29d677ffe2fdc5da2a4e0f7c3bd064980ef59a5ed1982ec2",
+    "manifest": "e6c8a84ee12e6b133fc425bf6986c00f73dabeb279110f376c096e500ada4afb"
+  },
+  "script_hashes": {
+    "cc_v2_select.py": "cea9e3b55e7a887766fc9cee79346390cd5197fc666d3121134852946bc15686",
+    "cc_v2_legacy.py": "3a1d6b89a689097179dfd650d71dc12126bcf604171c6e72dd787ae2fd4c919a",
+    "cc_v2_statistics.py": "a989a37d3cab88531f58827bf861fe400b4d13a0ef97b00c61c7b9b07c3c3ac2",
+    "cc_v2_statistics_eval.py": "5b2c2651d0184e5b0fd12e49c2eb61a378723dce1c89e2ead223bf0fbe115a5b"
+  },
+  "scope": "All method/head choices fixed before computing any fresh-camera or regression model error in v2. Source-only iterative research selection; allnegative variants retained. No test-selected seed or head.",
+  "comparison": "All17CNN,6legacy,2statisticsconfigs evaluated; tables clearlyseparate sameestimatorhead controls, larger/smaller capacity, oldbaselines, source vsfresh. No physicalDeltaE orskin claims."
+}

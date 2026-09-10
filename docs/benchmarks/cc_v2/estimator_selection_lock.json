@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-09-10T18:38:48.146264+00:00",
+  "git_commit": "7637d6dbd79ea112cd14d4b9f5bec00e3fe37965",
+  "git_dirty": true,
+  "source_hash": "598a44f190d624db58fd4d2a60368f59bf41b1f3e8620c8c49c55d6e1e680398",
+  "target_errors_observed": false,
+  "source_screen": {
+    "ccv2_direct_large_g0_s17": {
+      "best_validation": 2.4140516246136383,
+      "config_sha256": "be6e4868451b0295b1f5145651f8ee3da4de9534f31160a973b090535ea5985f",
+      "checkpoint_sha256": "2df5db1204d6bc8a2b11e29d709abe01179b5d61f16beec138840360af02f977"
+    },
+    "ccv2_direct_small_g0.7_s17": {
+      "best_validation": 3.3279565104781303,
+      "config_sha256": "f178ab4401ad987da6eff90d27807fa4d348f1a38af08a06fc400a2eeb49a3ad",
+      "checkpoint_sha256": "6eee7b097ee187679a3268f88d8acbaf42efaafaad3dfda7049144177fb0a03c"
+    },
+    "ccv2_direct_small_g0_s17": {
+      "best_validation": 2.677933364160336,
+      "config_sha256": "4d3d76a109495ae83fba0cfafc33cf5c599f7d1f1459e40b24fe6af33a022584",
+      "checkpoint_sha256": "86c8daca1508080181cfa5428c48ef03c20f8b3e8281666ea86fb2f36bc64694"
+    },
+    "ccv2_gw_large_g0_s17": {
+      "best_validation": 3.2984594138196472,
+      "config_sha256": "56a028ba0e42604a0ab68b631977ff01eb1a97398f05601121820d62f6cdf0a6",
+      "checkpoint_sha256": "95448d67234ca04b167cfd50b3057b9709ed44096f0504143ecb2a9a92eb9687"
+    },
+    "ccv2_gw_small_g0.7_s17": {
+      "best_validation": 3.3143445238469824,
+      "config_sha256": "6b64e6b0587403db005351c606a9e8262d811bd3070eb70a2b742fdb1d09523f",
+      "checkpoint_sha256": "32279c52d0beb3a62c753d4ab5f5e4fe8df8724179b94e2a805577fead998b54"
+    },
+    "ccv2_gw_small_g0_s17": {
+      "best_validation": 3.476467582403235,
+      "config_sha256": "082c5d37cdbaf4733fcb65e84e4ac7a3306b7bb81da7ea7d5772857db1877b3f",
+      "checkpoint_sha256": "aa7c36a8a0b97d956f0185cc028c9204f8746408ebe73b93595eba31ab21bf34"
+    },
+    "ccv2_sog_large_g0_s17": {
+      "best_validation": 3.245054857976794,
+      "config_sha256": "b2ae2f959f01445ab600fe3c18f8c13af8b3146e9151d306a7d74f1a49cc90c2",
+      "checkpoint_sha256": "daa09378b5e68aaeff4377b4e289d437628fa524bc26560f7ca5f5c5f048b1c8"
+    },
+    "ccv2_sog_small_g0.7_s17": {
+      "best_validation": 3.2269082045985003,
+      "config_sha256": "924db6be5cdd145157c094952bd3e4bc1f16dabf235d81cffd87332162d50b72",
+      "checkpoint_sha256": "356a5a50ca1b6717aff968a048516ead88775f78f59cbe2fc3122e33967ae3ad"
+    },
+    "ccv2_sog_small_g0_s17": {
+      "best_validation": 3.232447176685915,
+      "config_sha256": "0db60d84b31e28ed53e16bb4c650409b654203a717ae2729850848eaeee670b4",
+      "checkpoint_sha256": "5ffad135fd47ea1ec95b898cc9ddb450964403bf3329b941367a6d7eac2d06bd"
+    }
+  },
+  "statistics_source_screen_sha256": "2ed1e093f34cee41ccf5caa49cdb6bc7e198b6aa26d3883b13963d61824eeddc",
+  "primary_proposed": "sog small gain0.7: source-val3.226908; best anchored family",
+  "matched_capacity_control": "direct small gain0: source-val2.677933; strongest small direct variant;120epochs/964131params same",
+  "capacity_control": "direct large gain0: source-val2.414052; strongest CNNsource",
+  "statistics_controls": [
+    "direct_hgb7",
+    "gw_ridge1"
+  ],
+  "additional_seeds": [
+    29,
+    43
+  ],
+  "repeated_configurations": [
+    "direct_small_g0",
+    "sog_small_g0.7",
+    "direct_large_g0"
+  ],
+  "ablations": "all nine seed17 CNNscreens retained and evaluated; both augmentation choices and anchoredGW/SoG; source-only risk-context/cheap/combined heads",
+  "legacy_controls": "all frozenv1officialbaseline+proposed seeds17/29/43; original heads and source-only equal-CV risk-head upgrades",
+  "selection_limits": "119sourcevalimages; source officialtest/Sony30 are regression sets. No target-based model/hyperparameter choice is permitted.",
+  "risk_selection": "five date-group OOF, minrisk80thenAURC; sourcecalonly. Finalheadselectionlock beforetargeterrors"
+}

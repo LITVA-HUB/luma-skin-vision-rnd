@@ -1,0 +1,74 @@
+{
+  "receipt_created_utc": "2026-09-10T19:36:29.119005+00:00",
+  "pytest_observed_this_session": {
+    "command": ".venv/Scripts/pytest -q",
+    "exit_code": 0,
+    "passed": 99,
+    "warnings": 14,
+    "seconds": 29.02,
+    "scope": "Entire suite including preserved synthetic integrations and v2 model/selector/statistics/ONNX tests. Deprecation/trace warnings; dynamic batch and explicit graph invalid-refusal tests passed. This is a summary of observed command output, not a reconstructed raw log."
+  },
+  "final_lightweight_checks": [
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\ruff.exe",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "159 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Resolved 63 packages in 1ms\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/ip/licensing_inventory.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/ip/public_data_licenses.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/ip/public_milestone_ip.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/research/CURRENT_RND_STATUS.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/research/novelty_hypothesis.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/research/prior_art.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/application_readiness.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/evidence_map.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/public_evidence_addendum.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'docs/skolkovo/technology_overview.md', CRLF will be replaced by LF the next time Git touches it\n"
+    }
+  ],
+  "scientific_audit": {
+    "path": "docs/benchmarks/cc_v2/independent_metric_final_recheck.json",
+    "sha256": "50cb8174b57b389bb4652af4928df6b01002136bee0ed3cdd341623d904bae51",
+    "runs": 25,
+    "method_domain_records": 594,
+    "original_comparison_exact": true
+  },
+  "archive_verified": 137,
+  "training_runs_verified": 17,
+  "source_hash": "598a44f190d624db58fd4d2a60368f59bf41b1f3e8620c8c49c55d6e1e680398",
+  "exact_pilot_helper": {
+    "verified_files": 60,
+    "downloaded_bytes": 0
+  },
+  "figures_visually_inspected": [
+    "risk_coverage.png",
+    "camera_comparison.png",
+    "frozen_thresholds.png"
+  ],
+  "scope": "No external publishing or paid compute. TensorRT and facial accuracy remain unmeasured."
+}

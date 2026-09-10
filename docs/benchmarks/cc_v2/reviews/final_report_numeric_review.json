@@ -1,0 +1,139 @@
+{
+  "status": "PASS_NUMERIC",
+  "bootstrap_rows": 12,
+  "draws_per_row": 2000,
+  "maximum_point_delta": 5.773159728050814e-15,
+  "maximum_ci_delta": 9.658940314238862e-15,
+  "old_mean_risk80_maximum_delta": 0.0,
+  "metric_summary_records": 26,
+  "metric_summary_max_delta": 2.220446049250313e-16,
+  "profile_statistics_max_delta": 0.0,
+  "bootstrap_checks": [
+    {
+      "second": "ccv2_direct_large_g0::combined",
+      "domain": "source_regression",
+      "grouping": "image resampling",
+      "aurc_delta": 0.6719610421490181,
+      "aurc_ci95": [
+        0.37508049596560666,
+        1.0205496436454358
+      ]
+    },
+    {
+      "second": "ccv2_direct_large_g0::combined",
+      "domain": "source_regression",
+      "grouping": "capture-date clusters",
+      "aurc_delta": 0.6719610421490181,
+      "aurc_ci95": [
+        0.21108665694790166,
+        1.0900154476565653
+      ]
+    },
+    {
+      "second": "ccv2_direct_large_g0::combined",
+      "domain": "fresh_all",
+      "grouping": "camera-stratified image resampling",
+      "aurc_delta": -2.1697487232767796,
+      "aurc_ci95": [
+        -2.557038856953497,
+        -1.7435022767433346
+      ]
+    },
+    {
+      "second": "ccv2_direct_large_g0::combined",
+      "domain": "fresh_all",
+      "grouping": "camera-stratified exact-reference-hash proxy clusters",
+      "aurc_delta": -2.1697487232767796,
+      "aurc_ci95": [
+        -2.5843189139785983,
+        -1.7569544160099821
+      ]
+    },
+    {
+      "second": "gw_ridge1::cheap",
+      "domain": "source_regression",
+      "grouping": "image resampling",
+      "aurc_delta": -0.18069457089152796,
+      "aurc_ci95": [
+        -0.48114060786651053,
+        0.16217866375031584
+      ]
+    },
+    {
+      "second": "gw_ridge1::cheap",
+      "domain": "source_regression",
+      "grouping": "capture-date clusters",
+      "aurc_delta": -0.18069457089152796,
+      "aurc_ci95": [
+        -0.39183733801168774,
+        0.04341972086345219
+      ]
+    },
+    {
+      "second": "gw_ridge1::cheap",
+      "domain": "fresh_all",
+      "grouping": "camera-stratified image resampling",
+      "aurc_delta": -0.7978153168043582,
+      "aurc_ci95": [
+        -1.3329677560403645,
+        -0.31634974640116637
+      ]
+    },
+    {
+      "second": "gw_ridge1::cheap",
+      "domain": "fresh_all",
+      "grouping": "camera-stratified exact-reference-hash proxy clusters",
+      "aurc_delta": -0.7978153168043582,
+      "aurc_ci95": [
+        -1.2867871361982008,
+        -0.3072286363422667
+      ]
+    },
+    {
+      "second": "ccv2_sog_large_g0::context",
+      "domain": "source_regression",
+      "grouping": "image resampling",
+      "aurc_delta": 0.13136666314768686,
+      "aurc_ci95": [
+        -0.02649035721309623,
+        0.30981987995429616
+      ]
+    },
+    {
+      "second": "ccv2_sog_large_g0::context",
+      "domain": "source_regression",
+      "grouping": "capture-date clusters",
+      "aurc_delta": 0.13136666314768686,
+      "aurc_ci95": [
+        -0.012309779585698465,
+        0.28907030347051677
+      ]
+    },
+    {
+      "second": "ccv2_sog_large_g0::context",
+      "domain": "fresh_all",
+      "grouping": "camera-stratified image resampling",
+      "aurc_delta": -0.37431753392234857,
+      "aurc_ci95": [
+        -0.61889241713169,
+        -0.1326220112326748
+      ]
+    },
+    {
+      "second": "ccv2_sog_large_g0::context",
+      "domain": "fresh_all",
+      "grouping": "camera-stratified exact-reference-hash proxy clusters",
+      "aurc_delta": -0.37431753392234857,
+      "aurc_ci95": [
+        -0.6059140097995332,
+        -0.12540635941350325
+      ]
+    }
+  ],
+  "input_hashes": {
+    "docs\\benchmarks\\cc_v2\\paired_bootstrap.json": "79df001ec62ea40154fe164662626bc86b177d46396c8e51b39f863dfd2b0ec5",
+    "docs\\benchmarks\\cc_v2\\paired_bootstrap_with_aurc.json": "a7abb989423202ad9639f282a0bbe64ef504d6307ce62e79fe4beb0dd48139a4",
+    "docs\\benchmarks\\cc_v2\\metric_summary.json": "7481be673fc474a70834350b2721506bb7d0436f0e7cf819a936077028675072",
+    "docs\\benchmarks\\cc_v2\\profiles\\profile.json": "0f39e359ce7c338d59ff9f40f1f6bd8c284bf34f4da20136f70d381ba101bfd6"
+  }
+}

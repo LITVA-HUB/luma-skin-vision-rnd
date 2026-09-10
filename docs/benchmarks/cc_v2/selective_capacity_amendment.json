@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-09-10T18:53:04.636950+00:00",
+  "target_errors_observed": false,
+  "parent_estimator_lock_sha256": "e527d2ef2514d1b0d88489ca2693e02bfb5a668ed1325ddb54d4e470c547a619",
+  "source_only_oof_risk80": {
+    "ccv2_direct_large_g0_s17": {
+      "context": 2.5709330841418767,
+      "cheap": 2.2042991045120353,
+      "combined": 2.156543909357694
+    },
+    "ccv2_direct_large_g0_s29": {
+      "context": 2.8243076799225473,
+      "cheap": 2.3366757171454844,
+      "combined": 2.2908924518726237
+    },
+    "ccv2_direct_large_g0_s43": {
+      "context": 2.446644881855794,
+      "cheap": 2.171633405928309,
+      "combined": 2.2046964622819303
+    },
+    "ccv2_direct_small_g0.7_s17": {
+      "context": 2.444811020464706,
+      "cheap": 2.4668067945698344,
+      "combined": 2.3072663803258053
+    },
+    "ccv2_direct_small_g0_s17": {
+      "context": 2.6423299738723975,
+      "cheap": 2.443095468780814,
+      "combined": 2.4205300749108485
+    },
+    "ccv2_direct_small_g0_s29": {
+      "context": 2.7273723090638806,
+      "cheap": 2.270264531479668,
+      "combined": 2.274358146261481
+    },
+    "ccv2_direct_small_g0_s43": {
+      "context": 2.514105053998372,
+      "cheap": 2.0665231716054207,
+      "combined": 2.0953260993990988
+    },
+    "ccv2_gw_large_g0_s17": {
+      "context": 2.0676559392433367,
+      "cheap": 2.0621315867087517,
+      "combined": 2.0283969595644162
+    },
+    "ccv2_gw_small_g0.7_s17": {
+      "context": 1.9859729881135877,
+      "cheap": 1.9540666246316496,
+      "combined": 2.0140488026238708
+    },
+    "ccv2_gw_small_g0_s17": {
+      "context": 2.040046714574513,
+      "cheap": 2.0540580029026994,
+      "combined": 2.036154538804013
+    },
+    "ccv2_sog_large_g0_s17": {
+      "context": 1.6889319655371835,
+      "cheap": 1.5381658968098546,
+      "combined": 1.5947680278796716
+    },
+    "ccv2_sog_small_g0.7_s17": {
+      "context": 2.1627140725590386,
+      "cheap": 2.0017546204143657,
+      "combined": 2.0672129923392513
+    },
+    "ccv2_sog_small_g0.7_s29": {
+      "context": 1.802120958355443,
+      "cheap": 1.7338314462285793,
+      "combined": 1.8296782044018647
+    },
+    "ccv2_sog_small_g0.7_s43": {
+      "context": 1.8736832962412244,
+      "cheap": 1.8589216776076267,
+      "combined": 1.865368912444082
+    },
+    "ccv2_sog_small_g0_s17": {
+      "context": 1.9831352406315141,
+      "cheap": 2.019923542634451,
+      "combined": 1.9899958989469733
+    }
+  },
+  "decision": "Add seed29/43 repetitions of sog LARGE gain0; same3033651params/120epochs/gain0 as direct LARGE existingthree-seed C+",
+  "reason": "Primaryresearchquestion selectiveerror; source-risk-groupOOF80points favor largerSoG(cheap1.538\u00b0,combined1.595\u00b0) over smallerSoG(~2\u00b0). Source-valfullmean3.245 vs3.227 nearlytied. No camera/testerror inspected.",
+  "selection_rule": "Compare allprespecifiedcontext/cheap/combined heads; primaryselectivecandidatechosenusing sourceOOF, no seedselection",
+  "additional_runs": [
+    "ccv2_sog_large_g0_s29",
+    "ccv2_sog_large_g0_s43"
+  ],
+  "preservation": "Allprior source-onlyselectionchoices/screens preserved as exploratoryhistory; amendedbeforetargetevaluation"
+}
