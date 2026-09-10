@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-09-10T16:00:33.410887+00:00",
+  "git_commit": "c5f0707cbe752c94f3a485e1779c16648d4cadb8",
+  "git_dirty": true,
+  "source_hash": "b12faad7b06b77262cc7c69fb8a3ad469d8c3e8035a64f4b2406060e92fe3335",
+  "all_passed": true,
+  "tests_passed": 48,
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "................................................                         [100%]\n============================== warnings summary ===============================\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c]\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c_plus]\ntests/integration/test_export.py::test_onnx_equivalence[proposed_v1]\ntests/integration/test_pipeline.py::test_train_calibrate_evaluate_load_and_conservative_api\n  C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\src\\luma_skin_vision\\export\\__init__.py:28: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter will be the default. To switch now, set dynamo=True in torch.onnx.export. This new exporter supports features like exporting LLMs with DynamicCache. We encourage you to try it and share feedback to help improve the experience. Learn more about the new export logic: https://pytorch.org/docs/stable/onnx_dynamo.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html.\n    torch.onnx.export(\n\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c]\ntests/integration/test_export.py::test_onnx_equivalence[baseline_c_plus]\ntests/integration/test_export.py::test_onnx_equivalence[proposed_v1]\ntests/integration/test_pipeline.py::test_train_calibrate_evaluate_load_and_conservative_api\n  C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Lib\\site-packages\\torch\\onnx\\utils.py:179: DeprecationWarning: The feature will be removed. Please remove usage of this function\n    setup_onnx_logging(verbose) as log_ctx,\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n48 passed, 8 warnings in 14.02s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "89 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Resolved 56 packages in 1ms\n"
+    }
+  ]
+}

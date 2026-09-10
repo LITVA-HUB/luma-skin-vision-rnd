@@ -29,4 +29,6 @@ Adopted/locked direct packages reported by the integration run: torch 2.8.0+cu12
 
 ## Intake record required before adopting any new artifact
 
+Exact installed distribution metadata and license-file SHA256 values are recorded in [installed_license_metadata.json](installed_license_metadata.json), including optional matplotlib 3.11.1 and its plotting dependencies. These are local wheel metadata observations, not blanket legal clearance. Matplotlib uses its project license (PSF/BSD-derived terms); review the recorded exact license files before redistribution. No plotting model weights or dataset were introduced. Numerical Sharma test fixtures retain author attribution in tests/fixtures/README.md; supplementary-data redistribution rights remain to be reviewed before public release.
+
 Record owner, source URL and revision, download timestamp, SHA256, exact code/weight/data license texts, grant scope for commercial R&D/inference/fine-tuning/distillation/redistribution, training lineage, attribution and NOTICE obligations, participant permissions where applicable, reviewer/date and decision. Store license evidence alongside the manifest, not private images in Git. Unknown terms block adoption, not independent literature analysis. Company R&D is not automatically noncommercial research.

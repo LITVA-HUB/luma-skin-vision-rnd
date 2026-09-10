@@ -1,6 +1,7 @@
 """Run actual CLI entry points; preserve commands and outputs under artifacts."""
 
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -16,7 +17,14 @@ def main():
 
     def run(script, *args):
         cmd = [sys.executable, str(ROOT / "scripts" / f"{script}.py"), *map(str, args)]
-        result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+        result = subprocess.run(
+            cmd,
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
+        )
         commands.append(
             {
                 "command": cmd,

@@ -19,13 +19,13 @@ Prefer modular local package over notebook-only prototype (difficult to validate
 
 ## Execution tasks
 
-- [ ] 1. Bootstrap: inspect environment and supplied archive without running it; verify archive manifest, save source context and hash. Initialize Git, dependency groups and lockfile.
-- [ ] 2. Independent research: verify at least 10 strong analogues from primary sources, separately assess code/weights/data; narrow novelty. Review current compact backbones and official Skolkovo sources.
-- [ ] 3. Data and mathematics: write tests first for Sharma reference pairs, sRGB landmarks/roundtrip, schema and cross-split rejection, repeatability, deterministic subject allocation. Implement only after failure. Gate: targeted pytest passes.
-- [ ] 4. Measurement and evaluation: test ROI bounds, color transforms, matched coverage, tied-score policy and paired subject bootstrap. Implement A0/A1 and train-only ridge CCM A2; synthetic generator uses known reference colors and camera/light perturbations. Gate: generated manifest validates and baselines produce labeled reports.
-- [ ] 5. Compact model framework: test one end-to-end synthetic run, save/load predictions, split-safe error fitting and calibration persistence. Implement C with torchvision MobileNetV3-small (random initialization smoke only); use the same backbone for C+/proposed experiments with documented provisional reliability supervision. Record full config, source/data/split hashes and hardware.
-- [ ] 6. Integration/export: test reject semantics and uncalibrated deployment refusal; implement local request/response contract, export skeleton and measured CPU/GPU/ORT smoke tooling. Export is engineering validation; optimization for deployment waits for positive real evidence.
-- [ ] 7. Evidence and review: run all tests, Ruff and full synthetic smoke; inspect independent review, fix findings and repeat affected checks. Save actual commands/results and update all status/evidence documents. Commit local repository; no remote publishing.
+- [x] 1. Bootstrap: inspect environment and supplied archive without running it; verify archive manifest, save source context and hash. Initialize Git, dependency groups and lockfile.
+- [x] 2. Independent research: verify at least 10 strong analogues from primary sources, separately assess code/weights/data; narrow novelty. Review current compact backbones and official Skolkovo sources.
+- [x] 3. Data and mathematics: write tests first for Sharma reference pairs, sRGB landmarks/roundtrip, schema and cross-split rejection, repeatability, deterministic subject allocation. Implement only after failure. Gate: targeted pytest passes.
+- [x] 4. Measurement and evaluation: test ROI bounds, color transforms, matched coverage, tied-score policy and paired subject bootstrap. Implement A0/A1 and train-only ridge CCM A2; synthetic generator uses known reference colors and camera/light perturbations. Gate: generated manifest validates and baselines produce labeled reports.
+- [x] 5. Compact model framework: test one end-to-end synthetic run, save/load predictions, split-safe error fitting and calibration persistence. Implement C with torchvision MobileNetV3-small (random initialization smoke only); use the same backbone for C+/proposed experiments with documented provisional reliability supervision. Record full config, source/data/split hashes and hardware.
+- [x] 6. Integration/export: test reject semantics and uncalibrated deployment refusal; implement local request/response contract, export skeleton and measured CPU/GPU/ORT smoke tooling. Export is engineering validation; optimization for deployment waits for positive real evidence.
+- [x] 7. Evidence and review: run all tests, Ruff and full synthetic smoke; inspect independent review, fix findings and repeat affected checks. Save actual commands/results and update all status/evidence documents. Commit local repository; no remote publishing.
 
 ## Scientific gates and scope
 

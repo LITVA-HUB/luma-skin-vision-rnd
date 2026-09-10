@@ -1,6 +1,7 @@
 """Record local verification evidence; exit nonzero on any failed check."""
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -21,7 +22,14 @@ def main():
     ]
     outputs = []
     for command in checks:
-        result = subprocess.run(command, cwd=root, capture_output=True, text=True, encoding="utf-8")
+        result = subprocess.run(
+            command,
+            cwd=root,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
+        )
         outputs.append(
             {
                 "command": command,

@@ -1,0 +1,972 @@
+{
+  "evidence_kind": "SYNTHETIC",
+  "comparison_cplus_minus_proposed": {
+    "ci95": [
+      0.31791801524856284,
+      4.028493578591955
+    ],
+    "draws": 300,
+    "seed": 42,
+    "coverage": 0.8,
+    "estimand": "image-weighted selective risk A minus B; subject cluster bootstrap"
+  },
+  "smoke_summary": {
+    "evidence_kind": "SYNTHETIC",
+    "scientific_gates_passed": false,
+    "validation": {
+      "valid": true,
+      "records": 960,
+      "images": 480,
+      "subjects": 60,
+      "data_kind": "SYNTHETIC",
+      "splits": {
+        "train": 24,
+        "validation": 12,
+        "calibration": 12,
+        "test": 12
+      }
+    },
+    "repeatability": {
+      "reference_groups": 120,
+      "pairs": 120,
+      "median_pair_delta_e00": 0.0,
+      "p95_pair_delta_e00": 0.0,
+      "interpretation": "descriptive repeatability; not an instrument accuracy certificate",
+      "data_kind": "SYNTHETIC",
+      "gate_1_passed": false
+    },
+    "runs": {
+      "baseline_a0": "experiments\\runs\\20260910T155416_baseline_a0_4124afad",
+      "baseline_a1": "experiments\\runs\\20260910T155423_baseline_a1_8d8b4a07",
+      "baseline_a2": "experiments\\runs\\20260910T155430_baseline_a2_262f80c7",
+      "baseline_c": "experiments\\runs\\20260910T155437_baseline_c_78c51802",
+      "baseline_c_plus": "experiments\\runs\\20260910T155456_baseline_c_plus_dd6ab32d",
+      "proposed_v1": "experiments\\runs\\20260910T155516_proposed_v1_3c4c3c76"
+    },
+    "results": {
+      "baseline_a0": {
+        "data_kind": "SYNTHETIC",
+        "method": "baseline_a0",
+        "split": "test",
+        "metrics": {
+          "n_region_records": 192,
+          "subjects": 12,
+          "mean_delta_e00": 3.0322650631559416,
+          "median_delta_e00": 2.863371146622497,
+          "p95_delta_e00": 6.500100590852709,
+          "mae_lab": [
+            1.3926712481630528,
+            3.023468675169273,
+            3.0195592880476774
+          ],
+          "rmse_lab": [
+            1.7653107935151273,
+            3.986988583535245,
+            4.164701633603176
+          ],
+          "bias_lab": [
+            -0.8763021530679898,
+            2.8919091694914076,
+            2.8468065310791597
+          ],
+          "subject_macro_delta_e00": 3.0322650631559416,
+          "per_subject": {
+            "syn_001": 3.9189320644230943,
+            "syn_002": 3.004513184977161,
+            "syn_008": 3.3053514194884963,
+            "syn_012": 3.7098714275639053,
+            "syn_013": 2.8389963069407598,
+            "syn_014": 2.892829517334095,
+            "syn_033": 2.181206357775799,
+            "syn_036": 3.2050881711215418,
+            "syn_043": 3.53242458727132,
+            "syn_045": 2.7385661638844363,
+            "syn_047": 2.0284647092103927,
+            "syn_058": 3.0309368478802985
+          },
+          "catastrophic_tolerance": 10,
+          "catastrophic_rate": 0.0,
+          "between_subject_prediction_std_lab": [
+            13.129464272005386,
+            32.711559249444015,
+            19.7635368690927
+          ],
+          "between_subject_target_std_lab": [
+            13.681617283835136,
+            32.69396608484686,
+            21.018881362759316
+          ]
+        },
+        "risk_coverage": [
+          {
+            "requested_coverage": 0.6,
+            "coverage": 0.59375,
+            "accepted": 57,
+            "mean_delta_e00": 3.2582966946043124,
+            "p95_delta_e00": 6.390661737817263,
+            "catastrophic_rate": 0.0
+          },
+          {
+            "requested_coverage": 0.8,
+            "coverage": 0.7916666666666666,
+            "accepted": 76,
+            "mean_delta_e00": 3.177575436615893,
+            "p95_delta_e00": 6.411325047243049,
+            "catastrophic_rate": 0.0
+          },
+          {
+            "requested_coverage": 0.9,
+            "coverage": 0.8958333333333334,
+            "accepted": 86,
+            "mean_delta_e00": 3.11441592691406,
+            "p95_delta_e00": 6.2760671324355455,
+            "catastrophic_rate": 0.0
+          },
+          {
+            "requested_coverage": 1.0,
+            "coverage": 1.0,
+            "accepted": 96,
+            "mean_delta_e00": 3.032265063155941,
+            "p95_delta_e00": 6.273739666465248,
+            "catastrophic_rate": 0.0
+          }
+        ]
+      },
+      "baseline_a1": {
+        "data_kind": "SYNTHETIC",
+        "method": "baseline_a1",
+        "split": "test",
+        "metrics": {
+          "n_region_records": 192,
+          "subjects": 12,
+          "mean_delta_e00": 6.958854546849094,
+          "median_delta_e00": 6.912818438702153,
+          "p95_delta_e00": 11.422077441983843,
+          "mae_lab": [
+            3.8174913669489423,
+            8.782835867897267,
+            6.762763696949643
+          ],
+          "rmse_lab": [
+            4.761658495414069,
+            9.753209445277335,
+            7.963945096893042
+          ],
+          "bias_lab": [
+            -3.3661751348258466,
+            2.666266418056763,
+            -3.608647711415512
+          ],
+          "subject_macro_delta_e00": 6.958854546849094,
+          "per_subject": {
+            "syn_001": 10.020245118809724,
+            "syn_002": 4.49375687373756,
+            "syn_008": 3.413344146613736,
+            "syn_012": 11.720107884439624,
+            "syn_013": 9.70514241872387,
+            "syn_014": 6.925552649888876,
+            "syn_033": 4.835716537381968,
+            "syn_036": 7.335080629438121,
+            "syn_043": 2.9225031346529575,
+            "syn_045": 7.343854309481023,
+            "syn_047": 7.545594013334423,
+            "syn_058": 7.245356845687258
+          },
+          "catastrophic_tolerance": 10,
+          "catastrophic_rate": 0.17708333333333334,
+          "between_subject_prediction_std_lab": [
+            11.390964089593973,
+            25.605183743045632,
+            16.900329623329135
+          ],
+          "between_subject_target_std_lab": [
+            13.681617283835136,
+            32.69396608484686,
+            21.018881362759316
+          ]
+        },
+        "risk_coverage": [
+          {
+            "requested_coverage": 0.6,
+            "coverage": 0.59375,
+            "accepted": 57,
+            "mean_delta_e00": 6.8923040498204715,
+            "p95_delta_e00": 10.528053488064378,
+            "catastrophic_rate": 0.08771929824561403
+          },
+          {
+            "requested_coverage": 0.8,
+            "coverage": 0.7916666666666666,
+            "accepted": 76,
+            "mean_delta_e00": 7.046611913658213,
+            "p95_delta_e00": 11.802726252779571,
+            "catastrophic_rate": 0.15789473684210525
+          },
+          {
+            "requested_coverage": 0.9,
+            "coverage": 0.8958333333333334,
+            "accepted": 86,
+            "mean_delta_e00": 7.110971740446441,
+            "p95_delta_e00": 11.810570907217938,
+            "catastrophic_rate": 0.16279069767441862
+          },
+          {
+            "requested_coverage": 1.0,
+            "coverage": 1.0,
+            "accepted": 96,
+            "mean_delta_e00": 6.958854546849094,
+            "p95_delta_e00": 11.802726252779571,
+            "catastrophic_rate": 0.14583333333333334
+          }
+        ]
+      },
+      "baseline_a2": {
+        "data_kind": "SYNTHETIC",
+        "method": "baseline_a2",
+        "split": "test",
+        "metrics": {
+          "n_region_records": 192,
+          "subjects": 12,
+          "mean_delta_e00": 2.026953994173084,
+          "median_delta_e00": 1.6683471510397578,
+          "p95_delta_e00": 3.7404796074604936,
+          "mae_lab": [
+            1.2143869203196227,
+            1.7249763634096098,
+            2.104795978644075
+          ],
+          "rmse_lab": [
+            1.4042176171930252,
+            2.254557858365073,
+            2.666109718613761
+          ],
+          "bias_lab": [
+            0.24732543307492513,
+            0.07332301316845652,
+            -0.050790028067310755
+          ],
+          "subject_macro_delta_e00": 2.026953994173084,
+          "per_subject": {
+            "syn_001": 2.2413455112695635,
+            "syn_002": 2.162583446503448,
+            "syn_008": 2.1095696139857743,
+            "syn_012": 2.1738201506242145,
+            "syn_013": 1.7380407949660857,
+            "syn_014": 1.9677350503909339,
+            "syn_033": 2.1167336757582147,
+            "syn_036": 2.2498077942067294,
+            "syn_043": 2.4194160495882526,
+            "syn_045": 1.7009765847513063,
+            "syn_047": 1.3126032036313848,
+            "syn_058": 2.130816054401103
+          },
+          "catastrophic_tolerance": 10,
+          "catastrophic_rate": 0.0,
+          "between_subject_prediction_std_lab": [
+            13.149282179686717,
+            32.24441967896956,
+            20.234635499904673
+          ],
+          "between_subject_target_std_lab": [
+            13.681617283835136,
+            32.69396608484686,
+            21.018881362759316
+          ]
+        },
+        "risk_coverage": [
+          {
+            "requested_coverage": 0.6,
+            "coverage": 0.59375,
+            "accepted": 57,
+            "mean_delta_e00": 2.029355086370152,
+            "p95_delta_e00": 3.6989648998169664,
+            "catastrophic_rate": 0.0
+          },
+          {
+            "requested_coverage": 0.8,
+            "coverage": 0.7916666666666666,
+            "accepted": 76,
+            "mean_delta_e00": 2.071051657436639,
+            "p95_delta_e00": 3.606298510880044,
+            "catastrophic_rate": 0.0
+          },
+          {
+            "requested_coverage": 0.9,
+            "coverage": 0.8958333333333334,
+            "accepted": 86,
+            "mean_delta_e00": 2.0492555287218277,
+            "p95_delta_e00": 3.6999561423606173,
+            "catastrophic_rate": 0.0
+          },
+          {
+            "requested_coverage": 1.0,
+            "coverage": 1.0,
+            "accepted": 96,
+            "mean_delta_e00": 2.026953994173084,
+            "p95_delta_e00": 3.69905501277548,
+            "catastrophic_rate": 0.0
+          }
+        ]
+      },
+      "baseline_c": {
+        "data_kind": "SYNTHETIC",
+        "method": "baseline_c",
+        "split": "test",
+        "metrics": {
+          "n_region_records": 192,
+          "subjects": 12,
+          "mean_delta_e00": 26.28518321980947,
+          "median_delta_e00": 26.6288879195852,
+          "p95_delta_e00": 38.415957132676475,
+          "mae_lab": [
+            11.083659261062614,
+            28.662864934374642,
+            16.76274933172407
+          ],
+          "rmse_lab": [
+            13.878173849149585,
+            34.183924274007424,
+            21.034849347682
+          ],
+          "bias_lab": [
+            2.3274656209406293,
+            9.982250060981402,
+            0.8194733755072457
+          ],
+          "subject_macro_delta_e00": 26.285183219809465,
+          "per_subject": {
+            "syn_001": 22.124416605735533,
+            "syn_002": 19.396024802100907,
+            "syn_008": 33.77193076590962,
+            "syn_012": 24.84386843947006,
+            "syn_013": 27.985753256456114,
+            "syn_014": 8.57489864532982,
+            "syn_033": 30.73140217320559,
+            "syn_036": 32.990818626251375,
+            "syn_043": 14.996575616053175,
+            "syn_045": 25.272022582714285,
+            "syn_047": 36.31852999181065,
+            "syn_058": 38.415957132676475
+          },
+          "catastrophic_tolerance": 10,
+          "catastrophic_rate": 0.9166666666666666,
+          "between_subject_prediction_std_lab": [
+            0.0,
+            4.3529078652682074e-07,
+            1.6518123402420315e-06
+          ],
+          "between_subject_target_std_lab": [
+            13.681617283835136,
+            32.69396608484686,
+            21.018881362759316
+          ]
+        },
+        "risk_coverage": [
+          {
+            "requested_coverage": 0.6,
+            "coverage": 0.59375,
+            "accepted": 57,
+            "mean_delta_e00": 25.503546018743737,
+            "p95_delta_e00": 38.415957132676475,
+            "catastrophic_rate": 0.8771929824561403
+          },
+          {
+            "requested_coverage": 0.8,
+            "coverage": 0.7916666666666666,
+            "accepted": 76,
+            "mean_delta_e00": 25.73445885713285,
+            "p95_delta_e00": 36.842886777027104,
+            "catastrophic_rate": 0.9078947368421053
+          },
+          {
+            "requested_coverage": 0.9,
+            "coverage": 0.8958333333333334,
+            "accepted": 86,
+            "mean_delta_e00": 26.200441360247545,
+            "p95_delta_e00": 38.415957132676475,
+            "catastrophic_rate": 0.9186046511627907
+          },
+          {
+            "requested_coverage": 1.0,
+            "coverage": 1.0,
+            "accepted": 96,
+            "mean_delta_e00": 26.285183219809465,
+            "p95_delta_e00": 38.415957132676475,
+            "catastrophic_rate": 0.9166666666666666
+          }
+        ]
+      },
+      "baseline_c_plus": {
+        "data_kind": "SYNTHETIC",
+        "method": "baseline_c_plus",
+        "split": "test",
+        "metrics": {
+          "n_region_records": 192,
+          "subjects": 12,
+          "mean_delta_e00": 26.14071023239281,
+          "median_delta_e00": 26.062634964467495,
+          "p95_delta_e00": 38.86032363326534,
+          "mae_lab": [
+            11.01577980279413,
+            28.527318880925332,
+            16.74851091457548
+          ],
+          "rmse_lab": [
+            13.885588431071216,
+            33.987545906459616,
+            21.028661723739233
+          ],
+          "bias_lab": [
+            2.7613298369504045,
+            9.551118509318313,
+            0.8483928537647429
+          ],
+          "subject_macro_delta_e00": 26.14071023239281,
+          "per_subject": {
+            "syn_001": 21.494553971065343,
+            "syn_002": 19.72710187019775,
+            "syn_008": 33.9620741202675,
+            "syn_012": 24.20815081407691,
+            "syn_013": 27.367927314236155,
+            "syn_014": 9.092382409452934,
+            "syn_033": 31.088969939683835,
+            "syn_036": 32.56634791212369,
+            "syn_043": 14.887027775318384,
+            "syn_045": 24.76044729856315,
+            "syn_047": 35.67214449590875,
+            "syn_058": 38.861394867819314
+          },
+          "catastrophic_tolerance": 10,
+          "catastrophic_rate": 0.9166666666666666,
+          "between_subject_prediction_std_lab": [
+            0.08392893522977829,
+            0.10608088970184326,
+            0.04374970495700836
+          ],
+          "between_subject_target_std_lab": [
+            13.681617283835136,
+            32.69396608484686,
+            21.018881362759316
+          ]
+        },
+        "risk_coverage": [
+          {
+            "requested_coverage": 0.6,
+            "coverage": 0.59375,
+            "accepted": 57,
+            "mean_delta_e00": 24.292986811753313,
+            "p95_delta_e00": 35.672599541722704,
+            "catastrophic_rate": 0.8596491228070176
+          },
+          {
+            "requested_coverage": 0.8,
+            "coverage": 0.7916666666666666,
+            "accepted": 76,
+            "mean_delta_e00": 24.378977997203286,
+            "p95_delta_e00": 38.85662415995513,
+            "catastrophic_rate": 0.8947368421052632
+          },
+          {
+            "requested_coverage": 0.9,
+            "coverage": 0.8958333333333334,
+            "accepted": 86,
+            "mean_delta_e00": 25.298143859768665,
+            "p95_delta_e00": 38.8604130521124,
+            "catastrophic_rate": 0.9069767441860465
+          },
+          {
+            "requested_coverage": 1.0,
+            "coverage": 1.0,
+            "accepted": 96,
+            "mean_delta_e00": 26.14071023239281,
+            "p95_delta_e00": 38.8602639255444,
+            "catastrophic_rate": 0.9166666666666666
+          }
+        ]
+      },
+      "proposed_v1": {
+        "data_kind": "SYNTHETIC",
+        "method": "proposed_v1",
+        "split": "test",
+        "metrics": {
+          "n_region_records": 192,
+          "subjects": 12,
+          "mean_delta_e00": 24.476000073474342,
+          "median_delta_e00": 25.277452915115965,
+          "p95_delta_e00": 34.47583377969886,
+          "mae_lab": [
+            10.201258529816934,
+            27.21086479671581,
+            15.72462736467417
+          ],
+          "rmse_lab": [
+            12.560303367571864,
+            33.10488923420333,
+            19.971558402239896
+          ],
+          "bias_lab": [
+            1.8222549630261495,
+            11.927774748549758,
+            0.3071114019831518
+          ],
+          "subject_macro_delta_e00": 24.476000073474342,
+          "per_subject": {
+            "syn_001": 21.029628238156434,
+            "syn_002": 17.108027583146505,
+            "syn_008": 30.085683855895738,
+            "syn_012": 22.75202811085014,
+            "syn_013": 26.390183010726687,
+            "syn_014": 7.668450950243061,
+            "syn_033": 25.243650875615657,
+            "syn_036": 34.086413282339755,
+            "syn_043": 16.438228022619214,
+            "syn_045": 25.346702881488834,
+            "syn_047": 35.12685878010029,
+            "syn_058": 32.43614529050981
+          },
+          "catastrophic_tolerance": 10,
+          "catastrophic_rate": 0.9166666666666666,
+          "between_subject_prediction_std_lab": [
+            1.3292412757873535,
+            2.9976751804351807,
+            1.8081966638565063
+          ],
+          "between_subject_target_std_lab": [
+            13.681617283835136,
+            32.69396608484686,
+            21.018881362759316
+          ]
+        },
+        "risk_coverage": [
+          {
+            "requested_coverage": 0.6,
+            "coverage": 0.59375,
+            "accepted": 57,
+            "mean_delta_e00": 21.040167694994004,
+            "p95_delta_e00": 32.530967163199094,
+            "catastrophic_rate": 0.8596491228070176
+          },
+          {
+            "requested_coverage": 0.8,
+            "coverage": 0.7916666666666666,
+            "accepted": 76,
+            "mean_delta_e00": 22.18745863224645,
+            "p95_delta_e00": 32.94637493927223,
+            "catastrophic_rate": 0.8947368421052632
+          },
+          {
+            "requested_coverage": 0.9,
+            "coverage": 0.8958333333333334,
+            "accepted": 86,
+            "mean_delta_e00": 23.43727964375772,
+            "p95_delta_e00": 34.23415815925996,
+            "catastrophic_rate": 0.9069767441860465
+          },
+          {
+            "requested_coverage": 1.0,
+            "coverage": 1.0,
+            "accepted": 96,
+            "mean_delta_e00": 24.476000073474342,
+            "p95_delta_e00": 34.394273188079,
+            "catastrophic_rate": 0.9166666666666666
+          }
+        ]
+      }
+    },
+    "deployment": {
+      "baseline_c": {
+        "export": {
+          "max_abs_lab_difference": 4.76837158203125e-07,
+          "max_delta_e00_difference": 4.6708548126721947e-07,
+          "onnx_bytes": 4014595,
+          "samples": 192,
+          "precision": "FP32",
+          "provider": "CPUExecutionProvider",
+          "inputs": [
+            "image"
+          ],
+          "opset": 17,
+          "data_kind": "SYNTHETIC",
+          "dataset_hash": "d5fb130c739634a24772245f62234b502be72bd3899d4f525fc1e86fb13b9f42",
+          "checkpoint_sha256": "81f398770b694004c5a7b53b05a3e3a14f37627760503f4d260f7456c6a06561",
+          "onnx_sha256": "4afa3b4808878f7e936d5a43f3e5e635381244b8cdf802087b0a8acd09ba25bc",
+          "scope": "engineering numerical equivalence on frozen test inputs; not production readiness"
+        },
+        "cpu": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "pytorch",
+          "artifact_sha256": "81f398770b694004c5a7b53b05a3e3a14f37627760503f4d260f7456c6a06561",
+          "device": "cpu",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 2.4140999958035536,
+          "p95_ms": 2.860294999118196,
+          "peak_vram_bytes": null,
+          "parameters": 1001251,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        },
+        "onnx_cpu": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "onnxruntime CPUExecutionProvider",
+          "artifact_sha256": "4afa3b4808878f7e936d5a43f3e5e635381244b8cdf802087b0a8acd09ba25bc",
+          "device": "cpu",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 0.3268000000389293,
+          "p95_ms": 0.4090449911018368,
+          "peak_vram_bytes": null,
+          "parameters": 1001251,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        },
+        "cuda": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "pytorch",
+          "artifact_sha256": "81f398770b694004c5a7b53b05a3e3a14f37627760503f4d260f7456c6a06561",
+          "device": "cuda",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 3.484849992673844,
+          "p95_ms": 3.722260001813993,
+          "peak_vram_bytes": 13748224,
+          "parameters": 1001251,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        }
+      },
+      "baseline_c_plus": {
+        "export": {
+          "max_abs_lab_difference": 3.814697265625e-06,
+          "max_delta_e00_difference": 3.4671957425923293e-06,
+          "onnx_bytes": 4022684,
+          "samples": 192,
+          "precision": "FP32",
+          "provider": "CPUExecutionProvider",
+          "inputs": [
+            "image",
+            "ambiguity"
+          ],
+          "opset": 17,
+          "data_kind": "SYNTHETIC",
+          "dataset_hash": "d5fb130c739634a24772245f62234b502be72bd3899d4f525fc1e86fb13b9f42",
+          "checkpoint_sha256": "bf2636bebbe80880582e356578d2be0912727e44861c81dc5a9b7e8b02908f11",
+          "onnx_sha256": "4793f92697a29aeac5a9ba01b97fb366c177a09dea1cdecd5bdf5f50198be28a",
+          "scope": "engineering numerical equivalence on frozen test inputs; not production readiness"
+        },
+        "cpu": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "pytorch",
+          "artifact_sha256": "bf2636bebbe80880582e356578d2be0912727e44861c81dc5a9b7e8b02908f11",
+          "device": "cpu",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 2.6718500012066215,
+          "p95_ms": 3.0048750020796433,
+          "peak_vram_bytes": null,
+          "parameters": 1002596,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        },
+        "onnx_cpu": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "onnxruntime CPUExecutionProvider",
+          "artifact_sha256": "4793f92697a29aeac5a9ba01b97fb366c177a09dea1cdecd5bdf5f50198be28a",
+          "device": "cpu",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 0.3334499997436069,
+          "p95_ms": 0.3443800029344857,
+          "peak_vram_bytes": null,
+          "parameters": 1002596,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        },
+        "cuda": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "pytorch",
+          "artifact_sha256": "bf2636bebbe80880582e356578d2be0912727e44861c81dc5a9b7e8b02908f11",
+          "device": "cuda",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 3.201749990694225,
+          "p95_ms": 3.330720005033072,
+          "peak_vram_bytes": 13755392,
+          "parameters": 1002596,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        }
+      },
+      "proposed_v1": {
+        "export": {
+          "max_abs_lab_difference": 3.814697265625e-06,
+          "max_delta_e00_difference": 3.6027619608647013e-06,
+          "onnx_bytes": 4025304,
+          "samples": 192,
+          "precision": "FP32",
+          "provider": "CPUExecutionProvider",
+          "inputs": [
+            "image",
+            "ambiguity"
+          ],
+          "opset": 17,
+          "data_kind": "SYNTHETIC",
+          "dataset_hash": "d5fb130c739634a24772245f62234b502be72bd3899d4f525fc1e86fb13b9f42",
+          "checkpoint_sha256": "5a1be895d050f461252b3ca2d1ccbc2bb096af9385f98e2c7b14fff64842650a",
+          "onnx_sha256": "6d0e4188865faff9fad85147deef249a36f462a40509b6db64d7c61593589c8e",
+          "scope": "engineering numerical equivalence on frozen test inputs; not production readiness"
+        },
+        "cpu": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "pytorch",
+          "artifact_sha256": "5a1be895d050f461252b3ca2d1ccbc2bb096af9385f98e2c7b14fff64842650a",
+          "device": "cpu",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 2.7541499948711134,
+          "p95_ms": 3.2104749952850393,
+          "peak_vram_bytes": null,
+          "parameters": 1003364,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        },
+        "onnx_cpu": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "onnxruntime CPUExecutionProvider",
+          "artifact_sha256": "6d0e4188865faff9fad85147deef249a36f462a40509b6db64d7c61593589c8e",
+          "device": "cpu",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 0.41900000360328704,
+          "p95_ms": 0.49706000500009384,
+          "peak_vram_bytes": null,
+          "parameters": 1003364,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        },
+        "cuda": {
+          "data_kind": "SYNTHETIC",
+          "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
+          "backend": "pytorch",
+          "artifact_sha256": "5a1be895d050f461252b3ca2d1ccbc2bb096af9385f98e2c7b14fff64842650a",
+          "device": "cuda",
+          "precision": "FP32",
+          "resolution": 64,
+          "batch_size": 1,
+          "warmup": 10,
+          "iterations": 50,
+          "median_ms": 3.196000005118549,
+          "p95_ms": 3.295174994855188,
+          "peak_vram_bytes": 13758464,
+          "parameters": 1003364,
+          "hardware": {
+            "os": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+            "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+            "packages": {
+              "numpy": "2.5.3",
+              "pillow": "12.3.0",
+              "torch": "2.8.0+cu128",
+              "torchvision": "0.23.0+cu128",
+              "pydantic": "2.13.5",
+              "opencv-python-headless": "4.14.0.94",
+              "onnx": "1.22.0",
+              "onnxruntime": "1.29.0"
+            },
+            "cuda_available": true,
+            "cuda_runtime": "12.8",
+            "gpu": "NVIDIA GeForce RTX 4060",
+            "vram_bytes": 8585216000,
+            "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060, 8188 MiB, 610.88",
+            "ram_bytes": 33487904768
+          }
+        }
+      }
+    },
+    "command_log": "C:\\Users\\dimal\\Documents\\\u043f\u0440\u043e\u0441\u0442\u043e\\luma-skin-vision-rnd\\artifacts\\smoke_20260910T155410\\commands.json"
+  }
+}
