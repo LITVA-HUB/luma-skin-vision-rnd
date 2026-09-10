@@ -1,0 +1,32 @@
+{
+  "status": "CPU LOAD AND SYNTHETIC FORWARD ONLY; no accuracy measured",
+  "torch": "2.8.0+cu128",
+  "parameters": 22056576,
+  "device": "cpu",
+  "load_missing": [],
+  "load_unexpected": [],
+  "shapes": {
+    "x_norm_clstoken": [
+      1,
+      384
+    ],
+    "x_norm_regtokens": [
+      1,
+      0,
+      384
+    ],
+    "x_norm_patchtokens": [
+      1,
+      256,
+      384
+    ],
+    "x_prenorm": [
+      1,
+      257,
+      384
+    ]
+  },
+  "all_tensor_outputs_finite": true,
+  "weight_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8"
+}

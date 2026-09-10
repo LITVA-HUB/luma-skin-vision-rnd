@@ -1,5 +1,7 @@
 # Public color-constancy dataset inventory
 
+2026-09-11 smartphone extension: original-author-linked Beyond RGB is verified CC BY4.0 and a3.23GB sparse phone subset is frozen (Samsung Galaxy S21 Plus/Oppo Find X5 Pro). No phone accuracy is measured yet. iPhone coverage remains open; NC/academic-only phone datasets are not silently cleared. See [phone inventory and protocol](smartphone_benchmark_plan.md).
+
 Reviewed 2026-09-10 against primary author pages and original dataset registration metadata. Status labels concern data rights, not scientific suitability or download completion. All sizes below are publisher estimates unless explicitly identified otherwise. No proprietary instrument-paired facial dataset is available or planned for this milestone.
 
 ## Decision
