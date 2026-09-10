@@ -2,6 +2,7 @@
 
 from pathlib import Path
 
+from luma_skin_vision.contracts import AnalysisResponse
 from luma_skin_vision.preprocessing import decode_image, quality_gate
 from luma_skin_vision.training import load_run
 
@@ -33,4 +34,4 @@ def analyze(run, image_path, *, bbox=None, detector=None):
         response["rejection_reason"] = "face_localization_unavailable"
     else:
         response["quality_flags"] = quality_gate(rgb, bbox)
-    return response
+    return AnalysisResponse.model_validate(response).model_dump()

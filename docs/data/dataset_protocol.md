@@ -53,7 +53,7 @@ The two image repeats must be separate captures: lower/re-raise or otherwise res
 
 ## Region-to-image registration
 
-Pair each instrument target with the same physical cheek location in the image. Retain a registration frame with the removable ring and a clean measurement frame whenever operationally feasible. Record ring center and diameter, image dimensions, transformation or landmark method used to transfer the site, annotator, timestamp, and a registration confidence/exception note in the auxiliary annotation file. The JSONL `face_bbox` uses pixel coordinates `(x, y, width, height)` and must bound the face in the referenced original image.
+Pair each instrument target with the same physical cheek location in the image. Retain a registration frame with the removable ring and a clean measurement frame whenever operationally feasible. Record ring center and diameter, image dimensions, transformation or landmark method used to transfer the site, annotator, timestamp, and a registration confidence/exception note in the auxiliary annotation file. The JSONL `face_bbox` uses pixel coordinates `(x, y, width, height)` in the canonical image after EXIF orientation and horizontal unmirroring when `image_mirrored` is true. `left_cheek` is anatomical left (image-right in this convention). Retain original bytes; normalization is performed when loading.
 
 Registration must be checked independently on a sample before training. A generic anatomical cheek crop is not evidence that the pixels correspond to the instrument aperture. Images without defensible pairing can support engineering or photo-reference work but must not be labeled `INSTRUMENT` targets.
 
@@ -68,4 +68,3 @@ Run schema and file-integrity validation before analysis. Quarantine, rather tha
 Assign subjects, never images, to mutually exclusive `train`, `validation`, `calibration`, and `test` splits. All sessions, cameras, lighting conditions, image repeats, and cheek rows for a subject stay in one split. Fit model weights and preprocessing parameters on train; choose architectures and thresholds on validation; fit uncertainty calibration and the final selective threshold on calibration; evaluate once on test.
 
 In addition to the ordinary subject-held-out test, lock at least one device pipeline and one lighting condition before training as unseen-domain evaluations. No training, normalization, model selection, threshold selection, or calibration may use their outcomes. If the pilot is too small to support stable four-way plus domain-held-out inference, report uncertainty and use it to estimate collection scale rather than relaxing leakage controls.
-

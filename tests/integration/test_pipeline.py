@@ -53,6 +53,29 @@ def test_train_calibrate_evaluate_load_and_conservative_api(tmp_path):
     result = analyze(run, manifest.parent / "images" / "syn_000_d0_l0_r0.jpg", bbox=[0, 0, 32, 32])
     assert result["status"] == "UNSUPPORTED"
     assert result["measurement"] is None and result["profile_update"]["may_update"] is False
+    from luma_skin_vision.export import benchmark_run, export_run
+
+    export_run(run)
+    onnx = run / "model.onnx"
+    onnx.write_bytes(onnx.read_bytes() + b"stale-artifact")
+    with pytest.raises(ValueError, match="ONNX artifact"):
+        benchmark_run(run, onnx=True, iterations=5)
+
+
+def test_preparation_retains_compact_crops_not_full_photos(tmp_path):
+    import tracemalloc
+
+    from luma_skin_vision.data import validate_records
+    from luma_skin_vision.training import prepare
+
+    manifest = generate(tmp_path, subjects=8, size=256)
+    rows = validate_records(manifest)
+    tracemalloc.start()
+    prepared = prepare(manifest, rows, config(manifest))
+    _, peak = tracemalloc.get_traced_memory()
+    tracemalloc.stop()
+    assert prepared["images"].shape == (128, 3, 32, 32)
+    assert peak < 48 * 1024 * 1024
 
 
 def test_baseline_train_and_test_fingerprint(tmp_path):

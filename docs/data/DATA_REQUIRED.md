@@ -30,6 +30,7 @@ Create one row per image × cheek region. Two rows for the same image share imag
 | `image_id` | Unique logical image identifier, consistent across the two cheek rows. |
 | `image_path` | Relative path under the manifest directory/data root; never absolute or escaping the root. |
 | `image_sha256` | Lowercase SHA-256 of the unchanged image bytes. |
+| `image_mirrored` | Required boolean: true if post-EXIF stored pixels need horizontal unmirroring. Verify with an asymmetric registration frame. |
 | `device_manufacturer`, `device_model`, `camera_module`, `front_or_rear` | Actual capture pipeline; `front_or_rear` is `front` or `rear`. |
 | `os_version_if_relevant`, `capture_app_version` | Actual version strings; OS may be null. |
 | `lighting_id`, `lighting_type` | Stable setup ID and factual description. |
@@ -47,7 +48,7 @@ Create one row per image × cheek region. Two rows for the same image share imag
 | `reference_calibration_id` | Links to the calibration event log. |
 | `reference_timestamp` | Measurement timestamp including UTC offset. |
 | `reference_repeats_lab` | At least two tuples; pilot protocol asks for at least three valid readings. |
-| `face_bbox` | Pixel `(x, y, width, height)` within the original image. |
+| `face_bbox` | Pixel `(x, y, width, height)` in the canonical image after EXIF orientation and unmirroring. |
 | `split` | Subject-level `train`, `validation`, `calibration`, or `test`. |
 | `notes` | Factual deviations/exclusions; empty string if none. |
 
@@ -59,3 +60,4 @@ Supply a calibration-event table keyed by `reference_calibration_id`; capture/se
 
 Before delivery, run `uv run python scripts/validate_dataset.py --manifest <local-root>/manifest.jsonl` (use the script's current help if its option differs) and retain the exact command/output. Do not send participant files through source control or external model services.
 
+Real-target training additionally requires `measurement_approval.json` in the data root with `schema_version: "1.0"`, `dataset_hash` equal to the manifest SHA256, `decision: "PASS"`, a real `reviewer_role`, `protocol_id`, positive preregistered `repeatability_p95_limit`, and `reference_accuracy_reviewed: true`, `registration_reviewed: true`. This is a signed-off research decision supplied after physical protocol review, not a file to fabricate now. The loader recomputes repeatability and blocks training if the threshold is exceeded. No such approval has been created for real data.

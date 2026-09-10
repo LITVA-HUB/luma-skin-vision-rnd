@@ -105,8 +105,25 @@ def benchmark_run(run, *, iterations=50, device="cpu", onnx=False):
     images = rng.uniform(size=(1, 3, size, size)).astype(np.float32)
     aux = np.zeros((1, 12), dtype=np.float32)
     peak = None
+    artifact_hash = meta["checkpoint_sha256"]
     if onnx:
+        import json
+
         import onnxruntime as ort
+
+        from luma_skin_vision.data import sha256
+
+        report_path = run / "export_report.json"
+        if not report_path.exists() or not (run / "model.onnx").is_file():
+            raise ValueError("ONNX artifact requires verified export report")
+        exported = json.loads(report_path.read_text(encoding="utf-8"))
+        artifact_hash = sha256(run / "model.onnx")
+        if (
+            exported.get("checkpoint_sha256") != meta["checkpoint_sha256"]
+            or exported.get("onnx_sha256") != artifact_hash
+            or exported.get("dataset_hash") != meta["dataset_hash"]
+        ):
+            raise ValueError("ONNX artifact binding mismatch")
 
         if device != "cpu":
             raise ValueError("This ORT package benchmark implements CPU provider only")
@@ -157,6 +174,7 @@ def benchmark_run(run, *, iterations=50, device="cpu", onnx=False):
         "data_kind": "SYNTHETIC",
         "scope": "model-only batch-1; excludes decode, face, ROI, error model and policy",
         "backend": backend,
+        "artifact_sha256": artifact_hash,
         "device": device,
         "precision": "FP32",
         "resolution": size,

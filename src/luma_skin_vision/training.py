@@ -19,6 +19,7 @@ from luma_skin_vision.data import dataset_identity, sha256, validate_records
 from luma_skin_vision.environment import inspect_environment
 from luma_skin_vision.evaluation import risk_coverage, summarize
 from luma_skin_vision.experiment import create_run, write_json
+from luma_skin_vision.gates import measurement_gate
 from luma_skin_vision.photometry import apply_ccm, fit_ccm, hypotheses
 from luma_skin_vision.preprocessing import decode_image, region_tensor
 from luma_skin_vision.roi import ambiguity_features, cheek_masks, robust_rgb
@@ -70,12 +71,15 @@ def prepare(manifest, rows, config):
             masks = cheek_masks(rgb.shape, r.face_bbox)
             aux = ambiguity_features(rgb, masks)
             corrected = hypotheses(rgb)[config["correction"]]
-            cache[r.image_id] = corrected, masks, aux
-        corrected, masks, aux = cache[r.image_id]
-        mask = masks[0 if r.reference_region == "left_cheek" else 1]
-        image_tensors.append(region_tensor(corrected, mask, config["resolution"]))
+            tensors = [region_tensor(corrected, mask, config["resolution"]) for mask in masks]
+            colors = [robust_rgb(corrected, [mask]) for mask in masks]
+            cache[r.image_id] = tensors, colors, aux
+            del rgb, masks, corrected
+        tensors, colors, aux = cache[r.image_id]
+        region_index = 0 if r.reference_region == "left_cheek" else 1
+        image_tensors.append(tensors[region_index])
         features.append(aux)
-        observed.append(robust_rgb(corrected, [mask]))
+        observed.append(colors[region_index])
     return {
         "images": np.asarray(image_tensors),
         "aux": np.asarray(features),
@@ -226,10 +230,17 @@ def train(config, output_root="experiments/runs"):
     config = validate_config(config)
     config["dataset"] = str(Path(config["dataset"]).resolve())
     rows = validate_records(config["dataset"])
+    gate = measurement_gate(config["dataset"], rows)
+    regions_by_image = {}
+    for row in rows:
+        regions_by_image.setdefault(row.image_id, set()).add(row.reference_region)
+    if any(regions != {"left_cheek", "right_cheek"} for regions in regions_by_image.values()):
+        raise ValueError("Bilateral experiment requires both cheek targets for every image")
     if {r.split for r in rows} != {"train", "validation", "calibration", "test"}:
         raise ValueError("All four splits are required for an experiment")
     run, meta = create_run(output_root, config)
     meta.update(dataset_identity(config["dataset"], rows))
+    meta["measurement_gate"] = gate
     meta.update(
         status="IN PROGRESS",
         config=config,

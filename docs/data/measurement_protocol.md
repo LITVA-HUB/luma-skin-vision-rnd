@@ -1,0 +1,16 @@
+# Instrument measurement protocol — proposed, 2026-09-10
+
+No instrument readings exist in this repository. The operator must complete the protocol register before collection; fields below are required decisions, not measured values.
+
+1. Record manufacturer/model, serial alias, firmware, aperture in mm, geometry (for example d/8 if actually used), SCI/SCE or instrument-specific mode, reference white/illuminant, observer and raw spectral availability. Do not mix modes as interchangeable Lab targets.
+2. Configure/report D65 and the CIE 1931 2° observer. If native output differs, retain raw spectra and document the validated conversion; do not relabel D50/10° values. The validator rejects other reference conditions in schema v1.
+3. Calibrate using the instrument manufacturer's actual procedure and reference tile; record tile identity, expiry/calibration evidence, time, success and operator alias. Repeat the drift check after the session. Calibration certificates and instrument manuals are supplied later, not invented here.
+4. Register the physical centre and aperture footprint on each anatomical cheek. Use a removable landmark/template outside the measured patch or a separately annotated registration image. Record coordinates in the canonical unmirrored image after EXIF orientation. A broad automatic cheek ellipse is only a coarse fallback and must not silently replace the instrument footprint in an accuracy experiment.
+5. Record cosmetics status and protocol deviations. Primary target requires no makeup, filters or beautification; avoid rubbing/pressure immediately before capture. Lock actual acclimation time and contact-pressure technique during the pilot.
+6. Take at least three independent readings per cheek, lifting/repositioning the instrument as defined by protocol. Preserve every raw reading, invalid-reading reason and timestamp. Avoid selectively removing difficult values because they hurt a model metric.
+7. Capture repeat photographs over the device/light grid, with reference measurements close in time. Repeat instrument measurements at the end or when a session change could alter the target. Do not force multiple sessions to share a person's one permanent color label.
+8. Compute within-site pairwise ΔE00, median and p95; inspect operator/session drift and color dependence. Set an acceptable repeatability threshold in the protocol before evaluating models, based on instrument capability and intended error tolerance. GATE 1 is not passed by synthetic repeatability zero.
+
+The target mean is the mean of valid repeat Lab triples, recorded with the same illuminant/observer/mode. Preserve repeats, rather than just a rounded mean, to estimate the noise floor. ColorChecker and gray-card captures may constrain camera correction and drift; neither substitutes for the skin instrument target. RAW is an additional observation, not ground truth.
+
+Anatomical `left_cheek` is the person's left side, image-right in an unmirrored frontal view. `image_mirrored` must state whether post-EXIF pixels need a horizontal flip. Face bbox and future footprint annotations refer to the canonical image after this flip. Validate this convention with an asymmetrically marked registration frame before any target-image pairing.
