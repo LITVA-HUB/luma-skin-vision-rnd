@@ -14,7 +14,6 @@ import torch
 from cc_v2_statistics import read_npz_rows
 from cc_v3_experiment import DATA_HASHES, source_rows
 from cc_v5_experiment import capture_state, restore_state, state_digest
-from cc_v5_model import analytic_costs
 from cc_v7_core import SemanticColorNet, sensor_matrix, sensor_transform
 from cc_v7_teacher import training_indices
 from torch.nn import functional as F
@@ -42,6 +41,16 @@ def distillation_loss(student,teacher):
     a=F.normalize(student,dim=-1)
     b=F.normalize(teacher.detach(),dim=-1)
     return (1-(a*b).sum(-1)).mean()
+
+
+def point_loss(pred,gt):
+    # Same smoothed physical angle as V5, directly in positive RGB: avoid
+    # re-entering V5's bounded query API through a normalize/log roundtrip.
+    ratio=gt/pred
+    ratio=ratio/ratio.amax(-1,keepdim=True)
+    red,green,blue=ratio.unbind(-1)
+    squared=(red-green).square()+(green-blue).square()+(blue-red).square()
+    return (torch.atan2((squared+1e-16).sqrt(),ratio.sum(-1))*180/math.pi).mean()
 
 
 def load_teacher(folder,rows,selected,train_ix,device):
@@ -85,11 +94,7 @@ def train_epoch(model,optimizer,scheduler,x,gt,targets,train_ix,epoch,seed,batch
         xb,gb,flip,_=augment_batch(x[ix],gt[ix],aug_rng,sensor_rng,arm.endswith("_sensor"))
         optimizer.zero_grad(set_to_none=True)
         output=model(xb)
-        logs=gb.log()
-        loggt=logs[:,[0,2]]-logs[:,1:2]
-        logs=output["pred"].log()
-        action=logs[:,[0,2]]-logs[:,1:2]
-        point=analytic_costs(loggt[:,None],action[:,None])["angular"].mean()
+        point=point_loss(output["pred"],gb)
         kd=point.new_zeros(())
         if "teacher" in arm:
             kind="canonical" if arm.startswith("canonical") else "raw"
