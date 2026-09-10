@@ -14,7 +14,11 @@ The overall R&D goal is active. Revalidate handles before restarting any work.
   in this seed. This is reused119-image development validation, not a final
   three-seed effect, independent phone benchmark or novelty finding.
 - V5 inference timing/export/calibrated reliability remains unmeasured.
-- Smartphone acquisition session92820 downloads the frozen3.23GB Beyond RGB
+- Smartphone acquisition session92820 terminated with HTTP429 after partial
+  acquisition. Resume session98768 now uses a tested transport wrapper with
+  request spacing and bounded Retry-After retries; existing files are reverified
+  and skipped. The original downloader and selection remain byte-identical.
+  The frozen3.23GB Beyond RGB subset contains
   subset:3 original training scenes for loader development and44 paired-phone
   test scenes reserved for later use. Verify data/public/beyond_rgb_phone/
   verification_all.json and session completion before declaring acquisition done.
