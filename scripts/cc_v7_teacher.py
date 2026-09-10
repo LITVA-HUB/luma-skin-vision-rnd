@@ -22,12 +22,15 @@ ROOT=Path(__file__).resolve().parents[1]
 WEIGHT_SHA="b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9"
 
 
-def training_indices(rows):
+def training_indices(rows,*,allow_official_test_group_overlap=False):
     selected=[i for i,r in enumerate(rows) if r["subset"]=="train"]
     if not selected or len({r["id"] for r in rows})!=len(rows):
         raise ValueError("Unique rows and nonempty training set required")
     groups={rows[i]["group"] for i in selected}
-    if groups & {r["group"] for r in rows if r["subset"]!="train"}:
+    held_out=[r for r in rows if r["subset"]!="train"]
+    if allow_official_test_group_overlap:
+        held_out=[r for r in held_out if not (r["subset"]=="test" and r.get("official_split")=="test")]
+    if groups & {r["group"] for r in held_out}:
         raise ValueError("Train group overlaps held-out roles")
     return np.asarray(selected,dtype=np.int64)
 
@@ -40,7 +43,7 @@ def run(out,batch):
     if {k:sha256(data/k) for k in DATA_HASHES}!=DATA_HASHES:
         raise ValueError("Frozen source data changed")
     rows=json.loads((data/"cube_manifest.json").read_text())
-    ix=training_indices(rows)
+    ix=training_indices(rows,allow_official_test_group_overlap=True)
     if len(ix)!=1126:
         raise ValueError("Wrong train role count")
     teacher_root=ROOT/"artifacts/teachers/dinov2-7764ea0f912e"
@@ -62,6 +65,9 @@ def run(out,batch):
     out.mkdir(parents=True)
     config={"teacher_weight_sha256":WEIGHT_SHA,"teacher_source_commit":acquisition["commit"],"data_sha256":DATA_HASHES,"train_indices":ix.tolist(),"train_ids":[rows[i]["id"] for i in ix],"device":"cpu","batch":batch,"torch":torch.__version__,"script_sha256":sha256(Path(__file__)),"core_sha256":sha256(ROOT/"scripts/cc_v7_core.py"),"teacher_parameters":sum(p.numel() for p in model.parameters()),"scope":"TRAIN ONLY; two view types and two horizontal orientations; no held-out images/GT"}
     write_json(out/"config.json",config)
+    train_groups={rows[i]["group"] for i in ix}
+    overlaps={role:sorted(train_groups & {r["group"] for r in rows if r["subset"]==role}) for role in ("val","risk","cal","test")}
+    write_json(out/"role_audit.json",{"training_rows":len(ix),"training_groups":len(train_groups),"train_group_overlap":overlaps,"scope":"Official SimpleCube test overlaps dates; no test image/GT extraction. Source fitting roles remain date-disjoint. This screen does not evaluate the official test."})
     started=time.perf_counter()
     with torch.no_grad():
         for kind in ("raw","canonical"):

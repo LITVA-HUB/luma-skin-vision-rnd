@@ -11,6 +11,17 @@ there is one128px image, no camera name, CCM, teacher, adaptation or extra image
 A canonical teacher target is an UNVERIFIED contribution candidate. Generic
 KD, clean-target feature distillation and semantic color constancy already exist.
 
+Pre-extraction guard caught a protocol mismatch: 38 of 44 TRAIN dates also
+occur in the official SimpleCube TEST split. TRAIN is date-disjoint from VAL,
+RISK and CAL. The official TEST is image-disjoint, not date-disjoint; retaining
+the established 1126-row training population is deliberate. The initial cache
+attempt stopped before extracting images/GT/features or creating any output.
+An explicit exception accepts only rows marked both subset=test and
+official_split=test; all fitting-role overlap still fails. Per-role overlap is
+saved in the cache audit. No official TEST input/GT is decoded in this screen.
+External camera evaluation remains separate. Do not claim universal capture
+group independence for the historical official SimpleCube test protocol.
+
 Fixed source-development screen, seed17 first: five120-epoch arms, batch32,
 AdamW lr.001/decay.0001, cosine decay to.00002; same1126 train/119 val, from
 scratch, matched initialization/ordering/exposure/flip RNG. All GT real-source

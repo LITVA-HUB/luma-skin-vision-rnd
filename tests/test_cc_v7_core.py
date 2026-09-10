@@ -77,3 +77,14 @@ def test_teacher_role_guard_rejects_group_leakage():
     rows=[{"id":"a","subset":"train","group":"same"},{"id":"b","subset":"test","group":"same"}]
     with pytest.raises(ValueError,match="overlaps"):
         training_indices(rows)
+
+
+def test_official_test_exception_is_explicit_and_cannot_include_fitting_roles():
+    import pytest
+    from cc_v7_teacher import training_indices
+    rows=[{"id":"a","subset":"train","group":"same"},
+          {"id":"b","subset":"test","official_split":"test","group":"same"}]
+    assert training_indices(rows,allow_official_test_group_overlap=True).tolist()==[0]
+    rows[1]["subset"]="val"
+    with pytest.raises(ValueError,match="overlaps"):
+        training_indices(rows,allow_official_test_group_overlap=True)
