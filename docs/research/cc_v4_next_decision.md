@@ -1,0 +1,19 @@
+# Decision after V4 source screen
+
+Status2026-09-11: **the proposed nonlinear evidence router did not win**. Preserve all three120epoch runs and the2epoch pilot. Two-stage reproduction2.3889° versus posterior2.1809° and generic action2.3169°; raw risk80 also loses to posterior. Increasing inference depth does not produce a large or consistent gain. The119-image development set and one-seed nondeterministic runs are insufficient for a stable effect or universal claim. [Evidence](../benchmarks/cc_v4_report.md).
+
+Keep the posterior/direct point model as the current V4 development reference. It has the best observed mean, but the generic action model has fewer>10°outliers (0 versus2), so no tail-uniform superiority is established. Historical independent V2 camera-transfer evidence remains a separate milestone. Do not tune to any newly acquired INTEL labels.
+
+The next hypothesis concerns **training the correction critic on mistakes made by its actual selection policy**, with richer scene context, rather than merely increasing iterations. At step2, actual candidates contain an oracle mean around.51–.53° while the selected answers have2.18–2.39°. This diagnoses room between candidate coverage and chosen actions; it is not an achievable bound for a learner without GT and does not prove that the image resolves every ambiguity. The oracle uses labels and cannot deploy.
+
+Predeclare the next bounded experiment before running it:
+
+1. Train or choose one source-only warmup checkpoint and copy its parameters/BatchNorm/optimizer state into every competing arm. Lock per-step image/augmentation/action RNG. Record deterministic-kernel settings and test exact warmup replay; multiple seeds are required for promotion. Identicalseed alone was insufficient in V4.
+2. Keep a GT-only point control and the analytic-posterior null. Compare ordinary random-action field training with a GT-independent sampler centered on the detached policy-selected action. Every model-generated action is graded against the real training illuminant, not against the model's confidence. Sampling around the GT itself remains prohibited.
+3. Compare value-only and exact scalar-gradient supervision under the same query budget. Include clean real images and separately declared lawful diagonal augmentations with transformed labels. Dense supervision changes constraints, not the independent image count.
+4. Test a delayed own-model EMA/local-feature teacher first. If stronger semantic context is still needed, a standard DINOv2-S training-only teacher is a candidate after exact checkpoint/source/license pinning. Original standard DINOv2 code and weights are Apache2.0; XRay/Cell-DINO restrictions are different. No DINO assets have been acquired or used in V4. No teacher supplies physical color GT or remains mandatory at final compact inference. [Original terms](https://github.com/facebookresearch/dinov2#license), [model card](https://github.com/facebookresearch/dinov2/blob/main/MODEL_CARD.md).
+5. Compare adaptive refinement with nonadaptive equal-query search before attributing improvements to feedback. If a useful multi-step teacher appears, distill its trajectory into a one-pass student and compare ordinary distillation and GT-only controls.
+
+Freeze the improved estimator/policy before fitting a conventionalC+andproposedriskhead on independent residual roles and calibrating on another role. Then perform a new group-audited camera/condition protocol. Do not consume that independent evidence merely to rank many weak candidates on the repeatedly used source validation.
+
+No novelty claim follows from process supervision, derivative training, EMA, distillation or recurrence. The potential contribution remains a measurable correction/reliability improvement under compact compute; if standard posterior or teacher transfer wins, use it and narrow the innovation claim accordingly. Skin-specific colorimetric validation remains future work.

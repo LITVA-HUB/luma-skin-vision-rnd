@@ -1,5 +1,9 @@
 # Public color-constancy revision — 2026-09-10
 
+## V4 extension: modern training and repeated correction
+
+The [new synthesis](cc_v4_universal_method.md) compares DINOv2/v3, SigLIP2, V-JEPA2.1, PE, MobileCLIP2, efficient backbones, recurrent-depth/TRM and Self-Refine principles, then translates them into a compact correction-conditioned evidence-routing hypothesis. [Visual-source ledger](cc_v4_visual_training_sources.md), [efficient-source ledger](cc_v4_efficient_training_sources.md), [photometric-source ledger](cc_v4_photometric_sources.md). Multi-Hypothesis2020, CLCC2021, SAFE2026, VLM-CC2026, TPAMI2025 hybrid distillation and Sobolev2017 are close antecedents. Ordinary log transport is exactly an MLP input reparameterization; the implemented nonlinear corrected-simplex transform must beat a generic action-conditioned control. Iteration is established prior art and requires equal-query controls before attributing gains to sequential feedback. No novelty, universality or patent conclusion is established.
+
 ## V3 extension: color frames, posterior geometry and FFCC
 
 The newest [source-grounded review](cc_v3_prior_art.md) identifies explicit GL-frame/canonicalization ancestry, the difference between canonical and camera-space likelihoods, conditioning/continuity limitations, and the pinned Apache-2.0 FFCC formulas. Full-frame graph canonicalization is not a new theorem. The [real source screen](../benchmarks/cc_v3_report.md) is negative: full-frame Proposed loses to its matched direct graph and does not beat Shades of Gray. [The next hypothesis](cc_v3_revision_decision.md) retains global color information and requires new measurement. These results do not replace the limited positive V2 camera-transfer evidence below.

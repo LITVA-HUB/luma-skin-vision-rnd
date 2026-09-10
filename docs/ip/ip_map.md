@@ -1,5 +1,7 @@
 # IP map — provisional, 2026-09-10
 
+Latest architecture/training investigation: [V4 mechanism provenance](cc_v4_method_provenance.md), [modern-training and closest-prior-art synthesis](../research/cc_v4_universal_method.md), [negative V4 real-development screen](../benchmarks/cc_v4_report.md). Correction-conditioned routing and repeated refinement are implemented; no incremental advantage or novelty has been established.
+
 No patentability, ownership or trade-secret legal conclusion is made. No patent/FTO search has been performed. This repository contains ordinary engineering and an unvalidated research hypothesis; no private measured dataset or validated proprietary mechanism currently exists.
 
 | Component | Classification | Evidence / next action |

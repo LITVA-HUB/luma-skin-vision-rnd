@@ -18,3 +18,10 @@ docs/research/cc_v3_sources/** -text -whitespace
 # V3 executable bytes are bound by acquisition/run receipts, including line endings.
 scripts/cc_v3_*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_cc_v3_*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/cc_v4/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/cc_v4/**/*.png binary
+docs/benchmarks/cc_v4/**/*.svg binary
+docs/benchmarks/cc_v4/**/*.npz binary
+docs/benchmarks/cc_v4/reviews/** -whitespace
+scripts/cc_v4_*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_cc_v4_*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,92 @@
+{
+  "device": "cpu",
+  "torch": "2.8.0+cu128",
+  "script_sha256": "189617d0924d126a252f6c7a2af7cc612adb14cd36dca057f1e74e0c65f1154d",
+  "scope": "Only119source-development validation rows; no other GT decoded",
+  "models": {
+    "posterior": {
+      "best.pt": {
+        "checkpoint_sha256": "56dfab48594e800bcae5ca4f1cd0807ef7c5c0b316b8923d6a8384b77c954929",
+        "predictions_sha256": "a26c0af5606a4dffa7dfbc183c643c3077750f7f542067af42329b4f6574dae5",
+        "max_absolute_defects": {
+          "point_action": 5.960464477539062e-07,
+          "trajectory_actions": 5.960464477539062e-07,
+          "trajectory_risk": 2.0265579223632812e-06,
+          "base_reproduction": 1.9127211850822334e-05,
+          "trajectory_reproduction": 1.9127211850822334e-05
+        },
+        "tolerance": 0.001,
+        "status": "passed"
+      },
+      "best_point.pt": {
+        "checkpoint_sha256": "56dfab48594e800bcae5ca4f1cd0807ef7c5c0b316b8923d6a8384b77c954929",
+        "predictions_sha256": "a26c0af5606a4dffa7dfbc183c643c3077750f7f542067af42329b4f6574dae5",
+        "max_absolute_defects": {
+          "point_action": 5.960464477539062e-07,
+          "trajectory_actions": 5.960464477539062e-07,
+          "trajectory_risk": 2.0265579223632812e-06,
+          "base_reproduction": 1.9127211850822334e-05,
+          "trajectory_reproduction": 1.9127211850822334e-05
+        },
+        "tolerance": 0.001,
+        "status": "passed"
+      }
+    },
+    "action": {
+      "best.pt": {
+        "checkpoint_sha256": "680ed4ccb8d7cbc3f0d766d47e0c04acf2a3e8e428361cb8742666e7a292b2e3",
+        "predictions_sha256": "09ca93ab98bffaf70728b784bca410f561f95a9d41c03b290c1edb2215f13001",
+        "max_absolute_defects": {
+          "point_action": 1.1920928955078125e-06,
+          "trajectory_actions": 1.1920928955078125e-06,
+          "trajectory_risk": 2.2649765014648438e-06,
+          "base_reproduction": 4.593421558229949e-05,
+          "trajectory_reproduction": 4.593421558229949e-05
+        },
+        "tolerance": 0.001,
+        "status": "passed"
+      },
+      "best_point.pt": {
+        "checkpoint_sha256": "680ed4ccb8d7cbc3f0d766d47e0c04acf2a3e8e428361cb8742666e7a292b2e3",
+        "predictions_sha256": "09ca93ab98bffaf70728b784bca410f561f95a9d41c03b290c1edb2215f13001",
+        "max_absolute_defects": {
+          "point_action": 1.1920928955078125e-06,
+          "trajectory_actions": 1.1920928955078125e-06,
+          "trajectory_risk": 2.2649765014648438e-06,
+          "base_reproduction": 4.593421558229949e-05,
+          "trajectory_reproduction": 4.593421558229949e-05
+        },
+        "tolerance": 0.001,
+        "status": "passed"
+      }
+    },
+    "transport": {
+      "best.pt": {
+        "checkpoint_sha256": "2e21a1999aef7eb9a0fe40e4ba3b61d93b32a165417fd44386c9024daeb63bd1",
+        "predictions_sha256": "f62fbf9db4fe0d5b1c0e2b7dc18d89d726cbd08e58960f4f944196eb51f77fe3",
+        "max_absolute_defects": {
+          "point_action": 9.5367431640625e-07,
+          "trajectory_actions": 9.5367431640625e-07,
+          "trajectory_risk": 1.1920928955078125e-06,
+          "base_reproduction": 2.3690354026273397e-05,
+          "trajectory_reproduction": 2.521367448027334e-05
+        },
+        "tolerance": 0.001,
+        "status": "passed"
+      },
+      "best_point.pt": {
+        "checkpoint_sha256": "2e21a1999aef7eb9a0fe40e4ba3b61d93b32a165417fd44386c9024daeb63bd1",
+        "predictions_sha256": "f62fbf9db4fe0d5b1c0e2b7dc18d89d726cbd08e58960f4f944196eb51f77fe3",
+        "max_absolute_defects": {
+          "point_action": 9.5367431640625e-07,
+          "trajectory_actions": 9.5367431640625e-07,
+          "trajectory_risk": 1.1920928955078125e-06,
+          "base_reproduction": 2.3690354026273397e-05,
+          "trajectory_reproduction": 2.521367448027334e-05
+        },
+        "tolerance": 0.001,
+        "status": "passed"
+      }
+    }
+  }
+}

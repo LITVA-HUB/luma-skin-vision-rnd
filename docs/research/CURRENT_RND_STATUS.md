@@ -1,4 +1,12 @@
-# Current R&D status — V3 architecture screen, 2026-09-10
+# Current R&D status — V4 evidence routing/refinement screen, 2026-09-11
+
+**Latest V4 architecture does not beat its controls.** Three3.097M/120epoch real-source development runs give step2 mean reproduction2.389° for physical evidence transport,2.317° for generic action feedback, and2.181° for the action-independent posterior. Raw risk80 is2.000°/2.009°/1.895° respectively. These119 validation images were reused for development, with one seed; nondeterministic CUDA histories diverged even during the common warmup. This is a negative screen for the proposed mechanism, not a stable causal comparison or an independent benchmark. [V4 report](../benchmarks/cc_v4_report.md), [architecture/training synthesis](cc_v4_universal_method.md).
+
+The user's repeated-refinement idea was implemented and measured at1/2/4 stages. Posterior mean2.186°→2.181°→2.174° is only a small change; transport2.357°→2.389°→2.371° worsens relative to its starting estimate. Predicted risk decreases while some true errors increase. Proposedstep2 batch1 measured6.104–6.203ms across three sessions on RTX4060, device-resident128RGB through cached encoder+allqueries; model3,097,189parameters,12,599,089-bytecheckpoint,trainingpeak765.46MiB including233.45MiBsourcecache,inferencepeak29.12MiBallocator. Other mode/stage timings vary more on the desktop, all receipts retained. No V4exportoptimization was performed.
+
+Modern leading-lab training and close photometric sources were reviewed; no external pretrained weights adopted. Next priority shifts from adding refinement stages to improving selected-action error supervision with paired initial checkpoints and stronger scene context. New-camera/source-test/calibration roles remain untouched by V4. [Decision](cc_v4_next_decision.md).185tests passed; independent metric recomputation and CPU checkpoint replay passed. Overall R&D goal remains active.
+
+## Preserved V3 architecture screen
 
 **Latest experiment: the new full color-frame graph loses on real development validation.** Three matched1.216M/120epoch runs give mean reproduction4.281° full-frame Proposed versus2.547° direct RGB and2.942° diagonal. At80% raw-posterior acceptance, full-frame gives4.155° versus2.304° direct. These119 validation images were reused for development; this is not a fresh test result. The negative design is preserved and a relaxed graph with explicit global color state is the next unverified hypothesis. [V3 report](../benchmarks/cc_v3_report.md), [revision decision](cc_v3_revision_decision.md).
 
