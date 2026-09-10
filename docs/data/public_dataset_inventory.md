@@ -102,3 +102,13 @@ All newly acquired INTEL-TAU data are **evaluation-only by project protocol**; t
 These datasets support illumination estimation and limited camera-shift experiments. They do not supply instrument-paired facial-region CIELAB D65/2° measurements, certify skin-color accuracy, establish person-level coverage, or justify uncertainty/abstention coverage on real faces. A camera-RGB illuminant estimate is not an absolute Lab target. A CCM alone does not establish an instrument-traceable calibration.
 
 Keep original scene IDs and related captures together. Separate Cube/Cube+/Cube++ relatives before splitting; SimpleCube++ is not an independent dataset from Cube++. Holding out 550D versus 600D is weak evidence of unseen-sensor generalization because the authors identify the same sensor type. Record preprocessing, masks, camera ID and target normalization independently for every adopted source.
+
+
+## 2026-09-11 phone and broader-search evidence
+
+The first source-only Samsung/Oppo evaluation is measured, including a documented
+HDF5 name repair and preserved original results: [report](../benchmarks/phone_v1_alias_report.md).
+V2 remains stronger than V5 on phone selective risk; no universal/skin claim.
+[Mechanism-search ledger](../research/aggressive_search_2026_09_11.md) and
+[V6 execution](../research/cc_v6_execution_status.md) preserve combination failures
+and investigate non-CNN Fourier regression and correction decision sets.

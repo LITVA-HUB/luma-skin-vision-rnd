@@ -33,3 +33,13 @@ Required roles: CV/ML research engineer; colorimetry specialist; data-collection
 Evidence package index: `docs/research/`, `docs/data/`, `docs/benchmarks/`, `docs/architecture/`, `docs/ip/`, lockfile, immutable run manifests, split/data hashes and test outputs. Protect private photographs; provide aggregated results and controlled reproducibility access rather than public raw-face release.
 
 All final efficacy fields are NOT MEASURED: held-out participants N, camera pipelines M, illumination conditions K, proposed/baseline ΔE00, relative change, confidence interval, production parameter count, model size, batch-1 latency and VRAM. Engineering smoke measurements must remain labeled SYNTHETIC and cannot populate efficacy fields.
+
+
+## 2026-09-11 phone and broader-search evidence
+
+The first source-only Samsung/Oppo evaluation is measured, including a documented
+HDF5 name repair and preserved original results: [report](../benchmarks/phone_v1_alias_report.md).
+V2 remains stronger than V5 on phone selective risk; no universal/skin claim.
+[Mechanism-search ledger](../research/aggressive_search_2026_09_11.md) and
+[V6 execution](../research/cc_v6_execution_status.md) preserve combination failures
+and investigate non-CNN Fourier regression and correction decision sets.

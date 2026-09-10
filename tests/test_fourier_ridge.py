@@ -30,3 +30,21 @@ def test_zero_ridge_recovers_known_circular_operator():
     fitted = fit_filter(hist,target,1e-12)
     unseen = rng.normal(size=(3,2,4,4))
     np.testing.assert_allclose(predict_score(unseen,fitted),predict_score(unseen,true),atol=1e-9)
+
+
+def test_bias_ablation_removes_prior_coefficient_exactly():
+    from cc_fourier_ridge_v2 import fit_filter as fit_v2
+    rng=np.random.default_rng(14)
+    hist=rng.normal(size=(10,2,4,4))
+    target=rng.normal(size=(10,4,4))
+    weight=fit_v2(hist,target,.01,bias=False)
+    np.testing.assert_array_equal(weight[...,2],0)
+    assert np.isfinite(predict_score(hist,weight)).all()
+
+
+def test_bias_on_is_exact_original_fit():
+    from cc_fourier_ridge_v2 import fit_filter as fit_v2
+    rng=np.random.default_rng(15)
+    hist=rng.normal(size=(10,2,4,4))
+    target=rng.normal(size=(10,4,4))
+    np.testing.assert_array_equal(fit_filter(hist,target,.01),fit_v2(hist,target,.01,bias=True))

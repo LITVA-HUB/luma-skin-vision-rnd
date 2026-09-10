@@ -1,3 +1,21 @@
+# Latest progress: phones, V6 and alternative representations
+
+Latest real phone screen: [79-reference report](../benchmarks/phone_v1_alias_report.md).
+Thirty source-only methods on Beyond RGB Samsung/Oppo; original dataset CC BY4.0.
+V2 SoG mean4.367 versus C+4.838; risk80 3.951 versus4.498. Confidence intervals
+include zero and performance is camera-dependent. V5 physical critic risk80
+5.106: newer architecture loses. Original72-row format-strict result and both
+loader repair receipts are preserved; this is a custom transfer screen, not
+skin/JPEG/HEIC accuracy or a new test after the format repair.
+
+[V6 status](cc_v6_execution_status.md): seed17 combination is negative so far;
+seeds29/43 in progress. [Broader search](aggressive_search_2026_09_11.md) explicitly
+challenges global illumination, point outputs and the need for a spatial CNN.
+Fourier ridge12,288-coefficient control gives2.747 full/2.071 raw risk80 on reused
+source validation; all16 initial outcomes are preserved, no phone scoring.
+
+Previous milestones follow unchanged as historical evidence.
+
 # Current R&D status — V5 completed, phone transfer next, 2026-09-11
 
 All18 primary arms completed. All36 best/final records passed independent

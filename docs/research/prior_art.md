@@ -147,3 +147,13 @@ phone reference/evaluation pipeline. New teacher results remain NOT MEASURED.
 Broad novelty claims are untenable: smartphone skin colorimetry, regional CCM, albedo/illumination disambiguation, compact regressors and selective prediction all have close precedents. The narrow remaining hypothesis is whether *measurement-error-supervised regional reliability plus bounded photometric instability* adds useful held-out ΔE00 risk reduction beyond a tuned compact correction/regression/residual-selector baseline. No reviewed source proves this combination absent; patent/FTO search remains separate and NOT STARTED.
 
 Before any publication or external technical novelty statement: extract full quantitative tables/protocols from items 5, 8 and 9, trace their citations and supplements, search patent claims, freeze source versions and reproduce permitted nearest baselines. No external checkpoint or participant dataset was downloaded during this review.
+
+
+## 2026-09-11 phone and broader-search evidence
+
+The first source-only Samsung/Oppo evaluation is measured, including a documented
+HDF5 name repair and preserved original results: [report](../benchmarks/phone_v1_alias_report.md).
+V2 remains stronger than V5 on phone selective risk; no universal/skin claim.
+[Mechanism-search ledger](../research/aggressive_search_2026_09_11.md) and
+[V6 execution](../research/cc_v6_execution_status.md) preserve combination failures
+and investigate non-CNN Fourier regression and correction decision sets.

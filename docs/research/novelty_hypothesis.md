@@ -92,3 +92,13 @@ Known mechanisms are not ours: DeepWB's WB alternatives; C5's cross-camera adapt
 6. Reject the innovation claim if the matched advantage is absent, inconsistent across seeds/domains, or explained by leakage/extra budget. Publish negative findings internally; choose a simpler calibrated-device or guided-capture pivot only if evidence supports it.
 
 No learned measurement-aware ROI is validated yet. Heuristic masks, synthetic reliability labels and randomly initialized smoke models are engineering scaffolding. A finite-sample risk guarantee requires an implemented statistical procedure and its assumptions; empirical calibration alone is not that guarantee. Compression and deployment do not establish novelty. All real effect sizes and confidence intervals: NOT MEASURED.
+
+
+## 2026-09-11 phone and broader-search evidence
+
+The first source-only Samsung/Oppo evaluation is measured, including a documented
+HDF5 name repair and preserved original results: [report](../benchmarks/phone_v1_alias_report.md).
+V2 remains stronger than V5 on phone selective risk; no universal/skin claim.
+[Mechanism-search ledger](../research/aggressive_search_2026_09_11.md) and
+[V6 execution](../research/cc_v6_execution_status.md) preserve combination failures
+and investigate non-CNN Fourier regression and correction decision sets.
