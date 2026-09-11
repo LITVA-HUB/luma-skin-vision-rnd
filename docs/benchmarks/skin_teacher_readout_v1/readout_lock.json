@@ -1,0 +1,32 @@
+{
+  "bindings": {
+    "scripts\\skin_teacher_readout.py": "9865e5f24a403a5669473e64c16a9a3e64e0d17b26bb98377c4fbccedbdd36aa",
+    "docs\\research\\skin_teacher_readout_protocol_v1.md": "7924c167fc1511fd7f9294b0afb22413a854ea57e1fb5abf8cbcb1dc7bfbda1a",
+    "tests\\test_skin_teacher_readout.py": "cc7e9dcc3bd1e33c64a176aee4628f648f478b7285c3d6499cf7e7ff3dc72f0f",
+    "scripts\\skin_teacher_features.py": "f5662d0ed61eb79d4c5b1eecce39555bf7e0658975ec6cb4fb9a8ed99f5cb447",
+    "docs\\benchmarks\\skin_teacher_readout_v1\\feature_receipt.json": "c3a329c926e1c475281f1173b4fa08aa01ef764694c1f7100b7de5ed68958d54",
+    "docs\\benchmarks\\skin_teacher_readout_v1\\feature_audit.json": "7745b77349e609271075728ad51c496976d197897f76fa8ece56a79aa19a4a2a",
+    "scripts\\skin_pair_train.py": "962a0ce697034f571f5914bc352d9767b740e725ede19a278fefc58b6d7d867c",
+    "scripts\\skin_mskcc_summary_pilot.py": "aba10001ec746bd56a06fcd29fe8a108dd88462e20e0287399c4408cf1bd90bd",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "data\\processed\\skin_teacher_readout_v1\\train.npz": "2d1a7c3a813cab53fbf40325f869f74b5801aedeaa0c412adec715f3c67c3e03",
+    "data\\processed\\skin_teacher_readout_v1\\validation.npz": "37567838e99618f218a02018b6c9e9e63a581990ea0ef38ec220f7ccad43ccd2"
+  },
+  "arms": [
+    "color",
+    "teacher",
+    "combined",
+    "shuffle17",
+    "shuffle29",
+    "shuffle43"
+  ],
+  "alphas": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "scope": "SOURCE ONLY; pretraining overlap unknown"
+}

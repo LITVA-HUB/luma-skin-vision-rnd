@@ -1,0 +1,35 @@
+{
+  "bindings": {
+    "scripts\\skin_teacher_features.py": "f5662d0ed61eb79d4c5b1eecce39555bf7e0658975ec6cb4fb9a8ed99f5cb447",
+    "docs\\research\\skin_teacher_readout_protocol_v1.md": "7924c167fc1511fd7f9294b0afb22413a854ea57e1fb5abf8cbcb1dc7bfbda1a",
+    "tests\\test_skin_teacher_features.py": "d41633c13d97217371752e2df9921e439eb9fbff2194b2124684fcc769eaa225",
+    "scripts\\skin_mskcc_pixels.py": "c5b671ac38da0bec62c18c3872fbac52f2f8a239f0e155a74c44f8ec1b91ad0a",
+    "artifacts\\teachers\\dinov2-7764ea0f912e\\acquisition.json": "00645fa7be287c691d374285f1fa95a331722fafe719484a1749b811f5dc2840",
+    "artifacts\\teachers\\dinov2-7764ea0f912e\\source_manifest.json": "0e9ef1f1b6ca3b9ca6226a2bcba010fdc0b74254773f64089f03a8328896b185",
+    "artifacts\\teachers\\dinov2-7764ea0f912e\\dinov2_vits14_pretrain.pth": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "data\\processed\\skin_mskcc_pixels_v1\\validation.npz": "5ea83f15f12d3b1e4b43054b363fb72bc87e734e8bd24d322df07a91132ee566"
+  },
+  "roles": {
+    "train": {
+      "n": 966,
+      "features": 768,
+      "sha256": "2d1a7c3a813cab53fbf40325f869f74b5801aedeaa0c412adec715f3c67c3e03",
+      "bytes": 3014430
+    },
+    "validation": {
+      "n": 264,
+      "features": 768,
+      "sha256": "37567838e99618f218a02018b6c9e9e63a581990ea0ef38ec220f7ccad43ccd2",
+      "bytes": 824190
+    }
+  },
+  "teacher_parameters": 22056576,
+  "teacher_weight_bytes": 88283115,
+  "scope": "SOURCE FEATURES ONLY; no fine-tuning or reserved endpoints",
+  "device": "NVIDIA GeForce RTX 4060",
+  "torch": "2.8.0+cu128",
+  "batch": 32,
+  "seconds": 3.658660699991742,
+  "peak_extraction_allocated_mib": 272.74853515625
+}

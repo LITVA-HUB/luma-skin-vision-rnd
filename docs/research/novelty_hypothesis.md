@@ -244,3 +244,14 @@ selective error and one transfer direction. This is a standard squared-loss
 decomposition, not demonstrated invention. Instrument-supervised skin learning
 has existing prior art. See [decision](skin_correspondence_next_decision.md) and
 [fresh original-method checks](skin_correspondence_sources_2026_09_11.md).
+
+
+## Frozen teacher skin readout screen (2026-09-11)
+
+108 native-Lab source readout fits do not establish a compact or universal
+advantage. Global pooled DINOv2 plus absolute color helps weak linear controls
+in two protocols, but loses to strong compact models in all three. Original
+Apache 2.0 teacher is 22.06M parameters; no student was trained or deployed.
+This is a representation diagnostic, not new invention. Preserve both the
+positive weak-control comparison and the negative strongest-control results.
+[Evidence and next local-correspondence falsifier](skin_teacher_next_decision.md).

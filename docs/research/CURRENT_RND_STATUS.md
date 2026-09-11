@@ -1,3 +1,28 @@
+# Latest: 108 frozen visual-teacher readout fits on real skin
+
+Actual instrument skin Lab / DeltaE00 remains primary. Original licensed
+DINOv2 features extracted for 1,230 source images and replayed exactly. All
+108 Ridge fits retained (six arms x six alphas x three source protocols).
+Combined color+teacher mean 3.9462 mixed / 5.6611 SLR-to-iPod / 8.2684 reverse.
+It helps weaker linear color controls in two protocols, but fails to beat
+strong compact nonlinear controls in every protocol. Reverse transfer is
+worse than all shuffled-teacher controls. Density rejection fails to improve
+both transfer means. No proposed or universal-camera victory.
+
+Teacher 22,056,576 parameters / 88,283,115 weight bytes, beyond deployment
+budget; 2,415 readout coefficients do not remove teacher inference cost.
+No student distillation or export. This source screen is not an independent
+test or an ordinary facial-phone result; exposed TEST/CAL remain untouched.
+
+[Full results](../benchmarks/skin_teacher_readout_v1/report.md),
+[decision and next local-correspondence hypothesis](skin_teacher_next_decision.md).
+216 exact prediction arrays, 38,016 independent scalar color cases, 648 fixed
+coverage checks, 108 independently solved weighted linear systems and 19,008
+risk-curve points. 301 tests pass, 14 historical warnings, 33.00s. No live job.
+Prior independent skin results and all negative checkpoints remain intact.
+Goal active/unmet. Next planned screen keeps local descriptor/RGB association
+and compares aligned/global/shuffled correspondence before any distillation.
+
 # Latest: skin correspondence audit and 36 paired-objective fits
 
 Actual skin Lab / DeltaE00 remains the endpoint. Source reference audit covers

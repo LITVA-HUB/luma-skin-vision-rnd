@@ -38,3 +38,18 @@ No VAL/RISK/CAL/TEST or phone features were extracted. Standard student training
 is now underway under the matched five-arm protocol. The no-dataset-use
 statement above describes the earlier acquisition stage only. No V7 camera
 accuracy claim is established yet; teacher pretraining overlap remains unknown.
+
+
+## Direct skin source readout screen (2026-09-11)
+
+The already acquired original teacher was now used for 1,230 MSKCC TRAIN and
+source-VALIDATION images. This is separate from the earlier color-constancy
+teacher experiment. Existing source RGB only, no GT-based canonical correction,
+no TEST/CAL pixels and no teacher fine-tuning. All vectors exactly replay.
+108 weighted Ridge readouts were fitted, preserving original native instrument
+Lab. Pooled combined features lose to strong compact models in every protocol;
+no student distillation or production adoption follows from this result.
+Original source/weight hashes and Apache notices remain unchanged. No new
+third-party data or weights acquired. Pretraining overlap is still unknown.
+
+[Measured result and limits](../benchmarks/skin_teacher_readout_v1/report.md).
