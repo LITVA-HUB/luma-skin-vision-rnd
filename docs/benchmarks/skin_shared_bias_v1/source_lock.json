@@ -1,0 +1,33 @@
+{
+  "bindings": {
+    "docs\\research\\skin_shared_bias_protocol_v1.md": "e76cc61c30bf92c83f8e18f5beb79ea8e20dd53d798ac25972245160d7bbe176",
+    "scripts\\skin_shared_bias_train.py": "699bb88d725b462d5d321fb1d02bdc47bc87a3ff293f176b8b15dfa52e58f9ba",
+    "scripts\\skin_capture_model.py": "23c83500f35cc44b379597451f117ae37ad85fe30ea872a480aa159ea8d015cf",
+    "scripts\\skin_pair_invariance.py": "4cceedf45de2a04c03d6aab7a0c408d851c78c8f4525bf0bc0a2552fea49cf7e",
+    "scripts\\skin_pair_train.py": "962a0ce697034f571f5914bc352d9767b740e725ede19a278fefc58b6d7d867c",
+    "scripts\\skin_mskcc_pixels.py": "c5b671ac38da0bec62c18c3872fbac52f2f8a239f0e155a74c44f8ec1b91ad0a",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "scripts\\skin_shared_bias.py": "4c8da866175820a1ebb5771fa707f92381efb097277f33b4ca8e2b509a774561",
+    "tests\\test_skin_shared_bias.py": "9af4fc7f38bdbd4b23a4c6eb2d17ff82772d1b9e704d6ecc602214ec9e9c44da",
+    "scripts\\skin_mskcc_train_pixels.py": "39eedd75cd1a1c51cfb21d77435cdc7853afd3cdfa904a4298c113bcbf48da9c",
+    "scripts\\skin_mskcc_summary_pilot.py": "aba10001ec746bd56a06fcd29fe8a108dd88462e20e0287399c4408cf1bd90bd",
+    "scripts\\skin_mskcc_data.py": "12f7ce2df93ca3586fa068d92751670c33372f7f69bad4d2ca550463e4de0fc5",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "data\\processed\\skin_mskcc_pixels_v1\\validation.npz": "5ea83f15f12d3b1e4b43054b363fb72bc87e734e8bd24d322df07a91132ee566"
+  },
+  "arches": [
+    "mixture"
+  ],
+  "objectives": [
+    "individual",
+    "consistency",
+    "shared_half",
+    "shared_only"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "reserved_data_access": false
+}

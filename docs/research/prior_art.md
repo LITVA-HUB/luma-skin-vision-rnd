@@ -308,3 +308,13 @@ Our completed V7 real-camera result is negative for canonical semantic teacher
 targets. It cannot support a new accuracy claim. Future novelty must concern
 an experimentally useful mechanism and a valid skin-color endpoint, rather
 than renaming calibration, distillation, uncertainty or color invariance.
+
+
+## Instrument-reference and paired-objective source check (2026-09-11)
+
+36 new source fits do not establish an advantage from emphasizing paired mean
+color bias. Increasing consistency slightly helps mixed mean but worsens
+selective error and one transfer direction. This is a standard squared-loss
+decomposition, not demonstrated invention. Instrument-supervised skin learning
+has existing prior art. See [decision](skin_correspondence_next_decision.md) and
+[fresh original-method checks](skin_correspondence_sources_2026_09_11.md).

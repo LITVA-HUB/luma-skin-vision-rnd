@@ -1,3 +1,28 @@
+# Latest: skin correspondence audit and 36 paired-objective fits
+
+Actual skin Lab / DeltaE00 remains the endpoint. Source reference audit covers
+314 sites, with copied triplicates counted once. Pairwise repeat discrepancy
+2.5757 TRAIN / 2.6139 VALIDATION is not an irreducible model floor. Shared site
+bias is substantial, but its squared-Lab decomposition is not a DeltaE00 one.
+
+36 matched single-image fits invert the agreement assumption. Increased
+consistency: mixed mean 3.4178 vs ordinary mixture 3.4406, but 80% error worsens
+3.4848 vs 3.4407 and SLR-to-iPod worsens 5.3455 vs 5.0193. Shared-half and
+shared-only do not beat the strongest controls. No proposed universal win.
+
+[Decision](skin_correspondence_next_decision.md),
+[reference diagnostic](../benchmarks/skin_correspondence_v1/report.md),
+[36-fit report](../benchmarks/skin_shared_bias_v1/report.md).
+108 exact color replays, 36 gate/hypothesis replays, 6,336 scalar model checks,
+216 coverage checks, nine exact historical control final weights. Diagnostic
+adds 30,150 scalar checks. 296 tests pass, 14 historical warnings, 32.86s.
+No live training job. Reserved TEST/CAL and UMINHO held-outs remain untouched.
+
+The independent skin test remains primary full 4.4570 / selective80% 4.1591;
+ordinary fusion 4.3005 / 4.1447 is stronger. Ordinary phone facial accuracy is
+unvalidated. Next planned source screen: complementary frozen teacher features
+before training any new student. Goal active and unmet.
+
 # Latest: actual skin-color endpoint; 72 representation-control fits
 
 The endpoint remains actual instrument-referenced skin color in native Lab /

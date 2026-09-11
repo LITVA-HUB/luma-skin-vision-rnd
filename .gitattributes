@@ -1,4 +1,12 @@
 * text=auto eol=lf
+scripts/skin_correspondence*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/skin_shared_bias*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_skin_correspondence.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_skin_shared_bias.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_correspondence_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_shared_bias_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/skin_correspondence_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/skin_shared_bias_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/skin_nuisance*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/skin_copula*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/skin_representation*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

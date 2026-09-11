@@ -234,3 +234,13 @@ equivariant to the sensor. Exact full color-frame equivariance was already
 implemented and failed in V3, so algebra alone does not justify repeating it.
 Single-image ambiguity still requires rejection. Neither DINO pretraining nor
 virtual RGB mixing supplies genuine corresponding surface-Lab ground truth.
+
+
+## Skin correspondence and paired-objective falsification (2026-09-11)
+
+36 new source fits do not establish an advantage from emphasizing paired mean
+color bias. Increasing consistency slightly helps mixed mean but worsens
+selective error and one transfer direction. This is a standard squared-loss
+decomposition, not demonstrated invention. Instrument-supervised skin learning
+has existing prior art. See [decision](skin_correspondence_next_decision.md) and
+[fresh original-method checks](skin_correspondence_sources_2026_09_11.md).
