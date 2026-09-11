@@ -1,5 +1,12 @@
 # User-authorized capacity increase: at most200,000 neural parameters
 
+STATUS UPDATE: the candidate head below is now implemented and trained in
+skin_neural_reference_v1,27 matched fits /9 frozen cores. Code verifies193,795
+added /1,123,092 total parameters, with no universal accuracy win. The earlier
+candidate description below records the decision before fitting; its then-
+unimplemented status is historical. Current evidence is in
+[the measured report](../benchmarks/skin_neural_reference_v1/report.md).
+
 User instruction: "разрешаю увеличить количество параметров на 200 000".
 Applied to the current single compact CaptureColor/SkinRepresentation neural
 base,929,297 parameters. Next prototype cap:1,129,297 total neural parameters.

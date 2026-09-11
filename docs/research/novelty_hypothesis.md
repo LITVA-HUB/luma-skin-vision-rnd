@@ -484,3 +484,21 @@ budgeted but not implemented/trained. Store and report all non-neural payload.
 Begin with one correction pass; additional passes require separate evidence.
 [Decision](skin_local_reference_next_decision.md) and
 [capacity contract](skin_capacity_budget_2026_09_11.md).
+
+## Added capacity implemented; frozen-core correction hypothesis weakens (2026-09-11)
+
+The193,795-parameter candidate is now implemented, trained and audited across
+27 fits. Total1,123,092. Local-affine head improves core forward5.0193 ->4.9658
+but worsens mixed3.4406 ->3.5182 and reverse5.9635 ->6.4782. Reverse also loses
+equal-capacity ordinary residual6.4545; no strongest-neural or universal win.
+Every head improves TRAIN MSE, showing that fitting residuals is insufficient
+for transfer. Original core and independent results are preserved.
+
+Narrow next falsifier: distinguish ordinary training residual supervision from
+genuinely person-excluded encoder/query correction targets. Current person
+exclusion only applies to the reference bank; it is not OOF encoder evidence.
+Independently fitted context-coordinate alignment is a further assumption to
+test or eliminate. Jointly learning a stronger image representation is a
+separate alternative, not refuted by this frozen-core screen. Known local/deep
+kernels and differentiable solvers remain prior art; budget increase alone is
+not an invention. [Decision](skin_neural_reference_next_decision.md).

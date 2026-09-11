@@ -1,4 +1,33 @@
-# Latest: local-reference skin color and camera transfer complete
+# Latest: authorized larger neural-reference models trained and audited
+
+27 adapter fits /9 unchanged strong cores,3 seeds,3 camera protocols complete.
+Head193,795 parameters; total1,123,092 within user cap1,129,297. All heads start
+with zero correction and identical weights; same300 steps/data/draws. Actual
+native skin DeltaE00: mixed core3.4406 ->affine3.5182; SLR-to-unseen-iPod5.0193
+->4.9658; reverse5.9635 ->6.4782. Ordinary residual control3.6198/5.4398/6.4545.
+No universal gain; reverse affine also loses matched residual control. Strong
+historical transfer4.8328/4.9736 remains unbeaten. Core weights unchanged.
+[Report](../benchmarks/skin_neural_reference_v1/report.md).
+
+All27 heads reduce TRAIN MSE with query-person bank exclusion, but their core
+saw TRAIN people. This is NOT OOF error supervision. Next isolate that mismatch
+using genuinely person-excluded encoder/query roles; account for incompatible
+context coordinates between independently fitted encoders. No repeated-step
+or larger-head sweep justified yet. Joint representation learning remains a
+separate hypothesis; inspect existing negative pixel-adapter evidence first.
+[Decision](skin_neural_reference_next_decision.md).
+
+9 core replays,27 NumPy heads,2376 augmented solves,36 exclusion perturbations,
+3 exact full optimizer refits,60 exact prediction arrays,9504 scalar color
+cases,360 coverage checks.373 tests pass,14 historical warnings,33.44s.
+Affine prepared-feature batch1 median1.424–3.042ms RTX4060; complete payload
+4.53–4.58MB including memory. Cached allocated training peak84.77–110.07MiB.
+No JPEG/feature-extraction latency or isolated production VRAM/export claim.
+All jobs terminal; no live training. Source validation is extensively reused.
+Independent primary4.4570/80%4.1591 vs ordinary fusion4.3005/4.1447 unchanged.
+No new independent TEST/CAL access or ordinary-phone proof. Goal active, unmet.
+
+# Previous: local-reference skin color and camera transfer complete
 
 Actual instrument-native skin DeltaE00 on original MSKCC CC-BY photographs.
 Person-excluded TRAIN screen: global ridge5.4259 -> color-affine4.5860 mean

@@ -574,3 +574,19 @@ residual learning, learned kernels and differentiable local regression. The
 user-authorized200,000-parameter increase is a compute allowance, not evidence
 of novelty or accuracy. Use an equal-capacity ordinary C+ control and count
 support-bank payload separately. No new neural head is implemented yet.
+
+## Neural-reference adapter screen: known solvers, measured negatives (2026-09-11)
+
+[MetaOptNet,CVPR2019](https://openaccess.thecvf.com/content_CVPR_2019/html/Lee_Meta-Learning_With_Differentiable_Convex_Optimization_CVPR_2019_paper.html)
+learns feature representations through convex base learners for recognition.
+[Bertinetto et al.,ICLR2019](https://arxiv.org/abs/1805.08136) differentiates
+through closed-form ridge solvers. These are primary prior art for the mechanism,
+not skin-color results, and no author implementation/weights were adopted.
+
+Our now-implemented193,795-parameter heads combine fixed neural context, learned
+neighborhoods and residual regression.27 matched fits show no universal gain
+over the929,297-parameter core, despite every head lowering TRAIN MSE. Only
+forward transfer has a small affine gain; reverse loses even matched residual
+C+. Excluding query people from the reference bank does not make a full-TRAIN
+encoder out-of-fold. No new solver, kernel or generalization novelty is claimed.
+[Evidence](../benchmarks/skin_neural_reference_v1/report.md).

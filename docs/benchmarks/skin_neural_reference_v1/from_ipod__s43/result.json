@@ -1,0 +1,732 @@
+{
+  "protocol": "from_ipod",
+  "seed": 43,
+  "train_people": 16,
+  "train_images": 643,
+  "train_cameras": [
+    "ipod"
+  ],
+  "core_checkpoint_sha256": "40a39ba79646ea50b86bef562ce05eb45d41a453aa925ba345991322af75b9b7",
+  "core_replay_max_gap": 7.62939453125e-06,
+  "core_state_sha256": "4ee18a7a774bced8f5d5327d8d234c079bb88911461deda4e4678fb548d11321",
+  "draw_sha256": "fcb364351e0596caa74f2d369a3ab013acb8f0019b5beee6bd87cd122b2bd514",
+  "training_cache_sha256": "7dca07acb818afb8b2f0c9a955c5bd94600aad9eb6a5374f7f3915baf5951fc3",
+  "arms": {
+    "base": {
+      "parameters": 929297,
+      "evaluations": {
+        "known": {
+          "full": {
+            "mean": 3.6594014910674493,
+            "median": 3.3488604189966953,
+            "p95": 6.905220690900743,
+            "fraction_above10": 0.022727272727272728,
+            "person_mean": 3.65940149106745,
+            "site_mean": 3.6594014910674493
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 3.6594014910674497,
+              "median": 3.3488604189966953,
+              "p95": 6.905220690900743,
+              "fraction_above10": 0.022727272727272728,
+              "person_mean": 3.6594014910674493,
+              "site_mean": 3.6594014910674497
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 3.597157763028638,
+              "median": 3.3488604189966953,
+              "p95": 6.885749871198836,
+              "fraction_above10": 0.015873015873015872,
+              "person_mean": 3.6036485785650165,
+              "site_mean": 3.6056309632386685
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 3.6248499909829177,
+              "median": 3.381721756741468,
+              "p95": 6.894386415245839,
+              "fraction_above10": 0.01680672268907563,
+              "person_mean": 3.6495716549174726,
+              "site_mean": 3.6672891722748595
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 3.647858344891277,
+              "median": 3.2940871777906344,
+              "p95": 6.91450721289066,
+              "fraction_above10": 0.018867924528301886,
+              "person_mean": 3.6731181658586096,
+              "site_mean": 3.7218326363892222
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 3.5707241753314647,
+              "median": 3.1688460605291375,
+              "p95": 6.903672937235757,
+              "fraction_above10": 0.010752688172043012,
+              "person_mean": 3.627509228224861,
+              "site_mean": 3.6870854214897117
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 3.4358350659538255,
+              "median": 2.9838151538363142,
+              "p95": 6.870234968391147,
+              "fraction_above10": 0.0,
+              "person_mean": 3.4954771446127837,
+              "site_mean": 3.592416388910014
+            }
+          ],
+          "array_sha256": "40f93055fc13382526d1a2bb9383097596495b3fced2f4eb885789d1f281481e",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "ipod"
+          ]
+        },
+        "unseen": {
+          "full": {
+            "mean": 5.71238828283909,
+            "median": 4.935269198636753,
+            "p95": 12.12780345044468,
+            "fraction_above10": 0.09848484848484848,
+            "person_mean": 5.712388282839091,
+            "site_mean": 5.712388282839091
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 5.712388282839091,
+              "median": 4.935269198636753,
+              "p95": 12.12780345044468,
+              "fraction_above10": 0.09848484848484848,
+              "person_mean": 5.712388282839091,
+              "site_mean": 5.712388282839091
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 5.752552698464665,
+              "median": 5.000533285925018,
+              "p95": 12.131724749482034,
+              "fraction_above10": 0.10317460317460317,
+              "person_mean": 5.731580324141137,
+              "site_mean": 5.6917955691777955
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 5.885713746938717,
+              "median": 5.178602552037354,
+              "p95": 12.154596616865591,
+              "fraction_above10": 0.1092436974789916,
+              "person_mean": 5.84351165365111,
+              "site_mean": 5.725281836034415
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 5.922078417055979,
+              "median": 5.080346561275631,
+              "p95": 12.282023385073058,
+              "fraction_above10": 0.12264150943396226,
+              "person_mean": 5.828424255006044,
+              "site_mean": 5.666886964159417
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 6.066364037105787,
+              "median": 5.178602552037354,
+              "p95": 12.371765979726367,
+              "fraction_above10": 0.13978494623655913,
+              "person_mean": 5.920112721137986,
+              "site_mean": 5.663052113181452
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 5.907759773534927,
+              "median": 5.080346561275631,
+              "p95": 12.33612521793608,
+              "fraction_above10": 0.125,
+              "person_mean": 5.766033021216983,
+              "site_mean": 5.674900379504131
+            }
+          ],
+          "array_sha256": "098659420974f546d682d72d3810ce6216e65587aac762373a17585391e089e3",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "SLR"
+          ]
+        }
+      }
+    },
+    "residual": {
+      "parameters": 1123092,
+      "trainable_parameters": 193795,
+      "optimizer_steps": 300,
+      "initial_head_sha256": "87a01202f3214f6020ff3bec19909c3e3f08a38b66bb2c3392482da158fbe0b3",
+      "final_head_sha256": "9abba6aeab0b44af1080922f896d76273f0719789d1dcfe37f8ce602d8f32cbb",
+      "fit_seconds": 0.6113451999844983,
+      "fit_peak_allocated_mib": 77.36376953125,
+      "excluded_query_person_bank_entries": 401159,
+      "checkpoint_sha256": "a3d19d7579c5e53dc2b3dca92b0d12194dd47ef2e78fa8dd21303e7cf190feb7",
+      "checkpoint_bytes": 4505423,
+      "bank_scalars": 0,
+      "bank_bytes": 0,
+      "fixed_scale_scalars": 1102,
+      "deployment_replay_max_gap": 0.0,
+      "runtime": {
+        "batch1_median_ms": 0.725055992603302,
+        "batch1_p95_ms": 0.8788111865520477,
+        "inference_process_peak_allocated_mib": 82.27392578125,
+        "inference_incremental_peak_mib": 1.318359375,
+        "scope": "Prepared tokens/descriptors resident on GPU; includes core and cached reference solve, excludes JPEG/feature extraction; process includes training caches",
+        "warmups": 10,
+        "repetitions": 50
+      },
+      "evaluations": {
+        "known": {
+          "full": {
+            "mean": 3.8900872759302385,
+            "median": 3.2278291069786897,
+            "p95": 8.57075883888793,
+            "fraction_above10": 0.015151515151515152,
+            "person_mean": 3.8900872759302385,
+            "site_mean": 3.8900872759302385
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 3.8900872759302394,
+              "median": 3.2278291069786897,
+              "p95": 8.57075883888793,
+              "fraction_above10": 0.015151515151515152,
+              "person_mean": 3.8900872759302385,
+              "site_mean": 3.8900872759302385
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 3.81025365825096,
+              "median": 3.222818834810086,
+              "p95": 8.533115299231467,
+              "fraction_above10": 0.007936507936507936,
+              "person_mean": 3.8200746491674966,
+              "site_mean": 3.864463876916171
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 3.8651035717345197,
+              "median": 3.2259503565336214,
+              "p95": 8.567351867073397,
+              "fraction_above10": 0.008403361344537815,
+              "person_mean": 3.9047230171950553,
+              "site_mean": 3.9648235691903015
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 3.910222862357602,
+              "median": 3.171056646720584,
+              "p95": 8.573679100443245,
+              "fraction_above10": 0.009433962264150943,
+              "person_mean": 3.967267784351795,
+              "site_mean": 4.04899539729839
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 3.7923392825616666,
+              "median": 3.0416917763581997,
+              "p95": 8.57027212862871,
+              "fraction_above10": 0.0,
+              "person_mean": 3.907066816076604,
+              "site_mean": 3.9764685402475553
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 3.7352808418189305,
+              "median": 3.053136613803299,
+              "p95": 8.439978486725687,
+              "fraction_above10": 0.0,
+              "person_mean": 3.8735652031484875,
+              "site_mean": 3.931439780440155
+            }
+          ],
+          "array_sha256": "67b4f1bf1bc1d912775ec5b84eba6d28e21caa1427de76fa554325ee99693a18",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "ipod"
+          ]
+        },
+        "unseen": {
+          "full": {
+            "mean": 6.227437363786056,
+            "median": 5.926715850470796,
+            "p95": 12.548894066670048,
+            "fraction_above10": 0.13636363636363635,
+            "person_mean": 6.2274373637860565,
+            "site_mean": 6.227437363786056
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 6.227437363786056,
+              "median": 5.926715850470796,
+              "p95": 12.548894066670048,
+              "fraction_above10": 0.13636363636363635,
+              "person_mean": 6.2274373637860565,
+              "site_mean": 6.2274373637860565
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 6.358838077206662,
+              "median": 6.039514470174568,
+              "p95": 12.651744972352262,
+              "fraction_above10": 0.14285714285714285,
+              "person_mean": 6.3447039771313145,
+              "site_mean": 6.327226792558322
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 6.581957503116313,
+              "median": 6.086657595315392,
+              "p95": 12.779404352399848,
+              "fraction_above10": 0.15126050420168066,
+              "person_mean": 6.561731609752411,
+              "site_mean": 6.53419771296619
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 6.911234010017854,
+              "median": 6.189694722843109,
+              "p95": 13.052081250263862,
+              "fraction_above10": 0.16981132075471697,
+              "person_mean": 6.913548865455145,
+              "site_mean": 6.884911497246428
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 7.144054208016211,
+              "median": 6.6138683782042085,
+              "p95": 13.348684292485185,
+              "fraction_above10": 0.1827956989247312,
+              "person_mean": 7.197561586299709,
+              "site_mean": 7.077165362402384
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 7.050397698910844,
+              "median": 6.591210593349082,
+              "p95": 13.18092289424576,
+              "fraction_above10": 0.175,
+              "person_mean": 7.217520317637347,
+              "site_mean": 7.119814298704331
+            }
+          ],
+          "array_sha256": "448cd0316abc9b0dcfe292b69ddd62a96d59c4abbd7726256daafb0215af7797",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "SLR"
+          ]
+        }
+      }
+    },
+    "mean": {
+      "parameters": 1123092,
+      "trainable_parameters": 193795,
+      "optimizer_steps": 300,
+      "initial_head_sha256": "87a01202f3214f6020ff3bec19909c3e3f08a38b66bb2c3392482da158fbe0b3",
+      "final_head_sha256": "91de63380f2df1bc894c9ab476854261a359652fe13a9ad21a50762a038b4043",
+      "fit_seconds": 1.017048399982741,
+      "fit_peak_allocated_mib": 90.89892578125,
+      "excluded_query_person_bank_entries": 401159,
+      "checkpoint_sha256": "28cc7cd67c8c581d31190791f52eb1d5cbc1bb3962b6fc11381d3cbe25b15c94",
+      "checkpoint_bytes": 4554319,
+      "bank_scalars": 12217,
+      "bank_bytes": 48868,
+      "fixed_scale_scalars": 1102,
+      "deployment_replay_max_gap": 0.0,
+      "runtime": {
+        "batch1_median_ms": 0.9954240024089813,
+        "batch1_p95_ms": 1.2538015723228453,
+        "inference_process_peak_allocated_mib": 82.3212890625,
+        "inference_incremental_peak_mib": 1.318359375,
+        "scope": "Prepared tokens/descriptors resident on GPU; includes core and cached reference solve, excludes JPEG/feature extraction; process includes training caches",
+        "warmups": 10,
+        "repetitions": 50
+      },
+      "evaluations": {
+        "known": {
+          "full": {
+            "mean": 3.7120299346194288,
+            "median": 3.2817334942321974,
+            "p95": 7.474304652692345,
+            "fraction_above10": 0.022727272727272728,
+            "person_mean": 3.7120299346194288,
+            "site_mean": 3.7120299346194283
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 3.7120299346194288,
+              "median": 3.2817334942321974,
+              "p95": 7.474304652692345,
+              "fraction_above10": 0.022727272727272728,
+              "person_mean": 3.7120299346194283,
+              "site_mean": 3.7120299346194283
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 3.638367492172461,
+              "median": 3.2817334942321974,
+              "p95": 7.183835475435166,
+              "fraction_above10": 0.015873015873015872,
+              "person_mean": 3.6467533432571284,
+              "site_mean": 3.667669178488534
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 3.6746156293836334,
+              "median": 3.302685391552147,
+              "p95": 7.241588403477396,
+              "fraction_above10": 0.01680672268907563,
+              "person_mean": 3.7068786228944255,
+              "site_mean": 3.744137698222273
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 3.705758397936163,
+              "median": 3.2596275511311337,
+              "p95": 7.376111496984445,
+              "fraction_above10": 0.018867924528301886,
+              "person_mean": 3.7447387812594255,
+              "site_mean": 3.802130157864678
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 3.609472654175789,
+              "median": 3.2326020062317435,
+              "p95": 7.303675985096032,
+              "fraction_above10": 0.010752688172043012,
+              "person_mean": 3.6928095093033337,
+              "site_mean": 3.752122074737296
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 3.4992061162561305,
+              "median": 3.065438878299121,
+              "p95": 7.080075686427646,
+              "fraction_above10": 0.0,
+              "person_mean": 3.5975898051185315,
+              "site_mean": 3.6866489862120915
+            }
+          ],
+          "array_sha256": "663d9dce947a59dc6c1d15d2fb05e85c669bb3501a6e67dbe84c2a1d875bb19f",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "ipod"
+          ]
+        },
+        "unseen": {
+          "full": {
+            "mean": 5.789732197730585,
+            "median": 5.131970594326187,
+            "p95": 12.103120776183728,
+            "fraction_above10": 0.09848484848484848,
+            "person_mean": 5.789732197730584,
+            "site_mean": 5.789732197730585
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 5.789732197730585,
+              "median": 5.131970594326187,
+              "p95": 12.103120776183728,
+              "fraction_above10": 0.09848484848484848,
+              "person_mean": 5.789732197730584,
+              "site_mean": 5.789732197730585
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 5.850559797097909,
+              "median": 5.209695946576206,
+              "p95": 12.18496208324483,
+              "fraction_above10": 0.10317460317460317,
+              "person_mean": 5.831150761893091,
+              "site_mean": 5.798713493451914
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 6.0120196842059155,
+              "median": 5.360071865825749,
+              "p95": 12.323394469433953,
+              "fraction_above10": 0.1092436974789916,
+              "person_mean": 5.975476341580436,
+              "site_mean": 5.88561315620557
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 6.137514208802765,
+              "median": 5.485051159865973,
+              "p95": 12.77989789974898,
+              "fraction_above10": 0.12264150943396226,
+              "person_mean": 6.070550987108039,
+              "site_mean": 5.944947787040052
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 6.312840199589079,
+              "median": 5.625941049169182,
+              "p95": 13.016299012038612,
+              "fraction_above10": 0.13978494623655913,
+              "person_mean": 6.222494586400856,
+              "site_mean": 6.010326563004548
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 6.17616432538334,
+              "median": 5.575536617048991,
+              "p95": 12.963079000910431,
+              "fraction_above10": 0.125,
+              "person_mean": 6.123410953505072,
+              "site_mean": 6.026418013742079
+            }
+          ],
+          "array_sha256": "7211ba9ecb7d20e9a150ed92e0f40e5d41e3d35a9d8fcbefcaee2d0b54c02663",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "SLR"
+          ]
+        }
+      }
+    },
+    "affine": {
+      "parameters": 1123092,
+      "trainable_parameters": 193795,
+      "optimizer_steps": 300,
+      "initial_head_sha256": "87a01202f3214f6020ff3bec19909c3e3f08a38b66bb2c3392482da158fbe0b3",
+      "final_head_sha256": "dc57d4aa9c36a673702392022a52dfe9351d75a1fc3424db28999691335bbee2",
+      "fit_seconds": 1.5785691999772098,
+      "fit_peak_allocated_mib": 96.98779296875,
+      "excluded_query_person_bank_entries": 401159,
+      "checkpoint_sha256": "05fb8242229a0531903360ca9d83035c78f5bd29e58c2a27e4a9b48594fb3522",
+      "checkpoint_bytes": 4554319,
+      "bank_scalars": 12217,
+      "bank_bytes": 48868,
+      "fixed_scale_scalars": 1102,
+      "deployment_replay_max_gap": 0.0,
+      "runtime": {
+        "batch1_median_ms": 1.5594879984855652,
+        "batch1_p95_ms": 1.8793456137180327,
+        "inference_process_peak_allocated_mib": 82.3212890625,
+        "inference_incremental_peak_mib": 1.318359375,
+        "scope": "Prepared tokens/descriptors resident on GPU; includes core and cached reference solve, excludes JPEG/feature extraction; process includes training caches",
+        "warmups": 10,
+        "repetitions": 50
+      },
+      "evaluations": {
+        "known": {
+          "full": {
+            "mean": 3.789958995130832,
+            "median": 3.4573427735827202,
+            "p95": 7.1417932011918674,
+            "fraction_above10": 0.022727272727272728,
+            "person_mean": 3.7899589951308315,
+            "site_mean": 3.789958995130832
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 3.789958995130832,
+              "median": 3.4573427735827202,
+              "p95": 7.1417932011918674,
+              "fraction_above10": 0.022727272727272728,
+              "person_mean": 3.7899589951308315,
+              "site_mean": 3.789958995130832
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 3.726496193556546,
+              "median": 3.4573427735827202,
+              "p95": 7.100538653385981,
+              "fraction_above10": 0.015873015873015872,
+              "person_mean": 3.73372575273344,
+              "site_mean": 3.7551010794657724
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 3.765113433635853,
+              "median": 3.462983101096369,
+              "p95": 7.132801506015778,
+              "fraction_above10": 0.01680672268907563,
+              "person_mean": 3.7933474881834592,
+              "site_mean": 3.8348662333810113
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 3.7913148038696716,
+              "median": 3.4340443068188145,
+              "p95": 7.149500368485658,
+              "fraction_above10": 0.018867924528301886,
+              "person_mean": 3.8261375539959346,
+              "site_mean": 3.898734276860602
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 3.6875575345923575,
+              "median": 3.4232912432325793,
+              "p95": 7.140508673309569,
+              "fraction_above10": 0.010752688172043012,
+              "person_mean": 3.7593134918805213,
+              "site_mean": 3.8395565318747535
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 3.550334858844894,
+              "median": 3.3653777433767837,
+              "p95": 7.017396022163419,
+              "fraction_above10": 0.0,
+              "person_mean": 3.6276865839872605,
+              "site_mean": 3.7321922942514987
+            }
+          ],
+          "array_sha256": "3adccf2e3db829d795629530529d1f206f75f103adb346925c484ef5c86bd2d0",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "ipod"
+          ]
+        },
+        "unseen": {
+          "full": {
+            "mean": 6.436286746262294,
+            "median": 5.73327339942235,
+            "p95": 12.952989888502264,
+            "fraction_above10": 0.14393939393939395,
+            "person_mean": 6.436286746262294,
+            "site_mean": 6.436286746262294
+          },
+          "coverage": [
+            {
+              "coverage": 1.0,
+              "accepted": 132,
+              "mean": 6.436286746262294,
+              "median": 5.73327339942235,
+              "p95": 12.952989888502264,
+              "fraction_above10": 0.14393939393939395,
+              "person_mean": 6.436286746262294,
+              "site_mean": 6.436286746262294
+            },
+            {
+              "coverage": 0.95,
+              "accepted": 126,
+              "mean": 6.518741005616373,
+              "median": 5.830985337629072,
+              "p95": 13.17938369306169,
+              "fraction_above10": 0.15079365079365079,
+              "person_mean": 6.5161872611822895,
+              "site_mean": 6.508275094626706
+            },
+            {
+              "coverage": 0.9,
+              "accepted": 119,
+              "mean": 6.710006000459124,
+              "median": 5.941595783741583,
+              "p95": 13.369112878951933,
+              "fraction_above10": 0.15966386554621848,
+              "person_mean": 6.715311891212791,
+              "site_mean": 6.656660540399116
+            },
+            {
+              "coverage": 0.8,
+              "accepted": 106,
+              "mean": 6.983108521582167,
+              "median": 6.276010172000303,
+              "p95": 13.376052812541678,
+              "fraction_above10": 0.1792452830188679,
+              "person_mean": 7.037495125796596,
+              "site_mean": 7.11972030465106
+            },
+            {
+              "coverage": 0.7,
+              "accepted": 93,
+              "mean": 7.227013989417976,
+              "median": 6.516911402215682,
+              "p95": 13.372315925224123,
+              "fraction_above10": 0.1935483870967742,
+              "person_mean": 7.389698964204437,
+              "site_mean": 7.309857373911577
+            },
+            {
+              "coverage": 0.6,
+              "accepted": 80,
+              "mean": 7.191750974113288,
+              "median": 6.345691183636864,
+              "p95": 13.368579037906569,
+              "fraction_above10": 0.1875,
+              "person_mean": 7.511438214423588,
+              "site_mean": 7.448048643368682
+            }
+          ],
+          "array_sha256": "0b368bf491f310381f65c961182edcacd4941374e2c4403ff671dbf992703b8e",
+          "people": 3,
+          "images": 132,
+          "cameras": [
+            "SLR"
+          ]
+        }
+      }
+    }
+  },
+  "source_exploratory_only": true,
+  "core_previously_selected_on_source_validation": true,
+  "adapter_validation_selection": false,
+  "reserved_test_or_calibration_loaded": false,
+  "risk_calibrated": false,
+  "device": "NVIDIA GeForce RTX 4060"
+}
