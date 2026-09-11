@@ -1,0 +1,89 @@
+{
+  "phase": "ADAPTIVE SOURCE EXPLORATION;fixed50/50weights;no learned mixture selection",
+  "preregistered_independent_test": false,
+  "single_seed_pairs": [
+    {
+      "seed": 17,
+      "full": {
+        "n": 264,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.4482492533852067,
+        "median": 3.0249214665128603,
+        "p90": 6.148756809463706,
+        "p95": 7.1032272383175235,
+        "above_5_fraction": 0.20454545454545456,
+        "above_10_fraction": 0.003787878787878788,
+        "patient_balanced_mean": 3.4482492533852067
+      },
+      "deployment_models": 2,
+      "parameters": 2445863
+    },
+    {
+      "seed": 29,
+      "full": {
+        "n": 264,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.5082261047474814,
+        "median": 2.9594221309776385,
+        "p90": 6.223404792552563,
+        "p95": 7.294987030983752,
+        "above_5_fraction": 0.20075757575757575,
+        "above_10_fraction": 0.011363636363636364,
+        "patient_balanced_mean": 3.508226104747482
+      },
+      "deployment_models": 2,
+      "parameters": 2445863
+    },
+    {
+      "seed": 43,
+      "full": {
+        "n": 264,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.5273476565684674,
+        "median": 3.054844744935684,
+        "p90": 6.214920843488241,
+        "p95": 7.152446847002375,
+        "above_5_fraction": 0.19696969696969696,
+        "above_10_fraction": 0.007575757575757576,
+        "patient_balanced_mean": 3.5273476565684674
+      },
+      "deployment_models": 2,
+      "parameters": 2445863
+    }
+  ],
+  "six_model_ensemble": {
+    "full": {
+      "n": 264,
+      "people": 6,
+      "sites": 66,
+      "mean": 3.3906438010677897,
+      "median": 2.9093564839394315,
+      "p90": 5.964966574837395,
+      "p95": 6.694989436554161,
+      "above_5_fraction": 0.19318181818181818,
+      "above_10_fraction": 0.007575757575757576,
+      "patient_balanced_mean": 3.39064380106779
+    },
+    "parameters": 7337589,
+    "paired_difference": {
+      "cnn": {
+        "mean_difference": -0.22460458763109858,
+        "descriptive_source_bootstrap95": [
+          -0.4092259276073463,
+          -0.04100383330434101
+        ]
+      },
+      "votes_mean": {
+        "mean_difference": -0.06819114173631251,
+        "descriptive_source_bootstrap95": [
+          -0.2488890233301337,
+          0.07570889510732869
+        ]
+      }
+    }
+  },
+  "scope": "Six validation people reused for architecture and epoch selection; intervals do not account for selection and are not confirmatory."
+}

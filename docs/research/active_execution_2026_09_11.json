@@ -1,16 +1,20 @@
 {
   "goal": "active, unbounded research; not complete or blocked",
-  "updated_utc": "2026-09-11T01:26:37.678455+00:00",
+  "updated_utc": "2026-09-11T01:53:07.837499+00:00",
   "live_session": null,
   "completed_sessions": [
+    7009,
     20874,
     21117,
+    22481,
     23891,
     24638,
+    25497,
     29926,
     30030,
     31047,
     38790,
+    39523,
     42195,
     43198,
     47575,
@@ -19,10 +23,12 @@
     53637,
     53841,
     56677,
+    64036,
     78055,
     80890,
     82290,
     82349,
+    83434,
     90346,
     91332,
     95517,
@@ -40,18 +46,25 @@
     "Direct native-Lab source pilot10controls: selected MLP meanDeltaE00 4.3702/median3.8038/p959.7150 on264validation images/6people; not final test",
     "Ten exact replays,60independent DeltaE00 coverage cases,34Sharma reference pairs;251tests pass in33.93s",
     "All1838original instrument-paired JPEGs acquired:2,128,062,766bytes; original per-image CC-BY and S3 MD5/length verified",
-    "Separate-directory deterministic refit:all10models produce bitwise-identical predictions; independent DeltaE00 audit passes"
+    "Separate-directory deterministic refit:all10models produce bitwise-identical predictions; independent DeltaE00 audit passes",
+    "Local pixel cache1230source images only;9feature controls+21image-network fits;42best/final exact replays;256tests passed in33.11s",
+    "924932parameter patch model source meanDeltaE00 3.4888/3.5074/3.4964 versus CNN3.8139/4.0029/4.1147;all three seeds beat approximately capacity-matched global MLP too",
+    "Iterative Huber/context-removal hypotheses did not provide a reliable gain;all negative results retained",
+    "Model GPU median0.4915ms;originalJPEG preparation separately91.79ms median10TRAIN images; no export",
+    "Full source risk curves1056rows;fixed50/50fusion explored without fitting; no final test or calibration opened"
   ],
   "next": [
-    "Build and verify local image features/pixel baseline from source images; do not open calibration/test endpoints before separate locks",
-    "Compare standard compact image network with matched training-only same-site acquisition consistency; direct Lab and error prediction, no mandatory illuminant intermediate",
-    "Keep10patient final test sealed while developing; cross-camera must exclude target camera from fitting/validation/calibration",
-    "Preserve all historical negative experiments and current failed density rejection"
+    "Prepare matched source-subject-out-of-fold expected-DeltaE00 heads; compare standard confidence/error baseline against disagreement-aware mechanism",
+    "Calibrate only on reserved6people after a frozen definition;do not fit on final10test people",
+    "Freeze all methods and checkpoints before final400image/10person test; keep stronger baseline and negative proposed arms",
+    "Do not claim strict unseen-camera generalization from MSKCC devices already exposed during development",
+    "See docs/research/skin_mskcc_pixel_decision.md; no further broad source architecture sweep without a new reason"
   ],
   "skin_delta_e00": "MEASURED source validation only on MSKCC native instrument Lab; He white reference remains unresolved",
-  "skin_image_pipeline_accuracy": "NOT MEASURED: completed MSKCC pilot uses author-provided image-summary features",
+  "skin_image_pipeline_accuracy": "MEASURED SOURCE VALIDATION:actual local JPEG crop/feature/network to instrumentLab;not final independent test or ordinary facial selfie",
   "no_new_external_pixels_or_gt_values_decoded": false,
   "v7_method_lock_sha256": "2828472f40348ebb9785c8d294e4353fd6fc0d33956191756c074d8912e3948d",
   "skin_model_lock_sha256": "38d9a903a2137d51f73a68b89351368c1403033d46ce2182b8b7cfe86a3fc7b7",
-  "mskcc_final_test_status": "Ten people/400images numerical references not decoded; six calibration people/208images also reserved"
+  "mskcc_final_test_status": "Ten people/400images numerical references not decoded; six calibration people/208images also reserved",
+  "additional_live_sessions": []
 }

@@ -1,3 +1,7 @@
+# Pixel research update2026-09-11
+
+MSKCC update: actual local JPEG-to-Lab source experiment completed, including9feature controls and21neural fits. Final10-person test and6-person calibration remain unopened. See [direct pixel decision](../research/skin_mskcc_pixel_decision.md).
+
 # New primary direct-skin source —2026-09-11
 
 Original MSKCC CC-BY instrument-paired skin Lab is now acquired as small metadata; original image subset acquisition is separate. Direct DeltaE00 source-validation controls completed. See [skin inventory](public_skin_color_inventory.md) and [benchmark](../benchmarks/skin_mskcc_summary_v1/report.md). This does not upgrade previous illuminant results into skin accuracy.

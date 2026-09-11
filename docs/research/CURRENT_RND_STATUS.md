@@ -1,3 +1,9 @@
+# Latest: direct skin pixels measured, source validation only
+
+The local JPEG-to-instrument-Lab pipeline is now implemented and measured.924932parameter patch models achieve meanDeltaE00 3.4888/3.5074/3.4964 across3seeds, versus MobileNet3.8139/4.0029/4.1147 and matched global MLP3.8113/3.7303/3.9020. Six-person validation was used for selection;10test and6calibration people remain unopened. Iterative special mechanisms did not reliably beat simple matched pooling.
+
+[Current decision](skin_mskcc_pixel_decision.md), [pixel benchmark](../benchmarks/skin_mskcc_pixels_v1/report.md), [negative ablations](../benchmarks/skin_mskcc_pixel_ablation_v2/report.md).42checkpoint replays and256tests pass. No novel-method victory or ordinary phone facial accuracy claim. The text below is historical evidence, not the latest execution state.
+
 # Latest: real skin DeltaE00 source pilot (2026-09-11)
 
 The primary endpoint is instrument-referenced skin color, following the user correction. Original MSKCC CC-BY data now supports direct native-Lab DeltaE00. On six validation people, the source-selected ordinary MLP has mean4.3702, median3.8038, p959.7150; fixed-distance80% coverage mean4.3694, with worse p95. This is not an independent final test or novel architecture result. Ten test people remain numerically unopened.

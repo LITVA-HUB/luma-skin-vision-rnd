@@ -1,3 +1,7 @@
+# Pixel research update2026-09-11
+
+Pixel mechanism provenance: [Deep Sets](https://arxiv.org/abs/1703.06114) establishes permutation-invariant set learning; [Huber1964](https://doi.org/10.1214/aoms/1177703732) is foundational robust location estimation. Current patch-vote experiments use these established ideas and confidence weighting; no novelty claimed. Direct instrument Lab estimation already appears in the2026skin prior art below. Our weights are trained locally from scratch on original CC-BY data.
+
 # Skin-specific prior art update —2026-09-11
 
 [Bencevic et al.2026](https://arxiv.org/abs/2602.10265) trains EfficientNet-B0 to predict instrument Lab for ITA on MSKCC with patient-level evaluation and extensive additional pretraining. Our direct-Lab objective is therefore not a novelty claim. No pretrained weights or additional training datasets from that work are adopted; its numbers are PUBLISHED BY AUTHORS, not our reproduction. [Weir et al.2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12749783/) provides the original instrument-paired study. Our summary pilot uses a different patient partition and explicitly retains clinical/dermoscopic strata.

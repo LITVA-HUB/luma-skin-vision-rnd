@@ -1,0 +1,42 @@
+{
+  "model_profiles": [
+    {
+      "arch": "cnn",
+      "seed": 17,
+      "device": "NVIDIA GeForce RTX 4060",
+      "batch": 1,
+      "model_input": "128RGBtensor",
+      "gpu_median_ms": 3.1438080072402954,
+      "gpu_p95_ms": 3.2952431797981263,
+      "synchronized_wall_median_ms": 3.1622499955119565,
+      "inference_peak_allocated_mib": 15.22802734375,
+      "parameters": 1520931,
+      "checkpoint_bytes": 6205203,
+      "checkpoint_sha256": "a0daa97fd53242afa4e0e07437152304ab6a5e5508f0e077c4052bfa1e349ed4"
+    },
+    {
+      "arch": "votes_mean",
+      "seed": 17,
+      "device": "NVIDIA GeForce RTX 4060",
+      "batch": 1,
+      "model_input": "64x18precomputed patch descriptors",
+      "gpu_median_ms": 0.4915199875831604,
+      "gpu_p95_ms": 0.669459187984466,
+      "synchronized_wall_median_ms": 0.5063999997219071,
+      "inference_peak_allocated_mib": 13.7255859375,
+      "parameters": 924932,
+      "checkpoint_bytes": 3704630,
+      "checkpoint_sha256": "37e239225263e73ccb76e8d78d73c9555a701d1cdce8cc01ca800960dafddca9"
+    }
+  ],
+  "source_original_jpeg_preparation": {
+    "n": 10,
+    "median_ms": 91.79045000928454,
+    "p95_ms": 134.10173999873223,
+    "includes": "file read+SHA256+JPEG decode+EXIF transpose+central crop+128resize+all color/histogram/patch descriptors",
+    "cache_state": "local files may be OS-cached;not cold-storage benchmark",
+    "excludes": "skin/face localization;this dataset already supplies close skin crops"
+  },
+  "deployment_export": "NOT DONE;source screen only",
+  "calibration_or_test_opened": false
+}

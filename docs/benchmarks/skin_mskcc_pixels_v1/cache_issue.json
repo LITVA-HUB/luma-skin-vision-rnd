@@ -1,0 +1,9 @@
+{
+  "initial_cache": "rejected before model training",
+  "reason": "FP32 accumulation produced spurious correlation near1 in a constant-color guard fixture",
+  "fix": "FP64 statistics;explicitly zero constant-channel correlations and standard deviation;clip correlation to[-1,1]",
+  "verification": "constant-color guard now passes;3patch-feature/aggregation tests passed",
+  "old_cache": "retained locally as skin_mskcc_pixels_v1_rejected_fp32",
+  "valid_cache_receipt": "cache.json",
+  "test_data_opened": false
+}

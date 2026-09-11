@@ -1,3 +1,7 @@
+# Pixel research update2026-09-11
+
+Direct pixel evidence: patch-set color regression is promising on source validation, but standard set aggregation is not new. Iterative Huber mechanisms failed to reliably improve matched pooling; forcing local-only votes lost useful context. Next investigate matched, calibrated expected skin DeltaE00 rather than claim a new architecture from a baseline win. See [current decision](skin_mskcc_pixel_decision.md).
+
 # Direct skin endpoint update —2026-09-11
 
 Direct native-Lab regression is not novel: current MSKCC summary MLP is a baseline. Frozen source validation meanDeltaE00 4.3702; density rejection failed. Next falsifier removes obligatory illuminant estimation and tests locally extracted color/texture evidence and training-only paired acquisition consistency. No novel mechanism or phone accuracy established. See [decision](skin_mskcc_next_decision.md).
