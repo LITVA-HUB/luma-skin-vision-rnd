@@ -1,0 +1,32 @@
+{
+  "bindings": {
+    "docs\\research\\skin_capture_support_protocol_v1.md": "55bad7b2209921edab7ea9be8ca9c198ea0571b42aa1cac6e39e3b6520dd6e1f",
+    "scripts\\skin_capture_support_train.py": "16df3673039976ccf89fbec32bad9e05a823990a31bd7ca94de47c6776d29d4c",
+    "scripts\\skin_capture_support.py": "44423119c5b289cfea026555f9a24957df62e4075b22495611b6969a07580499",
+    "tests\\test_skin_capture_support.py": "67ac1dcc4c836edda14eb2ade34bf4c95f24a0b522845b5fd9ff2cbbedc7e14d",
+    "docs\\benchmarks\\skin_capture_support_v1\\train_pair_audit.json": "651956a16be25f1025b86b6071e4da8a4c88bc4f0add56613872fce69eb6e676",
+    "scripts\\skin_capture_model.py": "23c83500f35cc44b379597451f117ae37ad85fe30ea872a480aa159ea8d015cf",
+    "scripts\\skin_pair_invariance.py": "4cceedf45de2a04c03d6aab7a0c408d851c78c8f4525bf0bc0a2552fea49cf7e",
+    "scripts\\skin_pair_train.py": "962a0ce697034f571f5914bc352d9767b740e725ede19a278fefc58b6d7d867c",
+    "scripts\\skin_mskcc_data.py": "12f7ce2df93ca3586fa068d92751670c33372f7f69bad4d2ca550463e4de0fc5",
+    "scripts\\skin_mskcc_pixels.py": "c5b671ac38da0bec62c18c3872fbac52f2f8a239f0e155a74c44f8ec1b91ad0a",
+    "scripts\\skin_mskcc_train_pixels.py": "39eedd75cd1a1c51cfb21d77435cdc7853afd3cdfa904a4298c113bcbf48da9c",
+    "scripts\\skin_mskcc_summary_pilot.py": "aba10001ec746bd56a06fcd29fe8a108dd88462e20e0287399c4408cf1bd90bd",
+    "scripts\\skin_distribution_train.py": "9b3ef6b5a4f6c7813f33b528774a8461534d3c0d65bd74564b7bb1d53e7892e6",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "data\\processed\\skin_mskcc_pixels_v1\\validation.npz": "5ea83f15f12d3b1e4b43054b363fb72bc87e734e8bd24d322df07a91132ee566"
+  },
+  "arms": [
+    "baseline",
+    "self_bootstrap",
+    "soft_mode_control",
+    "paired_union",
+    "paired_stratified"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ]
+}
