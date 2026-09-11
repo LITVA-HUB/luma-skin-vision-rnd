@@ -2,7 +2,7 @@
 
 The primary endpoint is instrument-referenced skin color, following the user correction. Original MSKCC CC-BY data now supports direct native-Lab DeltaE00. On six validation people, the source-selected ordinary MLP has mean4.3702, median3.8038, p959.7150; fixed-distance80% coverage mean4.3694, with worse p95. This is not an independent final test or novel architecture result. Ten test people remain numerically unopened.
 
-[Source-only benchmark](../benchmarks/skin_mskcc_summary_v1/report.md), [next decision](skin_mskcc_next_decision.md). Ten model replays and60independent metric cases pass. Real original JPEG acquisition is separate; no complete pixel pipeline has yet been evaluated. Historical He white-reference limitation and all angular/synthetic negatives remain valid below.
+[Source-only benchmark](../benchmarks/skin_mskcc_summary_v1/report.md), [next decision](skin_mskcc_next_decision.md). Ten model replays and60independent metric cases pass. All1838original paired JPEGs (2,128,062,766bytes) are now acquired and individually verified. No complete pixel pipeline has yet been evaluated. A separate-directory refit exactly reproduced all10models. Historical He white-reference limitation and all angular/synthetic negatives remain valid below.
 
 # Latest priority: actual skin-color error, 2026-09-11
 

@@ -41,8 +41,9 @@ def scalar_de(p, q):
     return m.sqrt((dl/sl)**2+(dc/sc)**2+(dH/sh)**2+rt*(dc/sc)*(dH/sh))
 
 
-def main():
-    bench = ROOT/'docs/benchmarks/skin_mskcc_summary_v1'
+def main(bench=None, run=None):
+    bench = Path(bench) if bench else ROOT/'docs/benchmarks/skin_mskcc_summary_v1'
+    run = Path(run) if run else ROOT/'experiments/runs/skin_mskcc_summary_v1'
     results = json.loads((bench/'results.json').read_bytes())
     for path, key in [(PROTOCOL,'protocol_sha256'),(MANIFEST,'manifest_sha256'),
                       (ROOT/'scripts/skin_mskcc_data.py','data_script_sha256'),
@@ -55,7 +56,7 @@ def main():
     rows, x, y, _ = load_source('validation')
     max_gap = 0.; cases = 0
     for model in results['models']:
-        path = ROOT/'experiments/runs/skin_mskcc_summary_v1'/(model['name']+'.joblib')
+        path = run/(model['name']+'.joblib')
         assert sha(path) == model['model_sha256']
         pred = joblib.load(path).predict(x)
         saved = np.load(path.with_name(model['name']+'_validation.npz'))
@@ -85,4 +86,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--benchmark', type=Path)
+    parser.add_argument('--run', type=Path)
+    args = parser.parse_args()
+    main(args.benchmark, args.run)

@@ -1,12 +1,13 @@
 {
   "goal": "active, unbounded research; not complete or blocked",
-  "updated_utc": "2026-09-11T01:20:28.625258+00:00",
-  "live_session": 29926,
+  "updated_utc": "2026-09-11T01:26:37.678455+00:00",
+  "live_session": null,
   "completed_sessions": [
     20874,
     21117,
     23891,
     24638,
+    29926,
     30030,
     31047,
     38790,
@@ -37,10 +38,11 @@
     "247tests passed,14historical ONNX warnings in32.53s",
     "Original MSKCC CC-BY metadata:1838instrument-paired normal-skin images/474sites/46people; deterministic24/6/6/10patient roles",
     "Direct native-Lab source pilot10controls: selected MLP meanDeltaE00 4.3702/median3.8038/p959.7150 on264validation images/6people; not final test",
-    "Ten exact replays,60independent DeltaE00 coverage cases,34Sharma reference pairs;251tests pass in33.93s"
+    "Ten exact replays,60independent DeltaE00 coverage cases,34Sharma reference pairs;251tests pass in33.93s",
+    "All1838original instrument-paired JPEGs acquired:2,128,062,766bytes; original per-image CC-BY and S3 MD5/length verified",
+    "Separate-directory deterministic refit:all10models produce bitwise-identical predictions; independent DeltaE00 audit passes"
   ],
   "next": [
-    "Complete original instrument-paired JPEG subset acquisition (session29926); first strict API-size run49530 stopped after publisher API/S3 size discrepancy, now each file verified by S3 length+MD5",
     "Build and verify local image features/pixel baseline from source images; do not open calibration/test endpoints before separate locks",
     "Compare standard compact image network with matched training-only same-site acquisition consistency; direct Lab and error prediction, no mandatory illuminant intermediate",
     "Keep10patient final test sealed while developing; cross-camera must exclude target camera from fitting/validation/calibration",
