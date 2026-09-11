@@ -393,3 +393,12 @@ the sufficient-mean identity. All 48 fits choose strength1 from 1/4/16/64;
 this does not establish the globally optimal temperature. Existing graph,
 mixture and Bayesian mechanisms remain prior art; no new invention is asserted.
 [Decision, assumptions, failure modes and next falsifier](skin_graph_patch_next_decision.md).
+
+
+## Support / representation decision
+
+The 27-fit TRAIN-only screen does not establish a new representation advantage.
+An active learned pixel residual barely changes when patch texture is removed.
+Investigate TRAIN-color support allocation under fixed data/update controls next;
+sampling balance is established methodology, not the candidate invention itself.
+[Mechanism, failure mode and next falsifier](skin_support_curve_next_decision.md).

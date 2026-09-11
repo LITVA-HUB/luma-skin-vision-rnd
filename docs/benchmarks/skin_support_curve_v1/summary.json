@@ -1,0 +1,418 @@
+{
+  "scope": "TRAIN-only internal holdout, exploratory; not fresh external accuracy",
+  "groups": {
+    "6/baseline": {
+      "train_people": 6,
+      "arm": "baseline",
+      "model_runs": 3,
+      "mean": 7.243890106732892,
+      "patient_mean": 7.254854942763963,
+      "median": 5.7242722686761525,
+      "p95": 17.85750470461966,
+      "at80": 6.143996643404247,
+      "individual_means": [
+        7.698218816688022,
+        7.5619879415841655,
+        6.47146356192649
+      ],
+      "train_mean": 3.00948053305974,
+      "reference_palette_diagnostic_mean": 2.571286030510448,
+      "train_images": [
+        242,
+        238,
+        233
+      ],
+      "train_sites": [
+        65,
+        64,
+        59
+      ],
+      "interventions": {}
+    },
+    "6/statistics": {
+      "train_people": 6,
+      "arm": "statistics",
+      "model_runs": 3,
+      "mean": 7.2067600716747195,
+      "patient_mean": 7.169870085437057,
+      "median": 5.628940805649319,
+      "p95": 17.788207470988258,
+      "at80": 6.121937011034073,
+      "individual_means": [
+        7.526871413443878,
+        7.588666947950698,
+        6.5047418536295805
+      ],
+      "train_mean": 2.965240058005181,
+      "reference_palette_diagnostic_mean": 2.571286030510448,
+      "train_images": [
+        242,
+        238,
+        233
+      ],
+      "train_sites": [
+        65,
+        64,
+        59
+      ],
+      "interventions": {
+        "zero": {
+          "mean": 7.994221130262642,
+          "lab_rms_change": 2.194422960281372
+        }
+      }
+    },
+    "6/pixels": {
+      "train_people": 6,
+      "arm": "pixels",
+      "model_runs": 3,
+      "mean": 7.176229802896213,
+      "patient_mean": 7.167689656824862,
+      "median": 5.6431905375103355,
+      "p95": 17.77705802197799,
+      "at80": 6.11498562165291,
+      "individual_means": [
+        7.59798157882174,
+        7.507136528268054,
+        6.4235713015988445
+      ],
+      "train_mean": 2.9944731297283713,
+      "reference_palette_diagnostic_mean": 2.571286030510448,
+      "train_images": [
+        242,
+        238,
+        233
+      ],
+      "train_sites": [
+        65,
+        64,
+        59
+      ],
+      "interventions": {
+        "zero": {
+          "mean": 7.6478536707580345,
+          "lab_rms_change": 1.281633456548055
+        },
+        "shuffle": {
+          "mean": 7.175606035438666,
+          "lab_rms_change": 0.03733623602117101
+        },
+        "mean": {
+          "mean": 7.169539552404245,
+          "lab_rms_change": 0.032219360039258994
+        }
+      }
+    },
+    "12/baseline": {
+      "train_people": 12,
+      "arm": "baseline",
+      "model_runs": 3,
+      "mean": 6.28434289201832,
+      "patient_mean": 6.057992899727936,
+      "median": 5.126069840243566,
+      "p95": 15.059582137224291,
+      "at80": 5.591675917799697,
+      "individual_means": [
+        6.383406746457888,
+        6.13464261953779,
+        6.334979310059283
+      ],
+      "train_mean": 3.406492492773625,
+      "reference_palette_diagnostic_mean": 2.060156464713058,
+      "train_images": [
+        475,
+        476,
+        492
+      ],
+      "train_sites": [
+        124,
+        124,
+        124
+      ],
+      "interventions": {}
+    },
+    "12/statistics": {
+      "train_people": 12,
+      "arm": "statistics",
+      "model_runs": 3,
+      "mean": 6.293981179063944,
+      "patient_mean": 6.059061192763662,
+      "median": 5.134592776030364,
+      "p95": 15.600935506499006,
+      "at80": 5.574346791029463,
+      "individual_means": [
+        6.472209600273753,
+        6.10384903546003,
+        6.305884901458046
+      ],
+      "train_mean": 3.363566828113294,
+      "reference_palette_diagnostic_mean": 2.060156464713058,
+      "train_images": [
+        475,
+        476,
+        492
+      ],
+      "train_sites": [
+        124,
+        124,
+        124
+      ],
+      "interventions": {
+        "zero": {
+          "mean": 7.611304284111651,
+          "lab_rms_change": 2.5549737215042114
+        }
+      }
+    },
+    "12/pixels": {
+      "train_people": 12,
+      "arm": "pixels",
+      "model_runs": 3,
+      "mean": 6.274352051588747,
+      "patient_mean": 6.045164988801243,
+      "median": 5.105579890260093,
+      "p95": 15.280818786497198,
+      "at80": 5.5750298734160095,
+      "individual_means": [
+        6.411607872945489,
+        6.0781336940014885,
+        6.333314587819261
+      ],
+      "train_mean": 3.3895274350704656,
+      "reference_palette_diagnostic_mean": 2.060156464713058,
+      "train_images": [
+        475,
+        476,
+        492
+      ],
+      "train_sites": [
+        124,
+        124,
+        124
+      ],
+      "interventions": {
+        "zero": {
+          "mean": 6.829712967320127,
+          "lab_rms_change": 1.3601077596346538
+        },
+        "shuffle": {
+          "mean": 6.270617542890388,
+          "lab_rms_change": 0.026663930640400697
+        },
+        "mean": {
+          "mean": 6.265404327519224,
+          "lab_rms_change": 0.021351735243418563
+        }
+      }
+    },
+    "18/baseline": {
+      "train_people": 18,
+      "arm": "baseline",
+      "model_runs": 3,
+      "mean": 6.108242323281774,
+      "patient_mean": 5.923688862727857,
+      "median": 5.135335464769542,
+      "p95": 14.995959869531228,
+      "at80": 5.391797915881956,
+      "individual_means": [
+        6.105465571145234,
+        6.198796800682973,
+        6.020464598017115
+      ],
+      "train_mean": 3.582276980743984,
+      "reference_palette_diagnostic_mean": 1.6696418687788892,
+      "train_images": [
+        734,
+        734,
+        734
+      ],
+      "train_sites": [
+        189,
+        189,
+        189
+      ],
+      "interventions": {}
+    },
+    "18/statistics": {
+      "train_people": 18,
+      "arm": "statistics",
+      "model_runs": 3,
+      "mean": 6.156018524302405,
+      "patient_mean": 5.9548173557038515,
+      "median": 5.1727077829745625,
+      "p95": 15.124156799617717,
+      "at80": 5.425629331459009,
+      "individual_means": [
+        6.163224985951703,
+        6.181623579867834,
+        6.12320700708768
+      ],
+      "train_mean": 3.53656269111448,
+      "reference_palette_diagnostic_mean": 1.6696418687788892,
+      "train_images": [
+        734,
+        734,
+        734
+      ],
+      "train_sites": [
+        189,
+        189,
+        189
+      ],
+      "interventions": {
+        "zero": {
+          "mean": 7.306725156518997,
+          "lab_rms_change": 2.1068641344706216
+        }
+      }
+    },
+    "18/pixels": {
+      "train_people": 18,
+      "arm": "pixels",
+      "model_runs": 3,
+      "mean": 6.125795356850275,
+      "patient_mean": 5.937244476442456,
+      "median": 5.176811317203068,
+      "p95": 15.082760404753442,
+      "at80": 5.40809415025042,
+      "individual_means": [
+        6.1068698619388035,
+        6.202201814944942,
+        6.068314393667078
+      ],
+      "train_mean": 3.574180663745547,
+      "reference_palette_diagnostic_mean": 1.6696418687788892,
+      "train_images": [
+        734,
+        734,
+        734
+      ],
+      "train_sites": [
+        189,
+        189,
+        189
+      ],
+      "interventions": {
+        "zero": {
+          "mean": 6.617515854550604,
+          "lab_rms_change": 0.9889592230319977
+        },
+        "shuffle": {
+          "mean": 6.126578259268644,
+          "lab_rms_change": 0.017539277381729335
+        },
+        "mean": {
+          "mean": 6.11993350320371,
+          "lab_rms_change": 0.015967908839229494
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "train_people": 6,
+      "candidate": "pixels",
+      "control": "statistics",
+      "image_mean_difference": -0.030530268778506335,
+      "patient_mean_difference": -0.0021804286121955585,
+      "descriptive_patient_interval": [
+        -0.11230730541270777,
+        0.12295900034985659
+      ]
+    },
+    {
+      "train_people": 6,
+      "candidate": "pixels",
+      "control": "baseline",
+      "image_mean_difference": -0.06766030383667973,
+      "patient_mean_difference": -0.08716528593910039,
+      "descriptive_patient_interval": [
+        -0.1966320119900573,
+        0.006948293027635225
+      ]
+    },
+    {
+      "train_people": 6,
+      "candidate": "statistics",
+      "control": "baseline",
+      "image_mean_difference": -0.0371300350581734,
+      "patient_mean_difference": -0.08498485732690482,
+      "descriptive_patient_interval": [
+        -0.29561502762996716,
+        0.044264297191285905
+      ]
+    },
+    {
+      "train_people": 12,
+      "candidate": "pixels",
+      "control": "statistics",
+      "image_mean_difference": -0.0196291274751971,
+      "patient_mean_difference": -0.013896203962419864,
+      "descriptive_patient_interval": [
+        -0.05224461945040748,
+        0.02445221152556774
+      ]
+    },
+    {
+      "train_people": 12,
+      "candidate": "pixels",
+      "control": "baseline",
+      "image_mean_difference": -0.00999084042957522,
+      "patient_mean_difference": -0.012827910926693498,
+      "descriptive_patient_interval": [
+        -0.03952451325031997,
+        0.01727643375176335
+      ]
+    },
+    {
+      "train_people": 12,
+      "candidate": "statistics",
+      "control": "baseline",
+      "image_mean_difference": 0.009638287045621875,
+      "patient_mean_difference": 0.0010682930357263653,
+      "descriptive_patient_interval": [
+        -0.056910949815527245,
+        0.060792074352113624
+      ]
+    },
+    {
+      "train_people": 18,
+      "candidate": "pixels",
+      "control": "statistics",
+      "image_mean_difference": -0.03022316745213084,
+      "patient_mean_difference": -0.017572879261394444,
+      "descriptive_patient_interval": [
+        -0.0702081517267795,
+        0.03887071701356951
+      ]
+    },
+    {
+      "train_people": 18,
+      "candidate": "pixels",
+      "control": "baseline",
+      "image_mean_difference": 0.017553033568500628,
+      "patient_mean_difference": 0.013555613714599101,
+      "descriptive_patient_interval": [
+        -0.004457203542570481,
+        0.03090025525622538
+      ]
+    },
+    {
+      "train_people": 18,
+      "candidate": "statistics",
+      "control": "baseline",
+      "image_mean_difference": 0.047776201020631466,
+      "patient_mean_difference": 0.031128492975993554,
+      "descriptive_patient_interval": [
+        -0.04319292364473173,
+        0.09534292813495215
+      ]
+    }
+  ],
+  "bindings": {
+    "scripts\\skin_support_curve_report.py": "8f8ec602f35a54cdd83a6817b6a370744c6164b998d90f63a1c969c5472046bc",
+    "docs\\benchmarks\\skin_support_curve_v1\\audit.json": "0234f3d615d2835ac7d7959f37919c56af81fbb7760833bf97a3ca299df176c2",
+    "docs\\benchmarks\\skin_support_curve_v1\\interventions.json": "6e0b70d8822ce573d81016ec5c4f9bd9e03fb7965246527ff4bef33c81148ec6",
+    "docs\\benchmarks\\skin_support_curve_v1\\source_lock.json": "b2c52f9f56d6ef3d62e79b6f82f83667c92d0564e83fd5a50229ee7a4caedb35"
+  }
+}

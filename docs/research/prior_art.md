@@ -467,3 +467,18 @@ the sufficient-mean identity. All 48 fits choose strength1 from 1/4/16/64;
 this does not establish the globally optimal temperature. Existing graph,
 mixture and Bayesian mechanisms remain prior art; no new invention is asserted.
 [Decision, assumptions, failure modes and next falsifier](skin_graph_patch_next_decision.md).
+
+
+## Direct instrument-supervised skin modeling: fresh primary review (2026-09-11)
+
+[Benčević et al.,2026](https://arxiv.org/html/2602.10265v1) use an EfficientNet-B0
+backbone, external dermatology pretraining and direct three-channel Lab regression
+with Euclidean color loss, principally reporting ITA agreement. They describe
+patient-level cross-validation and avoid white balancing. Their broader dataset
+accounting and evaluation subset differ from ours; reported numbers are not
+reproduced local DeltaE00 results. No author weights or data were imported.
+Direct measured skin-color supervision alone is therefore not a novelty claim.
+Our [27-fit support/representation falsifier](skin_support_curve_next_decision.md)
+finds no convincing advantage for a small learned-pixel residual; source support
+and optimizer allocation now deserve controlled testing. No general limitation
+on all pixel networks follows from this particular negative result.

@@ -1,3 +1,20 @@
+# Latest: actual skin support / learned patch screen complete
+
+27 fixed-budget TRAIN-only fits on nested6/12/18-person sets. Baseline internal
+mean DeltaE00 improves7.2439 ->6.2843 ->6.1082 as person support increases.
+Pixel residual at18people6.1258 does not beat baseline6.1082. Shuffling/averaging
+its patch pixels barely changes outputs; useful local structure is unproven.
+[Decision and report](skin_support_curve_next_decision.md).
+27 exact checkpoint arrays,3 exact930-step refits,6264 scalar color cases,
+162 coverage rows;784392 independent support distances. Diagnostics add27TRAIN
+and36intervention arrays,21426 scalar cases,267264 patch provenance checks.
+353 tests pass,14 historical warnings,33.54s. All jobs terminal; no live training.
+Independent MSKCC results unchanged. Internal holdout was part of TRAIN in older
+experiments: no new independent claim. Ordinary facial-phone accuracy unproven.
+Next: fixed-data/update TRAIN-color support balancing with image/site/person
+sampling controls. No camera labels at inference or as balancing target.
+Goal active and unmet; no new strongest-baseline or novelty victory.
+
 # Latest: actual skin color; 84 graph/support and patch-distribution fits complete
 
 Primary endpoint is instrument-native skin Lab / DeltaE00, not illuminant angles.
