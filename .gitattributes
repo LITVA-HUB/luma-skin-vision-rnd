@@ -1,4 +1,15 @@
 * text=auto eol=lf
+scripts/skin_train_branch*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/skin_branch_combination*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_skin_train_branch.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_train_branch_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_branch_combination_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/skin_train_branch_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/skin_branch_combination_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/skin_spatial*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_skin_spatial.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_spatial_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/skin_spatial_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/skin_spectral*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_skin_spectral*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/benchmarks/skin_spectral_probe_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

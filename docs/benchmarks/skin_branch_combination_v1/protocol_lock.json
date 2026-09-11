@@ -1,0 +1,56 @@
+{
+  "protocol_sha256": "e1543e0f216c2b8981b0036ccf4480d98805f222a77c9528434b0a0021bf191e",
+  "script_sha256": "41808e0dab104cb49cbd97c0fa791ec1a1fb7a3e1fe020ac03cb0be3f1f5c116",
+  "pairs": {
+    "mixture_graph_always": [
+      [
+        "skin_capture_v1",
+        "mixture_mse"
+      ],
+      [
+        "skin_train_branch_v1",
+        "graph_always"
+      ]
+    ],
+    "mixture_graph_drop": [
+      [
+        "skin_capture_v1",
+        "mixture_mse"
+      ],
+      [
+        "skin_train_branch_v1",
+        "graph_drop"
+      ]
+    ],
+    "mixture_conv_drop": [
+      [
+        "skin_capture_v1",
+        "mixture_mse"
+      ],
+      [
+        "skin_train_branch_v1",
+        "conv_drop"
+      ]
+    ],
+    "mixture_plain": [
+      [
+        "skin_capture_v1",
+        "mixture_mse"
+      ],
+      [
+        "skin_capture_v1",
+        "plain_mse"
+      ]
+    ],
+    "plain_graph_always": [
+      [
+        "skin_capture_v1",
+        "plain_mse"
+      ],
+      [
+        "skin_train_branch_v1",
+        "graph_always"
+      ]
+    ]
+  }
+}

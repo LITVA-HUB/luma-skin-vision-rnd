@@ -1,0 +1,252 @@
+{
+  "scope": "POST-DISCOVERY source opponent control; fixed offset from fitting predictions only; no independent test claim",
+  "script_sha256": "18dced1bba98f45f446e507229253663310ac2dc400e792195dfbb14e126bbd5",
+  "source_lock_sha256": "f109f9553fa880c4d33b8acd5896adeb1b379574c2d0355dea57aa31670d8512",
+  "scalar_cases": 4752,
+  "maximum_metric_gap": 7.105427357601002e-15,
+  "rows": [
+    {
+      "protocol": "mixed",
+      "seed": 17,
+      "checkpoint_sha256": "2a6f4f625439dc06aa38356ee4ee3572e3b15a9bf8086fe284b0521558c42239",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        -1.4897584500520125,
+        -0.22596711747147774,
+        2.015311131566208
+      ],
+      "train_constant_shift_energy_fraction": 0.28073466177839596,
+      "train_offset_residual_rms_delta_e76": 4.027766340982469,
+      "metrics": {
+        "graph3": {
+          "mean": 3.6812439811664874,
+          "p95": 8.196703573204436
+        },
+        "graph0": {
+          "mean": 4.029950195008831,
+          "p95": 7.742565271468192
+        },
+        "graph3_constant_offset": {
+          "mean": 3.9282862303003547,
+          "p95": 8.043017233508419
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "seed": 29,
+      "checkpoint_sha256": "1965e6e9d7c978fda4a7947fe7b96335bb435986f367906974075cde0d50f692",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        -0.9978810995508672,
+        -0.09508359950521718,
+        2.1661574766502616
+      ],
+      "train_constant_shift_energy_fraction": 0.24924832055808382,
+      "train_offset_residual_rms_delta_e76": 4.142446336390387,
+      "metrics": {
+        "graph3": {
+          "mean": 3.6311998077981444,
+          "p95": 7.719645869197709
+        },
+        "graph0": {
+          "mean": 3.9685369546104425,
+          "p95": 8.413183227319555
+        },
+        "graph3_constant_offset": {
+          "mean": 3.753381342876582,
+          "p95": 7.469150574755226
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "seed": 43,
+      "checkpoint_sha256": "343dcd8169787e25772484381c7146fcae089f26a954e9fd9f99404aea7d9613",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        -1.0916793598151355,
+        0.3817009854267349,
+        2.2505201730668913
+      ],
+      "train_constant_shift_energy_fraction": 0.2628948940320008,
+      "train_offset_residual_rms_delta_e76": 4.236836081266726,
+      "metrics": {
+        "graph3": {
+          "mean": 3.5817736183398474,
+          "p95": 7.956420416348691
+        },
+        "graph0": {
+          "mean": 3.8172509026605246,
+          "p95": 7.138632590089563
+        },
+        "graph3_constant_offset": {
+          "mean": 3.868499942097201,
+          "p95": 7.9219938783097605
+        }
+      }
+    },
+    {
+      "protocol": "from_SLR",
+      "seed": 17,
+      "checkpoint_sha256": "6abb56fa47e9d4e7ff0f0fa3d031df65e3ab918ccd253f1bd3b8b78e89cca10e",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        0.9574644248182929,
+        -1.5583163016351753,
+        0.12119944841130968
+      ],
+      "train_constant_shift_energy_fraction": 0.39850097287868763,
+      "train_offset_residual_rms_delta_e76": 2.251946176033163,
+      "metrics": {
+        "graph3": {
+          "mean": 6.242852565513157,
+          "p95": 13.605165446749417
+        },
+        "graph0": {
+          "mean": 4.685452301293735,
+          "p95": 8.861282481746281
+        },
+        "graph3_constant_offset": {
+          "mean": 5.485904540380738,
+          "p95": 12.059771385746222
+        }
+      }
+    },
+    {
+      "protocol": "from_SLR",
+      "seed": 29,
+      "checkpoint_sha256": "e32c9d6f95da633f039b2fc5f6883f22ac4dc1310d6f85fd18ae30e5cfb08e48",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        1.8200281042801707,
+        -1.7852841737469654,
+        0.625202170097422
+      ],
+      "train_constant_shift_energy_fraction": 0.6002572802426802,
+      "train_offset_residual_rms_delta_e76": 2.1421540638282295,
+      "metrics": {
+        "graph3": {
+          "mean": 6.1288707472071975,
+          "p95": 13.227556662508215
+        },
+        "graph0": {
+          "mean": 4.57549996102247,
+          "p95": 8.443701461233248
+        },
+        "graph3_constant_offset": {
+          "mean": 5.2087967483638025,
+          "p95": 10.862897273711173
+        }
+      }
+    },
+    {
+      "protocol": "from_SLR",
+      "seed": 43,
+      "checkpoint_sha256": "2216272664b10d2f61c1fedcc3cd0528723039891202966af193bbcc70f0ab3e",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        2.28118653194085,
+        -1.57207756810144,
+        0.06726690416365586
+      ],
+      "train_constant_shift_energy_fraction": 0.5359394213363595,
+      "train_offset_residual_rms_delta_e76": 2.5787155810724633,
+      "metrics": {
+        "graph3": {
+          "mean": 6.711657632917667,
+          "p95": 14.300281664597275
+        },
+        "graph0": {
+          "mean": 4.4077756921660365,
+          "p95": 8.066011273346732
+        },
+        "graph3_constant_offset": {
+          "mean": 5.428077449423298,
+          "p95": 11.735546143726669
+        }
+      }
+    },
+    {
+      "protocol": "from_ipod",
+      "seed": 17,
+      "checkpoint_sha256": "a08d8637e94bf951186cbe2b204bf825add741d2b2dfa2a241a371577a08ff85",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        -0.6580993124337441,
+        0.19212292623742372,
+        1.23640158016982
+      ],
+      "train_constant_shift_energy_fraction": 0.33706129171676497,
+      "train_offset_residual_rms_delta_e76": 1.982693070836342,
+      "metrics": {
+        "graph3": {
+          "mean": 6.046196982187015,
+          "p95": 10.70287707873878
+        },
+        "graph0": {
+          "mean": 5.293264159839463,
+          "p95": 9.646794050652014
+        },
+        "graph3_constant_offset": {
+          "mean": 5.562344942930864,
+          "p95": 10.16340114639906
+        }
+      }
+    },
+    {
+      "protocol": "from_ipod",
+      "seed": 29,
+      "checkpoint_sha256": "82bf1fe41579aaf51c8291814fd688b122fbd2b37e33f59667a2949cc3933108",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        -1.4998992279195118,
+        0.23283195161893616,
+        1.4431514643584589
+      ],
+      "train_constant_shift_energy_fraction": 0.3471572452378416,
+      "train_offset_residual_rms_delta_e76": 2.8721355034584617,
+      "metrics": {
+        "graph3": {
+          "mean": 5.849855455235023,
+          "p95": 10.337838653770557
+        },
+        "graph0": {
+          "mean": 4.897703044295904,
+          "p95": 9.411607619476001
+        },
+        "graph3_constant_offset": {
+          "mean": 5.132666460372799,
+          "p95": 9.202270904773474
+        }
+      }
+    },
+    {
+      "protocol": "from_ipod",
+      "seed": 43,
+      "checkpoint_sha256": "12d330e013ee1219ee0996e252fd567f77938cde53e452124f46260ac1238949",
+      "offset_derived_without_evaluation_inputs_or_any_targets": true,
+      "train_mean_offset_native_lab": [
+        -1.0796862760932413,
+        0.17953570745595693,
+        1.2290101422121513
+      ],
+      "train_constant_shift_energy_fraction": 0.32598605771078476,
+      "train_offset_residual_rms_delta_e76": 2.366426662475712,
+      "metrics": {
+        "graph3": {
+          "mean": 5.52427747267926,
+          "p95": 10.430569155038652
+        },
+        "graph0": {
+          "mean": 4.611276345903596,
+          "p95": 9.232993187465805
+        },
+        "graph3_constant_offset": {
+          "mean": 4.880944052317965,
+          "p95": 9.537372378458278
+        }
+      }
+    }
+  ]
+}

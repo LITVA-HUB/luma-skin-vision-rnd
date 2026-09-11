@@ -1,4 +1,30 @@
-# Latest: measured skin-material and shared-spatial probes
+# Latest:90real-photo spatial/training-branch fits and45fixed combinations
+
+54spatial source fits reject the direct graph-smoothing hypothesis: mixed graph3
+3.6314DeltaE00 versus plain3.4855; true adjacency worse than scrambled in all3seeds.
+A72-endpoint post-hoc recurrence probe found graph removal can improve transfer.
+36predeclared follow-up fits then fixed zero-step selection/inference beforehand:
+training-only graph iPod->SLR4.9736 versus strong capture-plain5.5089, all3seed gains;
+mixed3.6394 and reverse5.8339 remain weak. No universal or independent-test victory.
+Constant TRAIN-prediction offsets explain only part of the deletion effect.
+
+45fixed same-seed pair combinations: mixture+training-only graph3.4043mixed,
+5.0697SLR->iPod,5.2806iPod->SLR versus ordinary mixture+plain3.3680/5.1702/5.6523.
+The new pair loses mixed and has only1/3seed transfer gains in the first direction.
+Disagreement-based80%acceptance worsens transfer error; no selective-risk win.
+Candidate pair1,854,229active parameters,1.4243msbatch1GPUprepared-token output;
+this excludes JPEG/features/CPU/risk/localization and is not total photo latency.
+
+[Decision and opponent checks](skin_spatial_next_decision.md),
+[90-fit reports](../benchmarks/skin_train_branch_v1/report.md),
+[combinations](../benchmarks/skin_branch_combination_v1/report.md).
+270color+270risk arrays exactly replayed;15,840independent scalar color cases,
+540coverage rows and18identical always-arm training trajectories verified.
+MSKCC TEST/CAL and UMINHO held-out roles were not accessed.281tests pass with
+14historical ONNX warnings. All fitting/audit/profile jobs are terminal; no live
+job remains. Goal active/unmet.
+
+# Previous: measured skin-material and shared-spatial probes
 
 Three original CC BY4.0 UMINHO TRAIN faces now acquired (236.85MB total),
 22,500spectra in nine manually inspected skin regions.36oracle representation

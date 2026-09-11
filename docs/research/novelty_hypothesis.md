@@ -1,3 +1,20 @@
+# Spatial/training-only branch decision 2026-09-11
+
+90real-photo source fits do not establish a better universal architecture.
+Spatial graph inference fails the mixed-source controls. Training with a graph
+branch but removing it at inference has a reproducible one-direction source
+transfer benefit (4.9736 versus5.5089, all3seeds), with mixed/reverse losses.
+This is an interesting mechanism to isolate, not patent novelty or independent
+validation. A fixed ordinary two-model combination still wins mixed-source
+accuracy; proposed combinations do not win across protocols or selective risk.
+
+Training-time nuisance perturbation with an unchanged inference core is the
+next bounded hypothesis. It must outperform ordinary perturbation/DropPath and
+constant-calibration controls while keeping absolute color and acceptable tails.
+Graph layers, branch dropping and ensembles alone have established prior art.
+Retain the marginal/dependence alternative rather than narrowing all research
+to this one favorable transfer direction. [Evidence and next falsifiers](skin_spatial_next_decision.md).
+
 # Material/spatial hypothesis after real-spectral falsifiers 2026-09-11
 
 Skin spectral priors, PCA, positive illuminant models and physical inversion

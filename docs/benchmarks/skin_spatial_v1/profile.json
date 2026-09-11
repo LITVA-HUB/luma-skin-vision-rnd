@@ -1,0 +1,115 @@
+{
+  "scope": "CUDA event batch1 prepared-token nativeLab output; excludes JPEG/resize/features/CPU/risk/localization",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "warmup_iterations": 50,
+  "measured_iterations": 200,
+  "exported": false,
+  "optimized": false,
+  "script_sha256": "213ef1bcb7e0db49fc81a7335fd6a8a7b55556267ec2fe950400db56d293139a",
+  "rows": [
+    {
+      "arm": "plain",
+      "seed": 17,
+      "batch": 1,
+      "input_shape": [
+        1,
+        64,
+        18
+      ],
+      "median_gpu_ms": 0.6635519862174988,
+      "p95_gpu_ms": 0.7631744265556334,
+      "peak_allocated_mib": 37.12890625,
+      "checkpoint_bytes": 3997851,
+      "checkpoint_sha256": "60b5727d7391a11cf4b9888925ff9df95c5d49055eb83c7da1b54312d939c383",
+      "stored_parameters": 993287,
+      "active_parameters": 924932
+    },
+    {
+      "arm": "conv1",
+      "seed": 17,
+      "batch": 1,
+      "input_shape": [
+        1,
+        64,
+        18
+      ],
+      "median_gpu_ms": 0.6277120113372803,
+      "p95_gpu_ms": 0.781375989317894,
+      "peak_allocated_mib": 37.25390625,
+      "checkpoint_bytes": 3997851,
+      "checkpoint_sha256": "82a9b346f9b01bf0727a3b3548825e6d25eb7fbdf214f103756bfda162d0e038",
+      "stored_parameters": 993287,
+      "active_parameters": 993028
+    },
+    {
+      "arm": "conv3",
+      "seed": 17,
+      "batch": 1,
+      "input_shape": [
+        1,
+        64,
+        18
+      ],
+      "median_gpu_ms": 0.7767679989337921,
+      "p95_gpu_ms": 0.9808927744626998,
+      "peak_allocated_mib": 37.25390625,
+      "checkpoint_bytes": 3997851,
+      "checkpoint_sha256": "c960b8177740a0ff0d556364a57affd382ae900ba218b114db2c8d1053b7b729",
+      "stored_parameters": 993287,
+      "active_parameters": 993028
+    },
+    {
+      "arm": "graph1",
+      "seed": 17,
+      "batch": 1,
+      "input_shape": [
+        1,
+        64,
+        18
+      ],
+      "median_gpu_ms": 1.2185760140419006,
+      "p95_gpu_ms": 1.3503840148448938,
+      "peak_allocated_mib": 37.2861328125,
+      "checkpoint_bytes": 3997851,
+      "checkpoint_sha256": "d19333fff15a18829205ce0cbb599a02debedd1ce40ea9fb7f393413d5d4d1db",
+      "stored_parameters": 993287,
+      "active_parameters": 990727
+    },
+    {
+      "arm": "graph3",
+      "seed": 17,
+      "batch": 1,
+      "input_shape": [
+        1,
+        64,
+        18
+      ],
+      "median_gpu_ms": 2.248703956604004,
+      "p95_gpu_ms": 2.4610127091407774,
+      "peak_allocated_mib": 37.2861328125,
+      "checkpoint_bytes": 3997851,
+      "checkpoint_sha256": "2a6f4f625439dc06aa38356ee4ee3572e3b15a9bf8086fe284b0521558c42239",
+      "stored_parameters": 993287,
+      "active_parameters": 990727
+    },
+    {
+      "arm": "graph3_scrambled",
+      "seed": 17,
+      "batch": 1,
+      "input_shape": [
+        1,
+        64,
+        18
+      ],
+      "median_gpu_ms": 2.3182880878448486,
+      "p95_gpu_ms": 2.5078784227371216,
+      "peak_allocated_mib": 37.2861328125,
+      "checkpoint_bytes": 3997915,
+      "checkpoint_sha256": "fd8387ae4536ecf94068f8e9882914abc76d7333aa22fbf26b167589a7266b6a",
+      "stored_parameters": 993287,
+      "active_parameters": 990727
+    }
+  ]
+}

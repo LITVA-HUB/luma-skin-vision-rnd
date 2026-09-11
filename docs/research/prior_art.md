@@ -1,3 +1,28 @@
+# Spatial diffusion and alternative statistical representation 2026-09-11
+
+[Deep Networks with Stochastic Depth](https://arxiv.org/abs/1603.09382) randomly
+bypasses layers during training. Our follow-up always removes the auxiliary
+branch at inference and source checkpoint selection; this difference is an
+experimental configuration, not evidence of novelty. No external code/weights.
+
+[Diffusion Improves Graph Learning](https://arxiv.org/abs/1911.05485) and
+[Deep Equilibrium Models](https://arxiv.org/abs/1909.01377) establish relevant
+diffusion and repeated/fixed-point computation prior art. Our positive anchored
+Jacobi layer is a finite explicit latent quadratic solve, not a DEQ reproduction,
+implicit-gradient method, new physical skin model, or inherently novel architecture.
+No paper code or weights were adopted. The54-fit skin source experiment uses
+ordinary convolutional controls with similar active capacity and recurrence.
+
+A different candidate representation separates marginal channel distributions
+from their dependence structure. [Li et al., Pattern Recognition2017](https://doi.org/10.1016/j.patcog.2016.10.030)
+already uses copulas for color-texture dependence; copulas in image analysis
+are not new. A possible Luma-specific test would retain absolute RGB statistics
+and add rank-dependence context, testing whether that helps native skin-color
+error under capture changes. No such trained-model gain is yet established.
+Independent monotonic channel transforms preserve ranks, whereas channel mixing,
+clipping and spatially varying processing need not; universal camera invariance
+does not follow from that mathematical invariance.
+
 # Skin spectral priors: fresh opposing evidence 2026-09-11
 
 [Zhou et al., SCR-AWB, Technologies2025](https://doi.org/10.3390/technologies13060232)

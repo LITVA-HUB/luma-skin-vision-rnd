@@ -1,0 +1,76 @@
+{
+  "scope": "Batch1 CUDA event; prepared1x64x18tokens to averaged nativeLab; noJPEG/features/CPU/risk/localization",
+  "warmup": 50,
+  "repeats": 200,
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "torch": "2.8.0+cu128",
+  "script_sha256": "6f0d258d02a0901dccfb3e409a1b31bc6730f355db5556b67fa8b22db9e582a0",
+  "optimized_or_exported": false,
+  "rows": [
+    {
+      "method": "mixture_graph_always",
+      "active_parameters": 1854229,
+      "stored_parameters": 1922584,
+      "checkpoint_bytes_total": 7720206,
+      "median_gpu_ms": 1.4243040084838867,
+      "p95_gpu_ms": 1.5519920170307158,
+      "peak_allocated_mib": 40.67822265625,
+      "member_checkpoint_sha256": [
+        "a037a2edcc1134d5ae44e883869d1a26afc33c72f1bad9a55c6972275bf83c25",
+        "3c922a2f55c3f4ac74faeed38c4be51d5a771b1c70a81ab5f16543b32cd4cd8e"
+      ]
+    },
+    {
+      "method": "mixture_graph_drop",
+      "active_parameters": 1854229,
+      "stored_parameters": 1922584,
+      "checkpoint_bytes_total": 7720206,
+      "median_gpu_ms": 1.0048640370368958,
+      "p95_gpu_ms": 1.491507226228714,
+      "peak_allocated_mib": 40.67822265625,
+      "member_checkpoint_sha256": [
+        "a037a2edcc1134d5ae44e883869d1a26afc33c72f1bad9a55c6972275bf83c25",
+        "e7f3d66429da19ca1b3325cf2cd36a0eae5f735641bbbaea8cbc0293e7127c77"
+      ]
+    },
+    {
+      "method": "mixture_conv_drop",
+      "active_parameters": 1854229,
+      "stored_parameters": 1922584,
+      "checkpoint_bytes_total": 7720206,
+      "median_gpu_ms": 0.9908480048179626,
+      "p95_gpu_ms": 1.2642128527164456,
+      "peak_allocated_mib": 40.67822265625,
+      "member_checkpoint_sha256": [
+        "a037a2edcc1134d5ae44e883869d1a26afc33c72f1bad9a55c6972275bf83c25",
+        "4c2d7ba047e3809c04a5bfa27c5c5f49287e300dd5297f017a431eefd1fd8096"
+      ]
+    },
+    {
+      "method": "mixture_plain",
+      "active_parameters": 1858594,
+      "stored_parameters": 1858594,
+      "checkpoint_bytes_total": 7444582,
+      "median_gpu_ms": 1.5376960039138794,
+      "p95_gpu_ms": 1.6661423742771146,
+      "peak_allocated_mib": 40.4169921875,
+      "member_checkpoint_sha256": [
+        "a037a2edcc1134d5ae44e883869d1a26afc33c72f1bad9a55c6972275bf83c25",
+        "d9fbf3064f50d35e047e543b459b18bc026c8997f0a39ee8668cde3fbe4424b6"
+      ]
+    },
+    {
+      "method": "plain_graph_always",
+      "active_parameters": 1854229,
+      "stored_parameters": 1922584,
+      "checkpoint_bytes_total": 7720206,
+      "median_gpu_ms": 1.4431520104408264,
+      "p95_gpu_ms": 1.6611824035644527,
+      "peak_allocated_mib": 40.67822265625,
+      "member_checkpoint_sha256": [
+        "d9fbf3064f50d35e047e543b459b18bc026c8997f0a39ee8668cde3fbe4424b6",
+        "3c922a2f55c3f4ac74faeed38c4be51d5a771b1c70a81ab5f16543b32cd4cd8e"
+      ]
+    }
+  ]
+}
