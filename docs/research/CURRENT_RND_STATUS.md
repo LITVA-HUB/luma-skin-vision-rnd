@@ -1,4 +1,25 @@
-# Latest: stable-color correction improves internal screen; OOF hypothesis loses
+# Current: research stopped; complete public archive requested
+
+Research was stopped by the user on 2026-09-11. No new experiment is running.
+The final correction-transfer follow-up is complete: 36 inner cores and 27 heads.
+All three heads worsen both unseen-camera source means. The previously leading
+in_matched head changes 5.4877 to 5.7371 (SLR→iPod) and 6.5602 to 7.2908
+(iPod→SLR). Internal 7.40% gain remains preserved on its different cohort.
+[Final report](../benchmarks/skin_correction_transfer_v1/report.md).
+
+Audit passes 60 exact evaluation arrays, 27 NumPy heads, 26,892 scalar CIEDE2000
+checks, 360 coverage rows and six complete optimizer refits. Final full suite:
+379 passed, 14 historical warnings, 35.85s. No new export or latency claim.
+The independent instrument-skin result remains 4.4570 ΔE00, 4.1591 at 80%;
+ordinary fusion remains stronger at 4.3005 / 4.1447. No universal-method victory.
+
+The active task is publication and documentation of the completed work.
+[Research closure](skin_correction_transfer_next_decision.md) ·
+[Public research report](../publication/RESEARCH_REPORT_RU.md).
+Everything below is a chronological archive; old "next", "active", "not run"
+and "unopened" statements apply only to their historical entry.
+
+# Previous: stable-color correction improves internal screen; OOF hypothesis loses
 
 9 inner encoder fits +9 heads complete,3 original full cores replayed. Original
 TRAIN only:18 support people/734 images,6 reused internal-evaluation people/232.
