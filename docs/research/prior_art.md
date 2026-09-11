@@ -590,3 +590,19 @@ forward transfer has a small affine gain; reverse loses even matched residual
 C+. Excluding query people from the reference bank does not make a full-TRAIN
 encoder out-of-fold. No new solver, kernel or generalization novelty is claimed.
 [Evidence](../benchmarks/skin_neural_reference_v1/report.md).
+
+## Stable-color correction: matched encoder-exclusion test (2026-09-11)
+
+[Wolpert,Stacked Generalization,1992](https://www.sciencedirect.com/science/article/pii/S0893608005800231)
+already describes second-stage correction using base predictions on data not
+used for base training. Publisher abstract verified in fresh search; no author
+code, weights or benchmark numbers adopted. OOF stacking is not project novelty.
+Existing project OOF risk-head and forward-noise models remain earlier evidence.
+
+New9 core+9 head fits compare full-core residuals, same-size included-person
+predictions and genuinely excluded-person predictions using stable39-dimensional
+color features. The best correction improves internal mean6.1082 ->5.6560,
+but OOF correction5.8945 loses the matched inclusion control. This distinguishes
+the failed explanatory hypothesis from the useful component result. No unseen
+camera, independent-test or novel-architecture superiority is established.
+[Report](../benchmarks/skin_crossfit_correction_v1/report.md).

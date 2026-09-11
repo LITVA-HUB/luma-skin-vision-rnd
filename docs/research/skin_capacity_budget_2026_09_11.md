@@ -1,5 +1,11 @@
 # User-authorized capacity increase: at most200,000 neural parameters
 
+LATEST: the subsequent stable39-input correction screen uses188,035 added
+parameters /1,117,332 total and no reference bank. Nine encoder andnine head
+fits show an internal mean6.1082 ->5.6560 improvement, with camera transfer
+pending and OOF-superiority hypothesis rejected. Same1,129,297 cap remains.
+[Current result](../benchmarks/skin_crossfit_correction_v1/report.md).
+
 STATUS UPDATE: the candidate head below is now implemented and trained in
 skin_neural_reference_v1,27 matched fits /9 frozen cores. Code verifies193,795
 added /1,123,092 total parameters, with no universal accuracy win. The earlier

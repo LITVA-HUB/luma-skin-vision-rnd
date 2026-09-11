@@ -502,3 +502,19 @@ test or eliminate. Jointly learning a stronger image representation is a
 separate alternative, not refuted by this frozen-core screen. Known local/deep
 kernels and differentiable solvers remain prior art; budget increase alone is
 not an invention. [Decision](skin_neural_reference_next_decision.md).
+
+## Stable-coordinate correction survives internally; OOF explanation fails
+
+Nine fresh person-excluded encoders andnine matched heads complete the next
+falsifier. Stable39-input correction improves the internal18/6-person screen:
+best mean5.6560 versus unchanged6.1082, but the winner uses included-person
+predictions from matched-size cores. Genuine encoder-OOF correction5.8945 is
+worse. Do not claim an OOF-supervision invention or selectively hide this loss.
+
+The result suggests testing whether training a small stable-color corrector on
+alternative base predictors transfers across cameras. That is UNVERIFIED;
+stacking/residual learning are established prior art. All current head gains
+are exploratory, same known-camera cohort. Freeze the unchanged three-arm
+camera-held-out follow-up before evaluating it. Stronger representation learning
+and removal of the correction head remain alternatives, informed by previous
+negative experiments. [Decision](skin_crossfit_correction_next_decision.md).

@@ -1,0 +1,140 @@
+{
+  "rows": [
+    {
+      "arm": "base",
+      "mean": 6.108242323281774,
+      "median": 5.135335464769542,
+      "p95": 14.995959869531228,
+      "fraction_above10": 0.15373563218390807,
+      "person_mean": 5.923688862727857,
+      "site_mean": 6.066580456956362,
+      "seed_means": [
+        6.105465571145234,
+        6.198796800682973,
+        6.020464598017115
+      ],
+      "mean_at80": 5.660858494266585
+    },
+    {
+      "arm": "in_full",
+      "mean": 5.857946000272527,
+      "median": 4.800238744636145,
+      "p95": 13.635869327866464,
+      "fraction_above10": 0.13793103448275865,
+      "person_mean": 5.6689120538409625,
+      "site_mean": 5.8231016049307875,
+      "seed_means": [
+        5.951221786609227,
+        5.8902530418443275,
+        5.732363172364027
+      ],
+      "mean_at80": 5.431313642146993
+    },
+    {
+      "arm": "in_matched",
+      "mean": 5.655955790566626,
+      "median": 4.688659716077072,
+      "p95": 12.96437476222043,
+      "fraction_above10": 0.125,
+      "person_mean": 5.46302227022671,
+      "site_mean": 5.617399490131889,
+      "seed_means": [
+        5.621961977797773,
+        5.60780103248422,
+        5.738104361417885
+      ],
+      "mean_at80": 5.260750760515532
+    },
+    {
+      "arm": "out_person",
+      "mean": 5.89452264221634,
+      "median": 4.816437796542371,
+      "p95": 13.450340270328363,
+      "fraction_above10": 0.14942528735632185,
+      "person_mean": 5.6950270039177555,
+      "site_mean": 5.860554283488398,
+      "seed_means": [
+        5.9203829655728875,
+        6.01779361215633,
+        5.745391348919799
+      ],
+      "mean_at80": 5.526034180909917
+    }
+  ],
+  "paired_differences": [
+    {
+      "arm": "in_full",
+      "people_improved_vs_base": 4,
+      "people": 6,
+      "person_mean_delta": -0.25477680888689563,
+      "person_delta_min": -0.8212045288492589,
+      "person_delta_max": 0.04621533528971322,
+      "seeds_improved_vs_base": 3
+    },
+    {
+      "arm": "in_matched",
+      "people_improved_vs_base": 5,
+      "people": 6,
+      "person_mean_delta": -0.460666592501147,
+      "person_delta_min": -1.4237591515784744,
+      "person_delta_max": 0.007651038257566863,
+      "seeds_improved_vs_base": 3
+    },
+    {
+      "arm": "out_person",
+      "people_improved_vs_base": 5,
+      "people": 6,
+      "person_mean_delta": -0.22866185881010162,
+      "person_delta_min": -0.738992207338232,
+      "person_delta_max": 0.35089471425993896,
+      "seeds_improved_vs_base": 3
+    }
+  ],
+  "resources": {
+    "inner_cores": {
+      "fit_seconds": [
+        3.3084756000025664,
+        3.9863656999950763
+      ],
+      "fit_peak_allocated_mib": [
+        107.97216796875,
+        107.97314453125
+      ],
+      "checkpoint_bytes": [
+        3722291.0,
+        3722291.0
+      ]
+    },
+    "heads": {
+      "fit_seconds": [
+        0.5272226000088267,
+        0.5562226999900304
+      ],
+      "fit_peak_allocated_mib": [
+        75.537109375,
+        75.5693359375
+      ],
+      "checkpoint_bytes": [
+        4477653.0,
+        4477653.0
+      ]
+    }
+  },
+  "supervision_errors": {
+    "in_full": 3.582276980743984,
+    "in_matched": 3.3675044541346075,
+    "out_person": 4.3240881426571685
+  },
+  "best_local_mean_gain_percent": 7.404528320548824,
+  "oof_superiority_confirmed": false,
+  "new_independent_accuracy": false,
+  "bindings": {
+    "scripts\\skin_crossfit_correction_report.py": "e5549f6df01e00919a6df91fc2e6365c6f6ca31e2078f19930f0314de8b128c3",
+    "docs\\benchmarks\\skin_crossfit_correction_v1\\source_lock.json": "b457c2a5179f6d7875af68c2dcde32aa39bf71ce5ab1192988cc665e6b816798",
+    "docs\\benchmarks\\skin_crossfit_correction_v1\\results.json": "427d13e0ea442257025a0db670b0fdb5ef1357de43ee3f6941a2723d9ce5a5b5",
+    "docs\\benchmarks\\skin_crossfit_correction_v1\\audit.json": "3a699d89d86e325209bd689fcb6f619efdab5af8249dced27f446a5d3cb84b21",
+    "docs\\benchmarks\\skin_crossfit_correction_v1\\report.md": "8077aed501186dd49e9b96906cd5b1f68d5f0d6a6dd9122940ea53c7fa80905e",
+    "docs\\benchmarks\\skin_crossfit_correction_v1\\risk_coverage.csv": "cb091efcd169bf59c73ee21f2190dc1d0264125c54ce372704218c21d419c2db",
+    "docs\\benchmarks\\skin_color_sampling_v1\\report.md": "356317b865a968d0ee88d1e3ad939bd280d7601054d5f7e2142360b8d90f9702"
+  }
+}

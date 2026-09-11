@@ -1,4 +1,34 @@
-# Latest: authorized larger neural-reference models trained and audited
+# Latest: stable-color correction improves internal screen; OOF hypothesis loses
+
+9 inner encoder fits +9 heads complete,3 original full cores replayed. Original
+TRAIN only:18 support people/734 images,6 reused internal-evaluation people/232.
+Best in_matched correction mean6.1082 ->5.6560 DeltaE00 (7.40% lower),p95
+14.9960 ->12.9644,common80%5.6609 ->5.2608. Improves3/3 seeds and5/6 people
+after seed averaging. Total1,117,332 neural parameters;188,035 added; no bank.
+[Measured report](../benchmarks/skin_crossfit_correction_v1/report.md).
+
+The explanatory hypothesis fails: genuine encoder-OOF correction5.8945 loses
+matched-size included-person correction5.6560 and full-core correction5.8579.
+Retain this negative alongside the component gain. Stable39-color coordinates
+replace incompatible512-context features; this is known stacking/residual
+learning, not established architecture novelty or an isolated context ablation.
+
+Next: separately freeze unchanged three-head source camera transfer,4 inner
+folds,3 protocols,3 seeds;36 inner cores +27 heads. Reuse fixed930-step image
+cores after verifying hashes/roles. This follow-up is NOT RUN YET. Both cameras
+were known in the current internal screen; no unseen-camera or phone proof.
+[Decision](skin_crossfit_correction_next_decision.md).
+
+9 inner/3 outer replays;9 scale/exclusion checks;4404 routing rows;1 full core/
+3 full head refits;9 NumPy heads;12 exact arrays;9390 scalar color values;
+72 coverage checks.376 tests pass,14 historical warnings,34.22s. Model file
+4,477,653bytes;78 scale scalars, no bank. Allocated core training~108MiB,
+cached head~75.54MiB. No new inference latency/export measurement.
+All fits/audits/tests terminal; no live training. Source VALIDATION/CAL/TEST
+unopened this phase. Independent primary4.4570/80%4.1591 versus ordinary
+fusion4.3005/4.1447 unchanged. Goal remains active and unmet.
+
+# Previous: authorized larger neural-reference models trained and audited
 
 27 adapter fits /9 unchanged strong cores,3 seeds,3 camera protocols complete.
 Head193,795 parameters; total1,123,092 within user cap1,129,297. All heads start
