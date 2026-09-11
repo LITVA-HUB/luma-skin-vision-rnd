@@ -304,3 +304,22 @@ from model failure. Next hypotheses: matched color/risk crossing, and learning
 conditional downstream-loss surfaces without reconstructing a full density.
 Established MDNs and conditional risk minimization are prior art; no novelty
 or calibrated-selectivity claim follows from this implementation.
+
+
+## Native skin risk crossing and candidate-loss fields (2026-09-11)
+
+Ninety fixed crossing endpoints and36matched loss-field fits are complete.
+Mixed80%crossing3.1954 versus matched ordinary pair3.3625 has a descriptive
+patient interval crossing zero and worsens reverse transfer. Direct candidate
+loss learning, including removal of probability nonnegativity, does not yield
+universal accuracy. [Decision](skin_risk_field_next_decision.md).
+
+Fresh primary-source review: [Imani et al., JMLR2026](https://jmlr.org/papers/v27/24-0260.html)
+finds histogram regression gains can arise from optimization, not extra target
+information. Our soft categorical control is related, not a reproduction of
+all their protocols. [Dheur/Ben Taieb2024](https://proceedings.mlr.press/v238/dheur24a.html)
+studies training-integrated quantile recalibration; uncalibrated Gaussian output
+must not be represented as guaranteed error. No code/weights adopted.
+The current native-Lab loss field also relates to this repository's earlier
+illuminant action-field work and established conditional risk minimization.
+Changing the endpoint to skin color does not by itself establish novelty.

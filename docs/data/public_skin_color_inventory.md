@@ -35,3 +35,14 @@ terms for adaptations; it is not a model-weight license.
 Author/source metadata, acquisition receipts, workbook header/identity audit and
 negative correspondence check are in [provenance](provenance/skin_public_2026_09_11/).
 The original workbooks remain in local data storage, unmodified and unpublished.
+
+
+### Targeted source recheck after the native-loss-field screen (2026-09-11)
+
+Original [ENCoDE v1](https://physionet.org/content/encode-skin-color/1.0.0/)
+still identifies credentialed access. No credential, DUA or data access was
+obtained. [Bencevic et al.2026](https://arxiv.org/abs/2602.10265) remains already
+recorded instrument-supervised dermatoscopy prior art; it is not a new dataset
+clearance. The July2026 medRxiv lead10.64898/2026.07.27.26358883 returned403 on
+original-page retrieval; no data or license claim is inferred from the search
+snippet. This scoped recheck clears no new smartphone training/evaluation data.

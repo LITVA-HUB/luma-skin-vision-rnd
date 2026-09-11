@@ -1,3 +1,17 @@
+# Latest: matched risk crossing and36native skin-loss-field fits complete
+
+Mixed-source80%crossing3.1954 versus ordinary-pair3.3625 is partial evidence;
+patientCIcrosses0 and reverse transfer worsens. Candidate-loss fields, including
+affine weights, do not beat strongest controls universally. Grid quantization
+contributes error but does not explain their severe reverse-transfer failure.
+[Decision](skin_risk_field_next_decision.md), [crossing](../benchmarks/skin_risk_cross_v1/report.md),
+[field report](../benchmarks/skin_loss_field_v1/report.md).
+327tests pass,14historicalwarnings35.60s. All jobs terminal. Independent test
+unchanged4.4570/80%4.1591 versus ordinary fusion4.3005/4.1447. No product victory.
+Next: TRAIN-only actual paired-capture support diagnostics; preserve Gaussian
+risk as a secondary calibrated-C+ lead. No fresh permissive phone data cleared.
+Goal remains active and unmet.
+
 # Latest: 36 conditional skin-color fits and integration diagnostic complete
 
 Actual skin Lab / DeltaE00 remains the endpoint. Ordinary mean3.4406 versus
