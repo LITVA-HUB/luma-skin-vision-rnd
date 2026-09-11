@@ -432,3 +432,19 @@ not improved product accuracy. Test whether person-specific training updates
 transfer across groups, with random-group and finite-step controls before any
 meta-learning fit. MLDG/Fish/Fishr are prior art; no gradient novelty is asserted.
 [Evidence and decision](skin_offset_diagnostic_next_decision.md).
+
+## Gradient falsifier: insufficient grounds for invariance (2026-09-11)
+
+The controlled TRAIN audit does not support universal harmful person-gradient
+conflict: within single-camera models the conflict also occurs under random
+grouping. A successful local update can worsen actual pooled skin DeltaE00.
+Do not claim gradient matching as our novelty or optimize agreement as a proxy
+for skin color. No new independent model victory occurred.
+
+Next investigate relational color compatibility as an unverified alternative,
+starting with the additive/cycle-consistent degeneracy: f(x)-f(anchor) plus
+reference anchoring is merely an absolute predictor plus an offset. Learned
+pair-context quality must beat this and ordinary regression, with no inference
+camera labels, no held-person encoder leakage and all support memory counted.
+Known metric/relation learning prior art must be reviewed before novelty claims.
+[Decision and cheapest falsifier](skin_gradient_transfer_next_decision.md).

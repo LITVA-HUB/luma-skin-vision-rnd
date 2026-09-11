@@ -1,4 +1,22 @@
-# Latest: privileged-reference offset diagnostic complete
+# Latest: TRAIN gradient/update falsifier complete
+
+Six frozen929,297-parameter models,24 partitions,48 objective cases,288 transient
+steps. All288 reduce their own training objective;116 increase pooled TRAIN
+mean actual skin DeltaE00. True-person versus size-matched random-group gradient
+separation is not consistent within single-camera models. No universal harmful
+gradient-conflict mechanism established; do not launch a large invariance sweep.
+[Decision and report](skin_gradient_transfer_next_decision.md).
+189336 scalar color cases,12 independent Gram recomputations,12 finite replays,
+288 exact original-state restorations.364 tests pass,14 warnings,33.66s.
+All six original checkpoint files unchanged. All jobs terminal; no live training.
+No new fit, independent accuracy, risk-coverage or deployment improvement.
+Independent primary4.4570/80%4.1591 vs ordinary fusion4.3005/4.1447 unchanged.
+Next: relational/compatibility representation falsifier; first test additive
+degeneracy and real same-site versus matched wrong-site controls on TRAIN only.
+Refit encoders inside excluded-person probes; a held-out head alone is not enough.
+Ordinary phone facial accuracy unvalidated. Goal active and unmet.
+
+# Previous: privileged-reference offset diagnostic complete
 
 90 original source arrays /180 corrected arrays /324 excluded-person folds.
 Offsets use OTHER evaluation people's instrument references: diagnostic comparator

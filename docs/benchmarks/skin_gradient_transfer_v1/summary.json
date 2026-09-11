@@ -1,0 +1,89 @@
+{
+  "models": [
+    {
+      "model": "mixed__image__s17",
+      "true_cosine": 0.0164496975029883,
+      "shuffle_min": 0.14111673494247606,
+      "shuffle_max": 0.2108300768912724,
+      "shuffle_mean": 0.18408217741321184,
+      "negative_pair_fraction": 0.5072463768115942,
+      "auxiliary_cosine": 0.5105733927903227,
+      "weighted_auxiliary_norm_ratio": 0.042296777875145956
+    },
+    {
+      "model": "mixed__person_color__s17",
+      "true_cosine": -0.004080977247887405,
+      "shuffle_min": 0.06706456557328998,
+      "shuffle_max": 0.12608951633545468,
+      "shuffle_mean": 0.10078776195052881,
+      "negative_pair_fraction": 0.4855072463768116,
+      "auxiliary_cosine": 0.024407205142689077,
+      "weighted_auxiliary_norm_ratio": 0.0695964660746837
+    },
+    {
+      "model": "from_SLR__image__s17",
+      "true_cosine": -0.11552081201496137,
+      "shuffle_min": -0.1290191610644578,
+      "shuffle_max": -0.11594404630651962,
+      "shuffle_mean": -0.1208862910878758,
+      "negative_pair_fraction": 0.5714285714285714,
+      "auxiliary_cosine": 0.10744299918329804,
+      "weighted_auxiliary_norm_ratio": 0.3262065322122528
+    },
+    {
+      "model": "from_SLR__person_color__s17",
+      "true_cosine": -0.058158654495556454,
+      "shuffle_min": -0.09092975147196507,
+      "shuffle_max": -0.07042804863978055,
+      "shuffle_mean": -0.08364414864642421,
+      "negative_pair_fraction": 0.6428571428571429,
+      "auxiliary_cosine": 0.7538608991034793,
+      "weighted_auxiliary_norm_ratio": 0.2440977965174325
+    },
+    {
+      "model": "from_ipod__image__s17",
+      "true_cosine": -0.024247723277293867,
+      "shuffle_min": -0.05458657755743637,
+      "shuffle_max": -0.016713921407324837,
+      "shuffle_mean": -0.039851144037460935,
+      "negative_pair_fraction": 0.5166666666666667,
+      "auxiliary_cosine": 0.3082138614702403,
+      "weighted_auxiliary_norm_ratio": 0.13191926076274138
+    },
+    {
+      "model": "from_ipod__person_color__s17",
+      "true_cosine": -0.04194037817047804,
+      "shuffle_min": -0.041848373494655394,
+      "shuffle_max": -0.006550562859237142,
+      "shuffle_mean": -0.025100009598497536,
+      "negative_pair_fraction": 0.55,
+      "auxiliary_cosine": 0.4890492521599657,
+      "weighted_auxiliary_norm_ratio": 0.3309586676062936
+    }
+  ],
+  "finite_step_summary": [
+    {
+      "length": 0.0001,
+      "max_remainder": 4.43131873096748e-06,
+      "median_relative_remainder": 0.005137467152306596,
+      "min_delta_e00_change": -0.0006561429132985702,
+      "max_delta_e00_change": 0.0006340671927252944
+    },
+    {
+      "length": 0.001,
+      "max_remainder": 0.0004418921118298823,
+      "median_relative_remainder": 0.05120632101830341,
+      "min_delta_e00_change": -0.0057143766814112765,
+      "max_delta_e00_change": 0.007174075446454724
+    }
+  ],
+  "own_objective_increases": 0,
+  "pooled_skin_error_increases": 116,
+  "steps": 288,
+  "train_only": true,
+  "bindings": {
+    "scripts\\skin_gradient_transfer_report.py": "e9a6aed5fe9d47c3ccdc6f78996d247ed84c72578e2222f2b26d6f70b374a74e",
+    "docs\\benchmarks\\skin_gradient_transfer_v1\\results.json": "398ced5ebc398edd9a17df5ef4a4b09681faa9bcb5e49b476fb7eeb9edb4953e",
+    "docs\\benchmarks\\skin_gradient_transfer_v1\\audit.json": "fce02d6821f3c7c8960e405ebd1fea903c8866338a5a146465fb283f4ac35fac"
+  }
+}

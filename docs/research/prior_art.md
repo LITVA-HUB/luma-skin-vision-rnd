@@ -527,3 +527,15 @@ not prove a gradient-agreement method will improve skin DeltaE00. Near pooled
 stationarity, conflicting group gradients may occur even without harmful
 shortcuts; random-group and finite-update controls are required.
 [Next falsifier](skin_offset_diagnostic_next_decision.md).
+
+## Controlled local gradient diagnostic (2026-09-11)
+
+The planned controls are now measured: six frozen skin models,24 TRAIN group
+partitions and288 transient updates. Random groups exhibit comparable gradient
+conflict within single-camera subsets. This does not reproduce Fish or Fishr,
+and does not establish that either would fail or succeed after full training.
+All288 local objective reductions include116 pooled TRAIN skin-DeltaE00
+increases. Gradient agreement is not itself a product color-accuracy endpoint.
+[Evidence and next alternative](skin_gradient_transfer_next_decision.md).
+No new novelty or independent accuracy is claimed. Relational/compatibility
+models require a separate primary-source pass before implementation.
