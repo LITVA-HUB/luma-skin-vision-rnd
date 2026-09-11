@@ -1,0 +1,2372 @@
+{
+  "scope": "MEASURED TRAIN SPECTRA; oracle compression and DERIVED RADIANCE stress, not RGB accuracy",
+  "source_lock_sha256": "f4cf179a32c2dd0ab14607a027f63daa55d12b96fc774e664e076c18feacd409",
+  "quality": [
+    {
+      "source_index": 0,
+      "spectra": 7500,
+      "minimum": 0.1067934119438492,
+      "maximum": 0.8659783211074892,
+      "above_one_values": 0
+    },
+    {
+      "source_index": 1,
+      "spectra": 7500,
+      "minimum": 0.033219054520013974,
+      "maximum": 0.4540069570812689,
+      "above_one_values": 0
+    },
+    {
+      "source_index": 2,
+      "spectra": 7500,
+      "minimum": 0.11756454033822636,
+      "maximum": 0.7870021309076419,
+      "above_one_values": 0
+    }
+  ],
+  "representations": [
+    {
+      "held_source_index": 0,
+      "method": "mean",
+      "reflectance_rmse": 0.1595841838397766,
+      "mean_relative_l2": 0.3255987288912836,
+      "p95_relative_l2": 0.42285494586382555,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "nearest_spectrum",
+      "reflectance_rmse": 0.024161129369973996,
+      "mean_relative_l2": 0.04678717388371173,
+      "p95_relative_l2": 0.08807942273595362,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "linear_pca1",
+      "reflectance_rmse": 0.028051777617807843,
+      "mean_relative_l2": 0.05851799465564889,
+      "p95_relative_l2": 0.09010601129567157,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "linear_pca2",
+      "reflectance_rmse": 0.020320518816340803,
+      "mean_relative_l2": 0.043706513554281984,
+      "p95_relative_l2": 0.055110493536408484,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "linear_pca3",
+      "reflectance_rmse": 0.018874644803917023,
+      "mean_relative_l2": 0.04060473651411068,
+      "p95_relative_l2": 0.05265921483627593,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "linear_pca5",
+      "reflectance_rmse": 0.01639125790132231,
+      "mean_relative_l2": 0.034868310112395086,
+      "p95_relative_l2": 0.04623701041178471,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "linear_pca8",
+      "reflectance_rmse": 0.013991603224420808,
+      "mean_relative_l2": 0.029916865406724825,
+      "p95_relative_l2": 0.038995470802957594,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "log_pca1",
+      "reflectance_rmse": 0.03331044132183363,
+      "mean_relative_l2": 0.06836088190471547,
+      "p95_relative_l2": 0.10722416096854853,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "log_pca2",
+      "reflectance_rmse": 0.024107220528093876,
+      "mean_relative_l2": 0.050450053869689364,
+      "p95_relative_l2": 0.0771527990601392,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "log_pca3",
+      "reflectance_rmse": 0.01811213204978542,
+      "mean_relative_l2": 0.039323678338305364,
+      "p95_relative_l2": 0.05106214534639877,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "log_pca5",
+      "reflectance_rmse": 0.0171611573566531,
+      "mean_relative_l2": 0.03720660279312804,
+      "p95_relative_l2": 0.04775268284362423,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 0,
+      "method": "log_pca8",
+      "reflectance_rmse": 0.01686911807938544,
+      "mean_relative_l2": 0.036499828898954687,
+      "p95_relative_l2": 0.046799462485197306,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "mean",
+      "reflectance_rmse": 0.2498949209405299,
+      "mean_relative_l2": 1.3141884829798025,
+      "p95_relative_l2": 1.7206854749600418,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "nearest_spectrum",
+      "reflectance_rmse": 0.13143935679362787,
+      "mean_relative_l2": 0.6906971469181131,
+      "p95_relative_l2": 0.983329507269361,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "linear_pca1",
+      "reflectance_rmse": 0.030945067670450355,
+      "mean_relative_l2": 0.1603028827942122,
+      "p95_relative_l2": 0.2509562249486031,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "linear_pca2",
+      "reflectance_rmse": 0.02152829235990529,
+      "mean_relative_l2": 0.11225508349984313,
+      "p95_relative_l2": 0.14271344853195095,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "linear_pca3",
+      "reflectance_rmse": 0.01734556499372132,
+      "mean_relative_l2": 0.08999737237675386,
+      "p95_relative_l2": 0.11784979145505915,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "linear_pca5",
+      "reflectance_rmse": 0.014586698654290216,
+      "mean_relative_l2": 0.07597540389479022,
+      "p95_relative_l2": 0.10274899328397065,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "linear_pca8",
+      "reflectance_rmse": 0.006670813289413122,
+      "mean_relative_l2": 0.03411171455581299,
+      "p95_relative_l2": 0.05309460265532796,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "log_pca1",
+      "reflectance_rmse": 0.029913047104617473,
+      "mean_relative_l2": 0.15099929185360655,
+      "p95_relative_l2": 0.26651645413962294,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "log_pca2",
+      "reflectance_rmse": 0.021096697876874834,
+      "mean_relative_l2": 0.1076819344734609,
+      "p95_relative_l2": 0.1401985585337865,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "log_pca3",
+      "reflectance_rmse": 0.019329315011160336,
+      "mean_relative_l2": 0.0992113205713638,
+      "p95_relative_l2": 0.1274026627000745,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "log_pca5",
+      "reflectance_rmse": 0.014980527193918278,
+      "mean_relative_l2": 0.07726013740110704,
+      "p95_relative_l2": 0.0966886283438995,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 1,
+      "method": "log_pca8",
+      "reflectance_rmse": 0.011823742354027897,
+      "mean_relative_l2": 0.06143691873906007,
+      "p95_relative_l2": 0.08552077542645749,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "mean",
+      "reflectance_rmse": 0.11596576589681859,
+      "mean_relative_l2": 0.23082681361894095,
+      "p95_relative_l2": 0.3694905987057868,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "nearest_spectrum",
+      "reflectance_rmse": 0.0162948343348171,
+      "mean_relative_l2": 0.03869889448878342,
+      "p95_relative_l2": 0.0527191029681756,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "linear_pca1",
+      "reflectance_rmse": 0.02800597879857672,
+      "mean_relative_l2": 0.062004283675210915,
+      "p95_relative_l2": 0.08677374919394579,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "linear_pca2",
+      "reflectance_rmse": 0.016652117470478043,
+      "mean_relative_l2": 0.03880258321368031,
+      "p95_relative_l2": 0.049862741893682755,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "linear_pca3",
+      "reflectance_rmse": 0.01573247181341804,
+      "mean_relative_l2": 0.0363637037117434,
+      "p95_relative_l2": 0.047432950746340345,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "linear_pca5",
+      "reflectance_rmse": 0.012851564692937132,
+      "mean_relative_l2": 0.030237751250896373,
+      "p95_relative_l2": 0.03880298991083568,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "linear_pca8",
+      "reflectance_rmse": 0.009304331931946536,
+      "mean_relative_l2": 0.021572711503677365,
+      "p95_relative_l2": 0.02735949603044141,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "log_pca1",
+      "reflectance_rmse": 0.032001065043165536,
+      "mean_relative_l2": 0.07081052583757155,
+      "p95_relative_l2": 0.10315499651307022,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "log_pca2",
+      "reflectance_rmse": 0.024463605427832772,
+      "mean_relative_l2": 0.05430136363988151,
+      "p95_relative_l2": 0.0773900567250906,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "log_pca3",
+      "reflectance_rmse": 0.018159718446257935,
+      "mean_relative_l2": 0.040791800941459,
+      "p95_relative_l2": 0.053351050569005756,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "log_pca5",
+      "reflectance_rmse": 0.015149564768888868,
+      "mean_relative_l2": 0.03492619964548227,
+      "p95_relative_l2": 0.04490433773927418,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    },
+    {
+      "held_source_index": 2,
+      "method": "log_pca8",
+      "reflectance_rmse": 0.014308341665076182,
+      "mean_relative_l2": 0.033260983695600946,
+      "p95_relative_l2": 0.043692737456709686,
+      "negative_predictions": 0,
+      "above_one_predictions": 0
+    }
+  ],
+  "ambiguities": [
+    {
+      "region_pair": [
+        0,
+        1
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.05887979750905303,
+      "mean_reflectance_ratio": 0.9930811882831089,
+      "radiance_relative_l2": 0.060699757316725556,
+      "illuminant_min": 1.004445065525186,
+      "illuminant_max": 1.004445065525186,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        1
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.05887979750905303,
+      "mean_reflectance_ratio": 0.9930811882831089,
+      "radiance_relative_l2": 0.05566460254340354,
+      "illuminant_min": 0.9897088609112155,
+      "illuminant_max": 1.0194006838829366,
+      "illuminant_max_min_ratio": 1.0300005629376543
+    },
+    {
+      "region_pair": [
+        0,
+        1
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.05887979750905303,
+      "mean_reflectance_ratio": 0.9930811882831089,
+      "radiance_relative_l2": 0.05498256073940687,
+      "illuminant_min": 0.9111912248313002,
+      "illuminant_max": 1.0514683321325364,
+      "illuminant_max_min_ratio": 1.1539491420444785
+    },
+    {
+      "region_pair": [
+        0,
+        1
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.05887979750905303,
+      "mean_reflectance_ratio": 0.9930811882831089,
+      "radiance_relative_l2": 0.04397319300276602,
+      "illuminant_min": 0.9054232417087736,
+      "illuminant_max": 1.0614646128470682,
+      "illuminant_max_min_ratio": 1.1723408058796934
+    },
+    {
+      "region_pair": [
+        0,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.1736526825016284,
+      "mean_reflectance_ratio": 1.2192337227483419,
+      "radiance_relative_l2": 0.06378713125341408,
+      "illuminant_min": 1.2393843245273113,
+      "illuminant_max": 1.2393843245273113,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.1736526825016284,
+      "mean_reflectance_ratio": 1.2192337227483419,
+      "radiance_relative_l2": 0.04636593506371798,
+      "illuminant_min": 1.1892684058798701,
+      "illuminant_max": 1.2916121342242914,
+      "illuminant_max_min_ratio": 1.086056039022329
+    },
+    {
+      "region_pair": [
+        0,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.1736526825016284,
+      "mean_reflectance_ratio": 1.2192337227483419,
+      "radiance_relative_l2": 0.04109875413983536,
+      "illuminant_min": 1.1058773199950878,
+      "illuminant_max": 1.2946806160283724,
+      "illuminant_max_min_ratio": 1.1707271617019175
+    },
+    {
+      "region_pair": [
+        0,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.1736526825016284,
+      "mean_reflectance_ratio": 1.2192337227483419,
+      "radiance_relative_l2": 0.039218024561057434,
+      "illuminant_min": 1.1147287003422774,
+      "illuminant_max": 1.2981187139699224,
+      "illuminant_max_min_ratio": 1.1645153781106874
+    },
+    {
+      "region_pair": [
+        0,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.6372312957445987,
+      "mean_reflectance_ratio": 2.7973539940282124,
+      "radiance_relative_l2": 0.16314342678882726,
+      "illuminant_min": 2.8655338354102065,
+      "illuminant_max": 2.8655338354102065,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.6372312957445987,
+      "mean_reflectance_ratio": 2.7973539940282124,
+      "radiance_relative_l2": 0.13421446965984,
+      "illuminant_min": 2.6891901739689033,
+      "illuminant_max": 3.053441233485513,
+      "illuminant_max_min_ratio": 1.1354500931330644
+    },
+    {
+      "region_pair": [
+        0,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.6372312957445987,
+      "mean_reflectance_ratio": 2.7973539940282124,
+      "radiance_relative_l2": 0.05447604283128683,
+      "illuminant_min": 2.1370318342787638,
+      "illuminant_max": 3.2588221028872484,
+      "illuminant_max_min_ratio": 1.5249291333028188
+    },
+    {
+      "region_pair": [
+        0,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.6372312957445987,
+      "mean_reflectance_ratio": 2.7973539940282124,
+      "radiance_relative_l2": 0.05707405635672207,
+      "illuminant_min": 2.178158188674251,
+      "illuminant_max": 3.271468601231947,
+      "illuminant_max_min_ratio": 1.5019426129114826
+    },
+    {
+      "region_pair": [
+        0,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.5753478384791463,
+      "mean_reflectance_ratio": 2.447988796338238,
+      "radiance_relative_l2": 0.2412458650339129,
+      "illuminant_min": 2.6424867956621343,
+      "illuminant_max": 2.6424867956621343,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.5753478384791463,
+      "mean_reflectance_ratio": 2.447988796338238,
+      "radiance_relative_l2": 0.08148963317252823,
+      "illuminant_min": 2.03690291929179,
+      "illuminant_max": 3.428114515971415,
+      "illuminant_max_min_ratio": 1.6830033888720308
+    },
+    {
+      "region_pair": [
+        0,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.5753478384791463,
+      "mean_reflectance_ratio": 2.447988796338238,
+      "radiance_relative_l2": 0.04421472567935817,
+      "illuminant_min": 1.7726628635689723,
+      "illuminant_max": 3.0850191117745016,
+      "illuminant_max_min_ratio": 1.7403304233289518
+    },
+    {
+      "region_pair": [
+        0,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.5753478384791463,
+      "mean_reflectance_ratio": 2.447988796338238,
+      "radiance_relative_l2": 0.04830140676212004,
+      "illuminant_min": 1.8350765308991297,
+      "illuminant_max": 3.137479074115457,
+      "illuminant_max_min_ratio": 1.7097265543351432
+    },
+    {
+      "region_pair": [
+        0,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.6096211349932127,
+      "mean_reflectance_ratio": 2.6963792568203853,
+      "radiance_relative_l2": 0.3117939754763888,
+      "illuminant_min": 3.0098798343850772,
+      "illuminant_max": 3.0098798343850772,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.6096211349932127,
+      "mean_reflectance_ratio": 2.6963792568203853,
+      "radiance_relative_l2": 0.069329625533684,
+      "illuminant_min": 2.088204330029144,
+      "illuminant_max": 4.338357356682381,
+      "illuminant_max_min_ratio": 2.0775540469365046
+    },
+    {
+      "region_pair": [
+        0,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.6096211349932127,
+      "mean_reflectance_ratio": 2.6963792568203853,
+      "radiance_relative_l2": 0.04544603501772898,
+      "illuminant_min": 1.8719710756148307,
+      "illuminant_max": 3.889121083891673,
+      "illuminant_max_min_ratio": 2.0775540469365046
+    },
+    {
+      "region_pair": [
+        0,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.6096211349932127,
+      "mean_reflectance_ratio": 2.6963792568203853,
+      "radiance_relative_l2": 0.04885116281237385,
+      "illuminant_min": 1.9347679961692783,
+      "illuminant_max": 3.841606015143945,
+      "illuminant_max_min_ratio": 1.985564172422786
+    },
+    {
+      "region_pair": [
+        0,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.04964300078146919,
+      "mean_reflectance_ratio": 0.9712331470590858,
+      "radiance_relative_l2": 0.056562920468589614,
+      "illuminant_min": 0.9531596103117331,
+      "illuminant_max": 0.9531596103117331,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.04964300078146919,
+      "mean_reflectance_ratio": 0.9712331470590858,
+      "radiance_relative_l2": 0.0372222175930037,
+      "illuminant_min": 0.8803611189117372,
+      "illuminant_max": 1.0319779272540777,
+      "illuminant_max_min_ratio": 1.1722211545754797
+    },
+    {
+      "region_pair": [
+        0,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.04964300078146919,
+      "mean_reflectance_ratio": 0.9712331470590858,
+      "radiance_relative_l2": 0.031062767555470248,
+      "illuminant_min": 0.8535812713609232,
+      "illuminant_max": 1.0019462010213962,
+      "illuminant_max_min_ratio": 1.1738146496864026
+    },
+    {
+      "region_pair": [
+        0,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.04964300078146919,
+      "mean_reflectance_ratio": 0.9712331470590858,
+      "radiance_relative_l2": 0.028744290991335915,
+      "illuminant_min": 0.8637892624625234,
+      "illuminant_max": 1.0049852288638557,
+      "illuminant_max_min_ratio": 1.163461127079544
+    },
+    {
+      "region_pair": [
+        0,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.1640568591179948,
+      "mean_reflectance_ratio": 1.1845488920851064,
+      "radiance_relative_l2": 0.04075573288941041,
+      "illuminant_min": 1.1729786457646383,
+      "illuminant_max": 1.1729786457646383,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.1640568591179948,
+      "mean_reflectance_ratio": 1.1845488920851064,
+      "radiance_relative_l2": 0.04205176058314543,
+      "illuminant_min": 1.1136151464455362,
+      "illuminant_max": 1.2355066360325724,
+      "illuminant_max_min_ratio": 1.109455667854458
+    },
+    {
+      "region_pair": [
+        0,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.1640568591179948,
+      "mean_reflectance_ratio": 1.1845488920851064,
+      "radiance_relative_l2": 0.025247206976932793,
+      "illuminant_min": 1.0318896010616707,
+      "illuminant_max": 1.2299234787857998,
+      "illuminant_max_min_ratio": 1.1919138224868047
+    },
+    {
+      "region_pair": [
+        0,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.1640568591179948,
+      "mean_reflectance_ratio": 1.1845488920851064,
+      "radiance_relative_l2": 0.025391429757584887,
+      "illuminant_min": 1.0151997493501328,
+      "illuminant_max": 1.2244691330891422,
+      "illuminant_max_min_ratio": 1.206136165688546
+    },
+    {
+      "region_pair": [
+        0,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.228274440424115,
+      "mean_reflectance_ratio": 1.3056964695441227,
+      "radiance_relative_l2": 0.10632896244542282,
+      "illuminant_min": 1.339331736044342,
+      "illuminant_max": 1.339331736044342,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        0,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.228274440424115,
+      "mean_reflectance_ratio": 1.3056964695441227,
+      "radiance_relative_l2": 0.07736507072652359,
+      "illuminant_min": 1.2594411104886636,
+      "illuminant_max": 1.4242900952149735,
+      "illuminant_max_min_ratio": 1.130890585795114
+    },
+    {
+      "region_pair": [
+        0,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.228274440424115,
+      "mean_reflectance_ratio": 1.3056964695441227,
+      "radiance_relative_l2": 0.05579306947509722,
+      "illuminant_min": 1.0791342161423043,
+      "illuminant_max": 1.4635298779688146,
+      "illuminant_max_min_ratio": 1.3562074634243833
+    },
+    {
+      "region_pair": [
+        0,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.228274440424115,
+      "mean_reflectance_ratio": 1.3056964695441227,
+      "radiance_relative_l2": 0.04848356735665243,
+      "illuminant_min": 1.1198217647614734,
+      "illuminant_max": 1.4798634563960154,
+      "illuminant_max_min_ratio": 1.3215169618633302
+    },
+    {
+      "region_pair": [
+        1,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.18419800987317944,
+      "mean_reflectance_ratio": 1.2277281426065652,
+      "radiance_relative_l2": 0.023686006219295317,
+      "illuminant_min": 1.2338995601310307,
+      "illuminant_max": 1.2338995601310307,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.18419800987317944,
+      "mean_reflectance_ratio": 1.2277281426065652,
+      "radiance_relative_l2": 0.019649087529037206,
+      "illuminant_min": 1.2016345946270726,
+      "illuminant_max": 1.267030868867471,
+      "illuminant_max_min_ratio": 1.0544227625709246
+    },
+    {
+      "region_pair": [
+        1,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.18419800987317944,
+      "mean_reflectance_ratio": 1.2277281426065652,
+      "radiance_relative_l2": 0.02112198006438801,
+      "illuminant_min": 1.2132946698186982,
+      "illuminant_max": 1.2797118618318983,
+      "illuminant_max_min_ratio": 1.0547411883241231
+    },
+    {
+      "region_pair": [
+        1,
+        2
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.18419800987317944,
+      "mean_reflectance_ratio": 1.2277281426065652,
+      "radiance_relative_l2": 0.011195102931784768,
+      "illuminant_min": 1.1802236196626865,
+      "illuminant_max": 1.3159679623329514,
+      "illuminant_max_min_ratio": 1.115015782101583
+    },
+    {
+      "region_pair": [
+        1,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.6443803402343676,
+      "mean_reflectance_ratio": 2.8168432017773144,
+      "radiance_relative_l2": 0.15442499015679723,
+      "illuminant_min": 2.8528527181443506,
+      "illuminant_max": 2.8528527181443506,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.6443803402343676,
+      "mean_reflectance_ratio": 2.8168432017773144,
+      "radiance_relative_l2": 0.13896687965514104,
+      "illuminant_min": 2.7171527710613725,
+      "illuminant_max": 2.9953297871596853,
+      "illuminant_max_min_ratio": 1.1023781287018513
+    },
+    {
+      "region_pair": [
+        1,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.6443803402343676,
+      "mean_reflectance_ratio": 2.8168432017773144,
+      "radiance_relative_l2": 0.09898046854878917,
+      "illuminant_min": 2.3453165219786,
+      "illuminant_max": 3.1004703502356223,
+      "illuminant_max_min_ratio": 1.3219837583457372
+    },
+    {
+      "region_pair": [
+        1,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.6443803402343676,
+      "mean_reflectance_ratio": 2.8168432017773144,
+      "radiance_relative_l2": 0.09508379554040954,
+      "illuminant_min": 2.30613398654373,
+      "illuminant_max": 3.0936263279639378,
+      "illuminant_max_min_ratio": 1.3414772714921241
+    },
+    {
+      "region_pair": [
+        1,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.5825031410907966,
+      "mean_reflectance_ratio": 2.4650439714505623,
+      "radiance_relative_l2": 0.21506542481281238,
+      "illuminant_min": 2.6307927495073904,
+      "illuminant_max": 2.6307927495073904,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.5825031410907966,
+      "mean_reflectance_ratio": 2.4650439714505623,
+      "radiance_relative_l2": 0.09720293016640635,
+      "illuminant_min": 2.058082937053259,
+      "illuminant_max": 3.362872489857074,
+      "illuminant_max_min_ratio": 1.633982979651927
+    },
+    {
+      "region_pair": [
+        1,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.5825031410907966,
+      "mean_reflectance_ratio": 2.4650439714505623,
+      "radiance_relative_l2": 0.0871709890288884,
+      "illuminant_min": 1.9454345205060186,
+      "illuminant_max": 3.178806894534142,
+      "illuminant_max_min_ratio": 1.633982979651927
+    },
+    {
+      "region_pair": [
+        1,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.5825031410907966,
+      "mean_reflectance_ratio": 2.4650439714505623,
+      "radiance_relative_l2": 0.08686537095706909,
+      "illuminant_min": 1.9428948631095688,
+      "illuminant_max": 3.182962075853973,
+      "illuminant_max_min_ratio": 1.638257497248049
+    },
+    {
+      "region_pair": [
+        1,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.6156606751319104,
+      "mean_reflectance_ratio": 2.7151649720422437,
+      "radiance_relative_l2": 0.2801439386968003,
+      "illuminant_min": 2.9965599291498592,
+      "illuminant_max": 2.9965599291498592,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.6156606751319104,
+      "mean_reflectance_ratio": 2.7151649720422437,
+      "radiance_relative_l2": 0.08990807682679518,
+      "illuminant_min": 2.109917787445648,
+      "illuminant_max": 4.255792079869329,
+      "illuminant_max_min_ratio": 2.0170416616192255
+    },
+    {
+      "region_pair": [
+        1,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.6156606751319104,
+      "mean_reflectance_ratio": 2.7151649720422437,
+      "radiance_relative_l2": 0.08623271096349301,
+      "illuminant_min": 2.0544217553910396,
+      "illuminant_max": 4.143854271160628,
+      "illuminant_max_min_ratio": 2.0170416616192255
+    },
+    {
+      "region_pair": [
+        1,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.6156606751319104,
+      "mean_reflectance_ratio": 2.7151649720422437,
+      "radiance_relative_l2": 0.08555793726496382,
+      "illuminant_min": 2.048443614078738,
+      "illuminant_max": 4.155947621565944,
+      "illuminant_max_min_ratio": 2.0288318374997254
+    },
+    {
+      "region_pair": [
+        1,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.0905738975837104,
+      "mean_reflectance_ratio": 0.9779997431410467,
+      "radiance_relative_l2": 0.10437008649700921,
+      "illuminant_min": 0.9489415031506601,
+      "illuminant_max": 0.9489415031506601,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.0905738975837104,
+      "mean_reflectance_ratio": 0.9779997431410467,
+      "radiance_relative_l2": 0.07467639830767238,
+      "illuminant_min": 0.8636065610221171,
+      "illuminant_max": 1.0427085863452263,
+      "illuminant_max_min_ratio": 1.2073884491001712
+    },
+    {
+      "region_pair": [
+        1,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.0905738975837104,
+      "mean_reflectance_ratio": 0.9779997431410467,
+      "radiance_relative_l2": 0.07912164231194259,
+      "illuminant_min": 0.8972335381885043,
+      "illuminant_max": 1.0981076158014555,
+      "illuminant_max_min_ratio": 1.2238815972244104
+    },
+    {
+      "region_pair": [
+        1,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.0905738975837104,
+      "mean_reflectance_ratio": 0.9779997431410467,
+      "radiance_relative_l2": 0.06537472611489074,
+      "illuminant_min": 0.8751909254543283,
+      "illuminant_max": 1.049362600088419,
+      "illuminant_max_min_ratio": 1.1990099183714398
+    },
+    {
+      "region_pair": [
+        1,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.1864897553963328,
+      "mean_reflectance_ratio": 1.1928016622014732,
+      "radiance_relative_l2": 0.07458855130403817,
+      "illuminant_min": 1.1677877526844462,
+      "illuminant_max": 1.1677877526844462,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.1864897553963328,
+      "mean_reflectance_ratio": 1.1928016622014732,
+      "radiance_relative_l2": 0.0576788651814457,
+      "illuminant_min": 1.0924214237366734,
+      "illuminant_max": 1.2483536167343732,
+      "illuminant_max_min_ratio": 1.1427399624444632
+    },
+    {
+      "region_pair": [
+        1,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.1864897553963328,
+      "mean_reflectance_ratio": 1.1928016622014732,
+      "radiance_relative_l2": 0.05848364014076811,
+      "illuminant_min": 1.099477243955294,
+      "illuminant_max": 1.2564165844660145,
+      "illuminant_max_min_ratio": 1.1427399624444632
+    },
+    {
+      "region_pair": [
+        1,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.1864897553963328,
+      "mean_reflectance_ratio": 1.1928016622014732,
+      "radiance_relative_l2": 0.05313648884957981,
+      "illuminant_min": 1.1097651352209255,
+      "illuminant_max": 1.2355317640288535,
+      "illuminant_max_min_ratio": 1.1133272480964103
+    },
+    {
+      "region_pair": [
+        1,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.2359519499963003,
+      "mean_reflectance_ratio": 1.314793276672051,
+      "radiance_relative_l2": 0.06902032723196196,
+      "illuminant_min": 1.3334046649371079,
+      "illuminant_max": 1.3334046649371079,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        1,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.2359519499963003,
+      "mean_reflectance_ratio": 1.314793276672051,
+      "radiance_relative_l2": 0.05170012570173501,
+      "illuminant_min": 1.272536965395165,
+      "illuminant_max": 1.3971837744799205,
+      "illuminant_max_min_ratio": 1.097951424967878
+    },
+    {
+      "region_pair": [
+        1,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.2359519499963003,
+      "mean_reflectance_ratio": 1.314793276672051,
+      "radiance_relative_l2": 0.03636673326724336,
+      "illuminant_min": 1.1843114669394423,
+      "illuminant_max": 1.3937347801607773,
+      "illuminant_max_min_ratio": 1.1768312805097947
+    },
+    {
+      "region_pair": [
+        1,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.2359519499963003,
+      "mean_reflectance_ratio": 1.314793276672051,
+      "radiance_relative_l2": 0.03652248501122687,
+      "illuminant_min": 1.1856159226707217,
+      "illuminant_max": 1.394211230618277,
+      "illuminant_max_min_ratio": 1.1759383489702744
+    },
+    {
+      "region_pair": [
+        2,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.5640744776120208,
+      "mean_reflectance_ratio": 2.294354184792841,
+      "radiance_relative_l2": 0.13715299518436425,
+      "illuminant_min": 2.312062351202555,
+      "illuminant_max": 2.312062351202555,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        2,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.5640744776120208,
+      "mean_reflectance_ratio": 2.294354184792841,
+      "radiance_relative_l2": 0.13016060443808106,
+      "illuminant_min": 2.2612138358954623,
+      "illuminant_max": 2.3640543105607548,
+      "illuminant_max_min_ratio": 1.0454802075914977
+    },
+    {
+      "region_pair": [
+        2,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.5640744776120208,
+      "mean_reflectance_ratio": 2.294354184792841,
+      "radiance_relative_l2": 0.08751483904511059,
+      "illuminant_min": 1.9324311979634923,
+      "illuminant_max": 2.5212217771281664,
+      "illuminant_max_min_ratio": 1.3046890258163788
+    },
+    {
+      "region_pair": [
+        2,
+        3
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.5640744776120208,
+      "mean_reflectance_ratio": 2.294354184792841,
+      "radiance_relative_l2": 0.089676425350859,
+      "illuminant_min": 1.9539805407409423,
+      "illuminant_max": 2.524267602484868,
+      "illuminant_max_min_ratio": 1.2918591305559648
+    },
+    {
+      "region_pair": [
+        2,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.48858610693467686,
+      "mean_reflectance_ratio": 2.0078092909209335,
+      "radiance_relative_l2": 0.19537889617426346,
+      "illuminant_min": 2.1320963508796615,
+      "illuminant_max": 2.1320963508796615,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        2,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.48858610693467686,
+      "mean_reflectance_ratio": 2.0078092909209335,
+      "radiance_relative_l2": 0.08651689983498327,
+      "illuminant_min": 1.7127360898693047,
+      "illuminant_max": 2.654136195484298,
+      "illuminant_max_min_ratio": 1.5496469136040856
+    },
+    {
+      "region_pair": [
+        2,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.48858610693467686,
+      "mean_reflectance_ratio": 2.0078092909209335,
+      "radiance_relative_l2": 0.0754582575320404,
+      "illuminant_min": 1.6029471185618003,
+      "illuminant_max": 2.4840020549498565,
+      "illuminant_max_min_ratio": 1.5496469136040858
+    },
+    {
+      "region_pair": [
+        2,
+        4
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.48858610693467686,
+      "mean_reflectance_ratio": 2.0078092909209335,
+      "radiance_relative_l2": 0.08064154730808636,
+      "illuminant_min": 1.6462091003269848,
+      "illuminant_max": 2.469649038263177,
+      "illuminant_max_min_ratio": 1.5002037333973146
+    },
+    {
+      "region_pair": [
+        2,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.5292586034151582,
+      "mean_reflectance_ratio": 2.2115359889671753,
+      "radiance_relative_l2": 0.2605223083740908,
+      "illuminant_min": 2.4285282416598375,
+      "illuminant_max": 2.4285282416598375,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        2,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.5292586034151582,
+      "mean_reflectance_ratio": 2.2115359889671753,
+      "radiance_relative_l2": 0.0787866771533681,
+      "illuminant_min": 1.7558730390085526,
+      "illuminant_max": 3.3588700831522336,
+      "illuminant_max_min_ratio": 1.9129344824662309
+    },
+    {
+      "region_pair": [
+        2,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.5292586034151582,
+      "mean_reflectance_ratio": 2.2115359889671753,
+      "radiance_relative_l2": 0.07438025341199211,
+      "illuminant_min": 1.6927475062271335,
+      "illuminant_max": 3.2381150747706053,
+      "illuminant_max_min_ratio": 1.9129344824662313
+    },
+    {
+      "region_pair": [
+        2,
+        5
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.5292586034151582,
+      "mean_reflectance_ratio": 2.2115359889671753,
+      "radiance_relative_l2": 0.07917262193925627,
+      "illuminant_min": 1.7356402464341396,
+      "illuminant_max": 3.1580917929022125,
+      "illuminant_max_min_ratio": 1.819554368706585
+    },
+    {
+      "region_pair": [
+        2,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.23864609746128665,
+      "mean_reflectance_ratio": 0.796593080504512,
+      "radiance_relative_l2": 0.10651993508743292,
+      "illuminant_min": 0.7690589524563001,
+      "illuminant_max": 0.7690589524563001,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        2,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.23864609746128665,
+      "mean_reflectance_ratio": 0.796593080504512,
+      "radiance_relative_l2": 0.06123126153129556,
+      "illuminant_min": 0.6815986746984684,
+      "illuminant_max": 0.8677418168614153,
+      "illuminant_max_min_ratio": 1.2730978639964265
+    },
+    {
+      "region_pair": [
+        2,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.23864609746128665,
+      "mean_reflectance_ratio": 0.796593080504512,
+      "radiance_relative_l2": 0.06372286228849353,
+      "illuminant_min": 0.7104903659358599,
+      "illuminant_max": 0.904789351718644,
+      "illuminant_max_min_ratio": 1.2734716684396599
+    },
+    {
+      "region_pair": [
+        2,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.23864609746128665,
+      "mean_reflectance_ratio": 0.796593080504512,
+      "radiance_relative_l2": 0.058702331399349175,
+      "illuminant_min": 0.7088649985550828,
+      "illuminant_max": 0.8869973570568348,
+      "illuminant_max_min_ratio": 1.2512923601318287
+    },
+    {
+      "region_pair": [
+        2,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.06116334294244126,
+      "mean_reflectance_ratio": 0.9715519428177802,
+      "radiance_relative_l2": 0.07511909581335507,
+      "illuminant_min": 0.9464204303310036,
+      "illuminant_max": 0.9464204303310036,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        2,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.06116334294244126,
+      "mean_reflectance_ratio": 0.9715519428177802,
+      "radiance_relative_l2": 0.043611809690549536,
+      "illuminant_min": 0.8621900622777475,
+      "illuminant_max": 1.038879558158693,
+      "illuminant_max_min_ratio": 1.2049310281008856
+    },
+    {
+      "region_pair": [
+        2,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.06116334294244126,
+      "mean_reflectance_ratio": 0.9715519428177802,
+      "radiance_relative_l2": 0.04326407795327683,
+      "illuminant_min": 0.8591600005812245,
+      "illuminant_max": 1.0352285428034924,
+      "illuminant_max_min_ratio": 1.2049310281008856
+    },
+    {
+      "region_pair": [
+        2,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.06116334294244126,
+      "mean_reflectance_ratio": 0.9715519428177802,
+      "radiance_relative_l2": 0.045122348190077176,
+      "illuminant_min": 0.8520293340200422,
+      "illuminant_max": 1.0438924106524092,
+      "illuminant_max_min_ratio": 1.2251836515148125
+    },
+    {
+      "region_pair": [
+        2,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.07300110012084189,
+      "mean_reflectance_ratio": 1.0709156457720677,
+      "radiance_relative_l2": 0.051442636880815684,
+      "illuminant_min": 1.0806427913755885,
+      "illuminant_max": 1.0806427913755885,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        2,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.07300110012084189,
+      "mean_reflectance_ratio": 1.0709156457720677,
+      "radiance_relative_l2": 0.04349457927503576,
+      "illuminant_min": 1.0590049346824082,
+      "illuminant_max": 1.1027227582298653,
+      "illuminant_max_min_ratio": 1.0412819828460649
+    },
+    {
+      "region_pair": [
+        2,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.07300110012084189,
+      "mean_reflectance_ratio": 1.0709156457720677,
+      "radiance_relative_l2": 0.029203174568183006,
+      "illuminant_min": 0.9758172960334315,
+      "illuminant_max": 1.1310978580316673,
+      "illuminant_max_min_ratio": 1.1591287248437088
+    },
+    {
+      "region_pair": [
+        2,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.07300110012084189,
+      "mean_reflectance_ratio": 1.0709156457720677,
+      "radiance_relative_l2": 0.02874197637482894,
+      "illuminant_min": 0.9870193246865546,
+      "illuminant_max": 1.140006257109012,
+      "illuminant_max_min_ratio": 1.1549989231173776
+    },
+    {
+      "region_pair": [
+        3,
+        4
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.1975222422055246,
+      "mean_reflectance_ratio": 0.8751086925588257,
+      "radiance_relative_l2": 0.11657280658086486,
+      "illuminant_min": 0.922162133633944,
+      "illuminant_max": 0.922162133633944,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        3,
+        4
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.1975222422055246,
+      "mean_reflectance_ratio": 0.8751086925588257,
+      "radiance_relative_l2": 0.055586820319706645,
+      "illuminant_min": 0.7574410091963039,
+      "illuminant_max": 1.1227052541169136,
+      "illuminant_max_min_ratio": 1.482234577327916
+    },
+    {
+      "region_pair": [
+        3,
+        4
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.1975222422055246,
+      "mean_reflectance_ratio": 0.8751086925588257,
+      "radiance_relative_l2": 0.015460966007721325,
+      "illuminant_min": 0.8190216594903114,
+      "illuminant_max": 1.2295100841180568,
+      "illuminant_max_min_ratio": 1.5011936129786827
+    },
+    {
+      "region_pair": [
+        3,
+        4
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.1975222422055246,
+      "mean_reflectance_ratio": 0.8751086925588257,
+      "radiance_relative_l2": 0.012824589443929793,
+      "illuminant_min": 0.8142654025769319,
+      "illuminant_max": 1.2105493144958892,
+      "illuminant_max_min_ratio": 1.4866765929939119
+    },
+    {
+      "region_pair": [
+        3,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.14455899421249505,
+      "mean_reflectance_ratio": 0.9639034825683885,
+      "radiance_relative_l2": 0.18712175373895332,
+      "illuminant_min": 1.0503731616047056,
+      "illuminant_max": 1.0503731616047056,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        3,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.14455899421249505,
+      "mean_reflectance_ratio": 0.9639034825683885,
+      "radiance_relative_l2": 0.07180186417472462,
+      "illuminant_min": 0.7765179087157008,
+      "illuminant_max": 1.4208091870594577,
+      "illuminant_max_min_ratio": 1.829718505023746
+    },
+    {
+      "region_pair": [
+        3,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.14455899421249505,
+      "mean_reflectance_ratio": 0.9639034825683885,
+      "radiance_relative_l2": 0.01942002745116155,
+      "illuminant_min": 0.8700548022786165,
+      "illuminant_max": 1.60277449450239,
+      "illuminant_max_min_ratio": 1.8421534945900289
+    },
+    {
+      "region_pair": [
+        3,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.14455899421249505,
+      "mean_reflectance_ratio": 0.9639034825683885,
+      "radiance_relative_l2": 0.017323969068102248,
+      "illuminant_min": 0.8687048935712913,
+      "illuminant_max": 1.5805967600219313,
+      "illuminant_max_min_ratio": 1.8194864236622579
+    },
+    {
+      "region_pair": [
+        3,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 1.7672789859734561,
+      "mean_reflectance_ratio": 0.3471970830765334,
+      "radiance_relative_l2": 0.16861900483544662,
+      "illuminant_min": 0.3326289847054925,
+      "illuminant_max": 0.3326289847054925,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        3,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 1.7672789859734561,
+      "mean_reflectance_ratio": 0.3471970830765334,
+      "radiance_relative_l2": 0.10452689557143453,
+      "illuminant_min": 0.2883176886646028,
+      "illuminant_max": 0.383750445484861,
+      "illuminant_max_min_ratio": 1.330998619135277
+    },
+    {
+      "region_pair": [
+        3,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 1.7672789859734561,
+      "mean_reflectance_ratio": 0.3471970830765334,
+      "radiance_relative_l2": 0.03021284581102133,
+      "illuminant_min": 0.29337357761304156,
+      "illuminant_max": 0.4682129706207202,
+      "illuminant_max_min_ratio": 1.5959616214596224
+    },
+    {
+      "region_pair": [
+        3,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 1.7672789859734561,
+      "mean_reflectance_ratio": 0.3471970830765334,
+      "radiance_relative_l2": 0.032533338059579316,
+      "illuminant_min": 0.2897413585974467,
+      "illuminant_max": 0.4539438026954396,
+      "illuminant_max_min_ratio": 1.5667207639698004
+    },
+    {
+      "region_pair": [
+        3,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 1.2908800329621626,
+      "mean_reflectance_ratio": 0.42345334005416535,
+      "radiance_relative_l2": 0.14783075351757072,
+      "illuminant_min": 0.4093403579011393,
+      "illuminant_max": 0.4093403579011393,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        3,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 1.2908800329621626,
+      "mean_reflectance_ratio": 0.42345334005416535,
+      "radiance_relative_l2": 0.10071101114163555,
+      "illuminant_min": 0.36470822959783666,
+      "illuminant_max": 0.4594344602297582,
+      "illuminant_max_min_ratio": 1.2597315413923509
+    },
+    {
+      "region_pair": [
+        3,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 1.2908800329621626,
+      "mean_reflectance_ratio": 0.42345334005416535,
+      "radiance_relative_l2": 0.04795136055903574,
+      "illuminant_min": 0.3710422254678263,
+      "illuminant_max": 0.5357130147218053,
+      "illuminant_max_min_ratio": 1.4438060628985148
+    },
+    {
+      "region_pair": [
+        3,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 1.2908800329621626,
+      "mean_reflectance_ratio": 0.42345334005416535,
+      "radiance_relative_l2": 0.048451971218837306,
+      "illuminant_min": 0.3706384320686974,
+      "illuminant_max": 0.5342388979250373,
+      "illuminant_max_min_ratio": 1.4414017859486756
+    },
+    {
+      "region_pair": [
+        3,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 1.139758275530304,
+      "mean_reflectance_ratio": 0.4667612580787136,
+      "radiance_relative_l2": 0.10511373641964929,
+      "illuminant_min": 0.46739344672669486,
+      "illuminant_max": 0.46739344672669486,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        3,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 1.139758275530304,
+      "mean_reflectance_ratio": 0.4667612580787136,
+      "radiance_relative_l2": 0.1048052271774285,
+      "illuminant_min": 0.46645407142456835,
+      "illuminant_max": 0.4683347138034082,
+      "illuminant_max_min_ratio": 1.0040317846794569
+    },
+    {
+      "region_pair": [
+        3,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 1.139758275530304,
+      "mean_reflectance_ratio": 0.4667612580787136,
+      "radiance_relative_l2": 0.08492172184115812,
+      "illuminant_min": 0.448482918971276,
+      "illuminant_max": 0.5049687135365045,
+      "illuminant_max_min_ratio": 1.1259485973173624
+    },
+    {
+      "region_pair": [
+        3,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 1.139758275530304,
+      "mean_reflectance_ratio": 0.4667612580787136,
+      "radiance_relative_l2": 0.08057855788195596,
+      "illuminant_min": 0.44769328317097645,
+      "illuminant_max": 0.5141140669140561,
+      "illuminant_max_min_ratio": 1.1483622521039996
+    },
+    {
+      "region_pair": [
+        4,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.08081402872712164,
+      "mean_reflectance_ratio": 1.1014671557540197,
+      "radiance_relative_l2": 0.0662222319763369,
+      "illuminant_min": 1.1390330651135319,
+      "illuminant_max": 1.1390330651135319,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        4,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.08081402872712164,
+      "mean_reflectance_ratio": 1.1014671557540197,
+      "radiance_relative_l2": 0.018348147016296147,
+      "illuminant_min": 1.0251859871432611,
+      "illuminant_max": 1.265522880426015,
+      "illuminant_max_min_ratio": 1.2344324798590607
+    },
+    {
+      "region_pair": [
+        4,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.08081402872712164,
+      "mean_reflectance_ratio": 1.1014671557540197,
+      "radiance_relative_l2": 0.008032780112232588,
+      "illuminant_min": 1.056022052521548,
+      "illuminant_max": 1.3035879210800296,
+      "illuminant_max_min_ratio": 1.2344324798590607
+    },
+    {
+      "region_pair": [
+        4,
+        5
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.08081402872712164,
+      "mean_reflectance_ratio": 1.1014671557540197,
+      "radiance_relative_l2": 0.008124627452746159,
+      "illuminant_min": 1.0543255082780134,
+      "illuminant_max": 1.3056855603442656,
+      "illuminant_max_min_ratio": 1.2384083948388844
+    },
+    {
+      "region_pair": [
+        4,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 1.3584671269604973,
+      "mean_reflectance_ratio": 0.39674738238666785,
+      "radiance_relative_l2": 0.23820096115535705,
+      "illuminant_min": 0.3607055338465362,
+      "illuminant_max": 0.3607055338465362,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        4,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 1.3584671269604973,
+      "mean_reflectance_ratio": 0.39674738238666785,
+      "radiance_relative_l2": 0.051744433323466656,
+      "illuminant_min": 0.25680621659812664,
+      "illuminant_max": 0.506640703138118,
+      "illuminant_max_min_ratio": 1.9728521756580168
+    },
+    {
+      "region_pair": [
+        4,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 1.3584671269604973,
+      "mean_reflectance_ratio": 0.39674738238666785,
+      "radiance_relative_l2": 0.021866712053957522,
+      "illuminant_min": 0.28611046326507955,
+      "illuminant_max": 0.5644536499310353,
+      "illuminant_max_min_ratio": 1.9728521756580168
+    },
+    {
+      "region_pair": [
+        4,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 1.3584671269604973,
+      "mean_reflectance_ratio": 0.39674738238666785,
+      "radiance_relative_l2": 0.022992581885471586,
+      "illuminant_min": 0.28711435114360295,
+      "illuminant_max": 0.5388120846134623,
+      "illuminant_max_min_ratio": 1.8766462995225563
+    },
+    {
+      "region_pair": [
+        4,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.9549520131054211,
+      "mean_reflectance_ratio": 0.4838865659258668,
+      "radiance_relative_l2": 0.21506220329043912,
+      "illuminant_min": 0.44389196104600476,
+      "illuminant_max": 0.44389196104600476,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        4,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.9549520131054211,
+      "mean_reflectance_ratio": 0.4838865659258668,
+      "radiance_relative_l2": 0.05034654090055694,
+      "illuminant_min": 0.3248477089249085,
+      "illuminant_max": 0.6065613752775931,
+      "illuminant_max_min_ratio": 1.8672176488023355
+    },
+    {
+      "region_pair": [
+        4,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.9549520131054211,
+      "mean_reflectance_ratio": 0.4838865659258668,
+      "radiance_relative_l2": 0.03402162146539097,
+      "illuminant_min": 0.3458773308456735,
+      "illuminant_max": 0.645828256475686,
+      "illuminant_max_min_ratio": 1.8672176488023353
+    },
+    {
+      "region_pair": [
+        4,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.9549520131054211,
+      "mean_reflectance_ratio": 0.4838865659258668,
+      "radiance_relative_l2": 0.03768762563169382,
+      "illuminant_min": 0.3522641111699178,
+      "illuminant_max": 0.634118964866044,
+      "illuminant_max_min_ratio": 1.8001236707311663
+    },
+    {
+      "region_pair": [
+        4,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.8174014936350923,
+      "mean_reflectance_ratio": 0.5333751819032896,
+      "radiance_relative_l2": 0.1419353133891384,
+      "illuminant_min": 0.5068451953073022,
+      "illuminant_max": 0.5068451953073022,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        4,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.8174014936350923,
+      "mean_reflectance_ratio": 0.5333751819032896,
+      "radiance_relative_l2": 0.0690768871244641,
+      "illuminant_min": 0.4154733129769373,
+      "illuminant_max": 0.618311800017724,
+      "illuminant_max_min_ratio": 1.4882106279881475
+    },
+    {
+      "region_pair": [
+        4,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.8174014936350923,
+      "mean_reflectance_ratio": 0.5333751819032896,
+      "radiance_relative_l2": 0.07140966754560076,
+      "illuminant_min": 0.4090580226712769,
+      "illuminant_max": 0.6087644968032109,
+      "illuminant_max_min_ratio": 1.4882106279881475
+    },
+    {
+      "region_pair": [
+        4,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.8174014936350923,
+      "mean_reflectance_ratio": 0.5333751819032896,
+      "radiance_relative_l2": 0.07075265758177184,
+      "illuminant_min": 0.4080745477127704,
+      "illuminant_max": 0.610231642062795,
+      "illuminant_max_min_ratio": 1.4953925587447223
+    },
+    {
+      "region_pair": [
+        5,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 1.5517936177590514,
+      "mean_reflectance_ratio": 0.36019901302919083,
+      "radiance_relative_l2": 0.2859430341341692,
+      "illuminant_min": 0.3166769647820393,
+      "illuminant_max": 0.3166769647820393,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        5,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 1.5517936177590514,
+      "mean_reflectance_ratio": 0.36019901302919083,
+      "radiance_relative_l2": 0.03724764706601946,
+      "illuminant_min": 0.2029249890066607,
+      "illuminant_max": 0.49419394089642305,
+      "illuminant_max_min_ratio": 2.4353528035928678
+    },
+    {
+      "region_pair": [
+        5,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 1.5517936177590514,
+      "mean_reflectance_ratio": 0.36019901302919083,
+      "radiance_relative_l2": 0.021850222932736377,
+      "illuminant_min": 0.2194792224125823,
+      "illuminant_max": 0.534509339632865,
+      "illuminant_max_min_ratio": 2.435352803592868
+    },
+    {
+      "region_pair": [
+        5,
+        6
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 1.5517936177590514,
+      "mean_reflectance_ratio": 0.36019901302919083,
+      "radiance_relative_l2": 0.022468018145215637,
+      "illuminant_min": 0.22868937083998653,
+      "illuminant_max": 0.5110490834026028,
+      "illuminant_max_min_ratio": 2.2346866473308142
+    },
+    {
+      "region_pair": [
+        5,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 1.1161824113466077,
+      "mean_reflectance_ratio": 0.4393109348726951,
+      "radiance_relative_l2": 0.2636324182346232,
+      "illuminant_min": 0.38970946027959275,
+      "illuminant_max": 0.38970946027959275,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        5,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 1.1161824113466077,
+      "mean_reflectance_ratio": 0.4393109348726951,
+      "radiance_relative_l2": 0.038760916647657954,
+      "illuminant_min": 0.2566905063111578,
+      "illuminant_max": 0.5916598381995161,
+      "illuminant_max_min_ratio": 2.3049541126476707
+    },
+    {
+      "region_pair": [
+        5,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 1.1161824113466077,
+      "mean_reflectance_ratio": 0.4393109348726951,
+      "radiance_relative_l2": 0.03242966851353455,
+      "illuminant_min": 0.2653271983059741,
+      "illuminant_max": 0.6115670169326393,
+      "illuminant_max_min_ratio": 2.304954112647671
+    },
+    {
+      "region_pair": [
+        5,
+        7
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 1.1161824113466077,
+      "mean_reflectance_ratio": 0.4393109348726951,
+      "radiance_relative_l2": 0.03589046583283624,
+      "illuminant_min": 0.269792453764318,
+      "illuminant_max": 0.6014451513192774,
+      "illuminant_max_min_ratio": 2.229288265581663
+    },
+    {
+      "region_pair": [
+        5,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 0,
+      "original_relative_l2": 0.9657052576632664,
+      "mean_reflectance_ratio": 0.4842406594849055,
+      "radiance_relative_l2": 0.1897664828304882,
+      "illuminant_min": 0.44497847413831043,
+      "illuminant_max": 0.44497847413831043,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        5,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 1,
+      "original_relative_l2": 0.9657052576632664,
+      "mean_reflectance_ratio": 0.4842406594849055,
+      "radiance_relative_l2": 0.06406352952581561,
+      "illuminant_min": 0.32830169995589165,
+      "illuminant_max": 0.6031215874698842,
+      "illuminant_max_min_ratio": 1.8370955360600187
+    },
+    {
+      "region_pair": [
+        5,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 2,
+      "original_relative_l2": 0.9657052576632664,
+      "mean_reflectance_ratio": 0.4842406594849055,
+      "radiance_relative_l2": 0.06843490777808364,
+      "illuminant_min": 0.3137939651453429,
+      "illuminant_max": 0.5764694926110827,
+      "illuminant_max_min_ratio": 1.8370955360600192
+    },
+    {
+      "region_pair": [
+        5,
+        8
+      ],
+      "different_source_faces": true,
+      "degree": 3,
+      "original_relative_l2": 0.9657052576632664,
+      "mean_reflectance_ratio": 0.4842406594849055,
+      "radiance_relative_l2": 0.06727331411350226,
+      "illuminant_min": 0.3125366168598624,
+      "illuminant_max": 0.5787886542358833,
+      "illuminant_max_min_ratio": 1.8519066983290637
+    },
+    {
+      "region_pair": [
+        6,
+        7
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.17533058905582352,
+      "mean_reflectance_ratio": 1.2196339217539527,
+      "radiance_relative_l2": 0.038485133649292846,
+      "illuminant_min": 1.2306214332571361,
+      "illuminant_max": 1.2306214332571361,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        6,
+        7
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.17533058905582352,
+      "mean_reflectance_ratio": 1.2196339217539527,
+      "radiance_relative_l2": 0.027685389680790644,
+      "illuminant_min": 1.197221959310749,
+      "illuminant_max": 1.2649526683119958,
+      "illuminant_max_min_ratio": 1.0565732264385128
+    },
+    {
+      "region_pair": [
+        6,
+        7
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.17533058905582352,
+      "mean_reflectance_ratio": 1.2196339217539527,
+      "radiance_relative_l2": 0.02629664264336062,
+      "illuminant_min": 1.1441652588385125,
+      "illuminant_max": 1.2649954194972775,
+      "illuminant_max_min_ratio": 1.10560551434801
+    },
+    {
+      "region_pair": [
+        6,
+        7
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.17533058905582352,
+      "mean_reflectance_ratio": 1.2196339217539527,
+      "radiance_relative_l2": 0.019504408775841812,
+      "illuminant_min": 1.175286373039603,
+      "illuminant_max": 1.2805164234415192,
+      "illuminant_max_min_ratio": 1.0895356679153552
+    },
+    {
+      "region_pair": [
+        6,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.24611105759260446,
+      "mean_reflectance_ratio": 1.3443697566313493,
+      "radiance_relative_l2": 0.14656488214357874,
+      "illuminant_min": 1.4051494855161877,
+      "illuminant_max": 1.4051494855161877,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        6,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.24611105759260446,
+      "mean_reflectance_ratio": 1.3443697566313493,
+      "radiance_relative_l2": 0.0737758773406197,
+      "illuminant_min": 1.2204147755755086,
+      "illuminant_max": 1.6178475680248317,
+      "illuminant_max_min_ratio": 1.3256538681792889
+    },
+    {
+      "region_pair": [
+        6,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.24611105759260446,
+      "mean_reflectance_ratio": 1.3443697566313493,
+      "radiance_relative_l2": 0.06903494987536246,
+      "illuminant_min": 1.0785021885810988,
+      "illuminant_max": 1.5432253108429692,
+      "illuminant_max_min_ratio": 1.430896781835251
+    },
+    {
+      "region_pair": [
+        6,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.24611105759260446,
+      "mean_reflectance_ratio": 1.3443697566313493,
+      "radiance_relative_l2": 0.05687796431464258,
+      "illuminant_min": 1.1325500290153447,
+      "illuminant_max": 1.5827882764672265,
+      "illuminant_max_min_ratio": 1.3975438046152586
+    },
+    {
+      "region_pair": [
+        7,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 0,
+      "original_relative_l2": 0.10091913389240417,
+      "mean_reflectance_ratio": 1.1022731761166615,
+      "radiance_relative_l2": 0.10827606277631878,
+      "illuminant_min": 1.1418210731119165,
+      "illuminant_max": 1.1418210731119165,
+      "illuminant_max_min_ratio": 1.0
+    },
+    {
+      "region_pair": [
+        7,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 1,
+      "original_relative_l2": 0.10091913389240417,
+      "mean_reflectance_ratio": 1.1022731761166615,
+      "radiance_relative_l2": 0.04695870480377904,
+      "illuminant_min": 1.0193721941736784,
+      "illuminant_max": 1.278978738535532,
+      "illuminant_max_min_ratio": 1.2546729701336374
+    },
+    {
+      "region_pair": [
+        7,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 2,
+      "original_relative_l2": 0.10091913389240417,
+      "mean_reflectance_ratio": 1.1022731761166615,
+      "radiance_relative_l2": 0.043457086380293705,
+      "illuminant_min": 0.9426105016297464,
+      "illuminant_max": 1.223827722345109,
+      "illuminant_max_min_ratio": 1.2983387308216345
+    },
+    {
+      "region_pair": [
+        7,
+        8
+      ],
+      "different_source_faces": false,
+      "degree": 3,
+      "original_relative_l2": 0.10091913389240417,
+      "mean_reflectance_ratio": 1.1022731761166615,
+      "radiance_relative_l2": 0.03832131986134778,
+      "illuminant_min": 0.9623299031778758,
+      "illuminant_max": 1.2374921487775534,
+      "illuminant_max_min_ratio": 1.2859333838541407
+    }
+  ],
+  "local_arrays_sha256": "38658dd6d2d9cdb3ddbf668acb94220ad44eeee192b54cd7f16187d10169834c"
+}

@@ -1,4 +1,24 @@
-# Latest research: capture conditioning and new measured-face spectral route
+# Latest: measured skin-material and shared-spatial probes
+
+Three original CC BY4.0 UMINHO TRAIN faces now acquired (236.85MB total),
+22,500spectra in nine manually inspected skin regions.36oracle representation
+controls: linear8D relative spectral error2.99/3.41/2.16%across three source
+face-held-out folds, versus3D4.06/9.00/3.64%. This is full-spectrum oracle
+compression, NOT a neural RGB result or DeltaE00 accuracy improvement.
+144regional illumination stress fits found zero cross-face matches below1%
+spectral radiance mismatch in the declared degree0–3family.36follow-up fits
+show shared spatial constraints distinguish these materials more than separate
+regional corrections; local exposure explains much of the difference.
+273tests pass;40exact array replays and270,000independent scalar cases pass.
+
+[Results and limits](../benchmarks/skin_spectral_probe_v1/report.md),
+[next real-photo spatial experiment](skin_spectral_next_decision.md).
+MSKCC TEST/CAL and UMINHO VALIDATION/TEST were not loaded. Independent skin
+accuracy remains the previously measured result below; no new proposed victory.
+No live jobs. Goal active; next attack exchangeable image patches using shared
+capture/spatial evidence, with matched ordinary models and nativeLab supervision.
+
+# Previous research: capture conditioning and measured-face spectral route
 
 54new source fits completed, with929,297stored parameters per model. Conditional
 mixture + standardized-LabMSE source mean over3seeds3.4406DeltaE00 versus exact

@@ -1,3 +1,23 @@
+# Skin spectral priors: fresh opposing evidence 2026-09-11
+
+[Zhou et al., SCR-AWB, Technologies2025](https://doi.org/10.3390/technologies13060232)
+uses skin reflectance priors, device spectral sensitivities and an illuminant
+basis to estimate illumination from linear RGB. Its authors explicitly discuss
+individual-tone errors from averaged reflectance, and inapplicability to nonlinear
+RGB without restoring the assumed relationship. Thus skin spectra plus a small
+physical solve is existing research, and mean skin is not a valid universal
+color target for Luma. No code/weights/data from that paper were used in a model.
+Original author-repository PDF inspected, including equations onp5 and limitations
+onpp15–16; CC BY4.0 article, SHA256
+`aa9166167a56c3dbd95269e6f4f2a5d92e99bb6b0b947e5a96b8fc48e0312486`.
+[Author repository](https://eprints.whiterose.ac.uk/id/eprint/227555/1/technologies-13-00232.pdf).
+
+[Gomes et al. UMINHO paper](https://doi.org/10.1177/00037028241279323)
+describes29participants and local spectral variation, including comparison with
+other measurement geometries. Our manual source regions do not reproduce those
+instrument comparisons. The new spectral PCA and smooth-illumination probes are
+ordinary analysis tools and are not a novelty claim.
+
 # Perceptual objective and measured spectra check 2026-09-11
 
 [Sharma, Wu and Dalal](https://doi.org/10.1002/col.20070) provide supplemental

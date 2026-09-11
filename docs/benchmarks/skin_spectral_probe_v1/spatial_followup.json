@@ -1,0 +1,622 @@
+{
+  "scope": "POST-SCREEN TRAIN follow-up; same measured regional means; no new labels or pixels",
+  "protocol": "All3source-face pairs x degree0/1/2/3 x shared/shared+local-exposure/independent; log-ratio least squares, pooled radianceL2 scoring. Correspondence is manually selected forehead and image-left/right cheeks, not registered physical surface points.",
+  "not_a_real_illuminant_or_RGB_benchmark": true,
+  "parent_summary_sha256": "9f86a70b1ee812ab917e0d42e85b8457a68b2c7eab0537f1be01d83c53052b7b",
+  "script_sha256": "dcd4dd7810f50f5f670b4563fadbd18c80169cb7ddad97eafcfafe19adf892e3",
+  "normal_equation_maximum_log_gain_difference": 2.123301534595612e-15,
+  "rows": [
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 0,
+      "model": "shared",
+      "parameters": 1,
+      "pooled_radiance_relative_l2": 0.2357130278912247,
+      "per_region_radiance_relative_l2": [
+        0.14875862164845566,
+        0.21639325483745298,
+        0.34173153203684026
+      ],
+      "gain_min": 2.6355936052146536,
+      "gain_max": 2.6355936052146536
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 0,
+      "model": "shared_with_local_exposure",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.2111014411567052,
+      "per_region_radiance_relative_l2": [
+        0.16314342678882726,
+        0.2150654248128126,
+        0.2605223083740912
+      ],
+      "gain_min": 2.4285282416598384,
+      "gain_max": 2.8655338354102065
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 0,
+      "model": "independent_regions",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.2111014411567052,
+      "per_region_radiance_relative_l2": [
+        0.16314342678882726,
+        0.2150654248128126,
+        0.2605223083740912
+      ],
+      "gain_min": 2.4285282416598384,
+      "gain_max": 2.8655338354102065
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "model": "shared",
+      "parameters": 2,
+      "pooled_radiance_relative_l2": 0.1458432946784159,
+      "per_region_radiance_relative_l2": [
+        0.16000344205874187,
+        0.10318650506560233,
+        0.17593670409976192
+      ],
+      "gain_min": 2.1339905868496682,
+      "gain_max": 3.2551004182745817
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "model": "shared_with_local_exposure",
+      "parameters": 4,
+      "pooled_radiance_relative_l2": 0.11306618534854423,
+      "per_region_radiance_relative_l2": [
+        0.12115302750802677,
+        0.10293227965019064,
+        0.11548673435294608
+      ],
+      "gain_min": 1.9663336552899975,
+      "gain_max": 3.539089018795843
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "model": "independent_regions",
+      "parameters": 6,
+      "pooled_radiance_relative_l2": 0.10842770729318633,
+      "per_region_radiance_relative_l2": [
+        0.13421446965984,
+        0.09720293016640635,
+        0.07878667715336807
+      ],
+      "gain_min": 1.7558730390085528,
+      "gain_max": 3.3628724898570765
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 2,
+      "model": "shared",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.1295430697459448,
+      "per_region_radiance_relative_l2": [
+        0.1527203049470041,
+        0.08370813652711663,
+        0.1483574410487244
+      ],
+      "gain_min": 1.9163430856899506,
+      "gain_max": 2.9891298742482117
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 2,
+      "model": "shared_with_local_exposure",
+      "parameters": 5,
+      "pooled_radiance_relative_l2": 0.09170242974826577,
+      "per_region_radiance_relative_l2": [
+        0.10089288891555097,
+        0.08373972442893159,
+        0.08918777697268207
+      ],
+      "gain_min": 1.7657856260918396,
+      "gain_max": 3.2499140899972327
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 2,
+      "model": "independent_regions",
+      "parameters": 9,
+      "pooled_radiance_relative_l2": 0.07335587389502762,
+      "per_region_radiance_relative_l2": [
+        0.05447604283128683,
+        0.08717098902888833,
+        0.07438025341199214
+      ],
+      "gain_min": 1.6927475062271342,
+      "gain_max": 3.2588221028872484
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 3,
+      "model": "shared",
+      "parameters": 4,
+      "pooled_radiance_relative_l2": 0.13100810626712941,
+      "per_region_radiance_relative_l2": [
+        0.1540418479051853,
+        0.08651527451965045,
+        0.14904197047489107
+      ],
+      "gain_min": 1.94386519202239,
+      "gain_max": 3.007840661481251
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 3,
+      "model": "shared_with_local_exposure",
+      "parameters": 6,
+      "pooled_radiance_relative_l2": 0.09386475177948667,
+      "per_region_radiance_relative_l2": [
+        0.10301784928007877,
+        0.08654672802813067,
+        0.09052394500385998
+      ],
+      "gain_min": 1.7911454586419149,
+      "gain_max": 3.2702572847133515
+    },
+    {
+      "source_pair": [
+        0,
+        1
+      ],
+      "degree": 3,
+      "model": "independent_regions",
+      "parameters": 12,
+      "pooled_radiance_relative_l2": 0.07519074222225991,
+      "per_region_radiance_relative_l2": [
+        0.05707405635672209,
+        0.08686537095706895,
+        0.07917262193925623
+      ],
+      "gain_min": 1.7356402464341398,
+      "gain_max": 3.271468601231946
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 0,
+      "model": "shared",
+      "parameters": 1,
+      "pooled_radiance_relative_l2": 0.10519224256762734,
+      "per_region_radiance_relative_l2": [
+        0.09319590324458976,
+        0.1386933606427904,
+        0.047415096551447516
+      ],
+      "gain_min": 1.0634993676527578,
+      "gain_max": 1.0634993676527578
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 0,
+      "model": "shared_with_local_exposure",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.06291657241958239,
+      "per_region_radiance_relative_l2": [
+        0.056562920468589614,
+        0.07458855130403809,
+        0.05144263688081569
+      ],
+      "gain_min": 0.9531596103117331,
+      "gain_max": 1.1677877526844465
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 0,
+      "model": "independent_regions",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.06291657241958239,
+      "per_region_radiance_relative_l2": [
+        0.056562920468589614,
+        0.07458855130403809,
+        0.05144263688081569
+      ],
+      "gain_min": 0.9531596103117331,
+      "gain_max": 1.1677877526844465
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 1,
+      "model": "shared",
+      "parameters": 2,
+      "pooled_radiance_relative_l2": 0.103949262377886,
+      "per_region_radiance_relative_l2": [
+        0.10491114658210364,
+        0.12206341497107563,
+        0.06619088736403378
+      ],
+      "gain_min": 1.0197783791285657,
+      "gain_max": 1.1090948074073887
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 1,
+      "model": "shared_with_local_exposure",
+      "parameters": 4,
+      "pooled_radiance_relative_l2": 0.05843335352043716,
+      "per_region_radiance_relative_l2": [
+        0.040268577040968194,
+        0.061208693414797816,
+        0.07414908632632991
+      ],
+      "gain_min": 0.9139747441503748,
+      "gain_max": 1.2178543514462659
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 1,
+      "model": "independent_regions",
+      "parameters": 6,
+      "pooled_radiance_relative_l2": 0.04746318250787796,
+      "per_region_radiance_relative_l2": [
+        0.037222217593003704,
+        0.05767886518144569,
+        0.04349457927503581
+      ],
+      "gain_min": 0.8803611189117372,
+      "gain_max": 1.2483536167343734
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 2,
+      "model": "shared",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.10195388513497014,
+      "per_region_radiance_relative_l2": [
+        0.10151865912412047,
+        0.12479818085033689,
+        0.05253348669207198
+      ],
+      "gain_min": 0.9842890704531534,
+      "gain_max": 1.0931012336040078
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 2,
+      "model": "shared_with_local_exposure",
+      "parameters": 5,
+      "pooled_radiance_relative_l2": 0.054856966472129606,
+      "per_region_radiance_relative_l2": [
+        0.040255888511668,
+        0.06245048691144977,
+        0.0606119099341697
+      ],
+      "gain_min": 0.882167507911064,
+      "gain_max": 1.2002924231768912
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 2,
+      "model": "independent_regions",
+      "parameters": 9,
+      "pooled_radiance_relative_l2": 0.04325221442370613,
+      "per_region_radiance_relative_l2": [
+        0.031062767555470248,
+        0.05848364014076807,
+        0.029203174568183034
+      ],
+      "gain_min": 0.8535812713609232,
+      "gain_max": 1.2564165844660145
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 3,
+      "model": "shared",
+      "parameters": 4,
+      "pooled_radiance_relative_l2": 0.10189472462924265,
+      "per_region_radiance_relative_l2": [
+        0.1014919259582159,
+        0.12471401399155817,
+        0.05245528144920312
+      ],
+      "gain_min": 0.9850942258376303,
+      "gain_max": 1.0935590410212466
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 3,
+      "model": "shared_with_local_exposure",
+      "parameters": 6,
+      "pooled_radiance_relative_l2": 0.05474223989324972,
+      "per_region_radiance_relative_l2": [
+        0.04013537229951249,
+        0.06230075592581819,
+        0.06054935363239062
+      ],
+      "gain_min": 0.8828891271389177,
+      "gain_max": 1.2007951238941652
+    },
+    {
+      "source_pair": [
+        0,
+        2
+      ],
+      "degree": 3,
+      "model": "independent_regions",
+      "parameters": 12,
+      "pooled_radiance_relative_l2": 0.039826770167691095,
+      "per_region_radiance_relative_l2": [
+        0.028744290991335908,
+        0.05313648884957979,
+        0.02874197637482894
+      ],
+      "gain_min": 0.8637892624625233,
+      "gain_max": 1.2355317640288535
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 0,
+      "model": "shared",
+      "parameters": 1,
+      "pooled_radiance_relative_l2": 0.24397931831935774,
+      "per_region_radiance_relative_l2": [
+        0.19384341659895815,
+        0.26951332517315413,
+        0.25012824149143414
+      ],
+      "gain_min": 0.4035141706022398,
+      "gain_max": 0.4035141706022398
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 0,
+      "model": "shared_with_local_exposure",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.1946289642915088,
+      "per_region_radiance_relative_l2": [
+        0.16861900483544662,
+        0.21506220329043926,
+        0.18976648283048847
+      ],
+      "gain_min": 0.3326289847054925,
+      "gain_max": 0.4449784741383102
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 0,
+      "model": "independent_regions",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.1946289642915088,
+      "per_region_radiance_relative_l2": [
+        0.16861900483544662,
+        0.21506220329043926,
+        0.18976648283048847
+      ],
+      "gain_min": 0.3326289847054925,
+      "gain_max": 0.4449784741383102
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 1,
+      "model": "shared",
+      "parameters": 2,
+      "pooled_radiance_relative_l2": 0.176111903728152,
+      "per_region_radiance_relative_l2": [
+        0.2582207140222361,
+        0.14041718528922936,
+        0.12012127727300949
+      ],
+      "gain_min": 0.3132863039810968,
+      "gain_max": 0.5197280692061087
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 1,
+      "model": "shared_with_local_exposure",
+      "parameters": 4,
+      "pooled_radiance_relative_l2": 0.07536360606799525,
+      "per_region_radiance_relative_l2": [
+        0.08619106095707355,
+        0.07535283309433359,
+        0.06498162943568606
+      ],
+      "gain_min": 0.25825141421883474,
+      "gain_max": 0.5731342789201678
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 1,
+      "model": "independent_regions",
+      "parameters": 6,
+      "pooled_radiance_relative_l2": 0.07343054969228129,
+      "per_region_radiance_relative_l2": [
+        0.10452689557143453,
+        0.05034654090055688,
+        0.06406352952581548
+      ],
+      "gain_min": 0.2883176886646028,
+      "gain_max": 0.6065613752775931
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 2,
+      "model": "shared",
+      "parameters": 3,
+      "pooled_radiance_relative_l2": 0.17004714546122215,
+      "per_region_radiance_relative_l2": [
+        0.2643466547045575,
+        0.12134323400258709,
+        0.10620023736180632
+      ],
+      "gain_min": 0.3367266635470711,
+      "gain_max": 0.5586145850349521
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 2,
+      "model": "shared_with_local_exposure",
+      "parameters": 5,
+      "pooled_radiance_relative_l2": 0.05924634937293681,
+      "per_region_radiance_relative_l2": [
+        0.06867059658490471,
+        0.04904688403053993,
+        0.06157117549552124
+      ],
+      "gain_min": 0.27757401444356755,
+      "gain_max": 0.6160166948022381
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 2,
+      "model": "independent_regions",
+      "parameters": 9,
+      "pooled_radiance_relative_l2": 0.04759446510796519,
+      "per_region_radiance_relative_l2": [
+        0.030212845811021325,
+        0.03402162146539098,
+        0.06843490777808361
+      ],
+      "gain_min": 0.29337357761304156,
+      "gain_max": 0.6458282564756856
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "model": "shared",
+      "parameters": 4,
+      "pooled_radiance_relative_l2": 0.17087060072219326,
+      "per_region_radiance_relative_l2": [
+        0.2650769871849909,
+        0.12252424021904634,
+        0.10706258521434138
+      ],
+      "gain_min": 0.34015609254223866,
+      "gain_max": 0.5502553589982726
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "model": "shared_with_local_exposure",
+      "parameters": 6,
+      "pooled_radiance_relative_l2": 0.06145691144636117,
+      "per_region_radiance_relative_l2": [
+        0.07180200270930964,
+        0.05176704441285769,
+        0.06248893491095116
+      ],
+      "gain_min": 0.28040099690884135,
+      "gain_max": 0.6067984915326299
+    },
+    {
+      "source_pair": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "model": "independent_regions",
+      "parameters": 12,
+      "pooled_radiance_relative_l2": 0.04853102839951338,
+      "per_region_radiance_relative_l2": [
+        0.032533338059579336,
+        0.03768762563169379,
+        0.06727331411350215
+      ],
+      "gain_min": 0.2897413585974467,
+      "gain_max": 0.6341189648660439
+    }
+  ]
+}

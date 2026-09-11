@@ -1,5 +1,19 @@
 # UMINHO-HSFD original terms and initial source-cube audit
 
+LATEST EXTENSION: three smallest preassigned TRAIN cubes now verified/acquired,
+236,848,136bytes total. Nine manually inspected50x50skin regions provide22,500
+measured spectra, with no clipping or excluded numerical outliers. Annotations,
+face metadata and author rendering source were acquired under their original
+CC BY4.0 item terms; source MATLAB was inspected but not executed/adopted.
+The original paper describes29participants/29faces; original face metadata has
+one row per face. This supports the intended face/person unit, but no independent
+identity audit is claimed. VALIDATION/TEST remain unacquired and unexamined.
+No independently validated automated mask or new phone data was obtained.
+[Extension receipt](provenance/uminho_hsfd_v1/train_expand_v1.json),
+[annotation receipt](provenance/uminho_hsfd_v1/support_v2.json),
+[mechanism results](../benchmarks/skin_spectral_probe_v1/report.md).
+The following initial-acquisition details are retained as historical evidence.
+
 Status: **CLEARED FOR R&D AND COMMERCIAL MODEL TRAINING** under original
 CC BY4.0, subject to attribution and the license terms. Verified on2026-09-11
 in every original Figshare item AND the author README; no re-upload license.

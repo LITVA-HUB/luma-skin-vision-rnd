@@ -1,3 +1,20 @@
+# Material/spatial hypothesis after real-spectral falsifiers 2026-09-11
+
+Skin spectral priors, PCA, positive illuminant models and physical inversion
+are not new in themselves. SCR-AWB2025 is directly relevant prior art; its
+averaged reflectance and sensor knowledge do not satisfy our unknown-person,
+unknown-camera skin measurement objective. Three-face source probes support
+a compact material family but do not demonstrate RGB inversion or an exact
+illumination collision. Shared spatial constraints may help; their survival
+through RGB integration and a nonlinear ISP remains UNVERIFIED.
+
+Next candidate: shared capture reasoning from spatial skin-color relations,
+retaining local shading and absolute nativeLab color, with uncertainty tied to
+remaining ambiguity. A special solver must beat both the plain patch system
+and a matched ordinary spatial network. Merely adding a graph, skin prior,
+recurrence or confidence output is not a defensible novelty claim. No observed
+new real-photo gain yet. [Decision and failure modes](skin_spectral_next_decision.md).
+
 # Capture-conditioning decision 2026-09-11
 
 The54-fit source factorial shows a directional gain, not a universal mechanism

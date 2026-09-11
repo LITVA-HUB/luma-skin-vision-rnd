@@ -1,4 +1,8 @@
 * text=auto eol=lf
+scripts/skin_spectral*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_skin_spectral*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_spectral_probe_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/research/skin_spectral_probe_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.png binary
 *.jpg binary
 *.zip binary
