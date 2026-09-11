@@ -17,6 +17,7 @@ from skin_pair_train import subset,write
 OUT=ROOT/'docs/benchmarks/skin_correction_transfer_v1';RUN=ROOT/'experiments/runs/skin_correction_transfer_v1'
 SOURCE=ROOT/'experiments/runs/skin_sampling_transfer_v1';PROTOCOL=ROOT/'docs/research/skin_correction_transfer_protocol_v1.md'
 SEEDS=(17,29,43)
+RECOVERY=ROOT/'docs/research/skin_correction_transfer_batch_recovery.md'
 
 
 def four_folds(person,camera):
@@ -40,8 +41,23 @@ def route_tables(predictions,fold):
 def source_file(protocol,seed):return SOURCE/f'{protocol}__image__s{seed}'/'final.pt'
 
 
+def predict_domains(length,domains,callback):
+    masks=list(domains.values())
+    if any(np.asarray(m).shape!=(length,) for m in masks) or not np.all(np.sum(masks,axis=0)==1):
+        raise ValueError('Domains must partition evaluation rows')
+    result=np.empty((length,3),np.float32)
+    for mask in masks:
+        indices=np.flatnonzero(mask)
+        if not len(indices):raise ValueError('Empty evaluation domain')
+        result[indices]=callback(indices)
+    return result
+
+
+def active_lock():return OUT/'recovery_lock.json'
+
+
 def bindings():
-    files=[PROTOCOL,Path(__file__),ROOT/'tests/test_skin_correction_transfer.py',ROOT/'scripts/skin_crossfit_correction.py',
+    files=[PROTOCOL,RECOVERY,Path(__file__),ROOT/'tests/test_skin_correction_transfer.py',ROOT/'scripts/skin_crossfit_correction.py',
            ROOT/'scripts/skin_crossfit_correction_train.py',ROOT/'scripts/skin_support_curve.py',ROOT/'scripts/skin_capture_model.py',
            ROOT/'scripts/skin_local_reference_transfer.py',ROOT/'scripts/skin_local_reference_run.py',ROOT/'scripts/skin_mskcc_data.py',
            ROOT/'scripts/skin_mskcc_pixels.py',ROOT/'scripts/skin_mskcc_train_pixels.py',ROOT/'scripts/skin_pair_train.py',ROOT/'src/luma_skin_vision/color.py',
@@ -102,7 +118,7 @@ def run_bank(protocol,seed,tr,va,domains):
     full=predict(core,x,mean,std);oof,matched=route_tables(np.stack(predictions),folds);tables={'in_full':full,'in_matched':matched,'out_person':oof}
     cm=tr['color'].mean(0).astype(np.float32);cs=np.maximum(tr['color'].std(0),1e-6).astype(np.float32)
     target=torch.tensor((tr['target'].astype(np.float32)-ym)/ys,device='cuda');vx=torch.from_numpy(va['tokens']).cuda()
-    base=predict(core,vx,mean,std)
+    base=predict_domains(len(va['target']),domains,lambda ix:predict(core,vx[torch.from_numpy(ix).cuda()],mean,std))
     for domain,mask in domains.items():
         historical=np.load(source_file(protocol,seed).parent/(domain+'.npz'))['prediction']
         np.testing.assert_array_equal(base[mask],historical)
@@ -130,7 +146,10 @@ def run_bank(protocol,seed,tr,va,domains):
             with torch.no_grad():
                 for key,value in [('color_mean',cm),('color_std',cs),('target_mean',ym),('target_std',ys)]:getattr(deployed,key).copy_(torch.tensor(value,device='cuda'))
                 vc=torch.from_numpy(va['color']).cuda()
-                replay=torch.cat([deployed(t,c) for t,c in zip(vx.split(32),vc.split(32))]).cpu().numpy()
+                def evaluate_domain(ix):
+                    idx=torch.from_numpy(ix).cuda();tx,cx=vx[idx],vc[idx]
+                    return torch.cat([deployed(t,c) for t,c in zip(tx.split(32),cx.split(32))]).cpu().numpy()
+                replay=predict_domains(len(va['target']),domains,evaluate_domain)
             gap=float(abs(replay-prediction).max());assert gap<2e-5
             torch.save({'state':{k:v.cpu().clone() for k,v in deployed.state_dict().items()},'seed':seed,'arm':arm,'protocol_sha256':sha(PROTOCOL)},file)
             row.update({'parameters':sum(p.numel() for p in deployed.parameters()),'head_parameters':188035,'checkpoint_sha256':sha(file),
@@ -145,14 +164,22 @@ def run_bank(protocol,seed,tr,va,domains):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('stage',choices=['prepare','fit']);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('stage',choices=['prepare_recovery','fit']);args=parser.parse_args()
     torch.set_num_threads(4);torch.use_deterministic_algorithms(True)
-    OUT.mkdir(parents=True,exist_ok=True);lock=OUT/'source_lock.json';bound=bindings()
-    if args.stage=='prepare':
-        if lock.exists():assert json.loads(lock.read_bytes())['bindings']==bound
-        else:write(lock,{'bindings':bound,'seeds':SEEDS,'inner_core_fits':36,'head_fits':27,'original_cores':9})
-        print('Frozen unchanged correction camera-transfer follow-up');return
+    OUT.mkdir(parents=True,exist_ok=True);original=OUT/'source_lock.json';lock=active_lock();bound=bindings()
+    if args.stage=='prepare_recovery':
+        old=json.loads(original.read_bytes())['bindings']
+        changed={p.replace('\\','/') for p,h in old.items() if bound.get(p)!=h}
+        added={p.replace('\\','/') for p in set(bound)-set(old)}
+        assert changed=={'scripts/skin_correction_transfer.py','tests/test_skin_correction_transfer.py'}
+        assert added=={'docs/research/skin_correction_transfer_batch_recovery.md'}
+        value={'bindings':bound,'original_source_lock_sha256':sha(original),'changed_bindings':sorted(changed),'added_bindings':sorted(added),
+               'reason':'Restore original domain-specific batch32 boundaries; no change to any fit or score definition','seeds':SEEDS,'inner_core_fits':36,'head_fits':27}
+        if lock.exists():assert json.loads(lock.read_bytes())==value
+        else:write(lock,value)
+        print('Frozen batch-boundary recovery; original lock and completed fits preserved');return
     assert json.loads(lock.read_bytes())['bindings']==bound
+    assert json.loads(lock.read_bytes())['original_source_lock_sha256']==sha(original)
     tr,va=load('train'),load('validation');records=[]
     for protocol,t,domains in banks(tr,va):
         for seed in SEEDS:records.append(run_bank(protocol,seed,t,va,domains))
