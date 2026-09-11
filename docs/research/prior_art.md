@@ -1,4 +1,28 @@
-# Pixel research update2026-09-11
+# Fresh paired-invariance mechanism pass 2026-09-11
+
+[VICReg](https://arxiv.org/abs/2105.04906) regularizes agreement, feature variance
+and covariance. Our paired-skin adaptation uses true repeated captures and
+supervised instrument Lab, not a reproduction of the paper's benchmark.
+[Slow feature analysis](https://pubmed.ncbi.nlm.nih.gov/11936959/) is prior art
+for learning invariances from changing observations.
+[Orthogonal signal correction](https://www.sciencedirect.com/science/article/pii/S0169743998001099)
+is spectroscopy prior art for removing unwanted variation; the new hard
+within-site covariance projection is a different empirical implementation,
+not a new principle or faithful OSC reproduction.
+
+[LeJEPA](https://arxiv.org/abs/2511.08544), November2025, studies joint embedding
+and Gaussian regularization. [Weak-SIGReg](https://arxiv.org/abs/2603.05924),
+March2026/ICLR workshop per author record, adapts covariance regularization
+to supervised optimization. Their large/general-dataset claims do not prove
+skin-color accuracy. No code or weights from either was adopted, and the
+current experiment does not implement SIGReg. We test a small explicit
+VICReg objective and retain its negative direct-color results.
+
+[27local source fits](../benchmarks/skin_pair_v1/report.md): capture consistency
+is insufficient for accurate color or successful camera-held-out fitting.
+No special-mechanism novelty is established by this pass.
+
+# Historical pixel research update2026-09-11
 
 Pixel mechanism provenance: [Deep Sets](https://arxiv.org/abs/1703.06114) establishes permutation-invariant set learning; [Huber1964](https://doi.org/10.1214/aoms/1177703732) is foundational robust location estimation. Current patch-vote experiments use these established ideas and confidence weighting; no novelty claimed. Direct instrument Lab estimation already appears in the2026skin prior art below. Our weights are trained locally from scratch on original CC-BY data.
 

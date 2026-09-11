@@ -1,3 +1,20 @@
+# Paired-capture invariance decision 2026-09-11
+
+New source experiments reject unconditional capture invariance as the current
+route to a large skin-color gain. Output consistency and VICReg improve
+same-site repeatability but not direct instrument accuracy; hard nuisance
+projection worsens accuracy. Output consistency loses all six source-camera
+held-out seed/direction contrasts. These27fits and81replays are negative or
+diagnostic evidence, not a new innovation claim. [Report](../benchmarks/skin_pair_v1/report.md).
+
+Next candidate inverts the assumption: estimate latent capture process from
+one image and condition the color reconstruction, preserving useful nuisance
+information rather than removing it. Compare against equal-capacity models
+receiving identical auxiliary capture-mode supervision. Mixtures and auxiliary
+tasks are not novel themselves. Any narrow contribution must demonstrate
+actual direct-color/coverage/compute advantages and independent replication.
+Separately examine perceptual-loss geometry as a standard objective control.
+
 # Independent direct-skin test decision 2026-09-11
 
 Primary matched-search selective hypothesis: small observed80%DeltaE00 gain

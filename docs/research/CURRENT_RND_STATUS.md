@@ -1,4 +1,25 @@
-# Current: independent instrument skin-color test completed
+# Latest research: paired-capture invariance falsified in source screens
+
+27new fits completed: five matched arms x3seeds, then two methods x3seeds
+x2camera directions. This uses ONLY original TRAIN/VALIDATION roles and is
+exploratory. Prior independent400-image test and208-image calibration endpoints
+were not loaded. Source raw baseline mean over seeds3.4855DeltaE00; output
+consistency3.5123; VICReg3.5450; hard3-direction nuisance quotient4.1101.
+Same-site prediction consistency improves without better instrument accuracy.
+Camera-held-out fitting also loses: SLR->iPod5.6063raw versus6.1526consistency;
+iPod->SLR6.1399 versus6.5656. All six paired seed/direction comparisons worsen.
+Source architecture selection had previously seen both cameras: not a new
+independent unseen-camera test. 27fits/81exact prediction-array replays and
+5,544independent scalarDeltaE00 comparisons pass;265tests pass.
+
+[Paired-capture report](../benchmarks/skin_pair_v1/report.md),
+[fixed mechanism/protocol/prior art](skin_pair_invariance_protocol_v1.md).
+Next invert the failed assumption: retain and infer capture-process evidence
+instead of suppressing it; test matched auxiliary-task/conditional estimation
+and perceptual-loss controls on source data. No background training is running.
+The independent benchmark below remains unchanged and authoritative.
+
+# Independent instrument skin-color test completed
 
 Primary endpoint is actual native-Lab skin color, measured with CIEDE2000, not
 illumination angle. Frozen test: 400 images / 105 sites / 10 previously held-out
