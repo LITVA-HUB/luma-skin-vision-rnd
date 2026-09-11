@@ -380,3 +380,16 @@ endpoint is actual skin native Lab, but changing the endpoint does not establish
 novelty. No external code or weights adopted. A fixed-covariance Gaussian patch
 model has a sufficient-mean limitation; simply processing every patch must not
 be called a new source of color information without testing that limitation.
+
+
+## Graph/support and patch-distribution falsifiers (2026-09-11)
+
+84 additional source fits use actual instrument skin Lab / DeltaE00. A graph
+restricted to original training grids plus observed-patch support improves new
+transfer controls, but does not beat strongest historical models. A three-mode
+conditional patch distribution beats one Gaussian, yet mixed mean-trained
+control4.0120 is better than full-patch4.0554. All 12 single-Gaussian fits satisfy
+the sufficient-mean identity. All 48 fits choose strength1 from 1/4/16/64;
+this does not establish the globally optimal temperature. Existing graph,
+mixture and Bayesian mechanisms remain prior art; no new invention is asserted.
+[Decision, assumptions, failure modes and next falsifier](skin_graph_patch_next_decision.md).

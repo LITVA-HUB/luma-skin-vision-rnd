@@ -1,3 +1,19 @@
+# Latest: actual skin color; 84 graph/support and patch-distribution fits complete
+
+Primary endpoint is instrument-native skin Lab / DeltaE00, not illuminant angles.
+36 neural fits and 48 statistical fits completed and audited. Graph/support
+transfer improves new controls (5.6063 to 5.2801; 6.1399 to 5.6610), but does
+not beat strongest historical controls and worsens mixed accuracy. Mixture patch
+likelihood beats one Gaussian but not the strongest compact image model.
+[Decision and both reports](skin_graph_patch_next_decision.md).
+540 exact color arrays; 48 exact statistical refits; 48,576 scalar color cases;
+3,096 coverage rows; Gaussian sufficient-mean and spatial/provenance checks pass.
+348 tests passed, 14 historical warnings, 35.89 seconds. No live training jobs.
+Independent MSKCC primary4.4570/80%4.1591 versus ordinary fusion4.3005/4.1447
+is unchanged. Clinical skin results do not prove ordinary facial-phone accuracy.
+Next: TRAIN-person support/representation falsifier, preserving the graph/support
+combination as a control. Goal remains active and unmet; no universal winner.
+
 # Latest: conditional appearance inversion and support controls complete
 
 Actual native skin DeltaE00. 108 closed-form source fits, plus two support
