@@ -106,3 +106,5 @@
 | 100 | `d19694d2ee` | Freeze unchanged stable correction camera-held-out follow-up |
 | 101 | `054ad5d30c` | Preserve partial fits and restore exact historical domain batch boundaries |
 | 102 | `765a53bc98` | Close research with audited correction transfer failure and 379-test receipt |
+| 103 | `3deaf59ed1` | Document complete research archive with 53-family atlas and source-backed figures |
+| 104 | `134cba6a93` | Normalize generated SVG formatting for clean archive checks |

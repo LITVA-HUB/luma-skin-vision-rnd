@@ -113,7 +113,9 @@ def save(fig, name):
         fig.savefig(FIG / f"{name}.{ext}", dpi=155, bbox_inches="tight")
         if ext == "svg":
             path = FIG / f"{name}.{ext}"
-            clean = "\n".join(line.rstrip() for line in path.read_text(encoding="utf-8").splitlines())
+            clean = "\n".join(
+                line.rstrip() for line in path.read_text(encoding="utf-8").splitlines()
+            )
             path.write_text(clean + "\n", encoding="utf-8", newline="\n")
     plt.close(fig)
 
@@ -393,12 +395,24 @@ def main():
     sha = ""
     subject = ""
     history = []
+    mapping_path = OUT / "commit_map.json"
+    mapping = (
+        json.loads(mapping_path.read_text(encoding="utf-8"))["original_to_public"]
+        if mapping_path.exists()
+        else {}
+    )
+    reverse_mapping = {public: original for original, public in mapping.items()}
+    include_commit = True
     for line in commits:
         if line.startswith("COMMIT "):
             _, sha, subject = line.split(" ", 2)
+            include_commit = not mapping or sha in mapping or sha in reverse_mapping
+            if not include_commit:
+                continue
+            sha = reverse_mapping.get(sha, sha)
             order += 1
             history.append({"original_commit": sha, "subject": subject, "order": order})
-        elif line.startswith("docs/benchmarks/"):
+        elif include_commit and line.startswith("docs/benchmarks/"):
             parts = line.split("/")
             if len(parts) > 3:
                 first.setdefault(parts[2], (order, sha))
