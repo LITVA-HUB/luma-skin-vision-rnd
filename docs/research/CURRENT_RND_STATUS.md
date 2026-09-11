@@ -1,3 +1,23 @@
+# Latest: measured skin material controls; no new photo-accuracy claim
+
+ISSA v4 roles frozen before numeric endpoints;8,680TRAIN/1,822VALIDATION.
+15fixed PCA configurations plus mean control complete. Full-spectrum oracle
+color preservation on1,156common-support validation records: linear3 mean
+0.44949/p951.05644; density8 mean0.02365/p950.06113DeltaE00. The tested two-dimensional PCA
+bases lose color; other nonlinear2Dmodels remain untested. These are not RGB/phone results.
+
+Original15,256records verified,2,107subject codes versus2,113reported.
+17cross-split exact spectra from two validation labels found; none is in
+the1,156-record color subset. Post-hoc exclusions preserve all color scores.
+Identity and near-duplicate limitations remain explicit. Source Lab convention
+replayed; it differs from MSKCC D65/10degree. TEST/reserved sources untouched.
+
+18,496independent scalar color checks pass; weighted SVD independently agrees
+with eigenbasis reconstruction. [Report](../benchmarks/skin_issa_v1/report.md),
+[decision](skin_issa_next_decision.md). 314tests passed,14historicalwarnings,32.98s. No live training job.
+Primary independent MSKCC photo errors remain4.4570/4.1591; stronger ordinary
+fusion4.3005/4.1447. No proposed photo-accuracy win. Goal active and unmet.
+
 # Latest: 36 local-teacher fits rejected; measured-material source acquired
 
 Actual skin Lab / DeltaE00 remains primary. Aligned teacher descriptors give

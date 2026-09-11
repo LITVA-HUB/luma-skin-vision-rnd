@@ -341,3 +341,7 @@ v4 CC BY4.0 rights and acquisition now verified; measured reflectance priors
 are the next different source of knowledge, with colorimetry/support checks
 required first. No spectral or photo accuracy from ISSA is measured yet.
 [Decision and evidence](skin_local_teacher_next_decision.md).
+
+## ISSA material screen and recent optical-locus prior art
+
+[The optical origin of the human skin color banana in CIELAB space](https://pmc.ncbi.nlm.nih.gov/articles/PMC13307969/) links physical skin models and ISSA color geometry. Skin-material manifolds, chromophore models and spectral PCA are not novel. Our fixed controls show representation fidelity, not image inversion. See [material report](../benchmarks/skin_issa_v1/report.md).

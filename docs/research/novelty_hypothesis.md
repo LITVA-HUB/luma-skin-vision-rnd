@@ -267,3 +267,7 @@ v4 CC BY4.0 rights and acquisition now verified; measured reflectance priors
 are the next different source of knowledge, with colorimetry/support checks
 required first. No spectral or photo accuracy from ISSA is measured yet.
 [Decision and evidence](skin_local_teacher_next_decision.md).
+
+## Measured-material branch: not yet a photo-accuracy contribution
+
+Fifteen fixed ISSA oracle controls demonstrate that2latent variables lose color and8can preserve it well with full spectral input. This does not solve the inverse problem. An image material decoder must beat matched ordinary bottlenecks; a competing feasible-color-set branch should refuse when plausible explanations disagree. Observer/support mismatch and duplicate source records are explicit limits. [Decision](skin_issa_next_decision.md).

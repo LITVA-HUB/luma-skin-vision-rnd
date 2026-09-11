@@ -1,0 +1,27 @@
+{
+  "scope": "ISSA material controls; no camera accuracy gain",
+  "pytest": {
+    "passed": 314,
+    "warnings": 14,
+    "seconds": 32.98,
+    "session": 44052,
+    "exit_code": 0
+  },
+  "independent_audit": "docs/benchmarks/skin_issa_v1/independent_audit.json",
+  "overlap_sensitivity": "docs/benchmarks/skin_issa_v1/overlap_sensitivity.json",
+  "prior_test_reopened": false,
+  "new_tests": 7,
+  "new_tests_red_seen": true,
+  "workbook_modified": false,
+  "training_and_validation_caches_ignored": true,
+  "extraction_and_material_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "environment": "bundled read-only spreadsheet extraction and numerical intermediates"
+  },
+  "independent_scalar_verifier_runtime": {
+    "python": "3.12.6",
+    "numpy": "2.5.3",
+    "environment": "repository venv; archived independent scalar implementation imports joblib absent from bundled runtime"
+  }
+}

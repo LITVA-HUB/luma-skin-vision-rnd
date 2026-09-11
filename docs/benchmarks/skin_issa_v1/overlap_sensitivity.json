@@ -1,0 +1,445 @@
+{
+  "bindings": {
+    "docs/benchmarks/skin_issa_v1/independent_audit.json": "64129495ada194b5ecd7ead4fe11d5befed374527d0fd334d3fc0456570960a5",
+    "docs/benchmarks/skin_issa_v1/material_results.json": "a3c0027a78e3914820d1ae0cbfd860189f1df36d1ded2ab06de40f85c0153900",
+    "scripts/skin_issa_overlap.py": "4b8b5b1e438f4be0b73e0355e04c9769c6dc8ed6fe660c12fef5f0a7a9a1ffce"
+  },
+  "excluded_color_records": 0,
+  "excluded_labels_by_origin": {
+    "1": 0,
+    "2": 1,
+    "3": 1,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0
+  },
+  "excluded_validation_records": 17,
+  "excluded_validation_subject_labels": 2,
+  "exclusion_rule": "Remove every validation subject label connected to any TRAIN label through any exact common31 spectrum, including transitive connections",
+  "graph_and_fixed_point_agree": true,
+  "limitation": "Exact spectra can indicate duplicated records, not necessarily identical people; remaining near-duplicates or differently labelled people are unresolved.",
+  "no_refit_or_hyperparameter_selection": true,
+  "records": [
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 27.523265706875616,
+        "mean": 7.083982920852196,
+        "median": 5.777673564478595,
+        "p95": 17.559403418842187
+      },
+      "mean_subject_delta_e00": 7.158597744680965,
+      "method": "mean",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 3.7844797233453016,
+        "mean": 0.25257053220235454,
+        "median": 0.16454941655052732,
+        "p95": 0.9229979745746413
+      },
+      "spectral_rmse": {
+        "max": 0.22564991808842816,
+        "mean": 0.059551348764096075,
+        "median": 0.04877751258918646,
+        "p95": 0.14041916109288932
+      },
+      "width": 0,
+      "worst_source_mean": 15.45910810568492
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 11.37344377529847,
+        "mean": 2.3958988006085375,
+        "median": 2.1300707536499397,
+        "p95": 5.547107485750821
+      },
+      "mean_subject_delta_e00": 2.4756619397632216,
+      "method": "reflectance",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.26747843647797304,
+        "mean": 0.03183657914914577,
+        "median": 0.02815960231076251,
+        "p95": 0.06709527641488924
+      },
+      "spectral_rmse": {
+        "max": 0.027386576541426528,
+        "mean": 0.008770904873267444,
+        "median": 0.007718912150139502,
+        "p95": 0.018227598348925237
+      },
+      "width": 2,
+      "worst_source_mean": 3.563028433346342
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 3.4160429100419156,
+        "mean": 0.44948700437557826,
+        "median": 0.36018278743309196,
+        "p95": 1.0564396693376807
+      },
+      "mean_subject_delta_e00": 0.44886883371069214,
+      "method": "reflectance",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.16056588980559416,
+        "mean": 0.01761147119278815,
+        "median": 0.014239633892664952,
+        "p95": 0.03904875120344825
+      },
+      "spectral_rmse": {
+        "max": 0.02119141069708042,
+        "mean": 0.004855969147155664,
+        "median": 0.004033736675087616,
+        "p95": 0.010902057302567634
+      },
+      "width": 3,
+      "worst_source_mean": 0.6943912510983303
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 4.95496597789996,
+        "mean": 0.42066443103178525,
+        "median": 0.3308450251218743,
+        "p95": 1.0115005176687168
+      },
+      "mean_subject_delta_e00": 0.42331615063076733,
+      "method": "reflectance",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.13675832533902324,
+        "mean": 0.011500244506957087,
+        "median": 0.009194949424095418,
+        "p95": 0.0265582453041325
+      },
+      "spectral_rmse": {
+        "max": 0.015113282391113583,
+        "mean": 0.003108152589556223,
+        "median": 0.002645404556315298,
+        "p95": 0.0067755408939567255
+      },
+      "width": 4,
+      "worst_source_mean": 0.7691916595157509
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 1.993446094998937,
+        "mean": 0.20387886453861687,
+        "median": 0.13738667728586124,
+        "p95": 0.6061603821148835
+      },
+      "mean_subject_delta_e00": 0.20529768607220716,
+      "method": "reflectance",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.03880446993039578,
+        "mean": 0.005353645938724284,
+        "median": 0.004462323410971004,
+        "p95": 0.011168290241033003
+      },
+      "spectral_rmse": {
+        "max": 0.00842728961093594,
+        "mean": 0.001519305058389744,
+        "median": 0.001258821551703891,
+        "p95": 0.003388175519641482
+      },
+      "width": 6,
+      "worst_source_mean": 0.3478063736130441
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 0.3973089611336606,
+        "mean": 0.05669069140911862,
+        "median": 0.04901561860567426,
+        "p95": 0.1332290770997415
+      },
+      "mean_subject_delta_e00": 0.05921345568904894,
+      "method": "reflectance",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.01806620616074678,
+        "mean": 0.0034984337564947362,
+        "median": 0.0030561770742407075,
+        "p95": 0.006529057111645056
+      },
+      "spectral_rmse": {
+        "max": 0.0042992889667054935,
+        "mean": 0.0009911067207846712,
+        "median": 0.0008554724590414621,
+        "p95": 0.0020080591040021337
+      },
+      "width": 8,
+      "worst_source_mean": 0.06751636285324257
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 9.975003342184955,
+        "mean": 2.35331643585467,
+        "median": 1.990194921983281,
+        "p95": 5.524600822152134
+      },
+      "mean_subject_delta_e00": 2.334192603327992,
+      "method": "density",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.2176590338460818,
+        "mean": 0.04428797855051333,
+        "median": 0.03969235630557978,
+        "p95": 0.09059723320837094
+      },
+      "spectral_rmse": {
+        "max": 0.0624715665359253,
+        "mean": 0.01279570748528612,
+        "median": 0.011192563403715865,
+        "p95": 0.02701251522854192
+      },
+      "width": 2,
+      "worst_source_mean": 4.538934267305141
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 6.059770823200923,
+        "mean": 0.6833508092451006,
+        "median": 0.5786106361215271,
+        "p95": 1.533312010455572
+      },
+      "mean_subject_delta_e00": 0.6980557295381369,
+      "method": "density",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.12237961338185863,
+        "mean": 0.020162442645976157,
+        "median": 0.016439648717253123,
+        "p95": 0.04565406964217507
+      },
+      "spectral_rmse": {
+        "max": 0.023248914711736398,
+        "mean": 0.005596985809378803,
+        "median": 0.0046926917031874914,
+        "p95": 0.012798281366237878
+      },
+      "width": 3,
+      "worst_source_mean": 0.8749893392674528
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 2.356127655185275,
+        "mean": 0.38102784658621053,
+        "median": 0.30236616258032123,
+        "p95": 1.0357031854808452
+      },
+      "mean_subject_delta_e00": 0.3917226991919916,
+      "method": "density",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.08346614138451205,
+        "mean": 0.011568385352241743,
+        "median": 0.00925304383026571,
+        "p95": 0.02635606944182424
+      },
+      "spectral_rmse": {
+        "max": 0.01616229754901663,
+        "mean": 0.003200935676111449,
+        "median": 0.00267629992599085,
+        "p95": 0.007202729728577788
+      },
+      "width": 4,
+      "worst_source_mean": 0.531472311181801
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 1.6745029001926321,
+        "mean": 0.20626929792803936,
+        "median": 0.14997435146553684,
+        "p95": 0.57897915267865
+      },
+      "mean_subject_delta_e00": 0.20710387462991586,
+      "method": "density",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.03949683358004854,
+        "mean": 0.005525571051657105,
+        "median": 0.004584677721409792,
+        "p95": 0.01146273063333302
+      },
+      "spectral_rmse": {
+        "max": 0.0089521296830965,
+        "mean": 0.0015834861608414442,
+        "median": 0.0013105083458932148,
+        "p95": 0.0036116620710689184
+      },
+      "width": 6,
+      "worst_source_mean": 0.2774686679379915
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 0.24314580935766683,
+        "mean": 0.023645975210467008,
+        "median": 0.0169599620767997,
+        "p95": 0.061125337322399845
+      },
+      "mean_subject_delta_e00": 0.02313317839838493,
+      "method": "density",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.038682510726972666,
+        "mean": 0.004060255696719501,
+        "median": 0.0032800547511005855,
+        "p95": 0.009263849618927735
+      },
+      "spectral_rmse": {
+        "max": 0.006101413342270493,
+        "mean": 0.0011651542171829446,
+        "median": 0.000945184121918142,
+        "p95": 0.0028594264265500912
+      },
+      "width": 8,
+      "worst_source_mean": 0.07056442476552748
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 10.092479578687676,
+        "mean": 2.532266374399748,
+        "median": 2.2302956071295656,
+        "p95": 5.706472797838213
+      },
+      "mean_subject_delta_e00": 2.5561066270921735,
+      "method": "logit",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.20061957234052075,
+        "mean": 0.0362949941232859,
+        "median": 0.03322874043576426,
+        "p95": 0.07316390627939634
+      },
+      "spectral_rmse": {
+        "max": 0.042280688345961784,
+        "mean": 0.01036613116860623,
+        "median": 0.009146168268877484,
+        "p95": 0.02211710357405031
+      },
+      "width": 2,
+      "worst_source_mean": 4.352335402900319
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 6.050805705989684,
+        "mean": 0.6223740072079746,
+        "median": 0.5431129881446137,
+        "p95": 1.3794662115066123
+      },
+      "mean_subject_delta_e00": 0.6384722403423655,
+      "method": "logit",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.13285566899110382,
+        "mean": 0.019193376188173274,
+        "median": 0.015542705579961362,
+        "p95": 0.04385041564987779
+      },
+      "spectral_rmse": {
+        "max": 0.02226649363899097,
+        "mean": 0.005317813589174939,
+        "median": 0.004431939436528995,
+        "p95": 0.012289833038658899
+      },
+      "width": 3,
+      "worst_source_mean": 0.8551206115000554
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 2.518622711698592,
+        "mean": 0.3893287352981576,
+        "median": 0.31253973984682426,
+        "p95": 0.9624248004087335
+      },
+      "mean_subject_delta_e00": 0.39876641007765656,
+      "method": "logit",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.07862250487085215,
+        "mean": 0.011076583833073639,
+        "median": 0.00885789963980796,
+        "p95": 0.025502872265219474
+      },
+      "spectral_rmse": {
+        "max": 0.015513288186381567,
+        "mean": 0.0030603929198694028,
+        "median": 0.002537294892407227,
+        "p95": 0.006792721719332499
+      },
+      "width": 4,
+      "worst_source_mean": 0.5777692675020095
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 1.7667446564651657,
+        "mean": 0.20448896693356386,
+        "median": 0.147820906717464,
+        "p95": 0.5725303431542356
+      },
+      "mean_subject_delta_e00": 0.20583360907268838,
+      "method": "logit",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.037638041265948594,
+        "mean": 0.005320203432292548,
+        "median": 0.004422456988984964,
+        "p95": 0.01113457970176868
+      },
+      "spectral_rmse": {
+        "max": 0.008693297210958425,
+        "mean": 0.0015213633691297296,
+        "median": 0.0012754837188823699,
+        "p95": 0.0034498499857444818
+      },
+      "width": 6,
+      "worst_source_mean": 0.28845043890452593
+    },
+    {
+      "color_records": 1156,
+      "delta_e00": {
+        "max": 0.1862777523182062,
+        "mean": 0.02592025253131145,
+        "median": 0.01915285263861069,
+        "p95": 0.06746554330692606
+      },
+      "mean_subject_delta_e00": 0.02572613214537582,
+      "method": "logit",
+      "spectral_records": 1805,
+      "spectral_relative_l2": {
+        "max": 0.037038532511360335,
+        "mean": 0.003920991804857027,
+        "median": 0.0031736228730346767,
+        "p95": 0.008832085378003666
+      },
+      "spectral_rmse": {
+        "max": 0.005842107769011904,
+        "mean": 0.001119436561932621,
+        "median": 0.0009087142575461642,
+        "p95": 0.002757325194691665
+      },
+      "width": 8,
+      "worst_source_mean": 0.05928044658824018
+    }
+  ],
+  "remaining_color_records": 1156,
+  "reserved_numerical_endpoints_read": false,
+  "scope": "POST-HOC descriptive exclusion; original models/split/results unchanged; not an independent confirmation"
+}
