@@ -111,6 +111,10 @@ def write(path, value):
 def save(fig, name):
     for ext in ("png", "svg"):
         fig.savefig(FIG / f"{name}.{ext}", dpi=155, bbox_inches="tight")
+        if ext == "svg":
+            path = FIG / f"{name}.{ext}"
+            clean = "\n".join(line.rstrip() for line in path.read_text(encoding="utf-8").splitlines())
+            path.write_text(clean + "\n", encoding="utf-8", newline="\n")
     plt.close(fig)
 
 
