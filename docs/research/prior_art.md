@@ -397,3 +397,21 @@ must not be represented as guaranteed error. No code/weights adopted.
 The current native-Lab loss field also relates to this repository's earlier
 illuminant action-field work and established conditional risk minimization.
 Changing the endpoint to skin color does not by itself establish novelty.
+
+
+## Observed skin patch support and routing (2026-09-11)
+
+45 matched real-photograph fits show only a directional source transfer gain,
+with mixed-population harm. True local source labels do not rescue frozen
+experts on TRAIN virtual bags. Neither patch augmentation nor mixture routing
+is claimed as new. [Decision](skin_capture_support_next_decision.md).
+Prior art includes [AugMix](https://arxiv.org/abs/1912.02781),
+[MixStyle](https://arxiv.org/abs/2104.02008),
+[StyleMix](https://openaccess.thecvf.com/content/CVPR2021/html/Hong_StyleMix_Separating_Content_and_Style_for_Enhanced_Data_Augmentation_CVPR_2021_paper.html)
+and [MixUp-MIL](https://arxiv.org/abs/2211.05862). These are related augmentation
+mechanisms, not protocols reproduced here. Generic color/style invariance may
+remove the desired skin color information. Restricting derived bags to observed
+same-site patches preserves reference provenance, but proves neither physical
+realizability of the composed image nor technical novelty. No external code
+or weights from these works adopted. No skin accuracy gain follows from an
+illuminant-angle result.

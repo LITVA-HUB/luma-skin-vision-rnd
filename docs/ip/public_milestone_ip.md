@@ -21,3 +21,14 @@ Training/error-calibration weights derive only from CC BY4.0 SimpleCube++. Sony 
 Fresh prior art overlaps all three candidates. Results do not demonstrate selective gain over the strongest matched baseline or general camera-independent reliability. There is no present basis for asserting a novel/patentable uncertainty-aware ensemble. A future claim needs a narrower mechanism, independent claim analysis and positive matched evidence on locked diverse-camera data.
 
 Preserve both negative synthetic and new mixture/transfer findings in later project, investor or Skolkovo discussion. Do not cherry-pick modest all-coverage point improvements.
+
+
+## Observed skin patch support update (2026-09-11)
+
+45 matched source fits and a six-model TRAIN diagnostic are preserved in
+[the report](../benchmarks/skin_capture_support_v1/report.md). Original MSKCC
+CC-BY provenance applies; no additional data or external weights adopted.
+Observed-patch augmentation and conditional routing overlap established
+methods. No novelty, patentability, universal camera or product-readiness claim
+is established. All native skin color negatives and the earlier synthetic
+failure remain available. No participant images or identifiers are committed.

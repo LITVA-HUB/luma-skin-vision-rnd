@@ -1,0 +1,141 @@
+{
+  "arm": "paired_stratified",
+  "seed": 29,
+  "protocol": "from_SLR",
+  "best_epoch": 80,
+  "selection_patient_mean": 3.4283067419913187,
+  "scores": {
+    "full": {
+      "n": 132,
+      "people": 3,
+      "sites": 33,
+      "mean": 4.733616692222544,
+      "median": 4.719545798991988,
+      "p90": 7.934140848681919,
+      "p95": 8.39071578687427,
+      "above_5_fraction": 0.45454545454545453,
+      "above_10_fraction": 0.022727272727272728,
+      "patient_balanced_mean": 4.733616692222543
+    },
+    "coverage": [
+      {
+        "requested_coverage": 1.0,
+        "accepted": 132,
+        "n": 132,
+        "people": 3,
+        "sites": 33,
+        "mean": 4.733616692222543,
+        "median": 4.719545798991988,
+        "p90": 7.934140848681919,
+        "p95": 8.39071578687427,
+        "above_5_fraction": 0.45454545454545453,
+        "above_10_fraction": 0.022727272727272728,
+        "patient_balanced_mean": 4.733616692222543
+      },
+      {
+        "requested_coverage": 0.95,
+        "accepted": 126,
+        "n": 126,
+        "people": 3,
+        "sites": 33,
+        "mean": 4.671408356997847,
+        "median": 4.5875481227079105,
+        "p90": 7.979360431528132,
+        "p95": 8.427261378695604,
+        "above_5_fraction": 0.42857142857142855,
+        "above_10_fraction": 0.023809523809523808,
+        "patient_balanced_mean": 4.653074474515568
+      },
+      {
+        "requested_coverage": 0.9,
+        "accepted": 119,
+        "n": 119,
+        "people": 3,
+        "sites": 33,
+        "mean": 4.67332440952805,
+        "median": 4.581150316012443,
+        "p90": 8.038309423165654,
+        "p95": 8.514088568728589,
+        "above_5_fraction": 0.42016806722689076,
+        "above_10_fraction": 0.025210084033613446,
+        "patient_balanced_mean": 4.6251668653631315
+      },
+      {
+        "requested_coverage": 0.8,
+        "accepted": 106,
+        "n": 106,
+        "people": 3,
+        "sites": 33,
+        "mean": 4.748376327949468,
+        "median": 4.719545798991988,
+        "p90": 8.20061488657957,
+        "p95": 8.88051001491079,
+        "above_5_fraction": 0.44339622641509435,
+        "above_10_fraction": 0.02830188679245283,
+        "patient_balanced_mean": 4.651428268616413
+      },
+      {
+        "requested_coverage": 0.7,
+        "accepted": 93,
+        "n": 93,
+        "people": 3,
+        "sites": 33,
+        "mean": 4.867336106761769,
+        "median": 4.862686382271559,
+        "p90": 8.27296039961175,
+        "p95": 9.149347642311389,
+        "above_5_fraction": 0.4731182795698925,
+        "above_10_fraction": 0.03225806451612903,
+        "patient_balanced_mean": 4.785016741306723
+      },
+      {
+        "requested_coverage": 0.6,
+        "accepted": 80,
+        "n": 80,
+        "people": 3,
+        "sites": 31,
+        "mean": 5.138968911625296,
+        "median": 5.128545653289336,
+        "p90": 8.310039952469396,
+        "p95": 9.35321664785654,
+        "above_5_fraction": 0.5125,
+        "above_10_fraction": 0.0375,
+        "patient_balanced_mean": 5.153785016860029
+      }
+    ],
+    "predicted_error_mae_or_dispersion_mae": 5.456972319126899
+  },
+  "initial_sha256": "84f1cff58d15250f762bec5d60e64b7d66f90c1955d2f4aab19229b732e8c350",
+  "best_sha256": "7a8609acf737a63b6b3267d7dcbb7540610c1a700fc28cd0cf48d454a9532fda",
+  "final_sha256": "7a8609acf737a63b6b3267d7dcbb7540610c1a700fc28cd0cf48d454a9532fda",
+  "evaluation_sha256": "9a6f504897edacc9ea7b967198b54cc9bc913dc3732add44e6df56a05a48fb4f",
+  "plan_sha256": "5458472ca6fb72ea142255cde32b6bf40426325bcbac208ac7eb8d3a7e8b1440",
+  "pair_draw_sha256": "029c7e356264fba78f3c28c9e8a676a823c34b2d2ca00c9756aa4930fda66899",
+  "augmentation_counts": {
+    "processed_bags": 28160,
+    "partner_patch_slots": 452073,
+    "softened_mode_bags": 13617,
+    "requested_input_augmented_bags": 13994
+  },
+  "parameters": 929297,
+  "checkpoint_bytes": 3722227,
+  "fit_peak_allocated_mib": 104.47705078125,
+  "fit_seconds": 3.9430525000207126,
+  "train_people": 8,
+  "selection_people": 3,
+  "evaluation_people": 3,
+  "train_images": 323,
+  "evaluation_images": 132,
+  "train_cameras": [
+    "SLR"
+  ],
+  "evaluation_cameras": [
+    "ipod"
+  ],
+  "protocol_sha256": "55bad7b2209921edab7ea9be8ca9c198ea0571b42aa1cac6e39e3b6520dd6e1f",
+  "training_code_sha256": "16df3673039976ccf89fbec32bad9e05a823990a31bd7ca94de47c6776d29d4c",
+  "augmentation_code_sha256": "44423119c5b289cfea026555f9a24957df62e4075b22495611b6969a07580499",
+  "source_exploratory_only": true,
+  "risk_calibrated": false,
+  "reserved_endpoint_access": false
+}

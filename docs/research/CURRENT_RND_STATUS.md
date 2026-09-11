@@ -1,3 +1,18 @@
+# Latest: skin color remains the endpoint; 45 support fits complete
+
+All current scores below are actual instrument-referenced skin DeltaE00, not
+illuminant degrees. Paired sampling improves one source transfer direction
+5.0193 to 4.8328, but mixed-source accuracy worsens 3.4406 to 3.5619. No universal
+win. Known-source local routing does not rescue six frozen models on TRAIN bags.
+[Decision](skin_capture_support_next_decision.md),
+[results](../benchmarks/skin_capture_support_v1/report.md).
+135 exact color arrays, 7,920 scalar color cases and 276,480 patch provenance
+checks; 42,630 additional scalar routing checks. 333 tests passed with 14
+historical warnings. All jobs terminal; no new training running.
+Independent mean remains 4.4570 versus ordinary fusion 4.3005; ordinary phone
+facial accuracy remains unvalidated. Next compare removal versus explicit
+supervision of conditional experts. Goal active and unmet.
+
 # Latest: matched risk crossing and36native skin-loss-field fits complete
 
 Mixed-source80%crossing3.1954 versus ordinary-pair3.3625 is partial evidence;
