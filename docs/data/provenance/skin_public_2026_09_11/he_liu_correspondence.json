@@ -1,0 +1,47 @@
+{
+  "scope": "Cross-deposit chart correspondence only. No FSCD/Testing numeric targets read.",
+  "raw_exact_match": false,
+  "raw_max_difference": 0.2777443724765417,
+  "records": [
+    {
+      "integration": "10nm_400_700",
+      "white_xyz": [
+        93.28516286245835,
+        100.0,
+        106.20829012322046
+      ],
+      "max_xyz_difference": 4.460413657520419,
+      "xyz_rmse": 2.759922305024458,
+      "tolerance_1e_minus6_pass": false
+    },
+    {
+      "integration": "1nm_400_700",
+      "white_xyz": [
+        93.2039457557642,
+        100.00000000000004,
+        105.89861722489293
+      ],
+      "max_xyz_difference": 4.68519312411938,
+      "xyz_rmse": 2.804705303137587,
+      "tolerance_1e_minus6_pass": false
+    },
+    {
+      "integration": "1nm_380_780_constant_reflectance_tails",
+      "white_xyz": [
+        93.2418047962286,
+        99.99999999999991,
+        106.00282470492645
+      ],
+      "max_xyz_difference": 4.642262112701744,
+      "xyz_rmse": 2.793429164324113,
+      "tolerance_1e_minus6_pass": false
+    }
+  ],
+  "decision": "No inferred skin white point is authorized by this diagnostic alone; retain original capture/physical correspondence uncertainty.",
+  "sha256": {
+    "he_workbook": "e3ad5b30a828c542ba2d23dd7fe57cddf0c3de2a163f1815cd2e482a816484a8",
+    "liu_workbook": "ed665191c04c76683afa69d31857e96de7834bf28b67c77aacdbc50fc082cdc6",
+    "cmf": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+    "script": "07c32b50c89320ed4b80127f51aca4ac8b23d594dae56513663323c26de3db95"
+  }
+}
