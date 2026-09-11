@@ -1,94 +1,92 @@
-# Luma photometric normalization / reliability — R&D
+<div align="center">
 
-The active milestone uses **real public color-constancy ground truth** to evaluate a compact single-image normalization and reliability component. **Skin-color accuracy remains NOT MEASURED.** A proprietary instrument-paired facial dataset is unavailable; public-data research continues under that hard constraint.
+# Luma Skin Vision · Research Archive
 
-**New CC v2:** [camera-transfer report](docs/benchmarks/cc_v2_report.md) measures3.805° reproduction error at80% acceptance on384 fresh unseen-camera images versus5.558° for strong matched C+ (31.5% reduction). Source and Canon regress; cheap GW+ridge remains competitive. The3.034M model has verified FP32 ONNX,4.181ms RTX4060 model-only latency,24.691ms PNG-to-score. [Reproduce V2](docs/benchmarks/cc_v2/REPRODUCE.md), [current Skolkovo evidence](docs/skolkovo/cc_v2_evidence_addendum.md). No skin-color or novelty claim is established.
+**Компактные модели цвета кожи, цветовая нормализация и оценка надёжности**
 
-Historical V1: read the [real benchmark report](docs/benchmarks/public_benchmark_report.md), [current status](docs/research/CURRENT_RND_STATUS.md), [original-license inventory](docs/data/public_dataset_inventory.md) and [Skolkovo evidence](docs/skolkovo/public_evidence_addendum.md). Three seeds on SimpleCube++: Proposed2.085° mean reproduction error, C+2.166°, Shades of Gray3.573°. At80% coverage the strong control without a mixture wins1.556° versus Proposed1.586°. External Sony transfer remains unsuccessful against the strongest classical method. Special-mechanism advantage is not established.
+Реальные публичные данные · воспроизводимые контроли · отрицательные результаты
 
-## Reproduce the public milestone
+[Исследовательский отчёт](docs/publication/RESEARCH_REPORT_RU.md) · [Все поколения](docs/publication/GENERATIONS.md) · [Галерея](docs/publication/GALLERY.md) · [Воспроизведение](docs/publication/REPRODUCIBILITY.md)
 
-```powershell
-uv sync --all-extras
-.venv/Scripts/python scripts/download_public_cc.py
-.venv/Scripts/python scripts/download_sony_pilot.py
-.venv/Scripts/python scripts/prepare_public_cc.py
-.venv/Scripts/python scripts/classical_public_cc.py
-.venv/Scripts/python -m luma_skin_vision.cc.benchmark train --out experiments/runs/cc_official_baseline_s17 --method baseline --seed 17
-.venv/Scripts/python -m luma_skin_vision.cc.benchmark evaluate --out experiments/runs/cc_official_baseline_s17
-.venv/Scripts/python -m luma_skin_vision.cc.benchmark train --out experiments/runs/cc_official_proposed_s17 --method proposed --seed 17
-.venv/Scripts/python -m luma_skin_vision.cc.benchmark evaluate --out experiments/runs/cc_official_proposed_s17
-.venv/Scripts/python scripts/run_public_cc_replications.py
-.venv/Scripts/python scripts/profile_public_cc.py
-.venv/Scripts/python scripts/report_public_cc.py
+![Путь исследования](docs/publication/figures/research_journey.png)
+
+</div>
+
+> **Исследования остановлены 11 сентября 2026 по решению автора проекта.** Это завершённый архив. Универсальная точная модель цвета кожи для обычных смартфонов пока не получена. Неудачные гипотезы и сильные обычные контроли сохранены.
+
+## Что удалось измерить
+
+На **реальных фотографиях кожи с приборным эталоном** основной компактный ансамбль получил **4,457 ΔE00** на независимом тесте из **400 изображений / 10 новых людей**. При принятии 80% изображений ошибка составила **4,159 ΔE00**. Это измерение цвета кожи, а не угловая ошибка освещения.
+
+| Независимый MSKCC тест, известные камеры | Полное покрытие · mean ΔE00 ↓ | 80% покрытия · mean ΔE00 ↓ |
+|---|---:|---:|
+| C+ — тот же цветовой ансамбль, стандартный error head | 4,457 | 4,333 |
+| Proposed — дополнительные признаки несогласия | 4,457 | 4,159 |
+| Обычная fusion из шести моделей — более крупный контроль | **4,300** | **4,145** |
+
+Разница Proposed−C+ при 80%: −0,174 ΔE00; 95% интервал по людям **[−0,568; +0,165]** пересекает ноль. **Убедительная победа специального механизма не доказана; сильнейший обычный полный контроль не побеждён.** Эталон — среднее опубликованных SkinColorCatch Lab измерений участка кожи в исходной D65/10° конвенции. Это клинические/дермоскопические снимки Canon SLR и iPod Touch, не обычные селфи.
+
+![Независимый тест цвета кожи](docs/publication/figures/independent_skin.png)
+
+[Полный независимый отчёт](docs/benchmarks/skin_mskcc_selective_v1/report.md) · [Исходный JSON](docs/benchmarks/skin_mskcc_selective_v1/test_results.json) · [Профиль вычислений](docs/benchmarks/skin_mskcc_selective_v1/profile.json)
+
+## Все поколения — вместе с неудачами
+
+Архив содержит **53 каталога бенчмарков**, исходники, протоколы, source locks, проверки, историю обучения, JSON/CSV, графики и журнал решений. Каталоги включают переоценки и служебные материалы: это не 53 независимых архитектуры. В сводном CSV сохранены **1 532 строки опубликованных таблиц**; разные протоколы не объединены в искусственный рейтинг.
+
+| Линия исследования | Что проверяли | Итог |
+|---|---|---|
+| [Синтетический прототип](docs/benchmarks/benchmark_results.md) | Pipeline, A0/A1/A2/C/C+/Proposed, ONNX | Proposed проиграл A2; исходное состояние сохранено |
+| [Color constancy V1–V2](docs/benchmarks/cc_v2_report.md) | Классические якоря, residual, selective risk | V2: 3,805° против 5,558° у matched C+ при 80% на внешней выборке; не skin accuracy |
+| [V3–V7](docs/publication/GENERATIONS.md) | Цветовые базисы, графы, критик, повторные проходы, teacher, виртуальные сенсоры | Сложная архитектура и скрещивание компонентов не обеспечили общего прироста |
+| [Samsung/Oppo](docs/benchmarks/phone_v1_alias_report.md) | Source-only модели на Beyond RGB | 79/88 пригодных эталонов; старая V2 сильнее новых критиков; не JPEG/HEIC skin benchmark |
+| [Прямой цвет кожи](docs/benchmarks/skin_mskcc_selective_v1/report.md) | JPEG→Lab, patch votes, CNN, fusion, OOF error head | Независимые приборные измерения получены; продуктовая цель не достигнута |
+| [Механизмы и альтернативы](docs/publication/GENERATIONS.md) | Спектры, вероятностные поля, обратная задача, relational и local-reference модели | Отдельные source gains; нет доказанной универсальной модели |
+| [Последняя проверка](docs/benchmarks/skin_correction_transfer_v1/report.md) | Корректор +188 035 параметров и перенос между камерами | Внутренний выигрыш 7,40% не перенёсся: все три head ухудшили оба направления |
+
+![Внутренний результат и отрицательный перенос](docs/publication/figures/correction_falsifier.png)
+
+## Навигация
+
+1. **[Основной отчёт](docs/publication/RESEARCH_REPORT_RU.md)** — постановка, методы, данные, результаты, ограничения и выводы.
+2. **[Атлас поколений](docs/publication/GENERATIONS.md)** — каждый каталог, гипотеза, наблюдение и доказательства.
+3. **[Галерея](docs/publication/GALLERY.md)** — сводные PNG/SVG и исходные risk–coverage, абляции и диагностики.
+4. **[История](docs/publication/HISTORY.md)** — фиксация протоколов, исправлений и результатов.
+5. **[Воспроизводимость](docs/publication/REPRODUCIBILITY.md)** — команды, окружение и доступные артефакты.
+6. **[Данные и права](docs/publication/DATA_AND_RIGHTS.md)** — первичные лицензии и ограничения.
+7. **[Досье Luma / Сколково](docs/publication/SKOLKOVO_EVIDENCE.md)** — реализовано / измерено / ещё не подтверждено.
+
+## Размер и вычисления
+
+| Измеренный объект | Параметры | Ресурсы и предел утверждения |
+|---|---:|---|
+| Основной независимый patch ensemble | 2 774 796 | 11,11 MB весов; **1,470 ms** batch 1 на RTX 4060, только модель по готовым признакам; inference allocation 20,04 MiB |
+| Обычный шестимодельный fusion | 7 337 589 | Более крупный контроль; его задержка не равна задержке patch ensemble |
+| Финальный core + correction head | 1 117 332 | 4,48 MB checkpoint; inner-core training allocation 104,42–109,50 MiB, head 73,81–76,78 MiB; новая latency не измерялась |
+
+JPEG decoding, подготовка признаков, локализация и error head не включены в 1,470 ms. Это не полная задержка приложения. Независимая модель кожи не экспортировалась в ONNX; исторические ONNX результаты относятся к другим моделям.
+
+## Что это означает для Luma
+
+Получены исследовательский код и измерительная база для будущих photometric/reliability и skin-color подсистем. Подтверждена возможность компактной регрессии цвета кожи по реальным приборным меткам. Найдены сильные обычные контроли, проблемы переноса и ограничения отказа по ожидаемой ошибке.
+
+**Не подтверждены:** точность лица на обычных iPhone/Android, независимость от произвольной камеры, надёжный подбор косметического оттенка, клиническая пригодность или научная/патентная новизна. Цель проекта median ≤2 и p95 ≤5 ΔE00 при ≥80% покрытия на новых обычных телефонах остаётся недостигнутой; это исследовательская цель, не отраслевой стандарт.
+
+## Пересобрать оформление без данных и обучения
+
+```bash
+uv sync --extra report --extra dev
+uv run python scripts/build_research_archive.py
+uv run python scripts/verify_research_archive.py
 ```
 
-Run directories must be new; existing experiments are never silently retrained. Original Cube files are approximately2.13GB including metadata; Sony pilot13.8MB. Local images/cache/weights stay outside Git. Training requires CUDA in this new benchmark runner. Metrics and prior synthetic smoke remain CPU-testable. No external publication or paid compute was used.
+Фотографии участников, приватные кэши и нейросетевые checkpoints не размещены. Для повторного обучения нужны отдельное получение данных по исходным условиям и восстановление окружения. [Подробности](docs/publication/REPRODUCIBILITY.md).
 
-The implementation is an independent standard MobileNetV3-small baseline and bounded hypothesis mixture, not a faithful FC4/C5 code reproduction. All model initialization is random, with no imported weights. See the [frozen protocol](docs/research/public_protocol_v1.md) for decoder, masks, split, budget and inference-input limitations.
+**Public research / source-available archive.** Публичность репозитория сама по себе не выдаёт общую лицензию на повторное использование. Лицензии данных, стороннего кода и весов учитываются отдельно: [права](docs/publication/DATA_AND_RIGHTS.md).
 
-## Preserved historical facial/synthetic infrastructure
+<details>
+<summary>English abstract</summary>
 
-The synthetic-only state is frozen at commit2685bf0/tag `milestone/synthetic-only-2026-09-10`. Its48 passing tests,34 smoke commands, ONNX export and negative Proposed-versus-A2 result are retained. Commands below describe that separate infrastructure and do not provide real skin-color validation.
+This archive documents compact color normalization, selective reliability estimation and instrument-referenced skin-color regression. The independent MSKCC known-camera test contains 400 photographs from 10 new people. The primary 2.775M-parameter patch ensemble achieves mean CIEDE2000 4.457, and 4.159 at 80% coverage. Its selective improvement over matched C+ is not statistically convincing; an ordinary larger fusion achieves 4.300 and 4.145. Exploratory experiments cover canonical color frames, recurrent critics, teacher transfer, graphs, conditional densities, spectral decoders, local references and person-excluded correction. No universal camera-independent skin model is established. Negative results, source reuse, license restrictions and historical protocol repairs are preserved. Research stopped at the owner's request; this is an evidence archive, not a claim of production readiness or peer-reviewed novelty.
 
-The proposed target is continuous CIELAB under D65 / CIE 1931 2° conditions, linked to repeated instrument measurements at registered cheek sites. Ordinary smartphone JPEGs cannot identify physical skin reflectance under arbitrary unknown lighting/camera processing. This project tests a bounded operating domain and must be allowed to abstain.
-
-The original Luma application is unavailable. `luma_style_a0` is a clean-room approximation from provided audit context, not a reproduction verified against its source. See [status](docs/research/CURRENT_RND_STATUS.md), [research plan](docs/research/implementation_plan.md), [prior art](docs/research/prior_art.md) and [what to collect](docs/data/DATA_REQUIRED.md).
-
-## Run on Windows / RTX 4060
-
-Python 3.12 is pinned in `.python-version`; package supports 3.11+. The default training wheels use the official CUDA 12.8 PyTorch index. An NVIDIA driver is required for GPU training; CPU execution is supported. No separate CUDA toolkit is needed for these wheel-based runs.
-
-```powershell
-uv sync --all-extras
-uv run --all-extras pytest -q
-uv run --all-extras ruff check .
-uv run --all-extras python scripts/run_smoke.py
-uv run --all-extras python scripts/render_smoke_report.py
-```
-
-`run_smoke.py` generates 60 toy subjects, validates all records, runs A0/A1/A2/C/C+/proposed, fits separate calibration, evaluates locked test data, exports the three learned models and measures CPU/GPU/ORT batch-1 execution. It preserves every subprocess command, exit code, stdout and stderr under `artifacts/smoke_*/commands.json`. This is not a claim of useful accuracy or a required size for a real dataset.
-
-For minimal production-interface dependencies use `uv sync` (no PyTorch/OpenCV/ONNX); for training use `uv sync --extra train --extra dev`. Use `--all-extras` on later `uv run` commands to retain optional tools, or invoke `.venv/Scripts/python` directly. The training environment is separate from a future inference bundle.
-
-## Individual commands
-
-```powershell
-uv run --all-extras python scripts/inspect_environment.py
-uv run --all-extras python scripts/generate_synthetic_demo.py --subjects 60
-uv run --all-extras python scripts/validate_dataset.py --manifest data/synthetic_demo/manifest.jsonl
-uv run --all-extras python scripts/repeatability.py --manifest data/synthetic_demo/manifest.jsonl
-uv run --all-extras python scripts/train.py --config configs/experiments/baseline_c.yaml
-```
-
-Training prints an experiment directory. Substitute that exact path for `RUN`:
-
-```powershell
-uv run --all-extras python scripts/calibrate.py --experiment RUN
-uv run --all-extras python scripts/evaluate.py --experiment RUN
-uv run --all-extras python scripts/export_onnx.py --experiment RUN
-uv run --all-extras python scripts/benchmark.py --experiment RUN --device cuda
-uv run --all-extras python scripts/benchmark_onnx.py --experiment RUN
-```
-
-All commands run from the repository root. `prepare_dataset.py --manifest captures.jsonl --output manifest.jsonl` imports schema-complete JSONL records without split labels and assigns deterministic subject-level splits. Output shares the input data root; existing splits/output are never overwritten. Keep real datasets outside Git, preferably a separate controlled directory.
-
-## Implemented boundaries
-
-| Component | Current state |
-|---|---|
-| A0 | Clean-room robust bilateral cheek measurement; no correction |
-| A1 | Bounded linear-sRGB Gray World; Shades of Gray implementation available |
-| A2 | Train-only regularized global affine color matrix; matched physical instrument target still required |
-| C | MobileNetV3-small features, random initialization, continuous Lab regression |
-| C+ | Same backbone plus weakly supervised spatial attention and generic quality features; provisional comparator, not a tuned strong baseline |
-| Proposed | Same backbone/attention, 12 ambiguity features and OOF residual model; contribution unverified |
-| Uncertainty | Subject-OOF residual regression and subject-max split calibration; no shift or conditional accepted-risk guarantee |
-| Export | Tested FP32 ONNX numerical equivalence; no FP16/INT8 deployment accuracy claim |
-| API | Versioned conservative local contract; all current artifacts return `UNSUPPORTED` |
-
-Core code is in `src/luma_skin_vision`; configs hold reproducible settings; runs contain hashes/checkpoints/OOF audit/calibration/reports; `docs/data` describes real collection; `docs/ip` separates software, weights and data licenses; `docs/skolkovo` maps evidence gaps without promising application outcomes.
-
-Model attention is not anatomical skin segmentation and not proven measurement reliability. Bbox-based cheeks require a sufficiently frontal, correctly registered photograph. Collection must explicitly resolve selfie mirroring. A small smoke model's parameter count, speed and synthetic errors do not establish real skin color performance or cosmetics shade-match quality.
-
-The code is kept local. No public project license or IP clearance is asserted; review [licensing inventory](docs/ip/licensing_inventory.md) before redistribution.
+</details>
