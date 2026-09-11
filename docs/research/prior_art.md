@@ -482,3 +482,20 @@ Our [27-fit support/representation falsifier](skin_support_curve_next_decision.m
 finds no convincing advantage for a small learned-pixel residual; source support
 and optimizer allocation now deserve controlled testing. No general limitation
 on all pixel networks follows from this particular negative result.
+
+
+## Native-color allocation prior art and local falsifier (2026-09-11)
+
+[Yang et al.,ICML2021](https://proceedings.mlr.press/v139/yang21m.html) study
+continuous-target imbalance through label/feature distribution smoothing.
+[Ren et al.,CVPR2022](https://openaccess.thecvf.com/content/CVPR2022/html/Ren_Balanced_MSE_for_Imbalanced_Visual_Regression_CVPR_2022_paper.html)
+address imbalanced visual regression with Balanced MSE. These establish that
+continuous-label balancing is not a new contribution. They are conceptual prior
+art here, not locally reproduced author methods or imported code/weights.
+
+Our capped TRAIN-site DeltaE00 similarity proposal and person-mass controls are
+an exploratory allocation study.21 real skin fits show a small image-control
+improvement but effectively tie ordinary person/site balancing. A within-person
+weight permutation weakens the pure person-mass explanation, without independent
+confirmation. [Decision](skin_color_sampling_next_decision.md). Novelty requires
+more than applying established balancing to measured skin colors.

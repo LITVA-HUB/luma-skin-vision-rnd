@@ -1,0 +1,237 @@
+{
+  "scope": "21 exploratory TRAIN/internal-holdout fits; no new independent validation",
+  "groups": {
+    "image": {
+      "mean": 6.108242323281774,
+      "median": 5.135335464769542,
+      "p90": 12.098432836041395,
+      "p95": 14.995959869531228,
+      "patient_balanced_mean": 5.923688862727857,
+      "above_5_fraction": 0.5086206896551725,
+      "above_10_fraction": 0.15373563218390807,
+      "at80": 5.391797915881956,
+      "site_balanced_mean": 6.066580456956362,
+      "individual_means": [
+        6.105465571145234,
+        6.198796800682973,
+        6.020464598017115
+      ],
+      "effective_image_mass": 733.9999999999999,
+      "proposal_vs_uniform_site_min": 0.25749318801089915,
+      "proposal_vs_uniform_site_max": 1.0299727520435966
+    },
+    "person_site": {
+      "mean": 6.0084161633351485,
+      "median": 4.911898390159291,
+      "p90": 11.400877164591527,
+      "p95": 14.363848023156322,
+      "patient_balanced_mean": 5.812857849134521,
+      "above_5_fraction": 0.49856321839080464,
+      "above_10_fraction": 0.14367816091954022,
+      "at80": 5.3496058690090385,
+      "site_balanced_mean": 5.96729143257516,
+      "individual_means": [
+        6.150534361177553,
+        6.0380199067302165,
+        5.836694222097676
+      ],
+      "effective_image_mass": 682.5307934481406,
+      "proposal_vs_uniform_site_min": 0.9545454545454546,
+      "proposal_vs_uniform_site_max": 2.1
+    },
+    "site": {
+      "mean": 6.223977998618788,
+      "median": 5.305564545489815,
+      "p90": 12.132168010577766,
+      "p95": 15.202829261938641,
+      "patient_balanced_mean": 6.007218710074525,
+      "above_5_fraction": 0.5229885057471265,
+      "above_10_fraction": 0.16379310344827588,
+      "at80": 5.466443355942588,
+      "site_balanced_mean": 6.181119032426693,
+      "individual_means": [
+        6.188315790516433,
+        6.25285523051938,
+        6.230762974820552
+      ],
+      "effective_image_mass": 712.0465116279073,
+      "proposal_vs_uniform_site_min": 1.0,
+      "proposal_vs_uniform_site_max": 1.0
+    },
+    "color": {
+      "mean": 6.0011516628696375,
+      "median": 5.17672868087991,
+      "p90": 11.860919848608633,
+      "p95": 14.273255911369882,
+      "patient_balanced_mean": 5.815645789012042,
+      "above_5_fraction": 0.5114942528735632,
+      "above_10_fraction": 0.14224137931034483,
+      "at80": 5.318676604379687,
+      "site_balanced_mean": 5.963013448496489,
+      "individual_means": [
+        5.942994176963419,
+        5.953656054154184,
+        6.10680475749131
+      ],
+      "effective_image_mass": 687.5133029071268,
+      "proposal_vs_uniform_site_min": 0.7982285083531614,
+      "proposal_vs_uniform_site_max": 1.7361593955808723
+    },
+    "color_ipw": {
+      "mean": 6.172879459317748,
+      "median": 5.175398074117319,
+      "p90": 12.372826203008927,
+      "p95": 14.65277055115719,
+      "patient_balanced_mean": 5.975673448936058,
+      "above_5_fraction": 0.5158045977011495,
+      "above_10_fraction": 0.16091954022988506,
+      "at80": 5.430633728597588,
+      "site_balanced_mean": 6.131212974739815,
+      "individual_means": [
+        6.141783650436781,
+        6.190899387577156,
+        6.1859553399393095
+      ],
+      "effective_image_mass": 687.5133029071268,
+      "proposal_vs_uniform_site_min": 0.7982285083531614,
+      "proposal_vs_uniform_site_max": 1.7361593955808723
+    },
+    "person_mass": {
+      "mean": 6.140678553141517,
+      "median": 5.139578363608012,
+      "p90": 12.013200451174017,
+      "p95": 14.746766344573137,
+      "patient_balanced_mean": 5.943159916572463,
+      "above_5_fraction": 0.5186781609195402,
+      "above_10_fraction": 0.1451149425287356,
+      "at80": 5.438472690911677,
+      "site_balanced_mean": 6.099136030775218,
+      "individual_means": [
+        6.045231255806437,
+        6.112970357514481,
+        6.263834046103636
+      ],
+      "effective_image_mass": 704.8910192579332,
+      "proposal_vs_uniform_site_min": 0.849792719538408,
+      "proposal_vs_uniform_site_max": 1.4479158257265259
+    },
+    "within_person_shuffle": {
+      "mean": 6.152189571137686,
+      "median": 5.2642542113319655,
+      "p90": 12.24140970406863,
+      "p95": 14.637775435518611,
+      "patient_balanced_mean": 5.944656741230875,
+      "above_5_fraction": 0.5186781609195402,
+      "above_10_fraction": 0.15373563218390804,
+      "at80": 5.426467541963622,
+      "site_balanced_mean": 6.108900303752087,
+      "individual_means": [
+        6.11082170537924,
+        6.134393164422607,
+        6.211353843611211
+      ],
+      "effective_image_mass": 686.0891920674186,
+      "proposal_vs_uniform_site_min": 0.7982285083531614,
+      "proposal_vs_uniform_site_max": 1.7361593955808723
+    }
+  },
+  "comparisons": [
+    {
+      "candidate": "color",
+      "control": "image",
+      "image_mean_difference": -0.10709066041213611,
+      "patient_mean_difference": -0.10804307371581562,
+      "descriptive_patient_interval": [
+        -0.25131044769495287,
+        0.009633960386081993
+      ],
+      "seed_image_mean_differences": [
+        -0.16247139418181483,
+        -0.24514074652878876,
+        0.08634015947419509
+      ]
+    },
+    {
+      "candidate": "color",
+      "control": "person_site",
+      "image_mean_difference": -0.0072645004655108,
+      "patient_mean_difference": 0.0027879398775206682,
+      "descriptive_patient_interval": [
+        -0.0623578767378599,
+        0.07427314827894366
+      ],
+      "seed_image_mean_differences": [
+        -0.20754018421413448,
+        -0.08436385257603086,
+        0.27011053539363294
+      ]
+    },
+    {
+      "candidate": "color",
+      "control": "site",
+      "image_mean_difference": -0.2228263357491501,
+      "patient_mean_difference": -0.191572921062484,
+      "descriptive_patient_interval": [
+        -0.4534276922365093,
+        0.011672886655898327
+      ],
+      "seed_image_mean_differences": [
+        -0.2453216135530133,
+        -0.2991991763651953,
+        -0.12395821732924181
+      ]
+    },
+    {
+      "candidate": "color",
+      "control": "color_ipw",
+      "image_mean_difference": -0.1717277964481105,
+      "patient_mean_difference": -0.16002765992401566,
+      "descriptive_patient_interval": [
+        -0.39583700524799087,
+        0.008064607317240754
+      ],
+      "seed_image_mean_differences": [
+        -0.19878947347336148,
+        -0.23724333342297127,
+        -0.07915058244799913
+      ]
+    },
+    {
+      "candidate": "color",
+      "control": "person_mass",
+      "image_mean_difference": -0.13952689027187942,
+      "patient_mean_difference": -0.12751412756042105,
+      "descriptive_patient_interval": [
+        -0.30029600879969104,
+        0.017827396645764687
+      ],
+      "seed_image_mean_differences": [
+        -0.10223707884301798,
+        -0.15931430336029523,
+        -0.15702928861232518
+      ]
+    },
+    {
+      "candidate": "color",
+      "control": "within_person_shuffle",
+      "image_mean_difference": -0.15103790826804744,
+      "patient_mean_difference": -0.12901095221883355,
+      "descriptive_patient_interval": [
+        -0.292665015769022,
+        -0.005834746809878485
+      ],
+      "seed_image_mean_differences": [
+        -0.16782752841582027,
+        -0.18073711026842243,
+        -0.10454908611989983
+      ]
+    }
+  ],
+  "bindings": {
+    "scripts\\skin_color_sampling_report.py": "594a9eaa81d956535d800dc35d3fd0486ff7d25714b45532bdb70550d8e78878",
+    "docs\\benchmarks\\skin_color_sampling_v1\\audit.json": "6ced9246c1099442f3f127cab2ae1d8bf2af380bfdac423d3f187096f5e3c9ba",
+    "docs\\benchmarks\\skin_color_sampling_mass_v1\\audit.json": "2f27b2b35720c5fecb7d601b20f1620f115144e459d9e96e1a70a1b22d79286c",
+    "docs\\benchmarks\\skin_color_sampling_v1\\source_lock.json": "62c8ea17e4a3d996f05617d49947a5f23434fcc4433a55025d8223f6320dc06a",
+    "docs\\benchmarks\\skin_color_sampling_mass_v1\\source_lock.json": "88788dd86eb23b7bf11173b738095e57a1af1bba449b0af46d182bee0af88976"
+  }
+}

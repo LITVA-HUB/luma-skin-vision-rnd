@@ -402,3 +402,12 @@ An active learned pixel residual barely changes when patch texture is removed.
 Investigate TRAIN-color support allocation under fixed data/update controls next;
 sampling balance is established methodology, not the candidate invention itself.
 [Mechanism, failure mode and next falsifier](skin_support_curve_next_decision.md).
+
+
+## Color allocation: partial result only
+
+Color balancing6.0012 versus person/site6.0084 is not a convincing mechanism
+advantage. The within-person permutation control gives a limited signal worth
+a wider matched source test. Combine uniform person mass with within-person
+color emphasis, without asserting novelty for balancing or importance sampling.
+[Assumptions, controls and next decision](skin_color_sampling_next_decision.md).

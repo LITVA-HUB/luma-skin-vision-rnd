@@ -1,3 +1,20 @@
+# Latest: native-color allocation and confounding controls complete
+
+21 fixed-budget real skin fits:15 sampling variants plus6 person-mass controls.
+Internal mean DeltaE00:image6.1082,color6.0012,person/site6.0084. Color p95
+14.2733 versus image14.9960, but no convincing advantage over person/site.
+Color beats within-person shuffled weights in all3 seeds; this is a partial
+exploratory signal, not independent evidence or a novelty victory.
+[Decision and report](skin_color_sampling_next_decision.md).
+21 exact color arrays;3 historical control states;4 additional full refits;
+4872 scalar color cases;750141 TRAIN density pairs;126 coverage rows;
+108 person-mass identities.357 tests pass,14 historical warnings,33.70s.
+All fits/audits/tests terminal. No live training. Independent test unchanged.
+Next: combine uniform person mass with within-person color support allocation;
+freeze wider source mixed/known/unseen-camera comparisons, same data/core/budget.
+No exposed TEST/CAL access, no universal ordinary-phone accuracy claim.
+Goal active and unmet.
+
 # Latest: actual skin support / learned patch screen complete
 
 27 fixed-budget TRAIN-only fits on nested6/12/18-person sets. Baseline internal
