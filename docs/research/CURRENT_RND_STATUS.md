@@ -1,4 +1,30 @@
-# Latest: relational/compatibility probe complete
+# Latest: local-reference skin color and camera transfer complete
+
+Actual instrument-native skin DeltaE00 on original MSKCC CC-BY photographs.
+Person-excluded TRAIN screen: global ridge5.4259 -> color-affine4.5860 mean
+(15.48% lower), improved21/24 people; at80%4.9899 ->4.2031. Standard locally
+weighted regression, not a new architecture. Source data extensively reused.
+Unseen SLR-to-iPod best new7.1177 versus earlier strong neural4.8328; reverse
+best new6.6968 versus neural4.9736. No strongest-baseline win. Distance-based
+rejection does not reliably improve unseen-camera error. No new TEST/CAL use.
+[Measured report](../benchmarks/skin_local_reference_transfer_v1/report.md).
+Independent numeric audits:3516 weighted solves,1758 uniform-weight checks,
+1415244 scalar color cases,216 coverage rows.370 tests pass,14 historical
+ONNX/export warnings,33.53s. All jobs terminal; no live training.
+Independent primary4.4570/80%4.1591 vs ordinary fusion4.3005/4.1447 unchanged.
+
+User authorizes at most200,000 additional neural parameters:929,297 base,
+1,129,297 cap for the next single model. Candidate193,795-parameter head yields
+1,123,092 total; NOT IMPLEMENTED/TRAINED yet. Bank storage is extra payload.
+[Capacity contract](skin_capacity_budget_2026_09_11.md).
+Next: combine strong compact learned context with local reference correction;
+compare unchanged base and an equal-capacity ordinary residual C+ head under
+the same data and budget. Zero-initialize correction outputs; exclude query
+people from reference banks. No inference camera ID or query ground truth.
+[Decision](skin_local_reference_next_decision.md).
+Ordinary-phone facial color accuracy remains unvalidated. Goal active, unmet.
+
+# Previous: relational/compatibility probe complete
 
 48 excluded-person linear fits;1421 same-site/control triplets,18229 between-site
 pairs;10 representations. Ridge36 true-site preference70.08%, actual LOPO skin

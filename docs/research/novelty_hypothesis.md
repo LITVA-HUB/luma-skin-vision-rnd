@@ -464,3 +464,23 @@ with standard local-affine and weighted-mean controls before a learned pair
 mechanism. No exposed independent TEST/CAL tuning, new phone proof, or claim
 of an already improved compact architecture.
 [Decision](skin_relational_probe_next_decision.md).
+
+## Local-affine component survives; universal claim fails (2026-09-11)
+
+On24 excluded-person TRAIN folds, color-weighted affine regression reduces
+actual mean skin DeltaE00 by15.48% versus global ridge and improves21 people.
+Color-weighted reference averaging alone loses to ridge. This favors a local
+mapping component rather than merely copying nearby reference colors.
+Both unseen-camera directions still lose to strong historical neural controls,
+and nearest-support rejection can raise accepted-image error. These exploratory
+results neither prove a novel method nor change independent-test accuracy.
+
+Next unverified hypothesis: a strong compact learned representation may supply
+better neighborhoods for reference-conditioned residual correction. Test it
+against the unchanged base and ordinary residual C+ at matched capacity and
+budget; no inference camera ID or query reference. Authorized total neural cap
+is1,129,297, including the929,297 base. A193,795-parameter candidate adapter is
+budgeted but not implemented/trained. Store and report all non-neural payload.
+Begin with one correction pass; additional passes require separate evidence.
+[Decision](skin_local_reference_next_decision.md) and
+[capacity contract](skin_capacity_budget_2026_09_11.md).

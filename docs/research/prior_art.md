@@ -557,3 +557,20 @@ in source cross-validation. This neither establishes a new relative-learning
 mechanism nor defeats every possible relational approach. Query-dependent
 local regression remains a standard, inexpensive comparator to test next.
 [Evidence and next decision](skin_relational_probe_next_decision.md).
+
+## Local reference regression: measured standard mechanism (2026-09-11)
+
+[Locally Weighted Learning, Atkeson, Moore and Schaal,1997](https://link.springer.com/article/10.1023/A:1006559212014)
+is established prior art for query-dependent weighted local regression. Local
+distance weighting, regularization and reference banks are not claimed novel.
+No author code, weights or reported accuracy was adopted as a local result.
+The local person-excluded screen improves ridge mean skin DeltaE00 from5.4259
+to4.5860, but camera-transfer results lose to strong historical local neural
+comparators. This supports a component, not a new universal architecture.
+[Report](../benchmarks/skin_local_reference_transfer_v1/report.md).
+
+Next learned-reference correction must distinguish its mechanism from ordinary
+residual learning, learned kernels and differentiable local regression. The
+user-authorized200,000-parameter increase is a compute allowance, not evidence
+of novelty or accuracy. Use an equal-capacity ordinary C+ control and count
+support-bank payload separately. No new neural head is implemented yet.
