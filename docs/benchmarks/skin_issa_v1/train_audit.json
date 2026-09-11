@@ -1,0 +1,73 @@
+{
+  "bindings": {
+    "data/processed/skin_issa_v1/train.npz": "b94cd30058202af5e53722879d9719ef66ef9bcf7d1d9025cf0c1f8da349a5fd",
+    "docs/benchmarks/skin_issa_v1/split_lock.json": "bda5edc37c7fdd67cc54fc39a18771fd18f84daf6dd35a5c0d10bd0db3f98ffb",
+    "scripts/skin_issa_audit.py": "3ed9b900967267fbec80952826a01ed2dab31f5ee6160d47af49970a5f65d892",
+    "scripts/skin_issa_color.py": "3125ca135c979287bf77932a972a3e6ab931dc197c703df975c8521ec43072d3",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "tests/test_skin_issa_color.py": "46093e7d19bd81057aba12d4da2410099a52aaa3b7f199893d7f45c94f9e2886"
+  },
+  "common31_identity_to_native_reference": {
+    "360-740": {
+      "common31_to_supplied_Lab_mean_delta_e00": 0.09546224332989778,
+      "max": 0.14882546840337044,
+      "n": 3114,
+      "p95": 0.11467785505404858
+    },
+    "400-700": {
+      "common31_to_supplied_Lab_mean_delta_e00": 3.462923669884367e-14,
+      "max": 1.9005159152682853e-13,
+      "n": 5566,
+      "p95": 9.58645877996043e-14
+    }
+  },
+  "common31_outside_open_unit_interval_records": 0,
+  "formula_cells_inspected": 104161,
+  "formula_patterns": {
+    "BF: SUMPRODUCT(N#:AZ#,$N$#:$AZ$#,$N$#:$AZ$#)/SUMPRODUCT($N$#:$AZ$#,$N$#:$AZ$#)": 53,
+    "BF: SUMPRODUCT(R#:AV#,$R$#:$AV$#,$R$#:$AV$#)/SUMPRODUCT($R$#:$AV$#,$R$#:$AV$#)": 85,
+    "BF: [shared formula reference; numerical replay checked separately]": 8542,
+    "BG: SUMPRODUCT(N#:AZ#,$N$#:$AZ$#,$N$#:$AZ$#)/SUMPRODUCT($N$#:$AZ$#,$N$#:$AZ$#)": 53,
+    "BG: SUMPRODUCT(R#:AV#,$R$#:$AV$#,$R$#:$AV$#)/SUMPRODUCT($R$#:$AV$#,$R$#:$AV$#)": 85,
+    "BG: [shared formula reference; numerical replay checked separately]": 8542,
+    "BH: SUMPRODUCT(N#:AZ#,$N$#:$AZ$#,$N$#:$AZ$#)/SUMPRODUCT($N$#:$AZ$#,$N$#:$AZ$#)": 53,
+    "BH: SUMPRODUCT(R#:AV#,$R$#:$AV$#,$R$#:$AV$#)/SUMPRODUCT($R$#:$AV$#,$R$#:$AV$#)": 85,
+    "BH: [shared formula reference; numerical replay checked separately]": 8542,
+    "BI: BF#/SUM(BF#:BH#)": 146,
+    "BI: [shared formula reference; numerical replay checked separately]": 8534,
+    "BJ: BG#/SUM(BF#:BH#)": 146,
+    "BJ: [shared formula reference; numerical replay checked separately]": 8534,
+    "BK: IF(BG#/$BG$#>0.008856,116*(BG#/$BG$#)^(1/3)-16,903.3*BG#/$BG$#)": 146,
+    "BK: [shared formula reference; numerical replay checked separately]": 8534,
+    "BL: 500*(IF((BF#/$BF$#)>0.008856,(BF#/$BF$#)^(1/3),7.787*(BF#/$BF$#)+16/116)-(IF((BG#/$BG$#)>0.008856,(BG#/$BG$#)^(1/3),7.787*(BG#/$BG$#)+16/116)))": 146,
+    "BL: [shared formula reference; numerical replay checked separately]": 8534,
+    "BM: 200*(IF((BG#/$BG$#)>0.008856,(BG#/$BG$#)^(1/3),7.787*(BG#/$BG$#)+16/116)-(IF((BH#/$BH$#)>0.008856,(BH#/$BH$#)^(1/3),7.787*(BH#/$BH$#)+16/116)))": 146,
+    "BM: [shared formula reference; numerical replay checked separately]": 8534,
+    "BN: SQRT(BL#^2+BM#^2)": 146,
+    "BN: [shared formula reference; numerical replay checked separately]": 8534,
+    "BO: IF(XF#<0,ATAN(BM#/BL#)*180/PI()+180,IF(BM#<0,ATAN(BM#/BL#)*180/PI()+360,ATAN(BM#/BL#)*180/PI()))": 17,
+    "BO: IF(XM#<0,ATAN(BM#/BL#)*180/PI()+180,IF(BM#<0,ATAN(BM#/BL#)*180/PI()+360,ATAN(BM#/BL#)*180/PI()))": 68,
+    "BO: IF(XO#<0,ATAN(BM#/BL#)*180/PI()+180,IF(BM#<0,ATAN(BM#/BL#)*180/PI()+360,ATAN(BM#/BL#)*180/PI()))": 53,
+    "BO: [shared formula reference; numerical replay checked separately]": 8542,
+    "BP: (4*BF#)/(BF#+15*BG#+3*BH#)": 146,
+    "BP: [shared formula reference; numerical replay checked separately]": 8534,
+    "BQ: (9*BG#)/(BF#+15*BG#+3*BH#)": 146,
+    "BQ: [shared formula reference; numerical replay checked separately]": 8534,
+    "R: AVERAGE(R#,R#,R#,R#,R#,R#,R#,R#,R#,R#)": 1
+  },
+  "measured_reflectance_percent_max": 68.04,
+  "measured_reflectance_percent_min": 0.01,
+  "missing_declared_samples": 0,
+  "native_lab_formula_reproduction_max_abs": 1.1368683772161603e-13,
+  "numbers_outside_declared_support": 0,
+  "records": 8680,
+  "reflectance_unit": "percent; native XYZ formula has no factor 100",
+  "reserved_numerical_endpoints_read": false,
+  "role": "train",
+  "scope": "Original measured spectra and cached colorimetry; no camera input or accuracy measured",
+  "subjects": 1232,
+  "white_reproduction_max_abs": 2.842170943040401e-14,
+  "xyz_reproduction_max_abs": 2.1316282072803006e-14,
+  "xyz_scalar_comparisons": 26040,
+  "xyz_scalar_fsum_max_abs": 3.552713678800501e-14
+}
