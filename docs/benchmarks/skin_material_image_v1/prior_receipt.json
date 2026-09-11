@@ -1,0 +1,44 @@
+{
+  "actual_and_metadata_cmf_md5": "6140e032f9326d88c5a0959b29b4d8f3",
+  "bindings": {
+    "artifacts/skin_material_image_v1/prior.npz": "6f6aaa459492c4249c4a621081e6362e3a0aaba91585e19f2350605d2edd15fc",
+    "data/processed/skin_issa_v1/material_bases.npz": "2bdca6da75634c20728427cb22564d3e98bb6a4e5c494032d7546595a568478e",
+    "data/processed/skin_issa_v1/train.npz": "b94cd30058202af5e53722879d9719ef66ef9bcf7d1d9025cf0c1f8da349a5fd",
+    "docs/benchmarks/skin_issa_v1/material_lock.json": "05074afc3868e557b7f91c2bbf79a6eb1e568130793295a25a251ce3a815a122",
+    "docs/data/provenance/cie_material_v1/CIE_std_illum_D65.csv": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+    "docs/data/provenance/cie_material_v1/CIE_std_illum_D65.csv_metadata_v2.json": "71994379b81c65db111f652e747a00b599b5456c2a8242e9a0d6f379f560a14e",
+    "docs/data/provenance/cie_material_v1/CIE_xyz_1964_10deg.csv": "1b27fd4e8ca1167b47c3a6aee3aafe56abc57eae51fa20032cb83704224a27dc",
+    "docs/data/provenance/cie_material_v1/CIE_xyz_1964_10deg.csv_metadata.json": "3769f7f56e663124df57fa63f99f13db2e9f09a39f92795eb44507cff771e994",
+    "docs/data/provenance/cie_material_v1/acquisition.json": "611a8e877c63784893b4f133bded262985dfeccbddfaedfb61a9ec0075a314c7",
+    "docs/research/skin_material_image_protocol_v1.md": "2b40af22970c8e47cf56fdbc8a8427f5d5ed2c5b34f5651003eb53ce76793549",
+    "scripts/skin_material_prior.py": "9083b6a07c102ca525b2fa53541f741ca9b34b71c1170d98441d33e9d054a6d5",
+    "tests/test_skin_material_prior.py": "05826f9eba220f4d140f08c8f4300d73fd49e46b913e37614da5e0eed865dad6"
+  },
+  "derived_tail_sensitivity": {
+    "max": 0.016590193081065855,
+    "mean_delta_e00": 0.0015872686864814706,
+    "not_a_measured10degree_accuracy_endpoint": true,
+    "p95": 0.00518005625839875,
+    "records": 3114
+  },
+  "landing_page_cmf_md5": "cd6135a724480eb8c5e7668bae914445",
+  "missing_reflectance_extrapolation": "constant endpoints, model assumption only",
+  "no_reserved_or_new_image_endpoints_read": true,
+  "outside400_700_full_xyz_weight_mass": [
+    0.001262316718436849,
+    0.00034810749559893185,
+    0.0022564787874887167
+  ],
+  "prior_bytes": 4519,
+  "prior_source_records": 8680,
+  "prior_subject_codes": 1232,
+  "scope": "ISSA TRAIN-only prior, modelled D65/10degree color interface; MSKCC labels unchanged",
+  "stored_float64_values": 410,
+  "table_license": "CC BY-SA4.0; adapted integration constants retain attribution/share-alike",
+  "white_xyz_y1": [
+    0.9481106006237401,
+    1.0000000000000002,
+    1.073046695432118
+  ],
+  "zero_extrapolated_cmf_zbar_values": 271
+}

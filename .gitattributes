@@ -1,4 +1,10 @@
 * text=auto eol=lf
+scripts/skin_material*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_skin_material*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/skin_material_image_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/data/provenance/cie_material_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/data/provenance/cie_material_v1/*.csv -text -whitespace
+docs/research/skin_material_image_protocol_v1.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 scripts/skin_issa*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_skin_issa*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/benchmarks/skin_issa_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
