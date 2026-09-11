@@ -53,3 +53,13 @@ Original source/weight hashes and Apache notices remain unchanged. No new
 third-party data or weights acquired. Pretraining overlap is still unknown.
 
 [Measured result and limits](../benchmarks/skin_teacher_readout_v1/report.md).
+
+
+## Local skin descriptors (2026-09-11)
+
+The same licensed teacher supplied frozen 8x8 spatial grids for the same 1,230
+source images. All 36 local/global/shuffled/RGB-control fits completed and
+failed the strongest-control comparison. No student, deployment or new external
+weights adopted. Source hashes/rights unchanged; the pre-fitting verifier-only
+precision amendment and original receipts are preserved in local-teacher evidence.
+[Result](../research/skin_local_teacher_next_decision.md).

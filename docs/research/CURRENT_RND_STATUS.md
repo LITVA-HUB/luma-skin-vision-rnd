@@ -1,3 +1,32 @@
+# Latest: 36 local-teacher fits rejected; measured-material source acquired
+
+Actual skin Lab / DeltaE00 remains primary. Aligned teacher descriptors give
+mean 4.1720 mixed / 6.0116 SLR-to-iPod / 7.8197 reverse, losing to strong
+compact RGB-only controls. Global and shuffled controls show no reliable
+alignment advantage. No distillation or deployment promotion. The 1.012M head
+still requires the 22.057M teacher for these measured predictions.
+
+A source-only gradient diagnostic does not establish that mode supervision
+caused the error. The tempting causal explanation remains unproven.
+[36-fit report](../benchmarks/skin_local_teacher_v1/report.md),
+[decision and opponent checks](skin_local_teacher_next_decision.md).
+All 108 color arrays / 36 gate-hypothesis sets replay; 6,336 scalar color cases,
+216 coverage checks and nine exact historical control base weights pass.
+1,230 local feature grids replay, with 2,048 manual pooling checks. An initial
+verifier-only FP32 tolerance correction, made before training, is archived.
+307 tests pass, 14 historical warnings, 32.99s. No live job remains.
+
+New physical-prior source: [ISSA v4](../data/issa_v4_verified_inventory.md).
+Original CC BY4.0 verified; 9,320,520byte workbook acquired and checksummed.
+Author-described 15,256 records / 2,113 subjects; numeric endpoints not yet
+inspected. These are skin spectra/colorimetry, not a new phone-photo benchmark.
+Next: coding, identity, instrument and spectral-support audit, then frozen
+roles before learning a measured skin-material prior. No fabricated DeltaE00.
+
+Prior independent MSKCC accuracy remains unchanged; TEST/CAL and UMINHO
+held-outs were not accessed in this cycle. Ordinary facial-phone accuracy is
+still unvalidated. Goal remains active and unmet.
+
 # Latest: 108 frozen visual-teacher readout fits on real skin
 
 Actual instrument skin Lab / DeltaE00 remains primary. Original licensed

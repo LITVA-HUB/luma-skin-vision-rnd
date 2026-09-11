@@ -1,0 +1,39 @@
+{
+  "bindings": {
+    "scripts\\skin_local_teacher_features.py": "a6608cfe2353b4e0667907650dada8da0c3ca74faa1dfd4864a1962d2dca7511",
+    "docs\\research\\skin_local_teacher_protocol_v1.md": "073bea7caae6d2a751e7e316fa7dbc442f7e9eacf9a2a9ee9d3830767b4221e9",
+    "tests\\test_skin_local_teacher.py": "c0d450165cedf3d3cc00f9d4dc8b02795621d3a91062d3eb295d628845398f04",
+    "scripts\\skin_teacher_features.py": "f5662d0ed61eb79d4c5b1eecce39555bf7e0658975ec6cb4fb9a8ed99f5cb447",
+    "scripts\\skin_mskcc_pixels.py": "c5b671ac38da0bec62c18c3872fbac52f2f8a239f0e155a74c44f8ec1b91ad0a",
+    "docs\\benchmarks\\skin_teacher_readout_v1\\feature_receipt.json": "c3a329c926e1c475281f1173b4fa08aa01ef764694c1f7100b7de5ed68958d54",
+    "artifacts\\teachers\\dinov2-7764ea0f912e\\dinov2_vits14_pretrain.pth": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "data\\processed\\skin_mskcc_pixels_v1\\validation.npz": "5ea83f15f12d3b1e4b43054b363fb72bc87e734e8bd24d322df07a91132ee566"
+  },
+  "roles": {
+    "train": {
+      "n": 966,
+      "shape": [
+        966,
+        64,
+        384
+      ],
+      "bytes": 95070620,
+      "sha256": "c2566330b0b1610ee1f4f49034116bca741aeb539bfae3fb08b462653a46afba"
+    },
+    "validation": {
+      "n": 264,
+      "shape": [
+        264,
+        64,
+        384
+      ],
+      "bytes": 25982588,
+      "sha256": "a3a1c8150de0710fee2c2ddcedd95cc019dbe2d0e84518a808ccd91c5ad4ddf5"
+    }
+  },
+  "teacher_parameters": 22056576,
+  "reserved_endpoints_used": false,
+  "seconds": 3.7869146000011824,
+  "peak_extraction_allocated_mib": 260.70166015625
+}

@@ -329,3 +329,15 @@ Apache 2.0 teacher is 22.06M parameters; no student was trained or deployed.
 This is a representation diagnostic, not new invention. Preserve both the
 positive weak-control comparison and the negative strongest-control results.
 [Evidence and next local-correspondence falsifier](skin_teacher_next_decision.md).
+
+
+## Local descriptor correspondence and physical-prior redirection (2026-09-11)
+
+36 source fits reject this aligned-teacher adapter as an accuracy improvement;
+global/shuffled descriptors do not establish a local-correspondence advantage.
+Post-hoc gradients do not prove capture-mode supervision caused the harm.
+No architecture novelty or compact-student accuracy is claimed. Original ISSA
+v4 CC BY4.0 rights and acquisition now verified; measured reflectance priors
+are the next different source of knowledge, with colorimetry/support checks
+required first. No spectral or photo accuracy from ISSA is measured yet.
+[Decision and evidence](skin_local_teacher_next_decision.md).

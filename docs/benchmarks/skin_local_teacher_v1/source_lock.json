@@ -1,0 +1,38 @@
+{
+  "bindings": {
+    "docs\\research\\skin_local_teacher_protocol_v1.md": "073bea7caae6d2a751e7e316fa7dbc442f7e9eacf9a2a9ee9d3830767b4221e9",
+    "scripts\\skin_local_teacher_train.py": "34a8e794eb8834d96d7603da7da641684819e2fdc91b776de0ec6002f3642f53",
+    "scripts\\skin_capture_model.py": "23c83500f35cc44b379597451f117ae37ad85fe30ea872a480aa159ea8d015cf",
+    "scripts\\skin_pair_invariance.py": "4cceedf45de2a04c03d6aab7a0c408d851c78c8f4525bf0bc0a2552fea49cf7e",
+    "scripts\\skin_pair_train.py": "962a0ce697034f571f5914bc352d9767b740e725ede19a278fefc58b6d7d867c",
+    "scripts\\skin_mskcc_pixels.py": "c5b671ac38da0bec62c18c3872fbac52f2f8a239f0e155a74c44f8ec1b91ad0a",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "scripts\\skin_local_teacher_model.py": "0b7b2be3924a4cf46a05138654b2fafbed8d169b26f6ae49b06f6d407637f348",
+    "scripts\\skin_local_teacher_features.py": "a6608cfe2353b4e0667907650dada8da0c3ca74faa1dfd4864a1962d2dca7511",
+    "tests\\test_skin_local_teacher.py": "c0d450165cedf3d3cc00f9d4dc8b02795621d3a91062d3eb295d628845398f04",
+    "docs\\benchmarks\\skin_local_teacher_v1\\feature_receipt.json": "cb7cb866168d7ff3b213da67cb1498048aeb3365d347acb628e5f3e809fc6ae4",
+    "docs\\benchmarks\\skin_local_teacher_v1\\feature_audit.json": "e28b5e3b2bdfda58b63b37ff741cdc1c78e95d45938b13bdc5c69023aab904a6",
+    "scripts\\skin_mskcc_data.py": "12f7ce2df93ca3586fa068d92751670c33372f7f69bad4d2ca550463e4de0fc5",
+    "scripts\\skin_mskcc_summary_pilot.py": "aba10001ec746bd56a06fcd29fe8a108dd88462e20e0287399c4408cf1bd90bd",
+    "scripts\\skin_mskcc_train_pixels.py": "39eedd75cd1a1c51cfb21d77435cdc7853afd3cdfa904a4298c113bcbf48da9c",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "data\\processed\\skin_mskcc_pixels_v1\\validation.npz": "5ea83f15f12d3b1e4b43054b363fb72bc87e734e8bd24d322df07a91132ee566",
+    "data\\processed\\skin_local_teacher_v1\\train.npz": "c2566330b0b1610ee1f4f49034116bca741aeb539bfae3fb08b462653a46afba",
+    "data\\processed\\skin_local_teacher_v1\\validation.npz": "a3a1c8150de0710fee2c2ddcedd95cc019dbe2d0e84518a808ccd91c5ad4ddf5"
+  },
+  "arches": [
+    "plain",
+    "aligned",
+    "global",
+    "shuffled"
+  ],
+  "objectives": [
+    "mse"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "reserved_data_access": false
+}
