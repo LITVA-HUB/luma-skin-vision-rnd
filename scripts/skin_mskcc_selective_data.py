@@ -1,0 +1,60 @@
+"""Decode reserved roles only after an exact verified pre-calibration/final lock."""
+import concurrent.futures
+import json
+import numpy as np
+from skin_mskcc_data import ROOT,RAW,read,manifest,sha
+from skin_mskcc_pixels import decode
+from skin_mskcc_selective_core import OUT,verify_lock
+
+
+def instrument_reference(row):
+    """Mean of available COMPLETE instrument readings, checked against author mean.
+
+    Missing repetitions stay NaN for provenance; no reference is imputed.
+    See the pre-test reference-completeness amendment.
+    """
+    rep=np.full((3,3),np.nan)
+    for i in range(1,4):
+        values=[row[f'{c}_{i}'].strip() for c in 'lab']
+        if not any(values):continue
+        if not all(values):raise ValueError('Partial instrument Lab reading')
+        rep[i-1]=[float(v) for v in values]
+        if not np.isfinite(rep[i-1]).all():raise ValueError('Nonfinite instrument reading')
+    valid=np.isfinite(rep).all(1)
+    if not valid.any():raise ValueError('No complete instrument reference')
+    target=rep[valid].mean(0)
+    average=np.array([float(row['average_'+c]) for c in 'lab'])
+    if not np.isfinite(average).all() or not np.allclose(target,average,atol=.051,rtol=0):
+        raise ValueError('Invalid or inconsistent instrument average')
+    return target,rep
+
+
+def sealed(role,lock_path,lock_sha):
+    if role not in {'calibration','test'}:raise ValueError('Expected reserved role')
+    stage='precalibration' if role=='calibration' else 'final'
+    verify_lock(lock_path,lock_sha,stage)  # MUST precede any label/image access.
+    folder=ROOT/'data/processed/skin_mskcc_selective_v1';folder.mkdir(exist_ok=True,parents=True)
+    path=folder/(role+'.npz');receipt=OUT/(role+'_data.json')
+    if path.exists():
+        r=json.loads(receipt.read_bytes())
+        if r['lock_sha256']!=lock_sha or r['sha256']!=sha(path):raise ValueError('Reserved cache differs from lock/receipt')
+        return dict(np.load(path))
+    rows=[r for r in manifest()['rows'] if r['role']==role];allowed={r['image'] for r in rows}
+    values={r['isic_id']:r for r in read('s7.csv') if r['isic_id'] in allowed}
+    target=[];reps=[]
+    for row in rows:
+        reference,rep=instrument_reference(values[row['image']])
+        target.append(reference);reps.append(rep)
+    expected={r['image']:r for r in json.loads((RAW/'image_receipts.json').read_bytes())}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        decoded=list(pool.map(lambda row:decode(row,expected),rows))
+    data={'target':np.array(target),'repetitions':np.array(reps),'rgb':np.stack([d[0] for d in decoded]),
+          **{k:np.stack([d[1][k] for d in decoded]).astype(np.float32) for k in decoded[0][1]},
+          **{k:np.array([r[k] for r in rows]) for k in ['image','patient','site','device','mode','image_type']}}
+    n,p=(208,6) if role=='calibration' else (400,10)
+    if len(rows)!=n or len(set(data['patient']))!=p:raise ValueError('Reserved population changed')
+    np.savez(path,**data)
+    receipt.write_text(json.dumps({'role':role,'n':n,'patients':p,'sites':len(set(data['site'])),
+                                  'instrument_reading_counts':{str(i):int((np.isfinite(data['repetitions']).all(2).sum(1)==i).sum()) for i in [1,2,3]},
+                                  'sha256':sha(path),'lock_sha256':lock_sha},indent=2)+'\n',encoding='utf8')
+    return data
