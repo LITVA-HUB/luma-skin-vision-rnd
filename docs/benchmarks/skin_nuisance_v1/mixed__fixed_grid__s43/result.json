@@ -1,0 +1,252 @@
+{
+  "arm": "fixed_grid",
+  "seed": 43,
+  "protocol": "mixed",
+  "best_epoch": 25,
+  "selection_patient_mean": 3.6143839387679804,
+  "full": {
+    "n": 264,
+    "people": 6,
+    "sites": 66,
+    "mean": 3.61438393876798,
+    "median": 3.1120733299665035,
+    "p90": 5.978401919254575,
+    "p95": 7.301511214242493,
+    "above_5_fraction": 0.22348484848484848,
+    "above_10_fraction": 0.011363636363636364,
+    "patient_balanced_mean": 3.6143839387679804
+  },
+  "uncalibrated_dispersion_coverage": [
+    {
+      "requested_coverage": 1.0,
+      "accepted": 264,
+      "actual_coverage": 1.0,
+      "n": 264,
+      "people": 6,
+      "sites": 66,
+      "mean": 3.61438393876798,
+      "median": 3.1120733299665035,
+      "p90": 5.978401919254575,
+      "p95": 7.301511214242493,
+      "above_5_fraction": 0.22348484848484848,
+      "above_10_fraction": 0.011363636363636364,
+      "patient_balanced_mean": 3.6143839387679795
+    },
+    {
+      "requested_coverage": 0.95,
+      "accepted": 251,
+      "actual_coverage": 0.9507575757575758,
+      "n": 251,
+      "people": 6,
+      "sites": 66,
+      "mean": 3.580574260577984,
+      "median": 3.1002270027921073,
+      "p90": 5.96280068934613,
+      "p95": 7.293039455129008,
+      "above_5_fraction": 0.2151394422310757,
+      "above_10_fraction": 0.00796812749003984,
+      "patient_balanced_mean": 3.583575050502136
+    },
+    {
+      "requested_coverage": 0.9,
+      "accepted": 238,
+      "actual_coverage": 0.9015151515151515,
+      "n": 238,
+      "people": 6,
+      "sites": 65,
+      "mean": 3.6111572254812305,
+      "median": 3.099120253460467,
+      "p90": 6.0511297432218685,
+      "p95": 7.31619347236799,
+      "above_5_fraction": 0.2184873949579832,
+      "above_10_fraction": 0.008403361344537815,
+      "patient_balanced_mean": 3.619403644553055
+    },
+    {
+      "requested_coverage": 0.8,
+      "accepted": 212,
+      "actual_coverage": 0.803030303030303,
+      "n": 212,
+      "people": 6,
+      "sites": 63,
+      "mean": 3.60739226194228,
+      "median": 3.0281456516622622,
+      "p90": 6.183212908377783,
+      "p95": 7.33829648080743,
+      "above_5_fraction": 0.22169811320754718,
+      "above_10_fraction": 0.009433962264150943,
+      "patient_balanced_mean": 3.6408596233903396
+    },
+    {
+      "requested_coverage": 0.7,
+      "accepted": 185,
+      "actual_coverage": 0.7007575757575758,
+      "n": 185,
+      "people": 6,
+      "sites": 57,
+      "mean": 3.5279152816887334,
+      "median": 3.0037747404427555,
+      "p90": 6.117171325799823,
+      "p95": 7.146910797219276,
+      "above_5_fraction": 0.21621621621621623,
+      "above_10_fraction": 0.005405405405405406,
+      "patient_balanced_mean": 3.5781432229983774
+    },
+    {
+      "requested_coverage": 0.6,
+      "accepted": 159,
+      "actual_coverage": 0.6022727272727273,
+      "n": 159,
+      "people": 6,
+      "sites": 53,
+      "mean": 3.554373144662025,
+      "median": 3.0106517804644386,
+      "p90": 6.325679563450693,
+      "p95": 7.195545144160719,
+      "above_5_fraction": 0.22012578616352202,
+      "above_10_fraction": 0.0,
+      "patient_balanced_mean": 3.5938790130487956
+    }
+  ],
+  "paired_repeatability": {
+    "pairs": 396,
+    "mean_delta_e00_between_captures": 2.921902205243756
+  },
+  "initial_state_sha256": "0080ba7af47a8025635a083192e06fa966147a06767cd2b0f140df11e9ad2618",
+  "best_sha256": "2e1c07045c55ffa40785165a518d928d285bd52a2b92a53e4e64894c78661cbf",
+  "final_sha256": "89a52e65a6ca559d9eea609ad1e194044fec711645390074a460ad1afca4ea7b",
+  "stored_parameters": 993287,
+  "active_parameters": 924932,
+  "training_active_parameters": 990468,
+  "branch_at_inference": false,
+  "peak_train_allocated_mib": 112.6591796875,
+  "elapsed_seconds": 11.193966399994679,
+  "train_people": 24,
+  "selection_people": 6,
+  "evaluation_people": 6,
+  "train_images": 966,
+  "selection_images": 264,
+  "evaluation_images": 264,
+  "train_cameras": [
+    "SLR",
+    "ipod"
+  ],
+  "selection_cameras": [
+    "SLR",
+    "ipod"
+  ],
+  "evaluation_cameras": [
+    "SLR",
+    "ipod"
+  ],
+  "protocol_sha256": "9e4c5daba7fd96daf9eedfa767f21a0c271911a9861198fdd6c7f5eecf2be3e8",
+  "training_script_sha256": "fa02bc7fd4d3156454de9316511c6ae9191e8e80240cdd9522978b15d1b38698",
+  "model_script_sha256": "23327fd50287eb52851e6c52c8a9077cf8e4a79470b29bf072012cd4b900e232",
+  "source_exploratory_only": true,
+  "reserved_test_or_calibration_loaded": false,
+  "risk_is_calibrated_expected_error": false,
+  "strata": {
+    "device": {
+      "SLR": {
+        "n": 132,
+        "people": 3,
+        "sites": 33,
+        "mean": 3.5530928986040444,
+        "median": 3.0073374978603953,
+        "p90": 6.239469496805879,
+        "p95": 7.33829648080743,
+        "above_5_fraction": 0.20454545454545456,
+        "above_10_fraction": 0.007575757575757576,
+        "patient_balanced_mean": 3.5530928986040444
+      },
+      "ipod": {
+        "n": 132,
+        "people": 3,
+        "sites": 33,
+        "mean": 3.675674978931916,
+        "median": 3.2103604340724816,
+        "p90": 5.950792581372892,
+        "p95": 6.967900955872091,
+        "above_5_fraction": 0.24242424242424243,
+        "above_10_fraction": 0.015151515151515152,
+        "patient_balanced_mean": 3.675674978931916
+      }
+    },
+    "image_type": {
+      "clinical: close-up": {
+        "n": 66,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.2070220268081306,
+        "median": 2.8494513900771654,
+        "p90": 5.482338974330556,
+        "p95": 6.347630379191674,
+        "above_5_fraction": 0.15151515151515152,
+        "above_10_fraction": 0.0,
+        "patient_balanced_mean": 3.2070220268081306
+      },
+      "dermoscopic": {
+        "n": 198,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.750171242754597,
+        "median": 3.314190064347514,
+        "p90": 6.267073331021836,
+        "p95": 7.415325398782245,
+        "above_5_fraction": 0.2474747474747475,
+        "above_10_fraction": 0.015151515151515152,
+        "patient_balanced_mean": 3.750171242754597
+      }
+    },
+    "mode": {
+      "NP-C": {
+        "n": 66,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.898866024225561,
+        "median": 3.314190064347514,
+        "p90": 6.477527423904681,
+        "p95": 7.371390013999683,
+        "above_5_fraction": 0.2878787878787879,
+        "above_10_fraction": 0.015151515151515152,
+        "patient_balanced_mean": 3.8988660242255606
+      },
+      "NP-NC": {
+        "n": 66,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.2070220268081306,
+        "median": 2.8494513900771654,
+        "p90": 5.482338974330556,
+        "p95": 6.347630379191674,
+        "above_5_fraction": 0.15151515151515152,
+        "above_10_fraction": 0.0,
+        "patient_balanced_mean": 3.2070220268081306
+      },
+      "P-C": {
+        "n": 66,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.6161307197368875,
+        "median": 3.3741837835323425,
+        "p90": 5.497063718113118,
+        "p95": 7.25654463640061,
+        "above_5_fraction": 0.19696969696969696,
+        "above_10_fraction": 0.015151515151515152,
+        "patient_balanced_mean": 3.6161307197368875
+      },
+      "P-NC": {
+        "n": 66,
+        "people": 6,
+        "sites": 66,
+        "mean": 3.7355169843013423,
+        "median": 3.1806151999386474,
+        "p90": 6.142702611343683,
+        "p95": 7.277586958840948,
+        "above_5_fraction": 0.25757575757575757,
+        "above_10_fraction": 0.015151515151515152,
+        "patient_balanced_mean": 3.7355169843013427
+      }
+    }
+  }
+}

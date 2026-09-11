@@ -1,3 +1,27 @@
+# Latest: actual skin-color endpoint; 72 representation-control fits
+
+The endpoint remains actual instrument-referenced skin color in native Lab /
+DeltaE00, not illuminant angular error. Preserved independent TEST: primary
+mean 4.4570, selective 80% mean 4.1591; ordinary fusion 4.3005 / 4.1447 remains
+stronger. Ordinary iPhone/Android facial accuracy is still unvalidated.
+
+36 nuisance and 36 copula source fits are complete. Fixed training-only grid
+explains some transfer benefit without learned affinities. Rank-only models
+lose absolute color information and worsen all three source protocols.
+Copula plus raw color does not beat the strongest historical comparator in
+any protocol. No universal-camera, selective-risk or novelty victory.
+
+[Decision and next diagnostic](skin_representation_next_decision.md),
+[nuisance results](../benchmarks/skin_nuisance_v1/report.md),
+[copula results](../benchmarks/skin_copula_v1/report.md).
+216 color and 216 risk arrays exactly replay; 12,672 independent scalar
+CIEDE2000 cases and 432 coverage rows pass. Nine learned-control final weight
+sets match prior runs. Nuisance test-only precision amendment is archived.
+290 tests pass with 14 historical warnings in 32.81s. No live training job.
+No TEST/CAL or UMINHO held-out endpoints accessed in this source cycle.
+Goal remains unmet. The next planned check concerns source measurement and
+image/reference correspondence before another architecture sweep.
+
 # Latest:90real-photo spatial/training-branch fits and45fixed combinations
 
 54spatial source fits reject the direct graph-smoothing hypothesis: mixed graph3
