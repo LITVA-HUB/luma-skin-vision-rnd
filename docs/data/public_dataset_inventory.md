@@ -1,5 +1,16 @@
 # Public color-constancy dataset inventory
 
+Latest update2026-09-11: both phone and V7 INTEL transfer screens are completed,
+superseding acquisition-only wording below. INTEL384 (317 primary) remains
+evaluation-only, with original BY-SA and mirror provenance limits. No target
+training. [V7 measured report](../benchmarks/cc_v7_external/report.md).
+
+Direct skin extension: original-author CC BY4.0 He2021 RGB/XYZ workbook acquired
+and used for a14-control held-person-out regional skin-calibration pilot.
+No full images or camera-generalization skin result. Exact DeltaE reference
+white remains unverified. [Skin source inventory](public_skin_color_inventory.md),
+[measured XYZ report](../benchmarks/skin_he_xyz_v1/report.md).
+
 Phone acquisition completion: the selected Beyond RGB subset is now fully
 downloaded and verified (47 scenes,560 records,3,229,998,120 payload bytes).
 References to planned/in-progress acquisition below describe the original intake;

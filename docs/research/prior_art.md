@@ -196,3 +196,23 @@ Sensor simulation, semantic color constancy, privileged training targets and
 knowledge distillation have established precedents. The useful unresolved
 question is whether this particular matched compact training setup improves
 real camera transfer and selective error at fixed deployment cost.
+# 2026-09-11 direct skin-color endpoint update
+
+[He et al., Development of an image-based measurement system for human facial
+skin colour](https://doi.org/10.1002/col.22737) provides direct overlap for
+camera-RGB-to-measured-skin-XYZ calibration. Linear, polynomial, root-polynomial
+and neural calibration are established methods. The [original CC BY4.0
+data](https://zenodo.org/records/5532176) are now used in our bounded author-split
+XYZ baseline, with no exact MATLAB reproduction or perceptual-error claim.
+
+[CHROMA-FIT](https://research.fit.edu/idl/publications/),
+[DAST](https://github.com/dasec/DAST-SkinTone-database) and
+[ENCoDE](https://physionet.org/content/encode-skin-color/1.0.0/) demonstrate
+existing instrument-paired skin-tone evaluation directions. Their publication
+does not automatically clear their data for local/commercial training.
+[Separate access/rights inventory](../data/public_skin_color_inventory.md).
+
+Our completed V7 real-camera result is negative for canonical semantic teacher
+targets. It cannot support a new accuracy claim. Future novelty must concern
+an experimentally useful mechanism and a valid skin-color endpoint, rather
+than renaming calibration, distillation, uncertainty or color invariance.

@@ -1,5 +1,26 @@
 # Mechanism search ledger: challenge the representation
 
+Latest completed tests: V7 lost its real external canonical-teacher contrast;
+Fourier ridge outperformed all V7 families on pooled full/risk80. The projector
+probe is now MEASURED: all numerical invariance checks passed, but nonnegative
+16x16 spatial weights cannot match the comparator's TRAIN recovery mean even
+with oracle GT. [External result](../benchmarks/cc_v7_external/report.md),
+[projector falsifier](../benchmarks/projector_probe_report.md).
+
+New fundamental assumption to challenge: illuminant error is an adequate
+surrogate for the product's skin-color error. It is not established, and the
+user explicitly requests skin accuracy. First direct pilot now uses real
+spectrophotometer-paired facial regional RGB/XYZ. Its source-CV-selected higher
+order mappings lose to affine mappings on the held-out skin sites. Simpler
+calibration remains a necessary baseline for any proposed neural mechanism.
+Exact perceptual scoring requires a verified reference white, still absent.
+The attempt to recover it from a companion spectral release failed; do not
+substitute a convenient spectrum. [Skin target](skin_color_target_2026_09_11.md).
+
+Retain signed-projector work as an alternative, but no major new angular-only
+training cycle before resolving the direct skin measurement benchmark. The
+older planned/in-progress labels below are historical.
+
 User-directed broader search; keep current V6 combination as one hypothesis.
 At each substantial result record an assumption to invert, a counterexample,
 and a cheap discriminating experiment. No unusual name constitutes novelty.

@@ -1,0 +1,135 @@
+{
+  "population": "unseen_primary317",
+  "bootstrap_draws": 2000,
+  "seed": 20260911,
+  "unit": "Exact reference-file hash, stratified by camera; not verified scene identity",
+  "limitations": "Unknown scene dependence, multiple comparisons and pretrained-image overlap are not corrected",
+  "comparisons": [
+    {
+      "a": "v7_canonical_teacher_sensor",
+      "b": "v7_raw_teacher_sensor",
+      "difference_sign": "negative favors a",
+      "full": {
+        "difference": 0.5251678955809744,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.3807516422907444,
+          0.6679193442952731
+        ]
+      },
+      "risk80": {
+        "difference": 0.5654344697246376,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.38527027242776224,
+          0.7756663213958984
+        ]
+      }
+    },
+    {
+      "a": "v7_gt_sensor",
+      "b": "v7_gt_native",
+      "difference_sign": "negative favors a",
+      "full": {
+        "difference": -0.6166464449809306,
+        "replicates_supported": 2000,
+        "percentile95": [
+          -0.919849082598471,
+          -0.2994761241580536
+        ]
+      },
+      "risk80": {
+        "difference": -0.9302703614563974,
+        "replicates_supported": 2000,
+        "percentile95": [
+          -1.237962592729787,
+          -0.609738587582312
+        ]
+      }
+    },
+    {
+      "a": "v7_canonical_teacher_sensor",
+      "b": "v2_sog",
+      "difference_sign": "negative favors a",
+      "full": {
+        "difference": 0.4145492988988586,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.049364993869361974,
+          0.7561906244276781
+        ]
+      },
+      "risk80": {
+        "difference": 1.2558955927207247,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.9349623652208364,
+          1.577695655594537
+        ]
+      }
+    },
+    {
+      "a": "v7_gt_sensor",
+      "b": "v2_sog",
+      "difference_sign": "negative favors a",
+      "full": {
+        "difference": -0.08104872935108975,
+        "replicates_supported": 2000,
+        "percentile95": [
+          -0.4184387360488526,
+          0.24668466184038124
+        ]
+      },
+      "risk80": {
+        "difference": 0.7106246967339951,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.39278093440936035,
+          1.0052597021629033
+        ]
+      }
+    },
+    {
+      "a": "v7_canonical_teacher_sensor",
+      "b": "gw_ridge1",
+      "difference_sign": "negative favors a",
+      "full": {
+        "difference": 0.7371139909083606,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.4378916979055937,
+          1.0286145685060983
+        ]
+      },
+      "risk80": {
+        "difference": 1.0786026543860316,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.7203505887986162,
+          1.4349225951182325
+        ]
+      }
+    },
+    {
+      "a": "v7_canonical_teacher_sensor",
+      "b": "fourier_ridge_combined",
+      "difference_sign": "negative favors a",
+      "full": {
+        "difference": 1.1460985174348224,
+        "replicates_supported": 2000,
+        "percentile95": [
+          0.7095362888228725,
+          1.6030339309745902
+        ]
+      },
+      "risk80": {
+        "difference": 1.6000364709342705,
+        "replicates_supported": 2000,
+        "percentile95": [
+          1.2285478255694045,
+          1.9651182481587783
+        ]
+      }
+    }
+  ]
+}

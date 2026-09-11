@@ -1,5 +1,26 @@
 # V7 component evidence and limits
 
+Completion addendum: all15 V7 trainings and30 checkpoint replays finished.
+The frozen real-camera primary317 screen rejects the canonical-teacher
+hypothesis: mean/risk80 5.5013/5.3135 versus matched C+4.9761/4.7481 degrees.
+Fourier ridge is the strongest observed control,4.3552/3.6233 with raw ranking.
+This does not establish novel superiority. [Complete benchmark](../benchmarks/cc_v7_external/report.md).
+
+Direct skin evidence is now separately implemented and measured: ordinary
+regional RGB-to-instrument-XYZ calibration using original CC BY4.0 He data.
+Training40 people, test20 people/100 sites; all14 controls frozen before test.
+Source-selected RAW/JPG XYZ RMSE2.025092/1.952336. Affine controls outperform
+these source-selected variants on test. This is not a result for the V7 image
+pipeline. It does not prove unseen-phone accuracy, facial DeltaE00, makeup
+recommendation quality or novelty. White-reference verification remains open.
+[Skin measurement pilot](../benchmarks/skin_he_xyz_v1/report.md).
+
+Product victory requires actual skin-color accuracy and reliability under the
+intended capture conditions. An angular-illumination improvement alone is
+insufficient. [Product target and provisional engineering tolerances](../research/skin_color_target_2026_09_11.md).
+The earlier first-seed statements below are retained as historical context;
+completion evidence above supersedes running/not-yet-evaluated wording.
+
 Candidate positioning remains: compact adaptive color-normalization and
 reliability estimation technology for camera-independent analysis of
 color-sensitive visual objects, with first intended application in facial

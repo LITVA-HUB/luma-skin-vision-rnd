@@ -1,4 +1,39 @@
-# Latest progress: V7 camera-robust training, 2026-09-11
+# Latest priority: actual skin-color error, 2026-09-11
+
+User clarification makes instrument-referenced skin color the product endpoint.
+Angular normalization remains a component diagnostic. [Target and acceptance
+criteria](skin_color_target_2026_09_11.md) supersede proxy-only prioritization.
+
+NEW REAL SKIN PILOT: original-author CC BY4.0 paired regional RGB/XYZ data,
+200 sites/40 training people and100 sites/20 held-out people. All14 ordinary
+controls frozen before test extraction; all14 weight replays and168 independent
+metric cases passed. Source-CV-selected RAW poly3 XYZ RMSE2.025092; JPG poly2
+1.952336. Simple affine controls actually perform better on test,1.830634 and
+1.860912 respectively; do not hide failed source selection. These are XYZ
+coordinate errors, not perceptual DeltaE or a percentage accuracy. Exact white
+reference remains unverified; the proposed companion-spectrum match failed.
+No V7/full-image/phone skin-color accuracy is established. [Skin report](../benchmarks/skin_he_xyz_v1/report.md).
+
+V7 COMPLETE NEGATIVE PRIMARY HYPOTHESIS: all15 trainings/30 checkpoint replays,
+all three source-risk/stress audits, and the29-method external benchmark finished.
+On317 reference-history-disjoint INTEL images, canonical teacher full/risk80
+5.5013/5.3135 versus matched raw teacher4.9761/4.7481. Paired differences favor
+the control, including descriptive95% intervals. Source-only sensor augmentation
+helps versus native training but does not beat the strongest control. Fourier
+ridge raw4.3552/3.6233 is the strongest observed pooled baseline. This is a custom
+split, not author FFCC reproduction/SOTA. All261 method/population records and
+1,566 coverage/threshold cases passed an independent atan2 audit; max4.61e-11.
+[Full real-camera report](../benchmarks/cc_v7_external/report.md).
+
+Projector/cone TRAIN probe completed: numerical invariance holds, but the
+positive16x16 patch-cone oracle recovery floor0.6751 exceeds the current fitted
+comparator's TRAIN recovery0.6042. Signed-weight geometry remains PLANNED and
+secondary to obtaining a valid skin-color endpoint. [Probe](../benchmarks/projector_probe_report.md).
+
+Historical states below are retained as chronology; they are not current process
+status. No prior negative result is overwritten and the R&D goal remains active.
+
+# Previous progress: V7 camera-robust training, 2026-09-11
 
 [V7 seed17](../benchmarks/cc_v7/seed17_report.md) completed all five120-epoch arms;
 all10 best/final checkpoint replays passed. Deployment estimator3.034M;

@@ -1,0 +1,213 @@
+{
+  "scope": "TRAIN-ONLY REPRESENTATION DIAGNOSTIC; oracles use GT; no deployable accuracy result",
+  "comparator": {
+    "checkpoint_sha256": "62c71edde258893a77af8a6fc60c8ffd6f0b70169cc44ed0d527bd0aa42379eb",
+    "recovery": {
+      "n": 1126,
+      "mean": 0.6042054814967365,
+      "median": 0.4059293464667616,
+      "trimean": 0.43614585458474914,
+      "best25": 0.14897445441582882,
+      "worst25": 1.4221723315645927,
+      "p90": 1.230990007341623,
+      "p95": 1.6456057118923306,
+      "max": 10.90675686274002,
+      "over10_fraction": 0.0008880994671403197,
+      "over20_fraction": 0.0
+    },
+    "reproduction": {
+      "n": 1126,
+      "mean": 0.7769708938090205,
+      "median": 0.4774851539689652,
+      "trimean": 0.5413936561433357,
+      "best25": 0.1742519713897555,
+      "worst25": 1.9058223994192887,
+      "p90": 1.722959788102731,
+      "p95": 2.2581982760298436,
+      "max": 13.984423289397142,
+      "over10_fraction": 0.0017761989342806395,
+      "over20_fraction": 0.0
+    },
+    "scope": "TRAIN errors of a previously fitted comparator; not validation/test"
+  },
+  "records": [
+    {
+      "grid": 4,
+      "status": "ALL CONE PROJECTIONS KKT VERIFIED",
+      "population": 1126,
+      "projector_supported": 1126,
+      "condition_finite": {
+        "n": 1126,
+        "median": 264.66234942828726,
+        "p95": 771.3945744388212,
+        "max": 2178.552012136771
+      },
+      "invariance": {
+        "gain": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 0.0
+        },
+        "mix": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 1.9012569296705806e-13
+        },
+        "strong_mix": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 7.407963131811357e-13
+        }
+      },
+      "oracle_minimum_recovery": {
+        "n": 1126,
+        "mean": 1.5698827554195358,
+        "median": 0.4001930244242885,
+        "trimean": 0.7667795431772443,
+        "best25": 0.0007792447993940382,
+        "worst25": 4.978556283126431,
+        "p90": 4.405227432319373,
+        "p95": 6.122567617641773,
+        "max": 42.10073922748113,
+        "over10_fraction": 0.014209591474245116,
+        "over20_fraction": 0.0026642984014209592
+      },
+      "oracle_feasible_reproduction_NOT_lower_bound": {
+        "n": 1126,
+        "mean": 2.0622133395818922,
+        "median": 0.5135011859354048,
+        "trimean": 1.0356874279965216,
+        "best25": 0.0009459991624325122,
+        "worst25": 6.422520766648455,
+        "p90": 6.0595312468008515,
+        "p95": 8.020478212501054,
+        "max": 31.721677593990318,
+        "over10_fraction": 0.03463587921847247,
+        "over20_fraction": 0.0026642984014209592
+      },
+      "nonpositive_or_failed_reproduction_rows": 0,
+      "outside_cone_fraction": 0.7673179396092362,
+      "max_kkt_violation": 5.348930151542682e-16,
+      "failures": []
+    },
+    {
+      "grid": 8,
+      "status": "ALL CONE PROJECTIONS KKT VERIFIED",
+      "population": 1126,
+      "projector_supported": 1126,
+      "condition_finite": {
+        "n": 1126,
+        "median": 195.48692960149106,
+        "p95": 570.4371816477943,
+        "max": 1709.5653858905036
+      },
+      "invariance": {
+        "gain": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 0.0
+        },
+        "mix": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 9.656728541806991e-14
+        },
+        "strong_mix": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 3.99555388774786e-13
+        }
+      },
+      "oracle_minimum_recovery": {
+        "n": 1126,
+        "mean": 1.0274859545872734,
+        "median": 0.052838327756629506,
+        "trimean": 0.306985246991074,
+        "best25": 0.0,
+        "worst25": 3.682570046224284,
+        "p90": 3.1748718345771207,
+        "p95": 4.672251564374955,
+        "max": 39.28909282808318,
+        "over10_fraction": 0.010657193605683837,
+        "over20_fraction": 0.0026642984014209592
+      },
+      "oracle_feasible_reproduction_NOT_lower_bound": {
+        "n": 1126,
+        "mean": 1.3382499609492076,
+        "median": 0.05479066785413575,
+        "trimean": 0.43008026943813094,
+        "best25": 0.0,
+        "worst25": 4.767579184328736,
+        "p90": 4.35689798964772,
+        "p95": 6.2362077793163,
+        "max": 29.996293263784917,
+        "over10_fraction": 0.020426287744227355,
+        "over20_fraction": 0.0026642984014209592
+      },
+      "nonpositive_or_failed_reproduction_rows": 0,
+      "outside_cone_fraction": 0.5381882770870338,
+      "max_kkt_violation": 4.797082435024361e-16,
+      "failures": []
+    },
+    {
+      "grid": 16,
+      "status": "ALL CONE PROJECTIONS KKT VERIFIED",
+      "population": 1126,
+      "projector_supported": 1126,
+      "condition_finite": {
+        "n": 1126,
+        "median": 162.61934491451512,
+        "p95": 495.90546102130673,
+        "max": 1511.8029297774733
+      },
+      "invariance": {
+        "gain": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 0.0
+        },
+        "mix": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 6.48248815737773e-14
+        },
+        "strong_mix": {
+          "jointly_supported": 1126,
+          "support_changed": 0,
+          "max_absolute_feature_difference": 1.296506305092926e-13
+        }
+      },
+      "oracle_minimum_recovery": {
+        "n": 1126,
+        "mean": 0.6750768320210951,
+        "median": 0.0,
+        "trimean": 0.09477307675033114,
+        "best25": 0.0,
+        "worst25": 2.6329561063281264,
+        "p90": 2.055836645926014,
+        "p95": 3.6487823211100494,
+        "max": 38.35176975596647,
+        "over10_fraction": 0.006216696269982238,
+        "over20_fraction": 0.0017761989342806395
+      },
+      "oracle_feasible_reproduction_NOT_lower_bound": {
+        "n": 1126,
+        "mean": 0.8804964199975264,
+        "median": 0.0,
+        "trimean": 0.12544073294125715,
+        "best25": 0.0,
+        "worst25": 3.4313576488050663,
+        "p90": 2.771573559825474,
+        "p95": 4.891456720847881,
+        "max": 29.574608046765896,
+        "over10_fraction": 0.013321492007104795,
+        "over20_fraction": 0.0017761989342806395
+      },
+      "nonpositive_or_failed_reproduction_rows": 0,
+      "outside_cone_fraction": 0.3481349911190053,
+      "max_kkt_violation": 4.821438793522402e-16,
+      "failures": []
+    }
+  ],
+  "seconds": 3.8496161999937613
+}

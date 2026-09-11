@@ -1,5 +1,22 @@
 # Active public-benchmark hypothesis
 
+2026-09-11 latest decision: V7 canonical semantic targets failed the frozen
+real-camera comparison, including the equal-budget raw-teacher C+. No proposed
+V7 model beats the strongest observed Fourier control. [Complete result](../benchmarks/cc_v7_external/report.md).
+Preserve limited benefits of sensor augmentation as a known training mechanism,
+not a new validated contribution. The basis-free projector probe is numerically
+sound but its positive-weight hypothesis is restrictive; signed geometry is
+unverified. Neither projector algebra nor distillation is novel by itself.
+
+The user now prioritizes actual skin-color accuracy as the main endpoint.
+[Instrument-paired pilot](../benchmarks/skin_he_xyz_v1/report.md) measures
+regional RGB-to-XYZ calibration against real skin readings, with explicit
+white-reference and camera limits. It is ordinary calibration, not a proposed
+new architecture. Next contribution must improve a valid skin-color/reliability
+endpoint, not only illuminant angular error. [Product target](skin_color_target_2026_09_11.md).
+
+Earlier hypothesis states below are historical and do not supersede this result.
+
 **V5 final update:** all18 runs finished. Generic action has lower mean error
 (2.4136° versus transport2.4548°), while transport has lower mean raw risk80
 (2.0192° versus2.1333°). Selected-action/derivative training does not improve

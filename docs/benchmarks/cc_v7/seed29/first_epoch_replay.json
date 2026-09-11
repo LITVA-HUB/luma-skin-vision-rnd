@@ -1,0 +1,50 @@
+{
+  "initial_state_sha256": "8750a5c5dd42993dece569887c16aad74a76b956fc82ff1503804c14ec08d11a",
+  "records": [
+    {
+      "arm": "gt_native",
+      "bitwise_equal": true,
+      "state_sha256": "f38b2179d896868791626c9a067275f89ff4762ca447a8797a193283201a73c8",
+      "training": {
+        "reproduction_loss": 10.43663639116033,
+        "distillation_loss": 0.0
+      }
+    },
+    {
+      "arm": "gt_sensor",
+      "bitwise_equal": true,
+      "state_sha256": "104b3f9ff8841275aacf862d1b43e7de3364985d4a4512391adba3f76b27fbf3",
+      "training": {
+        "reproduction_loss": 15.786653220547665,
+        "distillation_loss": 0.0
+      }
+    },
+    {
+      "arm": "raw_teacher_sensor",
+      "bitwise_equal": true,
+      "state_sha256": "dbc65687c83167b8bd2fa49bb1f79e3855201693ac25e919e6e1407cfee62c08",
+      "training": {
+        "reproduction_loss": 15.687445062938846,
+        "distillation_loss": 0.6457051162609622
+      }
+    },
+    {
+      "arm": "canonical_teacher_sensor",
+      "bitwise_equal": true,
+      "state_sha256": "4610b1f4ee83165d7c5c8a0b5362c2e58b80d20732365eebdb98296ff730657c",
+      "training": {
+        "reproduction_loss": 15.690116939917338,
+        "distillation_loss": 0.6492799072663695
+      }
+    },
+    {
+      "arm": "canonical_teacher_native",
+      "bitwise_equal": true,
+      "state_sha256": "9c783ab69ef7fa28f2fa9ab378604bf99781f14e9052ba87a6e73d86f5dc75a2",
+      "training": {
+        "reproduction_loss": 10.462050226187833,
+        "distillation_loss": 0.6225510181372796
+      }
+    }
+  ]
+}

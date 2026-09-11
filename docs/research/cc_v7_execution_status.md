@@ -1,5 +1,25 @@
 # V7 execution and continuation state
 
+CURRENT: all15 training arms and all30 best/final checkpoint replays complete.
+Sessions23891,31047,82349,56677,38790 and91332 ended0. No V7 worker remains live.
+All29 external methods were frozen in method_lock.json before target decoding;
+SHA2562828472f40348ebb9785c8d294e4353fd6fc0d33956191756c074d8912e3948d.
+External384/primary317 and sourceTEST462 preparation, all58 prediction files,
+261 method/population metric records and the report completed. Independent
+audit covers1,566 fixed-coverage/threshold cases, maximum discrepancy4.61e-11.
+
+Primary canonical-teacher hypothesis failed: full5.5013 versus C+4.9761;
+risk805.3135 versus4.7481. Strongest observed Fourier control4.3552 full and
+3.6233 raw-risk80. Sensor-only augmentation helps versus native but is not
+the strongest method. All three seeds and all controls remain reported.
+[External evidence](../benchmarks/cc_v7_external/report.md).
+
+The user has clarified direct skin color as the next primary endpoint.
+An original CC BY4.0 regional RGB/instrument-XYZ pilot completed on100 sites
+from20 held-out people. This is ordinary single-setup calibration, not V7.
+Exact DeltaE white reference remains unverified. [Skin target](skin_color_target_2026_09_11.md).
+Older process handles below are retained history, not instructions to restart.
+
 Seed17: COMPLETE five120-epoch arms. All10 checkpoints independently replayed
 on CPU; all five first-epoch full-state CUDA replays bitwise equal. Teacher
 feature replay exactly matches at three fixed TRAIN positions for all four
