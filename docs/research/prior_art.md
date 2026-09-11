@@ -499,3 +499,14 @@ improvement but effectively tie ordinary person/site balancing. A within-person
 weight permutation weakens the pure person-mass explanation, without independent
 confirmation. [Decision](skin_color_sampling_next_decision.md). Novelty requires
 more than applying established balancing to measured skin colors.
+
+
+## Combination tested across source acquisition (2026-09-11)
+
+54 matched930-step skin fits reject the universal-transfer claim for person/color
+sampling. Mixed3.7435 versus color3.7864 is inconclusive; unseen directions lose
+stronger controls. Balancing the marginal target distribution does not establish
+an acquisition-invariant conditional appearance mapping. This is a local result,
+not a theorem that all camera-blind models fail. No new novelty is claimed for
+hierarchical sampling, density weighting or importance correction.
+[Decision and next falsifier](skin_sampling_transfer_next_decision.md).

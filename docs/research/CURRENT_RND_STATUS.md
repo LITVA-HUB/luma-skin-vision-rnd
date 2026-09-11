@@ -1,3 +1,19 @@
+# Latest: combined allocation fails source transfer test
+
+54 real skin fits /90 known-unseen evaluations complete. Same930-step budget,
+original compact core. Combined mixed mean3.7435 vs color3.7864 is small and
+inconclusive; SLR-to-iPod6.1545 loses image5.4877, reverse6.4074 loses person/site
+6.0825. Reverse80% error6.7609 is worse than full coverage. No universal winner.
+[Decision and report](skin_sampling_transfer_next_decision.md).
+90 exact arrays;6 full state refits;14256 scalar color cases;476490 TRAIN density
+pairs;540 coverage rows;144 hybrid mass/ratio identities.359 tests pass,
+14 historical warnings,33.75s. All jobs terminal; no live training.
+Original source VALIDATION is reused; independent TEST/CAL remain untouched.
+Independent primary4.4570/80%4.1591 vs ordinary fusion4.3005/4.1447 unchanged.
+Next: privileged-reference, excluded-person offset diagnostic to distinguish
+shared native-Lab bias from image-dependent error. Never count this comparator
+as the single-image/no-calibration product result. Goal active and unmet.
+
 # Latest: native-color allocation and confounding controls complete
 
 21 fixed-budget real skin fits:15 sampling variants plus6 person-mass controls.
