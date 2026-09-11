@@ -271,3 +271,22 @@ required first. No spectral or photo accuracy from ISSA is measured yet.
 ## Measured-material branch: not yet a photo-accuracy contribution
 
 Fifteen fixed ISSA oracle controls demonstrate that2latent variables lose color and8can preserve it well with full spectral input. This does not solve the inverse problem. An image material decoder must beat matched ordinary bottlenecks; a competing feasible-color-set branch should refuse when plausible explanations disagree. Observer/support mismatch and duplicate source records are explicit limits. [Decision](skin_issa_next_decision.md).
+
+
+## Conditional native-skin-color distribution screen (2026-09-11)
+
+The 45 measured-material image fits do not establish a nonlinear-prior advantage;
+see [decision](skin_material_next_decision.md). Next cancel the single-point
+prediction assumption and test distributional predictions with expected-DeltaE00
+inference. This is an unverified combination, not a novelty claim.
+
+Fresh primary sources: [Bishop 1994, Aston](https://research.aston.ac.uk/en/publications/mixture-density-networks/)
+establishes neural conditional mixture distributions, including inverse problems.
+[Conditional risk minimization](https://arxiv.org/abs/1611.07096) establishes
+prediction by minimizing an estimated loss-dependent conditional risk.
+[Yang et al. 2026](https://arxiv.org/abs/2602.19055) studies disentangled captured
+skin appearance and counterfactual editing for lesion images; its abstract
+reports augmentation/classification utility, not our instrument-Lab endpoint.
+No code, weights or datasets from these sources are adopted. The Aston paper
+itself has CC BY-NC-ND terms; reading prior art does not clear third-party code
+or weights. Search is a scoped update, not an exhaustive patentability review.

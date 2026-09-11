@@ -1,0 +1,54 @@
+{
+  "scope": "POST-HOC TRAIN known-target oracle; no image accuracy, no global infeasibility proof",
+  "records": [
+    {
+      "coefficient_bound": 1.0,
+      "sites": 248,
+      "mean_achieved_delta_e00": 3.769401675430199,
+      "median": 2.598067350224368,
+      "p95": 12.827062936158605,
+      "max": 18.369218410785674,
+      "fraction_below_0_01": 0.20967741935483872,
+      "solver_success_fraction": 0.8104838709677419,
+      "maximum_nfev": 400,
+      "mean_code_l2": 2.4559334659629988,
+      "fraction_any_coordinate_at_bound": 0.8064516129032258
+    },
+    {
+      "coefficient_bound": 3.0,
+      "sites": 248,
+      "mean_achieved_delta_e00": 0.10589463173860916,
+      "median": 1.270614519490726e-11,
+      "p95": 0.3622532257524615,
+      "max": 4.855822751453148,
+      "fraction_below_0_01": 0.9435483870967742,
+      "solver_success_fraction": 0.9838709677419355,
+      "maximum_nfev": 400,
+      "mean_code_l2": 3.367217097884389,
+      "fraction_any_coordinate_at_bound": 0.06048387096774194
+    },
+    {
+      "coefficient_bound": 6.0,
+      "sites": 248,
+      "mean_achieved_delta_e00": 1.9643275698232474e-11,
+      "median": 8.814690457126408e-12,
+      "p95": 7.796796304367434e-11,
+      "max": 2.2478214944219534e-10,
+      "fraction_below_0_01": 1.0,
+      "solver_success_fraction": 1.0,
+      "maximum_nfev": 77,
+      "mean_code_l2": 3.8203038539870255,
+      "fraction_any_coordinate_at_bound": 0.0
+    }
+  ],
+  "validation_or_reserved_targets_fit": false,
+  "network_weights_modified": false,
+  "bindings": {
+    "scripts\\skin_material_feasibility.py": "976a23771191587d7567c3b81f3cb0e380441ea24069860cdb0e599cd9a1e6b1",
+    "docs\\research\\skin_material_feasibility_protocol_v1.md": "d3a826e55aa96c4ff78fcb7fc12dd367bea19e9381c6717badad341d4e5f5bd5",
+    "artifacts\\skin_material_image_v1\\prior.npz": "6f6aaa459492c4249c4a621081e6362e3a0aaba91585e19f2350605d2edd15fc",
+    "scripts\\skin_material_prior.py": "9083b6a07c102ca525b2fa53541f741ca9b34b71c1170d98441d33e9d054a6d5",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "experiments\\runs\\skin_material_image_v1\\feasibility_train.npz": "5858a7d3e61ca03d5b7e0ef1534983c1ea641f826eec6ab252187b42eee08507"
+  }
+}

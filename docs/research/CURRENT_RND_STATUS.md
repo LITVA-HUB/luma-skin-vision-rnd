@@ -1,3 +1,15 @@
+# Latest: 45 material-image fits complete; no universal gain
+
+The endpoint is actual instrument skin Lab / DeltaE00. Nonlinear material decoder
+mixed/SLR-to-iPod/reverse mean errors: 3.5141/4.9083/6.1311; matched tangent
+3.5112/4.9531/5.4509. Ordinary direct remains stronger mixed (3.4406), and the
+historical graph remains stronger reverse (4.9736). No deployment promotion.
+All 135 color arrays replay; 7,920 independent scalar cases and 270 coverage rows
+pass. A TRAIN-only known-target solver can represent all 248 reference colors
+within 0.01 DeltaE00; this is not photo prediction. [Decision](skin_material_next_decision.md).
+Independent test remains unchanged: primary 4.4570/80% 4.1591 versus ordinary
+fusion 4.3005/4.1447. No new independent or ordinary-phone claim. Goal active.
+
 # Latest: measured skin material controls; no new photo-accuracy claim
 
 ISSA v4 roles frozen before numeric endpoints;8,680TRAIN/1,822VALIDATION.

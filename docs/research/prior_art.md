@@ -345,3 +345,22 @@ required first. No spectral or photo accuracy from ISSA is measured yet.
 ## ISSA material screen and recent optical-locus prior art
 
 [The optical origin of the human skin color banana in CIELAB space](https://pmc.ncbi.nlm.nih.gov/articles/PMC13307969/) links physical skin models and ISSA color geometry. Skin-material manifolds, chromophore models and spectral PCA are not novel. Our fixed controls show representation fidelity, not image inversion. See [material report](../benchmarks/skin_issa_v1/report.md).
+
+
+## Conditional native-skin-color distribution screen (2026-09-11)
+
+The 45 measured-material image fits do not establish a nonlinear-prior advantage;
+see [decision](skin_material_next_decision.md). Next cancel the single-point
+prediction assumption and test distributional predictions with expected-DeltaE00
+inference. This is an unverified combination, not a novelty claim.
+
+Fresh primary sources: [Bishop 1994, Aston](https://research.aston.ac.uk/en/publications/mixture-density-networks/)
+establishes neural conditional mixture distributions, including inverse problems.
+[Conditional risk minimization](https://arxiv.org/abs/1611.07096) establishes
+prediction by minimizing an estimated loss-dependent conditional risk.
+[Yang et al. 2026](https://arxiv.org/abs/2602.19055) studies disentangled captured
+skin appearance and counterfactual editing for lesion images; its abstract
+reports augmentation/classification utility, not our instrument-Lab endpoint.
+No code, weights or datasets from these sources are adopted. The Aston paper
+itself has CC BY-NC-ND terms; reading prior art does not clear third-party code
+or weights. Search is a scoped update, not an exhaustive patentability review.
