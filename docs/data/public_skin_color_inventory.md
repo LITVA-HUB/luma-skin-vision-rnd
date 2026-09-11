@@ -1,5 +1,13 @@
 # Public instrument-paired skin sources, checked2026-09-11
 
+Latest MSKCC status: all1,838paired originals acquired (2,128,062,766bytes),
+independent400-image/10-person direct-DeltaE00 test completed after immutable
+model and calibration locks. Primary full4.457/80%selective4.159; ordinary
+fusion stronger. No ordinary facial-phone or strict unseen-camera claim.
+[Report](../benchmarks/skin_mskcc_selective_v1/report.md). A declared pre-test
+amendment handles actual available instrument readings without imputation;
+all test images have three readings. Later sections retain earlier history.
+
 This inventory concerns actual skin measurements, not image-derived tone
 classes or illuminant-vector proxies. Dataset license and scientific fitness
 are independent. No proprietary acquisition or external contact is authorized

@@ -1,4 +1,28 @@
-# Latest: direct skin pixels measured, source validation only
+# Current: independent instrument skin-color test completed
+
+Primary endpoint is actual native-Lab skin color, measured with CIEDE2000, not
+illumination angle. Frozen test: 400 images / 105 sites / 10 previously held-out
+people. Primary 2,774,796-parameter patch ensemble mean4.45698, median4.00120,
+p959.26312 DeltaE00. At80% accepted coverage Proposed mean4.15912 versus matched
+C+4.33276; paired difference -0.17364, patient-bootstrap95%CI[-0.56848,0.16472].
+The interval crosses zero. Ordinary six-model fusion full mean4.30047 and
+density-ranked80% mean4.14472 is stronger observed full-system evidence.
+No convincing proposed-method victory; no product accuracy victory.
+
+The primary method's80% median3.88337/p958.09657 fails the working <=2/<=5
+product aspiration. The calibration-fixed80% threshold actually accepts74.25%
+of test images. Both development camera families are known; ordinary unseen
+iPhone/Android facial accuracy remains unvalidated. No angular proxy claim.
+
+[Independent report](../benchmarks/skin_mskcc_selective_v1/report.md),
+[protocol](skin_mskcc_selective_protocol_v1.md),
+[declared pre-test reference amendment](skin_mskcc_reference_amendment_v1.md).
+49prediction arrays/294independent coverage cases and8risk/calibrator replays
+pass;18OOF fits replay;262tests pass. TEST is now an exposed evaluation archive,
+not a future tuning or fresh confirmation set. No background training remains.
+The earlier sections below are historical and do not describe current access.
+
+# Historical: direct skin pixels measured, source validation only
 
 The local JPEG-to-instrument-Lab pipeline is now implemented and measured.924932parameter patch models achieve meanDeltaE00 3.4888/3.5074/3.4964 across3seeds, versus MobileNet3.8139/4.0029/4.1147 and matched global MLP3.8113/3.7303/3.9020. Six-person validation was used for selection;10test and6calibration people remain unopened. Iterative special mechanisms did not reliably beat simple matched pooling.
 

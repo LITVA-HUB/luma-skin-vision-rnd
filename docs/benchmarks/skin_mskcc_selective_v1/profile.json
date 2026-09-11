@@ -1,0 +1,28 @@
+{
+  "scope": "Frozen three-seed color estimator, batch1 prepared64x18 descriptors; no witness extraction, density, risk head, JPEG preprocessing or localization included in GPU timing",
+  "device": "NVIDIA GeForce RTX 4060",
+  "color_parameters": 2774796,
+  "color_checkpoint_bytes": 11113890,
+  "gpu_median_ms": 1.4698879718780518,
+  "gpu_p95_ms": 1.726651233434677,
+  "synchronized_wall_median_ms": 1.4865500124869868,
+  "inference_peak_allocated_mib": 20.03662109375,
+  "source_prediction_replay_max_difference": 1.4210854715202004e-14,
+  "cpu_risk_heads": {
+    "C_plus": {
+      "selected": "mlp10",
+      "median_ms": 0.22080000780988485,
+      "p95_ms": 0.27883999719051644,
+      "head_and_calibrator_bytes": 85839,
+      "scope": "Prepared feature vector to predicted error, CPU, batch1; not total pipeline"
+    },
+    "Proposed": {
+      "selected": "hgb",
+      "median_ms": 0.5017999792471528,
+      "p95_ms": 0.6261000147787853,
+      "head_and_calibrator_bytes": 147485,
+      "scope": "Prepared feature vector to predicted error, CPU, batch1; not total pipeline"
+    }
+  },
+  "export": "NOT DONE; no new deployment accuracy claim"
+}

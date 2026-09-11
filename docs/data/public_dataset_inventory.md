@@ -1,4 +1,15 @@
-# Pixel research update2026-09-11
+# Current direct-skin benchmark update 2026-09-11
+
+Original MSKCC CC-BY instrument-paired image subset (1,838JPEGs,2.128GB) now
+has a frozen independent400-image/10-person test. Primary mean4.457DeltaE00,
+80%selective4.159 versus C+4.333; no convincing special-mechanism win.
+Both device families are known. All400test rows contain3complete instrument
+Lab readings;3calibration rows contain1, documented before test without
+exclusion/imputation. [Report](../benchmarks/skin_mskcc_selective_v1/report.md).
+This is actual skin-color evidence; ordinary facial phones remain unvalidated.
+Earlier acquisition/source-validation statements below are historical.
+
+# Historical pixel research update2026-09-11
 
 MSKCC update: actual local JPEG-to-Lab source experiment completed, including9feature controls and21neural fits. Final10-person test and6-person calibration remain unopened. See [direct pixel decision](../research/skin_mskcc_pixel_decision.md).
 

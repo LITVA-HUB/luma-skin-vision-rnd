@@ -1,4 +1,15 @@
-# Pixel research update2026-09-11
+# Independent direct-skin test decision 2026-09-11
+
+Primary matched-search selective hypothesis: small observed80%DeltaE00 gain
+4.333 to4.159,95%patient-cluster interval crosses zero. Identical color models;
+different source-selected head families (MLP/HGB), so feature causality is not
+isolated. Ordinary6-model fusion+density reaches4.145. No convincing novel
+mechanism win; no product-level facial-phone accuracy established. Current
+test is exposed and must not be recycled as fresh confirmation. Prioritize
+source-only direct-color/within-site consistency hypotheses with a separate
+future confirmation cohort. [Independent evidence](../benchmarks/skin_mskcc_selective_v1/report.md).
+
+# Historical pixel research update2026-09-11
 
 Direct pixel evidence: patch-set color regression is promising on source validation, but standard set aggregation is not new. Iterative Huber mechanisms failed to reliably improve matched pooling; forcing local-only votes lost useful context. Next investigate matched, calibrated expected skin DeltaE00 rather than claim a new architecture from a baseline win. See [current decision](skin_mskcc_pixel_decision.md).
 

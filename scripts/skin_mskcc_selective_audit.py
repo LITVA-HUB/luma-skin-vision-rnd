@@ -9,6 +9,7 @@ from skin_mskcc_pixels import load
 from skin_mskcc_selective_core import OUT,RUN,patient_folds,plain_predict,verify_lock,deployment_designs
 from skin_mskcc_selective_data import sealed
 from skin_mskcc_audit import scalar_de
+from skin_mskcc_color_registry import all_predictions
 
 
 def oof_audit():
@@ -58,9 +59,14 @@ def test_audit():
         raw=np.maximum(joblib.load(ROOT/choice['path']).predict(design[version][arm]),0)
         cal=joblib.load(ROOT/lock['calibrators'][key]['path']).predict(raw)
         head_gap=max(head_gap,float(np.max(np.abs(raw-d['raw']))),float(np.max(np.abs(cal-d['calibrated']))))
-    assert maximum<1e-10 and head_gap==0
+    color_gap=0.;color_replays=all_predictions(data)
+    for name,prediction in color_replays.items():
+        saved=np.load(RUN/'test'/('color_'+name+'.npz'))
+        color_gap=max(color_gap,float(np.max(np.abs(prediction-saved['prediction']))))
+    assert maximum<1e-10 and head_gap==0 and color_gap==0
     result={'status':'PASS','test_prediction_arrays':arrays,'independent_coverage_cases':curves,
             'max_scalar_metric_gap':maximum,'head_and_calibrator_replays':len(lock['selected']),'max_head_replay_gap':head_gap,
+            'color_system_replays':len(color_replays),'max_color_replay_gap':color_gap,
             'final_lock_sha256':digest,'test_results_sha256':sha(OUT/'test_results.json')}
     (OUT/'test_audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8');print(json.dumps(result))
 

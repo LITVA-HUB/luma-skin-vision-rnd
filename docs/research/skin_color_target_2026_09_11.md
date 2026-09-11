@@ -19,11 +19,15 @@ All-image errors, exclusions and achieved coverage must also be shown. Set the
 final product tolerance using intended shade decisions and measurement noise;
 do not promise a clinically or perceptually universal threshold.
 
-Current skin-specific accuracy of the Luma image pipeline: **NOT MEASURED**.
+Current standalone R&D skin-image accuracy is **MEASURED ON MSKCC HELD-OUT
+PEOPLE**: primary mean4.457 DeltaE00,80%-accepted median3.883/p958.097. The
+above working target is not met. [Independent report](../benchmarks/skin_mskcc_selective_v1/report.md).
+Accuracy of the actual Luma product on ordinary facial-phone images remains
+**NOT MEASURED**. Both MSKCC camera families were seen during development.
 No angular-error-to-DeltaE conversion is valid for the present illuminant-only
 benchmarks. Existing sRGB-to-Lab conversion code is not a measurement reference.
 
-## Newly verified public route
+## Historical public-route exploration (before the MSKCC image milestone)
 
 He et al.'s original [Zenodo deposit](https://zenodo.org/records/5532176) is
 CC BY 4.0. Its 395,693-byte workbook is acquired and publisher-checksum verified.
