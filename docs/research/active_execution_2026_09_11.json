@@ -1,6 +1,6 @@
 {
   "goal": "active, unbounded research; not complete or blocked",
-  "updated_utc": "2026-09-11T09:18:49.177211+00:00",
+  "updated_utc": "2026-09-11T09:32:05.558857+00:00",
   "live_session": null,
   "completed_sessions": [
     3511,
@@ -69,6 +69,7 @@
     66577,
     67729,
     68317,
+    71047,
     71297,
     71498,
     71908,
@@ -204,12 +205,17 @@
     "54 fits;90 exact known/unseen color arrays;6 complete930-step state refits",
     "14256 scalar color cases;476490 independent scalar TRAIN density pairs",
     "540 fixed-coverage rows;144 combined person-mass/within-person-ratio identities",
-    "359 tests passed;14 historical warnings;33.75 seconds"
+    "359 tests passed;14 historical warnings;33.75 seconds",
+    "90 original arrays;180 exact corrected outputs;324 excluded-person/own-reference checks",
+    "42768 scalar CIEDE2000 cases;1620 fixed-coverage rows",
+    "180 squared-Euclidean Lab identities;explicit zero-own-person calibration matrices",
+    "54 original neural checkpoint hashes remain unchanged",
+    "361 tests passed;14 historical warnings;33.37 seconds"
   ],
   "next": [
-    "Privileged-reference excluded-person offset diagnostic before another architecture sweep",
-    "Keep diagnostic calibration gains separate from single-image/no-calibration method claims",
-    "No exposed TEST/CAL reuse; ordinary facial smartphone accuracy unvalidated"
+    "TRAIN-only person versus size-matched random-group gradient/update diagnostic",
+    "Treat stationary-objective gradient conflict as a counterexample; do not infer harmful shortcuts from cosine alone",
+    "No exposed TEST/CAL reuse; privileged diagnostics never replace product scores"
   ],
   "skin_delta_e00": "MEASURED independent MSKCC400images/10people; primary fullmean4.45698,80%mean4.15912; not ordinary facial phones",
   "skin_image_pipeline_accuracy": "Independent known-camera/new-person MSKCC test completed; product median2/p955 at80% target NOT MET",
@@ -220,15 +226,16 @@
   "additional_live_sessions": [],
   "mskcc_final_lock_sha256": "8d30596335c20d6d1e57e4acf1994c16983580f76740fe7d2ea36d8feae94d6e",
   "uminho_status": "Original CC BY4.0;threeTRAINcubes236848136B;22500spectra manually selected;allVALIDATION/TESTunacquired;originalpaperdescribes29participants;noindependentidentityaudit",
-  "previous_goal_turn_classification": "PROGRESS:21 allocation and mass falsifiers audited and committed46332ec",
-  "current_goal_turn_classification": "PROGRESS:54 source transfer fits complete;90 arrays audited;359 tests pass",
+  "previous_goal_turn_classification": "PROGRESS:54source transfer fits audited and committed dae9f94",
+  "current_goal_turn_classification": "PROGRESS:180 privileged-reference corrected arrays and180 energy identities audited;361tests pass",
   "issa_status": "Originalv4CCBY4;15256records/2107codes;8680TRAIN/1822VALIDATION audited;1156common-support color records; test/reserved sources unread;oracle material result only",
-  "latest_progress": "Combined sampling modestly helps mixed source but loses both unseen-camera comparisons; universal hypothesis rejected",
-  "next_action": "Freeze excluded-person privileged-reference offset diagnostic on source predictions; no production promotion or exposed TEST/CAL use",
+  "latest_progress": "Shared offsets can worsen forward transfer; person residual heterogeneity matters; original model scores unchanged",
+  "next_action": "Freeze TRAIN-only per-person gradient/update audit with shuffled-group controls before a meta-learning fit",
   "verified_this_turn": [
-    "54 fits;90 exact known/unseen color arrays;6 complete930-step state refits",
-    "14256 scalar color cases;476490 independent scalar TRAIN density pairs",
-    "540 fixed-coverage rows;144 combined person-mass/within-person-ratio identities",
-    "359 tests passed;14 historical warnings;33.75 seconds"
+    "90 original arrays;180 exact corrected outputs;324 excluded-person/own-reference checks",
+    "42768 scalar CIEDE2000 cases;1620 fixed-coverage rows",
+    "180 squared-Euclidean Lab identities;explicit zero-own-person calibration matrices",
+    "54 original neural checkpoint hashes remain unchanged",
+    "361 tests passed;14 historical warnings;33.37 seconds"
   ]
 }

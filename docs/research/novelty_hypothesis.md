@@ -422,3 +422,13 @@ an acquisition-invariant conditional appearance mapping. This is a local result,
 not a theorem that all camera-blind models fail. No new novelty is claimed for
 hierarchical sampling, density weighting or importance correction.
 [Decision and next falsifier](skin_sampling_transfer_next_decision.md).
+
+
+## Offset diagnostic and next hypothesis
+
+Shared correction inferred from other people's instrument references is not
+sufficient across source transfer directions. It is a privileged comparator,
+not improved product accuracy. Test whether person-specific training updates
+transfer across groups, with random-group and finite-step controls before any
+meta-learning fit. MLDG/Fish/Fishr are prior art; no gradient novelty is asserted.
+[Evidence and decision](skin_offset_diagnostic_next_decision.md).

@@ -510,3 +510,20 @@ an acquisition-invariant conditional appearance mapping. This is a local result,
 not a theorem that all camera-blind models fail. No new novelty is claimed for
 hierarchical sampling, density weighting or importance correction.
 [Decision and next falsifier](skin_sampling_transfer_next_decision.md).
+
+
+## Gradient/domain-generalization mechanisms: fresh primary pass (2026-09-11)
+
+[MLDG,AAAI2018](https://ojs.aaai.org/index.php/AAAI/article/view/11596) trains for
+transfer using a meta-learning formulation.
+[Fish,ICLR2022](https://arxiv.org/abs/2104.09937) approximates inter-domain gradient
+matching with a first-order algorithm.
+[Fishr,ICML2022](https://proceedings.mlr.press/v162/rame22a.html) matches domain-level
+loss-gradient variances. These are relevant established baselines, not new ideas
+we can claim merely by using people as training groups. No author implementation,
+weights or reported benchmark numbers were adopted as reproduced results.
+Our offset diagnostic motivates investigating heterogeneous updates, but does
+not prove a gradient-agreement method will improve skin DeltaE00. Near pooled
+stationarity, conflicting group gradients may occur even without harmful
+shortcuts; random-group and finite-update controls are required.
+[Next falsifier](skin_offset_diagnostic_next_decision.md).

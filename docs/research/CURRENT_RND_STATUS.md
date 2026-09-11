@@ -1,3 +1,19 @@
+# Latest: privileged-reference offset diagnostic complete
+
+90 original source arrays /180 corrected arrays /324 excluded-person folds.
+Offsets use OTHER evaluation people's instrument references: diagnostic comparator
+only, never improved calibration-free model accuracy. Full correction worsens
+SLR-to-iPod image5.4877 ->6.2298 and combination6.1545 ->7.4325; reverse helps
+some models. A shared offset is not sufficient across the source directions.
+[Decision and report](skin_offset_diagnostic_next_decision.md).
+42768 scalar color cases;1620 coverage rows;180 Euclidean-Lab energy identities;
+324 own-reference perturbation checks.361 tests pass,14 warnings,33.37s.
+All54 original neural checkpoints unchanged. All jobs terminal; no live training.
+Independent primary4.4570/80%4.1591 vs ordinary fusion4.3005/4.1447 unchanged.
+Next: TRAIN-only person-gradient/update diagnostic with shuffled-group controls;
+negative gradient agreement alone is not proof of harmful shortcuts.
+No new independent or phone accuracy claim. Goal active and unmet.
+
 # Latest: combined allocation fails source transfer test
 
 54 real skin fits /90 known-unseen evaluations complete. Same930-step budget,
