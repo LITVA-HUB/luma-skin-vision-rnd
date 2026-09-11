@@ -1,9 +1,10 @@
 {
   "goal": "active, unbounded research; not complete or blocked",
-  "updated_utc": "2026-09-11T02:40:46.185845+00:00",
+  "updated_utc": "2026-09-11T03:06:00.521952+00:00",
   "live_session": null,
   "completed_sessions": [
     7009,
+    16826,
     20874,
     21117,
     22481,
@@ -18,6 +19,7 @@
     39523,
     42195,
     43198,
+    44069,
     47575,
     49530,
     50275,
@@ -26,6 +28,7 @@
     53841,
     56677,
     57933,
+    58255,
     64036,
     66577,
     75675,
@@ -69,13 +72,19 @@
     "27paired-invariance source fits:raw3.4855/output3.5123/VICReg3.5450/quotient3 4.1101 meanDeltaE00 over3seeds",
     "Source-only camera fitting:SLR-to-iPod raw5.6063/output6.1526;iPod-to-SLR raw6.1399/output6.5656;all6seed contrasts negative",
     "81exact prediction-array replays;5544independent scalarDeltaE00 cases;allfit-only scales and nuisance quotients verified",
-    "265tests passed14historicalwarnings36.48s;no new TEST/CALIBRATION access"
+    "265tests passed14historicalwarnings36.48s;no new TEST/CALIBRATION access",
+    "54capture/objective/camera fits:929297parameters;MSEmixture mixed3.4406 versus matched3.5002/plain3.4771;source-only",
+    "MSEmixture SLR-to-iPod5.0193 versus matched5.7385/plain5.8301 across3seeds;reverse5.9635 loses to plain5.5089",
+    "Direct squaredCIEDE2000 numerically verified on34Sharma+10000randompairs and finite gradients;not a better source/generalization objective here",
+    "162exact prediction-array replays+54gate/hypothesis replays;9504independent scalarcolor cases;269tests pass14warnings43.36s",
+    "Original UMINHO-HSFD item+README CC BY4.0 verified;29measured face cubes3.035GB;only one76.9MBTRAINcube acquired;frozen19/5/5face-file roles",
+    "Source spectrum cube696x587x33finite;1055valuesabove1preserved;zero background/artificial mask and skin validity recorded;no held-out cubes acquired"
   ],
   "next": [
-    "Implement source-only latent capture conditioning with a matched auxiliary-task baseline; no camera metadata at inference",
-    "Verify differentiable perceptual-color objective against independent CIEDE2000 fixtures before paired objective controls",
-    "Retain all27negative/source fits and prior independent test; do not tune against exposed test",
-    "See docs/research/skin_pair_next_decision.md; innovation goal remains unachieved"
+    "Inspect source-only spectral artifacts/masks and original participant/reference conventions before physical-model fitting",
+    "Test measured skin-material representation and a constrained acquisition ambiguity falsifier; derived RGB must not masquerade as actual phone photography",
+    "Retain conditional MSEmixture and strong plain controls;no universal gain;do not default to harmful directDE2loss",
+    "Preserve exposed MSKCC independent test and all54new source fits;see docs/research/skin_capture_next_decision.md"
   ],
   "skin_delta_e00": "MEASURED independent MSKCC400images/10people; primary fullmean4.45698,80%mean4.15912; not ordinary facial phones",
   "skin_image_pipeline_accuracy": "Independent known-camera/new-person MSKCC test completed; product median2/p955 at80% target NOT MET",
@@ -84,5 +93,6 @@
   "skin_model_lock_sha256": "38d9a903a2137d51f73a68b89351368c1403033d46ce2182b8b7cfe86a3fc7b7",
   "mskcc_final_test_status": "OPENED ONCE AFTER FINAL LOCK;400images all3reference readings; never re-use as fresh confirmation",
   "additional_live_sessions": [],
-  "mskcc_final_lock_sha256": "8d30596335c20d6d1e57e4acf1994c16983580f76740fe7d2ea36d8feae94d6e"
+  "mskcc_final_lock_sha256": "8d30596335c20d6d1e57e4acf1994c16983580f76740fe7d2ea36d8feae94d6e",
+  "uminho_status": "Original CC BY4.0;oneTRAINcube76.9MB audited;19/5/5face-fileallocation;unseen cubes unacquired;participant correspondence pending"
 }

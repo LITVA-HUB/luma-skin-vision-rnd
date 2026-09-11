@@ -1,3 +1,21 @@
+# Capture-conditioning decision 2026-09-11
+
+The54-fit source factorial shows a directional gain, not a universal mechanism
+win: MSEmixture SLR->iPod5.0193 beats matched auxiliary control5.7385 and plain
+5.8301 across all3seeds. Reverse mixture5.9635 is worse than plain5.5089 across
+all3seeds. A matched auxiliary control alone can be weak because its additional
+classification objective harms useful representation. Always retain the plain
+control. Direct squaredCIEDE2000 fails to improve source averages and harms
+reverse-camera transfer. [Full evidence](../benchmarks/skin_capture_v1/report.md).
+
+Conditional experts, mode classification and a perceptual loss are existing
+components; no patent novelty claim follows. The next fundamentally different
+candidate is a physically constrained skin-material representation using actual
+measured face spectra. Original UMINHO-HSFD CC BY4.0 now verified. First verify
+masking and reference conventions, and test ambiguity of color reconstruction
+under plausible acquisition changes. Rendering these spectra can provide
+derived inputs for falsifiers, not a substitute for real-phone skin validation.
+
 # Paired-capture invariance decision 2026-09-11
 
 New source experiments reject unconditional capture invariance as the current

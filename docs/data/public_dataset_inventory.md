@@ -1,4 +1,13 @@
-# Current direct-skin benchmark update 2026-09-11
+# New cleared measured-face spectra, 2026-09-11
+
+UMINHO-HSFD original item-level and README CC BY4.0 now verified.29facial
+spectral cubes total3,035,028,803bytes; only one preassigned TRAIN cube76,914,295
+bytes acquired and audited so far. This is measured reflectance, with derived
+RGB examples rather than independently captured phone photographs. Suitable
+for a physical skin-material prior/falsifier, not a claim of real-phone accuracy.
+[Detailed rights, setup and data-quality record](uminho_hsfd_verified_inventory.md).
+
+# Current direct-skin benchmark update2026-09-11
 
 Original MSKCC CC-BY instrument-paired image subset (1,838JPEGs,2.128GB) now
 has a frozen independent400-image/10-person test. Primary mean4.457DeltaE00,

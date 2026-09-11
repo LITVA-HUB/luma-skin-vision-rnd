@@ -1,4 +1,31 @@
-# Latest research: paired-capture invariance falsified in source screens
+# Latest research: capture conditioning and new measured-face spectral route
+
+54new source fits completed, with929,297stored parameters per model. Conditional
+mixture + standardized-LabMSE source mean over3seeds3.4406DeltaE00 versus exact
+capacity/auxiliary-supervision control3.5002 and plain3.4771. Not seed-uniform.
+In source camera-held-out fitting, SLR->iPod mixture5.0193 versus control5.7385
+and plain5.8301 (all3seed gains). Reverse iPod->SLR mixture5.9635 beats auxiliary
+control6.7482 but LOSES to plain5.5089 in every seed. Direct squaredDeltaE00 loss
+does not improve source means and strongly harms the reverse-camera case.
+This is partial mechanism evidence, NOT a universal-camera or independent-test
+victory. Prior400-image independent skin results remain unchanged.
+
+[54-fit report](../benchmarks/skin_capture_v1/report.md),
+[frozen factorial protocol](skin_capture_protocol_v1.md).
+162exact prediction-array replays,54gate/hypothesis replays and9,504independent
+scalar comparisons pass;269tests pass. No new TEST/CALIBRATION endpoints loaded.
+
+Original UMINHO-HSFD permissions now verified as CC BY4.0 on all item metadata
+and author README.29measured facial spectral cubes total3.035GB. Acquired and
+audited only one preassigned TRAIN cube76.9MB, with33bands400–720nm;19/5/5
+face-file roles frozen before decoding. Other roles remain unacquired.
+Supplied RGB is derived from spectra, not independently captured phone data.
+[Verified source/limitations](../data/uminho_hsfd_verified_inventory.md).
+Next: quality/mask/reference checks and physically constrained skin-material
+representation/ambiguity probes on TRAIN spectra, retaining real-photo controls.
+No training or download job remains live. Goal active; product target unmet.
+
+# Previous research: paired-capture invariance falsified in source screens
 
 27new fits completed: five matched arms x3seeds, then two methods x3seeds
 x2camera directions. This uses ONLY original TRAIN/VALIDATION roles and is

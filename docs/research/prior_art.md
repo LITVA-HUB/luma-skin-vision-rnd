@@ -1,3 +1,18 @@
+# Perceptual objective and measured spectra check 2026-09-11
+
+[Sharma, Wu and Dalal](https://doi.org/10.1002/col.20070) provide supplemental
+CIEDE2000 test pairs and document formula discontinuities. The new autograd
+loss passes all34fixtures plus finite-difference and neutral tests; it does not
+make CIEDE2000 globally smooth or introduce a new color metric. Its54-fit
+factorial does not support replacing the standard objective wholesale.
+
+The original [UMINHO-HSFD collection](https://doi.org/10.6084/m9.figshare.c.7163569)
+provides measured facial reflectance over33bands, and rendered/redacted RGB
+derived from those cubes. Original API items and README grant CC BY4.0.
+This is a now-verified physical-data route, not a new phone RGB benchmark.
+The authors' stated1.3DeltaE00 system error is published evidence, not our
+reproduction or a guaranteed measurement floor. [Source audit](../data/uminho_hsfd_verified_inventory.md).
+
 # Fresh paired-invariance mechanism pass 2026-09-11
 
 [VICReg](https://arxiv.org/abs/2105.04906) regularizes agreement, feature variance

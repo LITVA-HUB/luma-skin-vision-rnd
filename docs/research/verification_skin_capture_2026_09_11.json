@@ -1,0 +1,27 @@
+{
+  "tests_passed": 269,
+  "warnings": 14,
+  "seconds": 43.36,
+  "factorial_audit": {
+    "status": "PASS",
+    "fits": 54,
+    "exact_prediction_array_replays": 162,
+    "gate_and_hypothesis_replays": 54,
+    "independent_scalar_delta_e00_comparisons": 9504,
+    "maximum_metric_gap": 4.884981308350689e-15,
+    "fitting_only_target_scales_and_same_camera_selection_checked": true,
+    "matched_initializations": true,
+    "reserved_test_or_calibration_read": false,
+    "source_lock_sha256": "46dac9e639450ec46663b5206f35ba8aa49d35d0811403342f74c314038765b0"
+  },
+  "loss_audit": {
+    "random_reference_pairs": 10000,
+    "seed": 20260911,
+    "max_gap_vs_frozen_numpy": 2.1316282072803006e-14,
+    "sharma_reference_pairs": 34,
+    "max_gap_vs_rounded_sharma_values": 4.9498977271467126e-05,
+    "scope": "Numerical formula check, not synthetic scientific skin accuracy",
+    "gradient_and_neutral_tests": "4 focused tests passed"
+  },
+  "no_live_training": true
+}

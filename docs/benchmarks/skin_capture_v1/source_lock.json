@@ -1,0 +1,28 @@
+{
+  "bindings": {
+    "docs\\research\\skin_capture_protocol_v1.md": "4d5640baf9be11e54b986106998f3c12526b005a8e0947491c770bf3e32faf40",
+    "scripts\\skin_capture_train.py": "89637fb5608515ac2c1ca8d8430debda4680d296d679919a485ab9ac4ee1f648",
+    "scripts\\skin_capture_model.py": "23c83500f35cc44b379597451f117ae37ad85fe30ea872a480aa159ea8d015cf",
+    "scripts\\skin_pair_invariance.py": "4cceedf45de2a04c03d6aab7a0c408d851c78c8f4525bf0bc0a2552fea49cf7e",
+    "scripts\\skin_pair_train.py": "962a0ce697034f571f5914bc352d9767b740e725ede19a278fefc58b6d7d867c",
+    "scripts\\skin_mskcc_pixels.py": "c5b671ac38da0bec62c18c3872fbac52f2f8a239f0e155a74c44f8ec1b91ad0a",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "data\\processed\\skin_mskcc_pixels_v1\\train.npz": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "data\\processed\\skin_mskcc_pixels_v1\\validation.npz": "5ea83f15f12d3b1e4b43054b363fb72bc87e734e8bd24d322df07a91132ee566"
+  },
+  "arches": [
+    "plain",
+    "uniform",
+    "mixture"
+  ],
+  "objectives": [
+    "mse",
+    "de2"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "reserved_data_access": false
+}
