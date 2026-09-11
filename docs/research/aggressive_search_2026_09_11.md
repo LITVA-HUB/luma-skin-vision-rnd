@@ -36,3 +36,40 @@ Multi-Hypothesis2020 https://arxiv.org/abs/2002.12896;
 Uncertainty Estimation2025 https://doi.org/10.1016/j.patcog.2024.111175.
 Histogram localization, posterior uncertainty and cascades already exist.
 No conformal guarantee is claimed under nonexchangeable unseen-camera shift.
+
+## Consequences of the next completed screens
+
+V6 all three seeds are now negative against V5 on reused source validation.
+The first V7 five-arm screen finds no benefit from canonical versus raw semantic
+teacher targets: full2.4591 versus2.4349°, selective80 1.8630 versus1.7608°.
+Sensor augmentation itself strongly improves fixed virtual mixing robustness,
+but a preserved SoG model is stronger on the most severe mixing case. Keep all
+five arms through the planned three-seed/real-transfer comparison; do not call
+an artificial camera-matrix stress test a real unseen-camera result.
+
+An assumption worth removing next is the need to choose a particular three-color
+frame (which failed in V3). For a full-rank N-by-3 patch-color matrix X, the
+projector P=X(X^T X)^-1 X^T is unchanged by X->XM for invertible3-by-3 M.
+Project fixed spatial probe vectors through P rather than choosing a basis;
+a compact network could predict invariant spatial weights and map them back
+by X^T w. Compute P times probes through small solves, not a dense N-by-N P.
+This removes arbitrary frame selection, not the physical identifiability limit.
+
+Key assumption: a stable full-rank linear camera relation and informative
+camera-invariant spatial structure exist. Advantage: exact algebraic response
+to full linear mixing without camera ID or a selected color triple. Failures:
+rank-deficient scenes, lighting/shading changes outside the global transform,
+lost chromatic priors, and an illuminant outside the cone of observed colors if
+weights are nonnegative. Cheapest falsifier before another neural architecture:
+on TRAIN only, measure rank conditioning and a nonnegative patch-cone oracle
+bound. If that bound cannot reach current accuracy, a positive-weight design
+is ruled out; signed weights need their own positivity/refusal analysis.
+This spike is PLANNED, not implemented or measured; V7 remains in progress.
+
+Prior art limits the interpretation: [Color Homography](https://arxiv.org/abs/1605.04250)
+and [Color Homography: Theory and Applications](https://ueaeprints.uea.ac.uk/id/eprint/65088/)
+already connect changes of illumination/device to projective color mappings.
+[Self-Supervised Learning of Color Constancy](https://arxiv.org/abs/2404.08127)
+studies illumination-invariant representation learning. A projector is standard
+linear algebra, not a novelty claim. Full geometric/prior-art review remains
+necessary before promoting any particular projector-based learned mechanism.

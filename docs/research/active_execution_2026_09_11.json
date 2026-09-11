@@ -1,31 +1,34 @@
 {
   "goal": "active, unbounded research; not complete or blocked",
-  "live_session": 99152,
-  "command": "sequential cc_v6_experiment.py seeds29 then43; never launch duplicates",
-  "current_seed_at_last_observation": 29,
-  "current_phase_at_last_observation": "posterior_random epoch90",
+  "live_session": 23891,
+  "command": "sequential cc_v7_experiment.py seeds29 then43; never duplicate",
+  "last_observed": "seed29 gt_sensor started after gt_native120 completed",
   "completed_sessions": [
-    92643,
-    95984,
-    8925,
-    51381,
-    63628,
-    38116,
-    9677,
-    41224,
-    43212,
-    9793
+    99152,
+    20874,
+    43198,
+    51131,
+    21117,
+    80890,
+    30030,
+    42195,
+    90346,
+    95517,
+    82290,
+    53637,
+    53841
   ],
   "completed_evidence": [
-    "phone_v1 strict72 references",
-    "phone_v1_alias79 references, all30 methods",
-    "V6seed17 four arms and8checkpoint replays",
-    "Fourier phase1+2 all34cases replayed"
+    "V6 all12arms and24checkpoint CPU replays, negative combination",
+    "V7 seed17 all5primary arms and10checkpoint replays",
+    "TRAIN-only teacher cache,12view-image replay comparisons exact",
+    "V7 seed17 risk calibration,source curves,72virtual sensor cases;162independent metric cases"
   ],
   "next": [
-    "wait for seed29/43 in session99152",
-    "verify remaining V6 checkpoints with cc_verify_new_screens.py --seed",
-    "update three-seed combination decision",
-    "design next independently locked transfer sample; do not tune observed phones"
-  ]
+    "wait existing session23891",
+    "verify,fit source risk,evaluate fixed source curves,stress and audit remaining seeds",
+    "aggregate15models without selecting by observed phone data",
+    "freeze full method lock before decoding317primary/384sensitivity INTEL remainder"
+  ],
+  "no_new_external_pixels_or_gt_values_decoded": true
 }

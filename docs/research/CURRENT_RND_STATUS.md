@@ -1,4 +1,35 @@
-# Latest progress: phones, V6 and alternative representations
+# Latest progress: V7 camera-robust training, 2026-09-11
+
+[V7 seed17](../benchmarks/cc_v7/seed17_report.md) completed all five120-epoch arms;
+all10 best/final checkpoint replays passed. Deployment estimator3.034M;
+training-only semantic projection0.369M; teacher never enters inference.
+Canonical-teacher+sensor does not beat raw-teacher C+ on reused source VAL:
+full2.4591 versus2.4349°, risk80 1.8630 versus1.7608°. GT-only native is stronger
+on this source screen:2.3383° full /1.7595° risk80. No new real-camera gain yet.
+
+Sensor augmentation helps a fixed virtual mixing diagnostic: GT-native19.4090°
+versus GT-sensor2.6372° at the extrapolation matrix. Preserved V2SoG is still
+better there at1.5651°. These are transformed real-source images, NOT real new
+camera measurements. All six matrices, tails, curves and best/final outcomes
+are retained. Independent audit:162 fixed-coverage/threshold/stress cases,
+max scalar error difference8.47e-11°. All source risk heads are fitted only on
+259 held-out RISK rows, calibrated on268 date-disjoint CAL rows.
+
+Seeds29/43 are running sequentially in session23891; never duplicate them.
+The [317-primary/384-sensitivity external population](../data/provenance/cc_v7/external_population.json)
+is metadata-frozen, still not decoded. Complete all15 models and source heads,
+then freeze exact methods before new INTEL-TAU evaluation. Target-camera data
+remain evaluation-only, preserving the permissive source-only training line.
+[Transfer protocol](cc_v7_transfer_diagnostics_protocol.md).
+
+[V6 final](../benchmarks/cc_v6_report.md): all12 arms /24checkpoint replays complete,
+combination negative versusV5. [Fourier report](../benchmarks/fourier_representation_report.md):
+all34cases completed and replayed. Full suite236passed before two new risk-role
+tests, which passed separately. No V7 latency/export or facial color validation.
+
+Historical progress below is preserved; newer status above takes precedence.
+
+# Previous progress: phones, V6 and alternative representations
 
 Latest real phone screen: [79-reference report](../benchmarks/phone_v1_alias_report.md).
 Thirty source-only methods on Beyond RGB Samsung/Oppo; original dataset CC BY4.0.
