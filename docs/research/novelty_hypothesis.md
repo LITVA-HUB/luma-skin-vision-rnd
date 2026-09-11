@@ -448,3 +448,19 @@ pair-context quality must beat this and ordinary regression, with no inference
 camera labels, no held-person encoder leakage and all support memory counted.
 Known metric/relation learning prior art must be reviewed before novelty claims.
 [Decision and cheapest falsifier](skin_gradient_transfer_next_decision.md).
+
+## Relational probe: matching is insufficient (2026-09-11)
+
+No unique comparative mechanism is established by same-site discrimination.
+Simple excluded-person ridge36 has70.08% nearest-control preference versus
+descriptive learned context70.92%, and actual skin mean5.4259 DeltaE00. Pair
+recognition is not percentage color accuracy. Additive reference comparisons
+reduce to an absolute predictor plus a constant offset; cycle consistency
+alone does not add acquisition information. Known relations/kernels/Hodge
+methods remain prior art, not project novelty.
+
+The next narrow test is query-dependent support weighting on direct skin Lab,
+with standard local-affine and weighted-mean controls before a learned pair
+mechanism. No exposed independent TEST/CAL tuning, new phone proof, or claim
+of an already improved compact architecture.
+[Decision](skin_relational_probe_next_decision.md).

@@ -1,4 +1,22 @@
-# Latest: TRAIN gradient/update falsifier complete
+# Latest: relational/compatibility probe complete
+
+48 excluded-person linear fits;1421 same-site/control triplets,18229 between-site
+pairs;10 representations. Ridge36 true-site preference70.08%, actual LOPO skin
+mean5.4259/p9511.4364 DeltaE00. Learned context70.92% is TRAIN-descriptive because
+its encoder saw all people; no special representation advantage established.
+Relative matching is not absolute skin accuracy. Zero cross-camera same-site
+pairs; closest-color controls are approximate, never identical reference colors.
+[Decision and report](skin_relational_probe_next_decision.md).
+48 independent augmented solves,4 held-target perturbations,2 context replays,
+13511 candidate checks,151361 scalar color cases,100 preference/250 rank checks.
+367 tests pass,14 historical warnings,33.63s. All jobs terminal; no live training.
+Independent primary4.4570/80%4.1591 vs ordinary fusion4.3005/4.1447 unchanged.
+Next: cheap query-dependent support weighting/local affine regression with exact
+global-ridge and weighted-mean controls; score actual excluded-person DeltaE00.
+No relational novelty, ordinary-phone accuracy or new independent result.
+Goal remains active and unmet.
+
+# Previous: TRAIN gradient/update falsifier complete
 
 Six frozen929,297-parameter models,24 partitions,48 objective cases,288 transient
 steps. All288 reduce their own training objective;116 increase pooled TRAIN

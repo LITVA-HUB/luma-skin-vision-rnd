@@ -539,3 +539,21 @@ increases. Gradient agreement is not itself a product color-accuracy endpoint.
 [Evidence and next alternative](skin_gradient_transfer_next_decision.md).
 No new novelty or independent accuracy is claimed. Relational/compatibility
 models require a separate primary-source pass before implementation.
+
+## Relational support: primary-source pass and local falsifier (2026-09-11)
+
+[Relation Networks,CVPR2018](https://openaccess.thecvf.com/content_cvpr_2018/html/Sung_Learning_to_Compare_CVPR_2018_paper.html)
+already learn comparison metrics in episodes.
+[Deep Kernel Learning,AISTATS2016](https://proceedings.mlr.press/v51/wilson16.html)
+combines learned representations with kernels.
+[HodgeRank](https://arxiv.org/abs/0811.1067) separates potential and cyclic
+comparison components. No third-party code/weights or author scores adopted.
+Using relative colors, a support bank or cycle consistency is not novelty.
+
+The local TRAIN probe adds48 excluded-person linear fits and1421 matched
+same-site/control comparisons. Ridge36 largely matches descriptive learned
+context on pair recognition but still has absolute skin mean5.4259 DeltaE00
+in source cross-validation. This neither establishes a new relative-learning
+mechanism nor defeats every possible relational approach. Query-dependent
+local regression remains a standard, inexpensive comparator to test next.
+[Evidence and next decision](skin_relational_probe_next_decision.md).
