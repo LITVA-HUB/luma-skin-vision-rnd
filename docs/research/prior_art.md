@@ -1,3 +1,7 @@
+# Skin-specific prior art update —2026-09-11
+
+[Bencevic et al.2026](https://arxiv.org/abs/2602.10265) trains EfficientNet-B0 to predict instrument Lab for ITA on MSKCC with patient-level evaluation and extensive additional pretraining. Our direct-Lab objective is therefore not a novelty claim. No pretrained weights or additional training datasets from that work are adopted; its numbers are PUBLISHED BY AUTHORS, not our reproduction. [Weir et al.2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12749783/) provides the original instrument-paired study. Our summary pilot uses a different patient partition and explicitly retains clinical/dermoscopic strata.
+
 # Public color-constancy revision — 2026-09-10
 
 ## V4 extension: modern training and repeated correction

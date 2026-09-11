@@ -1,3 +1,7 @@
+# New primary direct-skin source —2026-09-11
+
+Original MSKCC CC-BY instrument-paired skin Lab is now acquired as small metadata; original image subset acquisition is separate. Direct DeltaE00 source-validation controls completed. See [skin inventory](public_skin_color_inventory.md) and [benchmark](../benchmarks/skin_mskcc_summary_v1/report.md). This does not upgrade previous illuminant results into skin accuracy.
+
 # Public color-constancy dataset inventory
 
 Latest update2026-09-11: both phone and V7 INTEL transfer screens are completed,

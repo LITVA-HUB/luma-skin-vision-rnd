@@ -1,17 +1,19 @@
 {
   "goal": "active, unbounded research; not complete or blocked",
-  "updated_utc": "2026-09-11T00:57:41.018642+00:00",
-  "live_session": null,
+  "updated_utc": "2026-09-11T01:20:28.625258+00:00",
+  "live_session": 29926,
   "completed_sessions": [
     20874,
     21117,
     23891,
+    24638,
     30030,
     31047,
     38790,
     42195,
     43198,
     47575,
+    49530,
     51131,
     53637,
     53841,
@@ -32,18 +34,22 @@
     "V7 canonical-teacher hypothesis negative against C+ and strongest Fourier baseline",
     "TRAIN-only projector/cone falsifier:3378KKT-verified oracles; not a trained model",
     "Original CC BY4.0 skin RGB/XYZ acquired;14controls,100sites/20test people;14exact model replays/168independent metric cases",
-    "247tests passed,14historical ONNX warnings in32.53s"
+    "247tests passed,14historical ONNX warnings in32.53s",
+    "Original MSKCC CC-BY metadata:1838instrument-paired normal-skin images/474sites/46people; deterministic24/6/6/10patient roles",
+    "Direct native-Lab source pilot10controls: selected MLP meanDeltaE00 4.3702/median3.8038/p959.7150 on264validation images/6people; not final test",
+    "Ten exact replays,60independent DeltaE00 coverage cases,34Sharma reference pairs;251tests pass in33.93s"
   ],
   "next": [
-    "Prioritize actual instrument-referenced skin-color accuracy as requested",
-    "Resolve exact He white-reference convention or find another legitimately accessible paired skin Lab/reflectance release",
-    "No author contact, DUA acceptance or credential claims without explicit user authorization",
-    "Retain all test predictions; no fitting on exposed test labels",
-    "Signed basis-free geometry remains planned, secondary to skin endpoint; no major angular-only training cycle"
+    "Complete original instrument-paired JPEG subset acquisition (session29926); first strict API-size run49530 stopped after publisher API/S3 size discrepancy, now each file verified by S3 length+MD5",
+    "Build and verify local image features/pixel baseline from source images; do not open calibration/test endpoints before separate locks",
+    "Compare standard compact image network with matched training-only same-site acquisition consistency; direct Lab and error prediction, no mandatory illuminant intermediate",
+    "Keep10patient final test sealed while developing; cross-camera must exclude target camera from fitting/validation/calibration",
+    "Preserve all historical negative experiments and current failed density rejection"
   ],
-  "skin_delta_e00": "NOT MEASURED: exact white reference unverified",
-  "skin_image_pipeline_accuracy": "NOT MEASURED; separate regional single-setup XYZ calibration only",
+  "skin_delta_e00": "MEASURED source validation only on MSKCC native instrument Lab; He white reference remains unresolved",
+  "skin_image_pipeline_accuracy": "NOT MEASURED: completed MSKCC pilot uses author-provided image-summary features",
   "no_new_external_pixels_or_gt_values_decoded": false,
   "v7_method_lock_sha256": "2828472f40348ebb9785c8d294e4353fd6fc0d33956191756c074d8912e3948d",
-  "skin_model_lock_sha256": "38d9a903a2137d51f73a68b89351368c1403033d46ce2182b8b7cfe86a3fc7b7"
+  "skin_model_lock_sha256": "38d9a903a2137d51f73a68b89351368c1403033d46ce2182b8b7cfe86a3fc7b7",
+  "mskcc_final_test_status": "Ten people/400images numerical references not decoded; six calibration people/208images also reserved"
 }

@@ -1,7 +1,7 @@
 # Luma Skin Vision R&D
 
 - Scientific honesty: label SYNTHETIC, PROVIDED CONTEXT, PLANNED and measured evidence explicitly. Never invent results or claim novelty from implementation.
-- Current milestone: compact selective public-benchmark color constancy in linear camera RGB. Proprietary facial acquisition is unavailable; proceed with licensed real public ground truth. Facial CIELAB validation is future work, never inferred from illuminant accuracy.
+- Current priority (user correction 2026-09-11): actual instrument-referenced skin-color accuracy. Licensed MSKCC native Lab supports a direct skin endpoint; current summary-feature results are source validation only. Preserve color constancy as component evidence, but do not prioritize another angular-only cycle. Proprietary facial acquisition is unavailable. Ordinary phone facial accuracy remains unvalidated and is never inferred from illuminant accuracy or dermoscopic results.
 - Preserve synthetic-only commit 2685bf0/tag milestone/synthetic-only-2026-09-10, including Proposed losing to classical A2. New experiments live separately under cc/ and public benchmark evidence.
 - Keep subjects disjoint across train/validation/calibration/test. Never fit any model, normalization or selection threshold on test data. Error heads use subject-held-out residuals.
 - Never commit participant images or direct identifiers. Dataset paths stay inside an explicitly supplied data root. No image uploads to external services.

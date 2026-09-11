@@ -1,3 +1,7 @@
+# Direct skin endpoint update —2026-09-11
+
+Direct native-Lab regression is not novel: current MSKCC summary MLP is a baseline. Frozen source validation meanDeltaE00 4.3702; density rejection failed. Next falsifier removes obligatory illuminant estimation and tests locally extracted color/texture evidence and training-only paired acquisition consistency. No novel mechanism or phone accuracy established. See [decision](skin_mskcc_next_decision.md).
+
 # Active public-benchmark hypothesis
 
 2026-09-11 latest decision: V7 canonical semantic targets failed the frozen
