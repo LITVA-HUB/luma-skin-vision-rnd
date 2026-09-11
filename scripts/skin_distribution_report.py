@@ -49,8 +49,12 @@ def main():
                 'image_mean_difference':float(delta.mean()),'patient_mean_difference':float(cluster.mean()),
                 'descriptive_patient_interval':np.quantile(boot,[.025,.975]).tolist(),
                 'all_three_seed_means_improve':all(x[ea+'_error'].mean()<y[eb+'_error'].mean() for x,y in zip(aa,bb))})
+    integration=json.loads((OUT/'integration_diagnostic.json').read_bytes()) if (OUT/'integration_diagnostic.json').exists() else None
+    if integration:assert len(integration['records'])==18
+    source_files=[Path(__file__),OUT/'audit.json',OUT/'source_lock.json']
+    if integration:source_files.append(OUT/'integration_diagnostic.json')
     summary={'scope':'REPRODUCED SOURCE ONLY; repeated validation; no confirmatory test',
-        'groups':groups,'comparisons':comparisons,'bindings':{str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),OUT/'audit.json',OUT/'source_lock.json']}}
+        'groups':groups,'comparisons':comparisons,'bindings':{str(p.relative_to(ROOT)):sha(p) for p in source_files}}
     write(OUT/'summary.json',summary)
     with (OUT/'risk_coverage.csv').open('w',newline='',encoding='utf8') as f:
         w=csv.DictWriter(f,fieldnames=list(curves[0]));w.writeheader();w.writerows(curves)
@@ -119,6 +123,24 @@ def main():
         'Original MSKCC CC-BY data; no newly imported third-party weights/code/constants.',
         'Independent test remains primary4.4570/80%4.1591 versus ordinary fusion4.3005/4.1447.',
         'Product precision and a distinctive superior mechanism remain unproven.','']
+    if integration:
+        lines+=['## Post-hoc numerical integration diagnostic','',
+            'Weights and the finite candidate family remain unchanged. Antithetic Sobol',
+            '1024/4096nodes per component are fixed sensitivity checks, not replacements',
+            'for the frozen primary results or guarantees of an exact integral.','',
+            '| Protocol | Density | Mean1024 | Mean4096 | At80%4096 |',
+            '|---|---|---:|---:|---:|']
+        for protocol in protocols:
+            for arm in ('gaussian','mdn4'):
+                rr=[r for r in integration['records'] if r['protocol']==protocol and r['arm']==arm]
+                a,b=[np.mean([r['scores'][n]['full']['mean'] for r in rr]) for n in ('1024','4096')]
+                selective=np.mean([r['scores']['4096']['coverage'][3]['mean'] for r in rr])
+                lines.append(f'| {protocol} | {arm} | {a:.4f} | {b:.4f} | {selective:.4f} |')
+        lines+=['','More accurate integration does not rescue the four-component density here.',
+            f"{integration['independent_scalar_cases']}additional independent scalar cases pass; antithetic means checked.",
+            'Full rule differences and empirical normal covariance matrices are in',
+            '[integration_diagnostic.json](integration_diagnostic.json).', '',
+            '[Research decision and competing next experiments](../../research/skin_distribution_next_decision.md).','']
     (OUT/'report.md').write_text('\n'.join(lines),encoding='utf8')
     print(json.dumps(groups))
 

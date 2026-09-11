@@ -101,3 +101,25 @@ quadrature mean/covariance. This verifies calculations, not scientific superiori
 Original MSKCC CC-BY data; no newly imported third-party weights/code/constants.
 Independent test remains primary4.4570/80%4.1591 versus ordinary fusion4.3005/4.1447.
 Product precision and a distinctive superior mechanism remain unproven.
+
+## Post-hoc numerical integration diagnostic
+
+Weights and the finite candidate family remain unchanged. Antithetic Sobol
+1024/4096nodes per component are fixed sensitivity checks, not replacements
+for the frozen primary results or guarantees of an exact integral.
+
+| Protocol | Density | Mean1024 | Mean4096 | At80%4096 |
+|---|---|---:|---:|---:|
+| mixed | gaussian | 3.4605 | 3.4605 | 3.2593 |
+| mixed | mdn4 | 3.6015 | 3.5993 | 3.4788 |
+| from_SLR | gaussian | 5.6571 | 5.6571 | 5.4955 |
+| from_SLR | mdn4 | 5.3926 | 5.3897 | 5.2960 |
+| from_ipod | gaussian | 5.7474 | 5.7474 | 5.9347 |
+| from_ipod | mdn4 | 6.8491 | 6.8491 | 7.1584 |
+
+More accurate integration does not rescue the four-component density here.
+6876additional independent scalar cases pass; antithetic means checked.
+Full rule differences and empirical normal covariance matrices are in
+[integration_diagnostic.json](integration_diagnostic.json).
+
+[Research decision and competing next experiments](../../research/skin_distribution_next_decision.md).

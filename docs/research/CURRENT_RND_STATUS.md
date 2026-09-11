@@ -1,3 +1,18 @@
+# Latest: 36 conditional skin-color fits and integration diagnostic complete
+
+Actual skin Lab / DeltaE00 remains the endpoint. Ordinary mean3.4406 versus
+singleGaussian3.4605 and mixture3.5484 on mixed source validation. Gaussian
+improves mixed80%risk3.2709 versus3.4407, but this selective benefit fails in
+both transfer directions. No universal gain and no calibrated C+ victory.
+More accurate4096-node integration does not rescue mixture decisions.
+[Results](../benchmarks/skin_distribution_v1/report.md), [decision](skin_distribution_next_decision.md).
+108color arrays replay;12,672independent scalar cases,432coverage rows and51,660
+manual quadrature cases pass;6,876additional integration checks pass.
+322tests passed,14historicalwarnings,34.33s. All jobs terminal.
+Independent test unchanged4.4570/80%4.1591, stronger ordinary fusion4.3005/4.1447.
+Next: matched color/risk crossing and conditional color-loss surfaces. No fresh
+TEST reuse, no phone facial claim, no deployment promotion. Goal active and unmet.
+
 # Latest: 45 material-image fits complete; no universal gain
 
 The endpoint is actual instrument skin Lab / DeltaE00. Nonlinear material decoder

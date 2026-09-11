@@ -364,3 +364,17 @@ reports augmentation/classification utility, not our instrument-Lab endpoint.
 No code, weights or datasets from these sources are adopted. The Aston paper
 itself has CC BY-NC-ND terms; reading prior art does not clear third-party code
 or weights. Search is a scoped update, not an exhaustive patentability review.
+
+
+## Measured conditional-color density update (2026-09-11)
+
+36frozen compact fits complete. Four-component density does not beat the strong
+ordinary image regressor consistently. A single Gaussian improves mixed-source
+risk ranking at80% (3.2709 versus3.4407DeltaE00) but loses that advantage in both
+camera-transfer protocols. All source data is repeatedly inspected; no new
+independent confirmation. [Decision](skin_distribution_next_decision.md).
+A targeted post-hoc quadrature diagnostic separates numerical approximation
+from model failure. Next hypotheses: matched color/risk crossing, and learning
+conditional downstream-loss surfaces without reconstructing a full density.
+Established MDNs and conditional risk minimization are prior art; no novelty
+or calibrated-selectivity claim follows from this implementation.
