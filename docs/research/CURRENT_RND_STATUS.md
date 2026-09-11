@@ -1,3 +1,21 @@
+# Latest: 72 expert-removal / supervision skin fits complete
+
+Actual instrument skin DeltaE00, not illuminant angles. Explicit conditional
+experts improve auxiliary diagnostics but do not improve final color accuracy.
+Plain + paired support improves both source transfer directions versus plain
+(5.8301 to 5.4150; 5.5087 to 5.3047), but harms mixed accuracy and does not beat
+strongest historical controls. Common input-novelty rejection fails in reverse.
+[Report](../benchmarks/skin_expert_anchor_v1/report.md),
+[decision](skin_expert_anchor_next_decision.md).
+216 exact color replays, 18 exact old baseline refits, 12,672 scalar color cases,
+432 coverage rows and 9,504 labeled diagnostic scalar scores. 337 tests pass,
+14 historical warnings in 40.02 s. All jobs terminal; no active training job.
+Independent MSKCC results unchanged: primary mean 4.4570 / 80% 4.1591;
+ordinary fusion 4.3005 / 4.1447. Ordinary phone facial accuracy remains unproven.
+Next: test inverse conditional appearance as a different mechanism; preserve
+paired-support plus training-only graph as a bounded combination lead.
+Goal active and unmet; no deployment/export promotion.
+
 # Latest: skin color remains the endpoint; 45 support fits complete
 
 All current scores below are actual instrument-referenced skin DeltaE00, not

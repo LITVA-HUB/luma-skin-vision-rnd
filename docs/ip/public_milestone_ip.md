@@ -32,3 +32,13 @@ Observed-patch augmentation and conditional routing overlap established
 methods. No novelty, patentability, universal camera or product-readiness claim
 is established. All native skin color negatives and the earlier synthetic
 failure remain available. No participant images or identifiers are committed.
+
+
+## Skin expert supervision/removal (2026-09-11)
+
+72 source fits use the existing original MSKCC CC-BY photographs and native
+Lab only. No new external weights/code/data. Explicit expert supervision and
+mixture removal are standard mechanisms, not asserted inventions. Both-transfer
+gains from plain-model patch support are partial and do not beat the strongest
+controls universally. [Evidence](../benchmarks/skin_expert_anchor_v1/report.md).
+No independent-test reuse for tuning, participant publication or product claim.

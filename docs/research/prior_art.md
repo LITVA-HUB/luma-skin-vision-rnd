@@ -415,3 +415,25 @@ same-site patches preserves reference provenance, but proves neither physical
 realizability of the composed image nor technical novelty. No external code
 or weights from these works adopted. No skin accuracy gain follows from an
 illuminant-angle result.
+
+
+## Expert removal and conditional skin supervision: source review (2026-09-11)
+
+The new screen contrasts removal of the mixture against uniformly and
+capture-conditionally supervised native-Lab heads; coefficients and 72 fits
+were frozen before training. This is a mechanistic ablation, not novelty.
+[Makkuva et al., ICML 2019](https://proceedings.mlr.press/v97/makkuva19a.html)
+already study joint expert/gate learning difficulties and a separate expert
+estimation approach using cross-moments. Their theorem is not transferred to
+our nonlinear skin regressor, and their algorithm is not reproduced here.
+No external code or weights adopted.
+
+HUST (ICCV 2025) remains relevant facial-albedo prior art already inventoried.
+A fresh CVF full-text fetch failed; no new table values or rights inferred.
+The [DAST original repository](https://github.com/dasec/DAST-SkinTone-database)
+still directs users to contact its authors for the full dataset and does not
+establish a permissive dataset license on its visible page. No contact or
+sample acquisition occurred. The [He2021 original deposit](https://zenodo.org/records/5532176)
+still provides paired regional RGB/XYZ tables, not additional full photographs
+or a newly verified numeric reference white. No replacement DeltaE00 targets
+were manufactured. These checks do not clear a new ordinary-phone dataset.
