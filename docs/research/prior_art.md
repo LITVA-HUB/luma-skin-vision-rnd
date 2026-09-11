@@ -437,3 +437,20 @@ sample acquisition occurred. The [He2021 original deposit](https://zenodo.org/re
 still provides paired regional RGB/XYZ tables, not additional full photographs
 or a newly verified numeric reference white. No replacement DeltaE00 targets
 were manufactured. These checks do not clear a new ordinary-phone dataset.
+
+
+## Conditional skin appearance inversion (2026-09-11)
+
+108 source fits and separate empirical-support controls do not establish an
+innovation win. Mixed inverse3.8663 versus direct3.9046 has a patient interval
+crossing zero; matched hull-constrained direct3.8947 narrows the difference.
+[Decision](skin_appearance_inverse_next_decision.md). Gaussian mixture regression
+is established; see [Calinon et al.2007, author page](https://calinon.ch/paper4003.htm).
+Bayesian inversion for color already has a substantial history, including
+[non-Gaussian color constancy, NeurIPS2003](https://papers.neurips.cc/paper_files/paper/2003/hash/c65d7bd70fe3e5e3a2f3de681edc193d-Abstract.html)
+and [multi-hypothesis color constancy, CVPR2020](https://openaccess.thecvf.com/content_CVPR_2020/html/Hernandez-Juarez_A_Multi-Hypothesis_Approach_to_Color_Constancy_CVPR_2020_paper.html).
+These are conceptual prior art, not locally reproduced author protocols. Our
+endpoint is actual skin native Lab, but changing the endpoint does not establish
+novelty. No external code or weights adopted. A fixed-covariance Gaussian patch
+model has a sufficient-mean limitation; simply processing every patch must not
+be called a new source of color information without testing that limitation.

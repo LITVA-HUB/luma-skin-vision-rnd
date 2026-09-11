@@ -42,3 +42,14 @@ mixture removal are standard mechanisms, not asserted inventions. Both-transfer
 gains from plain-model patch support are partial and do not beat the strongest
 controls universally. [Evidence](../benchmarks/skin_expert_anchor_v1/report.md).
 No independent-test reuse for tuning, participant publication or product claim.
+
+
+## Conditional skin appearance / support controls (2026-09-11)
+
+Existing original MSKCC CC-BY data only; no new external code/weights.
+Bayesian inversion, polynomial regression, empirical priors and convex support
+projection are standard methods. The108-fit source screen and72 support
+endpoints establish no novelty, patentability or universal camera claim.
+[Evidence](../benchmarks/skin_appearance_inverse_v1/report.md). No participant
+images/identifiers, model weights or private arrays are published or committed.
+Independent skin and negative synthetic evidence remain unchanged.

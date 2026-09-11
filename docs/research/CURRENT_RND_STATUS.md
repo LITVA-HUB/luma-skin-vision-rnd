@@ -1,3 +1,21 @@
+# Latest: conditional appearance inversion and support controls complete
+
+Actual native skin DeltaE00. 108 closed-form source fits, plus two support
+controls on all 36 direct models. Mixed inverse mean 3.8663 versus direct3.9046
+and hull-constrained direct3.8947 is inconclusive; old patch baseline3.4406
+remains stronger. No new independent, calibrated-selective or phone victory.
+[Report](../benchmarks/skin_appearance_inverse_v1/report.md),
+[decision](skin_appearance_inverse_next_decision.md).
+360 exact prediction arrays; 2880 excluded-person forward folds; 31680 scalar
+color cases; 1944 coverage rows. Support controls add 2356992 atom distances,
+25344 color cases and1575 KKT-checked projection instances. 343 tests pass,
+14 historical warnings in33.56s. All jobs terminal; no live training.
+Independent MSKCC result unchanged: primary4.4570/80%4.1591 versus ordinary
+fusion4.3005/4.1447. Next: bounded graph+patch-support combination and distinct
+non-Gaussian conditional patch likelihood. Gaussian full-bag sufficiency must
+be checked before calling a mean-preserving model a new representation.
+Goal remains active and unmet.
+
 # Latest: 72 expert-removal / supervision skin fits complete
 
 Actual instrument skin DeltaE00, not illuminant angles. Explicit conditional
