@@ -1,0 +1,66 @@
+{
+  "model_sha256": "1203cbc5ed2ee17cb2a408c47a23b3a28468f169d48b4d3cee8bd3059e7fbed3",
+  "validation_indices": [
+    0,
+    112,
+    225,
+    338,
+    450,
+    563,
+    676,
+    789,
+    901,
+    1014,
+    1127,
+    1240,
+    1352,
+    1465,
+    1578,
+    1691
+  ],
+  "cpu_threads": [
+    1,
+    2,
+    4
+  ],
+  "layouts": [
+    "contiguous",
+    "channels_last"
+  ],
+  "model_only_repetitions": 48,
+  "jpeg_repetitions_per_photo": 3,
+  "warmup_calls": 8,
+  "logit_parity_absolute_tolerance": 0.001,
+  "task": "one192x192 facial-skin mask; JPEG bytes already in RAM; no disk/network/skin-color head timing",
+  "jpeg_inputs": [
+    {
+      "sha256": "86af57faf416aa1bd8ce10f4c77962e7eb618c11921db1511e2227a329eb5c8e",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "sha256": "ab4acd42742e7d56bb579e03e3b83a05ce886cf91cd69f93b343ad0c20c042ef",
+      "width": 959,
+      "height": 1280
+    },
+    {
+      "sha256": "2eac8b551087d6f6fc0a918e5062ab7635462c18d45ac9b63fd8b690cdc85a18",
+      "width": 959,
+      "height": 1280
+    },
+    {
+      "sha256": "3fc49ff2524d4c5d5e67a1abb0deafc1afa72083ab8d5c69bf2248ec4e07e981",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "sha256": "7e06fe3debd73e37c254115317fe92ade5dc696b9d3f58253b702d699f0d3c27",
+      "width": 960,
+      "height": 1280
+    }
+  ],
+  "source_sha256": "d728b692ecbb78603c4658a4a4a0bf02e4878c208e870fad067d21e512301757",
+  "machine": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "torch_version": "2.8.0+cu128",
+  "data_profile_sha256": "67e7084af989dcc9de8635d39a0a73949963a9264c147941da0b279dcfbe5625"
+}

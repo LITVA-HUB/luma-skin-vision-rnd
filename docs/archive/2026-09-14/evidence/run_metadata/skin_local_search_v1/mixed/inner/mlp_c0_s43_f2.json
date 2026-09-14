@@ -1,0 +1,44 @@
+{
+  "protocol": "mixed",
+  "method": "mlp",
+  "parameter": 0.0003,
+  "seed": 43,
+  "fold": 2,
+  "sampled_minibatch_loss_trace": [
+    [
+      64,
+      0.6632452607154846
+    ],
+    [
+      128,
+      0.5417872667312622
+    ],
+    [
+      256,
+      0.3775968551635742
+    ],
+    [
+      512,
+      0.37774667143821716
+    ]
+  ],
+  "optimizer_updates": 512,
+  "fit_seconds": 0.5077077999594621,
+  "peak_allocated_bytes": 18508288,
+  "weighted_train_normalized_sse": 449.27599810909294,
+  "numeric_scalars": 2749,
+  "numeric_bytes": 10996,
+  "inner_metrics": {
+    "person_mean": 4.813181384682271,
+    "image_mean": 4.833732876890279,
+    "site_person_mean": 4.808809277090004,
+    "median": 4.5404864105253235,
+    "p90": 7.760607408787912,
+    "gt5": 0.4297520661157025,
+    "gt10": 0.024793388429752067,
+    "n_images": 242,
+    "n_people": 6
+  },
+  "artifact_sha256": "93d24544e01f5366611045970b43ff4e5af94dc8a1f7eaa784fc55956bf2adaf",
+  "serialized_bytes": 13470
+}

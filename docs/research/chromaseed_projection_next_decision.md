@@ -1,0 +1,23 @@
+# After ChromaSeed-X
+
+2026-09-13. This continuation is **progress**, not completion or a repeated blocker. It verifies a useful compact representation and exposes its camera-transfer failure. Before starting, A's verifier rechecked its authoritative files in read-only mode, retaining receipt91a348711bbe95dba917a6b31c34e5c78d94c6113737a33f0a93ba4fcc5ec646. The original compact/fast/high-quality goal remains active; ordinary-phone facial quality is still missing.
+
+## Evidence that changes the next action
+
+Mixed perceptual joint compact chooses d16/τ.5/α.1:14,181 numeric bytes versus21,973 raw, a35.46% reduction. Error5.206762 versus5.272642;4/6 reused held people improve and the descriptive fixed-prediction interval includes zero. It fits734 rows in30.559ms and answers prepared color36 in13.5µs, with29,056 cached-array bytes. It is smaller but slightly slower at inference than same-run raw controls. The earlier34.600ms A training time is not a new paired speed comparison.
+
+Both X policies worsen every camera-transfer comparison;19/24 matched outer cases worsen overall. Compact perceptual forward11.029335 versus8.654805 and reverse8.770553 versus8.386889. The retained raw identity is exact across432 configurations, so the failure is not corruption of the previous model. Squeezing to8 dimensions is not the next default. Internal clean/p90 allowances do not protect outside the fit distribution. The full36/τ1 choice in mixed perceptual static adds5,328 bytes for about−1.0e-6 inner score change: a numerical near-tie, not a substantive discovery.
+
+5,772 stored readouts include1,872 aliases/144 imported controls/12 constants;3,744 new solutions,624 Gram decompositions,468 bases,156 widths,12 covariances,4 gates and36+36 auxiliary solves. All817,700 OOF predictions,468 candidate score pairs/24 choices and1,462,758 final predictions/444 dose summaries checked. Independent weighted-design SVD validates144 projections and all468 dense landmark paths.72 selected and12 positive QR/SVD refits have max2.29e-5Lab drift.112 timing fits reproduce arrays exactly;15 tests pass1.72s. PrimaryPID36304/session37948, audit72869, runtime/report terminal exit0; no X job remains after final verification.
+
+## Next bounded question — planned, not launched
+
+Test a hybrid of the original color geometry and the projected geometry. The hypothesis is that a projected correction can use the mixed-role signal while retaining information discarded by projection. A support-dependent smooth correction is a candidate to test, not a proven unknown-camera safeguard or error bound. This directly follows the user's request to combine successful components; it must still seek high quality rather than merely preserve one score.
+
+Register a separate protocol before fitting: raw-only, projected-only, uniform hybrid and smooth support-weighted hybrid controls, matching preprocessing/landmark choices and analytic loss. Shared original-row landmark indices could avoid storing two unrelated center banks, but that changes the projected basis; its own matched controls must be included rather than pretending exact X equivalence. Keep exact old A/X controls and count all storage/compute, including both kernel evaluations and the support calculation. A modestly larger model is allowed by the user; no latency improvement is assumed.
+
+Fit any gate, support scale, shrinkage, mixing coefficient or model-selection tolerance only within person-disjoint training folds. Include a zero-correction setting and hold the complete grid before looking at outer outcomes. Do not disable a branch merely by recognizing a known adverse outer role, borrow query camera/Lab statistics, retroactively change X's selections, or call support a calibrated uncertainty guarantee. Explicitly test whether a plain convex blend or equal-capacity uniform correction explains any improvement. Use all existing clean/transfer/stress metrics and actual standalone timing.
+
+This next model is not yet implemented or trained. No fresh data or data collection has been launched. Original TRAIN-only permission and exclusion of legacy validation/calibration/test remain. The24 historical people cannot provide an independent facial-phone success claim through more tuning; real quality will ultimately need independently acquired instrument-referenced facial data and end-to-end extraction validation. Preserve all old source/result/verification bindings, app/archive contents, adverse outcomes and no-delegation/publication constraints.
+
+[Full X report](../benchmarks/chromaseed_projection_v1/report.md) · [Verification](../benchmarks/chromaseed_projection_v1/verification.json) · [Active goal](chromaseed_active_goal.md).

@@ -1,0 +1,294 @@
+{
+  "status": "COMPLETE",
+  "evidence": "Exploratory evaluation inside original TRAIN; mixed people were historically reused and the three protocols overlap. This is not independent confirmation.",
+  "bindings": {
+    "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "evaluation_sha256": "5e276bc773e3aba91921b3cdd39a6ab393df99a9dd58e12fcf244bbb2356cfb7",
+    "frozen_selections_sha256": "776d8382186331ac55c72a00b8d6096ef6fe58fafbbd7cfcd5859f086f3db712",
+    "outer_array_count": 33,
+    "outer_arrays_combined_sha256": "c8fbd1fa6bb2cd6854b3392578c28884f64b960b17711ab28da27051b20dabb0"
+  },
+  "checks": {
+    "row_alignment_to_held_masks": true,
+    "target_alignment_to_held_masks": true,
+    "independent_metrics_match_receipts": true,
+    "unique_evaluation_records": 33,
+    "row_level_values_written_to_tracked_audit": false
+  },
+  "bootstrap_scope": "Descriptive paired people bootstrap only. Small reused samples, cross-protocol overlap and model selection are not accounted for.",
+  "protocols": {
+    "mixed": {
+      "held_images": 232,
+      "held_people": 6,
+      "methods": {
+        "ridge": {
+          "seeds": [
+            17
+          ],
+          "seed_average_person_mean": 6.538918787722916,
+          "individual_seed_person_means": [
+            6.538918787722916
+          ]
+        },
+        "krr": {
+          "seeds": [
+            17
+          ],
+          "seed_average_person_mean": 5.398403385778536,
+          "individual_seed_person_means": [
+            5.398403385778536
+          ]
+        },
+        "random_rbf": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 5.7520822523252,
+          "individual_seed_person_means": [
+            5.7409209238560885,
+            5.837683664574303,
+            5.677642168545208
+          ]
+        },
+        "guided_rbf": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 5.801252707855556,
+          "individual_seed_person_means": [
+            5.788613584982111,
+            5.8299766452487765,
+            5.785167893335778
+          ]
+        },
+        "mlp": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 5.785605771967974,
+          "individual_seed_person_means": [
+            5.704735234657735,
+            5.59315640038465,
+            6.058925680861539
+          ]
+        }
+      },
+      "comparisons": {
+        "guided_rbf_minus_random_rbf": {
+          "person_count": 6,
+          "point_person_mean_difference": 0.04917045553035485,
+          "bootstrap_draws": 20000,
+          "bootstrap_seed": 20260913,
+          "descriptive_percentile_95_interval": [
+            -0.12457463872975379,
+            0.2229155497904635
+          ],
+          "bootstrap_median": 0.04917045553035485,
+          "bootstrap_probability_difference_below_zero": 0.29955,
+          "construction": "Average each person error across individual seed models, then paired resample people; no prediction ensemble."
+        },
+        "guided_rbf_minus_mlp": {
+          "person_count": 6,
+          "point_person_mean_difference": 0.015646935887580593,
+          "bootstrap_draws": 20000,
+          "bootstrap_seed": 20260914,
+          "descriptive_percentile_95_interval": [
+            -0.39057789095780066,
+            0.35137848554199697
+          ],
+          "bootstrap_median": 0.025097652587770487,
+          "bootstrap_probability_difference_below_zero": 0.4518,
+          "construction": "Average each person error across individual seed models, then paired resample people; no prediction ensemble."
+        }
+      }
+    },
+    "slr_to_ipod": {
+      "held_images": 643,
+      "held_people": 16,
+      "methods": {
+        "ridge": {
+          "seeds": [
+            17
+          ],
+          "seed_average_person_mean": 10.873936692494322,
+          "individual_seed_person_means": [
+            10.873936692494322
+          ]
+        },
+        "krr": {
+          "seeds": [
+            17
+          ],
+          "seed_average_person_mean": 8.584489836444883,
+          "individual_seed_person_means": [
+            8.584489836444883
+          ]
+        },
+        "random_rbf": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 10.363600981795486,
+          "individual_seed_person_means": [
+            10.160518814638554,
+            10.418551693574138,
+            10.51173243717377
+          ]
+        },
+        "guided_rbf": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 10.028025072814563,
+          "individual_seed_person_means": [
+            10.087186994633257,
+            10.041893388582329,
+            9.954994835228101
+          ]
+        },
+        "mlp": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 9.48099099571699,
+          "individual_seed_person_means": [
+            9.9856038105955,
+            9.842302510917772,
+            8.615066665637698
+          ]
+        }
+      },
+      "comparisons": {
+        "guided_rbf_minus_random_rbf": {
+          "person_count": 16,
+          "point_person_mean_difference": -0.33557590898092443,
+          "bootstrap_draws": 20000,
+          "bootstrap_seed": 20260923,
+          "descriptive_percentile_95_interval": [
+            -0.48077763439917076,
+            -0.18324273263950613
+          ],
+          "bootstrap_median": -0.33675823050060705,
+          "bootstrap_probability_difference_below_zero": 1.0,
+          "construction": "Average each person error across individual seed models, then paired resample people; no prediction ensemble."
+        },
+        "guided_rbf_minus_mlp": {
+          "person_count": 16,
+          "point_person_mean_difference": 0.5470340770975717,
+          "bootstrap_draws": 20000,
+          "bootstrap_seed": 20260924,
+          "descriptive_percentile_95_interval": [
+            0.19872153292092193,
+            0.9220060974236158
+          ],
+          "bootstrap_median": 0.5409434838054759,
+          "bootstrap_probability_difference_below_zero": 0.0004,
+          "construction": "Average each person error across individual seed models, then paired resample people; no prediction ensemble."
+        }
+      }
+    },
+    "ipod_to_slr": {
+      "held_images": 323,
+      "held_people": 8,
+      "methods": {
+        "ridge": {
+          "seeds": [
+            17
+          ],
+          "seed_average_person_mean": 7.955689039289185,
+          "individual_seed_person_means": [
+            7.955689039289185
+          ]
+        },
+        "krr": {
+          "seeds": [
+            17
+          ],
+          "seed_average_person_mean": 8.912545808394118,
+          "individual_seed_person_means": [
+            8.912545808394118
+          ]
+        },
+        "random_rbf": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 8.061762512316292,
+          "individual_seed_person_means": [
+            8.294995418884948,
+            8.12132642316021,
+            7.768965694903721
+          ]
+        },
+        "guided_rbf": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 7.719323716762193,
+          "individual_seed_person_means": [
+            8.3401763059413,
+            7.2244243590362105,
+            7.593370485309066
+          ]
+        },
+        "mlp": {
+          "seeds": [
+            17,
+            29,
+            43
+          ],
+          "seed_average_person_mean": 9.730933053289592,
+          "individual_seed_person_means": [
+            9.896396167056071,
+            9.053736372248018,
+            10.242666620564691
+          ]
+        }
+      },
+      "comparisons": {
+        "guided_rbf_minus_random_rbf": {
+          "person_count": 8,
+          "point_person_mean_difference": -0.3424387955541005,
+          "bootstrap_draws": 20000,
+          "bootstrap_seed": 20260933,
+          "descriptive_percentile_95_interval": [
+            -0.8588236859133855,
+            0.1603513256286548
+          ],
+          "bootstrap_median": -0.3411533451003639,
+          "bootstrap_probability_difference_below_zero": 0.9023,
+          "construction": "Average each person error across individual seed models, then paired resample people; no prediction ensemble."
+        },
+        "guided_rbf_minus_mlp": {
+          "person_count": 8,
+          "point_person_mean_difference": -2.011609336527401,
+          "bootstrap_draws": 20000,
+          "bootstrap_seed": 20260934,
+          "descriptive_percentile_95_interval": [
+            -3.560889690260505,
+            -0.8336662046404171
+          ],
+          "bootstrap_median": -1.94492753561617,
+          "bootstrap_probability_difference_below_zero": 1.0,
+          "construction": "Average each person error across individual seed models, then paired resample people; no prediction ensemble."
+        }
+      }
+    }
+  }
+}

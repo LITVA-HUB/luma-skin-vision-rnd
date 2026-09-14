@@ -1,0 +1,253 @@
+{
+  "status": "COMPLETE",
+  "purpose": "Fit-time device audit on the frozen primary mixed-role configuration; no accuracy or selection decisions.",
+  "data_boundary": {
+    "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+    "protocol": "mixed",
+    "fit_images": 734,
+    "outer_targets_used": false,
+    "other_datasets_or_caches_loaded": false
+  },
+  "binding": {
+    "frozen_selections_sha256": "776d8382186331ac55c72a00b8d6096ef6fe58fafbbd7cfcd5859f086f3db712",
+    "seed": 17,
+    "torch_threads": 1,
+    "warmups_per_device_method": 1,
+    "timed_repeats_per_device_method": 3,
+    "cold_start_excluded": true,
+    "timing": "Each method ran sequentially. Wall timing surrounds fit_model; reported timing is fit_model's synchronized fit_seconds."
+  },
+  "cpu": {
+    "device": "cpu",
+    "torch_threads": 1,
+    "cold_excluded": true,
+    "warmups_per_method": 1,
+    "timed_repeats": 3,
+    "rows": {
+      "ridge": {
+        "parameter": 1,
+        "wall_seconds": [
+          0.004932000010740012,
+          0.004842400026973337,
+          0.004841000016313046
+        ],
+        "reported_fit_seconds": [
+          0.00480919994879514,
+          0.004740100004710257,
+          0.0047490999568253756
+        ],
+        "median_wall_seconds": 0.004842400026973337,
+        "median_reported_fit_seconds": 0.0047490999568253756
+      },
+      "krr": {
+        "parameter": 0.1,
+        "wall_seconds": [
+          0.09845729998778552,
+          0.1118086000205949,
+          0.12272450001910329
+        ],
+        "reported_fit_seconds": [
+          0.0947996000177227,
+          0.1077240000013262,
+          0.11848970002029091
+        ],
+        "median_wall_seconds": 0.1118086000205949,
+        "median_reported_fit_seconds": 0.1077240000013262
+      },
+      "random_rbf": {
+        "parameter": 0.1,
+        "wall_seconds": [
+          0.06949850003002211,
+          0.07080429996130988,
+          0.06543300003977492
+        ],
+        "reported_fit_seconds": [
+          0.06910339999012649,
+          0.07037889998173341,
+          0.0649575000279583
+        ],
+        "median_wall_seconds": 0.06949850003002211,
+        "median_reported_fit_seconds": 0.06910339999012649
+      },
+      "guided_rbf": {
+        "parameter": 1,
+        "wall_seconds": [
+          0.24133320001419634,
+          0.2155307999928482,
+          0.18822549999458715
+        ],
+        "reported_fit_seconds": [
+          0.24087850004434586,
+          0.21498970000538975,
+          0.18780660000629723
+        ],
+        "median_wall_seconds": 0.2155307999928482,
+        "median_reported_fit_seconds": 0.21498970000538975
+      },
+      "mlp": {
+        "parameter": 0.003,
+        "wall_seconds": [
+          0.1967431999510154,
+          0.19712389999767765,
+          0.19644620001781732
+        ],
+        "reported_fit_seconds": [
+          0.19623970001703128,
+          0.196745999972336,
+          0.1960807999712415
+        ],
+        "median_wall_seconds": 0.1967431999510154,
+        "median_reported_fit_seconds": 0.19623970001703128
+      }
+    }
+  },
+  "cuda": {
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4060",
+    "torch_threads": 1,
+    "cold_excluded": true,
+    "warmups_per_method": 1,
+    "timed_repeats": 3,
+    "rows": {
+      "ridge": {
+        "parameter": 1,
+        "wall_seconds": [
+          0.005608099978417158,
+          0.005681700014974922,
+          0.005375699955038726
+        ],
+        "reported_fit_seconds": [
+          0.005410299985669553,
+          0.005501899984665215,
+          0.005148100026417524
+        ],
+        "peak_allocated_bytes": [
+          9273344,
+          9273344,
+          9273344
+        ],
+        "median_wall_seconds": 0.005608099978417158,
+        "median_reported_fit_seconds": 0.005410299985669553,
+        "median_peak_allocated_bytes": 9273344
+      },
+      "krr": {
+        "parameter": 0.1,
+        "wall_seconds": [
+          0.032815399987157434,
+          0.03193150000879541,
+          0.032255399972200394
+        ],
+        "reported_fit_seconds": [
+          0.029407599999103695,
+          0.02848689997335896,
+          0.028913100017234683
+        ],
+        "peak_allocated_bytes": [
+          321504256,
+          321504256,
+          321504256
+        ],
+        "median_wall_seconds": 0.032255399972200394,
+        "median_reported_fit_seconds": 0.028913100017234683,
+        "median_peak_allocated_bytes": 321504256
+      },
+      "random_rbf": {
+        "parameter": 0.1,
+        "wall_seconds": [
+          0.031822799996007234,
+          0.03149610001128167,
+          0.030863800027873367
+        ],
+        "reported_fit_seconds": [
+          0.031349900003988296,
+          0.0310458000167273,
+          0.03041760000633076
+        ],
+        "peak_allocated_bytes": [
+          336050688,
+          336050688,
+          336050688
+        ],
+        "median_wall_seconds": 0.03149610001128167,
+        "median_reported_fit_seconds": 0.0310458000167273,
+        "median_peak_allocated_bytes": 336050688
+      },
+      "guided_rbf": {
+        "parameter": 1,
+        "wall_seconds": [
+          0.07506770000327379,
+          0.07622420002007857,
+          0.07540559995686635
+        ],
+        "reported_fit_seconds": [
+          0.07455270003993064,
+          0.07561990001704544,
+          0.07491029996890575
+        ],
+        "peak_allocated_bytes": [
+          336050688,
+          336050688,
+          336050688
+        ],
+        "median_wall_seconds": 0.07540559995686635,
+        "median_reported_fit_seconds": 0.07491029996890575,
+        "median_peak_allocated_bytes": 336050688
+      },
+      "mlp": {
+        "parameter": 0.003,
+        "wall_seconds": [
+          0.4625864999834448,
+          0.4614718000520952,
+          0.4776496999547817
+        ],
+        "reported_fit_seconds": [
+          0.46205440000630915,
+          0.46101440000347793,
+          0.47718889999669045
+        ],
+        "peak_allocated_bytes": [
+          18547200,
+          18547200,
+          18547200
+        ],
+        "median_wall_seconds": 0.4625864999834448,
+        "median_reported_fit_seconds": 0.46205440000630915,
+        "median_peak_allocated_bytes": 18547200
+      }
+    }
+  },
+  "cuda_speedup": {
+    "ridge": {
+      "reported_fit_seconds_cpu_over_cuda": 0.8777886567111767,
+      "wall_seconds_cpu_over_cuda": 0.8634653529019406
+    },
+    "krr": {
+      "reported_fit_seconds_cpu_over_cuda": 3.725785195538129,
+      "wall_seconds_cpu_over_cuda": 3.4663529243772557
+    },
+    "random_rbf": {
+      "reported_fit_seconds_cpu_over_cuda": 2.2258534150478964,
+      "wall_seconds_cpu_over_cuda": 2.2065747824374533
+    },
+    "guided_rbf": {
+      "reported_fit_seconds_cpu_over_cuda": 2.8699618089185206,
+      "wall_seconds_cpu_over_cuda": 2.858286388758083
+    },
+    "mlp": {
+      "reported_fit_seconds_cpu_over_cuda": 0.4247112461527294,
+      "wall_seconds_cpu_over_cuda": 0.42531115793058494
+    }
+  },
+  "interpretation": {
+    "faster_on_cuda": [
+      "krr",
+      "random_rbf",
+      "guided_rbf"
+    ],
+    "faster_on_cpu": [
+      "ridge",
+      "mlp"
+    ],
+    "limitation": "These measurements cover model fitting on 734x36 prepared features only. They exclude feature preprocessing, camera capture, deployment inference, data transfer setup before fit_model, and cold initialization."
+  }
+}

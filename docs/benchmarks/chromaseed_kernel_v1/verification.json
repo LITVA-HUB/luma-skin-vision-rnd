@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "completed_unix": 1789274181.4963398,
+  "tests_passed": 11,
+  "pytest_seconds": 0.21,
+  "pytest_command": "python -m pytest tests/test_chromaseed_kernel.py tests/test_chromaseed_kernel_bank.py -q",
+  "pytest_evidence": "Fresh captured tool output: 11 passed in 0.21s, before documentation-only edits; tested core/bank/test source hashes remain unchanged.",
+  "tested_sources": {
+    "scripts\\chromaseed_kernel.py": "65433ab44c0758606947ded87ae809f7520d12c644726fa62044f54cefef55bf",
+    "scripts\\chromaseed_kernel_bank.py": "67d30b3c457135620a0b8ca245512b36c05082d77e0eb71b514af8f89d4feca9",
+    "tests\\test_chromaseed_kernel.py": "9bad457558eab7c1732695bcc929262376ba084c25093c5e683ff37f32373fbc",
+    "tests\\test_chromaseed_kernel_bank.py": "271f44ff5fdda62567179ae3a34fff1209ddc14df2d333a56d1c82931b276d3e"
+  },
+  "ruff": "All 7 ChromaSeed-K scripts and 2 test files pass",
+  "git_diff_check": "passed",
+  "source_locks_verified": [
+    {
+      "run": "skin_local_search_v1",
+      "source_lock_sha256": "9665568430b03e66cc5bb5b6b564a7bffd1e9a9e4fb726660c27e31116c57ea5",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "skin_local_search_compact_v1",
+      "source_lock_sha256": "f2ffca50caf33e79247d7b15ca4c899c2347d6265ba690db9a886c40c2440906",
+      "source_bindings_checked": 8
+    },
+    {
+      "run": "chromaseed_v1",
+      "source_lock_sha256": "286cf15eeb9dc5cbba45aa88db4751c7b9829db1ba2ba3a5a5ddf2d2a9539deb",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_frozen_v1",
+      "source_lock_sha256": "2a2834f81b283ba76cecc3dd0101144183c6f26968772bf2c3c1d6eb5c9b2626",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_v1",
+      "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_precision_v1",
+      "source_lock_sha256": "46562a2cda469546787ed6f04036eecf3a940be7e0075030c513ad4085a7d360",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "chromaseed_kernel_v1",
+      "source_lock_sha256": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+      "source_bindings_checked": 7
+    }
+  ],
+  "legacy_artifact_bindings_checked": 47,
+  "auditor_dependency_sha256": {
+    "scripts\\chromaseed_refine_audit.py": "63ad91c019edfa64522fe30f01830308dd26a863ec45460b09cff4eef130c653",
+    "scripts\\skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "original_repository_git_status": "clean",
+  "active_kernel_study_processes": 0,
+  "artifact_sha256": {
+    "audit.json": "133a62f46abeb52e9159cb4df6e0913fbe547f2ec65f0df8fadec719e6ad75b2",
+    "runtime.json": "66b3238fc722e862af04ad63a15c45a32f6c956393d2bb2b4bb5e20b41a02104",
+    "complete_workflow_runtime.json": "a3839fa06bcb85c5f10ae45c80576d375eca39028ca03d67e0d4a41526ba5c8c",
+    "summary.json": "05cf81ab2a3695159e0b6b607622bba58850df370ef226aa1ef42be046b880a5",
+    "report.md": "dfeb87839c222fd844592e17cda924da1d3df449e9a60b450c74d85d30c8a9fe",
+    "source_lock.json": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+    "selections.json": "46a092bd5096fd349427e1baaeada61fd1155b68bca89820d8e81e9f6b442419",
+    "quality_size.png": "4be67e1320237f67601ccfac41298fd1ddf90de416b400a500d1ead930bc99cf",
+    "quality_size.svg": "2a816221dbc51efa054fb3aa2261cd83b01f67c41dce647453fa442d27765983",
+    "runtime.png": "f20b93dd04533558945bbacb3a8592c63bedf9e2faba34297dd1e833b51a2247",
+    "runtime.svg": "1c5840227d7267b29ba0fc63e1a12b3f9ece0eb879fa2c65a8690fb2c7d65369",
+    "reproduce.md": "4f82a0adf6d51210d797b983cea78f0dc807bc8fc03e91b39d2e04ba605255c4"
+  },
+  "goal_classification": "progress; broader goal active; next study planned, not launched",
+  "local_markdown_links_checked": 24
+}

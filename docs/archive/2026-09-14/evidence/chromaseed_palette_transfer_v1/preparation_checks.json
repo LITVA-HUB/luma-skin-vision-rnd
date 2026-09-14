@@ -1,0 +1,39 @@
+{
+  "classification": "P3 implementation and synthetic CPU preparation passed; native transfer efficacy remains unmeasured.",
+  "registration_sha256": "90a9a78bc46f5ca1f40befe0cd04e8861374868d41710c099c7573da7a2add17",
+  "bindings_verified": 283,
+  "tests": {
+    "session_id": 30591,
+    "exit_code": 0,
+    "command": "python -m pytest tests/test_chromaseed_palette_transfer.py -q",
+    "summary": "6 passed in 24.10s"
+  },
+  "lint_and_primary_guards": {
+    "chunk_id": "80cca4",
+    "wall_time_seconds": 4.7641244,
+    "exit_code": 0,
+    "original_token_count": 60,
+    "output": "All checks passed!\n[{\"argv\": [\"scripts/chromaseed_palette_transfer_run.py\"], \"expected_rejection\": true, \"exit_code\": 1}, {\"argv\": [\"scripts/chromaseed_palette_transfer_preflight.py\", \"cuda\"], \"expected_rejection\": true, \"exit_code\": 1}]\r\n"
+  },
+  "cpu_preflight": {
+    "session_id": 39685,
+    "exit_code": 0,
+    "sha256": "3525536be5d5de82f1596924699175fc562eb27d9811eb26d62daaa1e3129650",
+    "seconds": 180.3053117999807,
+    "combinations": 27,
+    "checkpoint_slot_exports": 324,
+    "original_exact_payloads": 108,
+    "transferred_prefix_exact_payloads": 108,
+    "synthetic_example_predictions": 972,
+    "maximum_native_lab": 0.000005407000305268639
+  },
+  "cuda_preflight_performed": false,
+  "native_finetuning_performed": false,
+  "original_hr_source_files_preserved": 185,
+  "next_required": [
+    "HR actual terminal success and full audit/runtime/report seal",
+    "P3 dashboard tracking",
+    "P3 CUDA preflight and production lock",
+    "72 new native banks; independent audit, actual runtime/replay and final report"
+  ]
+}

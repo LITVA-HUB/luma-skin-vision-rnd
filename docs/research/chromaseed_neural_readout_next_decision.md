@@ -1,0 +1,11 @@
+# After NR: inspect regularization before another bounded readout study
+
+NR is verified progress, not full-goal completion. Same1855/10564 B network supports a real analytical output fit.54/72 comparisons improve their corresponding unchanged trained output, but79/84 lose to FG and all12 policies lose. Random features make construction much cheaper, with worse color error. Do not promote a universally better model or omit hidden-representation construction from timing.
+
+All12 policies and77/84 per-basis choices selectalpha10, the upper tested boundary;7 select1. This motivates a specific next question about stronger regularization, not proof of overfitting or permission to expand grids indefinitely. Before implementation, inspect the standardized hidden-feature penalty, intercept exemption, effective design spectra/degrees of freedom and original inner alpha curves. Existing W/K/P/FG regularization studies are prior art on different representations; inventory them without rerunning exposed test roles.
+
+If that inspection supports a follow-up, preregister a small extension including the exact old.1/1/10 controls and stronger100/1000 candidates on the same fixed504 NR bases, both losses/groups and all roles. Define inner selection and quality/cost reports before new outer evaluation; do not alter hidden networks or set role-specific thresholds from known losses. Independent augmented QR must verify outputs. Cached bases are legitimate for the diagnostic but full construction timing must still charge all representation learning. Preserve the negative results and parent receipts, including the one non-bitwise independent base reconstruction within original tolerance.
+
+This is planned, not implemented or launched. Ordinary-phone facial/end-to-end quality remains unvalidated and cannot be established by repeatedly reusing these people. Only original TRAIN under the current boundary; no agents/new data/images/weights/packages/publication/exposed validation/test. The full goal remains active and not blocked while meaningful local learning work is available.
+
+[NR report](../benchmarks/chromaseed_neural_readout_v1/report.md) · [Receipt](../benchmarks/chromaseed_neural_readout_v1/verification.json) · [Earlier frozen-palette decision](chromaseed_next_decision.md) · [TG interface erratum](chromaseed_gaussian_consumer_erratum.md).

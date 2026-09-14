@@ -1,0 +1,2018 @@
+{
+  "registration_sha256": "07b0a089e2b63cf383ff0625a7aee941c16992bb898cba2db9d8a6a776c34827",
+  "cases": [
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 512,
+      "lr": 0.0001,
+      "original_four_pass_clean": 4.195662550302784,
+      "summary": {
+        "n_rows": 734,
+        "n_people": 18,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.212766037803868,
+            "image_mean": 4.189520425816197,
+            "mean_seed_p90": 7.279988732226123,
+            "seed_person_mean": [
+              4.2182591238877,
+              4.142314825962652,
+              4.277724163561252
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.20327592968584,
+            "image_mean": 4.180139323030942,
+            "mean_seed_p90": 7.235375344178441,
+            "seed_person_mean": [
+              4.204933085463353,
+              4.140391501291901,
+              4.264503202302267
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.19811868679227,
+            "image_mean": 4.1751489825370145,
+            "mean_seed_p90": 7.2373856160176,
+            "seed_person_mean": [
+              4.195857872815683,
+              4.140232987856223,
+              4.258265199704907
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.195662591278738,
+            "image_mean": 4.1728890420429465,
+            "mean_seed_p90": 7.2172809576652215,
+            "seed_person_mean": [
+              4.189285868652544,
+              4.141392936496855,
+              4.2563089686868185
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 4,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 1383,
+            "person_weighted_coverage": 0.6330429451493613,
+            "current_person_weighted_error": 3.952446216036837,
+            "later_minus_current_error": 0.0005289446719646818,
+            "later_harm_gt_point1": 0.06146561006723977,
+            "later_improvement_gt_point1": 0.06685788802107816
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 2033,
+            "person_weighted_coverage": 0.9261031366294523,
+            "current_person_weighted_error": 4.11375258793861,
+            "later_minus_current_error": -0.004009564342862671,
+            "later_harm_gt_point1": 0.12246927148320956,
+            "later_improvement_gt_point1": 0.15264825709017216
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 2178,
+            "person_weighted_coverage": 0.9898989898989898,
+            "current_person_weighted_error": 4.186382516324764,
+            "later_minus_current_error": -0.0054116799633149165,
+            "later_harm_gt_point1": 0.13838603880616773,
+            "later_improvement_gt_point1": 0.16773895301704966
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.203275929685841,
+            "later_minus_current_error": -0.007613338407100909,
+            "later_harm_gt_point1": 0.139092577134725,
+            "later_improvement_gt_point1": 0.1736203777340492
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.203275929685841,
+            "later_minus_current_error": -0.007613338407100909,
+            "later_harm_gt_point1": 0.139092577134725,
+            "later_improvement_gt_point1": 0.1736203777340492
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 1548,
+            "person_weighted_coverage": 0.7097239338094888,
+            "current_person_weighted_error": 3.9369927228915786,
+            "later_minus_current_error": -0.00017628815063112913,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 2097,
+            "person_weighted_coverage": 0.95470051391104,
+            "current_person_weighted_error": 4.134574742389113,
+            "later_minus_current_error": -0.0006789400380936891,
+            "later_harm_gt_point1": 0.03163319275062007,
+            "later_improvement_gt_point1": 0.03384634422477528
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 2201,
+            "person_weighted_coverage": 0.9995791245791246,
+            "current_person_weighted_error": 4.197623832443032,
+            "later_minus_current_error": -0.0025019355205066116,
+            "later_harm_gt_point1": 0.04031820441792741,
+            "later_improvement_gt_point1": 0.051540024149442434
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.198118686792272,
+            "later_minus_current_error": -0.002456095513531429,
+            "later_harm_gt_point1": 0.0407221108975495,
+            "later_improvement_gt_point1": 0.051518332220086616
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.198118686792272,
+            "later_minus_current_error": -0.002456095513531429,
+            "later_harm_gt_point1": 0.0407221108975495,
+            "later_improvement_gt_point1": 0.051518332220086616
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\mixed__soft_small.npz",
+      "trace_sha256": "41ea67a49e1acbbb1efcb94396cd8a07a39bfbd7cb520a051af9828fa27b2860",
+      "maximum_numpy_lab_drift": 1.4210854715202004e-14,
+      "maximum_saved_cuda_lab_drift": 6.897920485471332e-06
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 512,
+      "lr": 0.0001,
+      "original_four_pass_clean": 4.195233066469798,
+      "summary": {
+        "n_rows": 734,
+        "n_people": 18,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.212309604775705,
+            "image_mean": 4.189009990839442,
+            "mean_seed_p90": 7.288202230822081,
+            "seed_person_mean": [
+              4.2183298990462355,
+              4.141934732380713,
+              4.2766641829001655
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.20254090695453,
+            "image_mean": 4.179272316705259,
+            "mean_seed_p90": 7.236675165991277,
+            "seed_person_mean": [
+              4.205210957171635,
+              4.140177673404253,
+              4.262234090287702
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.197354866051636,
+            "image_mean": 4.174174271344913,
+            "mean_seed_p90": 7.234379280576749,
+            "seed_person_mean": [
+              4.196425761725035,
+              4.140711435344162,
+              4.254927401085713
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.195233105121349,
+            "image_mean": 4.172190499040396,
+            "mean_seed_p90": 7.229533942593619,
+            "seed_person_mean": [
+              4.190175201428426,
+              4.143222078019386,
+              4.252302035916236
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 4,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 1334,
+            "person_weighted_coverage": 0.613214863951032,
+            "current_person_weighted_error": 3.9406091418244307,
+            "later_minus_current_error": 0.0008410513815687013,
+            "later_harm_gt_point1": 0.06426752176626493,
+            "later_improvement_gt_point1": 0.062212789248522325
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 1995,
+            "person_weighted_coverage": 0.9100434166223639,
+            "current_person_weighted_error": 4.095356973455804,
+            "later_minus_current_error": -0.004074672013401785,
+            "later_harm_gt_point1": 0.13025381658743596,
+            "later_improvement_gt_point1": 0.15522792014412828
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 2173,
+            "person_weighted_coverage": 0.9877946127946127,
+            "current_person_weighted_error": 4.183779443237406,
+            "later_minus_current_error": -0.0048799098906347205,
+            "later_harm_gt_point1": 0.14953507382014292,
+            "later_improvement_gt_point1": 0.17402347102193672
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.202540906954531,
+            "later_minus_current_error": -0.007307801833181018,
+            "later_harm_gt_point1": 0.15065606828950986,
+            "later_improvement_gt_point1": 0.1803169555927969
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.202540906954531,
+            "later_minus_current_error": -0.007307801833181018,
+            "later_harm_gt_point1": 0.15065606828950986,
+            "later_improvement_gt_point1": 0.1803169555927969
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 1507,
+            "person_weighted_coverage": 0.6939763575165274,
+            "current_person_weighted_error": 3.959943732168247,
+            "later_minus_current_error": -0.00033048055922147487,
+            "later_harm_gt_point1": 0.0006064693938300305,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 2051,
+            "person_weighted_coverage": 0.9347864611022505,
+            "current_person_weighted_error": 4.106468523671798,
+            "later_minus_current_error": -0.001076728355202298,
+            "later_harm_gt_point1": 0.033992587191639334,
+            "later_improvement_gt_point1": 0.04087070117875806
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 2200,
+            "person_weighted_coverage": 0.9991582491582491,
+            "current_person_weighted_error": 4.195919986587862,
+            "later_minus_current_error": -0.002261802853392158,
+            "later_harm_gt_point1": 0.04780931981304437,
+            "later_improvement_gt_point1": 0.0629349441259165
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.197354866051637,
+            "later_minus_current_error": -0.0021217609302871007,
+            "later_harm_gt_point1": 0.04818995169872364,
+            "later_improvement_gt_point1": 0.06288196858372298
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.197354866051637,
+            "later_minus_current_error": -0.0021217609302871007,
+            "later_harm_gt_point1": 0.04818995169872364,
+            "later_improvement_gt_point1": 0.06288196858372298
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\mixed__dynamic_small.npz",
+      "trace_sha256": "4085655decc27e115f1178cc5e76a08b3ea165a446efcfa60de09522968106e7",
+      "maximum_numpy_lab_drift": 1.4210854715202004e-14,
+      "maximum_saved_cuda_lab_drift": 5.767741896534062e-06
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 512,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.193961913856373,
+      "summary": {
+        "n_rows": 734,
+        "n_people": 18,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.215764280609845,
+            "image_mean": 4.192728533241194,
+            "mean_seed_p90": 7.265567545174078,
+            "seed_person_mean": [
+              4.22053771974759,
+              4.1443879705053,
+              4.282367151576645
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.205145609757672,
+            "image_mean": 4.182456752478043,
+            "mean_seed_p90": 7.240906959449941,
+            "seed_person_mean": [
+              4.2046250797358775,
+              4.144235509568355,
+              4.266576239968785
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.197933777167947,
+            "image_mean": 4.175685412577064,
+            "mean_seed_p90": 7.2160187993887694,
+            "seed_person_mean": [
+              4.191600637421786,
+              4.14675103522767,
+              4.255449658854385
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.193961942154782,
+            "image_mean": 4.1722024407498575,
+            "mean_seed_p90": 7.188282563487996,
+            "seed_person_mean": [
+              4.181262090710237,
+              4.15214960693723,
+              4.248474128816877
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 4,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 1309,
+            "person_weighted_coverage": 0.5915457326859948,
+            "current_person_weighted_error": 3.9148592245179747,
+            "later_minus_current_error": -0.004509110464078654,
+            "later_harm_gt_point1": 0.08552634504262305,
+            "later_improvement_gt_point1": 0.10982900640924763
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 1989,
+            "person_weighted_coverage": 0.9049003303389267,
+            "current_person_weighted_error": 4.069721819649852,
+            "later_minus_current_error": -0.0036946705081588116,
+            "later_harm_gt_point1": 0.16943706488079208,
+            "later_improvement_gt_point1": 0.19843478777225604
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 2160,
+            "person_weighted_coverage": 0.981769448874712,
+            "current_person_weighted_error": 4.168073883145354,
+            "later_minus_current_error": -0.005404723146181952,
+            "later_harm_gt_point1": 0.18653430011524896,
+            "later_improvement_gt_point1": 0.21584936703188012
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.205145609757673,
+            "later_minus_current_error": -0.011183667602890893,
+            "later_harm_gt_point1": 0.18692155580825692,
+            "later_improvement_gt_point1": 0.22509436018562734
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.205145609757673,
+            "later_minus_current_error": -0.011183667602890893,
+            "later_harm_gt_point1": 0.18692155580825692,
+            "later_improvement_gt_point1": 0.22509436018562734
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 1354,
+            "person_weighted_coverage": 0.6103396264887582,
+            "current_person_weighted_error": 3.9269431913271524,
+            "later_minus_current_error": -0.001848041330216157,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0006895757748791246
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 1996,
+            "person_weighted_coverage": 0.9077510371370019,
+            "current_person_weighted_error": 4.074220401618314,
+            "later_minus_current_error": -0.0014714682595333578,
+            "later_harm_gt_point1": 0.05672644483989513,
+            "later_improvement_gt_point1": 0.057985632378013734
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 2170,
+            "person_weighted_coverage": 0.9859782030834662,
+            "current_person_weighted_error": 4.1681056044311315,
+            "later_minus_current_error": -0.001579551176793826,
+            "later_harm_gt_point1": 0.08164807481732561,
+            "later_improvement_gt_point1": 0.08051175805702533
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.197933777167947,
+            "later_minus_current_error": -0.0039718350131656525,
+            "later_harm_gt_point1": 0.08260759919798823,
+            "later_improvement_gt_point1": 0.0896167566648116
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.197933777167947,
+            "later_minus_current_error": -0.0039718350131656525,
+            "later_harm_gt_point1": 0.08260759919798823,
+            "later_improvement_gt_point1": 0.0896167566648116
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\mixed__soft5m.npz",
+      "trace_sha256": "d050cab92a8dcad84612aa216d21357bc0d9c0db63c91f8d3c8b15df533e6ecc",
+      "maximum_numpy_lab_drift": 1.4210854715202004e-14,
+      "maximum_saved_cuda_lab_drift": 5.327482561767738e-06
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic5m",
+      "step": 2048,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.187795807930141,
+      "summary": {
+        "n_rows": 734,
+        "n_people": 18,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.2015588924078875,
+            "image_mean": 4.179176862522162,
+            "mean_seed_p90": 7.2818507412999365,
+            "seed_person_mean": [
+              4.2055263315882385,
+              4.1360804021509,
+              4.263069943484526
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.177996108693034,
+            "image_mean": 4.155897758852544,
+            "mean_seed_p90": 7.278843008098992,
+            "seed_person_mean": [
+              4.18635858131519,
+              4.118385775051893,
+              4.229243969712021
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.163746177531131,
+            "image_mean": 4.140020247367326,
+            "mean_seed_p90": 7.274356792658732,
+            "seed_person_mean": [
+              4.183186253313316,
+              4.109126911968275,
+              4.1989253673118
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.1877958231308,
+            "image_mean": 4.159481035078661,
+            "mean_seed_p90": 7.382063876352629,
+            "seed_person_mean": [
+              4.226286921167473,
+              4.141770854091852,
+              4.1953296941330755
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 3,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 469,
+            "person_weighted_coverage": 0.21075440031323164,
+            "current_person_weighted_error": 3.8574960265407787,
+            "later_minus_current_error": -0.034830297584339864,
+            "later_harm_gt_point1": 0.3175379107146688,
+            "later_improvement_gt_point1": 0.3901523286802108
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 1298,
+            "person_weighted_coverage": 0.5836698566706726,
+            "current_person_weighted_error": 3.849100792227394,
+            "later_minus_current_error": -0.030890563681496987,
+            "later_harm_gt_point1": 0.3246358326505929,
+            "later_improvement_gt_point1": 0.40685349734959314
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 1872,
+            "person_weighted_coverage": 0.8465122497593714,
+            "current_person_weighted_error": 3.971354783642478,
+            "later_minus_current_error": -0.020610954728826715,
+            "later_harm_gt_point1": 0.34501791105199436,
+            "later_improvement_gt_point1": 0.4210495010831148
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 2118,
+            "person_weighted_coverage": 0.9628771975263202,
+            "current_person_weighted_error": 4.122220092446055,
+            "later_minus_current_error": 0.007239810068248899,
+            "later_harm_gt_point1": 0.36591527344578123,
+            "later_improvement_gt_point1": 0.4199802251708187
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 2202,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.177996108693035,
+            "later_minus_current_error": 0.009799714437765377,
+            "later_harm_gt_point1": 0.369540222692441,
+            "later_improvement_gt_point1": 0.4234616841959897
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 293,
+            "person_weighted_coverage": 0.13266560915923198,
+            "current_person_weighted_error": 3.5713375898518303,
+            "later_minus_current_error": 0.004532020062987939,
+            "later_harm_gt_point1": 0.15123236301878884,
+            "later_improvement_gt_point1": 0.13039964015497593
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 992,
+            "person_weighted_coverage": 0.44649949374507225,
+            "current_person_weighted_error": 3.8125314840568176,
+            "later_minus_current_error": -0.011536231720910341,
+            "later_harm_gt_point1": 0.20943138496094713,
+            "later_improvement_gt_point1": 0.2504785975472857
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 1690,
+            "person_weighted_coverage": 0.7641494156381602,
+            "current_person_weighted_error": 3.912269782243799,
+            "later_minus_current_error": -0.008825085760451195,
+            "later_harm_gt_point1": 0.2825281540006457,
+            "later_improvement_gt_point1": 0.3253415888766076
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 2078,
+            "person_weighted_coverage": 0.9402930392921167,
+            "current_person_weighted_error": 4.070397149006498,
+            "later_minus_current_error": 0.007570563467210224,
+            "later_harm_gt_point1": 0.32426900266464076,
+            "later_improvement_gt_point1": 0.3386693507043317
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 2199,
+            "person_weighted_coverage": 0.9981835902888534,
+            "current_person_weighted_error": 4.162503975622158,
+            "later_minus_current_error": 0.023112998643701477,
+            "later_harm_gt_point1": 0.33650816169264297,
+            "later_improvement_gt_point1": 0.3433153859977095
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\mixed__dynamic5m.npz",
+      "trace_sha256": "254d15a2aa9155f1e05b15e56ae67133ec3170d86aa829224941f08e2ef073e5",
+      "maximum_numpy_lab_drift": 1.7763568394002505e-14,
+      "maximum_saved_cuda_lab_drift": 8.012146633262773e-06
+    },
+    {
+      "role": "slr_to_ipod",
+      "variant": "soft_small",
+      "step": 128,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.787565533205651,
+      "summary": {
+        "n_rows": 323,
+        "n_people": 8,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.787408775006909,
+            "image_mean": 4.841126904533452,
+            "mean_seed_p90": 8.577096840735495,
+            "seed_person_mean": [
+              4.745582817822737,
+              4.841727299469684,
+              4.774916207728308
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.787457665173759,
+            "image_mean": 4.841202820039266,
+            "mean_seed_p90": 8.577194759640937,
+            "seed_person_mean": [
+              4.745357113368144,
+              4.8421597495349795,
+              4.774856132618153
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.787510699190637,
+            "image_mean": 4.841302594321525,
+            "mean_seed_p90": 8.576681446499954,
+            "seed_person_mean": [
+              4.744977629368726,
+              4.842647977635087,
+              4.7749064905681
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.7875655046438315,
+            "image_mean": 4.841414241208831,
+            "mean_seed_p90": 8.575852519547377,
+            "seed_person_mean": [
+              4.744518572779276,
+              4.843164079985068,
+              4.775013861167151
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 1,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.7874576651737595,
+            "later_minus_current_error": 0.00010783947007299391,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.7874576651737595,
+            "later_minus_current_error": 0.00010783947007299391,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.7874576651737595,
+            "later_minus_current_error": 0.00010783947007299391,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.7874576651737595,
+            "later_minus_current_error": 0.00010783947007299391,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.7874576651737595,
+            "later_minus_current_error": 0.00010783947007299391,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.787510699190639,
+            "later_minus_current_error": 5.480545319420455e-05,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.787510699190639,
+            "later_minus_current_error": 5.480545319420455e-05,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.787510699190639,
+            "later_minus_current_error": 5.480545319420455e-05,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.787510699190639,
+            "later_minus_current_error": 5.480545319420455e-05,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 969,
+            "person_weighted_coverage": 0.9999999999999998,
+            "current_person_weighted_error": 4.787510699190639,
+            "later_minus_current_error": 5.480545319420455e-05,
+            "later_harm_gt_point1": 0.0,
+            "later_improvement_gt_point1": 0.0
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\slr_to_ipod__soft_small.npz",
+      "trace_sha256": "fc59a324b99d77bfad70fdc3ce358da15b583acbf944fbb1eb7417ace0c21450",
+      "maximum_numpy_lab_drift": 2.1316282072803006e-14,
+      "maximum_saved_cuda_lab_drift": 6.045124848697014e-06
+    },
+    {
+      "role": "slr_to_ipod",
+      "variant": "dynamic_small",
+      "step": 2048,
+      "lr": 0.0001,
+      "original_four_pass_clean": 4.735002691852155,
+      "summary": {
+        "n_rows": 323,
+        "n_people": 8,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.781779244229414,
+            "image_mean": 4.835953710483684,
+            "mean_seed_p90": 8.565537425712947,
+            "seed_person_mean": [
+              4.757857662818929,
+              4.808039887037308,
+              4.779440182832003
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.7504995457653045,
+            "image_mean": 4.803802693395624,
+            "mean_seed_p90": 8.509585044003991,
+            "seed_person_mean": [
+              4.718858762709441,
+              4.775123467177045,
+              4.757516407409425
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.720882375676757,
+            "image_mean": 4.773438537984175,
+            "mean_seed_p90": 8.582978886705828,
+            "seed_person_mean": [
+              4.670448410119444,
+              4.760528596971719,
+              4.731670119939109
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.735002673224332,
+            "image_mean": 4.787720114028611,
+            "mean_seed_p90": 8.438582722590498,
+            "seed_person_mean": [
+              4.649083753582476,
+              4.812153580093913,
+              4.743770685996607
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 3,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 66,
+            "person_weighted_coverage": 0.06871706192358366,
+            "current_person_weighted_error": 4.179579951487338,
+            "later_minus_current_error": -0.01604472926189599,
+            "later_harm_gt_point1": 0.25417748485453695,
+            "later_improvement_gt_point1": 0.27508155249317623
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 362,
+            "person_weighted_coverage": 0.37554896794027226,
+            "current_person_weighted_error": 3.9700870017253114,
+            "later_minus_current_error": -0.09316434487550283,
+            "later_harm_gt_point1": 0.22684305413438582,
+            "later_improvement_gt_point1": 0.44038395946011794
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 684,
+            "person_weighted_coverage": 0.710085456009369,
+            "current_person_weighted_error": 4.3923313463439975,
+            "later_minus_current_error": -0.11974935337782776,
+            "later_harm_gt_point1": 0.2891205329244487,
+            "later_improvement_gt_point1": 0.4770614422203468
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 898,
+            "person_weighted_coverage": 0.9284420289855071,
+            "current_person_weighted_error": 4.5991729898559885,
+            "later_minus_current_error": -0.09263511854057119,
+            "later_harm_gt_point1": 0.32952451342695255,
+            "later_improvement_gt_point1": 0.4771421532397143
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 967,
+            "person_weighted_coverage": 0.9972414361001316,
+            "current_person_weighted_error": 4.755766632652989,
+            "later_minus_current_error": -0.0243501220751112,
+            "later_harm_gt_point1": 0.35022409387629655,
+            "later_improvement_gt_point1": 0.4640830500621591
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 65,
+            "person_weighted_coverage": 0.06753678085199824,
+            "current_person_weighted_error": 4.001387827569294,
+            "later_minus_current_error": -0.03274319537692356,
+            "later_harm_gt_point1": 0.028043080674659625,
+            "later_improvement_gt_point1": 0.07010770168664907
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 304,
+            "person_weighted_coverage": 0.3191059142146099,
+            "current_person_weighted_error": 3.8965555445787885,
+            "later_minus_current_error": -0.034240184428803035,
+            "later_harm_gt_point1": 0.11375691716604064,
+            "later_improvement_gt_point1": 0.23574275310376466
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 602,
+            "person_weighted_coverage": 0.6242085712194407,
+            "current_person_weighted_error": 4.263573876215566,
+            "later_minus_current_error": -0.04015307220266254,
+            "later_harm_gt_point1": 0.22251863360865395,
+            "later_improvement_gt_point1": 0.3230265231188667
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 831,
+            "person_weighted_coverage": 0.862401185770751,
+            "current_person_weighted_error": 4.434422934981857,
+            "later_minus_current_error": -0.033053571949902896,
+            "later_harm_gt_point1": 0.2726906224471392,
+            "later_improvement_gt_point1": 0.36876836733611296
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 965,
+            "person_weighted_coverage": 0.9944828722002632,
+            "current_person_weighted_error": 4.717690904793617,
+            "later_minus_current_error": 0.0049617952555576945,
+            "later_harm_gt_point1": 0.3151766903112436,
+            "later_improvement_gt_point1": 0.3681883837965647
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\slr_to_ipod__dynamic_small.npz",
+      "trace_sha256": "640a61d6aeff49e89c2c4bc197734554c4e65036eef7596b24d918218fe0ac08",
+      "maximum_numpy_lab_drift": 2.1316282072803006e-14,
+      "maximum_saved_cuda_lab_drift": 7.176201215486344e-06
+    },
+    {
+      "role": "slr_to_ipod",
+      "variant": "soft5m",
+      "step": 2048,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.760575974232495,
+      "summary": {
+        "n_rows": 323,
+        "n_people": 8,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.788266052027703,
+            "image_mean": 4.841746910623301,
+            "mean_seed_p90": 8.565266801702004,
+            "seed_person_mean": [
+              4.764494565184727,
+              4.82576789584613,
+              4.774535695052252
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.777333133773445,
+            "image_mean": 4.833270102834632,
+            "mean_seed_p90": 8.607495059068142,
+            "seed_person_mean": [
+              4.755992532618706,
+              4.791203740863338,
+              4.784803127838293
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.752807067512309,
+            "image_mean": 4.812491255038972,
+            "mean_seed_p90": 8.738148246125158,
+            "seed_person_mean": [
+              4.734319380627649,
+              4.703508599334366,
+              4.820593222574914
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.760575950090952,
+            "image_mean": 4.822675763560399,
+            "mean_seed_p90": 8.826506892507286,
+            "seed_person_mean": [
+              4.730101034806502,
+              4.622444953792904,
+              4.929181861673449
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 3,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 100,
+            "person_weighted_coverage": 0.10353077880251792,
+            "current_person_weighted_error": 4.240959588310619,
+            "later_minus_current_error": -0.15536114208772325,
+            "later_harm_gt_point1": 0.18213954310459107,
+            "later_improvement_gt_point1": 0.4805797357606824
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 448,
+            "person_weighted_coverage": 0.4673409822866344,
+            "current_person_weighted_error": 4.116921059089679,
+            "later_minus_current_error": -0.1352068281691,
+            "later_harm_gt_point1": 0.2780719872353339,
+            "later_improvement_gt_point1": 0.48833657997004615
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 728,
+            "person_weighted_coverage": 0.755256368028107,
+            "current_person_weighted_error": 4.431657927545351,
+            "later_minus_current_error": -0.11797329881195251,
+            "later_harm_gt_point1": 0.3379549708346205,
+            "later_improvement_gt_point1": 0.47581666091233427
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 893,
+            "person_weighted_coverage": 0.9241509295857121,
+            "current_person_weighted_error": 4.652987916638935,
+            "later_minus_current_error": -0.12682233049310235,
+            "later_harm_gt_point1": 0.34303407718353374,
+            "later_improvement_gt_point1": 0.48723838187830437
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 957,
+            "person_weighted_coverage": 0.9869071146245058,
+            "current_person_weighted_error": 4.761614921052039,
+            "later_minus_current_error": -0.05414341072829543,
+            "later_harm_gt_point1": 0.36732489686181813,
+            "later_improvement_gt_point1": 0.47278079080331914
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 51,
+            "person_weighted_coverage": 0.05238526570048309,
+            "current_person_weighted_error": 4.243729202055747,
+            "later_minus_current_error": -0.017658051901203134,
+            "later_harm_gt_point1": 0.07230809536285042,
+            "later_improvement_gt_point1": 0.09283032049602655
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 307,
+            "person_weighted_coverage": 0.31554219733567557,
+            "current_person_weighted_error": 4.093905608968431,
+            "later_minus_current_error": -0.03562037718156112,
+            "later_harm_gt_point1": 0.1910982239942008,
+            "later_improvement_gt_point1": 0.3062848858281987
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 645,
+            "person_weighted_coverage": 0.6712139511052555,
+            "current_person_weighted_error": 4.137875728803571,
+            "later_minus_current_error": -0.037273436825597674,
+            "later_harm_gt_point1": 0.2843336377639345,
+            "later_improvement_gt_point1": 0.36982865555267785
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 844,
+            "person_weighted_coverage": 0.8781702898550723,
+            "current_person_weighted_error": 4.468277267428725,
+            "later_minus_current_error": -0.0654817036418544,
+            "later_harm_gt_point1": 0.2948828147384105,
+            "later_improvement_gt_point1": 0.4127869723537594
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 934,
+            "person_weighted_coverage": 0.9642621870882738,
+            "current_person_weighted_error": 4.639863984034967,
+            "later_minus_current_error": -0.03474333539145484,
+            "later_harm_gt_point1": 0.32248315779485726,
+            "later_improvement_gt_point1": 0.4083404497580416
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\slr_to_ipod__soft5m.npz",
+      "trace_sha256": "bfa31ef5bc72e23d13dfad94e0711022dcdcf4e571fb0dc168ced4f228f17914",
+      "maximum_numpy_lab_drift": 2.1316282072803006e-14,
+      "maximum_saved_cuda_lab_drift": 6.4601271709818775e-06
+    },
+    {
+      "role": "slr_to_ipod",
+      "variant": "dynamic5m",
+      "step": 2048,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.758489378855757,
+      "summary": {
+        "n_rows": 323,
+        "n_people": 8,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.791042305150111,
+            "image_mean": 4.8417415166548565,
+            "mean_seed_p90": 8.551311133243123,
+            "seed_person_mean": [
+              4.766295561676589,
+              4.846085756484918,
+              4.760745597288827
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.7916575238469665,
+            "image_mean": 4.842725761114222,
+            "mean_seed_p90": 8.702495988349188,
+            "seed_person_mean": [
+              4.768584711025293,
+              4.8396301729861095,
+              4.766757687529498
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.768332450502714,
+            "image_mean": 4.823981439869958,
+            "mean_seed_p90": 8.768813989059655,
+            "seed_person_mean": [
+              4.768855013238966,
+              4.7583199279016934,
+              4.777822410367483
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.75848935590204,
+            "image_mean": 4.82320191215094,
+            "mean_seed_p90": 8.50840810846239,
+            "seed_person_mean": [
+              4.804029445684776,
+              4.63764308714042,
+              4.833795534880926
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 4,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 117,
+            "person_weighted_coverage": 0.1280421973356756,
+            "current_person_weighted_error": 4.251375207887003,
+            "later_minus_current_error": -0.2430199655941587,
+            "later_harm_gt_point1": 0.2113687520097181,
+            "later_improvement_gt_point1": 0.5290649898174283
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 445,
+            "person_weighted_coverage": 0.46686063533889616,
+            "current_person_weighted_error": 4.209759559832588,
+            "later_minus_current_error": -0.1370514695013348,
+            "later_harm_gt_point1": 0.29778936228589353,
+            "later_improvement_gt_point1": 0.4465664563163878
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 680,
+            "person_weighted_coverage": 0.7121623847167325,
+            "current_person_weighted_error": 4.431366384665405,
+            "later_minus_current_error": -0.1093657292280685,
+            "later_harm_gt_point1": 0.3525145657885439,
+            "later_improvement_gt_point1": 0.4452602570773352
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 897,
+            "person_weighted_coverage": 0.9279388083735908,
+            "current_person_weighted_error": 4.642321494048597,
+            "later_minus_current_error": -0.10328403763169115,
+            "later_harm_gt_point1": 0.3755275093669888,
+            "later_improvement_gt_point1": 0.45430388483533823
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 956,
+            "person_weighted_coverage": 0.9859601449275361,
+            "current_person_weighted_error": 4.763334102742149,
+            "later_minus_current_error": -0.06446589159027692,
+            "later_harm_gt_point1": 0.38621400036191034,
+            "later_improvement_gt_point1": 0.44978958162237914
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 59,
+            "person_weighted_coverage": 0.06124652320304494,
+            "current_person_weighted_error": 3.8868823620522677,
+            "later_minus_current_error": -0.01983900740822306,
+            "later_harm_gt_point1": 0.12234837167612789,
+            "later_improvement_gt_point1": 0.15670749925306246
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 368,
+            "person_weighted_coverage": 0.380809910701215,
+            "current_person_weighted_error": 3.9652485890486093,
+            "later_minus_current_error": -0.038700176036323544,
+            "later_harm_gt_point1": 0.24040748660531946,
+            "later_improvement_gt_point1": 0.3239350327959444
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 643,
+            "person_weighted_coverage": 0.6688991362904406,
+            "current_person_weighted_error": 4.228873397528069,
+            "later_minus_current_error": -0.05405127833545874,
+            "later_harm_gt_point1": 0.29911227225474646,
+            "later_improvement_gt_point1": 0.36860535098758
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 854,
+            "person_weighted_coverage": 0.8867753623188405,
+            "current_person_weighted_error": 4.5193346802391705,
+            "later_minus_current_error": -0.04539898423254003,
+            "later_harm_gt_point1": 0.33028445847649124,
+            "later_improvement_gt_point1": 0.38185738900754235
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 942,
+            "person_weighted_coverage": 0.9718379446640314,
+            "current_person_weighted_error": 4.669621273940672,
+            "later_minus_current_error": -0.04330024928205072,
+            "later_harm_gt_point1": 0.34230073998757277,
+            "later_improvement_gt_point1": 0.39211338944435037
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\slr_to_ipod__dynamic5m.npz",
+      "trace_sha256": "00bd20a136af560e6f674f8e4ceca9984822459f33d2c564965378e6577b68fa",
+      "maximum_numpy_lab_drift": 2.1316282072803006e-14,
+      "maximum_saved_cuda_lab_drift": 7.012204072509576e-06
+    },
+    {
+      "role": "ipod_to_slr",
+      "variant": "soft_small",
+      "step": 512,
+      "lr": 0.0001,
+      "original_four_pass_clean": 4.416270108715406,
+      "summary": {
+        "n_rows": 643,
+        "n_people": 16,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.433322642284029,
+            "image_mean": 4.427490529782318,
+            "mean_seed_p90": 7.994673861860238,
+            "seed_person_mean": [
+              4.474503636037109,
+              4.447851592580418,
+              4.377612698234563
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.421703632898457,
+            "image_mean": 4.417696286072342,
+            "mean_seed_p90": 7.997139014525729,
+            "seed_person_mean": [
+              4.473755391481139,
+              4.410003939549318,
+              4.381351567664916
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.416457612157437,
+            "image_mean": 4.413426473602467,
+            "mean_seed_p90": 7.998783656416059,
+            "seed_person_mean": [
+              4.47623367990898,
+              4.380848047488613,
+              4.3922911090747165
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.416270069789618,
+            "image_mean": 4.413472953618483,
+            "mean_seed_p90": 7.993044955692887,
+            "seed_person_mean": [
+              4.4807986521193905,
+              4.359724521868218,
+              4.408287035381244
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 4,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 965,
+            "person_weighted_coverage": 0.47305757617875116,
+            "current_person_weighted_error": 4.189985976952682,
+            "later_minus_current_error": -0.000631216085461886,
+            "later_harm_gt_point1": 0.04644433958382861,
+            "later_improvement_gt_point1": 0.05278488762111576
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 1761,
+            "person_weighted_coverage": 0.8854360717312062,
+            "current_person_weighted_error": 4.361852113492006,
+            "later_minus_current_error": 0.0024189890625638585,
+            "later_harm_gt_point1": 0.15523393976258373,
+            "later_improvement_gt_point1": 0.15299185538931248
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 1911,
+            "person_weighted_coverage": 0.9854252107541579,
+            "current_person_weighted_error": 4.409843736054712,
+            "later_minus_current_error": 0.0010733724649223736,
+            "later_harm_gt_point1": 0.18080579865244012,
+            "later_improvement_gt_point1": 0.17858303309762785
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 1929,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.421703632898458,
+            "later_minus_current_error": -0.0054335631088396445,
+            "later_harm_gt_point1": 0.1818291230393434,
+            "later_improvement_gt_point1": 0.1868964814764999
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 1929,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.421703632898458,
+            "later_minus_current_error": -0.0054335631088396445,
+            "later_harm_gt_point1": 0.1818291230393434,
+            "later_improvement_gt_point1": 0.1868964814764999
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 1072,
+            "person_weighted_coverage": 0.5252956851220315,
+            "current_person_weighted_error": 4.235642405672057,
+            "later_minus_current_error": -0.0002700144034926767,
+            "later_harm_gt_point1": 0.0019182965160636908,
+            "later_improvement_gt_point1": 0.0028109113741367968
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 1802,
+            "person_weighted_coverage": 0.9082133229547549,
+            "current_person_weighted_error": 4.39720937678712,
+            "later_minus_current_error": 0.002640901814595883,
+            "later_harm_gt_point1": 0.05282822413209101,
+            "later_improvement_gt_point1": 0.03224480247104215
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 1910,
+            "person_weighted_coverage": 0.9855747322852584,
+            "current_person_weighted_error": 4.4061861493808365,
+            "later_minus_current_error": 0.0027774473118197737,
+            "later_harm_gt_point1": 0.07926967508646118,
+            "later_improvement_gt_point1": 0.05884517565985058
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 1929,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.416457612157438,
+            "later_minus_current_error": -0.00018754236781918002,
+            "later_harm_gt_point1": 0.08225820444685195,
+            "later_improvement_gt_point1": 0.0682895703168041
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 1929,
+            "person_weighted_coverage": 0.9999999999999999,
+            "current_person_weighted_error": 4.416457612157438,
+            "later_minus_current_error": -0.00018754236781918002,
+            "later_harm_gt_point1": 0.08225820444685195,
+            "later_improvement_gt_point1": 0.0682895703168041
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\ipod_to_slr__soft_small.npz",
+      "trace_sha256": "8fe93d886e588d19512e05baf9f647fd7053946f6b01263895db2ecdc50211dc",
+      "maximum_numpy_lab_drift": 1.4210854715202004e-14,
+      "maximum_saved_cuda_lab_drift": 8.400540323805217e-06
+    },
+    {
+      "role": "ipod_to_slr",
+      "variant": "dynamic_small",
+      "step": 2048,
+      "lr": 0.0001,
+      "original_four_pass_clean": 4.342460367397787,
+      "summary": {
+        "n_rows": 643,
+        "n_people": 16,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.3838658789779466,
+            "image_mean": 4.38493184485439,
+            "mean_seed_p90": 8.016057709260489,
+            "seed_person_mean": [
+              4.424294521105699,
+              4.4057254839167355,
+              4.3215776319114045
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.332382484798396,
+            "image_mean": 4.339831682164933,
+            "mean_seed_p90": 8.005344201439474,
+            "seed_person_mean": [
+              4.361711942812468,
+              4.354175352280418,
+              4.281260159302302
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.312232953543242,
+            "image_mean": 4.321673117207844,
+            "mean_seed_p90": 7.927484242677971,
+            "seed_person_mean": [
+              4.312212652802597,
+              4.351822707486808,
+              4.272663500340324
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.342460333797902,
+            "image_mean": 4.346854491146323,
+            "mean_seed_p90": 8.039944263218901,
+            "seed_person_mean": [
+              4.299005193182367,
+              4.424193910250176,
+              4.304181897961163
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 3,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 213,
+            "person_weighted_coverage": 0.10342066601629024,
+            "current_person_weighted_error": 3.7243183393065618,
+            "later_minus_current_error": 0.01558887312008653,
+            "later_harm_gt_point1": 0.2518928320925123,
+            "later_improvement_gt_point1": 0.17776987691534193
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 946,
+            "person_weighted_coverage": 0.4651614514106863,
+            "current_person_weighted_error": 3.8603208113614826,
+            "later_minus_current_error": 0.029144499873288578,
+            "later_harm_gt_point1": 0.3403784769980932,
+            "later_improvement_gt_point1": 0.2775015830469529
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 1601,
+            "person_weighted_coverage": 0.8034733800301423,
+            "current_person_weighted_error": 4.08334120505498,
+            "later_minus_current_error": 0.02300721355123567,
+            "later_harm_gt_point1": 0.3729278220310951,
+            "later_improvement_gt_point1": 0.32809770240188885
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 1866,
+            "person_weighted_coverage": 0.9552115231429795,
+            "current_person_weighted_error": 4.270317500597139,
+            "later_minus_current_error": 0.01458127165314939,
+            "later_harm_gt_point1": 0.382784908929332,
+            "later_improvement_gt_point1": 0.36053358939387786
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 1927,
+            "person_weighted_coverage": 0.9979114452798662,
+            "current_person_weighted_error": 4.331418971525178,
+            "later_minus_current_error": 0.0040360443936153095,
+            "later_harm_gt_point1": 0.38284973578214404,
+            "later_improvement_gt_point1": 0.371451981730925
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 231,
+            "person_weighted_coverage": 0.11153484673221514,
+            "current_person_weighted_error": 3.741461318406829,
+            "later_minus_current_error": 0.01837713782524482,
+            "later_harm_gt_point1": 0.07778390264738638,
+            "later_improvement_gt_point1": 0.025569769897137596
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 882,
+            "person_weighted_coverage": 0.43192051004551,
+            "current_person_weighted_error": 3.832477500633818,
+            "later_minus_current_error": 0.007551620325775697,
+            "later_harm_gt_point1": 0.16143829502565338,
+            "later_improvement_gt_point1": 0.1425867324002842
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 1472,
+            "person_weighted_coverage": 0.7376906379354359,
+            "current_person_weighted_error": 4.0404158780267565,
+            "later_minus_current_error": 0.013392723564087269,
+            "later_harm_gt_point1": 0.2627349253549507,
+            "later_improvement_gt_point1": 0.21967901130060827
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 1834,
+            "person_weighted_coverage": 0.9371867847235043,
+            "current_person_weighted_error": 4.24388287817093,
+            "later_minus_current_error": 0.020493035985020776,
+            "later_harm_gt_point1": 0.3107004310445393,
+            "later_improvement_gt_point1": 0.2667972091542971
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 1923,
+            "person_weighted_coverage": 0.9953944995063415,
+            "current_person_weighted_error": 4.300932946168933,
+            "later_minus_current_error": 0.023715523623213067,
+            "later_harm_gt_point1": 0.3203563665905241,
+            "later_improvement_gt_point1": 0.2798091640983433
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\ipod_to_slr__dynamic_small.npz",
+      "trace_sha256": "92b7aa67c7277bd5bd7b721fee5d6f8adf035ca4fb5af0cc513d4ab38ba3fe76",
+      "maximum_numpy_lab_drift": 1.4210854715202004e-14,
+      "maximum_saved_cuda_lab_drift": 1.0107273439530218e-05
+    },
+    {
+      "role": "ipod_to_slr",
+      "variant": "soft5m",
+      "step": 2048,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.39487013312667,
+      "summary": {
+        "n_rows": 643,
+        "n_people": 16,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.404739804000056,
+            "image_mean": 4.404971071284929,
+            "mean_seed_p90": 7.905586494471495,
+            "seed_person_mean": [
+              4.452534970982553,
+              4.415672685539283,
+              4.346011755478332
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.3668392015375534,
+            "image_mean": 4.37588170516571,
+            "mean_seed_p90": 7.946380462598936,
+            "seed_person_mean": [
+              4.419023857019772,
+              4.36045103525933,
+              4.321042712333559
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.355183452744377,
+            "image_mean": 4.370535880230578,
+            "mean_seed_p90": 8.074112170173239,
+            "seed_person_mean": [
+              4.392184164104244,
+              4.347555921570666,
+              4.325810272558224
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.394870088705536,
+            "image_mean": 4.410711091916752,
+            "mean_seed_p90": 8.073285185757799,
+            "seed_person_mean": [
+              4.39225093055739,
+              4.407506370182088,
+              4.384852965377128
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 3,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 385,
+            "person_weighted_coverage": 0.18933021325539684,
+            "current_person_weighted_error": 4.009561205888475,
+            "later_minus_current_error": 0.02623761892447654,
+            "later_harm_gt_point1": 0.24140305681873114,
+            "later_improvement_gt_point1": 0.1932006188254236
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 1261,
+            "person_weighted_coverage": 0.6185847442541139,
+            "current_person_weighted_error": 3.8404179481345855,
+            "later_minus_current_error": 0.0244688503633239,
+            "later_harm_gt_point1": 0.33056993683491104,
+            "later_improvement_gt_point1": 0.2949359823657285
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 1713,
+            "person_weighted_coverage": 0.8591609350292029,
+            "current_person_weighted_error": 4.093012853986577,
+            "later_minus_current_error": 0.033138940380196255,
+            "later_harm_gt_point1": 0.3591805522680518,
+            "later_improvement_gt_point1": 0.3280326343902915
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 1858,
+            "person_weighted_coverage": 0.9510621743447629,
+            "current_person_weighted_error": 4.246567400434499,
+            "later_minus_current_error": 0.006921721142286279,
+            "later_harm_gt_point1": 0.35446714199539203,
+            "later_improvement_gt_point1": 0.3587716727088744
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 1919,
+            "person_weighted_coverage": 0.9912173900660741,
+            "current_person_weighted_error": 4.346163143695405,
+            "later_minus_current_error": 0.009067246026204165,
+            "later_harm_gt_point1": 0.3557964468386541,
+            "later_improvement_gt_point1": 0.36858167244019036
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 263,
+            "person_weighted_coverage": 0.12802246882724239,
+            "current_person_weighted_error": 3.8140305211171013,
+            "later_minus_current_error": 0.002095353054639759,
+            "later_harm_gt_point1": 0.04241106561544279,
+            "later_improvement_gt_point1": 0.03337207094228963
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 1034,
+            "person_weighted_coverage": 0.5089836723863651,
+            "current_person_weighted_error": 3.7778354194675376,
+            "later_minus_current_error": 0.009385193630566321,
+            "later_harm_gt_point1": 0.1775396377812292,
+            "later_improvement_gt_point1": 0.13985572212659453
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 1557,
+            "person_weighted_coverage": 0.7773567679090934,
+            "current_person_weighted_error": 3.9963829439200396,
+            "later_minus_current_error": 0.02178706506092872,
+            "later_harm_gt_point1": 0.25903265643499684,
+            "later_improvement_gt_point1": 0.18923798392836141
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 1813,
+            "person_weighted_coverage": 0.9256991032733075,
+            "current_person_weighted_error": 4.152348116789014,
+            "later_minus_current_error": 0.014659453284353145,
+            "later_harm_gt_point1": 0.2839876366358628,
+            "later_improvement_gt_point1": 0.24109497319234627
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 1901,
+            "person_weighted_coverage": 0.977796691612481,
+            "current_person_weighted_error": 4.300407870242893,
+            "later_minus_current_error": 0.009736780028515545,
+            "later_harm_gt_point1": 0.2880569646804465,
+            "later_improvement_gt_point1": 0.26072389940705704
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\ipod_to_slr__soft5m.npz",
+      "trace_sha256": "5f8f7678c764624e04ab2251889113f192c03dd7c40f70696a7eadf89432f318",
+      "maximum_numpy_lab_drift": 2.1316282072803006e-14,
+      "maximum_saved_cuda_lab_drift": 1.0105135917370944e-05
+    },
+    {
+      "role": "ipod_to_slr",
+      "variant": "dynamic5m",
+      "step": 2048,
+      "lr": 1e-05,
+      "original_four_pass_clean": 4.374945590898723,
+      "summary": {
+        "n_rows": 643,
+        "n_people": 16,
+        "seeds": 3,
+        "prefixes": [
+          {
+            "passes": 1,
+            "person_mean": 4.403042064316186,
+            "image_mean": 4.40617117679624,
+            "mean_seed_p90": 7.962290026646143,
+            "seed_person_mean": [
+              4.44353501341576,
+              4.403952654160319,
+              4.361638525372482
+            ]
+          },
+          {
+            "passes": 2,
+            "person_mean": 4.361776227687924,
+            "image_mean": 4.377100698836929,
+            "mean_seed_p90": 7.982503716193338,
+            "seed_person_mean": [
+              4.401026899922299,
+              4.336186486052107,
+              4.348115297089367
+            ]
+          },
+          {
+            "passes": 3,
+            "person_mean": 4.344950839234384,
+            "image_mean": 4.369303367966489,
+            "mean_seed_p90": 7.926440397834451,
+            "seed_person_mean": [
+              4.365110967819663,
+              4.316654458357704,
+              4.353087091525786
+            ]
+          },
+          {
+            "passes": 4,
+            "person_mean": 4.37494556013631,
+            "image_mean": 4.400805864857412,
+            "mean_seed_p90": 7.9605793776978295,
+            "seed_person_mean": [
+              4.36132499077968,
+              4.373628872978561,
+              4.3898828166506885
+            ]
+          }
+        ],
+        "descriptive_best_prefix": 3,
+        "plateaus": [
+          {
+            "passes": 2,
+            "threshold": 0.1,
+            "selected_seed_rows": 348,
+            "person_weighted_coverage": 0.1685354713965485,
+            "current_person_weighted_error": 3.7218270758392284,
+            "later_minus_current_error": 0.013777384114183125,
+            "later_harm_gt_point1": 0.26255736876973435,
+            "later_improvement_gt_point1": 0.20598519051764666
+          },
+          {
+            "passes": 2,
+            "threshold": 0.25,
+            "selected_seed_rows": 1244,
+            "person_weighted_coverage": 0.606449356946603,
+            "current_person_weighted_error": 3.882367224284603,
+            "later_minus_current_error": 0.020924627180635078,
+            "later_harm_gt_point1": 0.33937568684110886,
+            "later_improvement_gt_point1": 0.3111381305689783
+          },
+          {
+            "passes": 2,
+            "threshold": 0.5,
+            "selected_seed_rows": 1707,
+            "person_weighted_coverage": 0.8534580665662366,
+            "current_person_weighted_error": 4.159717507108432,
+            "later_minus_current_error": 0.02954883318744189,
+            "later_harm_gt_point1": 0.3806280735708988,
+            "later_improvement_gt_point1": 0.3378119674796472
+          },
+          {
+            "passes": 2,
+            "threshold": 1.0,
+            "selected_seed_rows": 1879,
+            "person_weighted_coverage": 0.9620322112098426,
+            "current_person_weighted_error": 4.310962445039391,
+            "later_minus_current_error": 0.03031901951716149,
+            "later_harm_gt_point1": 0.3878512720229794,
+            "later_improvement_gt_point1": 0.35879876989537435
+          },
+          {
+            "passes": 2,
+            "threshold": 2.0,
+            "selected_seed_rows": 1927,
+            "person_weighted_coverage": 0.9984596908939013,
+            "current_person_weighted_error": 4.364577711241914,
+            "later_minus_current_error": 0.009594454481241011,
+            "later_harm_gt_point1": 0.38354545605501045,
+            "later_improvement_gt_point1": 0.37234772360354973
+          },
+          {
+            "passes": 3,
+            "threshold": 0.1,
+            "selected_seed_rows": 223,
+            "person_weighted_coverage": 0.10899796517911571,
+            "current_person_weighted_error": 3.6839599994703502,
+            "later_minus_current_error": 0.0011577657607602775,
+            "later_harm_gt_point1": 0.050628354960683124,
+            "later_improvement_gt_point1": 0.052813636822565166
+          },
+          {
+            "passes": 3,
+            "threshold": 0.25,
+            "selected_seed_rows": 1009,
+            "person_weighted_coverage": 0.49318536208453584,
+            "current_person_weighted_error": 3.8158289792164517,
+            "later_minus_current_error": 0.010302049865653033,
+            "later_harm_gt_point1": 0.19913160735348384,
+            "later_improvement_gt_point1": 0.14734933653809218
+          },
+          {
+            "passes": 3,
+            "threshold": 0.5,
+            "selected_seed_rows": 1565,
+            "person_weighted_coverage": 0.7836625541261403,
+            "current_person_weighted_error": 4.016619384690258,
+            "later_minus_current_error": 0.01612118252305402,
+            "later_harm_gt_point1": 0.27693487387221705,
+            "later_improvement_gt_point1": 0.22020999067072572
+          },
+          {
+            "passes": 3,
+            "threshold": 1.0,
+            "selected_seed_rows": 1841,
+            "person_weighted_coverage": 0.938950064198687,
+            "current_person_weighted_error": 4.258508176345066,
+            "later_minus_current_error": 0.02045909099368319,
+            "later_harm_gt_point1": 0.31213051578832784,
+            "later_improvement_gt_point1": 0.2579219230700996
+          },
+          {
+            "passes": 3,
+            "threshold": 2.0,
+            "selected_seed_rows": 1922,
+            "person_weighted_coverage": 0.9943276752487278,
+            "current_person_weighted_error": 4.348864215977308,
+            "later_minus_current_error": 0.024213391367417084,
+            "later_harm_gt_point1": 0.31786980545799715,
+            "later_improvement_gt_point1": 0.2731502738274587
+          }
+        ],
+        "adopted_policy": null,
+        "evidence": "OOF development diagnostics after checkpoint/LR selection on these same INNER data"
+      },
+      "trace_file": "D:\\Luma-RnD\\chromaseed_inner_passes_v1\\traces\\ipod_to_slr__dynamic5m.npz",
+      "trace_sha256": "0bc9dd661ec59b3e23b7f05bc84b7fca5c1c02cbb2a48d71ff4416946f64cd0b",
+      "maximum_numpy_lab_drift": 1.4210854715202004e-14,
+      "maximum_saved_cuda_lab_drift": 6.69495214822291e-06
+    }
+  ],
+  "selected_models": 108,
+  "inner_cases": 12,
+  "seed_row_predictions": 20400,
+  "native_lab_vectors": 81600,
+  "adopted_policy": null,
+  "fresh_quality_evidence": false,
+  "latency_seconds": null,
+  "cuda_initialized": false,
+  "outer_inference_rows": 0
+}

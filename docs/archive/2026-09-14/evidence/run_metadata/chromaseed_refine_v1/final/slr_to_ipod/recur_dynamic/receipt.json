@@ -1,0 +1,49 @@
+{
+  "steps": 512,
+  "checkpoints": [
+    512
+  ],
+  "batch_size": 64,
+  "engine": "cuda_graph",
+  "slots": [
+    {
+      "seed": 17,
+      "lr": 0.001
+    },
+    {
+      "seed": 29,
+      "lr": 0.001
+    },
+    {
+      "seed": 43,
+      "lr": 0.001
+    }
+  ],
+  "n_fit_images": 323,
+  "family": "recur_dynamic",
+  "learned_parameters_per_model": 14603,
+  "normalizer_and_anchor_floats": 225,
+  "setup_seconds": 0.08189640002092347,
+  "bank_total_seconds": 1.2469450000207871,
+  "amortized_seconds_per_fit": 0.41564833334026235,
+  "trace": [
+    {
+      "step": 512,
+      "seconds": 1.163338499958627,
+      "sampled_objective_by_slot": [
+        0.14274030923843384,
+        0.1872713714838028,
+        0.1439080834388733
+      ]
+    }
+  ],
+  "cuda_peak_allocated_bytes": 185160704,
+  "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+  "selection_sha256": "86e7a96c30391fc5e9957d056bcd8ff65898819f14550e48875b2f5426ea22a6",
+  "role": "slr_to_ipod",
+  "files": {
+    "seed17.npz": "c588b9047422111082cfaf847bdbc950589987271dd724ddcf47819f213e6a73",
+    "seed29.npz": "6b97b15f1a3f718dae68becf42cf6be6cfd1b53a15be2f7089480c7da4ba1f8c",
+    "seed43.npz": "0797a4de209a6a80116735b09a0da9802a7c45867943bac5060b04c34d3bf916"
+  }
+}

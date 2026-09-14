@@ -1,0 +1,31 @@
+[
+  {
+    "command": [
+      "C:\\Users\\dimal\\Documents\\просто\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "tests/test_chromaseed_architecture_scale.py",
+      "-q"
+    ],
+    "exit_code": 0,
+    "stdout": "....                                                                     [100%]\n4 passed in 11.29s\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\dimal\\Documents\\просто\\luma-skin-vision-rnd\\.venv\\Scripts\\python.exe",
+      "-m",
+      "ruff",
+      "check",
+      "scripts/chromaseed_architecture_scale.py",
+      "scripts/chromaseed_architecture_scale_run.py",
+      "scripts/chromaseed_architecture_scale_audit.py",
+      "scripts/chromaseed_architecture_scale_runtime.py",
+      "scripts/chromaseed_architecture_scale_report.py",
+      "tests/test_chromaseed_architecture_scale.py"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": ""
+  }
+]

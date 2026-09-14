@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-13",
+  "purpose": "Forum-led method and training-data discovery after NR; no new fit or data acquisition",
+  "last_completed_numerical_stage": "NR",
+  "goal_status": "active",
+  "new_training_runs": 0,
+  "new_datasets_acquired": 0,
+  "new_packages_or_weights_installed": 0,
+  "external_messages_sent": 0,
+  "parent_evidence": {
+    "nr_verification_sha256": "3e4079df5d688136ef59be6b599633b0bc7c44d9d21f410eaeefc2aef0699c65",
+    "earlier_forum_report_sha256": "702ba226dee492a8f3cd8e95db814c799b41e977412e0ebcf0c06488891d952a",
+    "earlier_forum_registry_sha256": "29615813d25986378644fa0b5cd77bbfc408ced1213674f84afb92e21bfd7543"
+  },
+  "methods": [
+    {"id": "noprop", "status": "new_candidate_not_implemented", "forum": "https://news.ycombinator.com/item?id=43676837", "primary": "https://arxiv.org/html/2503.24322v2", "retains_block_local_backprop": true, "skin_regression_or_4060_gain_verified": false},
+    {"id": "forward_forward", "status": "previous_candidate_rechecked", "primary": "https://arxiv.org/abs/2212.13345", "skin_regression_or_4060_gain_verified": false},
+    {"id": "clcc_wb_pairs", "status": "adaptation_hypothesis_not_measured", "primary": "https://arxiv.org/abs/2106.04989", "code": "https://github.com/mahmoudnafifi/WB_color_augmenter", "labels_are_illuminants_not_skin_lab": true},
+    {"id": "tagi", "status": "local_related_TG_study_completed_no_general_gain", "primary": "https://www.jmlr.org/papers/v22/20-1009.html", "local_report": "../benchmarks/chromaseed_gaussian_v1/report.md", "cutagi_runtime_reproduced": false},
+    {"id": "analytical_readout", "status": "local_NR_study_completed_tradeoff_not_general_gain", "local_report": "../benchmarks/chromaseed_neural_readout_v1/report.md"}
+  ],
+  "datasets": [
+    {"id": "nist_skin_reflectance", "status": "new_candidate_public_catalog_only", "records": 100, "record_unit": "measured spectrum", "wavelength_nm": [250, 2500], "primary": "https://www.nist.gov/publications/reference-data-set-human-skin-reflectance", "catalog": "https://catalog.data.gov/dataset/reference-data-set-of-human-skin-reflectance", "discovered_download_url": "https://opendata.nist.gov/1832_Data_JResNIST_skinrefl%20v3.txt", "license_url": "https://www.nist.gov/open/license", "license_status": "NIST terms referenced by catalog; per-file notice not inspected", "paired_camera_photographs_established": false, "downloaded_this_turn": false},
+    {"id": "issa_v4", "status": "already_acquired_and_audited_in_project", "records": 15256, "author_subject_count": 2113, "local_subject_code_count": 2107, "license": "CC BY 4.0", "primary": "https://doi.org/10.6084/m9.figshare.28228571.v4", "license_evidence": "../data/issa_v4_verified_inventory.md", "scope_limit": "Spectral conventions, duplicate records and identity-code discrepancy remain; no new reserved data read", "downloaded_this_turn": false},
+    {"id": "encode", "status": "credentialed_access_candidate", "participants": 128, "primary": "https://physionet.org/content/encode-skin-color/1.0.0/", "requirements": ["credentialed account", "CITI Data or Specimens Only Research", "project DUA"], "target_type": "instrument skin measurements with phone image data and extracted features", "archive_inspected": false, "downloaded_this_turn": false},
+    {"id": "scin", "status": "auxiliary_candidate_not_instrument_lab", "images_lower_bound": 10000, "contributions_lower_bound": 5000, "primary": "https://github.com/google-research-datasets/scin", "license_url": "https://github.com/google-research-datasets/scin/blob/main/LICENSE", "license": "SCIN Data Use License", "known_issues": ["duplicates", "missing labels and image", "estimated tone labels"], "downloaded_this_turn": false},
+    {"id": "uci_skin_segmentation", "status": "binary_pixel_control_candidate", "records": 245057, "skin_records": 50859, "record_unit": "BGR pixel", "primary": "https://archive.ics.uci.edu/dataset/229/skin%2Bsegmentation", "license": "CC BY 4.0 according to UCI card", "instrument_color_labels": false, "downloaded_this_turn": false},
+    {"id": "mst_e", "status": "excluded_from_ml_training", "images": 1515, "videos": 31, "subjects": 19, "primary": "https://research.google/blog/consensus-and-subjectivity-of-skin-tone-annotation-for-ml-fairness/", "reason": "Explicit prohibition on training ML models using the images", "downloaded_this_turn": false}
+  ],
+  "interpretation": {
+    "spectral_palette_transfer_is_hypothesis": true,
+    "rendered_inputs_are_synthetic": true,
+    "ordinary_phone_face_accuracy_validated": false,
+    "current_frozen_train_expanded": false
+  }
+}

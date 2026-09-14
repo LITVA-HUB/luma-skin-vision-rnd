@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Luma ChromaSeed-Seg2",
+    "arms": [
+      "lapa_only",
+      "lapa_celeba"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "trajectories": [
+      {
+        "id": "lapa_only_s17",
+        "arm": "lapa_only",
+        "seed": 17,
+        "steps": 5976,
+        "image_presentations": 191232,
+        "source_presentations": {
+          "lapa": 191232,
+          "celeba": 0
+        }
+      },
+      {
+        "id": "lapa_only_s29",
+        "arm": "lapa_only",
+        "seed": 29,
+        "steps": 5976,
+        "image_presentations": 191232,
+        "source_presentations": {
+          "lapa": 191232,
+          "celeba": 0
+        }
+      },
+      {
+        "id": "lapa_only_s43",
+        "arm": "lapa_only",
+        "seed": 43,
+        "steps": 5976,
+        "image_presentations": 191232,
+        "source_presentations": {
+          "lapa": 191232,
+          "celeba": 0
+        }
+      },
+      {
+        "id": "lapa_celeba_s17",
+        "arm": "lapa_celeba",
+        "seed": 17,
+        "steps": 5976,
+        "image_presentations": 191232,
+        "source_presentations": {
+          "lapa": 95616,
+          "celeba": 95616
+        }
+      },
+      {
+        "id": "lapa_celeba_s29",
+        "arm": "lapa_celeba",
+        "seed": 29,
+        "steps": 5976,
+        "image_presentations": 191232,
+        "source_presentations": {
+          "lapa": 95616,
+          "celeba": 95616
+        }
+      },
+      {
+        "id": "lapa_celeba_s43",
+        "arm": "lapa_celeba",
+        "seed": 43,
+        "steps": 5976,
+        "image_presentations": 191232,
+        "source_presentations": {
+          "lapa": 95616,
+          "celeba": 95616
+        }
+      }
+    ],
+    "budgets": [
+      1494,
+      2988,
+      5976
+    ],
+    "validation_interval": 498,
+    "validation_steps": [
+      0,
+      498,
+      996,
+      1494,
+      1992,
+      2490,
+      2988,
+      3486,
+      3984,
+      4482,
+      4980,
+      5478,
+      5976
+    ],
+    "batch_size": 32,
+    "parameters": 4416673,
+    "width": 24,
+    "input_size": 192,
+    "initial_sha256": "1203cbc5ed2ee17cb2a408c47a23b3a28468f169d48b4d3cee8bd3059e7fbed3",
+    "optimizer": "fresh AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "schedule": "cosine multiplier 1 to .1 over 5976 updates; identical prefixes",
+    "sampler": "16 shared LaPa anchors + 16 independent source samples; complete shuffled cycles",
+    "augmentation": "frozen Seg1 augment; equal torch RNG seed per paired trajectory",
+    "selection": "equal source mean-image IoU; maximum within prefix; earliest step on ties",
+    "counts": {
+      "lapa": {
+        "train": 15914,
+        "validation": 1692,
+        "test": 2000
+      },
+      "celeba": {
+        "train": 24112,
+        "validation": 2992,
+        "test": 2822
+      }
+    },
+    "new_updates": 35856,
+    "new_image_presentations": 1147392,
+    "test_accessed": false,
+    "measured_color_targets": false,
+    "cross_source_person_independence_verified": false,
+    "prior_lapa_test_exposed": true,
+    "cuda_precision": "FP16 autocast; FP32 saved weights",
+    "failed_gradient_policy": "fail immediately; no skipped optimizer update counted as success"
+  },
+  "bindings": {
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\best.pt": "1203cbc5ed2ee17cb2a408c47a23b3a28468f169d48b4d3cee8bd3059e7fbed3",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\protocol.json": "42d917ced2431a70b29d1a21041d40070f5b3ad87e3d13df1cf6b023b4b97083",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\selection.json": "4eece641e844a14aeadfdb79544976b2f4661fedf4efe9e49bd5c724f6e92627",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\final_verification.json": "3231d667a9091e05678fa59e3b1ba0f825ce2ea5f1d503df12465509d6dd01e3",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\history.json": "74d2acf7424c8777d74fbf310dd57095364f346bccce20488d1b8870b2c62cf4",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\test_protocol.json": "ea2696b51ff0a09ec2b84c971e44a9bad453e920d25d5934b0483e28f8498a02",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\test_results.json": "dad5cb84a8379b071c26b157158d023b87a114c3f1159cf8b7361e6255a5a377",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\test_image_metrics.npz": "883889599b9726d8f6bbe3daf2d0d4ed161fd5b068785bfd867e21739a655c85",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\test_baseline_per_image.json": "c653f2505044e574864275442b193614c76e05b5165b52b238767858677016d0",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\appearance_protocol.json": "9b370cff6098c112f82eb82d670fd903c86a07780f5c5b75df17ab3bbd428cdb",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\appearance_results.json": "4d63320b26cf1a2c64756e7398101e9930401f8bfa6d5ae16358b201e9d78c55",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\runtime_protocol.json": "9b906f517ab7a7c2e28e1301063b9ae232733088676556895d35f61eeea62be4",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\runtime.json": "0bacc6dcee2ef4d46e97219c79fabe01ee0f77b277e2d874bb4a7caff999e50e",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\pipeline.json": "0552ed1a7efe694bd452fe0f73e9ad393d69daa7f5ca5749733f89b757c846f4",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\facial_skin_v1\\diagnostic.json": "819a03f7ad13d1cb3fd5c06bf0bf20cc47d115f65284caa0549fa8bc397fbb87",
+    "scripts\\skin_face_train.py": "5fe50a7ac515d368b4d95bd83268c9e3943521e36a7b317a634b46ea588a60dd",
+    "scripts\\skin_face_segment.py": "e66589cdf8ab369e6754da9292df36bdfd6413754a2dd2d65c50f3c504f4cff9",
+    "scripts\\skin_lapa_prepare.py": "4f9b715851bafce7718efb74e05db61caccc59515c00ac9fe578e2e2157d2ca1",
+    "scripts\\skin_face_evaluate.py": "df59649c1228c42d84ddf478a4286fec7b326b28087e3bb1a142e2718871b019",
+    "scripts\\skin_face_baseline.py": "8d227b43db80eb9e008d2dcd30decb0eca0515e78efecb79efb8338db014efbc",
+    "tests\\test_skin_face_segment.py": "ffc74b1d2b44c11b43fe92c7dad1e0dd208873fd12d78e1ae0624ac054f31767",
+    "docs\\superpowers\\plans\\2026-09-14-facial-skin.md": "262f42e3f0bc982cda65a9ad87a1597fa88a40fce3b8bd325cc4a5319af6e488",
+    "scripts\\skin_face_appearance.py": "1a235576da5e1572accc35387f4f44a6400c5b2a7bb4cc3652ef38aa56733bd9",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "scripts/skin_face_verify.py": "59e0535ecd6a665b0c384318b9229cf1c11158111eefcc697b68caef08347c42",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\profile.json": "67e7084af989dcc9de8635d39a0a73949963a9264c147941da0b279dcfbe5625",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\prepared_192_v1\\profile.json": "bf8bd9b233a89077aca4d4e715c5dc15445e8a4c5bb119b83669f7dc185e5d1a",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\split_v1\\profile.json": "9e172e2648269bdf95bc59ea43230e34ec645d3237222aab08e20aa5e13b5373",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\preparation_verification.json": "6634e3777252305801b23c12408b5adc670be9ca449839df297c61373c8239fc",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\usable_triplets.json": "160c3a617e8cf8f0c34802d2e19ec2f2164418d5dbe1eb962b444712a9941896",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\train_rgb.npy": "2c5390814b78b96dcf27a113b361ccfa2a394547bbe9ffb2c4b8f1e7f457b515",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\train_labels.npy": "8ea100b72a23b7512a2ed2ec4d5357af63ac6ccbb03ebe933f89c41acd00d109",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\train_order.json": "0dc2b33ed5df9c668f7f6b9a30110e1ce6c7bcb9ec387844fe439d1a93d863c0",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\val_rgb.npy": "35d38f88035f48f1892c9e246133eb04bdddf8914a791df9d6264683c81703ab",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\val_labels.npy": "764e43452db994f7b99ca7f940af794a9b17debe28ce1a3163eb9528ca9128aa",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\lapa\\prepared_192\\val_order.json": "ae153c032f0b62e95d1ad2d152c1634965a0d491a6eb86ffbf5ba5712f24aa21",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\prepared_192_v1\\images.npy": "6eea98493054468672a49de599928d43563b9020014a4b1b62fab5603abc8d6e",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\prepared_192_v1\\face_skin.npy": "c418103372ddbdf6b2a9802a130c387ef8081594905b52fff96053ea4d8cee37",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\prepared_192_v1\\rows.json": "53a57b51f117097c1e45c676709ea9a8ccb6add749c927f76926e31e707feb12",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\prepared_192_v1\\protocol.json": "8ff7ba616102befc5d1b104948b8bfce95870e10dd5f4af9c1ff751531f41829",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\prepared_192_v1\\original_image_mapping.txt": "d8d43deb196384cc086233d133624ce2f55f1c41300e91d865f2aa3c24f3614a",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\split_v1\\protocol.json": "86b15abe1dbe67debffc7e91975dac191e12a3246005ec46bb364b21a5f20d0f",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\split_v1\\rows.json": "8f02975b34d8a6bcf953571ffbe9f67c0a87f5e8a6724e7ff152238e80a79aa6",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\split_v1\\train_indices.npy": "6ef0e5c5cd4444590df23b65c54357a07409d61d4815b56c4c0b0202b13dc556",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\split_v1\\validation_indices.npy": "1c888cb9200876e77cc3bc304083ebd2f85aaaad5b661bc33bb96ef33e33fb42",
+    "D:\\Luma-RnD\\data_growth_2026_09_14\\celeba_mask_hq\\split_v1\\test_indices.npy": "8446b68cde4caa5bd3f3d1567aa4ca8483d6874931f011356f842c39fbb69105",
+    "scripts/skin_face_transfer_data.py": "b5932e3c4a8b6c78c5c0202094148135039e3c21cdaa56b358b211041c6c25e7",
+    "scripts/skin_face_transfer_study.py": "231b13145b311288bedd12403e9de43fecc6204fc03fa5e322ea6da03d83c406",
+    "scripts/skin_face_transfer_run.py": "195476b991e0145b7ca3b34e93cec3d05686f8c3f8df3e1e6856a45df268e88b",
+    "scripts/skin_face_transfer_evaluate.py": "7d8d5619eabd8ce9f0bfc497f6dce72025b168f678e233bd7a46bbf1f6ee63d3",
+    "scripts/skin_face_transfer_report.py": "960c865facccc71218ed05e69def9611a071fff6c7ea8509e931330c61ee801f",
+    "tests/test_skin_face_transfer_data.py": "322f84ee28fae563852b33c49b3dbc6c672ee1412b9663d7c17d3f03b7f4a70d",
+    "tests/test_skin_face_transfer_study.py": "21c4cd47101d16c2b555fccfe2e1cc0ab738df49eb3b255a59ab698baaca3716",
+    "tests/test_skin_face_transfer_run.py": "849bf9ca1e455c75b466001c3758b182177d2e52d93cb5ddf8dd4bed61b0b96e",
+    "tests/test_skin_face_transfer_evaluate.py": "de3f481be08a28012ac51f073877250934918b60de3316449e7affc84f5a7d19",
+    "docs/superpowers/specs/2026-09-14-face-transfer-design.md": "f579768e647a279277e5e09cdb76e09758bfba51c0e92b2423b94891d021fbb7",
+    "scripts/chromaseed_head_range_verification.py": "0eab3d471b2d2a76a8bd8355f2f2aad87681f70aa1af5f5e3cdae40a8f27d44d",
+    "scripts/chromaseed_head_range_report.py": "29a79447e09c03ef7e51b776ddfbb4bf9c7b86772176823498b66d7fabf95064",
+    "scripts/chromaseed_palette_transfer_report.py": "42c82eff154d49e64ef632df979925da2115878a99c8195ed1681d63af94e743",
+    "scripts/chromaseed_palette_transfer_verification.py": "7706eba016753a809c3284caac5af49170e1c50db6436f26d92e41fe19e71fb5",
+    "scripts/skin_face_segment.py": "e66589cdf8ab369e6754da9292df36bdfd6413754a2dd2d65c50f3c504f4cff9",
+    "scripts/skin_face_appearance.py": "1a235576da5e1572accc35387f4f44a6400c5b2a7bb4cc3652ef38aa56733bd9",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "created_utc": "2026-09-14T07:13:35.686701+00:00",
+  "ordinary_phone_instrument_accuracy": null,
+  "predecessor_order": [
+    "HR full verification",
+    "P3 full verification",
+    "Seg2 CUDA"
+  ]
+}

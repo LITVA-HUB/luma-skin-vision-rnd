@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "source_lock_sha256": "88189161a7cee0c87d8ed5da2695083374564984c01ad77e3711f5fd49b3efea",
+  "results_sha256": "2490104c6919306d197c46f5b876f03319d01d306ed93cd06dcb0864b4a8243a",
+  "audit_source_sha256": "b3a4e147dca7531ffb2afd3910a290a03246aed1a7ebf50a213adfb3131658b2",
+  "dependencies": {
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "checks": {
+    "source_bindings": 35,
+    "input_bindings": 23,
+    "oof_archives": 9,
+    "candidate_person_values": 12474,
+    "candidate_scores": 891,
+    "original_choices": 15,
+    "bootstrap_draws": 60000,
+    "bootstrap_selections": 300000,
+    "deletion_selections": 210,
+    "paired_distributions": 30
+  },
+  "maxima": {
+    "person_score_drift": 0.0,
+    "paired_gap_drift": 3.552713678800501e-15
+  },
+  "elapsed_seconds": 9.227130000013858,
+  "limits": "Independent aggregation/resampling; shared verified CIEDE2000 formula and fixed role helpers. Not population validation."
+}

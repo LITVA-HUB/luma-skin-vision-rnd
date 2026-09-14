@@ -1,0 +1,4195 @@
+{
+  "passed": true,
+  "registration_sha256": "90a9a78bc46f5ca1f40befe0cd04e8861374868d41710c099c7573da7a2add17",
+  "synthetic": true,
+  "actual_p2_encoders": true,
+  "native_finetuning_performed": false,
+  "native_accuracy_claim": false,
+  "device": "cpu",
+  "engine": "eager",
+  "steps": 2,
+  "original_exact_payloads": 108,
+  "transferred_prefix_exact_payloads": 108,
+  "synthetic_example_predictions": 972,
+  "maximum_native_lab": 5.407000305268639e-06,
+  "cuda_peak_allocated_bytes": null,
+  "records": [
+    {
+      "variant": "patch5m",
+      "mode": "unit",
+      "arm": "original",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "unit",
+        "initialization": "original",
+        "initial_theta_sha256": "bbf3da5f828a39d004ffb50e0eb51477570fb1443343f8fe64cb98ea529956d1",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14386969996849075,
+        "full_bank_seconds": 1.8389398999861442,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 1.0147567000240088,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.8186339999665506,
+            "minibatch_loss": [
+              1.1385774612426758,
+              1.1383380889892578,
+              0.8133808374404907,
+              0.8131567239761353,
+              0.9984782338142395,
+              0.9981653690338135
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 4.696324040764921e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "a44964b742d51cc72de7ac6c08cc007d0448ed4a7048ac3dd626b310f531badf"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "1ef60ea36afb2d8a18e5071c5ddb75bdc3fcf6ee996a1824c46a3c87a0279741"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "66ade439ec9e3a76f33f5963bd24092c65580d94cd2ee5f13978e2970670642c"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "fb11d066e516fb771d18f471d38dd08976ddd633bd15e625edade2a2a1dfc776"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "cbbe8ab30d1cce412a467fdccff0ca12d736c1233b8d8c6a89155277136261d1"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "aa60155a8c3ea876b7fe34ece918d53683f9f1550c1b46799dd3ed6910f84ff6"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "cfd1d4bfc7da42d0d89c2ac5fd494cab811e0efb0fb31cb025cd8dd1a3650d88"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "b92efda3609e4b2d1e617abded268c225b3d73b31d8a442dbf731dd3d95f50cb"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "c768be0dc44201a7d5b400f4535f47c5733b3e9d2f7eb564d29e7b9c0003ec95"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "4406bc809cdfff26cd2af1943dc00ee3f5a151e25abffbbad5d3b21bdfa35b27"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "4c90493c867913aaa4b11857dc022866bbe5dfb25f0b6f230f9ccca66d4e4168"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "258af7e1a9c3aba56a9c142e58f1fc58307767681a9f199be16eaf0a77701db3"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "unit",
+      "arm": "aligned",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "unit",
+        "initialization": "aligned",
+        "initial_theta_sha256": "b297068eeb2bcd0e7698aa3a4ed8c3c700d8259ed4fb4ec4e92762ed247d1871",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.15953060000902042,
+        "full_bank_seconds": 2.0273306000162847,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 1.0475151999853551,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 2.0139287000056356,
+            "minibatch_loss": [
+              1.1391935348510742,
+              1.1623731851577759,
+              0.81151282787323,
+              0.8143281936645508,
+              0.9962152242660522,
+              0.9867827892303467
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 1.2213714946085474e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "895af6dab3e7dd78d05d8ba36dcd9aeb61686b75acbfcf35452563fa97e79329"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "a3738de87e44ec626aa891bebc24af73f27ce771110ce46d157996b3b28ca04a"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "509108bf1c9df58b2419409e286462a74525095866d122bf08306f253ad40234"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "175e5679a99a79768753d8e59a521e13e2f5e71d1c79c26cef4fb74142d4003c"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "61ba8ef8eedec84067edaed4393ddcd01a18736ce73590b1574fb3b741ee791e"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "dbe7362641be86c951c00750182bf683b5d97e8deee4d31ad231db6b4016bb7d"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "9ada36ba5ee57d1bfcc2c7091e042be99f507b4adec3f2a9683e688c422daacc"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "bec07dcb8263afa917b07ad9cba9bb8059da486fd839b27e2e3e4255a55ad23c"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "f8285376980623d081e40815b2050a1582039cdbb55be45bf2dbea71903d7c3c"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "3fd77fefa87ae0887fe96e674748ae4eb0d7b4ba88582087b3a8d7cdb57cef7b"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "4bf180f0878d88a3526c372266dc6794eadd1bc5fd01b715246cda8145c4ed82"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "34ea28e1e53322b730ce09e4285c11c8aae98a637c22da366db0c3e4b1236973"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "unit",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "unit",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "1a7c00e4a446257adcdb094ad81a9a5ff7810ab4b38350ce59a47197c3975ecd",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.148772899992764,
+        "full_bank_seconds": 1.848062100005336,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 1.002228900033515,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.8358110000262968,
+            "minibatch_loss": [
+              1.139153242111206,
+              1.155633568763733,
+              0.812820315361023,
+              0.8205392360687256,
+              0.9958667755126953,
+              0.987390398979187
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 8.994003977136344e-07,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "20eba390a920f371e2aab883cb2b9ac34242c1e50f9a4aa48467609b44f5a620"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "1399e35cc08d2fe52fab5ea727783fa5196614f32f5f928c419645752b861ef3"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "7f293832d83274e52d21c1efa992f37104617f81010da1d5832dd9e267fa9083"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "31b1a4068c3ad5b69f8e5930d467fbc0eac2f4dd018d1029a95ba48e2817c19e"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "859aca38d3722e582a4fbc0a3ccd99e632d5157e3b6e324bbb9b759d50ae3d32"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "8909b7ccd397ed310f4ace979d4a5b22c9d928a647a2abb264013f0feea29131"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "060450f327a53678ec752297ea5efec9e0086fd6526d1fce7f653e13008ade6d"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "71499b2536df0fb236b42b1280ebffe8c521ef68c8c47104d811467961611df8"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "e50f7905c0f11e6c6a1dc71fff608b64bc3e82022377db84d69fec56f1d5e024"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "fe5a0df4fb4ce4a37660320e41907e83402d66d22ea04d9826ef18a7b7a98f47"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "ab32ba98891a7492332e3cebcd02efb6954e834e046d8e392674500d31403432"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "08fd57109e2ed8ba8b201961f8b6a94befd4ec0accf39a3f23739f5a57bcad04"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "wide",
+      "arm": "original",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "wide",
+        "initialization": "original",
+        "initial_theta_sha256": "bbf3da5f828a39d004ffb50e0eb51477570fb1443343f8fe64cb98ea529956d1",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14596590003930032,
+        "full_bank_seconds": 1.791781300038565,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 0.9841102000209503,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.7793907999875955,
+            "minibatch_loss": [
+              1.1385774612426758,
+              1.1383380889892578,
+              0.8133808374404907,
+              0.8131567239761353,
+              0.9984782338142395,
+              0.9981653690338135
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 4.6963753774775796e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "12758473211d6825b2ac4d8f848c9ec276590fcdac05dc132219d6512f004e12"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "ffdc0cb09d5b8debd1e64c21e4e44fad25b098009d8f8f5dc40274bf492a06b3"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "4e9bf95cbeaa0547d690a64f1f46ab370f07557271f532a268a8045f58e9bd90"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "55195a1c993a1d9f3296ddc9f16e63b7e4d7aa3b24d51b1d396dcccfbe68870d"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "60447a43d77bd4fd83f3fbe250f4007bd380cdbe3b6d028499c918640b6e428d"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "6e180da9c434466ecce0d0db042b66fa6c6db0f87a5da96f9bbeef2d36994d5e"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "23ec8519d314a389e3c0ae97db212e8d961780a15a58869c8c541a8cc1d6cd16"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "7ae10d9d6bc4c3d3699f52331a3494e3356f8584f0d2dfaea76e619f141239c8"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "812fcf11b58353c8b20befd5d001f93c750609db0da4e5b57327f6c930d0e349"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "24341f9303876977b3e393a80c469679d752213910291b72f09b1da7a773bf65"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "4aa8bac6bfaea762bbc0ce235195e7d40b8b0aab876f7199a011cac58e4471f6"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "dcc0ce7ae6010a19fd5b7e8639932d57f030d82dd8fa882185279db5b5ed481b"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "wide",
+      "arm": "aligned",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "wide",
+        "initialization": "aligned",
+        "initial_theta_sha256": "b297068eeb2bcd0e7698aa3a4ed8c3c700d8259ed4fb4ec4e92762ed247d1871",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.1468357000267133,
+        "full_bank_seconds": 1.840350300015416,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 0.9965929000172764,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.8281363000278361,
+            "minibatch_loss": [
+              1.1391940116882324,
+              1.1629469394683838,
+              0.8115127086639404,
+              0.8146083354949951,
+              0.9962150454521179,
+              0.9867936372756958
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 1.2799070248092903e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "84735f9510282ccb05d807ee0dce2f3355488788e64fd52ad27e4dbb3c720363"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "9a93b6f50aa6c1218cbb485e9768a06de48e0e12ba33d8bc2b96dbdbdebb4973"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "e6b59fd649b29e2af66e2aa82debf11bf99d9f3cc7705276e6872ed91795c0ea"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "d7bb0628960d8c3fc7df8f8b754ef1156b30bf7f0569249d18738475309a96b0"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "59e8556610a811ac8e6abfd96b8af8105749ddbbe6dc4bca72324f7faf1285df"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "73ffa3927ae4110a678e1a06ee03452bf86b8adcc33cd2208fc115434ceb3471"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "9a06719e4a646dd3b6663f859d687637135f9120fac7011b9a3081a3962602f2"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "2d4751b57ee22804d3c0eb019ddae1cffed3dfc1feff0e9daaff588f291c6a24"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "7f658f52c3b4848d0573aacb5e8bf2da950bfd17ddde28c8ecc1d26dcfb50221"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "459cca0eb677363289d092d50e09d46634b45811e18809319e33cb2ce2b8f6d2"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "b66ccf11d89288785ab461b57ee5174fb2f5e8a8307d03c5b6257ead77aa7ebd"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "1bd13311a0db6d5f39269ee186b2dc049c2a59b7d3e7d24df3a68ed4faf1e30b"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "wide",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "wide",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "1a7c00e4a446257adcdb094ad81a9a5ff7810ab4b38350ce59a47197c3975ecd",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.15029580000555143,
+        "full_bank_seconds": 1.8392182000097819,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 0.993232499982696,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.82667360000778,
+            "minibatch_loss": [
+              1.1391534805297852,
+              1.1559191942214966,
+              0.8128201365470886,
+              0.8205916881561279,
+              0.9958663582801819,
+              0.9873576760292053
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 1.4434157176168583e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "6badc83dc8cb353ee96d3a026cc43dcc7c3621d6b757e08b2815fd3200b9e3d1"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "2ace59d4b41258c62d8cad9928ea609206af49432d7019428584a193865909bb"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "b30792a7c11bd6f7561514d3ad763fbf2bc42b9ce7fb574588a2d47e82394470"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "87c55a5f6c3a1ab2da9de06d83fd6c0f3aea2dc5277f951561b68be89e115f58"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "58408f696439bad042017dd582b5b0429cf3be83c4cd2931950a96f94dde60b2"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "86d1f552060591a5b9be7e85144f62d89831283b9a28c4ad29026cb68958e033"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "32636d7aa01ed1914adc25288231819ab1668b6e836cf86a21768347631245dc"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "f5755d9b7d679b5e6acfda1ed45fde5516106498994da3b284c2f376269d16c2"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "a9b5a16776e3b108c13e5462e3b4dc0724487f99f19ce50812b34589b6736b5f"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "ef93c4cebd495eefaa538576985f922f4efa724d78475ced153689af25dcdbc3"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "6ca917d38f0d0a0023c4e3c59d6df0fbc75cff924a0d14b680640e440a7f11f6"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "bd59e5c16d78b7cc36929f7718cb84dce19e34168652a4a707280987ce8efd7e"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "linear",
+      "arm": "original",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "linear",
+        "initialization": "original",
+        "initial_theta_sha256": "bbf3da5f828a39d004ffb50e0eb51477570fb1443343f8fe64cb98ea529956d1",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14664829999674112,
+        "full_bank_seconds": 1.791310100001283,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 0.9799261000007391,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.7791890000225976,
+            "minibatch_loss": [
+              1.1385774612426758,
+              1.1383380889892578,
+              0.8133808374404907,
+              0.8131567239761353,
+              0.9984782338142395,
+              0.9981653690338135
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 4.6963787525555745e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "89dcdc19d35072f89894468a7c5b5b943c1d5b8b2ba6f7364f863abc6051dfa1"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "59919d4008107680e3f236cd79085d19063601f1cb9a3ec9a897d2aaf01db9ac"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "c077b1d08857ed18b384770e9eabecbf9dc76c2a7d5ae3f7d7d879ca33e7980e"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "dfb56a9517ffe4dea758e8c42fe0a693d4d9226b01d60b0b367efc7c1a20d094"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "6897f821e8b6fb331489c079fe07da0f82cc2e8b673367a85fe137eddd868103"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "60763c903d061d2c8769a93f6985cfc3ff670aec46566f3964ef91c8b7a5fdb5"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "f72c385dc686f1bc6980916dd44f99af0a3c8ec43ba00581294316721cd45742"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "fab540164469787f60d143cc81e0900439914a584e7d5df03d54d73a75dcfce6"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "bf6afad712163d4368a77d2d23441e1ccfcbdf50ce3d2f2c8ee99b904e0546c1"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "603c550d4afb107da2d039304d33be33f76ddf275700fdb9c43983fc5e3e5f1a"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "07154ee75d98710e50743559d40b69834ea3e27cbdb73f852af273b48a2a0bfc"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "c769357b5b06b4050b8c6d94abb71713728dea3691bf0347edffd8eff064dda2"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "linear",
+      "arm": "aligned",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "linear",
+        "initialization": "aligned",
+        "initial_theta_sha256": "b297068eeb2bcd0e7698aa3a4ed8c3c700d8259ed4fb4ec4e92762ed247d1871",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14671129995258525,
+        "full_bank_seconds": 1.8407646999694407,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 0.9925119999679737,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.8285038999747485,
+            "minibatch_loss": [
+              1.1391936540603638,
+              1.1629858016967773,
+              0.8115127086639404,
+              0.8146276473999023,
+              0.9962149262428284,
+              0.9867943525314331
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 1.1546033107379117e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "3da8dac097cefa61c81e8a424141d45ae6db056d9c34aeb1c5156151b819bff8"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "76348286a1ca37d27ccc3b87fb90207e4bdefa9c3aafd55957faf5958abac94b"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "a6fbf62c9086d8858d1a829e1aac8daeacb5372bd6ce06f07cb68ecd28a60fe9"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "4ea49d4eb7c9d90f355ccdf6b4d7bb714a77fd23157607c720888df80a5c9ceb"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "57465fe601e80989ddc6d6746b80edc33a03db713396f5576cdce922c62f96d4"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "5635a76a2b27a64e30f6ad90b83ec647ea5054f8be4c83541c5abe77c48e0663"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "6814b04435d17d6e0f315586e1f757cb8d2f1975fc1cc714181369ddad4cd36b"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "16a4595fe7edce5b3bb004f8a3013ed5a850541f45af8a0171e47e4ad5e548a4"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "9852691762cb654a6804a00208c6b572f3ca15d5e62918cd5619db4971affb0a"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "2aa31403af00b41cca78ec2061c2e36e38114c075ad6bd9da9461c6f5274f4b4"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "3b412acf209d942a5e03ac6315a5c7b47eec078a676ec892a975d14453ab252a"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "1af72a4affcf07fa2cf65f10b8b61ee13142de9e101f0a3152e17e8aa775c0a0"
+        }
+      ]
+    },
+    {
+      "variant": "patch5m",
+      "mode": "linear",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "patch5m",
+        "head_mode": "linear",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "1a7c00e4a446257adcdb094ad81a9a5ff7810ab4b38350ce59a47197c3975ecd",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.1455069999792613,
+        "full_bank_seconds": 1.8293543999898247,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 0.9865618000039831,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.1249696016311646,
+              1.1249696016311646,
+              1.0039159059524536,
+              1.0039159059524536
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 1.817086900002323,
+            "minibatch_loss": [
+              1.1391534805297852,
+              1.1559383869171143,
+              0.8128201365470886,
+              0.8205952644348145,
+              0.9958662986755371,
+              0.9873554706573486
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4961923,
+        "deployed_parameters": 4962566
+      },
+      "maximum_native_lab": 1.0062404669497482e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "a23614ff5acd875eefaf6c9408b886ac4ab5cfa12be1676cf0117323a99aa975"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "bf3f7649d2f902904d5edb6cbdc5e0fb44849a3a34c75db33f30e1d9b7ef5b89"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "0b42ddbcc648c8b60da40319acb6e5b00b11716fa4a80b3453839c0cc9bcc95a"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "d016b0e0a63c4cd3bdd002471d78a34cd08d0448f8a0c57d307093371c2df18a"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "e9fb1bb7281434044b17c84d19088e9744fd202fcd2968a9fe4d841c1388077e"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "0d7c97d1fdf3119ca8adf3388524a54cfd4e0ef8985db1fc0ba25abcbaeeaf17"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "71bf54cacc87e2775c42d6ff6d063a4507827a7de2519713c4d0111778d89e2f"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "72acea2d9813d01ab9aeb07d3cd0caf0dc28d4d2dd7990d50d95e2cde49bdfba"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "04a6a0481c6bf2fcb61ccfb361ea94360f9bc9076ca013760a30fd5cd17b6dbc"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "569333ab9cff09483463a98dcfc44bcfc5d63f6563e584cbfccc2c7d13f9487f"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "61de26e798e3868e50c1d0ac77536f19b2b6e299e04e4effbfbd48ae9387d7d8"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "dbb654e9e0386fb2ffdc14def6855154ce3e3a87dd29f4648318f245fe8195ba"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "unit",
+      "arm": "original",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "unit",
+        "initialization": "original",
+        "initial_theta_sha256": "6aa0aadfb6f63b74c0fd5c814fd991a0f0ef6ad7d14f5d287b5c9acecb0cddab",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.140054700023029,
+        "full_bank_seconds": 4.276068300008774,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.200103399984073,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.264230499975383,
+            "minibatch_loss": [
+              1.13850998878479,
+              1.1376631259918213,
+              0.8133389353752136,
+              0.8127373456954956,
+              0.9984194040298462,
+              0.997575044631958
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 4.722962643199935e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "a533cc9543ec1475c8e0dadf6419f8fcd647c29ebb2d3e7d8b444c5035bea635"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "f569ce32e9ded5053be7466a80595b63baf6051518b100ae061bae829c63b18c"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "85ed37c81348c8c78804c1c37098d4173e66df23eb3c61d7926a1ee7a6b5a736"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "069042a01e35079230e09cee8bf3c2712f1a7851a23a7699c7f8c8642a18c534"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "9ccc7f89d2f2023efc7931c98da045df3fdcb050891488011cc6d148f81cf40c"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "329e71cbc7f1e9cbc7b23de148288190ff7e9fe79bb0cef40fe72c06e0434722"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "abf137ab0437b41ab4a30c4ad70e5b5d926415b5b0c0ac31c9506a032a51f6ad"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "a9ab1f17ae4cf1995156967db1fff2479ec7a6bbcb035e6ebc52e7c5dd7f9062"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "68069879bb9b42b177c27f6017a7a93cd042e026c7d3e4b0c49ef1147999993f"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "d0ece0f911c43d76b0c83db43c58513ad137794c0737a8ce17f9eaa2a60de6ab"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "5e353c55c719a0c1aeb1179744a294bccbceb02e3254d5929daf41424ea90f6c"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "4ee37a2a7e4448a87a09a318c7db7dc1a67585d07ef4325b2156ff41bfbb1fea"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "unit",
+      "arm": "aligned",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "unit",
+        "initialization": "aligned",
+        "initial_theta_sha256": "911ebf34745352d0e60bfcf14adf983b624b37719b8e8e1453031c8a67ef060f",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14207010000245646,
+        "full_bank_seconds": 4.467712000012398,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.3809330000076443,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.454979399975855,
+            "minibatch_loss": [
+              1.1393696069717407,
+              1.176882028579712,
+              0.8106694221496582,
+              0.8281409740447998,
+              0.9946950674057007,
+              0.9937888979911804
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.1420948570494147e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "3d7cbd608057c21fa9555a94aeb04c915002f5c4c3a971598c29fa62dbe3c4a7"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "af82de4d648a97392c8eab5c0307e34dbbca447ae30ee5ee17b51ac390fcb763"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "07b8d2715dd2cec233ef9d3274de47cffdc6a86972f7e8feb1c83e6918a5c489"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "c7cda69745f9b57fd453118e90676f109c8f89f885d0c12d307b8fe832d25c4f"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "43cf34a18bc8e2990c8c2a2b433333b1d01a314cf7db32c161737219f4eb424a"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "a1b9c5a19db2e7d4e2d8fc8767b3e68d87ad716fb6569e05afaf2f3480d4e983"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "ee89a55879d52ca9b50766c1c8bf2927577096614c7cf2f939ab9f25fcf42c57"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "79356a33e37515c6d2d5a8e04c2c72fde4c7ba73715776a7bfb498e4f5b25073"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "b932ebc09ce74569d27c3af0f376a0181e0146a227ef96e834f7c5b235974349"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "82f5fc3e675e597d2a9ec3116d9c118ba40b177f505e73eb990c251af09529c5"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "909d48e5a2b1e447923909c945bcacf7f84fea0398347ad3fa554c8fc39ffc22"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "6ee6f889b6d514e0f4266f3bd072b12d53afdac6d4c6d06328eb085c45530b7b"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "unit",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "unit",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "806cb08163a4178949a3d8c7ac7dfcf96a540975d87e76299e5c91d102a8ee9c",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14358729997184128,
+        "full_bank_seconds": 4.38645930000348,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.235191299987491,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.374214799958281,
+            "minibatch_loss": [
+              1.1396604776382446,
+              1.1767834424972534,
+              0.8127282857894897,
+              0.8414428234100342,
+              0.9942691326141357,
+              0.9993150234222412
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 1.5988894137564102e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "dab9e95e623daad6c81acc71dc9440517e9dfd01568742cd44a779f765aac167"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "93bc1d27d6e233bf083744fbbd0ef4b0dc33362074760775279ef90e0cd43d5a"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "48d119a3a9f4580d119ffa8fe6ab1c777e52f9aabe5b8f945ee74d3bea6eb07d"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "4d91f098069b6e6439d829d63936d48a21fb8a5923d1f06b496d3822669a4365"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "83a4e1a30ff305dd1cf035883864578f9891dc7228a70a75abdd5b96b98ecdbf"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "0426c0fd4f66c7959105e991cce2c58fc3dc6c13fbf33f207b008b2e0d721d38"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "e8757fd4e8abeda5ea573bc7c582b63879f20356f674dbc45eb9c3f165aa49ad"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "e0bf355cc342866d8685f14d5308064684942a546671a1d47e29e6af9a8fac64"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "f96d7fae7fe40e0951fd1dcf88a497ef49ff5cff13d20add05eb8714e4d4f4e7"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "02dc7ae7ba071624f59ffb572d7cd3285566da882d7a3edde1c7d2a931bd1d2a"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "e8b64f875e3d3c5e51d56af56e4ae315ecbffe3fc402f56c972a259db927ebfd"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "99626e191210be25e1687b2aafa67420f41b295caead4f4cc46959742e82f3d2"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "wide",
+      "arm": "original",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "wide",
+        "initialization": "original",
+        "initial_theta_sha256": "6aa0aadfb6f63b74c0fd5c814fd991a0f0ef6ad7d14f5d287b5c9acecb0cddab",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14054860000032932,
+        "full_bank_seconds": 4.320015000004787,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.256207500002347,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.307626300025731,
+            "minibatch_loss": [
+              1.13850998878479,
+              1.1376631259918213,
+              0.8133389353752136,
+              0.8127373456954956,
+              0.9984194040298462,
+              0.997575044631958
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 4.99636634287981e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "1f97789c2ef211f494962818aa396be2b33e4e9a846309e69c783bb293838dbb"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "d15a04b00a981d7126d98f13cd6d182132230fe5ef529619e14d112a5169bd15"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "81a98708c86d6acc850c145b5cb40c2a3d46df4f2564a0037307219779b5931d"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "2b8deed41c4433d52e3eddea5de8f9f9d052cad51fa05648ae0c6026d6046fdd"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "a498844d46fcdabf797cb90dfb237b86884147a1523da32efa381f7422420365"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "72c08b6cca6c3894d3ddc6e96a11fa82f9687440574b05137ff096d57bcbd902"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "9d59d889aeae1f81124de0d5fe8aa1ca5ec32297b3574cb7f952194bda8cf735"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "3d20c0ad687b008397706f16764d3a1538421f23d51cc0f9819126696cdfc8fa"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "67d23b275b4aa84240ec46c45fae3664eb0cc35f4af0b946385f475794fb0210"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "bc07c67f31f56c4d41ee538d3597620cc0011b6d7f4d05610434c36c656766c3"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "bda09d15fdc6fb56e32d47adc4880444c1143c8e500eae9832fb31b05a022c17"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "e4a6e273fe40f1f27d90f2180008e105520777c13851febb46c65cf158b75d92"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "wide",
+      "arm": "aligned",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "wide",
+        "initialization": "aligned",
+        "initial_theta_sha256": "911ebf34745352d0e60bfcf14adf983b624b37719b8e8e1453031c8a67ef060f",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.1431324000004679,
+        "full_bank_seconds": 4.550584599957801,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.2946772999712266,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.538618899998255,
+            "minibatch_loss": [
+              1.1393719911575317,
+              1.1824532747268677,
+              0.8106673955917358,
+              0.833259105682373,
+              0.9946929216384888,
+              0.9958285689353943
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.7538401496940423e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "58b63bf78b1f1c6dbc188edc40d695eaccb7ae1b2e993c72fef331d24ff725a5"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "b45407b96b68a6897c452835c079ac72122e8e11dc667b30443d63be377c9b6c"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "f5ccb821fbd242c302f199deee8cbafd5404398b98395f5e3a9dd877f2703d32"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "a5f88de1130b319cf6cd4358c8dca36876168925cb1a9eb3db6ac6710ab19010"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "b449ea33c32071bfb62fdc141e4448e7cdeee3c4fd7d86a57f3be12705065f7b"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "65c6c16a8f315a59f357fc79d33414d8785414a4d636d66dfd38bf5154f5b5d6"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "71ea01d25061d5678ab3f3121bb2a9fa680fe47fc9b914d766254df14cb75fde"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "5b270ac464e859fe8fbaec4d2fe6a42a5792ef144d9f4db4313c0d203b56427d"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "1b5b12c8784d42eb1f3520d607ad7919ee5e495a86dd44abf804ce13c5a1ec52"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "434a3eda8aff75541b85e7f911b1004985a0fd0ea20c2f956194042983b478af"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "34bc0ae1e2829aee4bbfddfe9cb285969a167b59b0894ae3ed4fc680360f3f43"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "537c20f8461159ec437dc7a7df4313b0548a60be46381260f39d47493bbf8b92"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "wide",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "wide",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "806cb08163a4178949a3d8c7ac7dfcf96a540975d87e76299e5c91d102a8ee9c",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.15250600001309067,
+        "full_bank_seconds": 4.910890900006052,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.2652670000097714,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.887697800004389,
+            "minibatch_loss": [
+              1.1396629810333252,
+              1.1815791130065918,
+              0.8127274513244629,
+              0.8435454368591309,
+              0.9942647218704224,
+              1.0017691850662231
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.1057457555428982e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "0db3ca9170d416693c41d0b5c5ada47868e21d50adf710cfbb9ce7ea05951888"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "8ff0aa09e3b0c6618ee0bac9dc1f46a34fa86887bac86fc67c27580976f18992"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "b38924fdaa86e1be96a66652f357c4b3212823304abfdab4456b58ad5596efaf"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "a75913845dee0adcf407d7bcf8287d3c19e2a839c6feaedc74ce0156d3542e22"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "9acc61f819a004eed34356b53c332c98cb20e00470137686e092977bcc124b04"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "3769817fed51b9a6d1d37b392ed1d5ad3f293072c8c11de8140570d9e89c4ae5"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "df9ebf57a76e827abe148fc51ca11307f6fe42a54219adc3a9d9d85eecb49c5d"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "de714b01ba69ef9252d5fff938823753ee5c93668a31e7cf63f87996cfa8b34a"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "c9fbe894e6e9f6314d52b136bf037b7d832edfe3b91303394ed48ce82efc68a1"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "87bf96bfcf0ae4730b50163cff2ed18ff7fe19ff3c33db678e2e5ed3e4e7712e"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "627c84d47976ea6be62a61e9e7367e7829517ed366105c8d307442a9125eadac"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "8797498c42b37873b076aa1e45546316f7411b7bd08d62db3abd542ba9b01a12"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "linear",
+      "arm": "original",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "linear",
+        "initialization": "original",
+        "initial_theta_sha256": "6aa0aadfb6f63b74c0fd5c814fd991a0f0ef6ad7d14f5d287b5c9acecb0cddab",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.1407669999753125,
+        "full_bank_seconds": 4.279189999972004,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.215837299998384,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.2671391000039876,
+            "minibatch_loss": [
+              1.13850998878479,
+              1.1376631259918213,
+              0.8133389353752136,
+              0.8127373456954956,
+              0.9984194040298462,
+              0.997575044631958
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 5.026885574466178e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "3bb71c78e3745f88cc66bd49c8ba0a3f0d0fa7db419ff737fdc86e462d91f2ba"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "fa25782173b184cbd01faad2a7df8a0c4dbe8ab837481d0553c921e9f47d358c"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "c32b90052b9fc37de815eafc9159710e5d96890501677b03625c4fc0fc494c15"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "26e36536503a15d41ef3d9932fd7fa1b209c78c20e7a009fca49de8d0dfd7740"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "738868a0a3db27fa4a5c1789e1ffed8a34c82b5990ba5aec95bbd5416d665924"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "6a2abe9fa220c1b8129c955c3b5341e3295be9ff9c1f4ae6ee3991f5248a46af"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "eeb91d1a87c489cc37264705a7eab1dc19463cb86174fc331322e05e45e21da5"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "d20a3533ea36a4efaeeffefef82e88cbd850bebf8b89a19a785413e7a573f2bd"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "59a21f99e83f09ed75f5c970b008d534046a8eca1d2b0d0e13889b6414c64c20"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "ac05b9154fa657a24759a66440d58f60e3dced3a98ceefeb4d6c92da31b9296a"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "1fd0919247c6f6435f11fa9fd6d1fd0e6ee6d33236000d1b879bc930c2e5b056"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "aad0c53ce2fec79cc47550a68c51e3078bebe6f0ebeedb5e669ebc669de7b134"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "linear",
+      "arm": "aligned",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "linear",
+        "initialization": "aligned",
+        "initial_theta_sha256": "911ebf34745352d0e60bfcf14adf983b624b37719b8e8e1453031c8a67ef060f",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14657919999444857,
+        "full_bank_seconds": 4.409611399983987,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.289794099982828,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.397448399977293,
+            "minibatch_loss": [
+              1.1393722295761108,
+              1.1828829050064087,
+              0.8106672763824463,
+              0.8336873650550842,
+              0.9946926832199097,
+              0.9959896802902222
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 5.407000305268639e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "216d8bd6a071563d4983b84a027e228589616e090806ea50592764d749777c32"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "dc65f09517cf0922c3031d0c2fc0ce1a249c0482fd7648867537b9ffa0dc61fb"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "09624bd0707d7299fd74833c42a2fd4b55ee615d7bdb0211c51154b3bd02c42a"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "b972d3013822dc0fb43632618922fdba32e1cd3a69af2c9f38b05f53b9749d4f"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "e7dc5c86533b173e89c1e3d387eccabef9ff44efece382c1e3b39797e0d46bda"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "951e674ae655c9f4448f36cef0b936271c8b1e0193eefd950b010d5fef09e202"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "52fb191ec3ddb50e0bf76b85a699860512bf7f067bdde1d3b2934da46186f297"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "a7d2f7c3d56e10b03fb0d2eaadd7af4d7f699999cabd384f1e9c2a17ef0e07d6"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "2a1f4876531d384cda4b4c03b130d21a239c5ff94b2da67925bdb00fdf0c4b3f"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "c0e323d85f3987a3e3a3bf8e16d49501ffabf7b72b2b1edb2d19f37c45815443"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "d06592aa4e8bb1f184d714d8d91c2bb92860bf578cf43422ae5103b4bc396536"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "ed0738c353be6e4d0ddee0a5f071a3872e90377ae914a1a60a03aae8293a3f37"
+        }
+      ]
+    },
+    {
+      "variant": "soft5m",
+      "mode": "linear",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "soft5m",
+        "head_mode": "linear",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "806cb08163a4178949a3d8c7ac7dfcf96a540975d87e76299e5c91d102a8ee9c",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.143000399984885,
+        "full_bank_seconds": 4.3662632999476045,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.274549899972044,
+            "minibatch_loss": [
+              0.923548698425293,
+              0.923548698425293,
+              1.124969244003296,
+              1.124969244003296,
+              1.0039160251617432,
+              1.0039160251617432
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.354060899990145,
+            "minibatch_loss": [
+              1.1396632194519043,
+              1.1819413900375366,
+              0.812727689743042,
+              0.8436989784240723,
+              0.9942644834518433,
+              1.0019611120224
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.157571648453427e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "cbbfa2fcca7554479dff2baf88ce5af469d751fc248d5b78909ceb6df6dd28de"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "c607b16c74ce8e283a66be14cf1e47ee5c7c17f2db2f06efb48e52c80da506da"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "90b5adef8346936c66e195a13cd37e0e23d5bcaa5e96fe8d3905f9df07782af9"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "c80b88c4f74c0abd167374eda934f9b97c238111a30e483b2a9137e0fe6a207e"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "9456e47efe469ba9b2ec4e2ac8dd318321ac7d18f05b703f8174d0a442eba112"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "ff86fd655b6257c994f5c2a0187367fca4f8b723df54319c2ec126f5caa2f414"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "0505e70c49bc858860a001dd7fac8a7081408a2930f82bddf170be8feec8822b"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "42614f7f28d7c4e3b012cb376f09015f1b2b9d4c3ea30015b6358dfb6f083300"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "c321e82cfa153e51b291db64d0c0d396b77152176938b9c8b78f8e9e53df52a4"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "7afd2ddd0ce60313a082bea2272bb9711cfc91d644918c6c08f1712bc3d9cb84"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "72d4354d94d4ad2ec0557f486ff2bb18d44986401ce0a2018ef25cdc9cb58d56"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "1badd9d3932e576f8bc0f2c63a6ecc10ed4a4a278d3904fac746a23f70d05ea5"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "unit",
+      "arm": "original",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "unit",
+        "initialization": "original",
+        "initial_theta_sha256": "6aa0aadfb6f63b74c0fd5c814fd991a0f0ef6ad7d14f5d287b5c9acecb0cddab",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14070150000043213,
+        "full_bank_seconds": 4.297314500028733,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.1771022000466473,
+            "minibatch_loss": [
+              0.924048900604248,
+              0.924048900604248,
+              1.1254692077636719,
+              1.1254692077636719,
+              1.0044161081314087,
+              1.0044161081314087
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.285284200042952,
+            "minibatch_loss": [
+              1.1390095949172974,
+              1.138159990310669,
+              0.8138388991355896,
+              0.8132370114326477,
+              0.9989197850227356,
+              0.9980790019035339
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 4.6363128447524105e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "f35d47fc115adeb1e93780ab394f427ecdfe02fa3726f2650ac26f97341471f0"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "4b4de8a5a17500754b84b4455421909d7508a9afa699a175ea625fc0643d5692"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "21e6119be63d90188919bdc753c1876a26ac4e177de7d75e9448a75334fec4b4"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "ce6ce3bd7b7e9c0e9b6837ac319571a66648858dfb5dbcca70e44de08d3147be"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "fcf697dbabdd01e67905613585db26fa03f8fa1110ad600ffde0acfa287d58f0"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "125ab49c2f45b4f661605a475d2143fc73e581a2c053b584cb0226a80abbea60"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "1eaa9359ab6ead337dcff530c7940b7e59e158af0517b12638555e3523936f58"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "7bb676bdaf5c30af2a94d849e0e998cbe684ebe227017a5e341f595dc5d1640a"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "24be11cdbf5d1f715c746c5e0ba7e2f8556af68bc094ff242515ead7c62cb2fc"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "fb167004d6a3e32dc3e15400cc6bd961815bc8285fc7d2473b544204b9cf91dc"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "96cecc4350d4d9c4528a48a9878d4abcf6f27cb096f4522bb95fc30711e94980"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "619a53453a832ca00baf2104e11f63fb944c19fa39b70645328f4f5ed3e97707"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "unit",
+      "arm": "aligned",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "unit",
+        "initialization": "aligned",
+        "initial_theta_sha256": "911ebf34745352d0e60bfcf14adf983b624b37719b8e8e1453031c8a67ef060f",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14358619996346533,
+        "full_bank_seconds": 4.317895399988629,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.2344841999583878,
+            "minibatch_loss": [
+              0.9243806004524231,
+              0.9243806004524231,
+              1.125508189201355,
+              1.125508189201355,
+              1.0044454336166382,
+              1.0044454336166382
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.305741999996826,
+            "minibatch_loss": [
+              1.1399009227752686,
+              1.177170753479004,
+              0.8112390041351318,
+              0.8284097909927368,
+              0.9951422214508057,
+              0.9959807395935059
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.243784784639047e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "15581144bec6410e04ff8f71f35ea07f71eef2c8878c8317e956b4a3f2b4d5d2"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "5902f360431c19abc6f1d424fb99167536b97d754eb18e55429a63eb892138ce"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "789d98d9702f9a5592c94bb85ac971ceace44e9e57a3e1734a5e441e91a1caae"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "0db5f8d3cf33c88fd9854a888cd21d2e15c0994e5ee56b2b8fe2189d511bea46"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "d6e678ae4cab8c47ad4da3be20667f5091cbeaf8f698677f241b21583ab328e8"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "cab12d35540caec6614917b77965a748142c33ca53f5d2f1c29cdb13e1d20745"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "45e632772b7a80ca6aa2a35747e455dad6153b0fb923fee58d21c80d2bb9fc13"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "91c128760f3d9416c22c5a3fa0e8634949f7995b9cface84890e5f8122fb1433"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "2d4437f0d6f27bf8ded862878b5610ac39ca1f15163b4d01fe6b8a6ac75bceb3"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "a813fc56a49a925c9c8fcb908a7f2790a6f940caf0105fdc1d8887cec7a00239"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "6a93280d489bb2c2d94f38b178124636978bb9b41cd95dca4906a23b5eb4dcdb"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "5582210ec3518bcdcbbc7f4fab073ab54751516268042bda74014fcd641d0981"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "unit",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "unit",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "806cb08163a4178949a3d8c7ac7dfcf96a540975d87e76299e5c91d102a8ee9c",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14419080002699047,
+        "full_bank_seconds": 4.30385159997968,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.21886349999113,
+            "minibatch_loss": [
+              0.924187958240509,
+              0.924187958240509,
+              1.1251329183578491,
+              1.1251329183578491,
+              1.004669427871704,
+              1.004669427871704
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.291556300013326,
+            "minibatch_loss": [
+              1.1401947736740112,
+              1.1749613285064697,
+              0.8130180835723877,
+              0.8391441106796265,
+              0.9949236512184143,
+              1.0016624927520752
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 1.3829834539791364e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "4a76f904c7e03ab69d4090868bb848a8fd0c7c999b77dc6d31df18577da52a6f"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "a865ad19d1845b2b69dfc16a07eca0fb3a80c86be39424d56bd7663fe6ad9bdb"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "8bb284120dd3d0851d025cc228b307dc0144e9314b2f322a2df4b3bc99412717"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "39f4fe3a0d52dce6c110d9721c07cb98509f6778f14e6ec7bae38d20ea42fd11"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "fd8376a6dba7d855565b2fb05561c1fd24e36c61c85719e27571125826d05ff1"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "a4713dfc3109a8d16cd1e53bf4bec75595ce146d43a74f7acd2884d8cf5e49c8"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "f419ca14adc7be248e7ee3d8c8f7ae2716f0b15e5b188fd2f2b318ec97d10207"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "23091e5de86f99bdb45fd5266bd20f86706126c33ee6a11a364a999db330a222"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "6495994dd754cf543db31956e0dcd42483675a4c714b17163f09b83b1e71882f"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "2b7a7b786707b965037b466edabdd9177f8da3337d8197df390e5d879b65cb4c"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "d84960444c230f3b31c241de0b2e9a84ffc5dde214a2b015ff7c3a08032cdacb"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "25192e215fe2f9b3dd63695a0a51ad230287328984eb55314a5452b27e82666f"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "wide",
+      "arm": "original",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "wide",
+        "initialization": "original",
+        "initial_theta_sha256": "6aa0aadfb6f63b74c0fd5c814fd991a0f0ef6ad7d14f5d287b5c9acecb0cddab",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14140230003977194,
+        "full_bank_seconds": 4.292457600007765,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.1864673000527546,
+            "minibatch_loss": [
+              0.924048900604248,
+              0.924048900604248,
+              1.1254692077636719,
+              1.1254692077636719,
+              1.0044161081314087,
+              1.0044161081314087
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.280106900027022,
+            "minibatch_loss": [
+              1.1390095949172974,
+              1.138159990310669,
+              0.8138388991355896,
+              0.8132370114326477,
+              0.9989197850227356,
+              0.9980790019035339
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 4.636198625007637e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "0379fc317a59fcea1e0299651990f72de5fd634429034ab9246e75c96e0a83db"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "287a9638a9408769d297eaf414afd07fc0b5ef449356224ec4865b3262efa913"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "2de8b2c3a68f8fa4f2c3bbf76c47d41a454650cfba3af8f18f832384d1c06bcf"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "926f6b4146dbce420bd6c7f7b5b4eaa9f561f44895da7828613de72d821b0fd8"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "5daff1b224a576fe25476fc5cb014a47d7f0a4dd24f8d2a07ce75572946ebb82"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "e59aca238914aa0936a2dd77ae3ce6c2004405d6061a060571fb7e287b434c3e"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "3b007f4179d87a1c85564e143496994d4437e972ae107560d0cce327be947fcc"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "a03b5cc758298f34ad0a1b360024302ee65db7e5cc2dbd973e0249a8656784c0"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "4737c7b6d1213f62f52e231f49850b0df8a8b8d653b9557094fc6759b2124ac9"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "536de830e31d19a3c767fb1c16933153eb61692d3809b3b685e1a77ea3a18f5f"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "1790744d3d0b47e16e7cabdc5e4ce7e971c0cf0f2956576899e215880cf3a97d"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "6ff8d79d1f35b78d7d14c74b38e38af0e961c599d9ff3fea7f8170f553672b95"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "wide",
+      "arm": "aligned",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "wide",
+        "initialization": "aligned",
+        "initial_theta_sha256": "911ebf34745352d0e60bfcf14adf983b624b37719b8e8e1453031c8a67ef060f",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.1445289999828674,
+        "full_bank_seconds": 4.296887499978766,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.219507400004659,
+            "minibatch_loss": [
+              0.9243806004524231,
+              0.9243806004524231,
+              1.125508189201355,
+              1.125508189201355,
+              1.0044454336166382,
+              1.0044454336166382
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.284577100013848,
+            "minibatch_loss": [
+              1.139902949333191,
+              1.1827638149261475,
+              0.8112371563911438,
+              0.8335535526275635,
+              0.9951401352882385,
+              0.9980483651161194
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 3.2015841497923248e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "e7a702ec4ae540cebbfb15d88339e5e5b6a060eea5bf4afdfef5466ebceee22b"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "b72411d34313f8a597fa68881173297b8473a3169f73cacf53dafe992f6b8697"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "42148d6423afb4a3a933821d9a20960e8b110626ad8f366de8f11c804a821b13"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "6cad8ba73695ff799ca3e926fb58cab2eeec7d8be6ef9fb2196501c5e9d5dcab"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "d1a5eb79c4c8ab479e1c8745445b5c52be1255477fb2acf6f19b1fffbfb6dabd"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "7045d1e975489b97e7a9bcb8daa71f765a253e2149edf3178a309fce78126c24"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "b96467e0d92a15c6b7a16e18c4f66e1f228d787563cc64378d31decadde3d907"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "53a748a6a19b457d145f3b35f8a1a7140cc16ad4a907e2df8a4b6b2f64fafd29"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "abc39f68887b3225d7c360a2c6216e385eb9e8e04a87d73d51bc7e686c3f7913"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "6efb3f49e9d26a0a1365ea64a948ab9435f4efd806b89742d0d78fbfadc887d4"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "1fdd8644b5c3c067001aa3fa558ad587e4fb34339ffae5846d6643748684d273"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "a34fce48975a0ec156d94bac4ea0ff4cf23c424435b67d0ee9e7a8f07207dd19"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "wide",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "wide",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "806cb08163a4178949a3d8c7ac7dfcf96a540975d87e76299e5c91d102a8ee9c",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.142944399965927,
+        "full_bank_seconds": 4.305282999994233,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.223401899973396,
+            "minibatch_loss": [
+              0.924187958240509,
+              0.924187958240509,
+              1.1251329183578491,
+              1.1251329183578491,
+              1.004669427871704,
+              1.004669427871704
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.293162800022401,
+            "minibatch_loss": [
+              1.1401971578598022,
+              1.1793638467788696,
+              0.8130174875259399,
+              0.8409558534622192,
+              0.9949193000793457,
+              1.0041146278381348
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.0263980697876605e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "518402588620efc1fc4c1d3fce85f9f065ee71eb4476d761eeec56020e6907de"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "0568b6aedaea3af2419f90f6234931f6bc3d3a1af40b548101b94534290f85d4"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "ff90e7dffe3e32f22408c9e6b72f5a236fe123593d30189e4ee92297036451ad"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "ab55adf6683c231309824255a869cd39b0ac9516d7e28574cf0f956082fbb933"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "44a1d545a0751557004d7bcb19360de5feffd91b7229f3d78f7b2e18960b249e"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "c142407ed6c0ddb8609d5eb79e517b5203d68a95e02713e232e3232e229b15ad"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "445249989acd1f5b811217931f56fed3b09ae5aa44f3914ec5ce4698746fc09e"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "9756ff67f1e3b7b3859acf756a16c17e7a64c7143b29567b33f785e5eeec69d3"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "4fb03eda1f830e86d2b128942990da855df2b2f260e4c09c034a84b19242724c"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "bb0e6c807478582f04ad73b9b19325cf4de0e420da20da921cdbd81a1f64c0d8"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "c65ceccfa652f38d37d8b27b5826ac6858a252f383fe7436f03272dedd61606f"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "15c08a0c300df7369708b18c5af4bb9d2e37ca463b90848e00cf71fb116f96d6"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "linear",
+      "arm": "original",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "linear",
+        "initialization": "original",
+        "initial_theta_sha256": "6aa0aadfb6f63b74c0fd5c814fd991a0f0ef6ad7d14f5d287b5c9acecb0cddab",
+        "encoder_digests": [],
+        "transferred_parameters": 0,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14045249996706843,
+        "full_bank_seconds": 4.287784099986311,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.1988795999786817,
+            "minibatch_loss": [
+              0.924048900604248,
+              0.924048900604248,
+              1.1254692077636719,
+              1.1254692077636719,
+              1.0044161081314087,
+              1.0044161081314087
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.275505699974019,
+            "minibatch_loss": [
+              1.1390095949172974,
+              1.138159990310669,
+              0.8138388991355896,
+              0.8132370114326477,
+              0.9989197850227356,
+              0.9980790019035339
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 4.6362062633420464e-08,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "f98f97595fa5a395c5053a40ce21c1aae31720ca4b924565f06074d286dd550c"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "44923cc58424a5a39f9ba6151fa2d320f35f86986f292bea5d698fea73ddeb27"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "03f912f0e8411782f2e4d50c453b9dc0755388a94b19c38c2aaf12e3a48773a7"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "e62fa2524b6b9e87ab82fef8b4d994415148310fc832df0d47538e2b929eda67"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "956d3f53556ed89fb247c4875ddf0d3d281c915bf3b68184050f88aa0e6e29e9"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "08335bf26a51e7716857950ef4939966a84136b0fdc864c322f2ca380f7013b3"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "7bc80afa53c091a734b226468b296db52bb3b9c5f60229fc85f22895aadf8765"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "fe4137d1f1ca4c09dffc541d25bcf700801b112011efccefa5b934c91808530e"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "a83f21c29283c8798eb0b6e6369459c68b2a18517213dcc9a541ffac5e957529"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "130e8d17cc60195cc781cbe138e0fdcef11069c60dcbed1083f1db9b2afb65c9"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "35cd9460e5767af65f8493142acc1f7373b043afb404fd3b93d46bc1441e1fc3"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "ddececa92210a5e7c288527c201a1055442e5cbf4e028ef0121ae5cbe7e5bf9f"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "linear",
+      "arm": "aligned",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "linear",
+        "initialization": "aligned",
+        "initial_theta_sha256": "911ebf34745352d0e60bfcf14adf983b624b37719b8e8e1453031c8a67ef060f",
+        "encoder_digests": [
+          "ce46c05f711adb65bdc4b23482e8a6407ec26ff58fa67ce0e89720d9a1886ac1",
+          "943d434dd70f8896c30657f27f06842008a6ccd49fb39aafea457435a7693094",
+          "3f5ad60ceb5dc9c1628d5e2b50b423aeae632f05f78cd28cc01901e2fefb2237"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14305219997186214,
+        "full_bank_seconds": 4.334222299978137,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.2253764999913983,
+            "minibatch_loss": [
+              0.9243806004524231,
+              0.9243806004524231,
+              1.125508189201355,
+              1.125508189201355,
+              1.0044454336166382,
+              1.0044454336166382
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.322080000012647,
+            "minibatch_loss": [
+              1.13990318775177,
+              1.1831952333450317,
+              0.811237096786499,
+              0.8339827656745911,
+              0.9951401352882385,
+              0.9982109665870667
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 3.17062192323192e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "2881e7ea20c373b3f3e92bab4f4dba77058239cf5cc80a6a09a558535775637b"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "0044a92759a566a8fab8f7ba7d02711e315eafb998f7f12699b169d6d271bd28"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "cece949a972b8fde7e18e490e4eb80234bed50cc7494a70ea20b60766a021cf8"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "11b4cca91ed0773833c5a4b79ea0f9a810c5ec87c02b77a6b0f7b3891d92c020"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "74af278b511b7bc3e704425c88afdee45dce6cbc3030135fe016119413ae3332"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "51eb49a0a5e1e9fac03802460747b4794033217008dd277c20e02b3065cf7b41"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "92a8722f275c1420204b5bddad0c5b81fedadac11c0329a477e2dd8fbe8c2c59"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "a5b13ea702f26c8746b0c59ab74546bab45761b3116ae534fe189933496684e6"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "467c77cc5874d289a9863cbba21fc4940ccf238f758255b65a20ac3545e38ac5"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "e4106654d31119ddd596b2f5c568500cea3e544659dcd85797722cc1279060df"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "5f88e9cf71ce9f341ff59a6f9e74ccf957d9400606f2e973d03853206fb1afff"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "e9423aeb931d93e71dc6720452e4516baf87b25703300313a6ca06e663797644"
+        }
+      ]
+    },
+    {
+      "variant": "dynamic5m",
+      "mode": "linear",
+      "arm": "shuffled",
+      "fit": {
+        "variant": "dynamic5m",
+        "head_mode": "linear",
+        "initialization": "shuffled",
+        "initial_theta_sha256": "806cb08163a4178949a3d8c7ac7dfcf96a540975d87e76299e5c91d102a8ee9c",
+        "encoder_digests": [
+          "070641334975bbfc149f51ae62c6bf593ac42ad0adf36e06686d4e196957d8b9",
+          "705f616d473274c2e842a7d71f0930b1355008479570712dc7737fa0a7c7fd67",
+          "049797760028b4d9dda2086c32312d0a885b5cef44de1f53deaeb4ec21a83414"
+        ],
+        "transferred_parameters": 105856,
+        "steps": 2,
+        "checkpoints": [
+          1,
+          2
+        ],
+        "horizon": 8192,
+        "batch_size": 64,
+        "slots": [
+          [
+            17,
+            1e-05
+          ],
+          [
+            17,
+            0.0001
+          ],
+          [
+            29,
+            1e-05
+          ],
+          [
+            29,
+            0.0001
+          ],
+          [
+            43,
+            1e-05
+          ],
+          [
+            43,
+            0.0001
+          ]
+        ],
+        "sampling_sha256": "15cb6e0cf5e1b9a362d72a954b8c52aa4b0b2f16417379b646f2a0db5cc786bb",
+        "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+        "setup_seconds": 0.14365020004333928,
+        "full_bank_seconds": 4.297775900049601,
+        "trace": [
+          {
+            "step": 1,
+            "seconds": 2.2130261000129394,
+            "minibatch_loss": [
+              0.924187958240509,
+              0.924187958240509,
+              1.1251329183578491,
+              1.1251329183578491,
+              1.004669427871704,
+              1.004669427871704
+            ]
+          },
+          {
+            "step": 2,
+            "seconds": 4.285665400035214,
+            "minibatch_loss": [
+              1.1401972770690918,
+              1.179695725440979,
+              0.8130173683166504,
+              0.8410875797271729,
+              0.9949187636375427,
+              1.0043060779571533
+            ]
+          }
+        ],
+        "final_learning_rates": [
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05,
+          9.99999883788405e-06,
+          9.99999901978299e-05
+        ],
+        "cuda_peak_allocated_bytes": null,
+        "device": "cpu",
+        "engine": "eager",
+        "trainable_parameters": 4846179,
+        "deployed_parameters": 4846822
+      },
+      "maximum_native_lab": 2.137053368045372e-06,
+      "payloads": [
+        {
+          "step": 1,
+          "slot": 0,
+          "payload_digest": "eb62aebe19b0745bffe5413b4cd639661f1b01a205b351ec244d23671041b349"
+        },
+        {
+          "step": 1,
+          "slot": 1,
+          "payload_digest": "30cf67456b5898f01c53b9c44cda45d9b6be31cee8b7a88facaa6715fe389f14"
+        },
+        {
+          "step": 1,
+          "slot": 2,
+          "payload_digest": "83b78275aa66aad30683cfee13e28681b5fcbfcbe43995bdbce81a23cc329bfb"
+        },
+        {
+          "step": 1,
+          "slot": 3,
+          "payload_digest": "a4c331eddd1617206b76787066718475430fa9bf992774c57106eed9c49be0c9"
+        },
+        {
+          "step": 1,
+          "slot": 4,
+          "payload_digest": "3434f8e8d1dd37beb5899f8b60eff0d19e147bee2bddbf07f40e4a79f34ecfa1"
+        },
+        {
+          "step": 1,
+          "slot": 5,
+          "payload_digest": "a18e5edf218de2d2fe4087a1cf28794ab6f237121c8aa5015fe1996d1d6df9f0"
+        },
+        {
+          "step": 2,
+          "slot": 0,
+          "payload_digest": "85037625165647474a17bd53297bcf1f165cdaa027838d1921e53f73f40e0186"
+        },
+        {
+          "step": 2,
+          "slot": 1,
+          "payload_digest": "c7ae8881d6992679e3f5fdee6ff4fef68a4d677417d0652e8ae6a73041485005"
+        },
+        {
+          "step": 2,
+          "slot": 2,
+          "payload_digest": "46f61204f32bccaf859e174c6ff53239575c9fbd71caf876999998fac88c2968"
+        },
+        {
+          "step": 2,
+          "slot": 3,
+          "payload_digest": "076015b3e92935b076453eebe1fac79ea79f98c9ab8688e511e86cada31da24c"
+        },
+        {
+          "step": 2,
+          "slot": 4,
+          "payload_digest": "2e670d108fcc54f73686a3918ff269bf4708fc95ef53ee5de8bd37c15e820125"
+        },
+        {
+          "step": 2,
+          "slot": 5,
+          "payload_digest": "e9ab174fc73a3fc18f33bf0d358443649aa137a23bfe59a9047ffd2db8393ba9"
+        }
+      ]
+    }
+  ],
+  "seconds": 180.3053117999807
+}

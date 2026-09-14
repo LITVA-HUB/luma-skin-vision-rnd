@@ -1,0 +1,44 @@
+{
+  "protocol": "ipod_to_slr",
+  "method": "mlp",
+  "parameter": 0.003,
+  "seed": 43,
+  "fold": 0,
+  "sampled_minibatch_loss_trace": [
+    [
+      64,
+      0.2268122434616089
+    ],
+    [
+      128,
+      0.15420733392238617
+    ],
+    [
+      256,
+      0.18145327270030975
+    ],
+    [
+      512,
+      0.14989519119262695
+    ]
+  ],
+  "optimizer_updates": 512,
+  "fit_seconds": 0.5133488000137731,
+  "peak_allocated_bytes": 18489856,
+  "weighted_train_normalized_sse": 172.84936481152073,
+  "numeric_scalars": 2749,
+  "numeric_bytes": 10996,
+  "inner_metrics": {
+    "person_mean": 4.533217259513788,
+    "image_mean": 4.531857965875225,
+    "site_person_mean": 4.527317265829781,
+    "median": 3.814135129712496,
+    "p90": 8.31957986473929,
+    "gt5": 0.3612167300380228,
+    "gt10": 0.057034220532319393,
+    "n_images": 263,
+    "n_people": 6
+  },
+  "artifact_sha256": "43c68061c30c5d4db315564ee53002efc21e1a980d8ea404c271ed61eb23455c",
+  "serialized_bytes": 13470
+}

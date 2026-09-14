@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "completed_unix": 1789284423.8783498,
+  "source_lock_sha256": "59ca583d3fad34e16d0ae003b2d9d89df453bc730b0040d557407c86f2cb10a5",
+  "results_sha256": "79317e6bf3b76539004bf4a700be410d4bf9b7f0aad839da080df11349d83ded",
+  "previous_goal_turn_classification": "progress: S source/input/artifacts and terminal process state reverified before D",
+  "tests_passed": 11,
+  "pytest_seconds": 0.38,
+  "pytest_command": "python -m pytest tests/test_chromaseed_camera_support.py -q",
+  "pytest_evidence": "Captured 11 passed in0.38s after formatting and before primary run. All core/runner/test sources remain frozen and unchanged.",
+  "tested_sources": {
+    "scripts/chromaseed_camera_support.py": "f13cc228ef6359d269e3b794f1f78cf140f9a584f505aef482487af19da53d39",
+    "scripts/chromaseed_camera_support_run.py": "273324e47e6c81ca0ab07677f35548f245b39426a0f5fce664d1e0f1b2ffbd28",
+    "tests/test_chromaseed_camera_support.py": "4a77b110dd523ad73d85de3e56e9ce2e51b7f7624c7422345b399d7dde4e8c76",
+    "docs/research/chromaseed_camera_support_v1_protocol.md": "16ffa7f0781a19919354d2087318458879c8b68eab68b5fb061264ee564359fb"
+  },
+  "ruff": "Fresh check passes all4 D scripts and1 D test",
+  "git_diff_check": "passed",
+  "original_repository_git_status": "clean",
+  "environment": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "pytest": "9.1.1",
+    "ruff": "0.16.6"
+  },
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "source_locks_verified": [
+    {
+      "run": "skin_local_search_v1",
+      "source_lock_sha256": "9665568430b03e66cc5bb5b6b564a7bffd1e9a9e4fb726660c27e31116c57ea5",
+      "source_entries_checked": 4,
+      "unique_source_paths_checked": 4
+    },
+    {
+      "run": "skin_local_search_compact_v1",
+      "source_lock_sha256": "f2ffca50caf33e79247d7b15ca4c899c2347d6265ba690db9a886c40c2440906",
+      "source_entries_checked": 8,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_v1",
+      "source_lock_sha256": "286cf15eeb9dc5cbba45aa88db4751c7b9829db1ba2ba3a5a5ddf2d2a9539deb",
+      "source_entries_checked": 6,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_frozen_v1",
+      "source_lock_sha256": "2a2834f81b283ba76cecc3dd0101144183c6f26968772bf2c3c1d6eb5c9b2626",
+      "source_entries_checked": 6,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_v1",
+      "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+      "source_entries_checked": 6,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_precision_v1",
+      "source_lock_sha256": "46562a2cda469546787ed6f04036eecf3a940be7e0075030c513ad4085a7d360",
+      "source_entries_checked": 4,
+      "unique_source_paths_checked": 4
+    },
+    {
+      "run": "chromaseed_kernel_v1",
+      "source_lock_sha256": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+      "source_entries_checked": 7,
+      "unique_source_paths_checked": 7
+    },
+    {
+      "run": "chromaseed_fast_kernel_v1",
+      "source_lock_sha256": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+      "source_entries_checked": 10,
+      "unique_source_paths_checked": 10
+    },
+    {
+      "run": "chromaseed_condensed_exact_v1",
+      "source_lock_sha256": "204f8c1352e56e5656d89ed3dc258c63f95965d30f42aea347fbee7868f99b8f",
+      "source_entries_checked": 18,
+      "unique_source_paths_checked": 18
+    },
+    {
+      "run": "chromaseed_perceptual_v1",
+      "source_lock_sha256": "9ce75fddcfc3241b271318da51eead680d78a9e51877b346aed64716b5550e92",
+      "source_entries_checked": 25,
+      "unique_source_paths_checked": 25
+    },
+    {
+      "run": "chromaseed_weak_ridge_v1",
+      "source_lock_sha256": "c16e607e05cc9750ccc3275c16d482c2fb863c693d920ab366b0e0200c1d33e8",
+      "source_entries_checked": 31,
+      "unique_source_paths_checked": 31
+    },
+    {
+      "run": "chromaseed_selection_stability_v1",
+      "source_lock_sha256": "88189161a7cee0c87d8ed5da2695083374564984c01ad77e3711f5fd49b3efea",
+      "source_entries_checked": 35,
+      "unique_source_paths_checked": 35
+    },
+    {
+      "run": "chromaseed_camera_support_v1",
+      "source_lock_sha256": "59ca583d3fad34e16d0ae003b2d9d89df453bc730b0040d557407c86f2cb10a5",
+      "source_entries_checked": 41,
+      "unique_source_paths_checked": 41
+    }
+  ],
+  "source_entries_checked_total": 201,
+  "unique_source_paths_per_run_checked_total": 199,
+  "prior_parent_artifact_bindings_checked": 136,
+  "diagnostic_input_bindings_checked": 25,
+  "current_input_bindings_checked": 2,
+  "parent_S_verification_sha256": "591fd57564487c023b67fa7f8e1b568261228f51d50fde3eb23ab850c192b89e",
+  "parent_S_artifacts_numeric_postprocess_checked": 14,
+  "current_numeric_file_hashes_checked": {
+    "predictions.npz": "c1f48dfcbad3b2e1249757974fd16dfb5a23a062757be28ab392d028ec50257c",
+    "pairs.npz": "21780dbe6f67ffea1a8656d8e45006ce01c8ac33b9a81ea7bd057618effdd9ae",
+    "support.npz": "d33a53a7a77c5096f4a104744cc8f17ec217d0c4cb9715fbbf8913227b8fc1ac"
+  },
+  "independent_audit_sha256": "d308280c2b9b2fe98997c6ddbd4f911edd1ebff1a8bd87cd498469644f80b9e0",
+  "independent_audit_checks": {
+    "classifier_refits": 24,
+    "prediction_rows": 7728,
+    "all_person_metrics": 8,
+    "fold_metrics": 24,
+    "exhaustive_matching_problems": 15,
+    "matched_metric_groups": 40,
+    "support_roles_views": 6,
+    "support_row_distances": 5796,
+    "target_camera_summaries": 2
+  },
+  "independent_audit_maxima": {
+    "classifier_score_drift": 4.529709940470639e-14,
+    "support_distance_drift": 8.881784197001252e-16,
+    "kernel_width_drift": 4.440892098500626e-16
+  },
+  "active_study_processes": 0,
+  "terminal_evidence": "Primary PID37356 returned exit0 directly. Initial audit returned exit1 only at NumPy int64 JSON serialization; writer fixed and full final audit returned exit0 directly. Report returned exit0. Fresh process scan shows no D/S/W jobs.",
+  "local_markdown_links_checked": 41,
+  "figures_visually_inspected": [
+    "camera_support.png"
+  ],
+  "artifact_sha256": {
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\audit.json": "d308280c2b9b2fe98997c6ddbd4f911edd1ebff1a8bd87cd498469644f80b9e0",
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\camera_support.png": "4d03be6d09f2f10e6fbd11026a700d910cbdb129ec4c98c49d0f265e0cfdf348",
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\camera_support.svg": "f2eac04f966aa8ab533ef906b73e90a1960ee8c1e5c8b238981026d37efa4fed",
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\report.md": "dbf3d6c414a8e26b5a36eb77be551c8b04a43442dad8b7ba64a8fc24bd451f8f",
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\reproduce.md": "4b570e87841dec56b08013d99d836b05568d6eaa0235aed431364f4223e8a383",
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\source_lock.json": "59ca583d3fad34e16d0ae003b2d9d89df453bc730b0040d557407c86f2cb10a5",
+    "docs\\benchmarks\\chromaseed_camera_support_v1\\summary.json": "39c4cfb9a8609d497e84aa08954448bf89e610e863f4a19f37a9acd442faef45",
+    "docs\\research\\chromaseed_camera_support_next_decision.md": "1efc2b26d35b71d10c7396739597f65da86f0fe256886aa91f389c24ef95d095",
+    "docs\\superpowers\\plans\\2026-09-13-chromaseed-camera-support.md": "30ccf75f0bd69a401e117ac4b8979fceb08e6f5f778586266e9f981239995743"
+  },
+  "postprocess_sources": {
+    "scripts/chromaseed_camera_support_audit.py": "02da1dde3eb9879395166f6f9411655d4f9373856f5bb7ad8ba0cdde29a307a7",
+    "scripts/chromaseed_camera_support_report.py": "3d697f7f3d6eacf9c7471392778e3894d02d3648c48c864ac93bd036036217a6"
+  },
+  "shortcut_sha256": "df8163eeecc5dcd8cf0fa52e2f52be49fc750bd503c20fdcdbc58ea3985f536e",
+  "goal_classification": "progress; broad goal active; ChromaSeed-G shared-basis conditional residual model planned, not launched",
+  "evidence_limits": "Camera/support diagnosis on reused TRAIN, no new skin-color predictor. Camera/person/acquisition confounded, matched subsets small, support radii descriptive. Ordinary-phone face quality unvalidated."
+}

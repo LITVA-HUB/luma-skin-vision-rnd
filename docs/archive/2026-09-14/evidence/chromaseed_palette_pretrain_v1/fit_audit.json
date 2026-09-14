@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "audit_protocol_sha256": "ae57374df257da493f896a769dffa27f4c027bc972360ec4c6476c6d53142775",
+  "full_auxiliary_models_checked": 6,
+  "encoder_exports_checked": 6,
+  "samples_per_training_loss_check": 19456,
+  "native_architecture_compatibility": [
+    {
+      "variant": "patch5m",
+      "six_encoders_transferred": true,
+      "maximum_drift": 1.6689300537109375e-06
+    },
+    {
+      "variant": "soft5m",
+      "six_encoders_transferred": true,
+      "maximum_drift": 1.6689300537109375e-06
+    },
+    {
+      "variant": "dynamic5m",
+      "six_encoders_transferred": true,
+      "maximum_drift": 1.6689300537109375e-06
+    }
+  ],
+  "independent_losses": {
+    "initial_full_train_mse": [
+      1.011784670070326,
+      1.0034747631234984,
+      1.0010242481559566,
+      1.005130117185551,
+      1.0171121915573174,
+      1.0047172595715863
+    ],
+    "final_full_train_mse": [
+      0.17748598405192317,
+      0.9795816210216569,
+      0.17798169538553654,
+      0.9799734111689204,
+      0.1786954340495652,
+      0.9779267807277059
+    ]
+  },
+  "maximum_encoder_numpy_difference": 1.8277056925697366e-06,
+  "sampling_hash_verified": true,
+  "cuda_initialized": false,
+  "native_finetuning_performed": false,
+  "native_accuracy_claim": false,
+  "seconds": 3.76033819996519
+}

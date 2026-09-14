@@ -1,0 +1,61 @@
+{
+  "classification": "CPU synthetic numerical feasibility only; no GPU speed/capture or production-quality claim",
+  "stream": {
+    "steps": 512,
+    "slots": 6,
+    "parameters_per_slot": 101,
+    "max_parameter_abs": 4.76837158203125e-07,
+    "max_m_abs": 5.960464477539063e-08,
+    "max_v_abs": 0.0,
+    "snapshots": [
+      {
+        "step": 1,
+        "parameters_bitwise": false,
+        "max_parameter_abs": 5.960464477539063e-08
+      },
+      {
+        "step": 8,
+        "parameters_bitwise": false,
+        "max_parameter_abs": 1.1920928955078125e-07
+      },
+      {
+        "step": 64,
+        "parameters_bitwise": false,
+        "max_parameter_abs": 2.384185791015625e-07
+      },
+      {
+        "step": 512,
+        "parameters_bitwise": false,
+        "max_parameter_abs": 4.76837158203125e-07
+      }
+    ],
+    "tolerance": "parameter atol=rtol=2e-6; not a bitwise identity requirement"
+  },
+  "coupled": {
+    "steps": 64,
+    "slots": 6,
+    "architecture": "soft_small four-pass residual branch",
+    "trainable_parameters_per_slot": 14603,
+    "max_parameter_abs": 5.960464477539063e-08,
+    "max_normalized_output_abs": 2.9802322387695312e-08,
+    "parameters_bitwise": false,
+    "tolerance": "weights atol=rtol=2e-6; synthetic normalized outputs atol=rtol=1e-5"
+  },
+  "passed": true,
+  "torch": "2.8.0+cu128",
+  "numpy": "2.5.3",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "cuda_context_initialized": false,
+  "source_sha256": {
+    "scripts/chromaseed_fused_optimizer.py": "71c8c14cee28317020613dff6dc016516d92e997fb89d56e18c0dc1a765c7e1c",
+    "scripts/chromaseed_fused_optimizer_probe.py": "973b80fd223f272f241157963d2623031c1d3072e6e9ba6ab5da176c17581bea",
+    "tests/test_chromaseed_fused_optimizer.py": "fd7d4297ffaef30d584de6ab70b516d065b403b04e8f1fcd6c6839845cf4f8fb",
+    "scripts/chromaseed_refine.py": "a055383293111bc52b2672e71e8cd6201396ba98c73260a1d35b64a104a1156c",
+    "scripts/chromaseed_architecture_scale.py": "ad76f5b04f65536df1768a7c60c1051020547a77cc6776b244417e53569a9047"
+  },
+  "local_library_sha256": {
+    "C:\\Users\\dimal\\Documents\\просто\\luma-skin-vision-rnd\\.venv\\Lib\\site-packages\\torch\\optim\\adamw.py": "cdb96600aa1933dbdabc1880813e90a2aeeeed591adb07068b723c4c3d566dd5",
+    "C:\\Users\\dimal\\Documents\\просто\\luma-skin-vision-rnd\\.venv\\Lib\\site-packages\\torch\\optim\\adam.py": "8ae36d1ddd1ca711bc708694a3c85e54fd0feca99910b93d2006436adf0ee193",
+    "C:\\Users\\dimal\\Documents\\просто\\luma-skin-vision-rnd\\.venv\\Lib\\site-packages\\torch\\utils\\_foreach_utils.py": "93d56d545e2cd0beb15f583aa91449989b09be71a3fc3db657ac8d5c1ffdef48"
+  }
+}

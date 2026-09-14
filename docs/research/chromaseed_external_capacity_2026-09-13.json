@@ -1,0 +1,31 @@
+{
+  "scope": "architecture capacity estimate, not a trained checkpoint measurement",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "device": "meta",
+  "images_read": 0,
+  "models_trained": 0,
+  "pretrained_weights_downloaded": false,
+  "byte_convention": "decimal bytes; excludes executable, allocator and activations",
+  "source_sha256": "99472729a926ee1a1a105c415a0ebbb581dbb9abb6417284a8817db746e10ab0",
+  "models": [
+    {
+      "architecture": "efficientnet_b0_lab3",
+      "parameters": 4011391,
+      "fp32_parameter_bytes": 16045564,
+      "state_dict_numeric_bytes": 16214020,
+      "original_imagenet_parameters": 5288548,
+      "head_in_features": 1280,
+      "arithmetic_count_verified": true
+    },
+    {
+      "architecture": "efficientnet_b4_lab3",
+      "parameters": 17553995,
+      "fp32_parameter_bytes": 70215980,
+      "state_dict_numeric_bytes": 70717548,
+      "original_imagenet_parameters": 19341616,
+      "head_in_features": 1792,
+      "arithmetic_count_verified": true
+    }
+  ]
+}

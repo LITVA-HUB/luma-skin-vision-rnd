@@ -1,0 +1,6707 @@
+{
+  "source_lock_sha256": "f6a8ac340650ae5d62004f59916ba720b702e6dc38f1fedf6928f5797b53f4cf",
+  "selection_sha256": "595f9e44cf31f0d354147d09e1293600ee2cde602727578d3db0525b500ff031",
+  "results_sha256": "7c0007b1e35e675901227340483cf156e0c80703d0d44076c520531235934250",
+  "audit_sha256": "0979a00eebe0866cd6768d0f7f0769aae29e7ec5fdcd9681ca54bb5a9471e381",
+  "runtime_source_sha256": "d51d8794dd537dab7bab8538c1b5aeef6894327a514cbca61e8b4fd2650e76e2",
+  "dependencies": {
+    "scripts/chromaseed_feature_groups.py": "a0d3a11eba62f1e797171d03fe05a652ea53632ff7d01e8d0899d8711f19b33a",
+    "scripts/chromaseed_feature_groups_numpy.py": "26b446ed5753133dee90fb64571c8499774d29b76d5047bd8961e27336e42095",
+    "scripts/chromaseed_projection.py": "fa878f809f194c992f3e9253ca0cd6f32c9e4b0ca1d81df733fa6f735160f6c0",
+    "scripts/chromaseed_projection_numpy.py": "2669e378ea2882093b41e8aaefb4f0571e95e017b11dd91311b4d24389d2de02",
+    "scripts/chromaseed_affine_audit.py": "eedb5736f06f73d10110c93392295bd40264e8532a78c6de583ab170e495accb",
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc"
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "threads": 1,
+    "numpy": "2.5.3"
+  },
+  "records": [
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_static_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18767,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 10.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 81.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 29,
+      "name": "norm_static_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18818,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 10.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.542233338928781e-13,
+        "initialization_us": 44.0,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 43,
+      "name": "norm_static_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18793,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 9.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.242295734817162e-13,
+        "initialization_us": 41.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_static_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4545,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 9.379164112033322e-13,
+        "initialization_us": 68.6,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 29,
+      "name": "norm_static_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4542,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.618527782440651e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 43,
+      "name": "norm_static_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4553,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 11.125,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.247535904753022e-13,
+        "initialization_us": 46.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_static_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4376,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.115907697472721e-13,
+        "initialization_us": 46.8,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 29,
+      "name": "norm_static_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4353,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 48.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 43,
+      "name": "norm_static_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4367,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.247535904753022e-13,
+        "initialization_us": 46.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_static_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6846,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.6342482922482304e-12,
+        "initialization_us": 50.0,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 29,
+      "name": "norm_static_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6936,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.3642420526593924e-12,
+        "initialization_us": 73.5,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 43,
+      "name": "norm_static_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6912,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.881784197001252e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_static_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6007,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.0089706847793423e-12,
+        "initialization_us": 53.1,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "norm_static_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6008,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 46.9,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "norm_static_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6001,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.821210263296962e-13,
+        "initialization_us": 48.6,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_static_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14511,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.039613253960852e-13,
+        "initialization_us": 51.0,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 29,
+      "name": "norm_static_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14504,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.110667527536862e-13,
+        "initialization_us": 49.2,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 43,
+      "name": "norm_static_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14562,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.100187187665142e-13,
+        "initialization_us": 49.4,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_static_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17470,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "norm_static_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17471,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.725,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.323830348264892e-13,
+        "initialization_us": 48.9,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "norm_static_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17440,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.831690603168681e-13,
+        "initialization_us": 50.5,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_static_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13650,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 59.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 29,
+      "name": "norm_static_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13657,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 46.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 43,
+      "name": "norm_static_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13685,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 45.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_joint_soft_raw36_s17",
+      "numeric_bytes": 21973,
+      "archive_bytes": 21168,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 12.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 51.8,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 29,
+      "name": "norm_joint_soft_raw36_s29",
+      "numeric_bytes": 21973,
+      "archive_bytes": 21238,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 50.4,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 43,
+      "name": "norm_joint_soft_raw36_s43",
+      "numeric_bytes": 21973,
+      "archive_bytes": 21205,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 12.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 48.8,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_joint_soft_mean3_s17",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6807,
+      "numpy_only": {
+        "median_us": 12.6,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.1013412404281553e-12,
+        "initialization_us": 62.1,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 29,
+      "name": "norm_joint_soft_mean3_s29",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6811,
+      "numpy_only": {
+        "median_us": 12.8,
+        "p95_us": 13.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 60.5,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 43,
+      "name": "norm_joint_soft_mean3_s43",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6816,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.400124791776761e-13,
+        "initialization_us": 57.9,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_joint_soft_median3_s17",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6623,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 13.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 56.1,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 29,
+      "name": "norm_joint_soft_median3_s29",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6615,
+      "numpy_only": {
+        "median_us": 12.6,
+        "p95_us": 12.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 56.0,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 43,
+      "name": "norm_joint_soft_median3_s43",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6644,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.323830348264892e-13,
+        "initialization_us": 58.5,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_joint_soft_central9_s17",
+      "numeric_bytes": 7834,
+      "archive_bytes": 9149,
+      "numpy_only": {
+        "median_us": 12.8,
+        "p95_us": 13.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 9.166001291305292e-13,
+        "initialization_us": 58.1,
+        "cached_array_bytes": 16569
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 29,
+      "name": "norm_joint_soft_central9_s29",
+      "numeric_bytes": 7834,
+      "archive_bytes": 9234,
+      "numpy_only": {
+        "median_us": 12.9,
+        "p95_us": 13.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.8474111129762605e-12,
+        "initialization_us": 67.2,
+        "cached_array_bytes": 16569
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 43,
+      "name": "norm_joint_soft_central9_s43",
+      "numeric_bytes": 7834,
+      "archive_bytes": 9205,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.784084570834239e-13,
+        "initialization_us": 57.5,
+        "cached_array_bytes": 16569
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_joint_soft_mean_std6_s17",
+      "numeric_bytes": 6259,
+      "archive_bytes": 8285,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.0018652574217413e-12,
+        "initialization_us": 55.7,
+        "cached_array_bytes": 13446
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "norm_joint_soft_mean_std6_s29",
+      "numeric_bytes": 6259,
+      "archive_bytes": 8287,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.925,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.874500968478969e-13,
+        "initialization_us": 54.8,
+        "cached_array_bytes": 13446
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "norm_joint_soft_mean_std6_s43",
+      "numeric_bytes": 6259,
+      "archive_bytes": 8285,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 16.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 56.0,
+        "cached_array_bytes": 13446
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_joint_soft_quant27_s17",
+      "numeric_bytes": 17284,
+      "archive_bytes": 16886,
+      "numpy_only": {
+        "median_us": 13.0,
+        "p95_us": 13.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.186961971048731e-13,
+        "initialization_us": 68.3,
+        "cached_array_bytes": 35307
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 29,
+      "name": "norm_joint_soft_quant27_s29",
+      "numeric_bytes": 17284,
+      "archive_bytes": 16873,
+      "numpy_only": {
+        "median_us": 13.2,
+        "p95_us": 13.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.369837824924616e-13,
+        "initialization_us": 65.4,
+        "cached_array_bytes": 35307
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 43,
+      "name": "norm_joint_soft_quant27_s43",
+      "numeric_bytes": 17284,
+      "archive_bytes": 16939,
+      "numpy_only": {
+        "median_us": 13.1,
+        "p95_us": 13.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 69.0,
+        "cached_array_bytes": 35307
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_joint_soft_no_corr33_s17",
+      "numeric_bytes": 20434,
+      "archive_bytes": 19862,
+      "numpy_only": {
+        "median_us": 13.2,
+        "p95_us": 13.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 70.3,
+        "cached_array_bytes": 41553
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "norm_joint_soft_no_corr33_s29",
+      "numeric_bytes": 20434,
+      "archive_bytes": 19875,
+      "numpy_only": {
+        "median_us": 13.1,
+        "p95_us": 13.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.471179065352771e-13,
+        "initialization_us": 68.1,
+        "cached_array_bytes": 41553
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "norm_joint_soft_no_corr33_s43",
+      "numeric_bytes": 20434,
+      "archive_bytes": 19835,
+      "numpy_only": {
+        "median_us": 13.2,
+        "p95_us": 13.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.618527782440651e-13,
+        "initialization_us": 68.4,
+        "cached_array_bytes": 41553
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_joint_soft_projected16_s17",
+      "numeric_bytes": 14181,
+      "archive_bytes": 16062,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.126388037344441e-13,
+        "initialization_us": 62.0,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 29,
+      "name": "norm_joint_soft_projected16_s29",
+      "numeric_bytes": 14181,
+      "archive_bytes": 16064,
+      "numpy_only": {
+        "median_us": 14.0,
+        "p95_us": 14.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 59.7,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 43,
+      "name": "norm_joint_soft_projected16_s43",
+      "numeric_bytes": 14181,
+      "archive_bytes": 16082,
+      "numpy_only": {
+        "median_us": 13.9,
+        "p95_us": 14.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 57.9,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_static_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18773,
+      "numpy_only": {
+        "median_us": 9.9,
+        "p95_us": 10.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.034373084024992e-13,
+        "initialization_us": 45.4,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 29,
+      "name": "perceptual_static_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18825,
+      "numpy_only": {
+        "median_us": 9.9,
+        "p95_us": 10.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.323830348264892e-13,
+        "initialization_us": 42.4,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 43,
+      "name": "perceptual_static_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18794,
+      "numpy_only": {
+        "median_us": 9.9,
+        "p95_us": 10.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.2363443602225743e-12,
+        "initialization_us": 43.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_static_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4561,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.5916157281026244e-12,
+        "initialization_us": 51.0,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 29,
+      "name": "perceptual_static_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4566,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.1084466677857563e-12,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 43,
+      "name": "perceptual_static_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4558,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.5631940186722204e-12,
+        "initialization_us": 47.3,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_static_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4386,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 29,
+      "name": "perceptual_static_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4362,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.608047442568932e-13,
+        "initialization_us": 53.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 43,
+      "name": "perceptual_static_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4375,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.6626700016786344e-12,
+        "initialization_us": 46.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_static_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6856,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.4371615836571436e-12,
+        "initialization_us": 48.9,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 29,
+      "name": "perceptual_static_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6940,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.3590018827235326e-12,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 43,
+      "name": "perceptual_static_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6909,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.9184653865522705e-12,
+        "initialization_us": 48.3,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_static_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6012,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.0321522242738865e-12,
+        "initialization_us": 47.7,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "perceptual_static_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6014,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.7763568394002505e-12,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "perceptual_static_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6005,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.952838470577262e-13,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_static_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14524,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.881784197001252e-13,
+        "initialization_us": 50.9,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 29,
+      "name": "perceptual_static_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14515,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.3642420526593924e-12,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 43,
+      "name": "perceptual_static_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14565,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.4779288903810084e-12,
+        "initialization_us": 49.7,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_static_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17478,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.3358203432289883e-12,
+        "initialization_us": 50.0,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "perceptual_static_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17485,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 10.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.2505552149377763e-12,
+        "initialization_us": 49.9,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "perceptual_static_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17441,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.2363443602225743e-12,
+        "initialization_us": 50.3,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_static_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13649,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.897504706808832e-13,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 29,
+      "name": "perceptual_static_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13651,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.400124791776761e-13,
+        "initialization_us": 44.9,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 43,
+      "name": "perceptual_static_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13677,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.0089706847793423e-12,
+        "initialization_us": 44.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_joint_soft_raw36_s17",
+      "numeric_bytes": 21973,
+      "archive_bytes": 21190,
+      "numpy_only": {
+        "median_us": 12.4,
+        "p95_us": 12.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 50.1,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 29,
+      "name": "perceptual_joint_soft_raw36_s29",
+      "numeric_bytes": 21973,
+      "archive_bytes": 21236,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 43,
+      "name": "perceptual_joint_soft_raw36_s43",
+      "numeric_bytes": 21973,
+      "archive_bytes": 21218,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 12.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 49.5,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean3_s17",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6839,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.5134560271690134e-12,
+        "initialization_us": 54.1,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 29,
+      "name": "perceptual_joint_soft_mean3_s29",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6847,
+      "numpy_only": {
+        "median_us": 12.6,
+        "p95_us": 12.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 9.876544027065393e-13,
+        "initialization_us": 58.6,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 43,
+      "name": "perceptual_joint_soft_mean3_s43",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6842,
+      "numpy_only": {
+        "median_us": 12.6,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.5774048733874224e-12,
+        "initialization_us": 53.7,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_median3_s17",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6647,
+      "numpy_only": {
+        "median_us": 12.5,
+        "p95_us": 12.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.744915819785092e-13,
+        "initialization_us": 57.1,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 29,
+      "name": "perceptual_joint_soft_median3_s29",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6632,
+      "numpy_only": {
+        "median_us": 12.7,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.815970093361102e-13,
+        "initialization_us": 55.3,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 43,
+      "name": "perceptual_joint_soft_median3_s43",
+      "numeric_bytes": 4684,
+      "archive_bytes": 6650,
+      "numpy_only": {
+        "median_us": 12.6,
+        "p95_us": 12.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.3784529073745944e-12,
+        "initialization_us": 55.1,
+        "cached_array_bytes": 10323
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_joint_soft_central9_s17",
+      "numeric_bytes": 7834,
+      "archive_bytes": 9158,
+      "numpy_only": {
+        "median_us": 12.8,
+        "p95_us": 13.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.3021584638627246e-12,
+        "initialization_us": 56.4,
+        "cached_array_bytes": 16569
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 29,
+      "name": "perceptual_joint_soft_central9_s29",
+      "numeric_bytes": 7834,
+      "archive_bytes": 9238,
+      "numpy_only": {
+        "median_us": 12.9,
+        "p95_us": 13.225,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.154809746774845e-12,
+        "initialization_us": 59.4,
+        "cached_array_bytes": 16569
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 43,
+      "name": "perceptual_joint_soft_central9_s43",
+      "numeric_bytes": 7834,
+      "archive_bytes": 9206,
+      "numpy_only": {
+        "median_us": 12.9,
+        "p95_us": 13.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.3358203432289883e-12,
+        "initialization_us": 61.5,
+        "cached_array_bytes": 16569
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean_std6_s17",
+      "numeric_bytes": 6259,
+      "archive_bytes": 8307,
+      "numpy_only": {
+        "median_us": 13.0,
+        "p95_us": 20.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.6484591469634324e-12,
+        "initialization_us": 57.8,
+        "cached_array_bytes": 13446
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "perceptual_joint_soft_mean_std6_s29",
+      "numeric_bytes": 6259,
+      "archive_bytes": 8297,
+      "numpy_only": {
+        "median_us": 12.8,
+        "p95_us": 13.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.2505552149377763e-12,
+        "initialization_us": 57.6,
+        "cached_array_bytes": 13446
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "perceptual_joint_soft_mean_std6_s43",
+      "numeric_bytes": 6259,
+      "archive_bytes": 8294,
+      "numpy_only": {
+        "median_us": 12.9,
+        "p95_us": 13.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.0302869668521453e-12,
+        "initialization_us": 55.7,
+        "cached_array_bytes": 13446
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_joint_soft_quant27_s17",
+      "numeric_bytes": 17284,
+      "archive_bytes": 16893,
+      "numpy_only": {
+        "median_us": 13.1,
+        "p95_us": 13.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.1084466677857563e-12,
+        "initialization_us": 59.6,
+        "cached_array_bytes": 35307
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 29,
+      "name": "perceptual_joint_soft_quant27_s29",
+      "numeric_bytes": 17284,
+      "archive_bytes": 16887,
+      "numpy_only": {
+        "median_us": 13.1,
+        "p95_us": 13.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.0231815394945443e-12,
+        "initialization_us": 58.7,
+        "cached_array_bytes": 35307
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 43,
+      "name": "perceptual_joint_soft_quant27_s43",
+      "numeric_bytes": 17284,
+      "archive_bytes": 16946,
+      "numpy_only": {
+        "median_us": 13.2,
+        "p95_us": 13.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.7763568394002505e-12,
+        "initialization_us": 58.1,
+        "cached_array_bytes": 35307
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_joint_soft_no_corr33_s17",
+      "numeric_bytes": 20434,
+      "archive_bytes": 19876,
+      "numpy_only": {
+        "median_us": 13.3,
+        "p95_us": 13.725,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 74.6,
+        "cached_array_bytes": 41553
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "perceptual_joint_soft_no_corr33_s29",
+      "numeric_bytes": 20434,
+      "archive_bytes": 19882,
+      "numpy_only": {
+        "median_us": 13.3,
+        "p95_us": 13.725,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.2008172234345693e-12,
+        "initialization_us": 60.6,
+        "cached_array_bytes": 41553
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "perceptual_joint_soft_no_corr33_s43",
+      "numeric_bytes": 20434,
+      "archive_bytes": 19844,
+      "numpy_only": {
+        "median_us": 13.3,
+        "p95_us": 13.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 109.5,
+        "cached_array_bytes": 41553
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_joint_soft_projected16_s17",
+      "numeric_bytes": 14181,
+      "archive_bytes": 16076,
+      "numpy_only": {
+        "median_us": 13.9,
+        "p95_us": 14.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 57.9,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 29,
+      "name": "perceptual_joint_soft_projected16_s29",
+      "numeric_bytes": 14181,
+      "archive_bytes": 16072,
+      "numpy_only": {
+        "median_us": 14.0,
+        "p95_us": 14.625,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 53.1,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 43,
+      "name": "perceptual_joint_soft_projected16_s43",
+      "numeric_bytes": 14181,
+      "archive_bytes": 16092,
+      "numpy_only": {
+        "median_us": 14.0,
+        "p95_us": 14.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.389644451905042e-13,
+        "initialization_us": 98.8,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "constant",
+      "group": "constant",
+      "seed": null,
+      "name": "constant",
+      "numeric_bytes": 12,
+      "archive_bytes": 231,
+      "numpy_only": {
+        "median_us": 1.2,
+        "p95_us": 1.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 0.0,
+        "initialization_us": 6.7,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_static_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18852,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 16.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 42.4,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 29,
+      "name": "norm_static_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18880,
+      "numpy_only": {
+        "median_us": 10.0,
+        "p95_us": 12.05999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.375077994860476e-13,
+        "initialization_us": 43.7,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 43,
+      "name": "norm_static_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18865,
+      "numpy_only": {
+        "median_us": 10.0,
+        "p95_us": 10.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 43.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_static_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4543,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.984279490192421e-13,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 29,
+      "name": "norm_static_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4548,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.9451107391432743e-13,
+        "initialization_us": 48.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 43,
+      "name": "norm_static_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4552,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.268496584496461e-13,
+        "initialization_us": 47.6,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_static_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4369,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.1316282072803006e-13,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 29,
+      "name": "norm_static_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4381,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 48.0,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 43,
+      "name": "norm_static_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4394,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.255973186038318e-13,
+        "initialization_us": 48.4,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_static_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6918,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 29,
+      "name": "norm_static_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6925,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 17.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 43,
+      "name": "norm_static_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6957,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 49.2,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_static_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5992,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 49.9,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "norm_static_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5997,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 48.8,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "norm_static_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5998,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_static_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14645,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 10.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.831690603168681e-13,
+        "initialization_us": 51.2,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 29,
+      "name": "norm_static_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14635,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 10.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.813927034774679e-13,
+        "initialization_us": 51.2,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 43,
+      "name": "norm_static_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14672,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 10.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 51.0,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_static_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17662,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.334310688136611e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "norm_static_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17644,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.907985046680551e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "norm_static_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17597,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 10.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.547473508864641e-13,
+        "initialization_us": 51.2,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_static_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13637,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 47.9,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 29,
+      "name": "norm_static_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13650,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 44.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 43,
+      "name": "norm_static_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13653,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.339550858072471e-13,
+        "initialization_us": 45.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_joint_soft_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18852,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 42.9,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 29,
+      "name": "norm_joint_soft_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18880,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.375077994860476e-13,
+        "initialization_us": 41.7,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 43,
+      "name": "norm_joint_soft_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18865,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 42.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_joint_soft_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4543,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.984279490192421e-13,
+        "initialization_us": 54.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 29,
+      "name": "norm_joint_soft_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4548,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.9451107391432743e-13,
+        "initialization_us": 47.8,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 43,
+      "name": "norm_joint_soft_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4552,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.268496584496461e-13,
+        "initialization_us": 47.8,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_joint_soft_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4369,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.1316282072803006e-13,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 29,
+      "name": "norm_joint_soft_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4381,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 47.4,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 43,
+      "name": "norm_joint_soft_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4394,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 17.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.255973186038318e-13,
+        "initialization_us": 53.8,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_joint_soft_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6918,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 49.2,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 29,
+      "name": "norm_joint_soft_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6925,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 49.4,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 43,
+      "name": "norm_joint_soft_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6957,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 49.2,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_joint_soft_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5992,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 52.4,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "norm_joint_soft_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5997,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "norm_joint_soft_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5998,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_joint_soft_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14645,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.831690603168681e-13,
+        "initialization_us": 54.7,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 29,
+      "name": "norm_joint_soft_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14635,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.813927034774679e-13,
+        "initialization_us": 50.9,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 43,
+      "name": "norm_joint_soft_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14672,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 53.9,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_joint_soft_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17662,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.334310688136611e-13,
+        "initialization_us": 51.3,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "norm_joint_soft_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17644,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.907985046680551e-13,
+        "initialization_us": 55.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "norm_joint_soft_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17597,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.05999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.547473508864641e-13,
+        "initialization_us": 60.9,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_joint_soft_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13637,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 29,
+      "name": "norm_joint_soft_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13650,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 13.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 45.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 43,
+      "name": "norm_joint_soft_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13653,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 12.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.339550858072471e-13,
+        "initialization_us": 48.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_static_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18854,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.384404281969182e-13,
+        "initialization_us": 43.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 29,
+      "name": "perceptual_static_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18872,
+      "numpy_only": {
+        "median_us": 10.0,
+        "p95_us": 10.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 43.3,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 43,
+      "name": "perceptual_static_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18872,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0373923942097463e-12,
+        "initialization_us": 42.6,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_static_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4548,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 29,
+      "name": "perceptual_static_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4558,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.476419235288631e-13,
+        "initialization_us": 47.7,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 43,
+      "name": "perceptual_static_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4553,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 48.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_static_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4374,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 48.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 29,
+      "name": "perceptual_static_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4387,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 53.6,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 43,
+      "name": "perceptual_static_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4397,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 47.6,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_static_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6938,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0658141036401503e-12,
+        "initialization_us": 49.4,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 29,
+      "name": "perceptual_static_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6924,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.3145040611561853e-12,
+        "initialization_us": 49.5,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 43,
+      "name": "perceptual_static_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6951,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1723955140041653e-12,
+        "initialization_us": 49.2,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_static_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5991,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.759999999999991,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.739675649849232e-13,
+        "initialization_us": 49.2,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "perceptual_static_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5997,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.4210854715202004e-12,
+        "initialization_us": 48.4,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "perceptual_static_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5996,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0658141036401503e-12,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_static_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14651,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 15.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.805489753489383e-13,
+        "initialization_us": 53.4,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 29,
+      "name": "perceptual_static_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14635,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 17.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.739675649849232e-13,
+        "initialization_us": 52.3,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 43,
+      "name": "perceptual_static_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14673,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.318590178329032e-13,
+        "initialization_us": 52.2,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_static_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17660,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.3358203432289883e-12,
+        "initialization_us": 61.6,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "perceptual_static_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17650,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.308109838457312e-13,
+        "initialization_us": 51.7,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "perceptual_static_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17604,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1084466677857563e-12,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_static_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13637,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 47.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 29,
+      "name": "perceptual_static_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13657,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.892264536872972e-13,
+        "initialization_us": 45.6,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 43,
+      "name": "perceptual_static_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13657,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.044853423896711e-13,
+        "initialization_us": 45.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_joint_soft_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18854,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.384404281969182e-13,
+        "initialization_us": 42.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 29,
+      "name": "perceptual_joint_soft_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18872,
+      "numpy_only": {
+        "median_us": 10.0,
+        "p95_us": 10.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 42.7,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 43,
+      "name": "perceptual_joint_soft_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18872,
+      "numpy_only": {
+        "median_us": 10.0,
+        "p95_us": 10.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0373923942097463e-12,
+        "initialization_us": 42.4,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4548,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 47.3,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 29,
+      "name": "perceptual_joint_soft_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4558,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.476419235288631e-13,
+        "initialization_us": 47.9,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 43,
+      "name": "perceptual_joint_soft_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4553,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 48.0,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4374,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.759999999999991,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 29,
+      "name": "perceptual_joint_soft_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4387,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 48.0,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 43,
+      "name": "perceptual_joint_soft_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4397,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 59.9,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_joint_soft_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6938,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0658141036401503e-12,
+        "initialization_us": 113.1,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 29,
+      "name": "perceptual_joint_soft_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6924,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.3145040611561853e-12,
+        "initialization_us": 66.3,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 43,
+      "name": "perceptual_joint_soft_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6951,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1723955140041653e-12,
+        "initialization_us": 49.9,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5991,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.739675649849232e-13,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "perceptual_joint_soft_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5997,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.4210854715202004e-12,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "perceptual_joint_soft_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5996,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0658141036401503e-12,
+        "initialization_us": 48.4,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_joint_soft_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14651,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.805489753489383e-13,
+        "initialization_us": 52.4,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 29,
+      "name": "perceptual_joint_soft_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14635,
+      "numpy_only": {
+        "median_us": 10.9,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.739675649849232e-13,
+        "initialization_us": 51.0,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 43,
+      "name": "perceptual_joint_soft_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14673,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.318590178329032e-13,
+        "initialization_us": 50.7,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_joint_soft_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17660,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.3358203432289883e-12,
+        "initialization_us": 51.2,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "perceptual_joint_soft_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17650,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.308109838457312e-13,
+        "initialization_us": 50.9,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "perceptual_joint_soft_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17604,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1084466677857563e-12,
+        "initialization_us": 50.6,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_joint_soft_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13637,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 17.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 45.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 29,
+      "name": "perceptual_joint_soft_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13657,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.892264536872972e-13,
+        "initialization_us": 45.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 43,
+      "name": "perceptual_joint_soft_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13657,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 19.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.044853423896711e-13,
+        "initialization_us": 45.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "constant",
+      "group": "constant",
+      "seed": null,
+      "name": "constant",
+      "numeric_bytes": 12,
+      "archive_bytes": 231,
+      "numpy_only": {
+        "median_us": 1.2,
+        "p95_us": 1.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 0.0,
+        "initialization_us": 7.8,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_static_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18217,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 11.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 42.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 29,
+      "name": "norm_static_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18189,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 46.6,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 43,
+      "name": "norm_static_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18289,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.902744876744691e-13,
+        "initialization_us": 42.2,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_static_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4544,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.186961971048731e-13,
+        "initialization_us": 49.4,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 29,
+      "name": "norm_static_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4538,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 8.455458555545192e-13,
+        "initialization_us": 47.7,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 43,
+      "name": "norm_static_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4536,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1510792319313623e-12,
+        "initialization_us": 47.7,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_static_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4299,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.760636329592671e-13,
+        "initialization_us": 47.7,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 29,
+      "name": "norm_static_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4288,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.902744876744691e-13,
+        "initialization_us": 47.9,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 43,
+      "name": "norm_static_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4283,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_static_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6694,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 49.5,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 29,
+      "name": "norm_static_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6680,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 7.904787935331115e-13,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 43,
+      "name": "norm_static_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6665,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 17.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.968558980384842e-13,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_static_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5995,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.968558980384842e-13,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "norm_static_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5993,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 48.3,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "norm_static_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6004,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 16.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.400124791776761e-13,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_static_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14010,
+      "numpy_only": {
+        "median_us": 17.3,
+        "p95_us": 18.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 74.0,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 29,
+      "name": "norm_static_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14013,
+      "numpy_only": {
+        "median_us": 17.0,
+        "p95_us": 18.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.984279490192421e-13,
+        "initialization_us": 77.5,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 43,
+      "name": "norm_static_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 13970,
+      "numpy_only": {
+        "median_us": 10.9,
+        "p95_us": 11.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 55.6,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_static_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17066,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 17.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.907985046680551e-13,
+        "initialization_us": 52.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "norm_static_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17074,
+      "numpy_only": {
+        "median_us": 17.1,
+        "p95_us": 18.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.547473508864641e-13,
+        "initialization_us": 71.0,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "norm_static_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17061,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 20.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.7711166694643907e-13,
+        "initialization_us": 65.3,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_static_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13631,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.9895196601282805e-13,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 29,
+      "name": "norm_static_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13622,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.5579538487363607e-13,
+        "initialization_us": 46.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 43,
+      "name": "norm_static_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13631,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.8421709430404007e-13,
+        "initialization_us": 46.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_joint_soft_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18217,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 16.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 29,
+      "name": "norm_joint_soft_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18189,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 43.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 43,
+      "name": "norm_joint_soft_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18289,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.902744876744691e-13,
+        "initialization_us": 41.9,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_joint_soft_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4544,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.186961971048731e-13,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 29,
+      "name": "norm_joint_soft_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4538,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 8.455458555545192e-13,
+        "initialization_us": 48.3,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 43,
+      "name": "norm_joint_soft_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4536,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1510792319313623e-12,
+        "initialization_us": 48.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_joint_soft_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4299,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.760636329592671e-13,
+        "initialization_us": 47.4,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 29,
+      "name": "norm_joint_soft_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4288,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.902744876744691e-13,
+        "initialization_us": 50.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 43,
+      "name": "norm_joint_soft_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4283,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 48.3,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_joint_soft_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6694,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 54.6,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 29,
+      "name": "norm_joint_soft_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6680,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 7.904787935331115e-13,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 43,
+      "name": "norm_joint_soft_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6665,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.968558980384842e-13,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_joint_soft_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5995,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.968558980384842e-13,
+        "initialization_us": 48.9,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "norm_joint_soft_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 5993,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.85999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 48.0,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "norm_joint_soft_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6004,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.400124791776761e-13,
+        "initialization_us": 48.9,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_joint_soft_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14010,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 51.5,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 29,
+      "name": "norm_joint_soft_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14013,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.984279490192421e-13,
+        "initialization_us": 51.4,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 43,
+      "name": "norm_joint_soft_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 13970,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 50.7,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_joint_soft_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17066,
+      "numpy_only": {
+        "median_us": 10.9,
+        "p95_us": 11.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.907985046680551e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "norm_joint_soft_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17074,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.547473508864641e-13,
+        "initialization_us": 50.9,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "norm_joint_soft_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17061,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.7711166694643907e-13,
+        "initialization_us": 57.6,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_joint_soft_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13631,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 12.259999999999991,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.9895196601282805e-13,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 29,
+      "name": "norm_joint_soft_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13622,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 12.259999999999991,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.5579538487363607e-13,
+        "initialization_us": 45.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 43,
+      "name": "norm_joint_soft_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13631,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 11.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.8421709430404007e-13,
+        "initialization_us": 45.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_static_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18213,
+      "numpy_only": {
+        "median_us": 10.2,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 42.2,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 29,
+      "name": "perceptual_static_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18199,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2150280781497713e-12,
+        "initialization_us": 42.4,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 43,
+      "name": "perceptual_static_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18289,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 42.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_static_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4548,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.3997691894473974e-12,
+        "initialization_us": 47.9,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 29,
+      "name": "perceptual_static_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4551,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.8189894035458565e-12,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 43,
+      "name": "perceptual_static_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4549,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.55999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.1458390619955026e-12,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_static_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4308,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.023892744153272e-13,
+        "initialization_us": 66.9,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 29,
+      "name": "perceptual_static_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4298,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 17.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1510792319313623e-12,
+        "initialization_us": 58.4,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 43,
+      "name": "perceptual_static_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4295,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 17.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.4495071809506044e-12,
+        "initialization_us": 48.4,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_static_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6704,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 51.0,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 29,
+      "name": "perceptual_static_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6687,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.0800249583553523e-12,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 43,
+      "name": "perceptual_static_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6675,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 12.65999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.3571366253017914e-12,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_static_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6005,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.3145040611561853e-12,
+        "initialization_us": 48.8,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "perceptual_static_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6002,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.0516032489249483e-12,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "perceptual_static_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6004,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1581846592889633e-12,
+        "initialization_us": 48.4,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_static_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14007,
+      "numpy_only": {
+        "median_us": 10.9,
+        "p95_us": 11.15999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 8.100187187665142e-13,
+        "initialization_us": 51.9,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 29,
+      "name": "perceptual_static_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14018,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 51.7,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 43,
+      "name": "perceptual_static_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 13975,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.181721801112872e-13,
+        "initialization_us": 50.9,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_static_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17068,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.689582056016661e-13,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "perceptual_static_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17077,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 52.4,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "perceptual_static_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17066,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 52.2,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_static_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13636,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 12.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 71.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 29,
+      "name": "perceptual_static_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13635,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.65999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 52.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 43,
+      "name": "perceptual_static_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13633,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 48.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_joint_soft_raw36_s17",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18213,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 44.3,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 29,
+      "name": "perceptual_joint_soft_raw36_s29",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18199,
+      "numpy_only": {
+        "median_us": 10.1,
+        "p95_us": 10.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2150280781497713e-12,
+        "initialization_us": 42.8,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 43,
+      "name": "perceptual_joint_soft_raw36_s43",
+      "numeric_bytes": 20284,
+      "archive_bytes": 18289,
+      "numpy_only": {
+        "median_us": 10.0,
+        "p95_us": 10.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 42.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4548,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.3997691894473974e-12,
+        "initialization_us": 52.1,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 29,
+      "name": "perceptual_joint_soft_mean3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4551,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.8189894035458565e-12,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 43,
+      "name": "perceptual_joint_soft_mean3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4549,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.1458390619955026e-12,
+        "initialization_us": 48.2,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_median3_s17",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4308,
+      "numpy_only": {
+        "median_us": 10.4,
+        "p95_us": 10.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.023892744153272e-13,
+        "initialization_us": 47.5,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 29,
+      "name": "perceptual_joint_soft_median3_s29",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4298,
+      "numpy_only": {
+        "median_us": 10.3,
+        "p95_us": 10.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1510792319313623e-12,
+        "initialization_us": 47.6,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 43,
+      "name": "perceptual_joint_soft_median3_s43",
+      "numeric_bytes": 3127,
+      "archive_bytes": 4295,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 15.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.4495071809506044e-12,
+        "initialization_us": 48.0,
+        "cached_array_bytes": 7219
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_joint_soft_central9_s17",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6704,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 59.7,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 29,
+      "name": "perceptual_joint_soft_central9_s29",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6687,
+      "numpy_only": {
+        "median_us": 10.6,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.0800249583553523e-12,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 43,
+      "name": "perceptual_joint_soft_central9_s43",
+      "numeric_bytes": 6253,
+      "archive_bytes": 6675,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.3571366253017914e-12,
+        "initialization_us": 49.5,
+        "cached_array_bytes": 13417
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean_std6_s17",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6005,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.3145040611561853e-12,
+        "initialization_us": 48.6,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 29,
+      "name": "perceptual_joint_soft_mean_std6_s29",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6002,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.95999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.0516032489249483e-12,
+        "initialization_us": 48.1,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 43,
+      "name": "perceptual_joint_soft_mean_std6_s43",
+      "numeric_bytes": 4690,
+      "archive_bytes": 6004,
+      "numpy_only": {
+        "median_us": 10.5,
+        "p95_us": 10.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1581846592889633e-12,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 10318
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_joint_soft_quant27_s17",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14007,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 8.100187187665142e-13,
+        "initialization_us": 51.4,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 29,
+      "name": "perceptual_joint_soft_quant27_s29",
+      "numeric_bytes": 15631,
+      "archive_bytes": 14018,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 43,
+      "name": "perceptual_joint_soft_quant27_s43",
+      "numeric_bytes": 15631,
+      "archive_bytes": 13975,
+      "numpy_only": {
+        "median_us": 10.7,
+        "p95_us": 11.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.181721801112872e-13,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 32011
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_joint_soft_no_corr33_s17",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17068,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.689582056016661e-13,
+        "initialization_us": 51.1,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 29,
+      "name": "perceptual_joint_soft_no_corr33_s29",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17077,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.15999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 51.0,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 43,
+      "name": "perceptual_joint_soft_no_corr33_s43",
+      "numeric_bytes": 18757,
+      "archive_bytes": 17066,
+      "numpy_only": {
+        "median_us": 10.8,
+        "p95_us": 11.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 50.4,
+        "cached_array_bytes": 38209
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_joint_soft_projected16_s17",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13636,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 12.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 45.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 29,
+      "name": "perceptual_joint_soft_projected16_s29",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13635,
+      "numpy_only": {
+        "median_us": 11.4,
+        "p95_us": 11.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 44.6,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 43,
+      "name": "perceptual_joint_soft_projected16_s43",
+      "numeric_bytes": 12492,
+      "archive_bytes": 13633,
+      "numpy_only": {
+        "median_us": 11.5,
+        "p95_us": 12.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 50.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "constant",
+      "group": "constant",
+      "seed": null,
+      "name": "constant",
+      "numeric_bytes": 12,
+      "archive_bytes": 231,
+      "numpy_only": {
+        "median_us": 1.2,
+        "p95_us": 1.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 0.0,
+        "initialization_us": 6.5,
+        "cached_array_bytes": 24
+      }
+    }
+  ],
+  "standalone_fit_records": [
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_static_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.018055299995467067,
+      "seconds": [
+        0.018102800007909536,
+        0.018055299995467067,
+        0.017925599997397512
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_static_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.012263600016012788,
+      "seconds": [
+        0.012292400002479553,
+        0.012263600016012788,
+        0.012183999991975725
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_static_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01232239999808371,
+      "seconds": [
+        0.012342899979557842,
+        0.01232239999808371,
+        0.01224250002996996
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_static_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.013391699991188943,
+      "seconds": [
+        0.013391699991188943,
+        0.013423199998214841,
+        0.013311299961060286
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_static_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.013503599970135838,
+      "seconds": [
+        0.014298299967776984,
+        0.013503599970135838,
+        0.013274699973408133
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_static_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.014839300012681633,
+      "seconds": [
+        0.014783199992962182,
+        0.014839300012681633,
+        0.014857799978926778
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_static_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01534799998626113,
+      "seconds": [
+        0.015323599975090474,
+        0.01534799998626113,
+        0.015355499985162169
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_static_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.014309799997135997,
+      "seconds": [
+        0.014309799997135997,
+        0.014797499985434115,
+        0.014265899953898042
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_joint_soft_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.03242990002036095,
+      "seconds": [
+        0.032410699990577996,
+        0.03252000000793487,
+        0.03242990002036095
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_joint_soft_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.023629400006029755,
+      "seconds": [
+        0.024385099997743964,
+        0.023629400006029755,
+        0.023522700008470565
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_joint_soft_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.02354590001050383,
+      "seconds": [
+        0.02354590001050383,
+        0.024138799984939396,
+        0.023532900027930737
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_joint_soft_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.027438900026027113,
+      "seconds": [
+        0.027448900043964386,
+        0.027337700012139976,
+        0.027438900026027113
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_joint_soft_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.027209899970330298,
+      "seconds": [
+        0.02713840000797063,
+        0.027209899970330298,
+        0.02721130003919825
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_joint_soft_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.028986999997869134,
+      "seconds": [
+        0.028873900009784847,
+        0.028986999997869134,
+        0.028990300022996962
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_joint_soft_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.029613999999128282,
+      "seconds": [
+        0.029399799997918308,
+        0.029613999999128282,
+        0.030633400019723922
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_joint_soft_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.028395899978931993,
+      "seconds": [
+        0.028518900042399764,
+        0.02835769997909665,
+        0.028395899978931993
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_static_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.02040629996918142,
+      "seconds": [
+        0.02040629996918142,
+        0.020369999983813614,
+        0.02040899998974055
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_static_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01463669998338446,
+      "seconds": [
+        0.014688000024762005,
+        0.01463669998338446,
+        0.014627499971538782
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_static_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01474940002663061,
+      "seconds": [
+        0.015082600002642721,
+        0.01474040001630783,
+        0.01474940002663061
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_static_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01575399999273941,
+      "seconds": [
+        0.01575399999273941,
+        0.01579410000704229,
+        0.015752999985124916
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_static_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01556559995515272,
+      "seconds": [
+        0.015538400039076805,
+        0.01562359998933971,
+        0.01556559995515272
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_static_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.01722219999646768,
+      "seconds": [
+        0.017334999982267618,
+        0.01722219999646768,
+        0.017181500035803765
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_static_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.017723699973430485,
+      "seconds": [
+        0.017723699973430485,
+        0.017848100047558546,
+        0.017688399995677173
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_static_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.016622900031507015,
+      "seconds": [
+        0.016622900031507015,
+        0.016636100015603006,
+        0.016600800037849694
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_joint_soft_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.03472259995760396,
+      "seconds": [
+        0.034640600031707436,
+        0.03472259995760396,
+        0.03472629998577759
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.02789289999054745,
+      "seconds": [
+        0.027950200019404292,
+        0.02789289999054745,
+        0.026020499994046986
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.026250299997627735,
+      "seconds": [
+        0.026250299997627735,
+        0.02595350000774488,
+        0.02783799997996539
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_joint_soft_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.029869600024539977,
+      "seconds": [
+        0.029869600024539977,
+        0.029820600000675768,
+        0.029935099999420345
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.02968989999499172,
+      "seconds": [
+        0.029709399968851358,
+        0.02953300002263859,
+        0.02968989999499172
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_joint_soft_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.031385399983264506,
+      "seconds": [
+        0.032547200040426105,
+        0.031385399983264506,
+        0.03130440000677481
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_joint_soft_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.03181580000091344,
+      "seconds": [
+        0.03373590001137927,
+        0.03181580000091344,
+        0.03181190002942458
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_joint_soft_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 734,
+      "median_seconds": 0.030659099982585758,
+      "seconds": [
+        0.030659099982585758,
+        0.030628400039859116,
+        0.030754500010516495
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_static_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.00955630000680685,
+      "seconds": [
+        0.00959029997466132,
+        0.00955630000680685,
+        0.009448600001633167
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_static_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.00582870002835989,
+      "seconds": [
+        0.005789399961940944,
+        0.0058370999759063125,
+        0.00582870002835989
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_static_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.005838200042489916,
+      "seconds": [
+        0.005820299964398146,
+        0.005944600037764758,
+        0.005838200042489916
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_static_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.006619899999350309,
+      "seconds": [
+        0.006619899999350309,
+        0.006591600016690791,
+        0.00666569999884814
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_static_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.006875400024000555,
+      "seconds": [
+        0.006975199969019741,
+        0.006851400015875697,
+        0.006875400024000555
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_static_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007257600023876876,
+      "seconds": [
+        0.007257600023876876,
+        0.007238199992571026,
+        0.007512899988796562
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_static_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.0073503999738022685,
+      "seconds": [
+        0.0073503999738022685,
+        0.007378000009339303,
+        0.007331400003749877
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_static_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007258199970237911,
+      "seconds": [
+        0.007254700001794845,
+        0.007258199970237911,
+        0.007271400012541562
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_joint_soft_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.009620600030757487,
+      "seconds": [
+        0.009620600030757487,
+        0.009677199996076524,
+        0.009497500024735928
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_joint_soft_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.005856199946720153,
+      "seconds": [
+        0.005903500015847385,
+        0.005829199973959476,
+        0.005856199946720153
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_joint_soft_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.005869799992069602,
+      "seconds": [
+        0.005858100019395351,
+        0.006341999978758395,
+        0.005869799992069602
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_joint_soft_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.006610400043427944,
+      "seconds": [
+        0.006610400043427944,
+        0.0066086999722756445,
+        0.008014099963475019
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_joint_soft_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007040099997539073,
+      "seconds": [
+        0.007431899954099208,
+        0.007040099997539073,
+        0.006881599954795092
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_joint_soft_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.0074976999894715846,
+      "seconds": [
+        0.007677399960812181,
+        0.007263100007548928,
+        0.0074976999894715846
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_joint_soft_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007423100003506988,
+      "seconds": [
+        0.007451000041328371,
+        0.0073247000109404325,
+        0.007423100003506988
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_joint_soft_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007264000014401972,
+      "seconds": [
+        0.007274900039192289,
+        0.007229999988339841,
+        0.007264000014401972
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_static_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.010683399974368513,
+      "seconds": [
+        0.010734900017268956,
+        0.010683399974368513,
+        0.01066909998189658
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_static_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007079200004227459,
+      "seconds": [
+        0.007014600036200136,
+        0.007130599988158792,
+        0.007079200004227459
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_static_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007047499995678663,
+      "seconds": [
+        0.006985399988479912,
+        0.007067600032314658,
+        0.007047499995678663
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_static_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007751400000415742,
+      "seconds": [
+        0.007726400042884052,
+        0.007884000020567328,
+        0.007751400000415742
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_static_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.00802419998217374,
+      "seconds": [
+        0.008022300025913864,
+        0.008081800013314933,
+        0.00802419998217374
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_static_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008446199994068593,
+      "seconds": [
+        0.008446199994068593,
+        0.008562800008803606,
+        0.00835179997375235
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_static_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008536599983926862,
+      "seconds": [
+        0.008536599983926862,
+        0.008530899998731911,
+        0.008550800033845007
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_static_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008466400031466037,
+      "seconds": [
+        0.008466400031466037,
+        0.008432000002358109,
+        0.008531700004823506
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_joint_soft_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.01066470000660047,
+      "seconds": [
+        0.010645699978340417,
+        0.010738200042396784,
+        0.01066470000660047
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.00699470000108704,
+      "seconds": [
+        0.007028900028672069,
+        0.00699470000108704,
+        0.006990700028836727
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007023799989838153,
+      "seconds": [
+        0.007008299988228828,
+        0.007024599995929748,
+        0.007023799989838153
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_joint_soft_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.007772099983412772,
+      "seconds": [
+        0.007764399982988834,
+        0.007841199985705316,
+        0.007772099983412772
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008238700043875724,
+      "seconds": [
+        0.00804960000095889,
+        0.009446299984119833,
+        0.008238700043875724
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_joint_soft_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008455000002868474,
+      "seconds": [
+        0.008412800030782819,
+        0.008465100021567196,
+        0.008455000002868474
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_joint_soft_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008550099970307201,
+      "seconds": [
+        0.008550099970307201,
+        0.008507999998982996,
+        0.008704899984877557
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_joint_soft_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 323,
+      "median_seconds": 0.008496099966578186,
+      "seconds": [
+        0.008496099966578186,
+        0.0085073999944143,
+        0.00838000001385808
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_static_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01583069999469444,
+      "seconds": [
+        0.01583069999469444,
+        0.01583270000992343,
+        0.015779600013047457
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_static_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.010862499999348074,
+      "seconds": [
+        0.010862499999348074,
+        0.010922800051048398,
+        0.010793699999339879
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_static_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01075060002040118,
+      "seconds": [
+        0.010691399977076799,
+        0.010817000002134591,
+        0.01075060002040118
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_static_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01168689999030903,
+      "seconds": [
+        0.011669600033201277,
+        0.011756199994124472,
+        0.01168689999030903
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_static_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01153570000315085,
+      "seconds": [
+        0.011565900000277907,
+        0.01153570000315085,
+        0.011497900006361306
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_static_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.012859400012530386,
+      "seconds": [
+        0.012886200041975826,
+        0.012761299964040518,
+        0.012859400012530386
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_static_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01416999998036772,
+      "seconds": [
+        0.013552499993238598,
+        0.01416999998036772,
+        0.015531199984252453
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_static_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.012382899993099272,
+      "seconds": [
+        0.012382899993099272,
+        0.01240549999056384,
+        0.012309199955780059
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "norm_joint_soft_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.0158235999988392,
+      "seconds": [
+        0.015842099965084344,
+        0.015795700019225478,
+        0.0158235999988392
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "norm_joint_soft_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.010767899977508932,
+      "seconds": [
+        0.010816699999850243,
+        0.010767899977508932,
+        0.010759700031485409
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "norm_joint_soft_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01081710000289604,
+      "seconds": [
+        0.010727099957875907,
+        0.01081710000289604,
+        0.01250040001468733
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "norm_joint_soft_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.011800799984484911,
+      "seconds": [
+        0.011829800030682236,
+        0.011782399960793555,
+        0.011800799984484911
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "norm_joint_soft_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01162149995798245,
+      "seconds": [
+        0.011508100025821477,
+        0.01162149995798245,
+        0.011660600022878498
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "norm_joint_soft_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.013205699971877038,
+      "seconds": [
+        0.013205699971877038,
+        0.013585700013209134,
+        0.012887699995189905
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "norm_joint_soft_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.0132543999934569,
+      "seconds": [
+        0.013241799955721945,
+        0.0132543999934569,
+        0.013275299977976829
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "norm_joint_soft_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01239809999242425,
+      "seconds": [
+        0.01239809999242425,
+        0.012342600035481155,
+        0.012410499970428646
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_static_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.017992199980653822,
+      "seconds": [
+        0.018108599993865937,
+        0.017839399981312454,
+        0.017992199980653822
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_static_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.012937200022861362,
+      "seconds": [
+        0.01291519997175783,
+        0.012989700015168637,
+        0.012937200022861362
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_static_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01614050002535805,
+      "seconds": [
+        0.013663900026585907,
+        0.01614050002535805,
+        0.018214200041256845
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_static_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.013837300008162856,
+      "seconds": [
+        0.013837300008162856,
+        0.013866099994629622,
+        0.013779199973214418
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_static_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.013691800006199628,
+      "seconds": [
+        0.013691800006199628,
+        0.013767199998255819,
+        0.01367379998555407
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_static_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.014960400003474206,
+      "seconds": [
+        0.014992600015830249,
+        0.014960400003474206,
+        0.01491219998570159
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_static_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.015409299987368286,
+      "seconds": [
+        0.015409299987368286,
+        0.015389100008178502,
+        0.015436500019859523
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_static",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_static_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.014495000010356307,
+      "seconds": [
+        0.014446699991822243,
+        0.01453009998658672,
+        0.014495000010356307
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "raw36",
+      "seed": 17,
+      "name": "perceptual_joint_soft_raw36_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.019581999978981912,
+      "seconds": [
+        0.019581999978981912,
+        0.02144029998453334,
+        0.017955200048163533
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.012923100031912327,
+      "seconds": [
+        0.013119200011715293,
+        0.012923100031912327,
+        0.012893799983430654
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "median3",
+      "seed": 17,
+      "name": "perceptual_joint_soft_median3_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.012905000010505319,
+      "seconds": [
+        0.012905000010505319,
+        0.012879399990197271,
+        0.012934800004586577
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "central9",
+      "seed": 17,
+      "name": "perceptual_joint_soft_central9_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.013848400034476072,
+      "seconds": [
+        0.013848400034476072,
+        0.013789699994958937,
+        0.013872699986677617
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "mean_std6",
+      "seed": 17,
+      "name": "perceptual_joint_soft_mean_std6_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.013763500028289855,
+      "seconds": [
+        0.013659599993843585,
+        0.013763500028289855,
+        0.013799799955449998
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "quant27",
+      "seed": 17,
+      "name": "perceptual_joint_soft_quant27_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.014993899967521429,
+      "seconds": [
+        0.014933799975551665,
+        0.015289100003428757,
+        0.014993899967521429
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "no_corr33",
+      "seed": 17,
+      "name": "perceptual_joint_soft_no_corr33_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.015452099964022636,
+      "seconds": [
+        0.015452099964022636,
+        0.015600200043991208,
+        0.015327900007832795
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_joint_soft",
+      "group": "projected16",
+      "seed": 17,
+      "name": "perceptual_joint_soft_projected16_s17",
+      "alpha": 0.1,
+      "n_fit_rows": 643,
+      "median_seconds": 0.014504800026770681,
+      "seconds": [
+        0.014508499996736646,
+        0.01447690004715696,
+        0.014504800026770681
+      ]
+    }
+  ],
+  "complete_fits_including_warmups": 384,
+  "wall_seconds": 12.150115000025835,
+  "scope": "291 actual one-row consumers,20 warmups and3 passes;96 settings x4 complete fits, including warmups. One CPU thread. Fit includes normalizers, weights, exact width, landmarks, gate when active, perceptual metric and readout. X control includes its projection. Excludes process imports/I/O/grid/image decoding and skin extraction. Numeric/cache/archive storage reported separately; cache excludes temporaries, Python/process overhead and caller payload."
+}

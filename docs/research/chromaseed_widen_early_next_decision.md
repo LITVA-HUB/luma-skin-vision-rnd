@@ -1,0 +1,7 @@
+# Next quality decision after WE
+
+Previous turn is verified progress; broad goal active. Latest explicit user steering prioritizes quality, allows roughly five million parameters and requests revisiting previously unsuccessful architectures at larger scale. 12/12 selected larger-capacity WE settings reach the2048 boundary at new lower rates. Preserve that optimization evidence without treating it as a mandate to repeat another small-model schedule study.
+
+Next preregister a matched scaling comparison of patch pooling, four-pass soft attention and dynamic patch selection, with an ordinary widened model as a control. Include small versions under the same training and warm-start rules so a change of initialization or schedule is not mislabeled a pure size effect. The earlier R, PatchVotes and WIDE implementations are prior work, not newly invented mechanisms. The approximately five-million-parameter series is not yet trained or validated by this WE receipt. Use fit-only selection, preserve negative curves and measure actual memory and runtime. Longer lower-rate training remains a secondary question; any replay of WE must retain its original8192 horizon and optimizer prefix.
+
+WE primary/audit/runtime/report/card/decision are sealed; only report.py may reverify read-only. Preserve WIDE/P8/WA/LT/NP/ND and older writers. P8 audit/runtime remain explicitly deferred. Only original TRAIN, no new assets/delegation/publication. Ordinary-phone face quality is still unvalidated; software checks cannot complete the full goal.

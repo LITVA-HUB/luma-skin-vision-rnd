@@ -1,3 +1,11 @@
+# CURRENT USER INSTRUCTION — research paused, 2026-09-14
+
+The user explicitly stopped research and authorized exhaustive documentation and GitHub publication. Do not launch or resume training, dataset acquisition, model evaluation, timing, replay, P3 or Seg2. Historical continuation queues below are superseded. Preserve frozen sources, protocols, receipts and negative results. Read-only archive analysis and publication checks are allowed. Publish documentation/source/aggregate evidence; never participant photographs or direct identifiers.
+
+HR primary and independent quality audit completed. Adapted runtime failed with exit 1 before the user pause: 126/189 response receipts, 0/42 recipe receipts, 127 successful host checks. The collection subprocess failed; its stderr was not retained. No completed runtime report or final seal exists. P3 and Seg2 remain prepared, not trained. The only live Python service at archive intake was the local dashboard.
+
+---
+
 # Luma Skin Vision R&D
 
 - Current instruction, 2026-09-11: research stopped by the user. Document and publish the completed archive; do not resume model training or data acquisition from historical next-step notes. Public repository publication is explicitly authorized. Preserve original results, privacy, dataset rights and the distinction between exploratory and independent evidence.

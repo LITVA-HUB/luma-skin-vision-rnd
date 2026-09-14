@@ -1,0 +1,16 @@
+# ChromaSeed AS: scale earlier architectures to approximately five million parameters
+
+Continuation evidence: previous turn was progress (WE sealed; AS implemented and launched). AS session67384/PID38808 confirmed live again, now11inner banks completed and mixed soft5m fold2 running. A separate lightweight review of completed mixed patch_small/patch5m/soft_small folds produced18inner scores; best patch4.172206→4.164681 with scaling, while patch5m rate1e-4 worsens4.199931→4.337926 over128→2048. Prior WE inner4.107960 remains better. This is provisional TRAIN-inner evidence only; no held-role AS evaluation or selection changes. Review artifact docs/benchmarks/chromaseed_architecture_scale_v1/inner_reviews/mixed_patch_small_patch5m_soft_small.json. Independent CPU-only fused-AdamW feasibility also completed with four tests; no CUDA context, no speed/capture/production-quality claim, no integration into AS. See docs/research/chromaseed_fused_optimizer_feasibility.md.
+
+User explicitly authorizes larger models and full RTX 4060 use, with quality as the objective. This is a bounded architectural screen in the current worktree; it does not complete the broader phone-face product goal.
+
+- [x] Inspect actual R patch/soft/dynamic implementations and WIDE/WE optimization evidence. Preserve historical failures and immutable sources.
+- [x] Implement matched small/large patch, soft-refinement and dynamic-refinement networks plus a conventional large pooling control; verify identity initialization, attention behavior, gradients, numerical consumer parity and deterministic fitting.
+- [x] Measure a synthetic CUDA preflight, register architecture dimensions, bank layout, schedule and selection before original TRAIN fitting. Keep at least 15 GB disk headroom.
+- [ ] Fit the same three seeds, two rates and three person-disjoint inner folds for every variant and role. Save every candidate checkpoint and freeze all choices before any held-role prediction.
+- [ ] Fit selected settings, compare against frozen NP/WE controls, independently verify exported predictions and selected full-bank training replays, report all outcomes and measured costs.
+- [ ] Update the active ledger with evidence and the next unresolved quality question. No claims of independent facial quality, novelty or Skolkovo eligibility from this screen.
+
+No new data, raw images, weights, packages, agents or publication. Only cached color36/tokens64x18/native Lab from original TRAIN, with unchanged people/folds and fit-only normalizers. Legacy validation/calibration/test remain excluded. WE postprocessing finishes before new GPU work starts.
+
+Primary RUNNING: session67384/PID38808; source a8a2a840d70ee7cbe726404260bcb7224dd319594003512bfa925309270ce0e6. Nine mixed-role banks completed (patch_small,patch5m,soft_small across all3folds); first soft5m bank running. Large patch banks156seconds each, GPU observed100%/3410MiB/57C. Synthetic FP32 and BF16 probes both preserved; BF16 did not speed these six-slot banks, so tested FP32 source restored before freeze. Four tests passed10.03s. Primary/protocol/tests are frozen. Audit/runtime/report scripts are now implemented and linted, but must not run while primary is active. No AS held-role results yet.

@@ -1,0 +1,48 @@
+{
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "source_hashes": {
+    "scripts\\skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "scripts\\skin_local_search_core.py": "b2f916d67bd6e0a9f0341fa85b39c82457e973edf25cde1398b0281b927cad20",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "docs\\research\\skin_local_search_v1_protocol.md": "6abcbea0d9c2cedd4134f6fca4a121204fe06687ce169eef1ad10a06cd5bd60b"
+  },
+  "device": "cuda",
+  "steps": 512,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "grids": {
+    "ridge": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "krr": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "random_rbf": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "guided_rbf": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "mlp": [
+      0.0003,
+      0.001,
+      0.003
+    ]
+  },
+  "python": "3.12.6",
+  "numpy": "2.5.3",
+  "torch": "2.8.0+cu128",
+  "threads": 1,
+  "gpu": "NVIDIA GeForce RTX 4060"
+}

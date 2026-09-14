@@ -1,0 +1,115 @@
+{
+  "family": "local2",
+  "slots": [
+    {
+      "seed": 43,
+      "lr": 0.001
+    }
+  ],
+  "steps": 2048,
+  "checkpoints": [
+    2048
+  ],
+  "batch_size": 64,
+  "n_fit": 323,
+  "engine": "cuda_graph",
+  "device": "cuda",
+  "parameters": 2758,
+  "numeric_bytes": 11344,
+  "setup_seconds": 0.04827049997402355,
+  "full_bank_seconds": 0.28781559999333695,
+  "trace": [
+    {
+      "step": 256,
+      "seconds": 0.07730399997672066,
+      "block_loss": [
+        [
+          0.3122623562812805,
+          0.2173117846250534
+        ]
+      ]
+    },
+    {
+      "step": 512,
+      "seconds": 0.10743969999020919,
+      "block_loss": [
+        [
+          0.17400357127189636,
+          0.1456930935382843
+        ]
+      ]
+    },
+    {
+      "step": 768,
+      "seconds": 0.1373357999837026,
+      "block_loss": [
+        [
+          0.19520214200019836,
+          0.16659758985042572
+        ]
+      ]
+    },
+    {
+      "step": 1024,
+      "seconds": 0.16739429999142885,
+      "block_loss": [
+        [
+          0.25874847173690796,
+          0.19725894927978516
+        ]
+      ]
+    },
+    {
+      "step": 1280,
+      "seconds": 0.1972288999822922,
+      "block_loss": [
+        [
+          0.23967784643173218,
+          0.18004900217056274
+        ]
+      ]
+    },
+    {
+      "step": 1536,
+      "seconds": 0.2272310999687761,
+      "block_loss": [
+        [
+          0.19335228204727173,
+          0.1326984167098999
+        ]
+      ]
+    },
+    {
+      "step": 1792,
+      "seconds": 0.25689979997696355,
+      "block_loss": [
+        [
+          0.2996214032173157,
+          0.17602390050888062
+        ]
+      ]
+    },
+    {
+      "step": 2048,
+      "seconds": 0.286839600012172,
+      "block_loss": [
+        [
+          0.18960675597190857,
+          0.14823435246944427
+        ]
+      ]
+    }
+  ],
+  "cuda_peak_allocated_bytes": 172185600,
+  "source_lock_sha256": "6d059949faaffddf4a93e9e2ab3efdf85d85c084558c5bdc7be57af0774ee8a8",
+  "selection_sha256": "caf35b31df5e4bafdbbcdeb19482fd79064bf66bc1a86d3d6b2c06ca6b351a9b",
+  "role": "slr_to_ipod",
+  "fold": null,
+  "fit_rows_sha256": "e2d1b593a9375d92fdb62e59dc3a464f239fd8126541b876ddda2d5728840a75",
+  "query_rows_sha256": null,
+  "files": {
+    "models_2048.npz": "26ae95203b725d3ba064ad96e4db0e3cc2018e22ee0bf533ccf28403d3fa5a86",
+    "rows.npz": "83987204b23ab321d5c108a7e08158231fc1b8ecbb6535a0a5d032b41bf336e5"
+  },
+  "max_torch_numpy_native_lab": 7.44851296019533e-06
+}

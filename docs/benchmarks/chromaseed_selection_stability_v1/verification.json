@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "completed_unix": 1789282930.2501636,
+  "source_lock_sha256": "88189161a7cee0c87d8ed5da2695083374564984c01ad77e3711f5fd49b3efea",
+  "results_sha256": "2490104c6919306d197c46f5b876f03319d01d306ed93cd06dcb0864b4a8243a",
+  "tests_passed": 8,
+  "pytest_seconds": 0.14,
+  "pytest_command": "python -m pytest tests/test_chromaseed_selection_stability.py -q",
+  "pytest_evidence": "Captured 8 passed in 0.14s before real calculation after Ruff changes. All core/runner/test hashes remain identical; documentation does not warrant another numerical rerun.",
+  "tested_sources": {
+    "scripts/chromaseed_selection_stability.py": "f17987aa5f424d2c2d3c42da398573589739278a8e5999e458831f69547664c9",
+    "scripts/chromaseed_selection_stability_run.py": "8897b564e6d1963a8d4c7ef36161e1c2669a695c54e9516d902344b469624e10",
+    "tests/test_chromaseed_selection_stability.py": "44acb95265617374e368318961824f98c55a3ac06bfeb01441e148461ef02006",
+    "docs/research/chromaseed_selection_stability_v1_protocol.md": "23eb0cc18194d5215b38c2d2845d2796b83c20e3d7852a14be71b806a7e33630"
+  },
+  "ruff": "Fresh check passes all 4 S scripts and 1 S test file",
+  "git_diff_check": "passed",
+  "original_repository_git_status": "clean",
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "source_locks_verified": [
+    {
+      "run": "skin_local_search_v1",
+      "source_lock_sha256": "9665568430b03e66cc5bb5b6b564a7bffd1e9a9e4fb726660c27e31116c57ea5",
+      "source_entries_checked": 4,
+      "unique_source_paths_checked": 4
+    },
+    {
+      "run": "skin_local_search_compact_v1",
+      "source_lock_sha256": "f2ffca50caf33e79247d7b15ca4c899c2347d6265ba690db9a886c40c2440906",
+      "source_entries_checked": 8,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_v1",
+      "source_lock_sha256": "286cf15eeb9dc5cbba45aa88db4751c7b9829db1ba2ba3a5a5ddf2d2a9539deb",
+      "source_entries_checked": 6,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_frozen_v1",
+      "source_lock_sha256": "2a2834f81b283ba76cecc3dd0101144183c6f26968772bf2c3c1d6eb5c9b2626",
+      "source_entries_checked": 6,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_v1",
+      "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+      "source_entries_checked": 6,
+      "unique_source_paths_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_precision_v1",
+      "source_lock_sha256": "46562a2cda469546787ed6f04036eecf3a940be7e0075030c513ad4085a7d360",
+      "source_entries_checked": 4,
+      "unique_source_paths_checked": 4
+    },
+    {
+      "run": "chromaseed_kernel_v1",
+      "source_lock_sha256": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+      "source_entries_checked": 7,
+      "unique_source_paths_checked": 7
+    },
+    {
+      "run": "chromaseed_fast_kernel_v1",
+      "source_lock_sha256": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+      "source_entries_checked": 10,
+      "unique_source_paths_checked": 10
+    },
+    {
+      "run": "chromaseed_condensed_exact_v1",
+      "source_lock_sha256": "204f8c1352e56e5656d89ed3dc258c63f95965d30f42aea347fbee7868f99b8f",
+      "source_entries_checked": 18,
+      "unique_source_paths_checked": 18
+    },
+    {
+      "run": "chromaseed_perceptual_v1",
+      "source_lock_sha256": "9ce75fddcfc3241b271318da51eead680d78a9e51877b346aed64716b5550e92",
+      "source_entries_checked": 25,
+      "unique_source_paths_checked": 25
+    },
+    {
+      "run": "chromaseed_weak_ridge_v1",
+      "source_lock_sha256": "c16e607e05cc9750ccc3275c16d482c2fb863c693d920ab366b0e0200c1d33e8",
+      "source_entries_checked": 31,
+      "unique_source_paths_checked": 31
+    },
+    {
+      "run": "chromaseed_selection_stability_v1",
+      "source_lock_sha256": "88189161a7cee0c87d8ed5da2695083374564984c01ad77e3711f5fd49b3efea",
+      "source_entries_checked": 35,
+      "unique_source_paths_checked": 35
+    }
+  ],
+  "source_entries_checked_total": 160,
+  "unique_source_paths_per_run_checked_total": 158,
+  "current_input_bindings_checked": 23,
+  "parent_W_verification_sha256": "1a3aea3400503e0e10c69821c9f4aa82021fc52274df06666af2925ce1b46080",
+  "parent_W_artifact_bindings_checked": 17,
+  "current_numeric_file_hashes_checked": {
+    "scores.npz": "6bb8ee5e4db8dbf74cd690206cb5ee9ed35cb5c1461c635747b99adff016bce1",
+    "traces.npz": "4798d442df3fcede6177c0fa0406087d31c129ed77b9ffa66009045ac951c645"
+  },
+  "independent_audit_sha256": "4da71c0f2d268673deee907bf3be88314926778ff2459141de9bad41cbc87432",
+  "independent_audit_checks": {
+    "source_bindings": 35,
+    "input_bindings": 23,
+    "oof_archives": 9,
+    "candidate_person_values": 12474,
+    "candidate_scores": 891,
+    "original_choices": 15,
+    "bootstrap_draws": 60000,
+    "bootstrap_selections": 300000,
+    "deletion_selections": 210,
+    "paired_distributions": 30
+  },
+  "independent_audit_maxima": {
+    "person_score_drift": 0.0,
+    "paired_gap_drift": 3.552713678800501e-15
+  },
+  "active_study_processes": 0,
+  "terminal_evidence": "Primary PID13944 returned exit0 directly; audit sessions56446/30639 returned exit0, final30639 includes tightened scalar checks. Report exit0. Fresh process scan shows no S/W processes.",
+  "local_markdown_links_checked": 40,
+  "figures_visually_inspected": [
+    "sensitivity.png"
+  ],
+  "artifact_sha256": {
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\audit.json": "4da71c0f2d268673deee907bf3be88314926778ff2459141de9bad41cbc87432",
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\report.md": "92f0ed283a79053977808b6d662f19cb4bf880e2e64751b30886dc38e0114a84",
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\reproduce.md": "e5083366d55606fcf0c61cd1370ec18a32b6db33aeb403a9e8e46500b9cd2ef7",
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\sensitivity.png": "51862ef88be5e4b9f8cffc2bdff3d5f827943fa11731a8aba013a289aaf0dc7f",
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\sensitivity.svg": "091fbda9b4a2ec7708a241ebf2a1919a8ba852371f3e54827e50a4d5e9448354",
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\source_lock.json": "88189161a7cee0c87d8ed5da2695083374564984c01ad77e3711f5fd49b3efea",
+    "docs\\benchmarks\\chromaseed_selection_stability_v1\\summary.json": "4b61aa8d4eca5bbc1ab6047b2ea613332ac7eb458bc6e14612e9e95b929e17eb",
+    "docs\\research\\chromaseed_selection_stability_next_decision.md": "d649bd04f5a1f03dfaec03834686588fe07b44bcaa07da1540478460f720e9ab",
+    "docs\\superpowers\\plans\\2026-09-13-chromaseed-selection-stability.md": "f21b3d2ac65f5a032c2956a3bf7d33d94609c1258431d186018990b3a5ad1e4f"
+  },
+  "postprocess_sources": {
+    "scripts/chromaseed_selection_stability_audit.py": "b3a4e147dca7531ffb2afd3910a290a03246aed1a7ebf50a213adfb3131658b2",
+    "scripts/chromaseed_selection_stability_report.py": "55ef608512ef7e23b71497d06c3d538c1cb5d4add33dea21fe7b8583a203adc2"
+  },
+  "shortcut_sha256": "fbe69701f1104ee14151ab9b4db4b9ac42dc9d62211039e9d7ec19f949421617",
+  "goal_classification": "progress; broad goal active; input/target camera-support diagnostic planned, not launched",
+  "evidence_limits": "Conditional sensitivity of historically reused TRAIN OOF. No model fitting, new outer scoring or independent ordinary-phone facial evidence. Folds/fits remain fixed; roles overlap."
+}

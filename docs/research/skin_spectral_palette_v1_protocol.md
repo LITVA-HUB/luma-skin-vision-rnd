@@ -1,0 +1,17 @@
+# Measured facial palette v1 — TRAIN-only preparation
+
+The previous continuation is progress: the registered HR GPU comparison is running;185frozen sources verified unchanged and the first7complete inner banks passed independent exported-prediction checks. This preparation is an independent CPU-only task. It does not change HR or its native Lab targets.
+
+Use exactly the19original TRAIN source cubes in `D:/Luma-RnD/data_growth_2026_09_14/uminho_train_v2/profile.json`. Retain original SHA256 identities and19source groups. No5validation/5test cube is opened. The raw33bands400..720nm are measured directional reflectance with the source acquisition limitations; correlated pixels are not new people.
+
+Create a derived D65/sRGB/CIE1931 2-degree rendering for each face. Verify original CIE2-degree,1964 10-degree and D65 data table checksums. Integrate at1nm over360..830nm using linear interpolation inside the measured range and **constant endpoints outside400..720nm**. This tail behavior is a modelling assumption. The supplied author RGB uses another observer and is not used. Record integration matrices, white points and spectral weight outside the measured interval. Encode sRGB and clip only the rendered preview/network input; retain unmodified spectral samples and unclipped derived colors.
+
+Use the frozen local Seg1 checkpointSHA1203cbc5ed2ee17cb2a408c47a23b3a28468f169d48b4d3cee8bd3059e7fbed3 on CPU FP32 at192x192. Qualified pixels require logit>=log(19), equivalent to confidence0.95, followed by two3x3binary erosion iterations at192resolution and nearest-neighbour projection to the original grid. Intersect with strictly positive source spectra. This is an automated sampling mask, **not a manual ground-truth skin mask**. Do not tune the confidence/erosion using visual results.
+
+Sample up to1024qualified pixels per source without replacement, RNG seed fromSHA256("LumaSpectralPaletteV1|"+sourceSHA). Preserve actual counts, pixel indices and equal-source weights1/n. If fewer than16pixels qualify, retain the source failure in the profile and take no samples; no fallback threshold. No numerical clipping, logit transform requiring bounded reflectance, replacement of outliers or per-face recoloring. Flag values above1 rather than altering them.
+
+Store original float64 spectra, source group and source pixel coordinates, wavelengths, equal-source weights, derived XYZ/Lab underD65 for both observers, and unclipped encoded sRGB. These Lab coordinates are **derived from the spectra under stated conventions**, not new independently measured MSKCC/DAST/phone targets. Do not merge these labels into HR.
+
+Save local full-resolution derived previews, selected masks and a19face contact sheet. Inspect every preview for gross sampling failures and report limitations; inspection is qualitative and does not certify the full masks. Compare mask coverage within the9previously inspected skin rectangles on the3earlier TRAIN faces; these are small positive-only annotations, not independent segmentation accuracy.
+
+Before image processing, freeze this protocol, preparation source, Seg1 source/checkpoint and original CIE source metadata hashes. Verify interpolation against direct integration, retention of values above1 and deterministic in-mask sampling. After processing, independently check sampled spectra against original cube coordinates, group weights, source separation and derived-color calculations. Data preparation alone is not an achieved color-quality gain or completion of the broad model objective.

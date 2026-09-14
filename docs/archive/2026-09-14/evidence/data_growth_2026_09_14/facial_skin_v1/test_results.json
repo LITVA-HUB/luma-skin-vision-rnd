@@ -1,0 +1,87 @@
+{
+  "model": "Luma ChromaSeed-Seg1",
+  "parameters": 4416673,
+  "model_bytes": 17680385,
+  "selected_epoch": 12,
+  "test": {
+    "tp": 12114843,
+    "fp": 365518,
+    "fn": 369494,
+    "tn": 60878145,
+    "iou": 0.9427999771203643,
+    "dice": 0.9705579454636303,
+    "precision": 0.9707125458951067,
+    "recall": 0.970403394269155,
+    "images": 2000,
+    "mean_image_iou": 0.9419562606357323,
+    "median_image_iou": 0.9508931823622413,
+    "image_iou_p10": 0.9094958542028577
+  },
+  "paired_128": {
+    "cnn": {
+      "tp": 796914,
+      "fp": 23786,
+      "fn": 23242,
+      "tn": 3874650,
+      "iou": 0.9442757914643424,
+      "dice": 0.9713393497052758,
+      "precision": 0.9710174241501157,
+      "recall": 0.9716614887899375,
+      "images": 128,
+      "mean_image_iou": 0.9432558053929346,
+      "median_image_iou": 0.9512326411234759,
+      "image_iou_p10": 0.9128071353832072
+    },
+    "uci_color_only": {
+      "tp": 505928,
+      "fp": 617365,
+      "fn": 314228,
+      "tn": 3281071,
+      "iou": 0.3519447715894237,
+      "dice": 0.5206496285727076,
+      "precision": 0.45039718043288796,
+      "recall": 0.6168680104760558,
+      "mean_image_iou": 0.3531270369478587,
+      "images": 128
+    }
+  },
+  "protocol_sha256": "ea2696b51ff0a09ec2b84c971e44a9bad453e920d25d5934b0483e28f8498a02",
+  "selection_sha256": "4eece641e844a14aeadfdb79544976b2f4661fedf4efe9e49bd5c724f6e92627",
+  "model_sha256": "1203cbc5ed2ee17cb2a408c47a23b3a28468f169d48b4d3cee8bd3059e7fbed3",
+  "seconds": 133.7048145000008,
+  "cpu_reload_exact": true,
+  "test_decoded": true,
+  "ground_truth_color_accuracy": null,
+  "observed_srgb_brightness_groups": [
+    {
+      "minimum": 0,
+      "maximum": 0.25,
+      "images": 87,
+      "mean_image_iou": 0.9329678440133082
+    },
+    {
+      "minimum": 0.25,
+      "maximum": 0.5,
+      "images": 1002,
+      "mean_image_iou": 0.9409186745546732
+    },
+    {
+      "minimum": 0.5,
+      "maximum": 0.75,
+      "images": 848,
+      "mean_image_iou": 0.943676768968053
+    },
+    {
+      "minimum": 0.75,
+      "maximum": 1.0,
+      "images": 63,
+      "mean_image_iou": 0.9477128072002451
+    }
+  ],
+  "empty_ground_truth_images": 0,
+  "limitations": [
+    "semantic mask quality only; no measured color target",
+    "official held images with source-prefix/byte overlap exclusions; person independence unverified",
+    "192x192 evaluation; source-resolution boundaries not evaluated"
+  ]
+}

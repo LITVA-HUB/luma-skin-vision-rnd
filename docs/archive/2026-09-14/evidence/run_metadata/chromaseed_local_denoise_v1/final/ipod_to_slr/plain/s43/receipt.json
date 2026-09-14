@@ -1,0 +1,107 @@
+{
+  "family": "plain",
+  "slots": [
+    {
+      "seed": 43,
+      "lr": 0.001
+    }
+  ],
+  "steps": 2048,
+  "checkpoints": [
+    2048
+  ],
+  "batch_size": 64,
+  "n_fit": 643,
+  "engine": "cuda_graph",
+  "device": "cuda",
+  "parameters": 2763,
+  "numeric_bytes": 11364,
+  "setup_seconds": 0.04078290000325069,
+  "full_bank_seconds": 0.2544262000010349,
+  "trace": [
+    {
+      "step": 256,
+      "seconds": 0.066328999993857,
+      "block_loss": [
+        [
+          0.20083293318748474
+        ]
+      ]
+    },
+    {
+      "step": 512,
+      "seconds": 0.09288959996774793,
+      "block_loss": [
+        [
+          0.1659134328365326
+        ]
+      ]
+    },
+    {
+      "step": 768,
+      "seconds": 0.11990559997502714,
+      "block_loss": [
+        [
+          0.1648368090391159
+        ]
+      ]
+    },
+    {
+      "step": 1024,
+      "seconds": 0.1463950999896042,
+      "block_loss": [
+        [
+          0.15187352895736694
+        ]
+      ]
+    },
+    {
+      "step": 1280,
+      "seconds": 0.1729652999783866,
+      "block_loss": [
+        [
+          0.15215499699115753
+        ]
+      ]
+    },
+    {
+      "step": 1536,
+      "seconds": 0.1997243000078015,
+      "block_loss": [
+        [
+          0.11511542648077011
+        ]
+      ]
+    },
+    {
+      "step": 1792,
+      "seconds": 0.22639669995987788,
+      "block_loss": [
+        [
+          0.1523437350988388
+        ]
+      ]
+    },
+    {
+      "step": 2048,
+      "seconds": 0.2530543999746442,
+      "block_loss": [
+        [
+          0.15616187453269958
+        ]
+      ]
+    }
+  ],
+  "cuda_peak_allocated_bytes": 169070592,
+  "source_lock_sha256": "6d059949faaffddf4a93e9e2ab3efdf85d85c084558c5bdc7be57af0774ee8a8",
+  "selection_sha256": "caf35b31df5e4bafdbbcdeb19482fd79064bf66bc1a86d3d6b2c06ca6b351a9b",
+  "role": "ipod_to_slr",
+  "fold": null,
+  "fit_rows_sha256": "ae55dfe04a24294bc34479e52b92b5674602e9484c44876a35535e70924d3a70",
+  "query_rows_sha256": null,
+  "files": {
+    "models_2048.npz": "d2da75e121e2e447da42774176abd5557ae8e45459986c72b10cab1efcd2d5d3",
+    "rows.npz": "6733fe73db1b336ad5a4d1f683016762dedc23b280e62758be2f0dc9c321f8d1"
+  },
+  "max_torch_numpy_native_lab": 5.907987997488817e-06
+}

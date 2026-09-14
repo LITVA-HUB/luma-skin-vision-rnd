@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "command": [
+        "-m",
+        "pytest",
+        "tests/test_chromaseed_widen.py",
+        "tests/test_chromaseed_widen_audit.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "................                                                         [100%]\n16 passed in 2.45s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "-m",
+        "ruff",
+        "check",
+        "scripts/chromaseed_widen.py",
+        "scripts/chromaseed_widen_run.py",
+        "scripts/chromaseed_widen_audit.py",
+        "scripts/chromaseed_widen_runtime.py",
+        "scripts/chromaseed_widen_report.py",
+        "tests/test_chromaseed_widen.py",
+        "tests/test_chromaseed_widen_audit.py"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    }
+  ]
+}

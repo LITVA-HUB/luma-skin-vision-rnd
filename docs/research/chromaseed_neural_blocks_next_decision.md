@@ -1,0 +1,11 @@
+# After NB: user's longer-training / more-examples request
+
+User steered the active task: «поробуй лекгой модели дать больше примеров долго обучать». NB's immutable negative equivalence evidence is preserved; do not keep optimizing dropped-block replay ahead of this request. Accepted NP643-parameter heads remain the starting point.
+
+Next preregister LT: continue the exact NP blind-head warm start on each legal fit split, with original fit-only normalizers. Increase synthetic variant count and training steps while retaining no-augmentation/short/baseline controls. Original measured people/labels do not multiply when variants are added. No external data acquisition authorized by the selected implementation; no old held/test borrowing. Earlier palette pretraining and A's16 affine copies already exist, so do not claim first augmentation. Explicitly distinguish a larger variation bank from more measured people.
+
+The planned larger comparison is 0/16/256 added bounded color variations per original fit row, same original-image weights and augmentation probability; longer checkpoints up to131072 updates, with inner-only LR/checkpoint/policy selection and intermediate errors. Both variation count and training duration must have controls. Warm starts for inner folds come only from the matching original ND inner models, never from full-role models. Include the original NP prediction as step0 and preserve full upstream training cost when timing.
+
+NB proves that changing batch shape can alter longer learned trajectories despite deterministic execution. Keep a fixed training-bank shape/slot order and original schedule horizon for exact replay, and charge the full bank rather than dividing its cost. Any later standalone optimization needs its own correctness evidence. First implement/test/freeze the protocol and data transform; LT is planned, not implemented/launched at NB sealing.
+
+NB report re-verifies read-only after sealing. Never rerun frozen NB primary or bound diagnostic/audit/probe/runtime writers; preserve all older NP/ND sources and outputs, never G/GS mains. Original TRAIN-only/no new images/weights/packages/agents/messages/publication boundary persists. Ordinary-phone face/end-to-end high quality unvalidated; broad goal active, not blocked.

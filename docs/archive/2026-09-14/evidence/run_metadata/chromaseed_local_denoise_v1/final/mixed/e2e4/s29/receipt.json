@@ -1,0 +1,59 @@
+{
+  "family": "e2e4",
+  "slots": [
+    {
+      "seed": 29,
+      "lr": 0.003
+    }
+  ],
+  "steps": 512,
+  "checkpoints": [
+    512
+  ],
+  "batch_size": 64,
+  "n_fit": 734,
+  "engine": "cuda_graph",
+  "device": "cuda",
+  "parameters": 2764,
+  "numeric_bytes": 11368,
+  "setup_seconds": 0.057728299987502396,
+  "full_bank_seconds": 0.2305641999701038,
+  "trace": [
+    {
+      "step": 256,
+      "seconds": 0.14308519999030977,
+      "block_loss": [
+        [
+          0.2205113172531128,
+          0.2133251130580902,
+          0.21356704831123352,
+          0.2165532112121582
+        ]
+      ]
+    },
+    {
+      "step": 512,
+      "seconds": 0.22944600001210347,
+      "block_loss": [
+        [
+          0.22290489077568054,
+          0.2151784896850586,
+          0.1976681798696518,
+          0.20990143716335297
+        ]
+      ]
+    }
+  ],
+  "cuda_peak_allocated_bytes": 168296448,
+  "source_lock_sha256": "6d059949faaffddf4a93e9e2ab3efdf85d85c084558c5bdc7be57af0774ee8a8",
+  "selection_sha256": "caf35b31df5e4bafdbbcdeb19482fd79064bf66bc1a86d3d6b2c06ca6b351a9b",
+  "role": "mixed",
+  "fold": null,
+  "fit_rows_sha256": "6621314fcbada21e0e584fc5424d47ac44e1505cd2bc8dc428e220d1bfc2f86b",
+  "query_rows_sha256": null,
+  "files": {
+    "models_512.npz": "6ca46b40c57aaa830b92491ba55de1068d50d5b9a5fce1cef3db998cf02386a7",
+    "rows.npz": "e41ec1feda37f1d276d367bc8a198893aeab0b43131495df811b80443517e2aa"
+  },
+  "max_torch_numpy_native_lab": 7.749105051857441e-06
+}

@@ -1,0 +1,59 @@
+{
+  "family": "e2e4",
+  "slots": [
+    {
+      "seed": 43,
+      "lr": 0.003
+    }
+  ],
+  "steps": 512,
+  "checkpoints": [
+    512
+  ],
+  "batch_size": 64,
+  "n_fit": 734,
+  "engine": "cuda_graph",
+  "device": "cuda",
+  "parameters": 2764,
+  "numeric_bytes": 11368,
+  "setup_seconds": 0.045890500012319535,
+  "full_bank_seconds": 0.21922959998482838,
+  "trace": [
+    {
+      "step": 256,
+      "seconds": 0.13135189999593422,
+      "block_loss": [
+        [
+          0.2069564312696457,
+          0.20859357714653015,
+          0.20159666240215302,
+          0.1923237293958664
+        ]
+      ]
+    },
+    {
+      "step": 512,
+      "seconds": 0.21791720000328496,
+      "block_loss": [
+        [
+          0.2677496671676636,
+          0.26452574133872986,
+          0.2741243541240692,
+          0.2586573660373688
+        ]
+      ]
+    }
+  ],
+  "cuda_peak_allocated_bytes": 168296448,
+  "source_lock_sha256": "6d059949faaffddf4a93e9e2ab3efdf85d85c084558c5bdc7be57af0774ee8a8",
+  "selection_sha256": "caf35b31df5e4bafdbbcdeb19482fd79064bf66bc1a86d3d6b2c06ca6b351a9b",
+  "role": "mixed",
+  "fold": null,
+  "fit_rows_sha256": "6621314fcbada21e0e584fc5424d47ac44e1505cd2bc8dc428e220d1bfc2f86b",
+  "query_rows_sha256": null,
+  "files": {
+    "models_512.npz": "8d301355a6604c29f0e96fa317f4b616b9b462336e2b08950ad23753a4118f92",
+    "rows.npz": "e41ec1feda37f1d276d367bc8a198893aeab0b43131495df811b80443517e2aa"
+  },
+  "max_torch_numpy_native_lab": 6.780212032708732e-06
+}

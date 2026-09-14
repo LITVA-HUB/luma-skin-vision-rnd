@@ -1,0 +1,27 @@
+# Run archive · chromaseed_kernel_replay_timing_v1
+
+[Все run-каталоги](../RUNS.md) · [Архитектуры](../ARCHITECTURES.md) · [Точка остановки](../STOP_STATUS.md)
+
+Наличие файла не означает успешный финальный опыт. Проверяйте completion, audit, verification и исходный протокол. Superseded/failed receipts сохраняют прежнюю ошибку, а не заменяют её исправленной записью.
+
+| Исходный артефакт | Байты | SHA-256 |
+|---|---:|---|
+| [chromaseed_kernel_replay_timing_v1/console.log](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/console.log) | 1342 | `a22faaf5bba044da4c9fe2d6efed62bfbba73b50ce3cffd6d58292d5c5ad1aa1` |
+| [chromaseed_kernel_replay_timing_v1/final_complete.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/final_complete.json) | 223 | `0eadb8e6cc1b256934f3f2f810126c4b26aa40dfd23b37058b2881677e20fddf` |
+| [chromaseed_kernel_replay_timing_v1/inner_complete.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner_complete.json) | 161 | `e2d2c94094d6ce3a91e4ef89345e90ca4cfe79f3064b4222f02bbeb4597b0e53` |
+| [chromaseed_kernel_replay_timing_v1/progress.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/progress.json) | 127 | `06a52cce79abe9246adca347349641e0869f66641ab184d1f5a94e94f787785c` |
+| [chromaseed_kernel_replay_timing_v1/results.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/results.json) | 108366 | `27693f7b2d5fe9197abdb4da8edaa4b6e5141e186a463541def7e664e0637556` |
+| [chromaseed_kernel_replay_timing_v1/selections.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/selections.json) | 847306 | `46a092bd5096fd349427e1baaeada61fd1155b68bca89820d8e81e9f6b442419` |
+| [chromaseed_kernel_replay_timing_v1/source_lock.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/source_lock.json) | 6948 | `27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f` |
+| [chromaseed_kernel_replay_timing_v1/final/ipod_to_slr/bank/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/final/ipod_to_slr/bank/receipt.json) | 578900 | `7aa0d68d01e695ff944a18a6ef81442715803ecd66de2746e428319e33cbfd72` |
+| [chromaseed_kernel_replay_timing_v1/final/mixed/bank/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/final/mixed/bank/receipt.json) | 590834 | `bb6f749c5875ed1ee6590d050c581405d0353366de03c60c78920188ee933929` |
+| [chromaseed_kernel_replay_timing_v1/final/slr_to_ipod/bank/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/final/slr_to_ipod/bank/receipt.json) | 534651 | `d5b30f3ab07d81d2914a44def994d77efbca29faccae911902fd66542ba0aa8f` |
+| [chromaseed_kernel_replay_timing_v1/inner/ipod_to_slr/fold0/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/ipod_to_slr/fold0/receipt.json) | 543306 | `42b79b8411ee1a7fbaa29e188c70a1b974d7d7304d4a2ba98167db36b5b23c14` |
+| [chromaseed_kernel_replay_timing_v1/inner/ipod_to_slr/fold1/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/ipod_to_slr/fold1/receipt.json) | 557506 | `c681d60aeff87f43fbf41e7b27c9d7a40d712eb66d9c62ea57e234afb0f211ed` |
+| [chromaseed_kernel_replay_timing_v1/inner/ipod_to_slr/fold2/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/ipod_to_slr/fold2/receipt.json) | 549575 | `09cebf9ace23236a076fd0ab46a24f445071d4d21223640d886dad07de6da866` |
+| [chromaseed_kernel_replay_timing_v1/inner/mixed/fold0/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/mixed/fold0/receipt.json) | 560824 | `4314b6d498ec202af7382dd2e8ae118b018e12ff419e6c86ea7592f60d55082a` |
+| [chromaseed_kernel_replay_timing_v1/inner/mixed/fold1/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/mixed/fold1/receipt.json) | 556055 | `eae7fdf610ec9da591b3ac7ed339f4b3820ac9c79a3fb992adad28e61bb7305d` |
+| [chromaseed_kernel_replay_timing_v1/inner/mixed/fold2/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/mixed/fold2/receipt.json) | 558866 | `063b3e123977bb90346d54f8f0b16f457c28240aec2cc334a7ffbefc0e247d60` |
+| [chromaseed_kernel_replay_timing_v1/inner/slr_to_ipod/fold0/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/slr_to_ipod/fold0/receipt.json) | 514568 | `a63bdd55547daecb3ec1393643b92f1c327290781c4292fdd5b7d30af3a396b1` |
+| [chromaseed_kernel_replay_timing_v1/inner/slr_to_ipod/fold1/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/slr_to_ipod/fold1/receipt.json) | 516919 | `bfe38deabb163eb43a294a8d514b0c9b1dacb2eeabb3347bb71dfd6297e97d00` |
+| [chromaseed_kernel_replay_timing_v1/inner/slr_to_ipod/fold2/receipt.json](../../../../docs/archive/2026-09-14/evidence/run_metadata/chromaseed_kernel_replay_timing_v1/inner/slr_to_ipod/fold2/receipt.json) | 520735 | `c384038512cf28d7bbf2b8201baed0fd250fa6c6e46d57e0d682c63203f93b09` |

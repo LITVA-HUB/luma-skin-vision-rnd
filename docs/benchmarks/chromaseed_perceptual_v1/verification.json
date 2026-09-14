@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "completed_unix": 1789280054.6102781,
+  "tests_passed": 15,
+  "pytest_seconds": 1.4,
+  "pytest_command": "python -m pytest tests/test_chromaseed_perceptual.py tests/test_chromaseed_perceptual_protocol.py tests/test_chromaseed_condensed_exact.py -q",
+  "pytest_evidence": "Fresh captured output:15 passed in1.40s after formatting and before real fits. All tested P numerical source/test files are frozen by the current primary manifest and still match.",
+  "tested_sources": {
+    "scripts/chromaseed_condensed_exact.py": "81b9483e2f744eee6dd43e195023d9c98a4587bd5e1157caf1ca66aa4bd858ec",
+    "scripts/chromaseed_perceptual.py": "2c92fced648e0e72230dd38707d4b6e0e1aecf64062eb18be9c5d41e21735a2a",
+    "scripts/chromaseed_perceptual_train.py": "c9f42dd4b2a8ac947497fd7f2dc77b3fc2742bbd28e650df377390ab3b617519",
+    "scripts/chromaseed_perceptual_reference.py": "5b386f30ca16574b64a4cfebd2e940d8f2cbebb2b94ebd1863ff1d96b7f41d0c",
+    "docs/research/chromaseed_perceptual_v1_protocol.md": "a79ac611997e5b05eb1e72b1357e5be97a6ebb413fd1b80ab96071724405d446",
+    "tests/test_chromaseed_perceptual.py": "bb712ba0f8ccb98040673f700b4490aec27cd14050d9d415324364acd448e7e6",
+    "tests/test_chromaseed_perceptual_protocol.py": "316572ab7a2e10b98574f6a9952ff5fa55927dc4f583d14e08fd7c98c17ef59b",
+    "tests/fixtures/ciede2000_sharma.txt": "44aebb39107128328add54fbef5ac8ee89909e50508f448a1580adea2058a4b8",
+    "tests/test_chromaseed_condensed_exact.py": "352406b48f374984f0bbc9227eaf5fa841af057eded25e7634a186eed077b78a"
+  },
+  "ruff": "Fresh check passes all6 new P scripts and2 P test files",
+  "git_diff_check": "passed",
+  "original_repository_git_status": "clean",
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "source_locks_verified": [
+    {
+      "run": "skin_local_search_v1",
+      "source_lock_sha256": "9665568430b03e66cc5bb5b6b564a7bffd1e9a9e4fb726660c27e31116c57ea5",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "skin_local_search_compact_v1",
+      "source_lock_sha256": "f2ffca50caf33e79247d7b15ca4c899c2347d6265ba690db9a886c40c2440906",
+      "source_bindings_checked": 8
+    },
+    {
+      "run": "chromaseed_v1",
+      "source_lock_sha256": "286cf15eeb9dc5cbba45aa88db4751c7b9829db1ba2ba3a5a5ddf2d2a9539deb",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_frozen_v1",
+      "source_lock_sha256": "2a2834f81b283ba76cecc3dd0101144183c6f26968772bf2c3c1d6eb5c9b2626",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_v1",
+      "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_precision_v1",
+      "source_lock_sha256": "46562a2cda469546787ed6f04036eecf3a940be7e0075030c513ad4085a7d360",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "chromaseed_kernel_v1",
+      "source_lock_sha256": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+      "source_bindings_checked": 7
+    },
+    {
+      "run": "chromaseed_fast_kernel_v1",
+      "source_lock_sha256": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+      "source_bindings_checked": 10
+    },
+    {
+      "run": "chromaseed_condensed_exact_v1",
+      "source_lock_sha256": "204f8c1352e56e5656d89ed3dc258c63f95965d30f42aea347fbee7868f99b8f",
+      "source_bindings_checked": 18
+    },
+    {
+      "run": "chromaseed_perceptual_v1",
+      "source_lock_sha256": "9ce75fddcfc3241b271318da51eead680d78a9e51877b346aed64716b5550e92",
+      "source_bindings_checked": 25
+    }
+  ],
+  "source_bindings_checked_total": 94,
+  "parent_artifact_bindings_checked": 100,
+  "current_selected_model_prediction_hashes_checked": 90,
+  "current_bank_file_hashes_checked": 21,
+  "independent_audit_sha256": "bc420ad7367b35b39b54b2cd738d169b16279168cec695df2ef63b5edb3a7555",
+  "independent_audit_checks": {
+    "banks": 12,
+    "stored_readouts": 2916,
+    "oof_query_rows": 413100,
+    "choices": 15,
+    "iterative_trajectories": 648,
+    "selected_models": 45,
+    "selected_query_rows": 17970,
+    "independent_refits": 45,
+    "positive_step_probe_readouts": 18
+  },
+  "independent_audit_maxima": {
+    "oof_prediction_drift": 1.8900436771218665e-12,
+    "selected_prediction_drift": 1.4708234630234074e-12,
+    "svd_prediction_drift": 2.3939827805463665e-05,
+    "positive_step_probe_drift": 1.620276262315201e-05,
+    "objective_increase": 0.0,
+    "normal_equation_residual": 9.569043594077718e-16
+  },
+  "runtime_sha256": "11e3f14bf510add7cd7a51a619e8bad618bd467a4b4731bf79109dc1e442c93c",
+  "active_study_processes": 0,
+  "local_markdown_links_checked": 36,
+  "figures_visually_inspected": [
+    "quality.png",
+    "steps.png"
+  ],
+  "artifact_sha256": {
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\audit.json": "bc420ad7367b35b39b54b2cd738d169b16279168cec695df2ef63b5edb3a7555",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\quality.png": "583579f028b3b73bd3ecd8a1b406c2e585a6ed819469332eb66e86e2f184f9d8",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\quality.svg": "7d6cccceab208ee8c6b48457a6372a7e15a479209a26ddb185cbf2f803189cf4",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\report.md": "a643ad13cefe228708291f0d7c39d6cbacc5ed95d15fbf21c2d746f92230becd",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\reproduce.md": "cf30dd603a2ca93a6a17e9c6612e099966e7116eb06f2b2883c575b685ad3c04",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\runtime.json": "11e3f14bf510add7cd7a51a619e8bad618bd467a4b4731bf79109dc1e442c93c",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\selections.json": "7f526a4f17e2afb53f4a81bd436b958bac58d703ee368afa3bdf76a9b95efcfb",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\source_lock.json": "9ce75fddcfc3241b271318da51eead680d78a9e51877b346aed64716b5550e92",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\steps.png": "78c4212c343c42a826ade98fbaf2eff1044a8da2a5e72a653ee6e54b0b01e926",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\steps.svg": "38975ce572511aa26e61397ea5893470a83fcfa93ae9f1ed0933bfa4cba68a2a",
+    "docs\\benchmarks\\chromaseed_perceptual_v1\\summary.json": "048f56900588229e0735b1d243cd61577662c5988f8584758c8a70878225df89",
+    "docs\\research\\chromaseed_perceptual_next_decision.md": "40c7700086f181a543bc5679e15f54ae806929abdb3eeb1e455c5cf48399887f",
+    "docs\\architecture\\chromaseed_perceptual_model_card.md": "e3eed3d1120b72301b8600907c1e62ebc18e02681ce5dae11501b713c31d43c3",
+    "docs\\superpowers\\plans\\2026-09-13-chromaseed-perceptual.md": "9fa33fcda52e2a1b44b0f84c1b1b1dbfc6300a361e62812a47db8bd289f4685e"
+  },
+  "shortcut_sha256": "abc1d354e0a555376582b16974b619cca75dee1a55833cf6c1ce5a91007e9d37",
+  "goal_classification": "progress; broad goal active; weaker-regularization follow-up planned, not launched",
+  "evidence_limits": "All roles are historically reused original TRAIN. Numerical/audit/runtime verification does not establish ordinary-phone facial quality or independent scientific confirmation."
+}

@@ -1,0 +1,54 @@
+{
+  "data": "synthetic generated features only",
+  "rows": 734,
+  "one_warmup_three_repeats": true,
+  "alphas": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "scope": "core coefficient bank including CPU-GPU transfer for spectral decomposition; excludes data preparation and kernel construction",
+  "backend_results_agree": true,
+  "records": [
+    {
+      "operation": "exact",
+      "backend": "cpu",
+      "median_seconds": 0.04679759999271482,
+      "repeat_seconds": [
+        0.049704000004567206,
+        0.04679759999271482,
+        0.046023899980355054
+      ]
+    },
+    {
+      "operation": "exact",
+      "backend": "cuda",
+      "median_seconds": 0.037784399988595396,
+      "repeat_seconds": [
+        0.037784399988595396,
+        0.03786119999131188,
+        0.03769169998122379
+      ]
+    },
+    {
+      "operation": "nystrom128",
+      "backend": "cpu",
+      "median_seconds": 0.002399599994532764,
+      "repeat_seconds": [
+        0.0024084000033326447,
+        0.002399599994532764,
+        0.0023255000123754144
+      ]
+    },
+    {
+      "operation": "nystrom128",
+      "backend": "cuda",
+      "median_seconds": 0.011622199963312596,
+      "repeat_seconds": [
+        0.01208260003477335,
+        0.011622199963312596,
+        0.01136529998620972
+      ]
+    }
+  ]
+}

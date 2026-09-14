@@ -1,0 +1,12 @@
+import React, { useState } from 'react';
+import { number, rate, roles } from './format';
+export function Quality({ quality, full = false, onAll }) {
+  const [role, setRole] = useState('mixed');
+  const data = quality.find(q => q.role === role);
+  return <section className="panel quality-panel"><div className="panel-heading wrap"><h2>Качество моделей</h2><span className="section-note">Внутренняя проверка · ΔE00, меньше — лучше</span>{!full && <button className="text-button" onClick={onAll}>Сравнить модели</button>}</div>
+    {full && <div className="quality-controls"><div className="segmented" role="tablist" aria-label="Выборка моделей">{Object.entries(roles).map(([id, name]) => <button role="tab" aria-selected={role === id} className={role === id ? 'selected' : ''} key={id} onClick={() => setRole(id)}>{name}</button>)}</div><span className="muted">{data?.candidate_count ? `${data.candidate_count} проверенных настроек` : 'Ожидаем результаты'}</span></div>}
+    {data?.models?.length ? <>{full ? <div className="table-scroll"><table><thead><tr><th>Модель</th><th>Параметры</th><th>Ошибка ΔE00</th><th>Шаги</th><th>Коэффициент обучения</th></tr></thead><tbody>{data.models.map((m, i) => <tr key={m.variant}><td><strong className={i === 0 ? 'green' : ''}>{m.variant}</strong><small>{m.label}</small></td><td className="numeric">{number(m.parameters)}</td><td><div className="error-cell"><b className={i === 0 ? 'green' : ''}>{number(m.error, 3)}</b><span><i style={{ width: `${m.error / (Math.max(...data.models.map(n => n.error)) * 1.05) * 100}%`, background: i === 0 ? '#178265' : '#cbdad3' }}/></span></div></td><td className="numeric">{number(m.step)}</td><td className="numeric">{rate(m.rate)}</td></tr>)}</tbody></table></div> : <div className="quality-preview"><div><strong>{data.models[0].variant}</strong><span className="muted">Лучший внутренний результат</span></div><strong className="quality-score">{number(data.models[0].error, 3)}</strong><span className="muted baseline">Прежний WE: {number(data.we, 3)}</span></div>}
+      <div className="quality-caption"><span>{data.people ? `${data.people} человек · ${data.rows} наблюдения. ` : ''}Оценка внутри исходного TRAIN, не независимый тест на лицах покупателей.</span>{full && <span>Контроли: NP {number(data.np, 3)} · WE {number(data.we, 3)}. Объём подбора настроек у них отличается.</span>}</div>
+    </> : <div className="empty-state">Для этой выборки итог внутреннего сравнения ещё не сохранён.</div>}
+  </section>;
+}

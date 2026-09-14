@@ -1,0 +1,13 @@
+# After NP: test the actual construction cost of independent retained blocks
+
+NP is verified progress, not broad-goal completion. Exact export reduces blind4 to one643-parameter/2,886B head and ~6.3us response, and full local/e2e inference also accelerates without changing outputs. Conditional compact selection sometimes worsens external error despite the inner+0.10 tolerance. Preserve all policies and full controls; no outer-driven grid expansion or generic accuracy win.
+
+Next inventory and preregister a narrowly matched training-cost study: can independent local/blind blocks that are actually retained be trained without evaluating discarded blocks, while reproducing the original parameters/predictions? Existing ND local-gradient/per-block optimizer and bank-independence tests are prior work, not a first use of independent learning. Original NP charges full original training; do not retroactively change that result.
+
+For local2/local4 preserve ORIGINAL K, selected rate/steps, original block identities, initialization, weighted row samples, noise values and per-block clipping/AdamW. Deployment-zero state is NOT training-zero state: local first blocks train with noise, so their state weights cannot simply be removed during fitting. For blind4 the selected head is independent, but keep its original initialization and shared samples. Subsetted generation must preserve the exact random-number coordinates; changing array shape can change the stream. First prove behavior on synthetic CPU/GPU fixtures and compare against full-network fits. Register original-full controls and complete fit timings, without dividing bank time or hiding preparation. E2e4 is NOT independently trainable this way: later heads send gradients to earlier ones, so retain full e2e training and do not assume equality. This study is planned, not implemented or launched.
+
+A per-input stopping rule is a separate future question; R already tested threshold exits. Small self-corrections are not a bound on true skin-color error. No new loss, stopping selector, noise schedule or external data in the same construction-cost experiment. Current original-TRAIN-only boundary remains; no new data/images/weights/packages, agents, messages or publication. Ordinary-phone face/end-to-end high quality still unvalidated; goal active.
+
+NP report reruns read-only after sealing. NP audit/runtime refuse writes after a verification receipt exists. Preserve NP/ND and all older bindings; never run old G/GS verifier mains, nor sealed ND audit/runtime writers.
+
+[NP report](../benchmarks/chromaseed_neural_prefix_v1/report.md) · [ND decision](chromaseed_local_denoise_next_decision.md) · [Forum leads](chromaseed_forum_update_after_ns_2026-09-13.md).

@@ -463,6 +463,8 @@ report = [
 research = [
     { name = "h5py" },
     { name = "scikit-learn" },
+    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "scipy", version = "1.18.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
 train = [
     { name = "torch" },
@@ -483,6 +485,7 @@ requires-dist = [
     { name = "pyyaml", specifier = ">=6,<7" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.11,<1" },
     { name = "scikit-learn", marker = "extra == 'research'", specifier = ">=1.5,<2" },
+    { name = "scipy", marker = "extra == 'research'", specifier = ">=1.15,<2" },
     { name = "torch", marker = "extra == 'train'", specifier = "==2.8.0", index = "https://download.pytorch.org/whl/cu128" },
     { name = "torchvision", marker = "extra == 'train'", specifier = "==0.23.0", index = "https://download.pytorch.org/whl/cu128" },
 ]

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "source_lock_sha256": "59ca583d3fad34e16d0ae003b2d9d89df453bc730b0040d557407c86f2cb10a5",
+  "results_sha256": "79317e6bf3b76539004bf4a700be410d4bf9b7f0aad839da080df11349d83ded",
+  "audit_source_sha256": "02da1dde3eb9879395166f6f9411655d4f9373856f5bb7ad8ba0cdde29a307a7",
+  "dependencies": {
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "checks": {
+    "classifier_refits": 24,
+    "prediction_rows": 7728,
+    "all_person_metrics": 8,
+    "fold_metrics": 24,
+    "exhaustive_matching_problems": 15,
+    "matched_metric_groups": 40,
+    "support_roles_views": 6,
+    "support_row_distances": 5796,
+    "target_camera_summaries": 2
+  },
+  "maxima": {
+    "classifier_score_drift": 4.529709940470639e-14,
+    "support_distance_drift": 8.881784197001252e-16,
+    "kernel_width_drift": 4.440892098500626e-16
+  },
+  "elapsed_seconds": 3.3485126000014134,
+  "limits": "Independent numerical pipelines; shared verified CIEDE2000 and frozen folds. Not camera causality or new skin-color accuracy."
+}

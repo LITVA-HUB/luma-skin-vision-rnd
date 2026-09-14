@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "completed_unix": 1789278219.9339275,
+  "tests_passed": 30,
+  "pytest_seconds": 1.61,
+  "pytest_command": "python -m pytest tests/test_chromaseed_kernel.py tests/test_chromaseed_kernel_bank.py tests/test_chromaseed_fast_kernel.py tests/test_chromaseed_fast_kernel_protocol.py tests/test_chromaseed_condensed_exact.py -q",
+  "pytest_evidence": "Captured fresh tool output: 30 passed in 1.61s; only documentation/report edits followed. Tested numerical sources and tests remain unchanged.",
+  "tested_sources": {
+    "scripts\\chromaseed_kernel.py": "65433ab44c0758606947ded87ae809f7520d12c644726fa62044f54cefef55bf",
+    "scripts\\chromaseed_kernel_bank.py": "67d30b3c457135620a0b8ca245512b36c05082d77e0eb71b514af8f89d4feca9",
+    "scripts\\chromaseed_fast_kernel.py": "8d574c76c58c64be4832e8d7de7691c5b99de41ba795d6da028a9246423dc691",
+    "scripts\\chromaseed_fast_kernel_train.py": "4f7388b0d85eb049dbc6b54d2a6eecca83b90e98ab1f8234ee1eb4a3c8818adc",
+    "scripts\\chromaseed_condensed_exact.py": "81b9483e2f744eee6dd43e195023d9c98a4587bd5e1157caf1ca66aa4bd858ec",
+    "tests\\test_chromaseed_kernel.py": "9bad457558eab7c1732695bcc929262376ba084c25093c5e683ff37f32373fbc",
+    "tests\\test_chromaseed_kernel_bank.py": "271f44ff5fdda62567179ae3a34fff1209ddc14df2d333a56d1c82931b276d3e",
+    "tests\\test_chromaseed_fast_kernel.py": "e1e209a58f4edf088994d8e60019ffac9110ba67a34a9bc92b91ea6b2f6465b3",
+    "tests\\test_chromaseed_fast_kernel_protocol.py": "5871e374949c5aeff96c60b1c9088c25fe796479b784aed6a0f7702e6c931929",
+    "tests\\test_chromaseed_condensed_exact.py": "352406b48f374984f0bbc9227eaf5fa841af057eded25e7634a186eed077b78a"
+  },
+  "ruff": "Fresh: all 7 new KF/KE scripts and 3 new test files pass",
+  "uv_lock_check_offline": "Fresh: passed, 64 packages; no installation",
+  "git_diff_check": "passed",
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "source_locks_verified": [
+    {
+      "run": "skin_local_search_v1",
+      "source_lock_sha256": "9665568430b03e66cc5bb5b6b564a7bffd1e9a9e4fb726660c27e31116c57ea5",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "skin_local_search_compact_v1",
+      "source_lock_sha256": "f2ffca50caf33e79247d7b15ca4c899c2347d6265ba690db9a886c40c2440906",
+      "source_bindings_checked": 8
+    },
+    {
+      "run": "chromaseed_v1",
+      "source_lock_sha256": "286cf15eeb9dc5cbba45aa88db4751c7b9829db1ba2ba3a5a5ddf2d2a9539deb",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_frozen_v1",
+      "source_lock_sha256": "2a2834f81b283ba76cecc3dd0101144183c6f26968772bf2c3c1d6eb5c9b2626",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_v1",
+      "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_precision_v1",
+      "source_lock_sha256": "46562a2cda469546787ed6f04036eecf3a940be7e0075030c513ad4085a7d360",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "chromaseed_kernel_v1",
+      "source_lock_sha256": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+      "source_bindings_checked": 7
+    },
+    {
+      "run": "chromaseed_fast_kernel_v1",
+      "source_lock_sha256": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+      "source_bindings_checked": 10
+    },
+    {
+      "run": "chromaseed_condensed_exact_v1",
+      "source_lock_sha256": "204f8c1352e56e5656d89ed3dc258c63f95965d30f42aea347fbee7868f99b8f",
+      "source_bindings_checked": 18
+    }
+  ],
+  "source_bindings_checked_total": 69,
+  "legacy_artifact_bindings_checked": 47,
+  "kernel_parent_bindings_checked": 26,
+  "additional_parent_bindings_checked": 11,
+  "auditor_runtime_dependencies": {
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/chromaseed_refine_audit.py": "63ad91c019edfa64522fe30f01830308dd26a863ec45460b09cff4eef130c653",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "scripts/chromaseed_kernel_runtime.py": "d4db58024ba45bcb44ba0769c902e6ed33124e6da16497fd8bae7f72adde23a8"
+  },
+  "selected_kf_artifact_hashes_checked": 270,
+  "exact_model_artifact_hashes_checked": 108,
+  "equivalent_payloads": 108,
+  "equivalent_query_rows": 26082,
+  "prediction_max_drift": 0,
+  "original_repository_git_status": "clean",
+  "active_study_processes": 0,
+  "local_markdown_links_checked": 33,
+  "artifact_sha256": {
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\accuracy.png": "11f7296858866bc335b6285f80f0d34facda51d367b98813441eaa422d39c736",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\accuracy.svg": "2a3b6114f38d9330345d49fa3ffb5cd67bc0b68a4d0cf93f999d04398cdacc9b",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\audit.json": "ff0afb49967c0d90fed9e2030f8aae6078e2e2280bc74e55695a981027753f7a",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\condensed_exact.json": "f06f481d486501bc03314d14f6fd54ccf348c5ea0e0708b80d1758588f5ef34e",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\condensed_source_lock.json": "204f8c1352e56e5656d89ed3dc258c63f95965d30f42aea347fbee7868f99b8f",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\report.md": "97eeef0a7a415906d62b63ef88ef1ce0489f5a3176623bb78c00653473e9a6db",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\reproduce.md": "3b2ef871d548922305c255ff01a08894909657c41236c63312783bff04763757",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\runtime.json": "35ae1ed2056afaaf1776e8432050726827956cd17c59fde0ac40087fd36e1497",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\runtime_real_checkpoint.json": "6e3af72b39d30e4e0e9cd9eedb06ae20ba70d8b89e90bf2ba3c112d02da7217b",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\runtime_scaling_checkpoint.json": "832ae50aa641828d3067d96b8a2aee9aca42803d6ea98dc42c9a2a619ceb4a97",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\scaling.png": "c26dc74d81b4e69da88b26fccafdd949e4696349b774b95e5050dff00adc8f7f",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\scaling.svg": "0a37d92acbbcc3eae2d13cf437ee85d4d126b7bf6a4b92af3710422638ffa41a",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\selections.json": "237ef7a98d2cd1cadf38494fe572b56482482dc58a48d2c66833125fd284ea74",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\source_lock.json": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+    "docs\\benchmarks\\chromaseed_fast_kernel_v1\\summary.json": "c7724726c0c12626f30237879b648a22ed24f353e61b4e4dc26dfbf26c0ad1d1",
+    "docs\\architecture\\chromaseed_fast_kernel_model_card.md": "ae6cc1c9f7b0e9c84a83a08bbac0a23e1ece9e62c9d584490b0a96c166635107",
+    "docs\\research\\chromaseed_fast_kernel_next_decision.md": "65ce54889dac0d61c17b86728cb921c63400857fdc692f630ebbf2055c7c2020",
+    "docs\\superpowers\\plans\\2026-09-13-chromaseed-fast-kernel.md": "8c1931ef56d0bbb509e77d0eac32480b34364e6ce058a3e76daad477a601ced7"
+  },
+  "shortcut_sha256": "0ffbdfc088bd0acd443c41823375d3e97d0eaf4a4ece206a57e387a8506530e2",
+  "goal_classification": "progress; broader goal active; next perceptual-loss study planned, not launched",
+  "receipt_scope": "Source/artifact integrity and captured validation results. Independent numerical audit and equivalence/performance evidence are bound by hashes; this is not new predictive validation."
+}

@@ -1,0 +1,1221 @@
+{
+  "rows": [
+    {
+      "role": "mixed",
+      "recipe": "base",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        0
+      ],
+      "policies": [],
+      "endpoint_for": [],
+      "baseline": true,
+      "person_mean": 5.77053993205947,
+      "p90": 11.479577418419531,
+      "stress_largest_dose_worst_error": 27.030084547028963,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4831,
+      "archive_bytes_max": 4844,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "mixed",
+      "recipe": "last_v0_r0_t2048",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048
+      ],
+      "policies": [
+        "last",
+        "overall"
+      ],
+      "endpoint_for": [
+        "last",
+        "overall"
+      ],
+      "baseline": false,
+      "person_mean": 5.71611264811962,
+      "p90": 11.447206972500467,
+      "stress_largest_dose_worst_error": 26.952345417420407,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4838,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "mixed",
+      "recipe": "last_v0_r0_t32768",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        32768
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "tail3"
+      ],
+      "baseline": false,
+      "person_mean": 5.585071818570788,
+      "p90": 11.152177021088237,
+      "stress_largest_dose_worst_error": 25.51106638791002,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4832,
+      "archive_bytes_max": 4839,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "mixed",
+      "recipe": "last_v0_r0_t8192",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        8192
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "prefix"
+      ],
+      "baseline": false,
+      "person_mean": 5.674059337267131,
+      "p90": 11.5122196020686,
+      "stress_largest_dose_worst_error": 26.480822078180747,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4830,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "mixed",
+      "recipe": "last_v16_r0_t8192",
+      "method": "last",
+      "variants": 16,
+      "lr": 0.0001,
+      "steps": [
+        8192
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "pair"
+      ],
+      "baseline": false,
+      "person_mean": 5.6737763745770975,
+      "p90": 11.481038698978658,
+      "stress_largest_dose_worst_error": 26.379626064271505,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4835,
+      "archive_bytes_max": 4841,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "mixed",
+      "recipe": "pair_v16_r0_t8192",
+      "method": "pair",
+      "variants": 16,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192
+      ],
+      "policies": [
+        "pair"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 5.690286669793906,
+      "p90": 11.4194932150719,
+      "stress_largest_dose_worst_error": 26.636845977617956,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4835,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.35713712056546143
+    },
+    {
+      "role": "mixed",
+      "recipe": "prefix_v0_r0_t8192",
+      "method": "prefix",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192
+      ],
+      "policies": [
+        "prefix"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 5.693564566713197,
+      "p90": 11.4254409737799,
+      "stress_largest_dose_worst_error": 26.868533547680368,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4843,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.2956228279797486
+    },
+    {
+      "role": "mixed",
+      "recipe": "tail3_v0_r0_t32768",
+      "method": "tail3",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "tail3"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 5.616105702430978,
+      "p90": 11.322671614012373,
+      "stress_largest_dose_worst_error": 26.528244279832666,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4835,
+      "archive_bytes_max": 4843,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 1.2098567905798205
+    },
+    {
+      "role": "slr_to_ipod",
+      "recipe": "base",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        0
+      ],
+      "policies": [
+        "last"
+      ],
+      "endpoint_for": [
+        "last"
+      ],
+      "baseline": true,
+      "person_mean": 8.294345706277712,
+      "p90": 13.9121021278158,
+      "stress_largest_dose_worst_error": 22.446255042196885,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4839,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "slr_to_ipod",
+      "recipe": "last_v0_r1_t512",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0003,
+      "steps": [
+        512
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "pair"
+      ],
+      "baseline": false,
+      "person_mean": 8.299650579752255,
+      "p90": 13.856674084023718,
+      "stress_largest_dose_worst_error": 22.81650234835128,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4828,
+      "archive_bytes_max": 4835,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "slr_to_ipod",
+      "recipe": "last_v256_r0_t32768",
+      "method": "last",
+      "variants": 256,
+      "lr": 0.0001,
+      "steps": [
+        32768
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "prefix",
+        "tail3",
+        "overall"
+      ],
+      "baseline": false,
+      "person_mean": 8.604789689555995,
+      "p90": 14.00731825013773,
+      "stress_largest_dose_worst_error": 26.076533700686998,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4833,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "slr_to_ipod",
+      "recipe": "pair_v0_r1_t512",
+      "method": "pair",
+      "variants": 0,
+      "lr": 0.0003,
+      "steps": [
+        0,
+        512
+      ],
+      "policies": [
+        "pair"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.296030001825493,
+      "p90": 13.869829006650312,
+      "stress_largest_dose_worst_error": 22.62818491005476,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4824,
+      "archive_bytes_max": 4836,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.10043092803119436
+    },
+    {
+      "role": "slr_to_ipod",
+      "recipe": "prefix_v256_r0_t32768",
+      "method": "prefix",
+      "variants": 256,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "prefix",
+        "overall"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.381400727360763,
+      "p90": 13.895696946294528,
+      "stress_largest_dose_worst_error": 23.7368661227685,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4833,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 1.2066996082139525
+    },
+    {
+      "role": "slr_to_ipod",
+      "recipe": "tail3_v256_r0_t32768",
+      "method": "tail3",
+      "variants": 256,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "tail3"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.40850538423262,
+      "p90": 13.871144514728558,
+      "stress_largest_dose_worst_error": 24.141868774010447,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4836,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 1.039741898305527
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "base",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        0
+      ],
+      "policies": [],
+      "endpoint_for": [],
+      "baseline": true,
+      "person_mean": 8.589532145810503,
+      "p90": 14.415074124320675,
+      "stress_largest_dose_worst_error": 34.89329049956158,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4842,
+      "archive_bytes_max": 4850,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 10.55999999999999,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "last_v0_r0_t2048",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048
+      ],
+      "policies": [
+        "last"
+      ],
+      "endpoint_for": [
+        "last"
+      ],
+      "baseline": false,
+      "person_mean": 8.68347070506455,
+      "p90": 14.969902489511574,
+      "stress_largest_dose_worst_error": 35.3111356224255,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4836,
+      "archive_bytes_max": 4846,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 10.6,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "last_v0_r0_t32768",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        32768
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "tail3"
+      ],
+      "baseline": false,
+      "person_mean": 8.849871098618372,
+      "p90": 15.591550548250561,
+      "stress_largest_dose_worst_error": 36.694697715229154,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4830,
+      "archive_bytes_max": 4839,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "last_v0_r0_t8192",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        8192
+      ],
+      "policies": [],
+      "endpoint_for": [
+        "pair",
+        "prefix",
+        "overall"
+      ],
+      "baseline": false,
+      "person_mean": 8.579230304805202,
+      "p90": 14.946673755945005,
+      "stress_largest_dose_worst_error": 36.25851601556762,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4838,
+      "archive_bytes_max": 4845,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "pair_v0_r0_t8192",
+      "method": "pair",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192
+      ],
+      "policies": [
+        "pair"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.633979643228892,
+      "p90": 14.971795801858258,
+      "stress_largest_dose_worst_error": 35.804534675848025,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4831,
+      "archive_bytes_max": 4847,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 1.306830479532266
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "prefix_v0_r0_t8192",
+      "method": "prefix",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192
+      ],
+      "policies": [
+        "prefix",
+        "overall"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.64008259665731,
+      "p90": 14.884939021598697,
+      "stress_largest_dose_worst_error": 35.487082844559644,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4846,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.7,
+      "weight_vs_prediction_mean_max_lab": 1.408544928814777
+    },
+    {
+      "role": "ipod_to_slr",
+      "recipe": "tail3_v0_r0_t32768",
+      "method": "tail3",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "tail3"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.882841672635404,
+      "p90": 15.658299039726474,
+      "stress_largest_dose_worst_error": 36.57332412391296,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4842,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.7,
+      "weight_vs_prediction_mean_max_lab": 2.3156118943781436
+    }
+  ],
+  "policies": [
+    {
+      "policy": "last",
+      "inner_person_mean": 4.1959071529318495,
+      "role": "mixed",
+      "recipe": "last_v0_r0_t2048",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048
+      ],
+      "policies": [
+        "last",
+        "overall"
+      ],
+      "endpoint_for": [
+        "last",
+        "overall"
+      ],
+      "baseline": false,
+      "person_mean": 5.71611264811962,
+      "p90": 11.447206972500467,
+      "stress_largest_dose_worst_error": 26.952345417420407,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4838,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "policy": "pair",
+      "inner_person_mean": 4.199847702134966,
+      "role": "mixed",
+      "recipe": "pair_v16_r0_t8192",
+      "method": "pair",
+      "variants": 16,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192
+      ],
+      "policies": [
+        "pair"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 5.690286669793906,
+      "p90": 11.4194932150719,
+      "stress_largest_dose_worst_error": 26.636845977617956,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4835,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.35713712056546143
+    },
+    {
+      "policy": "prefix",
+      "inner_person_mean": 4.201227290305461,
+      "role": "mixed",
+      "recipe": "prefix_v0_r0_t8192",
+      "method": "prefix",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192
+      ],
+      "policies": [
+        "prefix"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 5.693564566713197,
+      "p90": 11.4254409737799,
+      "stress_largest_dose_worst_error": 26.868533547680368,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4843,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.2956228279797486
+    },
+    {
+      "policy": "tail3",
+      "inner_person_mean": 4.208573300970422,
+      "role": "mixed",
+      "recipe": "tail3_v0_r0_t32768",
+      "method": "tail3",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "tail3"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 5.616105702430978,
+      "p90": 11.322671614012373,
+      "stress_largest_dose_worst_error": 26.528244279832666,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4835,
+      "archive_bytes_max": 4843,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 1.2098567905798205
+    },
+    {
+      "policy": "overall",
+      "inner_person_mean": 4.1959071529318495,
+      "role": "mixed",
+      "recipe": "last_v0_r0_t2048",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048
+      ],
+      "policies": [
+        "last",
+        "overall"
+      ],
+      "endpoint_for": [
+        "last",
+        "overall"
+      ],
+      "baseline": false,
+      "person_mean": 5.71611264811962,
+      "p90": 11.447206972500467,
+      "stress_largest_dose_worst_error": 26.952345417420407,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4829,
+      "archive_bytes_max": 4838,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "policy": "last",
+      "inner_person_mean": 4.78737308950251,
+      "role": "slr_to_ipod",
+      "recipe": "base",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        0
+      ],
+      "policies": [
+        "last"
+      ],
+      "endpoint_for": [
+        "last"
+      ],
+      "baseline": true,
+      "person_mean": 8.294345706277712,
+      "p90": 13.9121021278158,
+      "stress_largest_dose_worst_error": 22.446255042196885,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4839,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "policy": "pair",
+      "inner_person_mean": 4.787896558851742,
+      "role": "slr_to_ipod",
+      "recipe": "pair_v0_r1_t512",
+      "method": "pair",
+      "variants": 0,
+      "lr": 0.0003,
+      "steps": [
+        0,
+        512
+      ],
+      "policies": [
+        "pair"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.296030001825493,
+      "p90": 13.869829006650312,
+      "stress_largest_dose_worst_error": 22.62818491005476,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4824,
+      "archive_bytes_max": 4836,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 0.10043092803119436
+    },
+    {
+      "policy": "prefix",
+      "inner_person_mean": 4.765581025903762,
+      "role": "slr_to_ipod",
+      "recipe": "prefix_v256_r0_t32768",
+      "method": "prefix",
+      "variants": 256,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "prefix",
+        "overall"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.381400727360763,
+      "p90": 13.895696946294528,
+      "stress_largest_dose_worst_error": 23.7368661227685,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4833,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 1.2066996082139525
+    },
+    {
+      "policy": "tail3",
+      "inner_person_mean": 4.769693605625587,
+      "role": "slr_to_ipod",
+      "recipe": "tail3_v256_r0_t32768",
+      "method": "tail3",
+      "variants": 256,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "tail3"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.40850538423262,
+      "p90": 13.871144514728558,
+      "stress_largest_dose_worst_error": 24.141868774010447,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4836,
+      "cpu_median_us": 6.4,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 1.039741898305527
+    },
+    {
+      "policy": "overall",
+      "inner_person_mean": 4.765581025903762,
+      "role": "slr_to_ipod",
+      "recipe": "prefix_v256_r0_t32768",
+      "method": "prefix",
+      "variants": 256,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "prefix",
+        "overall"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.381400727360763,
+      "p90": 13.895696946294528,
+      "stress_largest_dose_worst_error": 23.7368661227685,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4826,
+      "archive_bytes_max": 4833,
+      "cpu_median_us": 6.3,
+      "worst_seed_p95_us": 6.5,
+      "weight_vs_prediction_mean_max_lab": 1.2066996082139525
+    },
+    {
+      "policy": "last",
+      "inner_person_mean": 4.4424220028965715,
+      "role": "ipod_to_slr",
+      "recipe": "last_v0_r0_t2048",
+      "method": "last",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048
+      ],
+      "policies": [
+        "last"
+      ],
+      "endpoint_for": [
+        "last"
+      ],
+      "baseline": false,
+      "person_mean": 8.68347070506455,
+      "p90": 14.969902489511574,
+      "stress_largest_dose_worst_error": 35.3111356224255,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4836,
+      "archive_bytes_max": 4846,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 10.6,
+      "weight_vs_prediction_mean_max_lab": 0.0
+    },
+    {
+      "policy": "pair",
+      "inner_person_mean": 4.439531438716431,
+      "role": "ipod_to_slr",
+      "recipe": "pair_v0_r0_t8192",
+      "method": "pair",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192
+      ],
+      "policies": [
+        "pair"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.633979643228892,
+      "p90": 14.971795801858258,
+      "stress_largest_dose_worst_error": 35.804534675848025,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4831,
+      "archive_bytes_max": 4847,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.6,
+      "weight_vs_prediction_mean_max_lab": 1.306830479532266
+    },
+    {
+      "policy": "prefix",
+      "inner_person_mean": 4.438337250785687,
+      "role": "ipod_to_slr",
+      "recipe": "prefix_v0_r0_t8192",
+      "method": "prefix",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192
+      ],
+      "policies": [
+        "prefix",
+        "overall"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.64008259665731,
+      "p90": 14.884939021598697,
+      "stress_largest_dose_worst_error": 35.487082844559644,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4846,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.7,
+      "weight_vs_prediction_mean_max_lab": 1.408544928814777
+    },
+    {
+      "policy": "tail3",
+      "inner_person_mean": 4.475514986386588,
+      "role": "ipod_to_slr",
+      "recipe": "tail3_v0_r0_t32768",
+      "method": "tail3",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        2048,
+        8192,
+        32768
+      ],
+      "policies": [
+        "tail3"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.882841672635404,
+      "p90": 15.658299039726474,
+      "stress_largest_dose_worst_error": 36.57332412391296,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4842,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.7,
+      "weight_vs_prediction_mean_max_lab": 2.3156118943781436
+    },
+    {
+      "policy": "overall",
+      "inner_person_mean": 4.438337250785687,
+      "role": "ipod_to_slr",
+      "recipe": "prefix_v0_r0_t8192",
+      "method": "prefix",
+      "variants": 0,
+      "lr": 0.0001,
+      "steps": [
+        512,
+        2048,
+        8192
+      ],
+      "policies": [
+        "prefix",
+        "overall"
+      ],
+      "endpoint_for": [],
+      "baseline": false,
+      "person_mean": 8.64008259665731,
+      "p90": 14.884939021598697,
+      "stress_largest_dose_worst_error": 35.487082844559644,
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "cached_array_bytes": 5456,
+      "archive_bytes_min": 4837,
+      "archive_bytes_max": 4846,
+      "cpu_median_us": 6.5,
+      "worst_seed_p95_us": 6.7,
+      "weight_vs_prediction_mean_max_lab": 1.408544928814777
+    }
+  ],
+  "endpoint_comparisons": [
+    {
+      "role": "mixed",
+      "method": "pair",
+      "recipe": "pair_v16_r0_t8192",
+      "endpoint_recipe": "last_v16_r0_t8192",
+      "average_error": 5.690286669793906,
+      "endpoint_error": 5.6737763745770975,
+      "difference": 0.01651029521680858
+    },
+    {
+      "role": "mixed",
+      "method": "prefix",
+      "recipe": "prefix_v0_r0_t8192",
+      "endpoint_recipe": "last_v0_r0_t8192",
+      "average_error": 5.693564566713197,
+      "endpoint_error": 5.674059337267131,
+      "difference": 0.019505229446065364
+    },
+    {
+      "role": "mixed",
+      "method": "tail3",
+      "recipe": "tail3_v0_r0_t32768",
+      "endpoint_recipe": "last_v0_r0_t32768",
+      "average_error": 5.616105702430978,
+      "endpoint_error": 5.585071818570788,
+      "difference": 0.031033883860190237
+    },
+    {
+      "role": "slr_to_ipod",
+      "method": "pair",
+      "recipe": "pair_v0_r1_t512",
+      "endpoint_recipe": "last_v0_r1_t512",
+      "average_error": 8.296030001825493,
+      "endpoint_error": 8.299650579752255,
+      "difference": -0.0036205779267621807
+    },
+    {
+      "role": "slr_to_ipod",
+      "method": "prefix",
+      "recipe": "prefix_v256_r0_t32768",
+      "endpoint_recipe": "last_v256_r0_t32768",
+      "average_error": 8.381400727360763,
+      "endpoint_error": 8.604789689555995,
+      "difference": -0.22338896219523185
+    },
+    {
+      "role": "slr_to_ipod",
+      "method": "tail3",
+      "recipe": "tail3_v256_r0_t32768",
+      "endpoint_recipe": "last_v256_r0_t32768",
+      "average_error": 8.40850538423262,
+      "endpoint_error": 8.604789689555995,
+      "difference": -0.19628430532337404
+    },
+    {
+      "role": "ipod_to_slr",
+      "method": "pair",
+      "recipe": "pair_v0_r0_t8192",
+      "endpoint_recipe": "last_v0_r0_t8192",
+      "average_error": 8.633979643228892,
+      "endpoint_error": 8.579230304805202,
+      "difference": 0.05474933842369012
+    },
+    {
+      "role": "ipod_to_slr",
+      "method": "prefix",
+      "recipe": "prefix_v0_r0_t8192",
+      "endpoint_recipe": "last_v0_r0_t8192",
+      "average_error": 8.64008259665731,
+      "endpoint_error": 8.579230304805202,
+      "difference": 0.0608522918521075
+    },
+    {
+      "role": "ipod_to_slr",
+      "method": "tail3",
+      "recipe": "tail3_v0_r0_t32768",
+      "endpoint_recipe": "last_v0_r0_t32768",
+      "average_error": 8.882841672635404,
+      "endpoint_error": 8.849871098618372,
+      "difference": 0.03297057401703185
+    }
+  ],
+  "endpoint_outcomes": {
+    "better": 3,
+    "worse": 6,
+    "same": 0
+  },
+  "paired": [
+    {
+      "role": "mixed",
+      "reference": "LT_last",
+      "people": 6,
+      "mean_difference": 0.0,
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_draws": 10000,
+      "note": "Post-hoc fixed-prediction paired person bootstrap, seed errors averaged, no selection uncertainty or independent confirmation."
+    },
+    {
+      "role": "mixed",
+      "reference": "NP_baseline",
+      "people": 6,
+      "mean_difference": -0.054427283939849615,
+      "descriptive_ci95": [
+        -0.12174094594034406,
+        0.010288100234085006
+      ],
+      "bootstrap_draws": 10000,
+      "note": "Post-hoc fixed-prediction paired person bootstrap, seed errors averaged, no selection uncertainty or independent confirmation."
+    },
+    {
+      "role": "slr_to_ipod",
+      "reference": "LT_last",
+      "people": 16,
+      "mean_difference": 0.08705502108305085,
+      "descriptive_ci95": [
+        0.0006815323331226619,
+        0.1635943531443868
+      ],
+      "bootstrap_draws": 10000,
+      "note": "Post-hoc fixed-prediction paired person bootstrap, seed errors averaged, no selection uncertainty or independent confirmation."
+    },
+    {
+      "role": "slr_to_ipod",
+      "reference": "NP_baseline",
+      "people": 16,
+      "mean_difference": 0.08705502108305085,
+      "descriptive_ci95": [
+        0.0006815323331226619,
+        0.1635943531443868
+      ],
+      "bootstrap_draws": 10000,
+      "note": "Post-hoc fixed-prediction paired person bootstrap, seed errors averaged, no selection uncertainty or independent confirmation."
+    },
+    {
+      "role": "ipod_to_slr",
+      "reference": "LT_last",
+      "people": 8,
+      "mean_difference": -0.043388108407240986,
+      "descriptive_ci95": [
+        -0.06277663148948014,
+        -0.02659329250651955
+      ],
+      "bootstrap_draws": 10000,
+      "note": "Post-hoc fixed-prediction paired person bootstrap, seed errors averaged, no selection uncertainty or independent confirmation."
+    },
+    {
+      "role": "ipod_to_slr",
+      "reference": "NP_baseline",
+      "people": 8,
+      "mean_difference": 0.050550450846806504,
+      "descriptive_ci95": [
+        -0.07986205975029566,
+        0.2147335726874027
+      ],
+      "bootstrap_draws": 10000,
+      "note": "Post-hoc fixed-prediction paired person bootstrap, seed errors averaged, no selection uncertainty or independent confirmation."
+    }
+  ],
+  "fg_context": {
+    "mixed": 5.438652003553912,
+    "slr_to_ipod": 8.596999545828242,
+    "ipod_to_slr": 8.705017814309445
+  },
+  "source_lock_sha256": "06fc54bb1913227429415ec12fd461765eac81a9fe9067b42cde9bb7fff88fea",
+  "selection_sha256": "388fe0bb906c0b12ad91e320b55c299c632cbbb16f82c09c2e28f56921b8c559",
+  "results_sha256": "7958bc334708344201df2b6a868bf7d206dea4a24b8520d198720ccf26e040e3",
+  "sources": 131,
+  "inputs": 2505,
+  "goal_status": "active",
+  "previous_turn_classification": "progress",
+  "primary_new_gradient_fits": 0,
+  "primary_seconds": 10.55524230003357,
+  "coverage": {
+    "inner_models": 2457,
+    "inner_prediction_rows": 464100,
+    "candidates": 273,
+    "policies": 15,
+    "final_models": 63,
+    "final_prediction_rows": 789525,
+    "consumer_calls": 789525,
+    "singleton_controls": 36
+  }
+}

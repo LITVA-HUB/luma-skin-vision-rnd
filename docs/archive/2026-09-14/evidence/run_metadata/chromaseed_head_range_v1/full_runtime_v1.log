@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\dimal\Documents\просто\.worktrees\luma-local-search\scripts\chromaseed_head_range_runtime.py", line 307, in <module>
+    main()
+  File "C:\Users\dimal\Documents\просто\.worktrees\luma-local-search\scripts\chromaseed_head_range_runtime.py", line 184, in main
+    require_quiet_host()
+  File "C:\Users\dimal\Documents\просто\.worktrees\luma-local-search\scripts\chromaseed_head_range_verification.py", line 190, in require_quiet_host
+    raise RuntimeError(f"Competing GPU processes: {others}")
+RuntimeError: Competing GPU processes: [2176, 10084, 9924, 14452, 14540, 15596, 18436, 4888, 27668, 22228, 21424, 25032, 19892, 32476, 2304, 23824, 30888, 32964, 13412, 24140, 25928, 34852, 25292]

@@ -1,0 +1,471 @@
+{
+  "rows": [
+    {
+      "role": "mixed",
+      "family": "plain",
+      "person_mean": 5.636588140919784,
+      "p90": 11.09074865431301,
+      "parameters": 2763,
+      "numeric_bytes": 11364,
+      "archive_bytes_min": 11720,
+      "archive_bytes_max": 11761,
+      "step": 512,
+      "lr": 0.003,
+      "cpu_median_us": 9.0,
+      "worst_seed_p95_us": 9.2,
+      "cached_array_bytes": 22448,
+      "full_fit_gpu_ms": 99.49779999442399,
+      "clean_stage_errors": [
+        5.636588140919784
+      ],
+      "worst_dose64_error": 26.832641482252445
+    },
+    {
+      "role": "mixed",
+      "family": "local2",
+      "person_mean": 5.725843641323198,
+      "p90": 11.273079439824365,
+      "parameters": 2758,
+      "numeric_bytes": 11344,
+      "archive_bytes_min": 11739,
+      "archive_bytes_max": 11750,
+      "step": 512,
+      "lr": 0.003,
+      "cpu_median_us": 15.0,
+      "worst_seed_p95_us": 15.2,
+      "cached_array_bytes": 22424,
+      "full_fit_gpu_ms": 98.26799997244962,
+      "clean_stage_errors": [
+        5.630616643860473,
+        5.725843641323198
+      ],
+      "worst_dose64_error": 28.920808539241847
+    },
+    {
+      "role": "mixed",
+      "family": "local4",
+      "person_mean": 5.700538848259285,
+      "p90": 11.319313908921467,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11753,
+      "archive_bytes_max": 11761,
+      "step": 512,
+      "lr": 0.003,
+      "cpu_median_us": 25.5,
+      "worst_seed_p95_us": 26.0,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 102.99730001133867,
+      "clean_stage_errors": [
+        5.860410200995935,
+        5.755855565143178,
+        5.772491748007149,
+        5.700538848259285
+      ],
+      "worst_dose64_error": 27.434087621564213
+    },
+    {
+      "role": "mixed",
+      "family": "blind4",
+      "person_mean": 5.782195843933812,
+      "p90": 11.340570309697908,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11744,
+      "archive_bytes_max": 11753,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 28.4,
+      "worst_seed_p95_us": 29.0,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 275.2098000200931,
+      "clean_stage_errors": [
+        5.825534205749343,
+        5.77053993205947,
+        5.813799253870475,
+        5.782195843933812
+      ],
+      "worst_dose64_error": 27.386373702464937
+    },
+    {
+      "role": "mixed",
+      "family": "e2e4",
+      "person_mean": 5.696842265613557,
+      "p90": 11.150784092749534,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11724,
+      "archive_bytes_max": 11750,
+      "step": 512,
+      "lr": 0.003,
+      "cpu_median_us": 25.5,
+      "worst_seed_p95_us": 26.0,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 228.33594999974594,
+      "clean_stage_errors": [
+        5.865836959343922,
+        5.681897216909846,
+        5.730972670789807,
+        5.696842265613557
+      ],
+      "worst_dose64_error": 27.65251289633368
+    },
+    {
+      "role": "mixed",
+      "family": "fg_norm_static",
+      "person_mean": 5.438652003553912,
+      "p90": 10.350612993844246,
+      "parameters": null,
+      "numeric_bytes": 20284,
+      "archive_bytes_min": 18767,
+      "archive_bytes_max": 18818,
+      "step": null,
+      "lr": null,
+      "cpu_median_us": 10.0,
+      "worst_seed_p95_us": 10.3,
+      "cached_array_bytes": 41272,
+      "full_fit_gpu_ms": null,
+      "clean_stage_errors": [
+        5.438652003553912
+      ],
+      "worst_dose64_error": 24.40036219230329
+    },
+    {
+      "role": "mixed",
+      "family": "random_head",
+      "person_mean": 6.048157536720605,
+      "p90": 11.587389580633205,
+      "parameters": null,
+      "numeric_bytes": 10564,
+      "archive_bytes_min": 11154,
+      "archive_bytes_max": 11167,
+      "step": null,
+      "lr": null,
+      "cpu_median_us": 5.5,
+      "worst_seed_p95_us": 8.3,
+      "cached_array_bytes": 20816,
+      "full_fit_gpu_ms": null,
+      "clean_stage_errors": [
+        6.048157536720605
+      ],
+      "worst_dose64_error": 26.659907678942286
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "plain",
+      "person_mean": 9.082035139695423,
+      "p90": 14.543194018885524,
+      "parameters": 2763,
+      "numeric_bytes": 11364,
+      "archive_bytes_min": 11731,
+      "archive_bytes_max": 11759,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 9.0,
+      "worst_seed_p95_us": 9.2,
+      "cached_array_bytes": 22448,
+      "full_fit_gpu_ms": 248.89649997930974,
+      "clean_stage_errors": [
+        9.082035139695423
+      ],
+      "worst_dose64_error": 24.010526701548912
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local2",
+      "person_mean": 8.705199235240876,
+      "p90": 14.377289991674632,
+      "parameters": 2758,
+      "numeric_bytes": 11344,
+      "archive_bytes_min": 11738,
+      "archive_bytes_max": 11754,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 15.0,
+      "worst_seed_p95_us": 15.7,
+      "cached_array_bytes": 22424,
+      "full_fit_gpu_ms": 283.20370000437833,
+      "clean_stage_errors": [
+        8.336494649613657,
+        8.705199235240876
+      ],
+      "worst_dose64_error": 25.60554273283694
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local4",
+      "person_mean": 8.495492202481303,
+      "p90": 14.201224646822018,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11775,
+      "archive_bytes_max": 11788,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 25.7,
+      "worst_seed_p95_us": 26.2,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 285.75874998932704,
+      "clean_stage_errors": [
+        8.859640460373821,
+        8.333656109532798,
+        8.305993952742133,
+        8.495492202481303
+      ],
+      "worst_dose64_error": 21.008545170149908
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "blind4",
+      "person_mean": 8.685042488643791,
+      "p90": 14.486150415994949,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11750,
+      "archive_bytes_max": 11759,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 28.5,
+      "worst_seed_p95_us": 30.3,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 271.24809997621924,
+      "clean_stage_errors": [
+        8.745985368356699,
+        8.36441588853695,
+        8.294345706277712,
+        8.685042488643791
+      ],
+      "worst_dose64_error": 22.209373264228503
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "e2e4",
+      "person_mean": 8.621148695417261,
+      "p90": 14.227117581794948,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11747,
+      "archive_bytes_max": 11768,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 25.3,
+      "worst_seed_p95_us": 25.8,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 748.8308500032872,
+      "clean_stage_errors": [
+        8.888252249204898,
+        8.595510132843728,
+        8.43298472394246,
+        8.621148695417261
+      ],
+      "worst_dose64_error": 23.371583806882104
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "fg_norm_static",
+      "person_mean": 8.596999545828242,
+      "p90": 13.645323647511644,
+      "parameters": null,
+      "numeric_bytes": 20284,
+      "archive_bytes_min": 18852,
+      "archive_bytes_max": 18880,
+      "step": null,
+      "lr": null,
+      "cpu_median_us": 9.9,
+      "worst_seed_p95_us": 10.2,
+      "cached_array_bytes": 41272,
+      "full_fit_gpu_ms": null,
+      "clean_stage_errors": [
+        8.596999545828242
+      ],
+      "worst_dose64_error": 18.91508857996895
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "random_head",
+      "person_mean": 9.28695139092848,
+      "p90": 14.535421596927796,
+      "parameters": null,
+      "numeric_bytes": 10564,
+      "archive_bytes_min": 11157,
+      "archive_bytes_max": 11168,
+      "step": null,
+      "lr": null,
+      "cpu_median_us": 5.5,
+      "worst_seed_p95_us": 8.259999999999991,
+      "cached_array_bytes": 20816,
+      "full_fit_gpu_ms": null,
+      "clean_stage_errors": [
+        9.28695139092848
+      ],
+      "worst_dose64_error": 22.516277076281693
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "plain",
+      "person_mean": 9.257909640304588,
+      "p90": 17.659114758663687,
+      "parameters": 2763,
+      "numeric_bytes": 11364,
+      "archive_bytes_min": 11752,
+      "archive_bytes_max": 11771,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 9.0,
+      "worst_seed_p95_us": 9.2,
+      "cached_array_bytes": 22448,
+      "full_fit_gpu_ms": 248.82770000840537,
+      "clean_stage_errors": [
+        9.257909640304588
+      ],
+      "worst_dose64_error": 37.05666336913202
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local2",
+      "person_mean": 9.395766388849475,
+      "p90": 16.584781551593608,
+      "parameters": 2758,
+      "numeric_bytes": 11344,
+      "archive_bytes_min": 11758,
+      "archive_bytes_max": 11771,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 15.2,
+      "worst_seed_p95_us": 16.1,
+      "cached_array_bytes": 22424,
+      "full_fit_gpu_ms": 281.3495999726001,
+      "clean_stage_errors": [
+        9.458056582829327,
+        9.395766388849475
+      ],
+      "worst_dose64_error": 37.02548703769427
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local4",
+      "person_mean": 8.324290610017776,
+      "p90": 14.497690984153271,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11776,
+      "archive_bytes_max": 11781,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 25.9,
+      "worst_seed_p95_us": 29.9,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 287.4108999676537,
+      "clean_stage_errors": [
+        8.485910138552065,
+        8.822042250656944,
+        8.530287783310376,
+        8.324290610017776
+      ],
+      "worst_dose64_error": 34.3272010870131
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "blind4",
+      "person_mean": 8.607784897687806,
+      "p90": 14.469132217444532,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11739,
+      "archive_bytes_max": 11760,
+      "step": 2048,
+      "lr": 0.001,
+      "cpu_median_us": 29.0,
+      "worst_seed_p95_us": 29.9,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 272.96189998742193,
+      "clean_stage_errors": [
+        8.365796506195268,
+        8.589532145810503,
+        9.20718126028958,
+        8.607784897687806
+      ],
+      "worst_dose64_error": 35.369740191859705
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "e2e4",
+      "person_mean": 8.026476466672548,
+      "p90": 14.157113745677329,
+      "parameters": 2764,
+      "numeric_bytes": 11368,
+      "archive_bytes_min": 11748,
+      "archive_bytes_max": 11760,
+      "step": 512,
+      "lr": 0.001,
+      "cpu_median_us": 26.0,
+      "worst_seed_p95_us": 42.7,
+      "cached_array_bytes": 22504,
+      "full_fit_gpu_ms": 227.36464999616146,
+      "clean_stage_errors": [
+        7.764773788748086,
+        8.747384452741471,
+        8.629456960946497,
+        8.026476466672548
+      ],
+      "worst_dose64_error": 32.87542392837295
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "fg_norm_static",
+      "person_mean": 8.705017814309445,
+      "p90": 15.501565735475827,
+      "parameters": null,
+      "numeric_bytes": 20284,
+      "archive_bytes_min": 18189,
+      "archive_bytes_max": 18289,
+      "step": null,
+      "lr": null,
+      "cpu_median_us": 10.2,
+      "worst_seed_p95_us": 19.1,
+      "cached_array_bytes": 41272,
+      "full_fit_gpu_ms": null,
+      "clean_stage_errors": [
+        8.705017814309445
+      ],
+      "worst_dose64_error": 21.96571823606696
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "random_head",
+      "person_mean": 8.79044505474186,
+      "p90": 15.198182371141476,
+      "parameters": null,
+      "numeric_bytes": 10564,
+      "archive_bytes_min": 11155,
+      "archive_bytes_max": 11164,
+      "step": null,
+      "lr": null,
+      "cpu_median_us": 5.7,
+      "worst_seed_p95_us": 5.8,
+      "cached_array_bytes": 20816,
+      "full_fit_gpu_ms": null,
+      "clean_stage_errors": [
+        8.79044505474186
+      ],
+      "worst_dose64_error": 33.390960159060526
+    }
+  ],
+  "accounting": {
+    "completed_fit_banks": 90,
+    "inner_trajectories": 270,
+    "inner_checkpoint_models": 810,
+    "new_final_models": 45,
+    "exact_reference_models": 18,
+    "completed_bank_seconds": 81.47853519988712,
+    "completed_model_steps": 2280960,
+    "peak_cuda_allocated_bytes": 345103360,
+    "checkpoint_choices": {
+      "512": 5,
+      "2048": 10
+    },
+    "audit_seconds": 27.771717299998272,
+    "runtime_seconds": 14.299679999996442,
+    "interrupted_unfinished_bank_cost_in_completed_sum": false
+  }
+}

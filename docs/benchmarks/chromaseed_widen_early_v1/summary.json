@@ -1,0 +1,696 @@
+{
+  "rows": [
+    {
+      "kind": "np",
+      "variant": "np",
+      "parameters": 643,
+      "numeric_bytes": 2886,
+      "median_cpu_us": 6.4,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.77053993205947,
+          "seed_errors": [
+            5.854976108558997,
+            5.806650019434955,
+            5.649993668184457
+          ],
+          "step": 0,
+          "lr": null,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 0.8963478000077885,
+          "training_timing_source": "WIDE historical"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.294345706277712,
+          "seed_errors": [
+            7.917104358302984,
+            8.683932159092297,
+            8.282000601437858
+          ],
+          "step": 0,
+          "lr": null,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 0.9029852999956347,
+          "training_timing_source": "WIDE historical"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.589532145810503,
+          "seed_errors": [
+            8.639697980137349,
+            8.608578745822632,
+            8.520319711471531
+          ],
+          "step": 0,
+          "lr": null,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 0.899774499994237,
+          "training_timing_source": "WIDE historical"
+        }
+      }
+    },
+    {
+      "kind": "tiny",
+      "variant": "tiny",
+      "parameters": 1179,
+      "numeric_bytes": 5174,
+      "median_cpu_us": 25.6,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.51068099131617,
+          "seed_errors": [
+            5.526237563906103,
+            5.475208197963617,
+            5.5305972120787885
+          ],
+          "step": 8192,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 5.8810093000065535,
+          "training_timing_source": "WIDE historical"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.435515439500646,
+          "seed_errors": [
+            8.282562413070547,
+            8.591257936778685,
+            8.432725968652703
+          ],
+          "step": 2048,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 2.211227099993266,
+          "training_timing_source": "WIDE historical"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.805594157348722,
+          "seed_errors": [
+            8.583270688218906,
+            9.035780837421882,
+            8.797730946405379
+          ],
+          "step": 2048,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 2.201276650041109,
+          "training_timing_source": "WIDE historical"
+        }
+      }
+    },
+    {
+      "kind": "wide",
+      "variant": "m31",
+      "parameters": 30915,
+      "numeric_bytes": 124118,
+      "median_cpu_us": 33.9,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.533988878729855,
+          "seed_errors": [
+            5.558248489012996,
+            5.499614993848701,
+            5.5441031533278675
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 1.594039250019705,
+          "training_timing_source": "WIDE historical"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.398946123557051,
+          "seed_errors": [
+            8.000735395406217,
+            8.840765310418831,
+            8.355337664846104
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 1.6248977499781176,
+          "training_timing_source": "WIDE historical"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.733101070858115,
+          "seed_errors": [
+            7.4454825909778455,
+            9.836246839233869,
+            8.91757378236263
+          ],
+          "step": 2048,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 3.37918470002478,
+          "training_timing_source": "WIDE historical"
+        }
+      }
+    },
+    {
+      "kind": "new",
+      "variant": "m31",
+      "parameters": 30915,
+      "numeric_bytes": 124118,
+      "median_cpu_us": 33.7,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.548566318785045,
+          "seed_errors": [
+            5.591111491045129,
+            5.551425647411114,
+            5.5031618178988895
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 3.424798500025645,
+          "training_timing_source": "WE fresh"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.368610122101192,
+          "seed_errors": [
+            7.932657778045938,
+            8.729706742421309,
+            8.443465845836329
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 3.4404587000026368,
+          "training_timing_source": "WE fresh"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.629567053029128,
+          "seed_errors": [
+            8.064566404545404,
+            8.861415631171544,
+            8.962719123370436
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 3.4008903500216547,
+          "training_timing_source": "WE fresh"
+        }
+      }
+    },
+    {
+      "kind": "wide",
+      "variant": "m61",
+      "parameters": 60611,
+      "numeric_bytes": 242902,
+      "median_cpu_us": 37.2,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.506619844637567,
+          "seed_errors": [
+            5.544057236169661,
+            5.4715140869333325,
+            5.504288210809707
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 1.6467428999894764,
+          "training_timing_source": "WIDE historical"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.408553746766895,
+          "seed_errors": [
+            7.98413719753704,
+            8.874549250084925,
+            8.366974792678722
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 1.6772750500240363,
+          "training_timing_source": "WIDE historical"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.677318798542856,
+          "seed_errors": [
+            7.779153640999855,
+            9.042620252878208,
+            9.210182501750504
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 1.6721058000111952,
+          "training_timing_source": "WIDE historical"
+        }
+      }
+    },
+    {
+      "kind": "new",
+      "variant": "m61",
+      "parameters": 60611,
+      "numeric_bytes": 242902,
+      "median_cpu_us": 36.6,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.52393928250573,
+          "seed_errors": [
+            5.5734418185620695,
+            5.537774959355683,
+            5.460601069599439
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 3.618580149981426,
+          "training_timing_source": "WE fresh"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.396859922839237,
+          "seed_errors": [
+            7.961875378254521,
+            8.763194544665943,
+            8.465509845597246
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 3.6400369000039063,
+          "training_timing_source": "WE fresh"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.385328731572901,
+          "seed_errors": [
+            7.592777735914605,
+            8.804878921957128,
+            8.758329536846972
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 3.6353697500308044,
+          "training_timing_source": "WE fresh"
+        }
+      }
+    },
+    {
+      "kind": "wide",
+      "variant": "m111",
+      "parameters": 110979,
+      "numeric_bytes": 444374,
+      "median_cpu_us": 47.4,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.47386693156074,
+          "seed_errors": [
+            5.548127940394046,
+            5.405953719111893,
+            5.467519135176281
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 2.315383099979954,
+          "training_timing_source": "WIDE historical"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.264654309818768,
+          "seed_errors": [
+            7.688278804023852,
+            8.753419758566228,
+            8.352264366866223
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 2.37693455000408,
+          "training_timing_source": "WIDE historical"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.686496050192313,
+          "seed_errors": [
+            7.610613204937806,
+            8.880713025006813,
+            9.568161920632322
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 2.3205455999996047,
+          "training_timing_source": "WIDE historical"
+        }
+      }
+    },
+    {
+      "kind": "new",
+      "variant": "m111",
+      "parameters": 110979,
+      "numeric_bytes": 444374,
+      "median_cpu_us": 48.1,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.477774628597566,
+          "seed_errors": [
+            5.5550892931415445,
+            5.475545942287465,
+            5.40268865036369
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 6.190578300040215,
+          "training_timing_source": "WE fresh"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.308310810258556,
+          "seed_errors": [
+            7.849184721495574,
+            8.7028098682241,
+            8.372937841055995
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 6.21137100001215,
+          "training_timing_source": "WE fresh"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.310566503925878,
+          "seed_errors": [
+            7.557177825956373,
+            8.675276351123866,
+            8.699245334697395
+          ],
+          "step": 2048,
+          "lr": 3e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 6.181747449998511,
+          "training_timing_source": "WE fresh"
+        }
+      }
+    },
+    {
+      "kind": "wide",
+      "variant": "m832",
+      "parameters": 832259,
+      "numeric_bytes": 3329494,
+      "median_cpu_us": 112.8,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.322349010848455,
+          "seed_errors": [
+            5.507809886014539,
+            5.285173924938721,
+            5.174063221592103
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 7.709447200031718,
+          "training_timing_source": "WIDE historical"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.680118142121662,
+          "seed_errors": [
+            8.346093732885766,
+            9.073056832746751,
+            8.621203860732471
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 7.8763177000219,
+          "training_timing_source": "WIDE historical"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.32425139683703,
+          "seed_errors": [
+            7.368818974907602,
+            8.862646827533569,
+            8.741288388069917
+          ],
+          "step": 512,
+          "lr": 0.0001,
+          "unchanged_setting": true,
+          "complete_three_seed_recipe_seconds": 7.708363499987172,
+          "training_timing_source": "WIDE historical"
+        }
+      }
+    },
+    {
+      "kind": "new",
+      "variant": "m832",
+      "parameters": 832259,
+      "numeric_bytes": 3329494,
+      "median_cpu_us": 118.7,
+      "roles": {
+        "mixed": {
+          "delta_e00": 5.512085541264146,
+          "seed_errors": [
+            5.5576243292192276,
+            5.514243060478569,
+            5.464389234094643
+          ],
+          "step": 2048,
+          "lr": 1e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 27.20593714999268,
+          "training_timing_source": "WE fresh"
+        },
+        "slr_to_ipod": {
+          "delta_e00": 8.381149473588733,
+          "seed_errors": [
+            7.936369617939816,
+            8.659662395535403,
+            8.547416407290982
+          ],
+          "step": 2048,
+          "lr": 1e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 27.375307700014673,
+          "training_timing_source": "WE fresh"
+        },
+        "ipod_to_slr": {
+          "delta_e00": 8.29388335979291,
+          "seed_errors": [
+            7.447567523898387,
+            8.819126280624772,
+            8.614956274855574
+          ],
+          "step": 2048,
+          "lr": 1e-05,
+          "unchanged_setting": false,
+          "complete_three_seed_recipe_seconds": 27.258702599996468,
+          "training_timing_source": "WE fresh"
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "variant": "m31",
+      "role": "mixed",
+      "people": 6,
+      "new_minus_wide": 0.014577440055189239,
+      "conditional_paired_person_95": [
+        -0.021643423154619274,
+        0.051033075052607124
+      ]
+    },
+    {
+      "variant": "m31",
+      "role": "slr_to_ipod",
+      "people": 16,
+      "new_minus_wide": -0.030336001455859074,
+      "conditional_paired_person_95": [
+        -0.1482243250768103,
+        0.059594480795044376
+      ]
+    },
+    {
+      "variant": "m31",
+      "role": "ipod_to_slr",
+      "people": 8,
+      "new_minus_wide": -0.10353401782898553,
+      "conditional_paired_person_95": [
+        -0.32427644508565734,
+        0.11555320285662055
+      ]
+    },
+    {
+      "variant": "m61",
+      "role": "mixed",
+      "people": 6,
+      "new_minus_wide": 0.017319437868162407,
+      "conditional_paired_person_95": [
+        -0.02482601074009357,
+        0.05793016336954038
+      ]
+    },
+    {
+      "variant": "m61",
+      "role": "slr_to_ipod",
+      "people": 16,
+      "new_minus_wide": -0.01169382392765983,
+      "conditional_paired_person_95": [
+        -0.1450901345159179,
+        0.0875277447899289
+      ]
+    },
+    {
+      "variant": "m61",
+      "role": "ipod_to_slr",
+      "people": 8,
+      "new_minus_wide": -0.2919900669699541,
+      "conditional_paired_person_95": [
+        -0.5833362157273705,
+        -0.05054295699457012
+      ]
+    },
+    {
+      "variant": "m111",
+      "role": "mixed",
+      "people": 6,
+      "new_minus_wide": 0.0039076970368269555,
+      "conditional_paired_person_95": [
+        -0.0472518107480148,
+        0.05316421666621659
+      ]
+    },
+    {
+      "variant": "m111",
+      "role": "slr_to_ipod",
+      "people": 16,
+      "new_minus_wide": 0.04365650043978869,
+      "conditional_paired_person_95": [
+        -0.14844450947608245,
+        0.18272038465398505
+      ]
+    },
+    {
+      "variant": "m111",
+      "role": "ipod_to_slr",
+      "people": 8,
+      "new_minus_wide": -0.3759295462664364,
+      "conditional_paired_person_95": [
+        -0.7315423693204234,
+        -0.07918311473909967
+      ]
+    },
+    {
+      "variant": "m832",
+      "role": "mixed",
+      "people": 6,
+      "new_minus_wide": 0.1897365304156929,
+      "conditional_paired_person_95": [
+        0.024629367124801977,
+        0.3877380555364602
+      ]
+    },
+    {
+      "variant": "m832",
+      "role": "slr_to_ipod",
+      "people": 16,
+      "new_minus_wide": -0.2989686685329287,
+      "conditional_paired_person_95": [
+        -0.5481102997088968,
+        0.017639035651290273
+      ]
+    },
+    {
+      "variant": "m832",
+      "role": "ipod_to_slr",
+      "people": 8,
+      "new_minus_wide": -0.03036803704411828,
+      "conditional_paired_person_95": [
+        -0.15779106964228212,
+        0.08768362587080902
+      ]
+    }
+  ],
+  "overall": {
+    "mixed": {
+      "variant": "m111",
+      "step": 2048,
+      "lr": 3e-05,
+      "inner_delta_e00": 4.1079599500424315,
+      "new_delta_e00": 5.477774628597566,
+      "wide_delta_e00": 5.47386693156074
+    },
+    "slr_to_ipod": {
+      "variant": "m832",
+      "step": 2048,
+      "lr": 1e-05,
+      "inner_delta_e00": 4.677344030779228,
+      "new_delta_e00": 8.381149473588733,
+      "wide_delta_e00": 8.408553746766895
+    },
+    "ipod_to_slr": {
+      "variant": "m61",
+      "step": 2048,
+      "lr": 3e-05,
+      "inner_delta_e00": 4.355421542289153,
+      "new_delta_e00": 8.385328731572901,
+      "wide_delta_e00": 8.686496050192313
+    }
+  },
+  "comparison_counts": {
+    "better": 7,
+    "worse": 5,
+    "same": 0
+  },
+  "selected_steps": [
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048
+  ],
+  "selected_rates": [
+    3e-05,
+    3e-05,
+    3e-05,
+    1e-05,
+    3e-05,
+    3e-05,
+    3e-05,
+    1e-05,
+    3e-05,
+    3e-05,
+    3e-05,
+    1e-05
+  ],
+  "old_fg": {
+    "mixed": 5.438652003553912,
+    "slr_to_ipod": 8.596999545828242,
+    "ipod_to_slr": 8.705017814309445
+  },
+  "research_banks": 120,
+  "research_trajectories": 720,
+  "research_presentations": 94371840,
+  "research_bank_seconds": 1097.1675007998128,
+  "research_workflow_seconds": 1358.2868293999927,
+  "audit_counts": {
+    "inner_banks": 108,
+    "inner_models": 3240,
+    "inner_vectors": 612000,
+    "original_controls": 432,
+    "paired_canaries": 1080,
+    "candidates": 222,
+    "choices": 15,
+    "final_banks": 12,
+    "final_models": 90,
+    "actual_stress_vectors": 1186020,
+    "unchanged_selected_aliases": 0,
+    "exact_old_stress_controls": 54
+  },
+  "runtime_counts": {
+    "upstream_singleton_fits": 108,
+    "continuation_banks": 36,
+    "selected_payloads_bitwise": 108,
+    "all_bank_payloads_bitwise": 216
+  },
+  "limitations": "Historically reused original TRAIN roles; tiny grid unchanged; conditional bootstrap does not correct adaptive reuse or establish ordinary-phone accuracy."
+}

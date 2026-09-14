@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "sources": {
+    "scripts/chromaseed_refine.py": "a055383293111bc52b2672e71e8cd6201396ba98c73260a1d35b64a104a1156c",
+    "scripts/chromaseed_refine_train.py": "4ac8ad22c7c246be91fdd2eaf2fa2c58ad1a9366c2ce1c9a15a726b395ff5fde",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "scripts/skin_local_search_core.py": "b2f916d67bd6e0a9f0341fa85b39c82457e973edf25cde1398b0281b927cad20",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "docs/research/chromaseed_refine_v1_protocol.md": "619a878568929745db21f2329b9ebdcbcb3f2fbafb4493ccb94b7c47d70be461"
+  },
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "families": [
+    "stats_mlp",
+    "patch_mlp",
+    "recur_soft",
+    "recur_top16",
+    "recur_dynamic"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "lrs": [
+    0.0003,
+    0.001,
+    0.003
+  ],
+  "checkpoints": [
+    512,
+    2048,
+    8192
+  ],
+  "thresholds": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "batch_size": 64,
+  "dtype": "float32",
+  "tf32": false,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "numpy": "2.5.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "evidence": "historically exposed TRAIN-only exploratory roles"
+}

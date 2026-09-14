@@ -1,0 +1,2523 @@
+{
+  "source_lock_sha256": "42d85a41e8b63d15dda61ab6411b043c1c4eefd075088dc90d934d3b19505d84",
+  "selection_sha256": "c3a65f8be1af5e69724729c67b097957dcacac0c179811986d149daaef7daec3",
+  "results_sha256": "f5918a094f446a49ed26df84ac8251a3ca793d22b469289c683d7cd0c952876e",
+  "audit_sha256": "c947ca9173426ba3b262596ec06ffcde52e6a064b3fcd32dd2c16106b31db89a",
+  "runtime_source_sha256": "d4db6c36421b96ba96aabbf1308c84956318a09c6cf2b465b89ec02e4dfd9314",
+  "dependencies": {
+    "scripts/chromaseed_hybrid.py": "7d078cfa51fb9da79acf61f34a0180d39c0a3e13a78ee81987dbd1c5c65f69c9",
+    "scripts/chromaseed_hybrid_numpy.py": "6cffc54c57d8b59ee5015f1f79a79fff9269d520f55e49974855765b7316af5a",
+    "scripts/chromaseed_affine_audit.py": "eedb5736f06f73d10110c93392295bd40264e8532a78c6de583ab170e495accb",
+    "scripts/chromaseed_gated_audit.py": "48355e1df5f37634ded76c92be8e7b34d35772e1c7aa66a6fe5f0e3cca6b3d72",
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc"
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "threads": 1,
+    "numpy": "2.5.3"
+  },
+  "records": [
+    {
+      "role": "mixed",
+      "family": "norm_raw",
+      "seed": 17,
+      "name": "norm_raw_s17",
+      "numeric_bytes": 21973,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 12.4,
+        "p95_us": 12.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 100.9,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_raw",
+      "seed": 29,
+      "name": "norm_raw_s29",
+      "numeric_bytes": 21973,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.625,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 59.4,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_raw",
+      "seed": 43,
+      "name": "norm_raw_s43",
+      "numeric_bytes": 21973,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 55.3,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_projected",
+      "seed": 17,
+      "name": "norm_projected_s17",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.765876499528531e-13,
+        "initialization_us": 65.1,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_projected",
+      "seed": 29,
+      "name": "norm_projected_s29",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.9895196601282805e-13,
+        "initialization_us": 60.5,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_projected",
+      "seed": 43,
+      "name": "norm_projected_s43",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 53.5,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_blend",
+      "seed": 17,
+      "name": "norm_blend_s17",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 23.1,
+        "p95_us": 24.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.5579538487363607e-13,
+        "initialization_us": 153.3,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_blend",
+      "seed": 29,
+      "name": "norm_blend_s29",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 23.3,
+        "p95_us": 24.325,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 105.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_blend",
+      "seed": 43,
+      "name": "norm_blend_s43",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 23.3,
+        "p95_us": 23.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.6290081223123707e-13,
+        "initialization_us": 106.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_uniform",
+      "seed": 17,
+      "name": "norm_uniform_s17",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 22.8,
+        "p95_us": 23.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 101.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_uniform",
+      "seed": 29,
+      "name": "norm_uniform_s29",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 90.6,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_uniform",
+      "seed": 43,
+      "name": "norm_uniform_s43",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.542233338928781e-13,
+        "initialization_us": 89.3,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_support",
+      "seed": 17,
+      "name": "norm_support_s17",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 24.3,
+        "p95_us": 25.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 92.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_support",
+      "seed": 29,
+      "name": "norm_support_s29",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 24.3,
+        "p95_us": 25.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 88.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "norm_support",
+      "seed": 43,
+      "name": "norm_support_s43",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 25.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 95.1,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_raw",
+      "seed": 17,
+      "name": "perceptual_raw_s17",
+      "numeric_bytes": 21973,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 52.2,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_raw",
+      "seed": 29,
+      "name": "perceptual_raw_s29",
+      "numeric_bytes": 21973,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 12.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 53.7,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_raw",
+      "seed": 43,
+      "name": "perceptual_raw_s43",
+      "numeric_bytes": 21973,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 12.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 57.1,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_projected",
+      "seed": 17,
+      "name": "perceptual_projected_s17",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 13.925,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.329070518200751e-13,
+        "initialization_us": 55.9,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_projected",
+      "seed": 29,
+      "name": "perceptual_projected_s29",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.6,
+        "p95_us": 13.925,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.765876499528531e-13,
+        "initialization_us": 52.2,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_projected",
+      "seed": 43,
+      "name": "perceptual_projected_s43",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.6,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 53.7,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_blend",
+      "seed": 17,
+      "name": "perceptual_blend_s17",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 23.3,
+        "p95_us": 23.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 94.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_blend",
+      "seed": 29,
+      "name": "perceptual_blend_s29",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 23.4,
+        "p95_us": 23.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.481659405224491e-13,
+        "initialization_us": 91.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_blend",
+      "seed": 43,
+      "name": "perceptual_blend_s43",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 23.3,
+        "p95_us": 23.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 149.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "name": "perceptual_uniform_s17",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 88.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "name": "perceptual_uniform_s29",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.650000000000002,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 86.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "name": "perceptual_uniform_s43",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 88.3,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_support",
+      "seed": 17,
+      "name": "perceptual_support_s17",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 25.825,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.968558980384842e-13,
+        "initialization_us": 87.6,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_support",
+      "seed": 29,
+      "name": "perceptual_support_s29",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 25.650000000000002,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 86.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_support",
+      "seed": 43,
+      "name": "perceptual_support_s43",
+      "numeric_bytes": 27503,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 25.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 100.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "x_fixed_norm",
+      "seed": 17,
+      "name": "x_fixed_norm_s17",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.126388037344441e-13,
+        "initialization_us": 60.6,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "x_fixed_norm",
+      "seed": 29,
+      "name": "x_fixed_norm_s29",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 67.1,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "x_fixed_norm",
+      "seed": 43,
+      "name": "x_fixed_norm_s43",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.525,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 61.7,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "x_fixed_perceptual",
+      "seed": 17,
+      "name": "x_fixed_perceptual_s17",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 64.7,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "x_fixed_perceptual",
+      "seed": 29,
+      "name": "x_fixed_perceptual_s29",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 59.2,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "x_fixed_perceptual",
+      "seed": 43,
+      "name": "x_fixed_perceptual_s43",
+      "numeric_bytes": 14181,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.389644451905042e-13,
+        "initialization_us": 62.0,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "constant",
+      "seed": null,
+      "name": "constant",
+      "numeric_bytes": 12,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 1.2,
+        "p95_us": 1.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 0.0,
+        "initialization_us": 7.9,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_raw",
+      "seed": 17,
+      "name": "norm_raw_s17",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.9,
+        "p95_us": 10.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 49.0,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_raw",
+      "seed": 29,
+      "name": "norm_raw_s29",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 9.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.375077994860476e-13,
+        "initialization_us": 53.6,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_raw",
+      "seed": 43,
+      "name": "norm_raw_s43",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.9,
+        "p95_us": 10.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 60.9,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_projected",
+      "seed": 17,
+      "name": "norm_projected_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.7711166694643907e-13,
+        "initialization_us": 52.6,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_projected",
+      "seed": 29,
+      "name": "norm_projected_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.3,
+        "p95_us": 11.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.197442310920451e-13,
+        "initialization_us": 55.8,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_projected",
+      "seed": 43,
+      "name": "norm_projected_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.623767952376511e-13,
+        "initialization_us": 50.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_blend",
+      "seed": 17,
+      "name": "norm_blend_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.3,
+        "p95_us": 19.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.1671553440683056e-13,
+        "initialization_us": 85.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_blend",
+      "seed": 29,
+      "name": "norm_blend_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 19.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.0605739337042905e-13,
+        "initialization_us": 88.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_blend",
+      "seed": 43,
+      "name": "norm_blend_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.3,
+        "p95_us": 20.25999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4868995751603507e-13,
+        "initialization_us": 85.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_uniform",
+      "seed": 17,
+      "name": "norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 95.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_uniform",
+      "seed": 29,
+      "name": "norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.15999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.410605131648481e-13,
+        "initialization_us": 97.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_uniform",
+      "seed": 43,
+      "name": "norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 91.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_support",
+      "seed": 17,
+      "name": "norm_support_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 21.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.765876499528531e-13,
+        "initialization_us": 87.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_support",
+      "seed": 29,
+      "name": "norm_support_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 86.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_support",
+      "seed": 43,
+      "name": "norm_support_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 20.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 85.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_raw",
+      "seed": 17,
+      "name": "perceptual_raw_s17",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 9.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.384404281969182e-13,
+        "initialization_us": 50.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_raw",
+      "seed": 29,
+      "name": "perceptual_raw_s29",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 9.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_raw",
+      "seed": 43,
+      "name": "perceptual_raw_s43",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 9.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0373923942097463e-12,
+        "initialization_us": 45.7,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_projected",
+      "seed": 17,
+      "name": "perceptual_projected_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.181721801112872e-13,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_projected",
+      "seed": 29,
+      "name": "perceptual_projected_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.35999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 48.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_projected",
+      "seed": 43,
+      "name": "perceptual_projected_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 50.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_blend",
+      "seed": 17,
+      "name": "perceptual_blend_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 19.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 85.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_blend",
+      "seed": 29,
+      "name": "perceptual_blend_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 19.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.476419235288631e-13,
+        "initialization_us": 95.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_blend",
+      "seed": 43,
+      "name": "perceptual_blend_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 19.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 86.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "name": "perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 20.21999999999998,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.384404281969182e-13,
+        "initialization_us": 96.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "name": "perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 22.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.673861546209082e-13,
+        "initialization_us": 99.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "name": "perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.2221335055073723e-12,
+        "initialization_us": 94.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_support",
+      "seed": 17,
+      "name": "perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 23.71999999999998,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.100187187665142e-13,
+        "initialization_us": 88.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_support",
+      "seed": 29,
+      "name": "perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 23.81999999999998,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.963318810448982e-13,
+        "initialization_us": 91.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_support",
+      "seed": 43,
+      "name": "perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 23.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1226575225009583e-12,
+        "initialization_us": 87.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "x_fixed_norm",
+      "seed": 17,
+      "name": "x_fixed_norm_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 56.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "x_fixed_norm",
+      "seed": 29,
+      "name": "x_fixed_norm_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 53.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "x_fixed_norm",
+      "seed": 43,
+      "name": "x_fixed_norm_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 13.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.339550858072471e-13,
+        "initialization_us": 48.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "x_fixed_perceptual",
+      "seed": 17,
+      "name": "x_fixed_perceptual_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.759999999999991,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 50.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "x_fixed_perceptual",
+      "seed": 29,
+      "name": "x_fixed_perceptual_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 12.119999999999981,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.892264536872972e-13,
+        "initialization_us": 48.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "x_fixed_perceptual",
+      "seed": 43,
+      "name": "x_fixed_perceptual_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 11.759999999999991,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.044853423896711e-13,
+        "initialization_us": 50.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "constant",
+      "seed": null,
+      "name": "constant",
+      "numeric_bytes": 12,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 1.1,
+        "p95_us": 1.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 0.0,
+        "initialization_us": 8.4,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_raw",
+      "seed": 17,
+      "name": "norm_raw_s17",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.6,
+        "p95_us": 9.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 45.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_raw",
+      "seed": 29,
+      "name": "norm_raw_s29",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 10.35999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 64.9,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_raw",
+      "seed": 43,
+      "name": "norm_raw_s43",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 12.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.902744876744691e-13,
+        "initialization_us": 44.3,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_projected",
+      "seed": 17,
+      "name": "norm_projected_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.2026824808563106e-13,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_projected",
+      "seed": 29,
+      "name": "norm_projected_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 12.619999999999981,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.7408297026122455e-13,
+        "initialization_us": 48.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_projected",
+      "seed": 43,
+      "name": "norm_projected_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.334310688136611e-13,
+        "initialization_us": 47.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_blend",
+      "seed": 17,
+      "name": "norm_blend_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 28.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 84.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_blend",
+      "seed": 29,
+      "name": "norm_blend_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 23.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.126388037344441e-13,
+        "initialization_us": 82.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_blend",
+      "seed": 43,
+      "name": "norm_blend_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 23.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 80.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_uniform",
+      "seed": 17,
+      "name": "norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 22.21999999999998,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 81.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_uniform",
+      "seed": 29,
+      "name": "norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 22.379999999999974,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 82.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_uniform",
+      "seed": 43,
+      "name": "norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 20.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.831690603168681e-13,
+        "initialization_us": 80.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_support",
+      "seed": 17,
+      "name": "norm_support_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 23.25999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 79.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_support",
+      "seed": 29,
+      "name": "norm_support_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 22.079999999999973,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 85.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_support",
+      "seed": 43,
+      "name": "norm_support_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 23.75999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 87.9,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_raw",
+      "seed": 17,
+      "name": "perceptual_raw_s17",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 11.979999999999972,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 46.9,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_raw",
+      "seed": 29,
+      "name": "perceptual_raw_s29",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 10.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2150280781497713e-12,
+        "initialization_us": 50.8,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_raw",
+      "seed": 43,
+      "name": "perceptual_raw_s43",
+      "numeric_bytes": 20284,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 10.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 42.6,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_projected",
+      "seed": 17,
+      "name": "perceptual_projected_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.919999999999982,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_projected",
+      "seed": 29,
+      "name": "perceptual_projected_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 45.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_projected",
+      "seed": 43,
+      "name": "perceptual_projected_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 13.239999999999919,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.400124791776761e-13,
+        "initialization_us": 54.6,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_blend",
+      "seed": 17,
+      "name": "perceptual_blend_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 21.91999999999998,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 86.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_blend",
+      "seed": 29,
+      "name": "perceptual_blend_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 19.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 90.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_blend",
+      "seed": 43,
+      "name": "perceptual_blend_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 19.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 91.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "name": "perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 19.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 84.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "name": "perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 19.15999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2292389328649733e-12,
+        "initialization_us": 82.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "name": "perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 19.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.379164112033322e-13,
+        "initialization_us": 88.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_support",
+      "seed": 17,
+      "name": "perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 20.95999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 80.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_support",
+      "seed": 29,
+      "name": "perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 22.21999999999998,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2008172234345693e-12,
+        "initialization_us": 80.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_support",
+      "seed": 43,
+      "name": "perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "active_hybrid": true,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 21.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.805489753489383e-13,
+        "initialization_us": 89.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "x_fixed_norm",
+      "seed": 17,
+      "name": "x_fixed_norm_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.8,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.9895196601282805e-13,
+        "initialization_us": 52.6,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "x_fixed_norm",
+      "seed": 29,
+      "name": "x_fixed_norm_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.5579538487363607e-13,
+        "initialization_us": 48.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "x_fixed_norm",
+      "seed": 43,
+      "name": "x_fixed_norm_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.8421709430404007e-13,
+        "initialization_us": 45.6,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "x_fixed_perceptual",
+      "seed": 17,
+      "name": "x_fixed_perceptual_s17",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 56.9,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "x_fixed_perceptual",
+      "seed": 29,
+      "name": "x_fixed_perceptual_s29",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 47.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "x_fixed_perceptual",
+      "seed": 43,
+      "name": "x_fixed_perceptual_s43",
+      "numeric_bytes": 12492,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 46.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "constant",
+      "seed": null,
+      "name": "constant",
+      "numeric_bytes": 12,
+      "active_hybrid": false,
+      "numpy_only": {
+        "median_us": 1.1,
+        "p95_us": 1.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 0.0,
+        "initialization_us": 6.6,
+        "cached_array_bytes": 24
+      }
+    }
+  ],
+  "standalone_fit_records": [
+    {
+      "role": "mixed",
+      "family": "norm_raw",
+      "loss": "norm",
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.03326349996495992,
+      "seconds": [
+        0.033356200030539185,
+        0.0326395999873057,
+        0.03326349996495992
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_projected",
+      "loss": "norm",
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04386490001343191,
+      "seconds": [
+        0.04341440001735464,
+        0.04386490001343191,
+        0.043877899996005
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_blend",
+      "loss": "norm",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04378160001942888,
+      "seconds": [
+        0.04395449999719858,
+        0.04378160001942888,
+        0.043742200010456145
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_uniform",
+      "loss": "norm",
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04466350004076958,
+      "seconds": [
+        0.04410890000872314,
+        0.044725899992045015,
+        0.04466350004076958
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "norm_support",
+      "loss": "norm",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.044967700028792024,
+      "seconds": [
+        0.04509659996256232,
+        0.044758600008208305,
+        0.044967700028792024
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_raw",
+      "loss": "perceptual",
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.035873299988452345,
+      "seconds": [
+        0.03536000003805384,
+        0.03595849999692291,
+        0.035873299988452345
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_projected",
+      "loss": "perceptual",
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04618740000296384,
+      "seconds": [
+        0.04630180000094697,
+        0.04618740000296384,
+        0.04543769999872893
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_blend",
+      "loss": "perceptual",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04487169999629259,
+      "seconds": [
+        0.04487169999629259,
+        0.04505829996196553,
+        0.04480179998790845
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_uniform",
+      "loss": "perceptual",
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04541150003205985,
+      "seconds": [
+        0.045422399998642504,
+        0.04533460002858192,
+        0.04541150003205985
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "perceptual_support",
+      "loss": "perceptual",
+      "kind": "support",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 1,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.046693700016476214,
+      "seconds": [
+        0.046693700016476214,
+        0.046850399987306446,
+        0.04641069995705038
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_raw",
+      "loss": "norm",
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.00937410001643002,
+      "seconds": [
+        0.009368799976073205,
+        0.009399700036738068,
+        0.00937410001643002
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_projected",
+      "loss": "norm",
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.01220850000390783,
+      "seconds": [
+        0.012229700048919767,
+        0.01217890001134947,
+        0.01220850000390783
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_blend",
+      "loss": "norm",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.012371100019663572,
+      "seconds": [
+        0.01219500001752749,
+        0.012371100019663572,
+        0.012659900006838143
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_uniform",
+      "loss": "norm",
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.01255530002526939,
+      "seconds": [
+        0.012688599992543459,
+        0.01255530002526939,
+        0.012541100033558905
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "norm_support",
+      "loss": "norm",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.012776100018527359,
+      "seconds": [
+        0.012776100018527359,
+        0.01269730000058189,
+        0.012830799969378859
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_raw",
+      "loss": "perceptual",
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.01056369999423623,
+      "seconds": [
+        0.010576700035016984,
+        0.01056369999423623,
+        0.010500800039153546
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_projected",
+      "loss": "perceptual",
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.013340000004973263,
+      "seconds": [
+        0.013340000004973263,
+        0.013391999993473291,
+        0.01328259997535497
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_blend",
+      "loss": "perceptual",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.013606699998490512,
+      "seconds": [
+        0.01344259997131303,
+        0.013606699998490512,
+        0.013865399989299476
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_uniform",
+      "loss": "perceptual",
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.014184100029524416,
+      "seconds": [
+        0.01414469996234402,
+        0.014358400017954409,
+        0.014184100029524416
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "perceptual_support",
+      "loss": "perceptual",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "seed": 17,
+      "n_fit_rows": 323,
+      "median_seconds": 0.014422199979890138,
+      "seconds": [
+        0.014338299981318414,
+        0.014422199979890138,
+        0.014573300024494529
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_raw",
+      "loss": "norm",
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.016268900013528764,
+      "seconds": [
+        0.01622950000455603,
+        0.016411200049333274,
+        0.016268900013528764
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_projected",
+      "loss": "norm",
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.02144779998343438,
+      "seconds": [
+        0.02144779998343438,
+        0.02145519998157397,
+        0.021175700007006526
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_blend",
+      "loss": "norm",
+      "kind": "blend",
+      "alpha": 1.0,
+      "rho": 0.25,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.021550300007220358,
+      "seconds": [
+        0.021367999957874417,
+        0.02209349995246157,
+        0.021550300007220358
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_uniform",
+      "loss": "norm",
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.021801199996843934,
+      "seconds": [
+        0.021801199996843934,
+        0.0216937999939546,
+        0.021848200005479157
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "norm_support",
+      "loss": "norm",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 1,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.022884399979375303,
+      "seconds": [
+        0.02281240001320839,
+        0.02298720000544563,
+        0.022884399979375303
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_raw",
+      "loss": "perceptual",
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.01836289995117113,
+      "seconds": [
+        0.018275400041602552,
+        0.01836289995117113,
+        0.0187838000128977
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_projected",
+      "loss": "perceptual",
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.02350849995855242,
+      "seconds": [
+        0.0235250000259839,
+        0.023303599969949573,
+        0.02350849995855242
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_blend",
+      "loss": "perceptual",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.02349659998435527,
+      "seconds": [
+        0.02355760004138574,
+        0.02342869999120012,
+        0.02349659998435527
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_uniform",
+      "loss": "perceptual",
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.024334500019904226,
+      "seconds": [
+        0.024119699955917895,
+        0.024460700049530715,
+        0.024334500019904226
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "perceptual_support",
+      "loss": "perceptual",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "seed": 17,
+      "n_fit_rows": 643,
+      "median_seconds": 0.02462559996638447,
+      "seconds": [
+        0.02462559996638447,
+        0.02441089996136725,
+        0.024671400024089962
+      ]
+    }
+  ],
+  "fixed_positive_records": [
+    {
+      "role": "mixed",
+      "loss": "norm",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04208310000831261,
+      "seconds": [
+        0.04231009999057278,
+        0.04208310000831261,
+        0.041844199993647635
+      ]
+    },
+    {
+      "role": "mixed",
+      "loss": "norm",
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.043141899979673326,
+      "seconds": [
+        0.042765900027006865,
+        0.04358320002211258,
+        0.043141899979673326
+      ]
+    },
+    {
+      "role": "mixed",
+      "loss": "norm",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 4,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04333269997732714,
+      "seconds": [
+        0.043396900000516325,
+        0.04333269997732714,
+        0.04329290002351627
+      ]
+    },
+    {
+      "role": "mixed",
+      "loss": "perceptual",
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04477219999535009,
+      "seconds": [
+        0.04477219999535009,
+        0.044725699990522116,
+        0.04505890002474189
+      ]
+    },
+    {
+      "role": "mixed",
+      "loss": "perceptual",
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.0453803000273183,
+      "seconds": [
+        0.04540980001911521,
+        0.045336399984080344,
+        0.0453803000273183
+      ]
+    },
+    {
+      "role": "mixed",
+      "loss": "perceptual",
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 4,
+      "seed": 17,
+      "n_fit_rows": 734,
+      "median_seconds": 0.04601019999245182,
+      "seconds": [
+        0.04601019999245182,
+        0.04611629998544231,
+        0.045839999977033585
+      ]
+    }
+  ],
+  "selected_complete_fits_including_warmups": 120,
+  "fixed_complete_fits_including_warmups": 24,
+  "scope": "Actual111 one-record NumPy consumers,20 warmups/3 passes,144 complete fits including warmups. Includes original weights/moments/exact widths/raw landmarks/gate/readout, plus projection/shared projected basis/branch when needed. Single projected fit also computes raw backbone readout. Excludes imports, I/O, grid search and image/skin extraction. Cached arrays exclude process, temporaries and retained caller objects. One CPU thread, no GPU claim."
+}

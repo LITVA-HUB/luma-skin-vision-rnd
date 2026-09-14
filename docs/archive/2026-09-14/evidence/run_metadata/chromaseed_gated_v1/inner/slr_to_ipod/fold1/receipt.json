@@ -1,0 +1,1362 @@
+{
+  "models": {
+    "norm_base_s17": {
+      "family": "norm_base",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.0,
+      "fallback": "base"
+    },
+    "norm_uniform_s17_l0_r0": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l0_r1": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l0_r2": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l1_r0": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l1_r1": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l1_r2": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l2_r0": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l2_r1": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s17_l2_r2": {
+      "family": "norm_uniform",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_soft_s17_l0_r0": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l0_r1": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l0_r2": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l1_r0": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l1_r1": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l1_r2": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l2_r0": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l2_r1": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s17_l2_r2": {
+      "family": "norm_soft",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l0_r0": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l0_r1": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l0_r2": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l1_r0": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l1_r1": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l1_r2": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l2_r0": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l2_r1": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s17_l2_r2": {
+      "family": "norm_hard",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_base_s17": {
+      "family": "perceptual_base",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.0,
+      "fallback": "base"
+    },
+    "perceptual_uniform_s17_l0_r0": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l0_r1": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l0_r2": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l1_r0": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l1_r1": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l1_r2": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l2_r0": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l2_r1": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s17_l2_r2": {
+      "family": "perceptual_uniform",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_soft_s17_l0_r0": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l0_r1": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l0_r2": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l1_r0": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l1_r1": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l1_r2": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l2_r0": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l2_r1": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s17_l2_r2": {
+      "family": "perceptual_soft",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l0_r0": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l0_r1": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l0_r2": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l1_r0": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l1_r1": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l1_r2": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l2_r0": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l2_r1": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s17_l2_r2": {
+      "family": "perceptual_hard",
+      "seed": 17,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_base_s29": {
+      "family": "norm_base",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.0,
+      "fallback": "base"
+    },
+    "norm_uniform_s29_l0_r0": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l0_r1": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l0_r2": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l1_r0": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l1_r1": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l1_r2": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l2_r0": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l2_r1": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s29_l2_r2": {
+      "family": "norm_uniform",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_soft_s29_l0_r0": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l0_r1": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l0_r2": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l1_r0": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l1_r1": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l1_r2": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l2_r0": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l2_r1": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s29_l2_r2": {
+      "family": "norm_soft",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l0_r0": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l0_r1": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l0_r2": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l1_r0": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l1_r1": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l1_r2": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l2_r0": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l2_r1": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s29_l2_r2": {
+      "family": "norm_hard",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_base_s29": {
+      "family": "perceptual_base",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.0,
+      "fallback": "base"
+    },
+    "perceptual_uniform_s29_l0_r0": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l0_r1": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l0_r2": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l1_r0": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l1_r1": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l1_r2": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l2_r0": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l2_r1": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s29_l2_r2": {
+      "family": "perceptual_uniform",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_soft_s29_l0_r0": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l0_r1": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l0_r2": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l1_r0": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l1_r1": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l1_r2": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l2_r0": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l2_r1": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s29_l2_r2": {
+      "family": "perceptual_soft",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l0_r0": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l0_r1": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l0_r2": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l1_r0": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l1_r1": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l1_r2": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l2_r0": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l2_r1": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s29_l2_r2": {
+      "family": "perceptual_hard",
+      "seed": 29,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_base_s43": {
+      "family": "norm_base",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.0,
+      "fallback": "base"
+    },
+    "norm_uniform_s43_l0_r0": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l0_r1": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l0_r2": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l1_r0": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l1_r1": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l1_r2": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l2_r0": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l2_r1": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "norm_uniform_s43_l2_r2": {
+      "family": "norm_uniform",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "norm_soft_s43_l0_r0": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l0_r1": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l0_r2": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l1_r0": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l1_r1": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l1_r2": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l2_r0": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l2_r1": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_soft_s43_l2_r2": {
+      "family": "norm_soft",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l0_r0": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l0_r1": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l0_r2": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l1_r0": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l1_r1": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l1_r2": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l2_r0": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l2_r1": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "norm_hard_s43_l2_r2": {
+      "family": "norm_hard",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_base_s43": {
+      "family": "perceptual_base",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.0,
+      "fallback": "base"
+    },
+    "perceptual_uniform_s43_l0_r0": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l0_r1": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l0_r2": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l1_r0": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l1_r1": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l1_r2": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l2_r0": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l2_r1": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "none"
+    },
+    "perceptual_uniform_s43_l2_r2": {
+      "family": "perceptual_uniform",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "none"
+    },
+    "perceptual_soft_s43_l0_r0": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l0_r1": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l0_r2": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l1_r0": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l1_r1": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l1_r2": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l2_r0": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l2_r1": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_soft_s43_l2_r2": {
+      "family": "perceptual_soft",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l0_r0": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l0_r1": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l0_r2": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 0.1,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l1_r0": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l1_r1": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l1_r2": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 1.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l2_r0": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.25,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l2_r1": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 0.5,
+      "fallback": "single_camera"
+    },
+    "perceptual_hard_s43_l2_r2": {
+      "family": "perceptual_hard",
+      "seed": 43,
+      "residual_lambda": 10.0,
+      "rho": 1.0,
+      "fallback": "single_camera"
+    }
+  },
+  "operations": [
+    {
+      "base": "norm",
+      "route": "uniform",
+      "seed": 17,
+      "solutions": [
+        {
+          "residual_lambda": 0.1,
+          "objective": 158.48637624194097,
+          "objective_minus_zero": -13.333538451807982,
+          "normal_relative_residual": 1.7181226526712665e-13
+        },
+        {
+          "residual_lambda": 1.0,
+          "objective": 169.3600772783457,
+          "objective_minus_zero": -2.459837415403257,
+          "normal_relative_residual": 3.811921016950968e-14
+        },
+        {
+          "residual_lambda": 10.0,
+          "objective": 171.511238053406,
+          "objective_minus_zero": -0.30867664034295217,
+          "normal_relative_residual": 5.260214249897028e-15
+        }
+      ],
+      "gram_eigenvalues_clipped": 0,
+      "zero_objective": 171.81991469374896
+    },
+    {
+      "base": "perceptual",
+      "route": "uniform",
+      "seed": 17,
+      "solutions": [
+        {
+          "residual_lambda": 0.1,
+          "objective": 93.52364698886711,
+          "objective_minus_zero": -10.596310766459382,
+          "normal_relative_residual": 4.250980670887814e-13
+        },
+        {
+          "residual_lambda": 1.0,
+          "objective": 102.20189052445313,
+          "objective_minus_zero": -1.918067230873362,
+          "normal_relative_residual": 8.640202672344387e-14
+        },
+        {
+          "residual_lambda": 10.0,
+          "objective": 103.8862368704235,
+          "objective_minus_zero": -0.23372088490299348,
+          "normal_relative_residual": 1.0888415262448584e-14
+        }
+      ],
+      "gram_eigenvalues_clipped": 0,
+      "zero_objective": 104.1199577553265
+    },
+    {
+      "base": "norm",
+      "route": "uniform",
+      "seed": 29,
+      "solutions": [
+        {
+          "residual_lambda": 0.1,
+          "objective": 158.4796423120972,
+          "objective_minus_zero": -13.3384614324969,
+          "normal_relative_residual": 1.0465133181143251e-13
+        },
+        {
+          "residual_lambda": 1.0,
+          "objective": 169.35787714042073,
+          "objective_minus_zero": -2.4602266041733856,
+          "normal_relative_residual": 2.620123695663694e-14
+        },
+        {
+          "residual_lambda": 10.0,
+          "objective": 171.50939341102986,
+          "objective_minus_zero": -0.3087103335642496,
+          "normal_relative_residual": 4.109363469368664e-15
+        }
+      ],
+      "gram_eigenvalues_clipped": 0,
+      "zero_objective": 171.8181037445941
+    },
+    {
+      "base": "perceptual",
+      "route": "uniform",
+      "seed": 29,
+      "solutions": [
+        {
+          "residual_lambda": 0.1,
+          "objective": 93.59096722665196,
+          "objective_minus_zero": -10.580751059259669,
+          "normal_relative_residual": 1.8050527364591857e-13
+        },
+        {
+          "residual_lambda": 1.0,
+          "objective": 102.2555602182016,
+          "objective_minus_zero": -1.916158067710029,
+          "normal_relative_residual": 2.4213813413946688e-14
+        },
+        {
+          "residual_lambda": 10.0,
+          "objective": 103.93819628492967,
+          "objective_minus_zero": -0.23352200098194942,
+          "normal_relative_residual": 3.97790083946814e-15
+        }
+      ],
+      "gram_eigenvalues_clipped": 0,
+      "zero_objective": 104.17171828591162
+    },
+    {
+      "base": "norm",
+      "route": "uniform",
+      "seed": 43,
+      "solutions": [
+        {
+          "residual_lambda": 0.1,
+          "objective": 158.47645713388368,
+          "objective_minus_zero": -13.347259284467839,
+          "normal_relative_residual": 2.6249063228794373e-13
+        },
+        {
+          "residual_lambda": 1.0,
+          "objective": 169.36299802694052,
+          "objective_minus_zero": -2.4607183914110067,
+          "normal_relative_residual": 6.703515708660193e-14
+        },
+        {
+          "residual_lambda": 10.0,
+          "objective": 171.51496519627648,
+          "objective_minus_zero": -0.30875122207504546,
+          "normal_relative_residual": 9.541903139967563e-15
+        }
+      ],
+      "gram_eigenvalues_clipped": 0,
+      "zero_objective": 171.82371641835152
+    },
+    {
+      "base": "perceptual",
+      "route": "uniform",
+      "seed": 43,
+      "solutions": [
+        {
+          "residual_lambda": 0.1,
+          "objective": 93.74178361574698,
+          "objective_minus_zero": -10.536245861962797,
+          "normal_relative_residual": 4.085889354187003e-13
+        },
+        {
+          "residual_lambda": 1.0,
+          "objective": 102.36633153883113,
+          "objective_minus_zero": -1.9116979388786461,
+          "normal_relative_residual": 9.752634371084168e-14
+        },
+        {
+          "residual_lambda": 10.0,
+          "objective": 104.04495740087063,
+          "objective_minus_zero": -0.2330720768391501,
+          "normal_relative_residual": 1.3844568253555589e-14
+        }
+      ],
+      "gram_eigenvalues_clipped": 0,
+      "zero_objective": 104.27802947770978
+    }
+  ],
+  "n_fit_rows": 212,
+  "gate_fits": 0,
+  "residual_solutions": 18,
+  "perceptual_base_solves": 3,
+  "fit_bank_seconds": 0.034850900003220886,
+  "exact_P_base_payloads": 6,
+  "exact_fallback_payloads": 108,
+  "source_lock_sha256": "7af66943a24be2f3d41c0f8dd5ad1261ad0126471ea0c9f97d48e9069608dd2f",
+  "role": "slr_to_ipod",
+  "fold": 1,
+  "fit_rows_sha256": "bc708b8525f3e044d7542e48ff77c4a7fe476d0af3152577e1fc0af9dd1dfb59",
+  "query_rows_sha256": "706f0131e7b973fb16440569823a4937c042a9d6695a47ed84274a9c7d152d9a",
+  "n_fit_people": 5,
+  "files": {
+    "models.npz": "68d106ec2168533f1aef90d747b31bd5537b7120f5cc3bbb8b34aff88d60f75f",
+    "oof.npz": "3fd1c14df6d6d95eb0f006f61d67e2b0386e583b9c5696bb5bb0a8e464a8aea0"
+  },
+  "bank_wall_seconds": 0.24734770000213757
+}

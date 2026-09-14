@@ -1,0 +1,21 @@
+# Luma ChromaSeed-R v1 — experimental model card
+
+Working family name: **Luma ChromaSeed**. The R branch tests iterative refinement and conditional patch connections. No trademark clearance or algorithmic novelty is asserted.
+
+**Task:** predict instrument-native CIELAB of a prepared skin region from cached color36 and 64×18 local patch statistics. This is not face identity recognition, face detection, segmentation, diagnosis, undertone certification or a validated foundation-shade recommender. The original Luma app remains a separate demonstration/product shell.
+
+**Architecture:** fit-only normalized inputs and weighted analytic ridge start, a shared local-patch encoder, 48-value state, current-prediction-conditioned patch query and up to four shared correction passes. Recurrent soft/top16/dynamic controls have 14,603 learned values. Dynamic gates select 4–64 patch connections depending on input. Parameters do not grow or train at inference. All patches are encoded/scored; selection limits the pooling connections. A native-Lab convergence threshold is selected on inner held people, with at least two passes and at most four.
+
+**Files:** authoritative models remain private under `experiments/runs/chromaseed_refine_v1/final/{mixed,slr_to_ipod,ipod_to_slr}/{stats_mlp,patch_mlp,recur_soft,recur_top16,recur_dynamic}/seed{17,29,43}.npz`. There is no production champion or favored seed selected from outer performance. NumPy deployment: `scripts/chromaseed_refine_numpy.py`, `NumpyRefiner(payload).predict(color36, tokens64x18)`. It returns native Lab, executed pass count and active connection counts.
+
+**Size/runtime:** recurrent FP32 numeric payload 59,316 bytes including anchor, normalizers and threshold. FP16 storage 30,110 bytes; soft/top16 passed the limited precision guard, dynamic failed one of nine models because of threshold branching. INT8 storage 17,192 bytes for recurrent models, with unacceptable isolated drift under the registered guard. Encoded weights are decoded to FP32; integer/mixed-precision compute speedups are not measured. Approximately 0.15–0.16 ms batch-one model inference on Ryzen 9 7900X; no image extraction or face-processing time included.
+
+**Training:** original TRAIN only, 966 images from 24 people, three historically reused protocols. Three optimization seeds and an inner 3×3 learning-rate/checkpoint search; max8192 updates, all 15 choices selected512. Nine independent models are batched on RTX 4060 with deterministic FP32 and whole-step CUDA Graph. Selected final bank of three recurrent models fits in roughly1.2–1.3 seconds, not three isolated timed runs. Full search/banks:813.4 seconds, peak241.6 MiB allocated CUDA.
+
+**Measured quality:** dynamic adaptive error averaged over the three separately fitted seeds is5.355/9.909/9.812 person-balanced DeltaE00 on mixed/SLR→iPod/iPod→SLR roles. These are not ensemble errors or performance claims for any individual artifact. Strong historical controls still outperform parts of this series, especially camera-group transfer. The three roles overlap and changing camera groups also changes people/distributions. New independent smartphone-face accuracy is unvalidated.
+
+**Key failure:** repeated corrections can worsen distribution-shifted inputs. Inner-derived stopping thresholds need not retain their accuracy/speed tradeoff outside inner data. Half-precision storage can move an example across a stopping threshold and produce a much larger jump than its matched-pass numerical drift. Dynamic connections and low parameter count do not solve color-identifiability or camera-calibration limits.
+
+**Provenance and rights:** original implementation in this isolated research worktree using NumPy/PyTorch; no external learned weights downloaded. Dataset access/usage terms from the MSKCC research data remain applicable. Code, data and derived-weight rights must be assessed separately before product deployment; this experiment does not establish commercial clearance. No images or direct participant identifiers are published.
+
+[Measured report](../benchmarks/chromaseed_refine_v1/report.md) · [Precision diagnosis](../benchmarks/chromaseed_refine_v1/precision.md) · [Next decision](../research/chromaseed_refine_next_decision.md).

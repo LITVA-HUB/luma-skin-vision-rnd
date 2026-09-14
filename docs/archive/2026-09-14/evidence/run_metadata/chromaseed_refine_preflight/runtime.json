@@ -1,0 +1,89 @@
+{
+  "data": "synthetic generated features only",
+  "rows": 192,
+  "slots": 9,
+  "repeats": 1,
+  "setup_included": true,
+  "records": [
+    {
+      "family": "stats_mlp",
+      "steps": 512,
+      "engine": "eager",
+      "bank_seconds": 1.5245005000033416,
+      "parameters": 17667,
+      "peak_bytes": 76164096
+    },
+    {
+      "family": "patch_mlp",
+      "steps": 512,
+      "engine": "eager",
+      "bank_seconds": 1.7795507999835536,
+      "parameters": 16731,
+      "peak_bytes": 95519232
+    },
+    {
+      "family": "recur_soft",
+      "steps": 512,
+      "engine": "eager",
+      "bank_seconds": 6.539930999977514,
+      "parameters": 14603,
+      "peak_bytes": 115139584
+    },
+    {
+      "family": "recur_top16",
+      "steps": 512,
+      "engine": "eager",
+      "bank_seconds": 7.3509492999874055,
+      "parameters": 14603,
+      "peak_bytes": 115139584
+    },
+    {
+      "family": "recur_dynamic",
+      "steps": 512,
+      "engine": "eager",
+      "bank_seconds": 6.49540309997974,
+      "parameters": 14603,
+      "peak_bytes": 114992640
+    },
+    {
+      "family": "stats_mlp",
+      "steps": 512,
+      "engine": "cuda_graph",
+      "bank_seconds": 0.22410699998727068,
+      "parameters": 17667,
+      "peak_bytes": 210354688
+    },
+    {
+      "family": "patch_mlp",
+      "steps": 512,
+      "engine": "cuda_graph",
+      "bank_seconds": 0.6279157999670133,
+      "parameters": 16731,
+      "peak_bytes": 297458688
+    },
+    {
+      "family": "recur_soft",
+      "steps": 512,
+      "engine": "cuda_graph",
+      "bank_seconds": 1.648971899994649,
+      "parameters": 14603,
+      "peak_bytes": 384111104
+    },
+    {
+      "family": "recur_top16",
+      "steps": 512,
+      "engine": "cuda_graph",
+      "bank_seconds": 1.6914192999829538,
+      "parameters": 14603,
+      "peak_bytes": 451219968
+    },
+    {
+      "family": "recur_dynamic",
+      "steps": 512,
+      "engine": "cuda_graph",
+      "bank_seconds": 1.7275817999616265,
+      "parameters": 14603,
+      "peak_bytes": 518181888
+    }
+  ]
+}

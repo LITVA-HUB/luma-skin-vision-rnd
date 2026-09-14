@@ -1,0 +1,114 @@
+"""Independent numeric behavior checks for on-demand compact training."""
+import sys
+from pathlib import Path
+
+import numpy as np
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from chromaseed_fast_kernel import (
+    KernelColumns,
+    fit_one,
+    pair_indices,
+    sampled_width,
+    solve_columns,
+    streaming_landmarks,
+)
+from chromaseed_kernel import (
+    gaussian_kernel,
+    nystrom_coefficients,
+    predict_kernel,
+    select_landmarks,
+)
+
+
+def test_pair_stream_is_prefix_without_self_pairs():
+    small = pair_indices(137, 1024, 17)
+    large = pair_indices(137, 16384, 17)
+    np.testing.assert_array_equal(small, large[:len(small)])
+    assert small.shape == (1024, 2)
+    assert np.all(small[:, 0] != small[:, 1])
+    assert small.min() >= 0 and small.max() < 137
+
+
+def test_sampled_width_matches_direct_pair_distances():
+    x = np.random.default_rng(4).normal(size=(63, 36))
+    pairs = pair_indices(len(x), 1024, 104746)
+    positive = np.sqrt(np.mean((x[pairs[:, 0]] - x[pairs[:, 1]]) ** 2, axis=1))
+    expected = np.sort(positive[positive > 1e-10])[(len(positive) - 1) // 2]
+    width, info = sampled_width(x, 1024, 17)
+    assert width == pytest.approx(expected, abs=1e-14)
+    assert info["fallback"] == "none"
+    assert info["requested_pairs"] == 1024
+
+
+def test_width_degenerate_and_linear_fallback():
+    assert sampled_width(np.ones((24, 36)), 1024, 17)[0] == 1e-6
+    x = np.zeros((300, 36))
+    pairs = pair_indices(len(x), 1, 104746)
+    rare = next(i for i in range(1, len(x)) if i not in pairs)
+    x[rare] = 2.
+    width, info = sampled_width(x, 1, 17)
+    assert info["fallback"] == "anchor"
+    assert width == 2.
+
+
+@pytest.mark.parametrize("seed", [17, 29, 43])
+def test_streaming_cholesky_matches_dense_nonuniform_weights(seed):
+    rng = np.random.default_rng(11)
+    x = rng.normal(size=(131, 36))
+    weights = rng.uniform(.2, 2, size=len(x))
+    kernel = gaussian_kernel(x, x, .8)
+    expected, factor, remainder = select_landmarks(kernel, weights, "rpchol", 32, seed)
+    operator = KernelColumns(x, .8)
+    selected, columns, actual_factor, residual, info = streaming_landmarks(operator, weights, 32, seed)
+    np.testing.assert_array_equal(selected, expected)
+    np.testing.assert_allclose(columns, kernel[:, expected], atol=2e-14, rtol=0)
+    np.testing.assert_allclose(actual_factor @ actual_factor.T, factor @ factor.T, atol=1e-12)
+    np.testing.assert_allclose(residual, remainder, atol=1e-12)
+    assert operator.entries_evaluated == len(x) * len(selected)
+    assert info["largest_training_matrix_shape"] == [len(x), 32]
+
+
+def test_streaming_nystrom_matches_dense_weighted_readout():
+    rng = np.random.default_rng(28)
+    x, y = rng.normal(size=(109, 36)), rng.normal(size=(109, 3))
+    weights = rng.uniform(.1, 3., size=len(x))
+    operator = KernelColumns(x, .73)
+    ids, columns, _, _, _ = streaming_landmarks(operator, weights, 48, 17)
+    actual, _ = solve_columns(columns, ids, y, weights, (.1, 1., 10.))
+    expected, _ = nystrom_coefficients(gaussian_kernel(x, x, .73), ids, y, weights, (.1, 1., 10.))
+    np.testing.assert_allclose(actual, expected, rtol=2e-8, atol=2e-9)
+
+
+def test_column_requests_stop_at_available_rank_and_reject_bad_weights():
+    x = np.ones((15, 36))
+    operator = KernelColumns(x, 1.)
+    ids, columns, _, residual, _ = streaming_landmarks(operator, np.ones(len(x)), 32, 17)
+    assert len(ids) == 1 and columns.shape == (15, 1)
+    assert operator.entries_evaluated == 15
+    assert np.max(residual) == 0
+    with pytest.raises(ValueError):
+        streaming_landmarks(operator, np.zeros(len(x)), 8, 17)
+
+
+def test_end_to_end_exact_control_preserves_unseen_predictions():
+    rng = np.random.default_rng(811)
+    x = rng.uniform(0, 1, size=(134, 36)).astype(np.float32)
+    y = rng.normal([50, 5, 10], [12, 6, 9], size=(len(x), 3))
+    w = rng.uniform(.2, 2, size=len(x))
+    dense, _ = fit_one(x, y, w, "dense_exact", 64, 17, 1, 1)
+    streamed, _ = fit_one(x, y, w, "column_exact", 64, 17, 1, 1)
+    query = rng.uniform(0, 1, size=(23, 36)).astype(np.float32)
+    np.testing.assert_array_equal(dense["centers"], streamed["centers"])
+    np.testing.assert_allclose(predict_kernel(dense, query), predict_kernel(streamed, query), atol=2e-6, rtol=0)
+
+
+def test_sampled_fit_reports_linear_matrices_and_real_pair_budget():
+    rng = np.random.default_rng(50)
+    x, y = rng.normal(size=(129, 36)), rng.normal(size=(129, 3))
+    model, info = fit_one(x, y, np.ones(len(x)), "column_pairs1024", 32, 17, 1, 1)
+    assert info["width_info"]["requested_pairs"] == 1024
+    assert info["kernel_entries_evaluated"] == 129 * 32
+    assert info["largest_training_matrix_shape"] == [129, 32]
+    assert model["centers"].shape == (32, 36)

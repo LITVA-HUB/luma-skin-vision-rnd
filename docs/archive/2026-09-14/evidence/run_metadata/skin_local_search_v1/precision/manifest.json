@@ -1,0 +1,1464 @@
+{
+  "status": "PREPARED_WITHOUT_OUTER_EVALUATION",
+  "formats": [
+    "fp32_reference",
+    "fp16",
+    "int8"
+  ],
+  "inference": "All reduced formats are dequantized to FP32; no native INT8 speed claim.",
+  "source_model_count": 33,
+  "models": [
+    {
+      "protocol": "mixed",
+      "method": "ridge",
+      "seed": 17,
+      "source_model": "mixed/final/ridge_s17.npz",
+      "source_sha256": "c6327a501df5b977c7702552e77d6c2ecd52112ad0ba5bf4f1be7de31c442901",
+      "source_numeric_scalars": 189,
+      "source_numeric_bytes": 756,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/ridge_s17/fp32_reference/quantized.npz",
+          "sha256": "81d35f321b643bb0da1538e6bdc68b1b5d670a15ebf00653e487373ade8b6b25",
+          "archive_bytes": 2570,
+          "numeric_scalars": 189,
+          "numeric_bytes": 756,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 189,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/ridge_s17/fp16/quantized.npz",
+          "sha256": "c4f8104b81080a7caf56c0df156a2cc5802054809c2803ff280bb42ada630182",
+          "archive_bytes": 2152,
+          "numeric_scalars": 189,
+          "numeric_bytes": 378,
+          "int8_scalars": 0,
+          "float16_scalars": 189,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/ridge_s17/int8/quantized.npz",
+          "sha256": "255b3df273bdf36116b9d36227ae7d15398f968c3397b369612f1b41c907135f",
+          "archive_bytes": 2461,
+          "numeric_scalars": 192,
+          "numeric_bytes": 435,
+          "int8_scalars": 111,
+          "float16_scalars": 0,
+          "float32_scalars": 81,
+          "quantization_scale_scalars": 3
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "krr",
+      "seed": 17,
+      "source_model": "mixed/final/krr_s17.npz",
+      "source_sha256": "09f28f7096d366762198e9e4524bb06edb40e7d795c4d3d63fa3272df2c73be3",
+      "source_numeric_scalars": 28705,
+      "source_numeric_bytes": 114820,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/krr_s17/fp32_reference/quantized.npz",
+          "sha256": "05525668489b6855044cb65e04834574a2b03c6b09a0085695d309d66ab2a381",
+          "archive_bytes": 117116,
+          "numeric_scalars": 28705,
+          "numeric_bytes": 114820,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 28705,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/krr_s17/fp16/quantized.npz",
+          "sha256": "3cbc3e43f5e9a9e6b3ab03793d39050958c03ad5dea61361b9e620ca380b9b0e",
+          "archive_bytes": 59666,
+          "numeric_scalars": 28705,
+          "numeric_bytes": 57410,
+          "int8_scalars": 0,
+          "float16_scalars": 28705,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/krr_s17/int8/quantized.npz",
+          "sha256": "7bbeaacfc932f6dc75fe5d3ee60781a9ae847c7385df1f6c706bef5072c5b86c",
+          "archive_bytes": 32121,
+          "numeric_scalars": 28745,
+          "numeric_bytes": 29099,
+          "int8_scalars": 28627,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "random_rbf",
+      "seed": 17,
+      "source_model": "mixed/final/random_rbf_s17.npz",
+      "source_sha256": "4280731d3773cad68ee004c028ffe3912889ab55b733c7f6ae0299addc505c2e",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/random_rbf_s17/fp32_reference/quantized.npz",
+          "sha256": "916c9c86eeea569e8902b73214ac2ceda908365b81c93dfca46d66a835d59611",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/random_rbf_s17/fp16/quantized.npz",
+          "sha256": "0b9e7e1707d739aeb9c13e358bf7d9793f58cf2f7c2e766eaaadd9f54678866b",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/random_rbf_s17/int8/quantized.npz",
+          "sha256": "000ca67d179288d0feb7ab59c4fe392c6c52d433b9732ff2ac9ba031ad231af1",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "random_rbf",
+      "seed": 29,
+      "source_model": "mixed/final/random_rbf_s29.npz",
+      "source_sha256": "f3d030cbb13e8a7474c719737e1f098f39f554cf02a3d49f8ac54496c6ce8e94",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/random_rbf_s29/fp32_reference/quantized.npz",
+          "sha256": "57f560abf8c6a707a69f75e5cdc813979d191ac11c4350dfa3b24f88576c9a67",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/random_rbf_s29/fp16/quantized.npz",
+          "sha256": "9fce23edee74b39b5322121fa49e8c59d905fe044e3f5974d4131bd814302a5a",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/random_rbf_s29/int8/quantized.npz",
+          "sha256": "2edf7e478da12bb239445228a4e24abdb1ab8ec3d3bdac5d80389615ae2166ef",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "random_rbf",
+      "seed": 43,
+      "source_model": "mixed/final/random_rbf_s43.npz",
+      "source_sha256": "6c9245fe975992c824b549128b55e928f3722a04080797bdc42c18ecb3515c77",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/random_rbf_s43/fp32_reference/quantized.npz",
+          "sha256": "ebb65acc49ffef3a30d028fe8dcfe81fd80087cc77354fef9d9a242aa758d46b",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/random_rbf_s43/fp16/quantized.npz",
+          "sha256": "5303b777ed775c39ea1917f35acf6f2073ec78e8e53a61b0aa3412533683ecdd",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/random_rbf_s43/int8/quantized.npz",
+          "sha256": "a3b6da9ec93a632b1f55325060b0f35bbb9b7c6a55db2dc2c965019381e2bf9c",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "guided_rbf",
+      "seed": 17,
+      "source_model": "mixed/final/guided_rbf_s17.npz",
+      "source_sha256": "88bba485712d4a3e1cc256b6905f59adb2cb957daed7fd748201937cd8dbab70",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/guided_rbf_s17/fp32_reference/quantized.npz",
+          "sha256": "52007ff6af924f2619f8b34afa98871391a666ac51dd3cd5a688c8dedee1bac9",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/guided_rbf_s17/fp16/quantized.npz",
+          "sha256": "ecfaf9051803c9a54d203d07773dd4a6176f57358a74aa760cc59306fbfd4cfb",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/guided_rbf_s17/int8/quantized.npz",
+          "sha256": "d05520be4241a114bcc9581218b354f113011a4db8bd46551278b849495889bf",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "guided_rbf",
+      "seed": 29,
+      "source_model": "mixed/final/guided_rbf_s29.npz",
+      "source_sha256": "42963067ef09895f778e3d0a5af3c41787a228ecf0a4c754f39d5b4582dc3603",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/guided_rbf_s29/fp32_reference/quantized.npz",
+          "sha256": "12f19c613b245e0a675cd7b01bbf2acf4599b890ceaafb6c5f5484c65478731f",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/guided_rbf_s29/fp16/quantized.npz",
+          "sha256": "73049c0a257d4ed66c443472b0a4ef711b76e8160bd64c479848ed131902d8d6",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/guided_rbf_s29/int8/quantized.npz",
+          "sha256": "ab6f4266d672e765e0c790a91ffc1db3a8a996ce8e04aa0cc490a63116957cfc",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "guided_rbf",
+      "seed": 43,
+      "source_model": "mixed/final/guided_rbf_s43.npz",
+      "source_sha256": "c79a76e5eaad742d246975ed085c1823254187b9941b8a0b085f3004c8bfa38a",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/guided_rbf_s43/fp32_reference/quantized.npz",
+          "sha256": "553c6cb5cd2ae9501d0c81d5cc6dcda382aa42a4f9effcf1f7cd7ece230e8244",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/guided_rbf_s43/fp16/quantized.npz",
+          "sha256": "e708fc1e2874e9d3a37259fd7de6ad83fa6a99fc9178886113f6f3ee043ef6dc",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/guided_rbf_s43/int8/quantized.npz",
+          "sha256": "4fb0338b3b960f51849204a0bfe5919cec4f28883d29ce277259c73e1a5f055f",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "mlp",
+      "seed": 17,
+      "source_model": "mixed/final/mlp_s17.npz",
+      "source_sha256": "92b03a0fa1851aacab84ef9ae05f65a33ee9d70500600ad3969b8bbe2400434e",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/mlp_s17/fp32_reference/quantized.npz",
+          "sha256": "95f56a75abf8f4ad663802f005b24093aff0eb643c1d9c741bdc2f61df5c1bf9",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/mlp_s17/fp16/quantized.npz",
+          "sha256": "b68740be09532b8bf9a21725c1bc636848af2b8a5a01b580c8639bbdc8e3b25a",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/mlp_s17/int8/quantized.npz",
+          "sha256": "737db5d35eae8836079ad05abafde467c35665bba32808982a0d601908873cea",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "mlp",
+      "seed": 29,
+      "source_model": "mixed/final/mlp_s29.npz",
+      "source_sha256": "32d7ca00c198fdbfbaae4ffb4b21d5926ac0748b8360f434731bca0f1fb622cc",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/mlp_s29/fp32_reference/quantized.npz",
+          "sha256": "d07b171a670a6bd4f702ccdf32db566a1d7854c41285b92ac6c997135f7be8d9",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/mlp_s29/fp16/quantized.npz",
+          "sha256": "182d2c9ad134967b9e944eb0c699fe2e889cb3fa070c38104d79ee7b833e40cd",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/mlp_s29/int8/quantized.npz",
+          "sha256": "a2a864b6fc16d421663bd2bf7884bdb33f335ed19b254a75ab1e8a8d7420dee5",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "method": "mlp",
+      "seed": 43,
+      "source_model": "mixed/final/mlp_s43.npz",
+      "source_sha256": "ce5eb9f38aa2a8aa20da4f67635945ca4c2988cf909e10590c690b2995de2c2f",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/mixed/mlp_s43/fp32_reference/quantized.npz",
+          "sha256": "716985941639321e4f5b8c95ca80dba34d5b137f15437edf17eda0832136e57e",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/mixed/mlp_s43/fp16/quantized.npz",
+          "sha256": "5b61a46d9b220c26aa4eea986f180a82e0267c6b0eb28538a9f555d05cfc7ac7",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/mixed/mlp_s43/int8/quantized.npz",
+          "sha256": "08663fde76e2da05fdefbc2ddc65446bb225704e1dfe3d03e0c17ada25f1eb55",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "ridge",
+      "seed": 17,
+      "source_model": "slr_to_ipod/final/ridge_s17.npz",
+      "source_sha256": "1bc059e6c74571c8a787dd1dbcdca3adb01bcf5310cba66f01df372672e77754",
+      "source_numeric_scalars": 189,
+      "source_numeric_bytes": 756,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/ridge_s17/fp32_reference/quantized.npz",
+          "sha256": "c607c4b5b0743e0cdd1f10b2562190b8d0283b9f99dcb564a95a3f806fe710aa",
+          "archive_bytes": 2570,
+          "numeric_scalars": 189,
+          "numeric_bytes": 756,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 189,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/ridge_s17/fp16/quantized.npz",
+          "sha256": "ccf45f2bc70ed596043e2fca3651275e6b6a2fea147e062ca026477cea7e1f75",
+          "archive_bytes": 2152,
+          "numeric_scalars": 189,
+          "numeric_bytes": 378,
+          "int8_scalars": 0,
+          "float16_scalars": 189,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/ridge_s17/int8/quantized.npz",
+          "sha256": "9970048d09617a51e49b533def4d95aebf55a018b72502ab45ab359fd96a2ee8",
+          "archive_bytes": 2461,
+          "numeric_scalars": 192,
+          "numeric_bytes": 435,
+          "int8_scalars": 111,
+          "float16_scalars": 0,
+          "float32_scalars": 81,
+          "quantization_scale_scalars": 3
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "krr",
+      "seed": 17,
+      "source_model": "slr_to_ipod/final/krr_s17.npz",
+      "source_sha256": "0c6e6324d406283ff0cc9e48fcad7151801d26b34d7d4a5bbee6c7e845c1688a",
+      "source_numeric_scalars": 12676,
+      "source_numeric_bytes": 50704,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/krr_s17/fp32_reference/quantized.npz",
+          "sha256": "9637e0387c9359798d321b0f59c70dda510b8ad5de32ffe85b292a8a81455c28",
+          "archive_bytes": 53000,
+          "numeric_scalars": 12676,
+          "numeric_bytes": 50704,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 12676,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/krr_s17/fp16/quantized.npz",
+          "sha256": "0c3144c66b738c7c7a984b1d7dcb4fd32c8e33a9a23f155d175374e15baf6758",
+          "archive_bytes": 27608,
+          "numeric_scalars": 12676,
+          "numeric_bytes": 25352,
+          "int8_scalars": 0,
+          "float16_scalars": 12676,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/krr_s17/int8/quantized.npz",
+          "sha256": "b7ec02150a10758fc79c19a26db3b7bbcc79df4f17d49e4cc55116a7f1765838",
+          "archive_bytes": 16092,
+          "numeric_scalars": 12716,
+          "numeric_bytes": 13070,
+          "int8_scalars": 12598,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "random_rbf",
+      "seed": 17,
+      "source_model": "slr_to_ipod/final/random_rbf_s17.npz",
+      "source_sha256": "9bc2785641fabc83e4cf43c5597d7fa1fce0d7f804cc10822fa7509c05275322",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s17/fp32_reference/quantized.npz",
+          "sha256": "cecb1b53d02f914068e75466a5b819ad09e9dd00dd100e3472d02c12b1e5a384",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s17/fp16/quantized.npz",
+          "sha256": "de5363ad0e07b3f33917cea42e21c22689350e08b69625112756e2c5fe5decfd",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s17/int8/quantized.npz",
+          "sha256": "b21341deb0f99fe54f5009aae78cde2cd6a809a94e74e862d0e7bc508eeb9b51",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "random_rbf",
+      "seed": 29,
+      "source_model": "slr_to_ipod/final/random_rbf_s29.npz",
+      "source_sha256": "70c0e82d957f56cd5b31a63733f087393bebb1a06c08901994193d5bca41a83f",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s29/fp32_reference/quantized.npz",
+          "sha256": "cf9f94f2408751660ec11897cccfc7839e34ceca6f00c7869648d7933c01cca7",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s29/fp16/quantized.npz",
+          "sha256": "c05a4c16a65734a100647b9f15d2c96923e87de430aa66580b496bdcba40cd5e",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s29/int8/quantized.npz",
+          "sha256": "48bd4ab1721b323071b72eff8dfe9bb4a0b45b38f18c42b6835189263825e6cf",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "random_rbf",
+      "seed": 43,
+      "source_model": "slr_to_ipod/final/random_rbf_s43.npz",
+      "source_sha256": "6241f5dfa87b691832c65bcecf99a798df395454ec2dc8f0f889ee1fc124f72b",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s43/fp32_reference/quantized.npz",
+          "sha256": "68a8595088152ba69a5a31cf060a15c8f75a63c7c14caa294cb37c1e93712be7",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s43/fp16/quantized.npz",
+          "sha256": "4a4adcf7aa1b0df193048a8431f4ecfeeefdb95e9dca9657d3c9b72dbb8e6d41",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/random_rbf_s43/int8/quantized.npz",
+          "sha256": "143e4f1c12d49b0d18dcd0ae713bad17e079305e1bc70a270056f926da4f03e2",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "guided_rbf",
+      "seed": 17,
+      "source_model": "slr_to_ipod/final/guided_rbf_s17.npz",
+      "source_sha256": "5cdd9733b7779fdb8a7fde567bd827552738e87853c70a40905278f7f75cdd92",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s17/fp32_reference/quantized.npz",
+          "sha256": "f89364ba8dae711625478ed197d2ba3ff7253e7e5f09126a294f4010e1564ea0",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s17/fp16/quantized.npz",
+          "sha256": "03a1aaa8c39f5be2f32424854666d7cefc412d4e637098cb60e966ccc8018f60",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s17/int8/quantized.npz",
+          "sha256": "c5049dcd846e7a7b2e7ceb5ec33c3f5d114ce76f9dae9f2e9ebbf2391fe0c786",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "guided_rbf",
+      "seed": 29,
+      "source_model": "slr_to_ipod/final/guided_rbf_s29.npz",
+      "source_sha256": "abd99ae2cda68491f3f4db8b7fd20bb23ef450520b52795b11b50437d2d5dab6",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s29/fp32_reference/quantized.npz",
+          "sha256": "a78549abe8c67b4794c17d1999eeba29e8f5a1d94c605ddc4fb96df7107289fa",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s29/fp16/quantized.npz",
+          "sha256": "1ffe73f85332e60f0ed79119d9db31eba02fc0887c4c967cd8387ae7d54172d6",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s29/int8/quantized.npz",
+          "sha256": "39b06f53471d4dbfb5996b8c5b15d059adcdd8f1167685ba8bbeebb7cc63a28c",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "guided_rbf",
+      "seed": 43,
+      "source_model": "slr_to_ipod/final/guided_rbf_s43.npz",
+      "source_sha256": "f2b0701d4d0c351b90618583f86b98ac231b54666a1499eed578f4087331aac6",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s43/fp32_reference/quantized.npz",
+          "sha256": "66699a381048df4961f02b36a1c05a96fc691cdfdd9399357ccd8aac5ed6850f",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s43/fp16/quantized.npz",
+          "sha256": "a775d0006a469137a7a803f93f1dc4a3ab17d1a9d344ae32d0621cd882e0e92f",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/guided_rbf_s43/int8/quantized.npz",
+          "sha256": "7b1d9436ab5943c983f46a11abc47f759eb449278a12efa1e764b81dd7072ff0",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "mlp",
+      "seed": 17,
+      "source_model": "slr_to_ipod/final/mlp_s17.npz",
+      "source_sha256": "b846b03b74c5048e49ab7462b53eeef689a90e6f867f0ec4a85e8e4d0b9457e2",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/mlp_s17/fp32_reference/quantized.npz",
+          "sha256": "e4ac844188e0a1db8bb26604732bdbf93dce8636442dc7fa863264c18e47b256",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/mlp_s17/fp16/quantized.npz",
+          "sha256": "668908db82e06d25e590f01969fd4aecb79b8a2ae87ab99bc8509eea69f06b98",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/mlp_s17/int8/quantized.npz",
+          "sha256": "8de684fbd3565dfca77df667e90c824a0b4bad685a472cf98fe8853c22f627a4",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "mlp",
+      "seed": 29,
+      "source_model": "slr_to_ipod/final/mlp_s29.npz",
+      "source_sha256": "8cd6ddc197693faa27e729e85d95de58e9007973fc265c614f740e5fe61dbccc",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/mlp_s29/fp32_reference/quantized.npz",
+          "sha256": "4a20ec90300c0baa5cb95e67dbda8ed5cbff271f1ee487875490d5cca9493655",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/mlp_s29/fp16/quantized.npz",
+          "sha256": "67e0618ad1bb6fba3d2aa57b745f09152930083cf7a5dcdc4b5c1e35f03ac73f",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/mlp_s29/int8/quantized.npz",
+          "sha256": "ae6879395e632ad2d2d9ad6ea0ebfe733ee72ecb7c376845c5d146a4c012e8b6",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "method": "mlp",
+      "seed": 43,
+      "source_model": "slr_to_ipod/final/mlp_s43.npz",
+      "source_sha256": "76d55a4b71ff89f218f4276b7f61e0a811f17d47b1b56fa11eb38e44363de5d1",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/slr_to_ipod/mlp_s43/fp32_reference/quantized.npz",
+          "sha256": "3c081d4a243c481186b0f018e3733d707656e21f57827dcdd77057ac2f524614",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/slr_to_ipod/mlp_s43/fp16/quantized.npz",
+          "sha256": "2795c8fef94a0b803c6f0598a543e46bfff615d70a09ddc2e861e2fc229667e9",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/slr_to_ipod/mlp_s43/int8/quantized.npz",
+          "sha256": "4c07469226954ea097c623c72695a45a7ffbedbe1f5ba068e217e74a74184325",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "ridge",
+      "seed": 17,
+      "source_model": "ipod_to_slr/final/ridge_s17.npz",
+      "source_sha256": "30bdc95d2c259ebfd4f08b023e284f078b3e6155892af4778c54aec339b3b49f",
+      "source_numeric_scalars": 189,
+      "source_numeric_bytes": 756,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/ridge_s17/fp32_reference/quantized.npz",
+          "sha256": "21e03b30f3a2d47cdc98f454ca8833a1775c4fc7d3c4773df223b89fe1965849",
+          "archive_bytes": 2570,
+          "numeric_scalars": 189,
+          "numeric_bytes": 756,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 189,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/ridge_s17/fp16/quantized.npz",
+          "sha256": "72ebc19898d4fa5b365df3c5b7657f296bc4f41d450afdd8eae4ad7decc73351",
+          "archive_bytes": 2152,
+          "numeric_scalars": 189,
+          "numeric_bytes": 378,
+          "int8_scalars": 0,
+          "float16_scalars": 189,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/ridge_s17/int8/quantized.npz",
+          "sha256": "a6f90f276fd3151f39b530fdf431a6dd8ebeb27f266ce3381a3201986c72a53b",
+          "archive_bytes": 2461,
+          "numeric_scalars": 192,
+          "numeric_bytes": 435,
+          "int8_scalars": 111,
+          "float16_scalars": 0,
+          "float32_scalars": 81,
+          "quantization_scale_scalars": 3
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "krr",
+      "seed": 17,
+      "source_model": "ipod_to_slr/final/krr_s17.npz",
+      "source_sha256": "40ed274a44e759d2cb68ad33ff1302246d655e559340cfc5c6ce8f174c2674b3",
+      "source_numeric_scalars": 25156,
+      "source_numeric_bytes": 100624,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/krr_s17/fp32_reference/quantized.npz",
+          "sha256": "56133a89d960b958f5cc43ab133c00fd4ff911b0417410c7ad8c96499249ff49",
+          "archive_bytes": 102920,
+          "numeric_scalars": 25156,
+          "numeric_bytes": 100624,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 25156,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/krr_s17/fp16/quantized.npz",
+          "sha256": "f7c745c07691d7e8a9b18a2cb9fb5bec1b8985319cb49b17651f4c822a72111b",
+          "archive_bytes": 52568,
+          "numeric_scalars": 25156,
+          "numeric_bytes": 50312,
+          "int8_scalars": 0,
+          "float16_scalars": 25156,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/krr_s17/int8/quantized.npz",
+          "sha256": "643fffd87aa94b3bd1b77bb36ee51afbb2a47b1903abf170572f25b8b69c0216",
+          "archive_bytes": 28572,
+          "numeric_scalars": 25196,
+          "numeric_bytes": 25550,
+          "int8_scalars": 25078,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "random_rbf",
+      "seed": 17,
+      "source_model": "ipod_to_slr/final/random_rbf_s17.npz",
+      "source_sha256": "5c10b1ff563707c59adb3503db8b1fe9ff62335e72f49438a365ee78b02c8161",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s17/fp32_reference/quantized.npz",
+          "sha256": "e61edc79235d2e5fd70906ce8adb6f67d51f04d1f78e7b6ff9887745e4d9b4dc",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s17/fp16/quantized.npz",
+          "sha256": "8440287030a8fa8ac1692fa85ba321738c4cc4af70beb54d4acab46a894423cb",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s17/int8/quantized.npz",
+          "sha256": "411903b4dc856fba4dc755e925435b5d7b61f68e5c772b8ec6c3d87f5fdde1e7",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "random_rbf",
+      "seed": 29,
+      "source_model": "ipod_to_slr/final/random_rbf_s29.npz",
+      "source_sha256": "e046869ead10a1cd1cec2ae89a44069fa6bad9fbdf3a7cb43936c787f74f85a5",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s29/fp32_reference/quantized.npz",
+          "sha256": "b325598a635349212bc1cf9bd90c7a61dfbd66814344829c681c32a0f5502fbc",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s29/fp16/quantized.npz",
+          "sha256": "81af1bc0a3c90c4547f4571f3267c34bb3c6c93fd5605495c2ab432d3c81c73c",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s29/int8/quantized.npz",
+          "sha256": "620c5bd8dc373b296a8b63d1229c77b38731c1ff377e2ee161e712801b2b5130",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "random_rbf",
+      "seed": 43,
+      "source_model": "ipod_to_slr/final/random_rbf_s43.npz",
+      "source_sha256": "c76ce0b610cf156c98803c6d68b024d147b798323066340a4ddeaccfdd0d8ff6",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s43/fp32_reference/quantized.npz",
+          "sha256": "01c428f7127f4bc488782399108bbc123d45f2360d10966b5b7956e10c2a9422",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s43/fp16/quantized.npz",
+          "sha256": "aac32e5b60530e7e01fa7ec3b6b7e4b792e057e3594928932f18aa8796cbc371",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/random_rbf_s43/int8/quantized.npz",
+          "sha256": "53f553bd77f4658cdeb0ba00a03641efe952ba6ada0f4d1100326ad3b74051f0",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "guided_rbf",
+      "seed": 17,
+      "source_model": "ipod_to_slr/final/guided_rbf_s17.npz",
+      "source_sha256": "6db0f54a20e4a8e517c9cba2cdfdb962f364a9e1e7880cb21a0cbcda3fe4fb37",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s17/fp32_reference/quantized.npz",
+          "sha256": "43d7623049ce5e65583c42a0483b06eed98ab7900031ff8535023a1c0ed25d3b",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s17/fp16/quantized.npz",
+          "sha256": "20378b479bf32f67c835c54fcf7eb19f73e7f9ff71089d0e240fabfe89122a8b",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s17/int8/quantized.npz",
+          "sha256": "aec7af8b712dba47cafbcb6d9af5db09e6b20e42ab8cdd86cd652f72bddd9517",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "guided_rbf",
+      "seed": 29,
+      "source_model": "ipod_to_slr/final/guided_rbf_s29.npz",
+      "source_sha256": "d7e348e61e50f46af3686b41aebe7b7ede3b99f07285f37654d5042118fa9610",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s29/fp32_reference/quantized.npz",
+          "sha256": "f3778199830e2c31c6d6810f406d09812d75edda2da698c4becd297290faa54f",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s29/fp16/quantized.npz",
+          "sha256": "597956c02444fc4ea31bed7bbc5377ba683c82a637719831cd71074c3a7859fa",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s29/int8/quantized.npz",
+          "sha256": "d890d4695c8baa678f856172ac92c9c5bb8b9448074a15c80188ecf88ad3ba91",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "guided_rbf",
+      "seed": 43,
+      "source_model": "ipod_to_slr/final/guided_rbf_s43.npz",
+      "source_sha256": "4e0629eb2fcb7d4ed435dfb03c50014da972e34907c3f1cf2b77f64fa42a5f9f",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s43/fp32_reference/quantized.npz",
+          "sha256": "3c7e5fd3a9a941bc263e3c3a32c19bfdb6624782f62a26bf12b2027e3879b64e",
+          "archive_bytes": 13320,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s43/fp16/quantized.npz",
+          "sha256": "100a4ceaf8db07df4734904c1be91621a31420ce57bb73089c7666ead79360fa",
+          "archive_bytes": 7782,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/guided_rbf_s43/int8/quantized.npz",
+          "sha256": "dc5b56adb1d5a350ce373ac22c79d76820c05da57827d492d5660067a6418e2b",
+          "archive_bytes": 6193,
+          "numeric_scalars": 2789,
+          "numeric_bytes": 3143,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 118,
+          "quantization_scale_scalars": 40
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "mlp",
+      "seed": 17,
+      "source_model": "ipod_to_slr/final/mlp_s17.npz",
+      "source_sha256": "c6dbbaac63554b01de821456f9d3614d46ae6c59271b378ba09e714b5df5edb6",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/mlp_s17/fp32_reference/quantized.npz",
+          "sha256": "b8e33935797a5f799105bc5e768cd4fb95108125ff91a4d4bc281690b39cfc8e",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/mlp_s17/fp16/quantized.npz",
+          "sha256": "dde3310a56e45fea88c4338909d415706d7564740354f33d5d2d903b65aa6df3",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/mlp_s17/int8/quantized.npz",
+          "sha256": "1cf7adb8b647406f44e054f458f8ce2ed1abe3ca30620703e3922c97c4f37c7a",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "mlp",
+      "seed": 29,
+      "source_model": "ipod_to_slr/final/mlp_s29.npz",
+      "source_sha256": "c050c84e444f42875ab06a0cd6976cb98744b9dd65c48b2a5e541ceb6d49dc6d",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/mlp_s29/fp32_reference/quantized.npz",
+          "sha256": "395cf0e38799bef0761b78d8a67d8be5ae40ad32890629d8117970207bac3987",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/mlp_s29/fp16/quantized.npz",
+          "sha256": "ae87c8ebe804fa5491bd4956236d175af00707abd6430353747d7e3680c1a8ff",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/mlp_s29/int8/quantized.npz",
+          "sha256": "49a558150c364272a75c6aacfb29fa98a96e82ed08bfc31ff49377de5948baf3",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "method": "mlp",
+      "seed": 43,
+      "source_model": "ipod_to_slr/final/mlp_s43.npz",
+      "source_sha256": "ff9fa0f761f3f6fbe26f2d29c553daf4fec9b71158c5a93cc7d066d572f94570",
+      "source_numeric_scalars": 2749,
+      "source_numeric_bytes": 10996,
+      "formats": {
+        "fp32_reference": {
+          "artifact": "precision/ipod_to_slr/mlp_s43/fp32_reference/quantized.npz",
+          "sha256": "743f688e981e0d4c1f81a3775f6d4a80abcc1636f49218488302604526cac6d8",
+          "archive_bytes": 13786,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 10996,
+          "int8_scalars": 0,
+          "float16_scalars": 0,
+          "float32_scalars": 2749,
+          "quantization_scale_scalars": 0
+        },
+        "fp16": {
+          "artifact": "precision/ipod_to_slr/mlp_s43/fp16/quantized.npz",
+          "sha256": "756c7805e410e017084ad533071f5fd9439320759ea5ec18dc215dc763660f90",
+          "archive_bytes": 8248,
+          "numeric_scalars": 2749,
+          "numeric_bytes": 5498,
+          "int8_scalars": 0,
+          "float16_scalars": 2749,
+          "float32_scalars": 0,
+          "quantization_scale_scalars": 0
+        },
+        "int8": {
+          "artifact": "precision/ipod_to_slr/mlp_s43/int8/quantized.npz",
+          "sha256": "a9f7cf6de8d114499d02df444b1bccb40394bcbf997a48456d604d1168a593f4",
+          "archive_bytes": 7305,
+          "numeric_scalars": 2821,
+          "numeric_bytes": 3271,
+          "int8_scalars": 2671,
+          "float16_scalars": 0,
+          "float32_scalars": 150,
+          "quantization_scale_scalars": 72
+        }
+      }
+    }
+  ]
+}

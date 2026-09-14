@@ -1,0 +1,116 @@
+{
+  "variant": "pool5m",
+  "steps": 512,
+  "checkpoints": [
+    512
+  ],
+  "horizon": 8192,
+  "batch_size": 64,
+  "slots": [
+    [
+      17,
+      1e-05
+    ],
+    [
+      17,
+      0.0001
+    ],
+    [
+      29,
+      1e-05
+    ],
+    [
+      29,
+      0.0001
+    ],
+    [
+      43,
+      1e-05
+    ],
+    [
+      43,
+      0.0001
+    ]
+  ],
+  "sampling_sha256": "63baeff8d2c7411703b76aa199f7bbba790a258e25362d599eec4bf61d515df8",
+  "fit_tokens_sha256": "5fdcee3c0f6c65502e0b05461dc3a100942b6585c5a793180535c78017c58e05",
+  "setup_seconds": 0.3100374000496231,
+  "full_bank_seconds": 26.799413100001402,
+  "trace": [
+    {
+      "step": 128,
+      "seconds": 6.9115440000314265,
+      "minibatch_loss": [
+        0.1584981083869934,
+        0.15251827239990234,
+        0.13462722301483154,
+        0.11865705251693726,
+        0.1873793601989746,
+        0.18019849061965942
+      ]
+    },
+    {
+      "step": 256,
+      "seconds": 13.51336620002985,
+      "minibatch_loss": [
+        0.1832961142063141,
+        0.15533101558685303,
+        0.2033519446849823,
+        0.16498041152954102,
+        0.18644475936889648,
+        0.1541076898574829
+      ]
+    },
+    {
+      "step": 384,
+      "seconds": 20.139357000007294,
+      "minibatch_loss": [
+        0.19243377447128296,
+        0.1354413628578186,
+        0.20201143622398376,
+        0.13254302740097046,
+        0.16217637062072754,
+        0.11488977074623108
+      ]
+    },
+    {
+      "step": 512,
+      "seconds": 26.74791220005136,
+      "minibatch_loss": [
+        0.16895604133605957,
+        0.09782449901103973,
+        0.1789909303188324,
+        0.12919460237026215,
+        0.18388044834136963,
+        0.11710603535175323
+      ]
+    }
+  ],
+  "final_learning_rates": [
+    9.913869689626154e-06,
+    9.913869871525094e-05,
+    9.913869689626154e-06,
+    9.913869871525094e-05,
+    9.913869689626154e-06,
+    9.913869871525094e-05
+  ],
+  "cuda_peak_allocated_bytes": 1228641280,
+  "device": "cuda",
+  "engine": "cuda_graph",
+  "trainable_parameters": 4851203,
+  "deployed_parameters": 4851846,
+  "source_lock_sha256": "a8a2a840d70ee7cbe726404260bcb7224dd319594003512bfa925309270ce0e6",
+  "selection_sha256": "7c0583dcfa55134be10c870e6119300e581388ae6442113e138ba736b445b14d",
+  "role": "ipod_to_slr",
+  "fold": null,
+  "warm_parent_sha256": {
+    "experiments/runs/chromaseed_neural_prefix_v1/selected/ipod_to_slr/blind4_j2_s17.npz": "3f7a9e9f496f756c61c0dd17c6f35bb92fb6d99881428b32f6907656761ccad6",
+    "experiments/runs/chromaseed_neural_prefix_v1/selected/ipod_to_slr/blind4_j2_s29.npz": "fe807aa86c8f5b3d65a4c48c2a5a713af0a7ae2808ae68efec9892288bb75f3b",
+    "experiments/runs/chromaseed_neural_prefix_v1/selected/ipod_to_slr/blind4_j2_s43.npz": "99042ece8fa3d3dc68a54e9ac60f50d6d3de7f6a0ec25c3dbe0ef344bd7cd680"
+  },
+  "files": {
+    "warm_models.npz": "ab45192f843b0e640120c819a8690cfbb0708dda94376650cb93075efb1703f6",
+    "models_512.npz": "29ce5d3efea119e40dd7d1b23aeaa6546d462ba7e4a07fb0d286f7f8d4248bcf",
+    "rows.npz": "b644fb3c3f69900a4d8ba649c996e0e97742b30267092ae316097994d5695d30"
+  }
+}

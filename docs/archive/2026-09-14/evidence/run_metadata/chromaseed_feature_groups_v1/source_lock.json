@@ -1,0 +1,632 @@
+{
+  "sources": {
+    "scripts/chromaseed_kernel.py": "65433ab44c0758606947ded87ae809f7520d12c644726fa62044f54cefef55bf",
+    "scripts/chromaseed_kernel_bank.py": "67d30b3c457135620a0b8ca245512b36c05082d77e0eb71b514af8f89d4feca9",
+    "scripts/chromaseed_kernel_train.py": "ab47976c0b444cfa862e6779ecd46f21ddbdc504ac3d38e8c54fafefcd3f88b3",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "scripts/skin_local_search_core.py": "b2f916d67bd6e0a9f0341fa85b39c82457e973edf25cde1398b0281b927cad20",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "docs/research/chromaseed_kernel_v1_protocol.md": "0b854f21e65e6f9bcfc1ba9789e40e91db8b056502ae2587108b3918f3a6dd63",
+    "scripts/chromaseed_fast_kernel_train.py": "4f7388b0d85eb049dbc6b54d2a6eecca83b90e98ab1f8234ee1eb4a3c8818adc",
+    "scripts/chromaseed_fast_kernel.py": "8d574c76c58c64be4832e8d7de7691c5b99de41ba795d6da028a9246423dc691",
+    "docs/research/chromaseed_fast_kernel_v1_protocol.md": "c0be91c709b1296a2c6c0ae0cca0062df46bbc3de865569d7d53fcd8727c5fa6",
+    "scripts/chromaseed_condensed_exact_run.py": "2550195d8eb1cb9fc55a55fce305867959871762486ffc38302b5cc14f47219b",
+    "scripts/chromaseed_condensed_exact.py": "81b9483e2f744eee6dd43e195023d9c98a4587bd5e1157caf1ca66aa4bd858ec",
+    "docs/research/chromaseed_condensed_exact_v1_protocol.md": "595fdb625c93128ba21e1a2ddcff577a2e714da08ee7c4d1f35c186ca747899e",
+    "pyproject.toml": "616e62c311072498b73a1ce2f72e4b9f9bbd63f198ccaf381b20f0d91ea8d130",
+    "uv.lock": "a4a7ae85443663e467f4f1aa25a2cfbf42dead560c78f56df34ebf5f8e0ff3b2",
+    "scripts/chromaseed_fast_kernel_runtime.py": "a41f5cfdce50c689f8db6a0f1836446944a0db33de930bff15fcd2796bdb0659",
+    "scripts/chromaseed_kernel_runtime.py": "d4db58024ba45bcb44ba0769c902e6ed33124e6da16497fd8bae7f72adde23a8",
+    "scripts/chromaseed_refine_audit.py": "63ad91c019edfa64522fe30f01830308dd26a863ec45460b09cff4eef130c653",
+    "scripts/chromaseed_perceptual.py": "2c92fced648e0e72230dd38707d4b6e0e1aecf64062eb18be9c5d41e21735a2a",
+    "scripts/chromaseed_perceptual_train.py": "c9f42dd4b2a8ac947497fd7f2dc77b3fc2742bbd28e650df377390ab3b617519",
+    "scripts/chromaseed_perceptual_reference.py": "5b386f30ca16574b64a4cfebd2e940d8f2cbebb2b94ebd1863ff1d96b7f41d0c",
+    "docs/research/chromaseed_perceptual_v1_protocol.md": "a79ac611997e5b05eb1e72b1357e5be97a6ebb413fd1b80ab96071724405d446",
+    "tests/test_chromaseed_perceptual.py": "bb712ba0f8ccb98040673f700b4490aec27cd14050d9d415324364acd448e7e6",
+    "tests/test_chromaseed_perceptual_protocol.py": "316572ab7a2e10b98574f6a9952ff5fa55927dc4f583d14e08fd7c98c17ef59b",
+    "tests/fixtures/ciede2000_sharma.txt": "44aebb39107128328add54fbef5ac8ee89909e50508f448a1580adea2058a4b8",
+    "scripts/chromaseed_weak_ridge.py": "32662cb75298e84ab5aeee76e3efd2965d779c67c385c2992d2e41a0c6e6b6ca",
+    "scripts/chromaseed_weak_ridge_train.py": "9a9e540e461919a9c494a19354a51cef9111c483aee1171a7ab34ae1e823d042",
+    "docs/research/chromaseed_weak_ridge_v1_protocol.md": "cf7e03c0a360a16f1bd078ac5066d5a2848d81766b3fe6410d1c601b1e66eb5a",
+    "tests/test_chromaseed_weak_ridge.py": "58f8c7deb778941920703f18471291e013f6fcd03da362101735db0df6e55202",
+    "scripts/chromaseed_perceptual_audit.py": "e1dddfa2516c9232393635ff88761d1a35b2160992ce3b58c4485be613f777a6",
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/chromaseed_selection_stability.py": "f17987aa5f424d2c2d3c42da398573589739278a8e5999e458831f69547664c9",
+    "scripts/chromaseed_selection_stability_run.py": "8897b564e6d1963a8d4c7ef36161e1c2669a695c54e9516d902344b469624e10",
+    "tests/test_chromaseed_selection_stability.py": "44acb95265617374e368318961824f98c55a3ac06bfeb01441e148461ef02006",
+    "docs/research/chromaseed_selection_stability_v1_protocol.md": "23eb0cc18194d5215b38c2d2845d2796b83c20e3d7852a14be71b806a7e33630",
+    "scripts/chromaseed_camera_support.py": "f13cc228ef6359d269e3b794f1f78cf140f9a584f505aef482487af19da53d39",
+    "scripts/chromaseed_camera_support_run.py": "273324e47e6c81ca0ab07677f35548f245b39426a0f5fce664d1e0f1b2ffbd28",
+    "tests/test_chromaseed_camera_support.py": "4a77b110dd523ad73d85de3e56e9ce2e51b7f7624c7422345b399d7dde4e8c76",
+    "docs/research/chromaseed_camera_support_v1_protocol.md": "16ffa7f0781a19919354d2087318458879c8b68eab68b5fb061264ee564359fb",
+    "scripts/chromaseed.py": "6be6fca7d47ec25ff540119cd313c76a1ebf65e47a76ebc0a14ca8841ab175a2",
+    "tests/test_chromaseed.py": "797cf911d796da65d3cec3575076c19f27522f77da8b8713a4438b9a44af52e8",
+    "scripts/chromaseed_gated.py": "1034ce1724d545a225b01787b65d5074cc50cda9967317a6db0ab11bcdba942f",
+    "scripts/chromaseed_gated_train.py": "40c695c223e96099a241bd42b3ca2c812bfdb62e98accad48708fa6f067c8930",
+    "tests/test_chromaseed_gated.py": "8e049497bd4509bde9566af08b91615d37968a6648148ad10e2250eb39c61043",
+    "docs/research/chromaseed_gated_v1_protocol.md": "af1e53af2202b039b649499f3ae687feafbf07f34ddfa70d21b8e2487951cfc5",
+    "scripts/chromaseed_gate_stability.py": "78aced77a445b728cf9d8d6da7095936992bec363584f32a58980778a2a15d88",
+    "scripts/chromaseed_gate_stability_run.py": "26aa1637e0064d1e5d99ae1f97db46097d332a848f2cae0cda4f537b54d66f0f",
+    "scripts/chromaseed_gated_numpy.py": "5c2472cc6bbd759bdc81df95d7d25a440c3e52b60e6108377946c26c14c2e4af",
+    "tests/test_chromaseed_gate_stability.py": "dde8166347a41cce6371b6fc6475f57e7d89fcab685b76a9f49ac29361f0f97b",
+    "docs/research/chromaseed_gate_stability_v1_protocol.md": "65f8b50dccad9112461ec2053ec714dee3dc12fdbb53313f31578ea7d6269a8b",
+    "scripts/chromaseed_affine.py": "df0757077715a6764cf4cd066dfd8aa188bad6dab0d7f532b7fd834acc817c0e",
+    "scripts/chromaseed_affine_train.py": "0866e1dbd4cbcc54e54579ff2a4b255bb0799916e5c5169b6e0ed2c3a4c31de9",
+    "tests/test_chromaseed_affine.py": "9c6fd0370c12893dfcf3ff659ef67bc759853b7147226fc21f55e82f220fe012",
+    "docs/research/chromaseed_affine_v1_protocol.md": "9c7bc11e9f673324c7b87ed9a8b87e9e23ab818aa49602c770f9f7ee1af15379",
+    "scripts/chromaseed_projection.py": "fa878f809f194c992f3e9253ca0cd6f32c9e4b0ca1d81df733fa6f735160f6c0",
+    "scripts/chromaseed_projection_numpy.py": "2669e378ea2882093b41e8aaefb4f0571e95e017b11dd91311b4d24389d2de02",
+    "scripts/chromaseed_projection_train.py": "3418b2496e55aef38b50ea467d2f78e62d94a9f39f79360086a730711fd31b45",
+    "tests/test_chromaseed_projection.py": "dbcc9d62ed03b9de2a031da5f09c89d802a82e130c28fa861667a2287ac9a057",
+    "docs/research/chromaseed_projection_v1_protocol.md": "8ff9138dd8922fde266c262507f0261f77b5740f48428cdaea51cd66273d8a2b",
+    "scripts/chromaseed_hybrid.py": "7d078cfa51fb9da79acf61f34a0180d39c0a3e13a78ee81987dbd1c5c65f69c9",
+    "scripts/chromaseed_hybrid_numpy.py": "6cffc54c57d8b59ee5015f1f79a79fff9269d520f55e49974855765b7316af5a",
+    "scripts/chromaseed_hybrid_train.py": "7b5e0b2df2800e921c35322eaddc662954eba25189d42cb31ea997954dd95d80",
+    "tests/test_chromaseed_hybrid.py": "c50be30a0831191d25e035f82525c39dc1e5f933670b79fd1e3471403bd3709a",
+    "docs/research/chromaseed_hybrid_v1_protocol.md": "f767f3a34e9719fe105772f60e1c153f3ab63b2a8975427046c72aa54398d99b",
+    "scripts/chromaseed_crossfit.py": "bdb97d79ff1e773a30dc57637a8893d85ddd320c2b92b189f86dc09969002394",
+    "scripts/chromaseed_crossfit_train.py": "f362feacb03b8ea441b060268ca0d81debc14097f42a2f5fb76201a4d6df6a07",
+    "tests/test_chromaseed_crossfit.py": "af5cadfd6a70750a977ed0718e9b5b560aebf67f76c2dc39a57f5c05af527a10",
+    "docs/research/chromaseed_crossfit_v1_protocol.md": "67cc3b05fb4b51ed43612587e7d80f15abce2036f564f4fea7c5a1b98c598b8c",
+    "scripts/chromaseed_feature_groups.py": "a0d3a11eba62f1e797171d03fe05a652ea53632ff7d01e8d0899d8711f19b33a",
+    "scripts/chromaseed_feature_groups_numpy.py": "26b446ed5753133dee90fb64571c8499774d29b76d5047bd8961e27336e42095",
+    "scripts/chromaseed_feature_groups_train.py": "9a8d0992e9b78abdee67d29274fdf7d43801500fa55c9d62817edecd4e9f5fc9",
+    "tests/test_chromaseed_feature_groups.py": "58c0fd786d3a0f50e495082622e9de834aae6a309e342f1088f8c1a8934c4546",
+    "docs/research/chromaseed_feature_groups_v1_protocol.md": "0609f6e6f903938f44268fff38ca8099d97fe572eed07a66f1c47b04a95738a0"
+  },
+  "input_sha256": {
+    "docs/benchmarks/chromaseed_crossfit_v1/verification.json": "80c4129565931e204d663d4e833d8513e7d70111b47c965b6ffe63f2eb2c18dd",
+    "experiments/runs/chromaseed_crossfit_v1/source_lock.json": "bf6b8d289bab901007d925588a90ab8337fe231291c87ce96ecb01ae0b2b808e",
+    "scripts/chromaseed_crossfit_verify.py": "c52e46d49fe46b18d373705f3fbc0abbb3ad7837e356414fbdaa3b3ecd538bba",
+    "experiments/runs/chromaseed_affine_v1/source_lock.json": "dfa348cfa6663f58de56d7a09105e4f1c81f77712297b85c9b8039eb1c5cef2a",
+    "experiments/runs/chromaseed_affine_v1/selections.json": "e2e290c7b798294e76b4cab1d142ff5e10844bece9d265adb20b5432d1e39977",
+    "experiments/runs/chromaseed_affine_v1/results.json": "283e5863c7e0df50cb27883b9c4151f88272788789c6f8a5486828949c9cca58",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold0/models.npz": "7d8b6f74732094c20183476575db24a0ed89fea338b75a32a0e63af46a248934",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold0/receipt.json": "83aa03c4233cf8c5f2f2d131e70a21c7eb0b3a46e0276c5089b6a638ae69068d",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold0/oof.npz": "594fb44b004c8c8b3c7087f00a959f0bce282f0c93eed0589b7551659fa0eaf8",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold1/models.npz": "c5ab219484e15f363411e03814161b323e7a0f3f64eee1ebc810c434400e05f6",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold1/receipt.json": "8b8c03165aec0dfa4c1df0ec2c79bbb91e4b548710c61a8258e788ded4038039",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold1/oof.npz": "dfcc55b2663e966412008d1d451718c6862c837bac5334ab5756b1c934d12ec9",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold2/models.npz": "4b72337c758240030d2f1689cd4272f232ae94089a156c7ab418f4e70c9215aa",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold2/receipt.json": "cfe6c6cb225536a54140f63192e25de6948d1aeae7cfa9c29c5676e6f24cfd11",
+    "experiments/runs/chromaseed_affine_v1/inner/ipod_to_slr/fold2/oof.npz": "4441e6527c611edbbe56b56644bce614fde7a86ba26cab392e29592a0e8dcb90",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold0/models.npz": "c0121588abe19c0d957a6d54d1026246c4ad65fd5baa1bf2bdf3ce17a9f80b6d",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold0/receipt.json": "2561c8b27d616a0253bac425ae9107bafde09c36d2ad6491123068dda19b3797",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold0/oof.npz": "303aace4e9107d3894413b990de1315621a1184c939d9b832c2bbdfcc7fa6636",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold1/models.npz": "76b488b542d235226b8ebdad00d8c2807a9fa86bcbab1a9c0c6efdcc412b1fa1",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold1/receipt.json": "89f521b017fb7e3008d31c5569d44b18fb23febf72e373ced79f1be117b7c1f1",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold1/oof.npz": "26e987a2563e74397bb52a6f950d24abe4268f91a56582b49a75e40dbe45dab9",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold2/models.npz": "cb1706c22d0417fe2af2bb12f7248e742d003ee18fae745ac3c4d5bd8f70ec44",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold2/receipt.json": "238c90d671bdcc1f4932ab18d2c5352c82db68fd19579ed8fcb06dfacd7d9fc5",
+    "experiments/runs/chromaseed_affine_v1/inner/mixed/fold2/oof.npz": "5bf961905f10e7d91fc4efb2396157c47100ef76a78ee6553d6d9616e288dcad",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold0/models.npz": "9024b36b183b8d34286268f08700a5e89d2029995460fcb08cf1fbd00f4b5bb7",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold0/receipt.json": "4519059f744b0a38ad0808b748c517dce137657d7c260cf07b084b250d996c4c",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold0/oof.npz": "6bb3ccf7fde55051c92c38bdbe602e4464fd3e43aac3891d7f3c120e20184149",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold1/models.npz": "cc777fb1c883c32fc34612aaaa0fbb6b9346e19ac4f4b74371e5c33c1a8bf834",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold1/receipt.json": "e47da82a07fffde3b8028b0a735c8a7d542d5ba9fd83910e0ef7d2d5ba3278b2",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold1/oof.npz": "9ea571a81b6fb7f32dea306b74501cf1c8a548b296900a1eac54965f324402ac",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold2/models.npz": "f9deba9c376555880342417d6bd97e79ce1e214280f1bd3e75b5029e0d64a6b8",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold2/receipt.json": "05f9107686cf4f8e86f7c4b2e5a4f8cfb8f8fff056f9b3f42dba8115605c355f",
+    "experiments/runs/chromaseed_affine_v1/inner/slr_to_ipod/fold2/oof.npz": "408ace4a9974083d26b2e7cca88dabc9ce2cb6eaeb10f43bcaca2506c4c548e8",
+    "experiments/runs/chromaseed_affine_v1/final/ipod_to_slr/bank/models.npz": "f1183ae4d93c3099dba99a71056ef842775e6327e3cbf276734b62dffc44edcd",
+    "experiments/runs/chromaseed_affine_v1/final/ipod_to_slr/bank/receipt.json": "33a7440cbe79e64dbad04e8cea90ca6b28869622c7ad2466805902dead82b53e",
+    "experiments/runs/chromaseed_affine_v1/final/mixed/bank/models.npz": "f7776709a964998ef0fb546bca0620a605c0e1d92560b9d7ca407d7f509409c9",
+    "experiments/runs/chromaseed_affine_v1/final/mixed/bank/receipt.json": "e8af120ea9112fcb77e4bd500a5a2d9f8ce94fc46aba9ab40ff83c207f6226c5",
+    "experiments/runs/chromaseed_affine_v1/final/slr_to_ipod/bank/models.npz": "8fdd2556224c1e1f4728b2944b7724b64c65b287d05d05e6661bb85ed4f54a31",
+    "experiments/runs/chromaseed_affine_v1/final/slr_to_ipod/bank/receipt.json": "1327603e9e553e6ab510db2a8ebf0cb72472b433756eca099bd3013be651914f",
+    "experiments/runs/chromaseed_projection_v1/source_lock.json": "31558592fca6b0b23f22448ac61e8e86fc27da694112b2f9394160e4a5e29ecc",
+    "experiments/runs/chromaseed_projection_v1/selections.json": "134a11bb56bfac8320ca48efe7c3f7c71e971a65147badde4f7d0500edc85e5a",
+    "experiments/runs/chromaseed_projection_v1/results.json": "693280fab39c123e2e7c455b7b5215bf372d564e08551cbb857df9ad7097997e",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold0/models.npz": "4de1e2c44a42a5fbf580bde677b9334dc1c397be1cf6ec5190cd559f7f40caa2",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold0/receipt.json": "1d9e9f063ea666d014e1b73ca36e8ed2f4cf4594b83f3a716c44dd488e47929b",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold0/oof.npz": "0243a983fc82e9365a614f629f1a8a52dc29ebd52c14a366232a293899a1d5e6",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold1/models.npz": "bca216bd4cba7cedce0de617df423de5c31aa7f11da67b9e4235803792dc53ef",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold1/receipt.json": "1d3c106243b073a305d40b9d657dd0d9fa834075d745c4115e7489e0a2bbcc8c",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold1/oof.npz": "e50d5995a63855ab0dc0ab7590a0ea52b8dd2027c310cd91820093eb8579993c",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold2/models.npz": "46fb3fe0d967194338b0057127fef05f89c63bdb427bcdfa3f7be98db2ba6307",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold2/receipt.json": "e8da4ee55dc39e2d8eadc1e4f946d090356303f5b8b121be345d276420af4e65",
+    "experiments/runs/chromaseed_projection_v1/inner/ipod_to_slr/fold2/oof.npz": "063fe9c77c49c89295143fa9c81a355fdd5392c03e6bb5b0576a9e2c20704314",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold0/models.npz": "ae6beec3e6c18cdfc28cdea1cc6ff1e5109c722f1594add4b3556174ea00a7dc",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold0/receipt.json": "49ea2f16415d40aef7cd3a9353974439f47d647afeacc2763cd35649dd0821fb",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold0/oof.npz": "e5338d2eda9dfccd27f7adef24382a946d061360e51c257fe2e93480e0fa30dd",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold1/models.npz": "02ef512889f2a615eba426fdbdcd19a776a2cec160e1645152f3980901c8ecbe",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold1/receipt.json": "b027486b734f4db74958263b065f67be995f9a10e12601d2439d17fc1706a595",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold1/oof.npz": "77166aa0c2596f2673489ffefb2f73979f125e636fd2e388c8101922cd04da06",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold2/models.npz": "43f00915812e72f00e52ce389cce507c9cf42476343d357d12e53bf10ee3e050",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold2/receipt.json": "d2f6d3ef4898da27089580f33ee0cabe32034266865e1a7922d9e0a660bf3c47",
+    "experiments/runs/chromaseed_projection_v1/inner/mixed/fold2/oof.npz": "d0211a5f485a57c086a7d78dc0e47d6854d71555382120f303b466950588f981",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold0/models.npz": "9d822ad6a06f8b27ec83462ec55e171c0da08fee22b4709d1aba3e1d0f76e68b",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold0/receipt.json": "3b2ff43b6b9732e09b8af584b5a424c67db3cabe65fa98db0156781834500bb8",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold0/oof.npz": "c301107f93fbcff89bfcde77cc6a3b43a2c7c293970728118c2efe722e4b09b6",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold1/models.npz": "a4315d7aefc03560f692b1619dd1da7b8dc787b2f4c60cabd4cc8d3b3205d036",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold1/receipt.json": "7de1020d1502672d62fb8ad6d7f9d5927ff2e2b717876c0babf212389ac33231",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold1/oof.npz": "ba7c59b8da1a1317aad89e0eadc9404240a15a328f11e9fc02b978db903dcd22",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold2/models.npz": "18cef24c12c09b2b455c312e833b9c6cd64639c6d0b536af51f1483e99b3c6d8",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold2/receipt.json": "8657b3acbb55f2e03ab7e1e8df899683cfdc1b83104ce68ccc7ae44517fc635a",
+    "experiments/runs/chromaseed_projection_v1/inner/slr_to_ipod/fold2/oof.npz": "6c01efd936995df96f862eb53635e5d167c96e12ad6bba85c296cc80f31c7e56",
+    "experiments/runs/chromaseed_projection_v1/final/ipod_to_slr/bank/models.npz": "2655284d79883e9f633cbd0f2fe323505c48860bbc01baf664819c992bc8e98e",
+    "experiments/runs/chromaseed_projection_v1/final/ipod_to_slr/bank/receipt.json": "9153b0735035cb66c9832c5bdcc083cfef6e3cfcb5381091bb7e865c45825dc3",
+    "experiments/runs/chromaseed_projection_v1/final/mixed/bank/models.npz": "a8fe255032c8069d99ab05669f5c45907d2586fc5a350aa16796717c3bb30b03",
+    "experiments/runs/chromaseed_projection_v1/final/mixed/bank/receipt.json": "34d1dcd4e9fa2331029eab97faf984c6a1a2f77dbe109dbb7f98425be9912b44",
+    "experiments/runs/chromaseed_projection_v1/final/slr_to_ipod/bank/models.npz": "711c7421868473be1c726dbe72aacbaf0a81183725cb5852228f55c12518edb7",
+    "experiments/runs/chromaseed_projection_v1/final/slr_to_ipod/bank/receipt.json": "12f705fd43abd88483c1ba181f66b3646b869a1c27c129fcb6bc0bfef402c58a",
+    "docs/research/skin_relational_probe_protocol_v1.md": "4aa9c18cc667965f0ce139b37f4240e52934d00cb1b77ca58578c77e6d0dc57e",
+    "docs/research/skin_relational_probe_next_decision.md": "a7f18bf71ce498b55608040829c2168f3b74b647fc38d99e486e01c15c8944fa",
+    "docs/research/skin_support_curve_protocol_v1.md": "dd63c1e90ecff09dd68d92c316537f6f93b4e4795f5d08b5f2dcfaee59d84b55",
+    "docs/research/skin_support_curve_next_decision.md": "13fae1099483a5f4a8b389a209f01c964451ebc1259bcfcf350d1b808c7c24c7",
+    "docs/research/skin_appearance_inverse_protocol_v1.md": "6a4f24a663f796306264094ffe715fca1d5985d83685202b7f8e518b95c8f5a3",
+    "docs/research/skin_appearance_inverse_next_decision.md": "c6bd77068833b81790620eb64a328c5789f505cf482775830cc2fa58ca76dd14",
+    "docs/research/chromaseed_external_models_2026-09-13.md": "488dbf2d64cd0060c8a21e8ae71bd09af055ebe1c2cf3b0ad0eb88877a96f6bb"
+  },
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "groups": {
+    "raw36": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "mean3": [
+      27,
+      28,
+      29
+    ],
+    "median3": [
+      12,
+      13,
+      14
+    ],
+    "central9": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "mean_std6": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "quant27": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "no_corr33": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  "all_groups": [
+    "raw36",
+    "mean3",
+    "median3",
+    "central9",
+    "mean_std6",
+    "quant27",
+    "no_corr33",
+    "projected16"
+  ],
+  "families": [
+    "norm_static",
+    "norm_joint_soft",
+    "perceptual_static",
+    "perceptual_joint_soft"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "alphas": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "policies": [
+    "quality",
+    "compact"
+  ],
+  "rank": 128,
+  "clean_allowance": 0.05,
+  "p90_allowance": 0.1,
+  "final_settings": [
+    {
+      "dose": 0.0,
+      "anchor_index": -1,
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 0,
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 1,
+      "anchor": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 2,
+      "anchor": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 3,
+      "anchor": [
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 4,
+      "anchor": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 5,
+      "anchor": [
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 6,
+      "anchor": [
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.00392156862745098,
+      "anchor_index": 7,
+      "anchor": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 0,
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 1,
+      "anchor": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 2,
+      "anchor": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 3,
+      "anchor": [
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 4,
+      "anchor": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 5,
+      "anchor": [
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 6,
+      "anchor": [
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.01568627450980392,
+      "anchor_index": 7,
+      "anchor": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 0,
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 1,
+      "anchor": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 2,
+      "anchor": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 3,
+      "anchor": [
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 4,
+      "anchor": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 5,
+      "anchor": [
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 6,
+      "anchor": [
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.06274509803921569,
+      "anchor_index": 7,
+      "anchor": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 0,
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 1,
+      "anchor": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 2,
+      "anchor": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 3,
+      "anchor": [
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 4,
+      "anchor": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 5,
+      "anchor": [
+        1.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 6,
+      "anchor": [
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "dose": 0.25098039215686274,
+      "anchor_index": 7,
+      "anchor": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.6",
+  "threads": 1,
+  "previous_turn_classification": "progress"
+}

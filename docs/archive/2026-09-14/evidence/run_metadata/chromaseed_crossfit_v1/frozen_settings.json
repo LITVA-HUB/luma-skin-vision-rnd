@@ -1,0 +1,97 @@
+{
+  "source_lock_sha256": "bf6b8d289bab901007d925588a90ab8337fe231291c87ce96ecb01ae0b2b808e",
+  "parent_H_selection_sha256": "c3a65f8be1af5e69724729c67b097957dcacac0c179811986d149daaef7daec3",
+  "settings": {
+    "mixed": {
+      "norm": {
+        "uniform": {
+          "kind": "uniform",
+          "alpha": 1.0,
+          "rho": 1.0,
+          "power": 0
+        },
+        "support": {
+          "kind": "support",
+          "alpha": 0.1,
+          "rho": 0.5,
+          "power": 1
+        }
+      },
+      "perceptual": {
+        "uniform": {
+          "kind": "uniform",
+          "alpha": 1.0,
+          "rho": 1.0,
+          "power": 0
+        },
+        "support": {
+          "kind": "support",
+          "alpha": 1.0,
+          "rho": 1.0,
+          "power": 1
+        }
+      }
+    },
+    "slr_to_ipod": {
+      "norm": {
+        "uniform": {
+          "kind": "uniform",
+          "alpha": 1.0,
+          "rho": 1.0,
+          "power": 0
+        },
+        "support": {
+          "kind": "support",
+          "alpha": 0.1,
+          "rho": 1.0,
+          "power": 1
+        }
+      },
+      "perceptual": {
+        "uniform": {
+          "kind": "uniform",
+          "alpha": 0.1,
+          "rho": 0.5,
+          "power": 0
+        },
+        "support": {
+          "kind": "support",
+          "alpha": 0.1,
+          "rho": 1.0,
+          "power": 1
+        }
+      }
+    },
+    "ipod_to_slr": {
+      "norm": {
+        "uniform": {
+          "kind": "uniform",
+          "alpha": 0.1,
+          "rho": 0.25,
+          "power": 0
+        },
+        "support": {
+          "kind": "support",
+          "alpha": 0.1,
+          "rho": 0.25,
+          "power": 1
+        }
+      },
+      "perceptual": {
+        "uniform": {
+          "kind": "uniform",
+          "alpha": 0.1,
+          "rho": 0.5,
+          "power": 0
+        },
+        "support": {
+          "kind": "support",
+          "alpha": 0.1,
+          "rho": 0.5,
+          "power": 1
+        }
+      }
+    }
+  },
+  "new_C_hyperparameter_selection": false
+}

@@ -1,0 +1,268 @@
+{
+  "passed": true,
+  "source_lock_sha256": "c16e607e05cc9750ccc3275c16d482c2fb863c693d920ab366b0e0200c1d33e8",
+  "selection_sha256": "c455b980d26f39ec6f5230819aaf06eead19332b9ff44d455029827fbf13cef4",
+  "audit_source_sha256": "757a6af83acee889f1c6419989aac5abc66fc51bde2bc2b524080bc10190e857",
+  "dependencies": {
+    "scripts/chromaseed_perceptual_audit.py": "e1dddfa2516c9232393635ff88761d1a35b2160992ce3b58c4485be613f777a6",
+    "scripts/chromaseed_perceptual_reference.py": "5b386f30ca16574b64a4cfebd2e940d8f2cbebb2b94ebd1863ff1d96b7f41d0c",
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/chromaseed_refine_audit.py": "63ad91c019edfa64522fe30f01830308dd26a863ec45460b09cff4eef130c653",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "checks": {
+    "banks": 12,
+    "stored_readouts": 8748,
+    "exact_parent_payloads": 2916,
+    "oof_query_rows": 1239300,
+    "choices": 15,
+    "iterative_trajectories": 1944,
+    "selected_models": 45,
+    "selected_query_rows": 17970,
+    "independent_refits": 45,
+    "positive_step_probe_readouts": 18
+  },
+  "maxima": {
+    "oof_prediction_drift": 2.1316282072803006e-10,
+    "selected_prediction_drift": 2.3376856006507296e-11,
+    "svd_prediction_drift": 0.0003687715889100218,
+    "positive_step_probe_drift": 0.0005199111837246306,
+    "objective_increase": 0.0,
+    "normal_equation_residual": 9.569043594077718e-16
+  },
+  "positive_step_probes": [
+    {
+      "role": "mixed",
+      "family": "local_irls",
+      "step": 1,
+      "max_prediction_drift": 5.5851832215125796e-05
+    },
+    {
+      "role": "mixed",
+      "family": "local_irls",
+      "step": 4,
+      "max_prediction_drift": 6.129781303698678e-05
+    },
+    {
+      "role": "mixed",
+      "family": "local_irls",
+      "step": 16,
+      "max_prediction_drift": 5.738375892505587e-05
+    },
+    {
+      "role": "mixed",
+      "family": "midpoint_irls",
+      "step": 1,
+      "max_prediction_drift": 3.8110187922768546e-05
+    },
+    {
+      "role": "mixed",
+      "family": "midpoint_irls",
+      "step": 4,
+      "max_prediction_drift": 3.7176913414427304e-05
+    },
+    {
+      "role": "mixed",
+      "family": "midpoint_irls",
+      "step": 16,
+      "max_prediction_drift": 0.00013059262650472192
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local_irls",
+      "step": 1,
+      "max_prediction_drift": 0.00028189002881617853
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local_irls",
+      "step": 4,
+      "max_prediction_drift": 6.410255984867774e-05
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local_irls",
+      "step": 16,
+      "max_prediction_drift": 0.0005199111837246306
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "midpoint_irls",
+      "step": 1,
+      "max_prediction_drift": 5.8222427641752006e-05
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "midpoint_irls",
+      "step": 4,
+      "max_prediction_drift": 0.0002316024694852814
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "midpoint_irls",
+      "step": 16,
+      "max_prediction_drift": 0.0002316024694852814
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local_irls",
+      "step": 1,
+      "max_prediction_drift": 0.00015043163432437723
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local_irls",
+      "step": 4,
+      "max_prediction_drift": 6.431988360589003e-06
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local_irls",
+      "step": 16,
+      "max_prediction_drift": 1.256631874024805e-05
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "midpoint_irls",
+      "step": 1,
+      "max_prediction_drift": 1.609516527700805e-05
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "midpoint_irls",
+      "step": 4,
+      "max_prediction_drift": 3.956351314116091e-05
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "midpoint_irls",
+      "step": 16,
+      "max_prediction_drift": 1.2918392675587143e-05
+    }
+  ],
+  "paired": [
+    {
+      "role": "mixed",
+      "family": "constant_de2",
+      "person_mean_difference": -0.045171237918939906,
+      "descriptive_bootstrap_interval": [
+        -0.08948374595096414,
+        -0.0017254434310550605
+      ],
+      "n_people": 6
+    },
+    {
+      "role": "mixed",
+      "family": "local_de2",
+      "person_mean_difference": -0.06029077375012106,
+      "descriptive_bootstrap_interval": [
+        -0.11723298676055376,
+        0.011729158241788268
+      ],
+      "n_people": 6
+    },
+    {
+      "role": "mixed",
+      "family": "local_irls",
+      "person_mean_difference": 0.016921250154196037,
+      "descriptive_bootstrap_interval": [
+        -0.08113702566455544,
+        0.11497952597294751
+      ],
+      "n_people": 6
+    },
+    {
+      "role": "mixed",
+      "family": "midpoint_irls",
+      "person_mean_difference": 0.021901227511991268,
+      "descriptive_bootstrap_interval": [
+        -0.06786599530706083,
+        0.11687269225330717
+      ],
+      "n_people": 6
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "constant_de2",
+      "person_mean_difference": -0.0013617919409786468,
+      "descriptive_bootstrap_interval": [
+        -0.16753355779693677,
+        0.16620885535279573
+      ],
+      "n_people": 16
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local_de2",
+      "person_mean_difference": 0.10800553666810525,
+      "descriptive_bootstrap_interval": [
+        -0.060055213019900563,
+        0.2777514036305789
+      ],
+      "n_people": 16
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local_irls",
+      "person_mean_difference": -0.11393035615942572,
+      "descriptive_bootstrap_interval": [
+        -0.5464106558061087,
+        0.3555985558964996
+      ],
+      "n_people": 16
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "midpoint_irls",
+      "person_mean_difference": -0.0035932595436144674,
+      "descriptive_bootstrap_interval": [
+        -0.33232778241822836,
+        0.32408066032982774
+      ],
+      "n_people": 16
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "constant_de2",
+      "person_mean_difference": -0.23255062318267608,
+      "descriptive_bootstrap_interval": [
+        -0.3900236070891774,
+        -0.08331942264446338
+      ],
+      "n_people": 8
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local_de2",
+      "person_mean_difference": -0.18888852650445467,
+      "descriptive_bootstrap_interval": [
+        -0.34653723926510255,
+        -0.032045606027325584
+      ],
+      "n_people": 8
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local_irls",
+      "person_mean_difference": -0.3899293777333121,
+      "descriptive_bootstrap_interval": [
+        -0.5248184607746131,
+        -0.24955927384977813
+      ],
+      "n_people": 8
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "midpoint_irls",
+      "person_mean_difference": -0.40454004074955763,
+      "descriptive_bootstrap_interval": [
+        -0.5568769149300733,
+        -0.2622878401173895
+      ],
+      "n_people": 8
+    }
+  ],
+  "seconds": 19.861407899996266,
+  "evidence": "independent local algebra audit; analytic tensors/augmented SVD. Descriptive reused-TRAIN comparisons, not external confirmation."
+}

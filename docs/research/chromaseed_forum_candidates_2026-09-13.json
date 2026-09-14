@@ -1,0 +1,204 @@
+{
+  "checked_on": "2026-09-13",
+  "status": "research_candidates_not_training_results",
+  "new_training_runs": 0,
+  "new_datasets_acquired": 0,
+  "new_weights_acquired": 0,
+  "latest_completed_series": "C",
+  "feature_groups_primary_started": false,
+  "full_goal_status": "active",
+  "datasets": [
+    {
+      "id": "uci_skin",
+      "count": {
+        "rows": 245057,
+        "skin_rows": 50859
+      },
+      "target": "skin/non-skin BGR pixels",
+      "url": "https://archive.ics.uci.edu/dataset/229/skin%2Bsegmentation",
+      "license": "CC BY 4.0 on publisher card",
+      "availability": "public candidate; not acquired",
+      "instrument_reference": false,
+      "role": "auxiliary pixel classifier; no person-disjoint benchmark from listed schema"
+    },
+    {
+      "id": "scin",
+      "count": {
+        "images_lower_bound": 10000,
+        "contributions_lower_bound": 5000
+      },
+      "target": "estimated Monk/Fitzpatrick; dermatology labels",
+      "url": "https://github.com/google-research-datasets/scin",
+      "license_url": "https://github.com/google-research-datasets/scin/blob/main/LICENSE",
+      "license": "custom SCIN Data Use License",
+      "availability": "public candidate; not acquired",
+      "instrument_reference": false,
+      "role": "auxiliary robustness; known duplicates and missing entries"
+    },
+    {
+      "id": "he2021",
+      "count": {
+        "fit_sites": 200,
+        "fit_people": 40,
+        "test_sites": 100,
+        "test_people": 20
+      },
+      "target": "instrument XYZ paired regional RAW/JPG RGB",
+      "url": "https://zenodo.org/records/5532176",
+      "license": "CC BY 4.0 from archived project verification",
+      "availability": "already acquired and used historically; not new data",
+      "instrument_reference": true,
+      "role": "preserve previous protocol; reference white unresolved; no test reopening"
+    },
+    {
+      "id": "simplecube",
+      "count": {
+        "simple_images": 2234,
+        "parent_images": 4890
+      },
+      "target": "illuminant RGB",
+      "url": "https://github.com/Visillect/CubePlusPlus",
+      "license": "CC BY 4.0",
+      "availability": "SimpleCube++ already used; parent overlaps",
+      "instrument_reference": false,
+      "role": "illumination component only"
+    },
+    {
+      "id": "polyu_pure",
+      "count": {
+        "original_images": 102,
+        "v2_images_as_described_by_SAFE": 1271
+      },
+      "target": "illuminant RGB",
+      "url": "https://github.com/shuwei666/Color-Constancy-PCC",
+      "version_context": "https://arxiv.org/html/2608.13967v1",
+      "license": "dataset terms not verified",
+      "availability": "author download link exists; not acquired",
+      "instrument_reference": false,
+      "role": "palette-dominated scenes; keep versions distinct"
+    },
+    {
+      "id": "polyu_face",
+      "count": {
+        "images": 1299,
+        "people": 8
+      },
+      "target": "foreground/background illuminants",
+      "url": "https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/cic/33/1/15",
+      "license": "dataset terms not verified",
+      "availability": "paper located; downloadable licensed release not established",
+      "instrument_reference": false,
+      "role": "mixed-light facial component candidate"
+    },
+    {
+      "id": "encode",
+      "count": {
+        "patients": 128
+      },
+      "target": "skin instrument readings plus smartphone regional images/features",
+      "url": "https://physionet.org/content/encode-skin-color/1.0.0/",
+      "license": "PhysioNet Credentialed Health Data License 1.5.0 with DUA and CITI requirement",
+      "availability": "credentialed; no access application made",
+      "instrument_reference": true,
+      "role": "strong target relevance; hospital domain differs from cosmetics"
+    },
+    {
+      "id": "mste",
+      "count": {
+        "images": 1515,
+        "videos": 31,
+        "people": 19
+      },
+      "target": "Monk category",
+      "url": "https://research.google/blog/consensus-and-subjectivity-of-skin-tone-annotation-for-ml-fairness/",
+      "license": "explicit prohibition on ML model training in publisher terms",
+      "availability": "excluded from training",
+      "instrument_reference": false,
+      "role": "human annotation training/research subject to terms"
+    },
+    {
+      "id": "trueskin",
+      "count": {
+        "images": 7299,
+        "real_images": 1790,
+        "generated_images": 5509
+      },
+      "target": "six visual categories",
+      "url": "https://arxiv.org/html/2509.10980v1",
+      "license": "dataset license not verified; article license not substituted",
+      "availability": "paper located; licensed data release not established",
+      "instrument_reference": false,
+      "role": "not measured skin ground truth"
+    },
+    {
+      "id": "stw",
+      "count": {
+        "images": 42313,
+        "people": 3564
+      },
+      "target": "ten Monk categories",
+      "url": "https://arxiv.org/html/2603.02475v1",
+      "license": "dataset license not verified",
+      "availability": "checked paper states code and data available soon; no release established",
+      "instrument_reference": false,
+      "role": "future category benchmark candidate"
+    }
+  ],
+  "methods": [
+    {
+      "id": "pcc",
+      "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-40-3-602",
+      "kind": "small feature MLP for illuminant estimation",
+      "priority": "feature relevance first",
+      "local_reproduction": false
+    },
+    {
+      "id": "tagi",
+      "url": "https://www.jmlr.org/papers/volume22/20-1009/20-1009.pdf",
+      "code_url": "https://github.com/lhnguyen102/cuTAGI",
+      "kind": "approximate Gaussian analytical layerwise inference",
+      "forum": "https://www.reddit.com/r/MachineLearning/comments/11fnnc7/",
+      "priority": "bounded optimizer comparison after FG",
+      "local_reproduction": false
+    },
+    {
+      "id": "forward_forward",
+      "url": "https://arxiv.org/abs/2212.13345",
+      "forum": "https://www.reddit.com/r/MachineLearning/comments/zqstlm/",
+      "kind": "layer-local positive/negative objectives; local gradients remain",
+      "priority": "exploratory; Lab regression adaptation required",
+      "local_reproduction": false
+    },
+    {
+      "id": "clcc",
+      "url": "https://arxiv.org/abs/2106.04989",
+      "kind": "illuminant-dependent contrastive learning in RAW",
+      "priority": "skin target adaptation needs suitable pairs",
+      "local_reproduction": false
+    },
+    {
+      "id": "wb_augmenter",
+      "url": "https://github.com/mahmoudnafifi/WB_color_augmenter",
+      "kind": "white-balance error emulation",
+      "priority": "verify target law and assets before adoption",
+      "local_reproduction": false
+    },
+    {
+      "id": "safe",
+      "url": "https://arxiv.org/html/2608.13967v1",
+      "kind": "scene-dependent feature modulation and learned color space",
+      "priority": "recent prior art; preserve static/conditional controls",
+      "local_reproduction": false
+    }
+  ],
+  "guarded_existing_files": {
+    "docs/benchmarks/chromaseed_crossfit_v1/verification.json": "80c4129565931e204d663d4e833d8513e7d70111b47c965b6ffe63f2eb2c18dd",
+    "docs/research/chromaseed_external_models_2026-09-13.md": "488dbf2d64cd0060c8a21e8ae71bd09af055ebe1c2cf3b0ad0eb88877a96f6bb",
+    "scripts/chromaseed_feature_groups.py": "a0d3a11eba62f1e797171d03fe05a652ea53632ff7d01e8d0899d8711f19b33a",
+    "scripts/chromaseed_feature_groups_numpy.py": "26b446ed5753133dee90fb64571c8499774d29b76d5047bd8961e27336e42095",
+    "scripts/chromaseed_feature_groups_train.py": "51d5f4b7bb7d61e63629c3b191eb470dc671a1f10196cf3400762c68280c36bd",
+    "tests/test_chromaseed_feature_groups.py": "58c0fd786d3a0f50e495082622e9de834aae6a309e342f1088f8c1a8934c4546",
+    "docs/research/chromaseed_feature_groups_v1_protocol.md": "0609f6e6f903938f44268fff38ca8099d97fe572eed07a66f1c47b04a95738a0",
+    "docs/superpowers/plans/2026-09-13-chromaseed-feature-groups.md": "29f10241efb3e4803e5ad3de43e438fa04263990af1e890d56a2fdf271639fd8"
+  }
+}

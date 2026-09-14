@@ -1,0 +1,275 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "source_sha256": "1ee5f2de9d94840663eea9ce2b2bbc31f4e1dec6caffa63e3b645264d24aba6a",
+  "records": [
+    {
+      "variant": "patch5m",
+      "steps": 64,
+      "checkpoints": [
+        64
+      ],
+      "horizon": 8192,
+      "batch_size": 64,
+      "slots": [
+        [
+          17,
+          1e-05
+        ],
+        [
+          17,
+          0.0001
+        ],
+        [
+          29,
+          1e-05
+        ],
+        [
+          29,
+          0.0001
+        ],
+        [
+          43,
+          1e-05
+        ],
+        [
+          43,
+          0.0001
+        ]
+      ],
+      "sampling_sha256": "33f83e085a6aea42420609299f31016837c3b43232d870582ebf978ba0125b40",
+      "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+      "setup_seconds": 0.6537566999904811,
+      "full_bank_seconds": 5.592243899998721,
+      "trace": [
+        {
+          "step": 64,
+          "seconds": 5.564117100031581,
+          "minibatch_loss": [
+            0.911129891872406,
+            0.24671822786331177,
+            0.9646376967430115,
+            0.31499040126800537,
+            1.0264267921447754,
+            0.2429526299238205
+          ]
+        }
+      ],
+      "final_learning_rates": [
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05
+      ],
+      "cuda_peak_allocated_bytes": 1243846144,
+      "device": "cuda",
+      "engine": "cuda_graph",
+      "training_precision": "BF16 autocast; FP32 master parameters, optimizer and loss",
+      "trainable_parameters": 4961923,
+      "deployed_parameters": 4962566
+    },
+    {
+      "variant": "soft5m",
+      "steps": 64,
+      "checkpoints": [
+        64
+      ],
+      "horizon": 8192,
+      "batch_size": 64,
+      "slots": [
+        [
+          17,
+          1e-05
+        ],
+        [
+          17,
+          0.0001
+        ],
+        [
+          29,
+          1e-05
+        ],
+        [
+          29,
+          0.0001
+        ],
+        [
+          43,
+          1e-05
+        ],
+        [
+          43,
+          0.0001
+        ]
+      ],
+      "sampling_sha256": "33f83e085a6aea42420609299f31016837c3b43232d870582ebf978ba0125b40",
+      "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+      "setup_seconds": 0.8330321999965236,
+      "full_bank_seconds": 14.768373400031123,
+      "trace": [
+        {
+          "step": 64,
+          "seconds": 14.74328080000123,
+          "minibatch_loss": [
+            0.9094469547271729,
+            0.38314786553382874,
+            0.9636722207069397,
+            0.44050145149230957,
+            1.0247312784194946,
+            0.41237568855285645
+          ]
+        }
+      ],
+      "final_learning_rates": [
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05
+      ],
+      "cuda_peak_allocated_bytes": 1371436032,
+      "device": "cuda",
+      "engine": "cuda_graph",
+      "training_precision": "BF16 autocast; FP32 master parameters, optimizer and loss",
+      "trainable_parameters": 4846179,
+      "deployed_parameters": 4846822
+    },
+    {
+      "variant": "dynamic5m",
+      "steps": 64,
+      "checkpoints": [
+        64
+      ],
+      "horizon": 8192,
+      "batch_size": 64,
+      "slots": [
+        [
+          17,
+          1e-05
+        ],
+        [
+          17,
+          0.0001
+        ],
+        [
+          29,
+          1e-05
+        ],
+        [
+          29,
+          0.0001
+        ],
+        [
+          43,
+          1e-05
+        ],
+        [
+          43,
+          0.0001
+        ]
+      ],
+      "sampling_sha256": "33f83e085a6aea42420609299f31016837c3b43232d870582ebf978ba0125b40",
+      "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+      "setup_seconds": 0.8457688000053167,
+      "full_bank_seconds": 14.776349699997809,
+      "trace": [
+        {
+          "step": 64,
+          "seconds": 14.75208309997106,
+          "minibatch_loss": [
+            0.9095529317855835,
+            0.3821386992931366,
+            0.9637744426727295,
+            0.4417364299297333,
+            1.0249558687210083,
+            0.4133075475692749
+          ]
+        }
+      ],
+      "final_learning_rates": [
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05
+      ],
+      "cuda_peak_allocated_bytes": 1371436032,
+      "device": "cuda",
+      "engine": "cuda_graph",
+      "training_precision": "BF16 autocast; FP32 master parameters, optimizer and loss",
+      "trainable_parameters": 4846179,
+      "deployed_parameters": 4846822
+    },
+    {
+      "variant": "pool5m",
+      "steps": 64,
+      "checkpoints": [
+        64
+      ],
+      "horizon": 8192,
+      "batch_size": 64,
+      "slots": [
+        [
+          17,
+          1e-05
+        ],
+        [
+          17,
+          0.0001
+        ],
+        [
+          29,
+          1e-05
+        ],
+        [
+          29,
+          0.0001
+        ],
+        [
+          43,
+          1e-05
+        ],
+        [
+          43,
+          0.0001
+        ]
+      ],
+      "sampling_sha256": "33f83e085a6aea42420609299f31016837c3b43232d870582ebf978ba0125b40",
+      "fit_tokens_sha256": "cd879e3de15b7cc09fa0ca6327e106da18b5b029f7d31f06d76d1e9ff066457c",
+      "setup_seconds": 0.3227327999775298,
+      "full_bank_seconds": 3.8018133000005037,
+      "trace": [
+        {
+          "step": 64,
+          "seconds": 3.7774833000148647,
+          "minibatch_loss": [
+            0.8854842185974121,
+            0.3312727212905884,
+            0.9287528991699219,
+            0.32244381308555603,
+            0.9943320751190186,
+            0.36584851145744324
+          ]
+        }
+      ],
+      "final_learning_rates": [
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05,
+        9.998686437029392e-06,
+        9.998686437029392e-05
+      ],
+      "cuda_peak_allocated_bytes": 1222949376,
+      "device": "cuda",
+      "engine": "cuda_graph",
+      "training_precision": "BF16 autocast; FP32 master parameters, optimizer and loss",
+      "trainable_parameters": 4851203,
+      "deployed_parameters": 4851846
+    }
+  ]
+}

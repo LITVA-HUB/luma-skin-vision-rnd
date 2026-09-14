@@ -1,0 +1,36 @@
+{
+  "name": "Luma ChromaSeed-Seg1",
+  "seed": 20260914,
+  "width": 24,
+  "size": 192,
+  "epochs": 12,
+  "batch_size": 32,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "loss": "BCEWithLogits + per-image soft Dice",
+  "positive_labels": [
+    1,
+    6
+  ],
+  "logit_threshold": 0,
+  "augmentation": "train only: 50% horizontal flip, channel gain .9..1.1, exposure/gamma .85..1.15",
+  "schedule": "cosine per optimizer step; multiplier 1.0 to 0.1",
+  "selection": "max validation mean per-image IoU; earliest epoch wins ties",
+  "test_accessed": false,
+  "test_comparison_subset": "128 official test image names with smallest SHA256(LumaSegTest128|stem), after exclusions; selected without decoding",
+  "no_measured_color_claim": true,
+  "profile_sha256": "67e7084af989dcc9de8635d39a0a73949963a9264c147941da0b279dcfbe5625",
+  "sources": {
+    "scripts\\skin_face_train.py": "5fe50a7ac515d368b4d95bd83268c9e3943521e36a7b317a634b46ea588a60dd",
+    "scripts\\skin_face_segment.py": "e66589cdf8ab369e6754da9292df36bdfd6413754a2dd2d65c50f3c504f4cff9",
+    "scripts\\skin_lapa_prepare.py": "4f9b715851bafce7718efb74e05db61caccc59515c00ac9fe578e2e2157d2ca1",
+    "scripts\\skin_face_evaluate.py": "df59649c1228c42d84ddf478a4286fec7b326b28087e3bb1a142e2718871b019",
+    "scripts\\skin_face_baseline.py": "8d227b43db80eb9e008d2dcd30decb0eca0515e78efecb79efb8338db014efbc",
+    "tests\\test_skin_face_segment.py": "ffc74b1d2b44c11b43fe92c7dad1e0dd208873fd12d78e1ae0624ac054f31767",
+    "docs\\superpowers\\plans\\2026-09-14-facial-skin.md": "262f42e3f0bc982cda65a9ad87a1597fa88a40fce3b8bd325cc4a5319af6e488"
+  },
+  "preflight_sha256": "5dbd340e91f230fd2194cff56aab2ce049413ad24db97a905b4e1758b3ddf44d",
+  "reproducibility": "fixed random seeds; cuDNN autotuning/AMP enabled, no bitwise cross-device training claim",
+  "started_utc": "2026-09-14T01:19:37.591830+00:00"
+}

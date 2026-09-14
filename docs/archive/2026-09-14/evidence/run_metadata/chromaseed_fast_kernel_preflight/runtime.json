@@ -1,0 +1,39 @@
+{
+  "evidence": "SYNTHETIC only; not skin quality evidence",
+  "n": 734,
+  "rank": 128,
+  "warmup": 1,
+  "repetitions": 3,
+  "records": [
+    {
+      "arm": "dense_exact",
+      "median_ms": 60.31289999373257,
+      "kernel_entries": 538756
+    },
+    {
+      "arm": "column_exact",
+      "median_ms": 55.79469999065623,
+      "kernel_entries": 93952
+    },
+    {
+      "arm": "column_pairs1024",
+      "median_ms": 7.174999976996332,
+      "kernel_entries": 93952
+    },
+    {
+      "arm": "column_pairs4096",
+      "median_ms": 7.879999990109354,
+      "kernel_entries": 93952
+    },
+    {
+      "arm": "column_pairs16384",
+      "median_ms": 10.053600009996444,
+      "kernel_entries": 93952
+    }
+  ],
+  "dense_column_prediction_drift": 0.0,
+  "numpy_allocation_probe": {
+    "known_bytes": 8388608,
+    "observed_peak_delta_bytes": 8388912
+  }
+}

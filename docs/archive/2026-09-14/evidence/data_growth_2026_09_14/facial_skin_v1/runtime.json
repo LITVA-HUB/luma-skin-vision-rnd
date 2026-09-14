@@ -1,0 +1,122 @@
+{
+  "records": [
+    {
+      "threads": 1,
+      "layout": "contiguous",
+      "model_only": {
+        "repetitions": 48,
+        "median_ms": 89.94994999375194,
+        "p95_ms": 90.63097498146817,
+        "minimum_ms": 88.94439996220171
+      },
+      "jpeg_to_mask": {
+        "repetitions": 15,
+        "median_ms": 101.37320001376793,
+        "p95_ms": 158.19899000343847,
+        "minimum_ms": 99.66839995468035
+      },
+      "max_logit_difference": 0.0,
+      "differing_mask_pixels": 0,
+      "comparison_pixels": 589824
+    },
+    {
+      "threads": 1,
+      "layout": "channels_last",
+      "model_only": {
+        "repetitions": 48,
+        "median_ms": 68.2371000002604,
+        "p95_ms": 69.51571499812417,
+        "minimum_ms": 65.47980004688725
+      },
+      "jpeg_to_mask": {
+        "repetitions": 15,
+        "median_ms": 76.45940000656992,
+        "p95_ms": 77.5664200016763,
+        "minimum_ms": 75.5187000031583
+      },
+      "max_logit_difference": 0.0005443096160888672,
+      "differing_mask_pixels": 0,
+      "comparison_pixels": 589824
+    },
+    {
+      "threads": 2,
+      "layout": "contiguous",
+      "model_only": {
+        "repetitions": 48,
+        "median_ms": 49.26149998209439,
+        "p95_ms": 49.86092496837955,
+        "minimum_ms": 48.109900031704456
+      },
+      "jpeg_to_mask": {
+        "repetitions": 15,
+        "median_ms": 59.59159997291863,
+        "p95_ms": 60.80375001183711,
+        "minimum_ms": 58.16140002571046
+      },
+      "max_logit_difference": 2.384185791015625e-06,
+      "differing_mask_pixels": 0,
+      "comparison_pixels": 589824
+    },
+    {
+      "threads": 2,
+      "layout": "channels_last",
+      "model_only": {
+        "repetitions": 48,
+        "median_ms": 35.81329999724403,
+        "p95_ms": 36.69671999523416,
+        "minimum_ms": 35.16720002517104
+      },
+      "jpeg_to_mask": {
+        "repetitions": 15,
+        "median_ms": 45.751300000119954,
+        "p95_ms": 46.78958001313731,
+        "minimum_ms": 44.87939999671653
+      },
+      "max_logit_difference": 0.00015854835510253906,
+      "differing_mask_pixels": 0,
+      "comparison_pixels": 589824
+    },
+    {
+      "threads": 4,
+      "layout": "contiguous",
+      "model_only": {
+        "repetitions": 48,
+        "median_ms": 27.565349970245734,
+        "p95_ms": 31.61396999785211,
+        "minimum_ms": 27.261200011707842
+      },
+      "jpeg_to_mask": {
+        "repetitions": 15,
+        "median_ms": 38.16310002002865,
+        "p95_ms": 42.608240008121356,
+        "minimum_ms": 37.205400003585964
+      },
+      "max_logit_difference": 2.384185791015625e-06,
+      "differing_mask_pixels": 0,
+      "comparison_pixels": 589824
+    },
+    {
+      "threads": 4,
+      "layout": "channels_last",
+      "model_only": {
+        "repetitions": 48,
+        "median_ms": 20.099799992749467,
+        "p95_ms": 26.86738002521451,
+        "minimum_ms": 19.39869998022914
+      },
+      "jpeg_to_mask": {
+        "repetitions": 15,
+        "median_ms": 30.54940002039075,
+        "p95_ms": 35.07424999261274,
+        "minimum_ms": 29.502099961973727
+      },
+      "max_logit_difference": 7.891654968261719e-05,
+      "differing_mask_pixels": 0,
+      "comparison_pixels": 589824
+    }
+  ],
+  "model_sha256": "1203cbc5ed2ee17cb2a408c47a23b3a28468f169d48b4d3cee8bd3059e7fbed3",
+  "protocol_sha256": "9b906f517ab7a7c2e28e1301063b9ae232733088676556895d35f61eeea62be4",
+  "measurements": "actual calls on this host; small sample, no cross-device latency claim",
+  "numeric_float32_parameter_bytes": 17666692
+}

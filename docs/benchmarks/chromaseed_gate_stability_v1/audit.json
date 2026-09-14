@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_lock_sha256": "5102e3ba875d0a21f71d13dd538edf55b04b1efc0deb4110d19d66522c935b26",
+  "results_sha256": "41e8a9060ebf12eed131534e5aced4ac61605688537c27f0a0ea9050ef9a4bc0",
+  "audit_source_sha256": "25bd01b53125cc19e51cd3e424277b8b0b0f2af022449e64e657feeea8ded7bd",
+  "dependencies": {
+    "scripts/chromaseed_gated_numpy.py": "5c2472cc6bbd759bdc81df95d7d25a440c3e52b60e6108377946c26c14c2e4af",
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "checks": {
+    "models": 72,
+    "transform_cases": 2376,
+    "transformed_query_rows": 948816,
+    "dose_cases": 288,
+    "boundary_models": 6,
+    "legal_boundary_pairs": 3204,
+    "boundary_control_query_rows": 25632,
+    "projected_rows": 1392
+  },
+  "maxima": {
+    "ordinary_prediction": 2.9203306439740118e-12,
+    "gate_score": 8.881784197001252e-16,
+    "boundary_prediction": 1.8047785488306545e-12,
+    "root": 7.494005416219807e-16,
+    "projection": 4.440892098500626e-16
+  },
+  "elapsed_seconds": 14.337602999992669,
+  "scope": "Independent feature algebra, actual NumPy batch-one consumer, all person/camera metrics and boundary constructions. Shared verified CIEDE2000. Synthetic sensitivity only; no new fits or target-image measurements."
+}

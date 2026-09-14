@@ -1,0 +1,16 @@
+# Recurrent streaming consumer
+
+Execute inline in the current worktree under the existing autonomous research authorization. No delegation, changes to registered producers, extra GPU work or CPU latency benchmark while HR is live.
+
+Goal: make a recurrent AS/HR prediction available after each actually executed pass. The default stays at four passes. This is consumer implementation and numerical qualification, not an early-exit quality policy or a new training study.
+
+Design: add a standalone NumPy/SciPy batch-one consumer for soft_small, dynamic_small, soft5m and dynamic5m with unit/wide/linear heads. Preserve the frozen FP32 normalization, FP64 layers, four shared recurrent updates, stable top-four dynamic fallback and native output conversion. A lazy iterator performs preprocessing once and one update per next(). A bounded wrapper supports a fixed prefix or an explicitly supplied positive successive-prediction L2 threshold, at least two passes. The threshold is uncalibrated and disabled by default; it is not a confidence or accuracy estimate. Stopped iterators perform no remaining updates. Do not reuse old R thresholds or change AS/HR/P3/Seg2 selections.
+
+New files: scripts/chromaseed_recurrent_stream.py; tests/test_chromaseed_recurrent_stream.py; scripts/chromaseed_recurrent_stream_check.py. Result in D:/Luma-RnD/chromaseed_recurrent_stream_v1, explanatory report under docs/research.
+
+- [x] Write failing tests for all four architectures and three heads against the frozen consumer using nonzero synthetic weights; validate lazy execution, actual omitted updates, output isolation, repeated use, input/payload validation and default fixed-four behavior. Initial collection failed only because the new module was absent; two later checker tests failed on the missing checker module before its implementation.
+- [x] Implement the consumer; run the scoped CPU tests and Ruff without changing original files or dependencies. 31 tests passed in 2.74 s; scoped Ruff clean.
+- [x] Qualify all 36 sealed AS recurrent exports (three roles, three seeds, four architectures), using generated features only. Check every prefix against the frozen singleton consumer and instrument actual layer calls. Check all three heads separately with synthetic weights. No targets, native image rows, current HR checkpoints or quality-based selection. 72 generated probes, exact equality; old compute projections matched actual prefix layer calls.
+- [x] Bind inputs and outputs and replay the qualification in a separate invocation. Leave quality and latency fields null. Record actual HR process/progress and preserve the existing queue. Run and verify both terminal0, 45 bound inputs; result SHA712520d394f845565d4f6e678070ffdfe04341933b22efb9eb81229ec7eb3fb0. HR13677/PID42200 still live, 152/168 at11:53. See docs/research/chromaseed_recurrent_streaming_2026-09-14.md.
+
+Later quality work must select pass budgets/thresholds on INNER predictions only and include the unchanged fixed-four control; lower compute or smaller successive changes cannot select a model by themselves. CPU latency must be measured only when prior jobs are quiet. This implementation creates no production training job and does not modify the queue.

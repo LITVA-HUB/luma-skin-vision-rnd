@@ -1,0 +1,49 @@
+{
+  "steps": 512,
+  "checkpoints": [
+    512
+  ],
+  "batch_size": 64,
+  "engine": "cuda_graph",
+  "slots": [
+    {
+      "seed": 17,
+      "lr": 0.001
+    },
+    {
+      "seed": 29,
+      "lr": 0.001
+    },
+    {
+      "seed": 43,
+      "lr": 0.001
+    }
+  ],
+  "n_fit_images": 734,
+  "family": "recur_soft",
+  "learned_parameters_per_model": 14603,
+  "normalizer_and_anchor_floats": 225,
+  "setup_seconds": 0.08086990000447258,
+  "bank_total_seconds": 1.1961783000151627,
+  "amortized_seconds_per_fit": 0.3987261000050542,
+  "trace": [
+    {
+      "step": 512,
+      "seconds": 1.1136470999917947,
+      "sampled_objective_by_slot": [
+        0.21052104234695435,
+        0.20949140191078186,
+        0.25348564982414246
+      ]
+    }
+  ],
+  "cuda_peak_allocated_bytes": 187984896,
+  "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+  "selection_sha256": "86e7a96c30391fc5e9957d056bcd8ff65898819f14550e48875b2f5426ea22a6",
+  "role": "mixed",
+  "files": {
+    "seed17.npz": "7ed7b2ced53a359356df493eb3a71ba88ea3c30518aaae1e17b60aa2a8c6a84b",
+    "seed29.npz": "d0dc28cc43d57e484b4215cfa5132a6641afe82ce1a4d4659f3f3380a1475b84",
+    "seed43.npz": "8a9802953ec955cbbf1109239dd18b2dd1a4c45302c7ea844711d12ceb1e925b"
+  }
+}

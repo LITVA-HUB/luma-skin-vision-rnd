@@ -1,0 +1,45 @@
+{
+  "synthetic": true,
+  "source_sha256": "0d05ac6569b9611e59ade86003582fc992324af95e099339e6da2c27e246c623",
+  "adapter_sources": {
+    "scripts/chromaseed_head_range.py": "2810908381b5c7242a87baa1c5e146b3663ab393097f3d6556dc34d9e904562a",
+    "scripts/chromaseed_head_range_fit.py": "cfc4ebd945edc91b068cc66d9eedea267377fb8d26c46cee34ce52b69c012e23",
+    "tests/test_chromaseed_head_range.py": "c8a3bf6407b25e9c6fb27b33f0233d0bf278b41ac9a3e618ce7ab245f0e52602",
+    "tests/test_chromaseed_head_range_fit.py": "e582015ffc0d73c824b2474afebb3fcec81f4eafe3a16fb16887c7ae9022147a"
+  },
+  "as_verification_sha256": "ce2a0f51c2a395aced8b3dad51e736441d13fccdeb9932e721e2f54f0734c2e9",
+  "variants": [
+    "patch_small",
+    "patch5m",
+    "soft_small",
+    "soft5m",
+    "dynamic_small",
+    "dynamic5m",
+    "pool5m"
+  ],
+  "unit_steps": 16,
+  "unit_checkpoints": [
+    8,
+    16
+  ],
+  "changed_head_steps": 64,
+  "changed_heads": [
+    "wide",
+    "linear"
+  ],
+  "exact_unit_payloads": true,
+  "numpy_cuda_native_lab_atol": 0.002,
+  "numpy_cuda_rtol": 1e-06,
+  "peak_allocated_limit_bytes": 6500000000,
+  "tested_slots": [
+    0,
+    5
+  ],
+  "query_rows": [
+    0,
+    7,
+    14
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "torch": "2.8.0+cu128"
+}

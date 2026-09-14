@@ -1,0 +1,339 @@
+{
+  "equivalence_accepted": false,
+  "primary_exit_code": 1,
+  "coverage": {
+    "banks": 27,
+    "models": 243,
+    "subset_models": 162,
+    "subset_bitwise": 63,
+    "subset_guard_pass": 143,
+    "selected_subset": 54,
+    "selected_subset_guard_pass": 53,
+    "np_checks": 81,
+    "np_guard_pass": 75,
+    "prediction_rows": 3202254,
+    "consumer_calls": 2134836,
+    "transforms": 8019,
+    "doses": 972
+  },
+  "groups": [
+    {
+      "family": "local2",
+      "step": 512,
+      "models": 18,
+      "exact": 9,
+      "guard_pass": 18,
+      "maximum_weight_drift": 2.086162567138672e-07,
+      "maximum_prediction_drift": 4.591640379913997e-06
+    },
+    {
+      "family": "local2",
+      "step": 2048,
+      "models": 18,
+      "exact": 9,
+      "guard_pass": 18,
+      "maximum_weight_drift": 6.854534149169922e-07,
+      "maximum_prediction_drift": 1.1412618306394506e-05
+    },
+    {
+      "family": "local2",
+      "step": 8192,
+      "models": 18,
+      "exact": 9,
+      "guard_pass": 11,
+      "maximum_weight_drift": 0.12184125371277332,
+      "maximum_prediction_drift": 1.8146413843523277
+    },
+    {
+      "family": "local4",
+      "step": 512,
+      "models": 18,
+      "exact": 12,
+      "guard_pass": 18,
+      "maximum_weight_drift": 1.7881393432617188e-07,
+      "maximum_prediction_drift": 3.7733691584662665e-06
+    },
+    {
+      "family": "local4",
+      "step": 2048,
+      "models": 18,
+      "exact": 12,
+      "guard_pass": 16,
+      "maximum_weight_drift": 0.010798826813697815,
+      "maximum_prediction_drift": 0.2154096389042408
+    },
+    {
+      "family": "local4",
+      "step": 8192,
+      "models": 18,
+      "exact": 12,
+      "guard_pass": 14,
+      "maximum_weight_drift": 0.20007142424583435,
+      "maximum_prediction_drift": 3.356707068599704
+    },
+    {
+      "family": "blind4",
+      "step": 512,
+      "models": 18,
+      "exact": 0,
+      "guard_pass": 18,
+      "maximum_weight_drift": 8.940696716308594e-08,
+      "maximum_prediction_drift": 3.278702962461466e-06
+    },
+    {
+      "family": "blind4",
+      "step": 2048,
+      "models": 18,
+      "exact": 0,
+      "guard_pass": 18,
+      "maximum_weight_drift": 7.897615432739258e-07,
+      "maximum_prediction_drift": 1.126088636027589e-05
+    },
+    {
+      "family": "blind4",
+      "step": 8192,
+      "models": 18,
+      "exact": 0,
+      "guard_pass": 12,
+      "maximum_weight_drift": 0.03938627243041992,
+      "maximum_prediction_drift": 0.5679226137466884
+    }
+  ],
+  "timings": [
+    {
+      "role": "mixed",
+      "family": "local2",
+      "prefix": 1,
+      "policies": [
+        "compact"
+      ],
+      "full_ms": 101.27130002365448,
+      "subset_ms": 103.6189500009641,
+      "speedup": 0.9773434301612998,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "mixed",
+      "family": "local2",
+      "prefix": 2,
+      "policies": [
+        "quality"
+      ],
+      "full_ms": 102.43544998229481,
+      "subset_ms": 102.83039999194443,
+      "speedup": 0.9961592096337215,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "mixed",
+      "family": "local4",
+      "prefix": 1,
+      "policies": [
+        "compact"
+      ],
+      "full_ms": 100.15549999661744,
+      "subset_ms": 99.16314997826703,
+      "speedup": 1.0100072458223432,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "mixed",
+      "family": "local4",
+      "prefix": 4,
+      "policies": [
+        "quality"
+      ],
+      "full_ms": 97.97424997668713,
+      "subset_ms": 99.77664999314584,
+      "speedup": 0.9819356531154081,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "mixed",
+      "family": "blind4",
+      "prefix": 2,
+      "policies": [
+        "quality",
+        "compact"
+      ],
+      "full_ms": 273.02635001251474,
+      "subset_ms": 255.37420003092848,
+      "speedup": 1.0691226834169167,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "mixed",
+      "family": "blind4",
+      "prefix": 4,
+      "policies": [],
+      "full_ms": 271.3743499771226,
+      "subset_ms": 255.35479999962263,
+      "speedup": 1.0627344775877472,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local2",
+      "prefix": 1,
+      "policies": [
+        "quality",
+        "compact"
+      ],
+      "full_ms": 284.3806000018958,
+      "subset_ms": 266.2952000100631,
+      "speedup": 1.0679148553603266,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local2",
+      "prefix": 2,
+      "policies": [],
+      "full_ms": 281.310599995777,
+      "subset_ms": 288.14754998893477,
+      "speedup": 0.9762727463987797,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local4",
+      "prefix": 3,
+      "policies": [
+        "quality",
+        "compact"
+      ],
+      "full_ms": 289.6335500117857,
+      "subset_ms": 282.43444999679923,
+      "speedup": 1.0254894543320336,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "local4",
+      "prefix": 4,
+      "policies": [],
+      "full_ms": 283.7600000202656,
+      "subset_ms": 288.26329999719746,
+      "speedup": 0.9843778241039506,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "blind4",
+      "prefix": 3,
+      "policies": [
+        "quality",
+        "compact"
+      ],
+      "full_ms": 269.1105999983847,
+      "subset_ms": 250.6625500100199,
+      "speedup": 1.0735971527762218,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "blind4",
+      "prefix": 4,
+      "policies": [],
+      "full_ms": 270.4846500128042,
+      "subset_ms": 251.0941500077024,
+      "speedup": 1.077224021366117,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local2",
+      "prefix": 1,
+      "policies": [
+        "compact"
+      ],
+      "full_ms": 285.0578000070527,
+      "subset_ms": 268.347850011196,
+      "speedup": 1.0622697368179381,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local2",
+      "prefix": 2,
+      "policies": [
+        "quality"
+      ],
+      "full_ms": 283.45940000144765,
+      "subset_ms": 285.17220000503585,
+      "speedup": 0.9939938044326974,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local4",
+      "prefix": 2,
+      "policies": [
+        "compact"
+      ],
+      "full_ms": 286.83925003861077,
+      "subset_ms": 285.7073499762919,
+      "speedup": 1.0039617463898385,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "local4",
+      "prefix": 4,
+      "policies": [
+        "quality"
+      ],
+      "full_ms": 286.8349499767646,
+      "subset_ms": 290.76450000866316,
+      "speedup": 0.986485454614365,
+      "guards_pass": 3,
+      "bitwise_pairs": 3
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "blind4",
+      "prefix": 2,
+      "policies": [
+        "quality",
+        "compact"
+      ],
+      "full_ms": 275.31314999214374,
+      "subset_ms": 254.07409996842034,
+      "speedup": 1.0835939201451987,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "blind4",
+      "prefix": 4,
+      "policies": [],
+      "full_ms": 272.50234998064116,
+      "subset_ms": 254.61725000059232,
+      "speedup": 1.070243080466886,
+      "guards_pass": 3,
+      "bitwise_pairs": 0
+    }
+  ],
+  "maximum_raw_weight_drift": 0.20007142424583435,
+  "maximum_prediction_drift": 3.356707068599704,
+  "maximum_person_error_change": 0.07210546030000842,
+  "sources": 115,
+  "inputs": 990,
+  "goal_status": "active"
+}

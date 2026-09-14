@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "pid": 40972,
+  "seconds": 686.1439764999668,
+  "error": "CalledProcessError(1, ['powershell.exe', '-NoProfile', '-NonInteractive', '-Command', \"\\n$ErrorActionPreference = 'Stop'\\n[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new()\\n$gpuSamples = @(Get-Counter -Counter '\\\\GPU Engine(*)\\\\Utilization Percentage' -SampleInterval 1 -MaxSamples 2 -ErrorAction Stop)\\n$gpuMeasurements = @($gpuSamples | ForEach-Object {\\n    $gpuSample = $_\\n    [pscustomobject]@{\\n        timestamp = $gpuSample.Timestamp.ToUniversalTime().ToString('o')\\n        counters = @($gpuSample.CounterSamples | ForEach-Object {\\n            [pscustomobject]@{instance=$_.InstanceName; value=$_.CookedValue; status=$_.Status}\\n        })\\n    }\\n})\\n$workerInventory = @(Get-CimInstance Win32_Process | ForEach-Object {\\n    $workerRow = $_\\n    [pscustomobject]@{\\n        ProcessId=$workerRow.ProcessId\\n        ParentProcessId=$workerRow.ParentProcessId\\n        Name=$workerRow.Name\\n        CreationDate=$(if ($workerRow.CreationDate) {$workerRow.CreationDate.ToUniversalTime().ToString('o')} else {$null})\\n        CommandLine=$(if ($workerRow.Name -like 'python*') {$workerRow.CommandLine} else {$null})\\n    }\\n})\\n[pscustomobject]@{samples=$gpuMeasurements; processes=$workerInventory} | ConvertTo-Json -Depth 8 -Compress\\n\"])",
+  "completed_host_checks": 127,
+  "utc": "2026-09-14T10:17:03.313926+00:00"
+}

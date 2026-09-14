@@ -1,0 +1,82 @@
+{
+  "variant": "dynamic5m",
+  "head_mode": "wide",
+  "steps": 128,
+  "checkpoints": [
+    128
+  ],
+  "horizon": 8192,
+  "batch_size": 64,
+  "slots": [
+    [
+      17,
+      1e-05
+    ],
+    [
+      17,
+      0.0001
+    ],
+    [
+      29,
+      1e-05
+    ],
+    [
+      29,
+      0.0001
+    ],
+    [
+      43,
+      1e-05
+    ],
+    [
+      43,
+      0.0001
+    ]
+  ],
+  "sampling_sha256": "8b755960cc84597aed517ce14e4d0692a2db9f4d2ce5b48562d6f55bb4ebc308",
+  "fit_tokens_sha256": "5fdcee3c0f6c65502e0b05461dc3a100942b6585c5a793180535c78017c58e05",
+  "setup_seconds": 0.8239980000071228,
+  "full_bank_seconds": 28.3332218999858,
+  "trace": [
+    {
+      "step": 128,
+      "seconds": 28.279915000020992,
+      "minibatch_loss": [
+        0.15856042504310608,
+        0.15777947008609772,
+        0.1376870572566986,
+        0.13245443999767303,
+        0.18935206532478333,
+        0.18812769651412964
+      ]
+    }
+  ],
+  "final_learning_rates": [
+    9.99466374196345e-06,
+    9.994664287660271e-05,
+    9.99466374196345e-06,
+    9.994664287660271e-05,
+    9.99466374196345e-06,
+    9.994664287660271e-05
+  ],
+  "cuda_peak_allocated_bytes": 1239078912,
+  "device": "cuda",
+  "engine": "cuda_graph",
+  "trainable_parameters": 4846179,
+  "deployed_parameters": 4846822,
+  "source_lock_sha256": "dfb96f902658009f57d37478ee9e2964c951a2bbce8aaba9acda77ff142652b2",
+  "selection_sha256": "32e46b58a863ffe0ace720f4e2f1200e5d97d8fb6d39206611fae21d7c887d1d",
+  "role": "ipod_to_slr",
+  "fold": null,
+  "warm_parent_sha256": {
+    "experiments/runs/chromaseed_neural_prefix_v1/selected/ipod_to_slr/blind4_j2_s17.npz": "3f7a9e9f496f756c61c0dd17c6f35bb92fb6d99881428b32f6907656761ccad6",
+    "experiments/runs/chromaseed_neural_prefix_v1/selected/ipod_to_slr/blind4_j2_s29.npz": "fe807aa86c8f5b3d65a4c48c2a5a713af0a7ae2808ae68efec9892288bb75f3b",
+    "experiments/runs/chromaseed_neural_prefix_v1/selected/ipod_to_slr/blind4_j2_s43.npz": "99042ece8fa3d3dc68a54e9ac60f50d6d3de7f6a0ec25c3dbe0ef344bd7cd680"
+  },
+  "files": {
+    "warm_models.npz": "ab45192f843b0e640120c819a8690cfbb0708dda94376650cb93075efb1703f6",
+    "models_128.npz": "25fecf441b752d003e0ea410a696fa88824ce4516c74352d7eabe08a64cad545",
+    "rows.npz": "b644fb3c3f69900a4d8ba649c996e0e97742b30267092ae316097994d5695d30"
+  },
+  "write_and_prediction_inclusive_seconds": 28.487094400043134
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-13",
+  "purpose": "Forum-led methods and data follow-up after completed NS; no new numerical study",
+  "latest_completed_numerical_stage": "NS",
+  "goal_status": "active",
+  "ns_fresh_read_only_verification_passed": true,
+  "ns_verification_sha256": "e725b4a6e86df7a51dd9825089ca39c218100bc3e31f765a585946353fb9cd6f",
+  "new_training_runs": 0,
+  "new_data_or_weights_acquired": 0,
+  "new_packages_installed": 0,
+  "external_messages_sent": 0,
+  "methods": [
+    {"id": "noprop", "status": "previous_candidate_rechecked_not_implemented", "forum": "https://news.ycombinator.com/item?id=43676837", "primary": "https://arxiv.org/html/2503.24322v2", "retains_block_local_backprop": true, "local_skin_gain_measured": false},
+    {"id": "forward_gradient_local_guesses", "status": "new_specific_candidate_not_implemented", "forum_lead": "https://www.reddit.com/r/MachineLearning/comments/sv9kb4", "primary": "https://proceedings.mlr.press/v202/fournier23a.html", "author_code": "https://github.com/stephane-rivaud/ForwardLocalGradient", "code_license_status": "explicit license not established in viewed root", "uses_directional_derivatives_and_local_gradients": true, "local_skin_gain_measured": false},
+    {"id": "mezo", "status": "specific_external_candidate_not_implemented_lower_priority", "forum": "https://news.ycombinator.com/item?id=36216532", "primary": "https://arxiv.org/abs/2305.17333v3", "author_code": "https://github.com/princeton-nlp/MeZO", "code_license_as_labeled_by_repository": "MIT", "evidence_task": "fine-tuning pretrained language models", "local_skin_gain_measured": false}
+  ],
+  "datasets": [
+    {"id": "issa_v4", "status": "already_acquired_no_new_data_access", "records": 15256, "license": "CC BY 4.0", "evidence": "../data/issa_v4_verified_inventory.md", "fresh_doi_open": "error; original archived metadata used", "paired_phone_photographs_established": false},
+    {"id": "nist_skin_reflectance", "status": "catalog_rechecked_file_not_acquired", "spectra": 100, "wavelength_nm": [250, 2500], "primary": "https://www.nist.gov/publications/reference-data-set-human-skin-reflectance", "catalog": "https://catalog.data.gov/dataset/reference-data-set-of-human-skin-reflectance", "per_file_notice_inspected": false},
+    {"id": "encode", "status": "credentialed_access_required_no_files_acquired", "primary": "https://physionet.org/content/encode-skin-color/1.0.0/", "requirements": ["credentialed user", "CITI course", "DUA"], "commercial_use_cleared_here": false},
+    {"id": "chroma_fit", "status": "previous_inventory_candidate_rechecked", "images_approx": 2300, "participants": 209, "primary": "https://openaccess.thecvf.com/content/WACV2024W/DVPBA/html/Pangelinan_The_CHROMA-FIT_Dataset_Characterizing_Human_Ranges_of_Melanin_for_Increased_WACVW_2024_paper.html", "lab": "https://research.fit.edu/idl/publications/", "direct_archive_and_license_verified": false},
+    {"id": "scin", "status": "auxiliary_candidate_rechecked_not_acquired", "primary": "https://github.com/google-research-datasets/scin", "images_lower_bound": 10000, "license": "SCIN Data Use License", "instrument_lab": false},
+    {"id": "uci_skin_segmentation", "status": "binary_pixel_candidate_rechecked_not_acquired", "primary": "https://archive.ics.uci.edu/dataset/229/skin%2Bsegmentation", "pixels": 245057, "license": "CC BY 4.0", "instrument_lab": false},
+    {"id": "mst_e", "status": "excluded_ml_training_explicitly_prohibited", "primary": "https://research.google/blog/consensus-and-subjectivity-of-skin-tone-annotation-for-ml-fairness/"}
+  ],
+  "next_numerical_step": "Inventory prior R against NoProp, then preregister a bounded local-denoising continuous-Lab comparison under the existing TRAIN-only boundary",
+  "frozen_train_expanded": false,
+  "ordinary_phone_face_accuracy_validated": false
+}

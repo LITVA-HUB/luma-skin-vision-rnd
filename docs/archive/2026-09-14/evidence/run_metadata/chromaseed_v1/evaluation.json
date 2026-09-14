@@ -1,0 +1,6110 @@
+{
+  "evidence": "Exploratory reused original-TRAIN roles, overlapping protocols",
+  "frozen_selection_sha256": "d0520edb4b03d8817be2a2de1a026364ab0c6512b2371ed8164939e9890bd76e",
+  "models": [
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.873191544902687,
+        "image_mean": 9.066665080650711,
+        "site_person_mean": 8.849543282623733,
+        "median": 8.063347961417834,
+        "p90": 15.598291443749751,
+        "gt5": 0.7672413793103449,
+        "gt10": 0.3448275862068966,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.213125384356381,
+            "image_mean": 7.260517298858128,
+            "site_person_mean": 7.213125384356381,
+            "median": 6.665104604603853,
+            "p90": 10.620749852755047,
+            "gt5": 0.6625,
+            "gt10": 0.15,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 9.70322462517584,
+            "image_mean": 10.01726917633102,
+            "site_person_mean": 9.667752231757408,
+            "median": 9.0480180731168,
+            "p90": 17.733826717702666,
+            "gt5": 0.8223684210526315,
+            "gt10": 0.4473684210526316,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.09472890000324696,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.43866998803357,
+        "image_mean": 7.661326405111414,
+        "site_person_mean": 7.439346118928857,
+        "median": 6.453503215242156,
+        "p90": 13.239886587721026,
+        "gt5": 0.6767241379310345,
+        "gt10": 0.25,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.603931761409542,
+            "image_mean": 6.6088992443154195,
+            "site_person_mean": 6.603931761409541,
+            "median": 5.8507861513096575,
+            "p90": 10.045771834582206,
+            "gt5": 0.675,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 7.856039101345582,
+            "image_mean": 8.215235437109305,
+            "site_person_mean": 7.857053297688516,
+            "median": 7.446054311617937,
+            "p90": 13.911850245554696,
+            "gt5": 0.6776315789473685,
+            "gt10": 0.3223684210526316,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3459226999548264,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.990736279020712,
+        "image_mean": 6.199213646099166,
+        "site_person_mean": 6.0180341417733,
+        "median": 5.318606637987104,
+        "p90": 10.796019394643984,
+        "gt5": 0.5129310344827587,
+        "gt10": 0.13793103448275862,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.614400081869571,
+            "image_mean": 5.589283508199643,
+            "site_person_mean": 5.614400081869571,
+            "median": 4.605024627073183,
+            "p90": 9.441966087584044,
+            "gt5": 0.425,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.178904377596284,
+            "image_mean": 6.5202295081515445,
+            "site_person_mean": 6.219851171725165,
+            "median": 6.007174068359413,
+            "p90": 11.548079999933075,
+            "gt5": 0.5592105263157895,
+            "gt10": 0.16447368421052633,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.365994599997066,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.802498899181131,
+        "image_mean": 9.095881571522055,
+        "site_person_mean": 8.784799768728954,
+        "median": 8.087538037937634,
+        "p90": 15.013357492800049,
+        "gt5": 0.8189655172413793,
+        "gt10": 0.3448275862068966,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.556967908468366,
+            "image_mean": 7.534815251764191,
+            "site_person_mean": 7.556967908468366,
+            "median": 6.612549025566589,
+            "p90": 10.69719209503991,
+            "gt5": 0.7875,
+            "gt10": 0.1375,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 9.425264394537514,
+            "image_mean": 9.917495424026194,
+            "site_person_mean": 9.398715698859249,
+            "median": 9.517781429567467,
+            "p90": 15.828723136030305,
+            "gt5": 0.8355263157894737,
+            "gt10": 0.45394736842105265,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08509989996673539,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.865361904229792,
+        "image_mean": 7.090917574622004,
+        "site_person_mean": 6.883791305084291,
+        "median": 6.261376153745276,
+        "p90": 11.978225130768875,
+        "gt5": 0.6077586206896551,
+        "gt10": 0.17672413793103448,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.477189147422622,
+            "image_mean": 6.407901438667892,
+            "site_person_mean": 6.477189147422621,
+            "median": 5.388364172559207,
+            "p90": 9.242773114890724,
+            "gt5": 0.5625,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 7.059448282633378,
+            "image_mean": 7.45039975143996,
+            "site_person_mean": 7.087092383915126,
+            "median": 7.09895731890632,
+            "p90": 12.207357481692068,
+            "gt5": 0.631578947368421,
+            "gt10": 0.2236842105263158,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3293064999743365,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.903994777694408,
+        "image_mean": 6.158666929354604,
+        "site_person_mean": 5.934696709631564,
+        "median": 5.077991201804613,
+        "p90": 11.074093629140853,
+        "gt5": 0.5129310344827587,
+        "gt10": 0.13793103448275862,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.667609795373399,
+            "image_mean": 5.612874852046665,
+            "site_person_mean": 5.6676097953734,
+            "median": 4.56140497333866,
+            "p90": 9.391855244391781,
+            "gt5": 0.45,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.022187268854913,
+            "image_mean": 6.445925917411415,
+            "site_person_mean": 6.068240166760647,
+            "median": 5.971703679839011,
+            "p90": 11.858995154074135,
+            "gt5": 0.5460526315789473,
+            "gt10": 0.16447368421052633,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.2982926999684423,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.132825437196589,
+        "image_mean": 9.360165571837397,
+        "site_person_mean": 9.102030252336329,
+        "median": 8.591552878006922,
+        "p90": 15.45071528860511,
+        "gt5": 0.7758620689655172,
+        "gt10": 0.35344827586206895,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.269469545895399,
+            "image_mean": 8.347877386144479,
+            "site_person_mean": 8.269469545895399,
+            "median": 7.8258643870715705,
+            "p90": 12.632343291379886,
+            "gt5": 0.75,
+            "gt10": 0.275,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 9.564503382847185,
+            "image_mean": 9.892948827465249,
+            "site_person_mean": 9.518310605556794,
+            "median": 9.164607915811406,
+            "p90": 17.65081284646943,
+            "gt5": 0.7894736842105263,
+            "gt10": 0.39473684210526316,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08048499998403713,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.796175738689731,
+        "image_mean": 7.028842831407722,
+        "site_person_mean": 6.802260958288116,
+        "median": 6.217888265515888,
+        "p90": 11.784040707716947,
+        "gt5": 0.625,
+        "gt10": 0.16810344827586207,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.293993825510822,
+            "image_mean": 6.2329633552723065,
+            "site_person_mean": 6.293993825510821,
+            "median": 5.2483361793478895,
+            "p90": 9.398220613120143,
+            "gt5": 0.575,
+            "gt10": 0.075,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 7.047266695279185,
+            "image_mean": 7.447726766215836,
+            "site_person_mean": 7.0563945246767625,
+            "median": 7.062302233939354,
+            "p90": 13.371873944952274,
+            "gt5": 0.6513157894736842,
+            "gt10": 0.21710526315789475,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3154251999803819,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.9827677030286415,
+        "image_mean": 6.189632055130187,
+        "site_person_mean": 6.016862519079722,
+        "median": 4.86915976696044,
+        "p90": 11.703345212235629,
+        "gt5": 0.49137931034482757,
+        "gt10": 0.15517241379310345,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.61370070506749,
+            "image_mean": 5.555817805722507,
+            "site_person_mean": 5.61370070506749,
+            "median": 4.333326123348172,
+            "p90": 9.669913077112156,
+            "gt5": 0.4125,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.167301202009217,
+            "image_mean": 6.523218502186863,
+            "site_person_mean": 6.2184434260858374,
+            "median": 5.83271233704839,
+            "p90": 12.913491303197569,
+            "gt5": 0.5328947368421053,
+            "gt10": 0.18421052631578946,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.2551277999882586,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.14959218971684,
+        "image_mean": 8.317567758749282,
+        "site_person_mean": 8.124337381401519,
+        "median": 6.889475784790467,
+        "p90": 14.90593658869757,
+        "gt5": 0.7198275862068966,
+        "gt10": 0.25,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.606639937564136,
+            "image_mean": 6.583565187208495,
+            "site_person_mean": 6.606639937564134,
+            "median": 6.052553181437661,
+            "p90": 9.434049437507328,
+            "gt5": 0.6625,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 8.921068315793192,
+            "image_mean": 9.23020069113917,
+            "site_person_mean": 8.883186103320211,
+            "median": 8.050111381084665,
+            "p90": 16.17521117077557,
+            "gt5": 0.75,
+            "gt10": 0.3355263157894737,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08338920003734529,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.49104756401871,
+        "image_mean": 6.71515889839807,
+        "site_person_mean": 6.50793804450922,
+        "median": 5.9000550419849755,
+        "p90": 10.992041358053005,
+        "gt5": 0.6163793103448276,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.471722235660785,
+            "image_mean": 6.4252235924784005,
+            "site_person_mean": 6.471722235660785,
+            "median": 5.694559066743521,
+            "p90": 9.720941588003022,
+            "gt5": 0.675,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.500710228197672,
+            "image_mean": 6.867756427829477,
+            "site_person_mean": 6.526045948933436,
+            "median": 6.111455275667209,
+            "p90": 11.697362145759389,
+            "gt5": 0.5855263157894737,
+            "gt10": 0.17763157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3232871000072919,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.866382596220736,
+        "image_mean": 6.1038008562385695,
+        "site_person_mean": 5.890346215910907,
+        "median": 4.977836310750451,
+        "p90": 11.25496896623658,
+        "gt5": 0.5,
+        "gt10": 0.1336206896551724,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.5192889461424715,
+            "image_mean": 5.505535099089002,
+            "site_person_mean": 5.519288946142472,
+            "median": 4.750237221136109,
+            "p90": 9.624032241194886,
+            "gt5": 0.425,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.039929421259868,
+            "image_mean": 6.418677570527816,
+            "site_person_mean": 6.075874850795125,
+            "median": 5.539926527077283,
+            "p90": 12.233257786364481,
+            "gt5": 0.5394736842105263,
+            "gt10": 0.15789473684210525,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.1639124000212178,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.682297182031406,
+        "image_mean": 7.824464161911755,
+        "site_person_mean": 7.6577507403759455,
+        "median": 6.587574887331332,
+        "p90": 14.764836967745113,
+        "gt5": 0.6681034482758621,
+        "gt10": 0.2543103448275862,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.415655250391483,
+            "image_mean": 6.386401532967043,
+            "site_person_mean": 6.415655250391484,
+            "median": 5.727250206655512,
+            "p90": 9.304753704038824,
+            "gt5": 0.65,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 8.315618147851367,
+            "image_mean": 8.581339229777392,
+            "site_person_mean": 8.278798485368178,
+            "median": 7.52088447144542,
+            "p90": 15.71309051260634,
+            "gt5": 0.6776315789473685,
+            "gt10": 0.34210526315789475,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.07813519996125251,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.181491657276762,
+        "image_mean": 6.38156564690518,
+        "site_person_mean": 6.2046093034695895,
+        "median": 5.614990127652849,
+        "p90": 10.884360275801804,
+        "gt5": 0.5517241379310345,
+        "gt10": 0.12931034482758622,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.0516727133215795,
+            "image_mean": 5.991951844806666,
+            "site_person_mean": 6.0516727133215795,
+            "median": 5.1526165906975265,
+            "p90": 9.832732692108548,
+            "gt5": 0.5125,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.246401129254353,
+            "image_mean": 6.5866255427465035,
+            "site_person_mean": 6.281077598543594,
+            "median": 5.872779771046638,
+            "p90": 11.533091684350552,
+            "gt5": 0.5723684210526315,
+            "gt10": 0.1513157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3024526999797672,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.6667858854596025,
+        "image_mean": 5.872865292644716,
+        "site_person_mean": 5.6877778646646435,
+        "median": 4.8070804501218785,
+        "p90": 10.596865746711954,
+        "gt5": 0.4870689655172414,
+        "gt10": 0.14224137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.401945686003575,
+            "image_mean": 5.352206714961549,
+            "site_person_mean": 5.401945686003575,
+            "median": 4.106687725852268,
+            "p90": 10.149848036085075,
+            "gt5": 0.4125,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.799205985187614,
+            "image_mean": 6.146896123004275,
+            "site_person_mean": 5.830693953995178,
+            "median": 5.407147902612612,
+            "p90": 11.666571196016895,
+            "gt5": 0.5263157894736842,
+            "gt10": 0.15789473684210525,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.1822493000072427,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.994622822196935,
+        "image_mean": 8.139523888679157,
+        "site_person_mean": 7.969655628585424,
+        "median": 6.8386098287748665,
+        "p90": 15.183113907719182,
+        "gt5": 0.6853448275862069,
+        "gt10": 0.2801724137931034,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.0506341084761,
+            "image_mean": 7.057208852235078,
+            "site_person_mean": 7.0506341084761,
+            "median": 6.531875606252065,
+            "p90": 10.696123933945373,
+            "gt5": 0.6625,
+            "gt10": 0.1375,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 8.466617179057353,
+            "image_mean": 8.709163381544462,
+            "site_person_mean": 8.429166388640088,
+            "median": 7.314983516319501,
+            "p90": 16.184755502413527,
+            "gt5": 0.6973684210526315,
+            "gt10": 0.35526315789473684,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.07913069997448474,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.536616914358728,
+        "image_mean": 6.782898817969249,
+        "site_person_mean": 6.551548544633513,
+        "median": 6.072774280817006,
+        "p90": 11.452145288788667,
+        "gt5": 0.6422413793103449,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.2887877691866105,
+            "image_mean": 6.2392399804320755,
+            "site_person_mean": 6.2887877691866105,
+            "median": 5.633630762234591,
+            "p90": 9.506206396380863,
+            "gt5": 0.6375,
+            "gt10": 0.075,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.6605314869447865,
+            "image_mean": 7.0690350482519735,
+            "site_person_mean": 6.6829289323569645,
+            "median": 6.501523241241788,
+            "p90": 12.249015816301345,
+            "gt5": 0.6447368421052632,
+            "gt10": 0.18421052631578946,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.31484760000603274,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.748083467077464,
+        "image_mean": 5.94830047344426,
+        "site_person_mean": 5.772250186498291,
+        "median": 4.784503098719329,
+        "p90": 11.745808994160782,
+        "gt5": 0.4827586206896552,
+        "gt10": 0.14224137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.5343502724408244,
+            "image_mean": 5.486364300220444,
+            "site_person_mean": 5.5343502724408244,
+            "median": 4.429193232962284,
+            "p90": 9.892720425532975,
+            "gt5": 0.425,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.854950064395784,
+            "image_mean": 6.191424775141006,
+            "site_person_mean": 5.8912001435270245,
+            "median": 5.389378568469128,
+            "p90": 12.569203591390508,
+            "gt5": 0.5131578947368421,
+            "gt10": 0.16447368421052633,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.1684856999781914,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 6.573676308012644,
+        "image_mean": 6.814908280963477,
+        "site_person_mean": 6.588187863692961,
+        "median": 6.07402477076947,
+        "p90": 11.0257852374445,
+        "gt5": 0.6120689655172413,
+        "gt10": 0.13793103448275862,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.401394796558088,
+            "image_mean": 6.36275965572941,
+            "site_person_mean": 6.401394796558087,
+            "median": 5.436226850656832,
+            "p90": 9.014445085346754,
+            "gt5": 0.575,
+            "gt10": 0.075,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.65981706373992,
+            "image_mean": 7.052881241612989,
+            "site_person_mean": 6.681584397260398,
+            "median": 6.425122639562478,
+            "p90": 11.78224690605341,
+            "gt5": 0.631578947368421,
+            "gt10": 0.17105263157894737,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08332929998869076,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 6.080674355014781,
+        "image_mean": 6.328643055714867,
+        "site_person_mean": 6.108704203786711,
+        "median": 5.430701088020929,
+        "p90": 10.61790488645014,
+        "gt5": 0.5474137931034483,
+        "gt10": 0.125,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.8689895797481295,
+            "image_mean": 5.837439206558456,
+            "site_person_mean": 5.8689895797481295,
+            "median": 5.0415800581188845,
+            "p90": 9.938975129783278,
+            "gt5": 0.5125,
+            "gt10": 0.075,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.186516742648108,
+            "image_mean": 6.587171397376135,
+            "site_person_mean": 6.228561515806002,
+            "median": 6.049860453550363,
+            "p90": 11.238547794756375,
+            "gt5": 0.5657894736842105,
+            "gt10": 0.1513157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.32773920003091916,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 5.672341794694353,
+        "image_mean": 5.8917369062345495,
+        "site_person_mean": 5.695976932093082,
+        "median": 4.682205767953159,
+        "p90": 11.425548409605764,
+        "gt5": 0.4525862068965517,
+        "gt10": 0.15086206896551724,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.458613862500126,
+            "image_mean": 5.443346136256958,
+            "site_person_mean": 5.458613862500126,
+            "median": 4.4750956047475565,
+            "p90": 10.368143509053596,
+            "gt5": 0.3625,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.779205760791466,
+            "image_mean": 6.127732048328019,
+            "site_person_mean": 5.81465846688956,
+            "median": 5.024563600977341,
+            "p90": 11.88506100471983,
+            "gt5": 0.5,
+            "gt10": 0.17105263157894737,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.3736524000414647,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 6.9162540726542305,
+        "image_mean": 7.1206229515861335,
+        "site_person_mean": 6.915623508650833,
+        "median": 6.267619017414833,
+        "p90": 12.447891154803424,
+        "gt5": 0.6422413793103449,
+        "gt10": 0.1724137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.449695950073448,
+            "image_mean": 6.380774630740627,
+            "site_person_mean": 6.449695950073448,
+            "median": 5.530736911573985,
+            "p90": 9.479639741243776,
+            "gt5": 0.5875,
+            "gt10": 0.075,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 7.1495331339446215,
+            "image_mean": 7.510016804662718,
+            "site_person_mean": 7.148587287939525,
+            "median": 7.072943049996198,
+            "p90": 12.868157922162402,
+            "gt5": 0.6710526315789473,
+            "gt10": 0.2236842105263158,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.09444790001725778,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 6.035701708170483,
+        "image_mean": 6.192702108142757,
+        "site_person_mean": 6.059269527862131,
+        "median": 5.329497785033882,
+        "p90": 10.80773997246451,
+        "gt5": 0.5387931034482759,
+        "gt10": 0.1336206896551724,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.745957135278584,
+            "image_mean": 5.684197644651408,
+            "site_person_mean": 5.745957135278585,
+            "median": 4.632401417364083,
+            "p90": 9.647420222755494,
+            "gt5": 0.475,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.1805739946164335,
+            "image_mean": 6.460336036296098,
+            "site_person_mean": 6.215925724153903,
+            "median": 5.789077588976522,
+            "p90": 10.858248414023276,
+            "gt5": 0.5723684210526315,
+            "gt10": 0.1513157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3509394000284374,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 5.766577133399395,
+        "image_mean": 5.9926552378692515,
+        "site_person_mean": 5.781863040619928,
+        "median": 4.840439103569162,
+        "p90": 11.538141351396522,
+        "gt5": 0.4870689655172414,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.2700806680926195,
+            "image_mean": 5.251380483713646,
+            "site_person_mean": 5.27008066809262,
+            "median": 3.9449588284581734,
+            "p90": 9.623069628423751,
+            "gt5": 0.375,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.014825366052784,
+            "image_mean": 6.38279984531957,
+            "site_person_mean": 6.0377542268835835,
+            "median": 5.617875538862069,
+            "p90": 12.43038087036301,
+            "gt5": 0.5460526315789473,
+            "gt10": 0.17763157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.4032280999817885,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 6.758576685589993,
+        "image_mean": 6.959161852134414,
+        "site_person_mean": 6.777408172560405,
+        "median": 6.142652996347818,
+        "p90": 12.18008583822353,
+        "gt5": 0.625,
+        "gt10": 0.16379310344827586,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.903458268723353,
+            "image_mean": 6.859505931915633,
+            "site_person_mean": 6.903458268723353,
+            "median": 6.0969494132209245,
+            "p90": 9.869398879114998,
+            "gt5": 0.65,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.686135894023314,
+            "image_mean": 7.01161233646009,
+            "site_person_mean": 6.714383124478931,
+            "median": 6.172330200872942,
+            "p90": 12.491108668403802,
+            "gt5": 0.6118421052631579,
+            "gt10": 0.20394736842105263,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08715129998745397,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 5.992636577646227,
+        "image_mean": 6.200683446280495,
+        "site_person_mean": 6.020257359546822,
+        "median": 5.365246575501569,
+        "p90": 11.10692443214068,
+        "gt5": 0.5258620689655172,
+        "gt10": 0.1206896551724138,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.787796286930094,
+            "image_mean": 5.731786559469794,
+            "site_person_mean": 5.787796286930094,
+            "median": 4.618101119102224,
+            "p90": 9.736036509838646,
+            "gt5": 0.4625,
+            "gt10": 0.075,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.0950567230042925,
+            "image_mean": 6.447471281444022,
+            "site_person_mean": 6.1364878958551845,
+            "median": 6.021033686644161,
+            "p90": 11.431110557428081,
+            "gt5": 0.5592105263157895,
+            "gt10": 0.14473684210526316,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3446271999855526,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 5.864008214567878,
+        "image_mean": 6.115771492134051,
+        "site_person_mean": 5.890720304303078,
+        "median": 5.043168878246226,
+        "p90": 11.523905751813569,
+        "gt5": 0.5129310344827587,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.239384541473135,
+            "image_mean": 5.227532539115676,
+            "site_person_mean": 5.239384541473134,
+            "median": 4.318261412266779,
+            "p90": 8.961257232335194,
+            "gt5": 0.375,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.17632005111525,
+            "image_mean": 6.583265677933196,
+            "site_person_mean": 6.216388185718052,
+            "median": 5.960471453959719,
+            "p90": 12.243464532086929,
+            "gt5": 0.5855263157894737,
+            "gt10": 0.17763157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.4182723999838345,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.113210879408319,
+        "image_mean": 8.344940701703461,
+        "site_person_mean": 8.105113713463359,
+        "median": 7.39895653458424,
+        "p90": 14.091454583584817,
+        "gt5": 0.75,
+        "gt10": 0.3017241379310345,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.879718233194588,
+            "image_mean": 6.877005971163763,
+            "site_person_mean": 6.8797182331945885,
+            "median": 6.066308880915932,
+            "p90": 10.159194878686106,
+            "gt5": 0.7125,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 8.729957202515184,
+            "image_mean": 9.117537928303303,
+            "site_person_mean": 8.717811453597744,
+            "median": 8.644645077674653,
+            "p90": 15.261464017341618,
+            "gt5": 0.7697368421052632,
+            "gt10": 0.40131578947368424,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.09225119999609888,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.601650602077336,
+        "image_mean": 6.84771209593266,
+        "site_person_mean": 6.619962425274177,
+        "median": 6.301892902041269,
+        "p90": 10.993047679073463,
+        "gt5": 0.6293103448275862,
+        "gt10": 0.16379310344827586,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.368951353774396,
+            "image_mean": 6.295781741044228,
+            "site_person_mean": 6.368951353774396,
+            "median": 5.497502170308,
+            "p90": 9.731677172824273,
+            "gt5": 0.6,
+            "gt10": 0.0625,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.718000226228806,
+            "image_mean": 7.138201756400255,
+            "site_person_mean": 6.745467961024067,
+            "median": 6.967309671100322,
+            "p90": 11.529185753302126,
+            "gt5": 0.6447368421052632,
+            "gt10": 0.21710526315789475,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.36881249997531995,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.005288190815328,
+        "image_mean": 6.232142037120346,
+        "site_person_mean": 6.03347903996242,
+        "median": 5.141632328677496,
+        "p90": 11.779866561314774,
+        "gt5": 0.5129310344827587,
+        "gt10": 0.15086206896551724,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.57320676425444,
+            "image_mean": 5.54270806853488,
+            "site_person_mean": 5.573206764254441,
+            "median": 4.6600920588901555,
+            "p90": 9.183078495012335,
+            "gt5": 0.425,
+            "gt10": 0.0875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.22132890409577,
+            "image_mean": 6.595002020586383,
+            "site_person_mean": 6.263615177816409,
+            "median": 6.231732306553694,
+            "p90": 12.88660424199369,
+            "gt5": 0.5592105263157895,
+            "gt10": 0.18421052631578946,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.3928954000002705,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.921923409692698,
+        "image_mean": 8.155107258822586,
+        "site_person_mean": 7.912158866003483,
+        "median": 7.047804688699808,
+        "p90": 14.213960812446365,
+        "gt5": 0.7327586206896551,
+        "gt10": 0.27155172413793105,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.864506858000835,
+            "image_mean": 6.860568986369936,
+            "site_person_mean": 6.864506858000835,
+            "median": 5.94541391595236,
+            "p90": 10.126021992114314,
+            "gt5": 0.6875,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 8.450631685538628,
+            "image_mean": 8.836443191692405,
+            "site_person_mean": 8.435984870004807,
+            "median": 8.407519582075109,
+            "p90": 15.140257408042494,
+            "gt5": 0.756578947368421,
+            "gt10": 0.35526315789473684,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.09975409996695817,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.495968788830325,
+        "image_mean": 6.700346268292488,
+        "site_person_mean": 6.51559777465512,
+        "median": 6.051239728253254,
+        "p90": 11.220688605351338,
+        "gt5": 0.6120689655172413,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.437844034299163,
+            "image_mean": 6.348029816666228,
+            "site_person_mean": 6.437844034299163,
+            "median": 5.516977052729929,
+            "p90": 9.976775914101577,
+            "gt5": 0.5875,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.525031166095907,
+            "image_mean": 6.8857759796747295,
+            "site_person_mean": 6.554474644833098,
+            "median": 6.325775581975243,
+            "p90": 11.75586086972541,
+            "gt5": 0.625,
+            "gt10": 0.17105263157894737,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.3650101000093855,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.822367847344129,
+        "image_mean": 6.057822168665058,
+        "site_person_mean": 5.850519179045555,
+        "median": 5.0490915111890535,
+        "p90": 11.534017970108385,
+        "gt5": 0.5086206896551724,
+        "gt10": 0.14224137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.5680175596810795,
+            "image_mean": 5.523834683328535,
+            "site_person_mean": 5.5680175596810795,
+            "median": 4.464778372814448,
+            "p90": 10.056058290568728,
+            "gt5": 0.4125,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.9495429911756545,
+            "image_mean": 6.338868213579016,
+            "site_person_mean": 5.991769988727793,
+            "median": 5.821794769207758,
+            "p90": 12.163714261927256,
+            "gt5": 0.5592105263157895,
+            "gt10": 0.15789473684210525,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.3951856999774463,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.878509727191166,
+        "image_mean": 8.123820092477299,
+        "site_person_mean": 7.8687445144143915,
+        "median": 7.445139842367675,
+        "p90": 13.761899826676842,
+        "gt5": 0.7068965517241379,
+        "gt10": 0.2629310344827586,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.115218224822414,
+            "image_mean": 7.125617819284775,
+            "site_person_mean": 7.115218224822414,
+            "median": 6.792647552510914,
+            "p90": 10.818222859871291,
+            "gt5": 0.6875,
+            "gt10": 0.15,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 8.260155478375543,
+            "image_mean": 8.649189709947048,
+            "site_person_mean": 8.24550765921038,
+            "median": 8.29306794262218,
+            "p90": 14.094103917613618,
+            "gt5": 0.7171052631578947,
+            "gt10": 0.3223684210526316,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08135320001747459,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 6.629876308492775,
+        "image_mean": 6.877959445112744,
+        "site_person_mean": 6.645610374795588,
+        "median": 6.253952635745918,
+        "p90": 10.943376640457686,
+        "gt5": 0.6293103448275862,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 6.297755659462478,
+            "image_mean": 6.220884505348247,
+            "site_person_mean": 6.297755659462478,
+            "median": 5.599403741826308,
+            "p90": 9.362911265575688,
+            "gt5": 0.5625,
+            "gt10": 0.0625,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.795936633007921,
+            "image_mean": 7.223788360778267,
+            "site_person_mean": 6.819537732462141,
+            "median": 7.180875120820575,
+            "p90": 12.031342567490327,
+            "gt5": 0.6644736842105263,
+            "gt10": 0.19078947368421054,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.325441499997396,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 5.796337772546024,
+        "image_mean": 6.013334041824029,
+        "site_person_mean": 5.824220329823588,
+        "median": 4.7612621993231,
+        "p90": 11.755293329862818,
+        "gt5": 0.49137931034482757,
+        "gt10": 0.15948275862068967,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.511206947844122,
+            "image_mean": 5.4718228429498375,
+            "site_person_mean": 5.511206947844123,
+            "median": 4.317420513433806,
+            "p90": 10.334533171312412,
+            "gt5": 0.4125,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.938903184896975,
+            "image_mean": 6.29833993596834,
+            "site_person_mean": 5.980727020813322,
+            "median": 5.642621186177111,
+            "p90": 13.006003767912938,
+            "gt5": 0.5328947368421053,
+            "gt10": 0.18421052631578946,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.295015899988357,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.87657022733559,
+        "image_mean": 6.095267096745621,
+        "site_person_mean": 5.900922003560318,
+        "median": 4.877578622795243,
+        "p90": 11.811766173393888,
+        "gt5": 0.4870689655172414,
+        "gt10": 0.14655172413793102,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.404588283543385,
+            "image_mean": 5.383304393065137,
+            "site_person_mean": 5.404588283543386,
+            "median": 4.163311848692225,
+            "p90": 9.77732816013937,
+            "gt5": 0.3875,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.112561199231692,
+            "image_mean": 6.469984309209035,
+            "site_person_mean": 6.1490888635687835,
+            "median": 5.886645071103044,
+            "p90": 12.766480689330542,
+            "gt5": 0.5394736842105263,
+            "gt10": 0.17105263157894737,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.08296939998399466,
+      "inherited_fit_seconds": 2.5007492000004277,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.956190933057424,
+        "image_mean": 6.167517489940492,
+        "site_person_mean": 5.981114507440673,
+        "median": 4.8676745100173235,
+        "p90": 12.123968476579282,
+        "gt5": 0.4956896551724138,
+        "gt10": 0.16379310344827586,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.479391008077352,
+            "image_mean": 5.455706502232256,
+            "site_person_mean": 5.479391008077352,
+            "median": 4.227487016544331,
+            "p90": 9.92682023893816,
+            "gt5": 0.4,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.19459089554746,
+            "image_mean": 6.542154851892196,
+            "site_person_mean": 6.231976257122335,
+            "median": 5.748470306749319,
+            "p90": 13.100686781104537,
+            "gt5": 0.5460526315789473,
+            "gt10": 0.19736842105263158,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.32160549995023757,
+      "inherited_fit_seconds": 2.5007492000004277,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.742538824104173,
+        "image_mean": 5.971239042337816,
+        "site_person_mean": 5.764567595465704,
+        "median": 4.683515283345647,
+        "p90": 11.457839616660621,
+        "gt5": 0.47413793103448276,
+        "gt10": 0.14224137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.265881382611292,
+            "image_mean": 5.25266852246485,
+            "site_person_mean": 5.265881382611292,
+            "median": 4.180782904221841,
+            "p90": 9.709481396259537,
+            "gt5": 0.35,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.980867544850614,
+            "image_mean": 6.349434052797271,
+            "site_person_mean": 6.01391070189291,
+            "median": 5.662696384128223,
+            "p90": 12.355771640029293,
+            "gt5": 0.5394736842105263,
+            "gt10": 0.16447368421052633,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.2830899999826215,
+      "inherited_fit_seconds": 2.5007492000004277,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.761369149983389,
+        "image_mean": 6.017155192345814,
+        "site_person_mean": 5.783001977623502,
+        "median": 4.8379842384235126,
+        "p90": 11.52995883453426,
+        "gt5": 0.4870689655172414,
+        "gt10": 0.16379310344827586,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.359775781157843,
+            "image_mean": 5.339797165201828,
+            "site_person_mean": 5.359775781157843,
+            "median": 3.966207564581925,
+            "p90": 10.135010700012307,
+            "gt5": 0.3875,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.962165834396163,
+            "image_mean": 6.3736594171584375,
+            "site_person_mean": 5.994615075856331,
+            "median": 5.62669375119954,
+            "p90": 12.909692185618448,
+            "gt5": 0.5394736842105263,
+            "gt10": 0.19078947368421054,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.07893980003427714,
+      "inherited_fit_seconds": 2.65289790002862,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.830857149234788,
+        "image_mean": 6.076003784184387,
+        "site_person_mean": 5.855776999728924,
+        "median": 4.760753420279851,
+        "p90": 11.810691280260436,
+        "gt5": 0.4870689655172414,
+        "gt10": 0.16379310344827586,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.440303096471881,
+            "image_mean": 5.420538055726624,
+            "site_person_mean": 5.440303096471881,
+            "median": 4.091188461633906,
+            "p90": 10.483056030692044,
+            "gt5": 0.4,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.026134175616241,
+            "image_mean": 6.420985746530577,
+            "site_person_mean": 6.0635139513574465,
+            "median": 5.6704956045366135,
+            "p90": 13.039339574656719,
+            "gt5": 0.5328947368421053,
+            "gt10": 0.19078947368421054,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.32288799999514595,
+      "inherited_fit_seconds": 2.65289790002862,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.647151142766503,
+        "image_mean": 5.908980598049981,
+        "site_person_mean": 5.666402551437365,
+        "median": 4.725766206851115,
+        "p90": 11.462075397743654,
+        "gt5": 0.47413793103448276,
+        "gt10": 0.15517241379310345,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.282239794837267,
+            "image_mean": 5.271158683059165,
+            "site_person_mean": 5.282239794837267,
+            "median": 3.957567955315274,
+            "p90": 10.060029403991628,
+            "gt5": 0.3625,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 5.82960681673112,
+            "image_mean": 6.244676342781989,
+            "site_person_mean": 5.858483929737414,
+            "median": 5.541578632270417,
+            "p90": 12.16473595112096,
+            "gt5": 0.5328947368421053,
+            "gt10": 0.17763157894736842,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.3025396000011824,
+      "inherited_fit_seconds": 2.65289790002862,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.936613060451388,
+        "image_mean": 6.147481944038581,
+        "site_person_mean": 5.96435925124409,
+        "median": 4.741132077777819,
+        "p90": 12.28823240496018,
+        "gt5": 0.4870689655172414,
+        "gt10": 0.1724137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.407267104077059,
+            "image_mean": 5.374995222686124,
+            "site_person_mean": 5.407267104077058,
+            "median": 4.297526262588458,
+            "p90": 10.058716917288372,
+            "gt5": 0.3875,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.201286038638552,
+            "image_mean": 6.554053902645139,
+            "site_person_mean": 6.242905324827605,
+            "median": 5.746578246218213,
+            "p90": 13.293490032988672,
+            "gt5": 0.5394736842105263,
+            "gt10": 0.21052631578947367,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.0837100999779068,
+      "inherited_fit_seconds": 2.4503465000307187,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 6.034357173673378,
+        "image_mean": 6.263761545404351,
+        "site_person_mean": 6.061818026142504,
+        "median": 4.861046762733933,
+        "p90": 12.313058703773331,
+        "gt5": 0.49137931034482757,
+        "gt10": 0.1724137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.323302505147975,
+            "image_mean": 5.295999724797176,
+            "site_person_mean": 5.323302505147975,
+            "median": 4.283732142189487,
+            "p90": 9.772686276843634,
+            "gt5": 0.375,
+            "gt10": 0.1,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.389884507936078,
+            "image_mean": 6.773109872039706,
+            "site_person_mean": 6.431075786639768,
+            "median": 6.157174794566449,
+            "p90": 13.214366369036886,
+            "gt5": 0.5526315789473685,
+            "gt10": 0.21052631578947367,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 0.31943829997908324,
+      "inherited_fit_seconds": 2.4503465000307187,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "mixed",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 5.945888693012242,
+        "image_mean": 6.145411369656687,
+        "site_person_mean": 5.972141532834503,
+        "median": 4.7413076856043155,
+        "p90": 12.787732267864278,
+        "gt5": 0.47844827586206895,
+        "gt10": 0.17672413793103448,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 5.265429870424812,
+            "image_mean": 5.236593104680122,
+            "site_person_mean": 5.265429870424812,
+            "median": 4.007078969674273,
+            "p90": 10.10391323462323,
+            "gt5": 0.3625,
+            "gt10": 0.1125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 6.286118104305956,
+            "image_mean": 6.62373677227593,
+            "site_person_mean": 6.325497364039351,
+            "median": 6.018619510943036,
+            "p90": 13.459032821088432,
+            "gt5": 0.5394736842105263,
+            "gt10": 0.21052631578947367,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      },
+      "adapt_seconds": 1.2721253999625333,
+      "inherited_fit_seconds": 2.4503465000307187,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.631650299292573,
+        "image_mean": 8.564940929370731,
+        "site_person_mean": 8.620515035606218,
+        "median": 7.705902509850869,
+        "p90": 13.980121945498727,
+        "gt5": 0.807153965785381,
+        "gt10": 0.27060653188180406,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.631650299292573,
+            "image_mean": 8.564940929370731,
+            "site_person_mean": 8.620515035606218,
+            "median": 7.705902509850869,
+            "p90": 13.980121945498727,
+            "gt5": 0.807153965785381,
+            "gt10": 0.27060653188180406,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.07700920000206679,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.275610050129314,
+        "image_mean": 8.454636471055755,
+        "site_person_mean": 8.285174782529447,
+        "median": 7.823981264599842,
+        "p90": 13.719660766459315,
+        "gt5": 0.8149300155520995,
+        "gt10": 0.3141524105754277,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.275610050129314,
+            "image_mean": 8.454636471055755,
+            "site_person_mean": 8.285174782529447,
+            "median": 7.823981264599842,
+            "p90": 13.719660766459315,
+            "gt5": 0.8149300155520995,
+            "gt10": 0.3141524105754277,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3263145000091754,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.829782351660878,
+        "image_mean": 9.848383748786139,
+        "site_person_mean": 9.845615726777734,
+        "median": 9.573287076527555,
+        "p90": 14.323147421478959,
+        "gt5": 0.9222395023328149,
+        "gt10": 0.4525660964230171,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.829782351660878,
+            "image_mean": 9.848383748786139,
+            "site_person_mean": 9.845615726777734,
+            "median": 9.573287076527555,
+            "p90": 14.323147421478959,
+            "gt5": 0.9222395023328149,
+            "gt10": 0.4525660964230171,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.3546902000089176,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.719497232563796,
+        "image_mean": 8.719967889900083,
+        "site_person_mean": 8.713615192074695,
+        "median": 8.013123295992912,
+        "p90": 14.772987890196262,
+        "gt5": 0.8102643856920684,
+        "gt10": 0.31726283048211507,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.719497232563796,
+            "image_mean": 8.719967889900083,
+            "site_person_mean": 8.713615192074695,
+            "median": 8.013123295992912,
+            "p90": 14.772987890196262,
+            "gt5": 0.8102643856920684,
+            "gt10": 0.31726283048211507,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08784359996207058,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.323695288698048,
+        "image_mean": 8.520941560660418,
+        "site_person_mean": 8.336750870296676,
+        "median": 8.117826640115409,
+        "p90": 13.541205175870823,
+        "gt5": 0.8133748055987559,
+        "gt10": 0.2986003110419907,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.323695288698048,
+            "image_mean": 8.520941560660418,
+            "site_person_mean": 8.336750870296676,
+            "median": 8.117826640115409,
+            "p90": 13.541205175870823,
+            "gt5": 0.8133748055987559,
+            "gt10": 0.2986003110419907,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.36876799998572096,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.971085054139586,
+        "image_mean": 9.937677818848643,
+        "site_person_mean": 9.984933161578049,
+        "median": 9.681315847034602,
+        "p90": 14.69500137376109,
+        "gt5": 0.9129082426127527,
+        "gt10": 0.46500777604976673,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.971085054139586,
+            "image_mean": 9.937677818848643,
+            "site_person_mean": 9.984933161578049,
+            "median": 9.681315847034602,
+            "p90": 14.69500137376109,
+            "gt5": 0.9129082426127527,
+            "gt10": 0.46500777604976673,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.395712099969387,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.980847433928993,
+        "image_mean": 9.823120863346878,
+        "site_person_mean": 9.972610078379535,
+        "median": 8.81792592872103,
+        "p90": 16.470454654191315,
+        "gt5": 0.8709175738724728,
+        "gt10": 0.39346811819595645,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.980847433928993,
+            "image_mean": 9.823120863346878,
+            "site_person_mean": 9.972610078379535,
+            "median": 8.81792592872103,
+            "p90": 16.470454654191315,
+            "gt5": 0.8709175738724728,
+            "gt10": 0.39346811819595645,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08169119997182861,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.15979577771726,
+        "image_mean": 9.464079245472766,
+        "site_person_mean": 9.17115023478744,
+        "median": 9.10788850830152,
+        "p90": 14.652809053074316,
+        "gt5": 0.8911353032659409,
+        "gt10": 0.4276827371695179,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.15979577771726,
+            "image_mean": 9.464079245472766,
+            "site_person_mean": 9.17115023478744,
+            "median": 9.10788850830152,
+            "p90": 14.652809053074316,
+            "gt5": 0.8911353032659409,
+            "gt10": 0.4276827371695179,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3365438000182621,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 10.108422199756426,
+        "image_mean": 10.122516539793555,
+        "site_person_mean": 10.117069681917911,
+        "median": 9.766110521220057,
+        "p90": 14.81943278470625,
+        "gt5": 0.926905132192846,
+        "gt10": 0.46967340590979784,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.108422199756426,
+            "image_mean": 10.122516539793555,
+            "site_person_mean": 10.117069681917911,
+            "median": 9.766110521220057,
+            "p90": 14.81943278470625,
+            "gt5": 0.926905132192846,
+            "gt10": 0.46967340590979784,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.3622890000115149,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.901910341253382,
+        "image_mean": 7.811343826908,
+        "site_person_mean": 7.8922782089826296,
+        "median": 7.022151675928767,
+        "p90": 12.287687331626344,
+        "gt5": 0.7729393468118196,
+        "gt10": 0.18506998444790046,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 7.901910341253382,
+            "image_mean": 7.811343826908,
+            "site_person_mean": 7.8922782089826296,
+            "median": 7.022151675928767,
+            "p90": 12.287687331626344,
+            "gt5": 0.7729393468118196,
+            "gt10": 0.18506998444790046,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.07917529996484518,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.502564178612001,
+        "image_mean": 8.395912345210183,
+        "site_person_mean": 8.509669995668423,
+        "median": 8.102918883631808,
+        "p90": 13.103515644397502,
+        "gt5": 0.8506998444790047,
+        "gt10": 0.3001555209953344,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.502564178612001,
+            "image_mean": 8.395912345210183,
+            "site_person_mean": 8.509669995668423,
+            "median": 8.102918883631808,
+            "p90": 13.103515644397502,
+            "gt5": 0.8506998444790047,
+            "gt10": 0.3001555209953344,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.32555329997558147,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 10.69725198318657,
+        "image_mean": 10.273941275833813,
+        "site_person_mean": 10.721705133880612,
+        "median": 9.42444799194765,
+        "p90": 16.164069331723717,
+        "gt5": 0.9097978227060654,
+        "gt10": 0.4510108864696734,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.69725198318657,
+            "image_mean": 10.273941275833813,
+            "site_person_mean": 10.721705133880612,
+            "median": 9.42444799194765,
+            "p90": 16.164069331723717,
+            "gt5": 0.9097978227060654,
+            "gt10": 0.4510108864696734,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.291782999993302,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.950604969142614,
+        "image_mean": 7.833512044425908,
+        "site_person_mean": 7.939350383049394,
+        "median": 7.071573874164871,
+        "p90": 12.283939217932845,
+        "gt5": 0.8118195956454122,
+        "gt10": 0.19906687402799378,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 7.950604969142614,
+            "image_mean": 7.833512044425908,
+            "site_person_mean": 7.939350383049394,
+            "median": 7.071573874164871,
+            "p90": 12.283939217932845,
+            "gt5": 0.8118195956454122,
+            "gt10": 0.19906687402799378,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08212919998914003,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.24457185776006,
+        "image_mean": 7.424861381887276,
+        "site_person_mean": 7.256971525091059,
+        "median": 6.990539487679134,
+        "p90": 11.770433574397318,
+        "gt5": 0.7698289269051322,
+        "gt10": 0.19751166407465007,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 7.24457185776006,
+            "image_mean": 7.424861381887276,
+            "site_person_mean": 7.256971525091059,
+            "median": 6.990539487679134,
+            "p90": 11.770433574397318,
+            "gt5": 0.7698289269051322,
+            "gt10": 0.19751166407465007,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3246295999852009,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.234885008385685,
+        "image_mean": 9.175428501510702,
+        "site_person_mean": 9.252740041529812,
+        "median": 8.993097923354831,
+        "p90": 13.172257169619463,
+        "gt5": 0.9020217729393468,
+        "gt10": 0.39035769828926903,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.234885008385685,
+            "image_mean": 9.175428501510702,
+            "site_person_mean": 9.252740041529812,
+            "median": 8.993097923354831,
+            "p90": 13.172257169619463,
+            "gt5": 0.9020217729393468,
+            "gt10": 0.39035769828926903,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.2702217000187375,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.143070061378546,
+        "image_mean": 8.952215045812059,
+        "site_person_mean": 9.13166245879665,
+        "median": 8.172937177921243,
+        "p90": 13.397219032924582,
+        "gt5": 0.9237947122861586,
+        "gt10": 0.25194401244167963,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.143070061378546,
+            "image_mean": 8.952215045812059,
+            "site_person_mean": 9.13166245879665,
+            "median": 8.172937177921243,
+            "p90": 13.397219032924582,
+            "gt5": 0.9237947122861586,
+            "gt10": 0.25194401244167963,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.0825922999647446,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.111220647886386,
+        "image_mean": 8.369654488323095,
+        "site_person_mean": 8.127459255768159,
+        "median": 8.202984378759796,
+        "p90": 12.60946167203792,
+        "gt5": 0.8429237947122862,
+        "gt10": 0.27838258164852253,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.111220647886386,
+            "image_mean": 8.369654488323095,
+            "site_person_mean": 8.127459255768159,
+            "median": 8.202984378759796,
+            "p90": 12.60946167203792,
+            "gt5": 0.8429237947122862,
+            "gt10": 0.27838258164852253,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.31726769998203963,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.378838486288121,
+        "image_mean": 9.326952312756356,
+        "site_person_mean": 9.397506056732773,
+        "median": 9.098204547517296,
+        "p90": 13.434334228524214,
+        "gt5": 0.9191290824261276,
+        "gt10": 0.37791601866251945,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.378838486288121,
+            "image_mean": 9.326952312756356,
+            "site_person_mean": 9.397506056732773,
+            "median": 9.098204547517296,
+            "p90": 13.434334228524214,
+            "gt5": 0.9191290824261276,
+            "gt10": 0.37791601866251945,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.2635586999822408,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.68177308356463,
+        "image_mean": 7.711097734259777,
+        "site_person_mean": 7.704150908023115,
+        "median": 7.311398850898667,
+        "p90": 11.954306226908326,
+        "gt5": 0.7791601866251944,
+        "gt10": 0.24416796267496113,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 7.68177308356463,
+            "image_mean": 7.711097734259777,
+            "site_person_mean": 7.704150908023115,
+            "median": 7.311398850898667,
+            "p90": 11.954306226908326,
+            "gt5": 0.7791601866251944,
+            "gt10": 0.24416796267496113,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08215349999954924,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.998674930927749,
+        "image_mean": 8.756978118931418,
+        "site_person_mean": 9.00594468220478,
+        "median": 8.375074065650432,
+        "p90": 13.554342200299397,
+        "gt5": 0.8491446345256609,
+        "gt10": 0.3312597200622084,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.998674930927749,
+            "image_mean": 8.756978118931418,
+            "site_person_mean": 9.00594468220478,
+            "median": 8.375074065650432,
+            "p90": 13.554342200299397,
+            "gt5": 0.8491446345256609,
+            "gt10": 0.3312597200622084,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.31744349998189136,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 11.238812760485764,
+        "image_mean": 10.775273386324885,
+        "site_person_mean": 11.265603813011811,
+        "median": 9.72773417084664,
+        "p90": 17.306216200945872,
+        "gt5": 0.9253499222395023,
+        "gt10": 0.48055987558320373,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 11.238812760485764,
+            "image_mean": 10.775273386324885,
+            "site_person_mean": 11.265603813011811,
+            "median": 9.72773417084664,
+            "p90": 17.306216200945872,
+            "gt5": 0.9253499222395023,
+            "gt10": 0.48055987558320373,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.2707511999760754,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.711708980135677,
+        "image_mean": 7.788099579638074,
+        "site_person_mean": 7.733113313619188,
+        "median": 7.50330296007469,
+        "p90": 11.966144083784199,
+        "gt5": 0.7900466562986003,
+        "gt10": 0.2410575427682737,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 7.711708980135677,
+            "image_mean": 7.788099579638074,
+            "site_person_mean": 7.733113313619188,
+            "median": 7.50330296007469,
+            "p90": 11.966144083784199,
+            "gt5": 0.7900466562986003,
+            "gt10": 0.2410575427682737,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.07928329997230321,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 7.512896046646427,
+        "image_mean": 7.552202676749362,
+        "site_person_mean": 7.528125586456122,
+        "median": 7.394738391690376,
+        "p90": 11.66587883184176,
+        "gt5": 0.7838258164852255,
+        "gt10": 0.19751166407465007,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 7.512896046646427,
+            "image_mean": 7.552202676749362,
+            "site_person_mean": 7.528125586456122,
+            "median": 7.394738391690376,
+            "p90": 11.66587883184176,
+            "gt5": 0.7838258164852255,
+            "gt10": 0.19751166407465007,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3143288999563083,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.839026124901753,
+        "image_mean": 9.653354260381423,
+        "site_person_mean": 9.858834152266837,
+        "median": 9.274471698325131,
+        "p90": 14.316803537343194,
+        "gt5": 0.9004665629860031,
+        "gt10": 0.43390357698289267,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.839026124901753,
+            "image_mean": 9.653354260381423,
+            "site_person_mean": 9.858834152266837,
+            "median": 9.274471698325131,
+            "p90": 14.316803537343194,
+            "gt5": 0.9004665629860031,
+            "gt10": 0.43390357698289267,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.2551856999634765,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.214767516881551,
+        "image_mean": 8.274990985903784,
+        "site_person_mean": 8.230283791305387,
+        "median": 7.778994224784171,
+        "p90": 12.16431850138805,
+        "gt5": 0.8771384136858476,
+        "gt10": 0.2690513219284603,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.214767516881551,
+            "image_mean": 8.274990985903784,
+            "site_person_mean": 8.230283791305387,
+            "median": 7.778994224784171,
+            "p90": 12.16431850138805,
+            "gt5": 0.8771384136858476,
+            "gt10": 0.2690513219284603,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08491570001933724,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.633254454715289,
+        "image_mean": 8.703060254158231,
+        "site_person_mean": 8.649292242493374,
+        "median": 8.570307533417642,
+        "p90": 13.095160493562458,
+        "gt5": 0.8538102643856921,
+        "gt10": 0.3405909797822706,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.633254454715289,
+            "image_mean": 8.703060254158231,
+            "site_person_mean": 8.649292242493374,
+            "median": 8.570307533417642,
+            "p90": 13.095160493562458,
+            "gt5": 0.8538102643856921,
+            "gt10": 0.3405909797822706,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.36273470002925023,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.945076939251766,
+        "image_mean": 9.845709773071231,
+        "site_person_mean": 9.96186856718477,
+        "median": 9.372746801227422,
+        "p90": 14.46610648220447,
+        "gt5": 0.9191290824261276,
+        "gt10": 0.4510108864696734,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.945076939251766,
+            "image_mean": 9.845709773071231,
+            "site_person_mean": 9.96186856718477,
+            "median": 9.372746801227422,
+            "p90": 14.46610648220447,
+            "gt5": 0.9191290824261276,
+            "gt10": 0.4510108864696734,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.4128849999979138,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.195137378136542,
+        "image_mean": 8.241325725291434,
+        "site_person_mean": 8.191520183641579,
+        "median": 7.589979090803154,
+        "p90": 13.296860329088771,
+        "gt5": 0.8367029548989113,
+        "gt10": 0.25038880248833595,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.195137378136542,
+            "image_mean": 8.241325725291434,
+            "site_person_mean": 8.191520183641579,
+            "median": 7.589979090803154,
+            "p90": 13.296860329088771,
+            "gt5": 0.8367029548989113,
+            "gt10": 0.25038880248833595,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.09855170000810176,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.121025465185063,
+        "image_mean": 8.310032106175068,
+        "site_person_mean": 8.13863498592548,
+        "median": 8.085048297477515,
+        "p90": 12.918668350009563,
+        "gt5": 0.8273716951788491,
+        "gt10": 0.28149300155520995,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.121025465185063,
+            "image_mean": 8.310032106175068,
+            "site_person_mean": 8.13863498592548,
+            "median": 8.085048297477515,
+            "p90": 12.918668350009563,
+            "gt5": 0.8273716951788491,
+            "gt10": 0.28149300155520995,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3597779999836348,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.941067576270058,
+        "image_mean": 9.803971316250363,
+        "site_person_mean": 9.957081697663197,
+        "median": 9.554096259527157,
+        "p90": 14.35444758098831,
+        "gt5": 0.9082426127527217,
+        "gt10": 0.4665629860031104,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.941067576270058,
+            "image_mean": 9.803971316250363,
+            "site_person_mean": 9.957081697663197,
+            "median": 9.554096259527157,
+            "p90": 14.35444758098831,
+            "gt5": 0.9082426127527217,
+            "gt10": 0.4665629860031104,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.4277967000380158,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.242583741038352,
+        "image_mean": 8.287944388515317,
+        "site_person_mean": 8.234014657276646,
+        "median": 7.646396199467776,
+        "p90": 13.274010891941339,
+        "gt5": 0.8164852255054432,
+        "gt10": 0.26127527216174184,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.242583741038352,
+            "image_mean": 8.287944388515317,
+            "site_person_mean": 8.234014657276646,
+            "median": 7.646396199467776,
+            "p90": 13.274010891941339,
+            "gt5": 0.8164852255054432,
+            "gt10": 0.26127527216174184,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.09880279999924824,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.475032037840933,
+        "image_mean": 8.676583589709901,
+        "site_person_mean": 8.492116434197438,
+        "median": 8.449580177580653,
+        "p90": 13.417620411123833,
+        "gt5": 0.8584758942457231,
+        "gt10": 0.3141524105754277,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.475032037840933,
+            "image_mean": 8.676583589709901,
+            "site_person_mean": 8.492116434197438,
+            "median": 8.449580177580653,
+            "p90": 13.417620411123833,
+            "gt5": 0.8584758942457231,
+            "gt10": 0.3141524105754277,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3626431000302546,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.965967884248139,
+        "image_mean": 9.788063470131101,
+        "site_person_mean": 9.976892528269826,
+        "median": 9.570544436689287,
+        "p90": 14.673584333207865,
+        "gt5": 0.9129082426127527,
+        "gt10": 0.45412130637636083,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.965967884248139,
+            "image_mean": 9.788063470131101,
+            "site_person_mean": 9.976892528269826,
+            "median": 9.570544436689287,
+            "p90": 14.673584333207865,
+            "gt5": 0.9129082426127527,
+            "gt10": 0.45412130637636083,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.4341575999860652,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.411000346252418,
+        "image_mean": 8.49290746800026,
+        "site_person_mean": 8.405873726296004,
+        "median": 8.084535354176941,
+        "p90": 13.259019661300917,
+        "gt5": 0.8615863141524106,
+        "gt10": 0.27682737169517885,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.411000346252418,
+            "image_mean": 8.49290746800026,
+            "site_person_mean": 8.405873726296004,
+            "median": 8.084535354176941,
+            "p90": 13.259019661300917,
+            "gt5": 0.8615863141524106,
+            "gt10": 0.27682737169517885,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08895269996719435,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 8.726509159874196,
+        "image_mean": 8.97977620468851,
+        "site_person_mean": 8.746449835702602,
+        "median": 8.724198206157947,
+        "p90": 13.47773905731779,
+        "gt5": 0.8849144634525661,
+        "gt10": 0.35769828926905134,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 8.726509159874196,
+            "image_mean": 8.97977620468851,
+            "site_person_mean": 8.746449835702602,
+            "median": 8.724198206157947,
+            "p90": 13.47773905731779,
+            "gt5": 0.8849144634525661,
+            "gt10": 0.35769828926905134,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.35366919997613877,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.001,
+      "metrics": {
+        "person_mean": 9.386262853432779,
+        "image_mean": 9.445413789372019,
+        "site_person_mean": 9.406130460233959,
+        "median": 9.198966958300915,
+        "p90": 13.764234931740397,
+        "gt5": 0.9004665629860031,
+        "gt10": 0.4059097978227061,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 9.386262853432779,
+            "image_mean": 9.445413789372019,
+            "site_person_mean": 9.406130460233959,
+            "median": 9.198966958300915,
+            "p90": 13.764234931740397,
+            "gt5": 0.9004665629860031,
+            "gt10": 0.4059097978227061,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.3898215999943204,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.266541262703003,
+        "image_mean": 10.131310295411629,
+        "site_person_mean": 10.292368883200757,
+        "median": 9.598405368923771,
+        "p90": 15.222265176674373,
+        "gt5": 0.9144634525660964,
+        "gt10": 0.4618973561430793,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.266541262703003,
+            "image_mean": 10.131310295411629,
+            "site_person_mean": 10.292368883200757,
+            "median": 9.598405368923771,
+            "p90": 15.222265176674373,
+            "gt5": 0.9144634525660964,
+            "gt10": 0.4618973561430793,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08182020002277568,
+      "inherited_fit_seconds": 2.5981050999835134,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.057253072602926,
+        "image_mean": 9.900024869741026,
+        "site_person_mean": 10.082980792005195,
+        "median": 9.380537107669142,
+        "p90": 14.886340538063312,
+        "gt5": 0.9082426127527217,
+        "gt10": 0.4463452566096423,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.057253072602926,
+            "image_mean": 9.900024869741026,
+            "site_person_mean": 10.082980792005195,
+            "median": 9.380537107669142,
+            "p90": 14.886340538063312,
+            "gt5": 0.9082426127527217,
+            "gt10": 0.4463452566096423,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.3149476000107825,
+      "inherited_fit_seconds": 2.5981050999835134,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.412495125776363,
+        "image_mean": 10.23272487338793,
+        "site_person_mean": 10.441397712973767,
+        "median": 9.596068206016705,
+        "p90": 15.605013562963821,
+        "gt5": 0.9082426127527217,
+        "gt10": 0.46500777604976673,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.412495125776363,
+            "image_mean": 10.23272487338793,
+            "site_person_mean": 10.441397712973767,
+            "median": 9.596068206016705,
+            "p90": 15.605013562963821,
+            "gt5": 0.9082426127527217,
+            "gt10": 0.46500777604976673,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.258137800032273,
+      "inherited_fit_seconds": 2.5981050999835134,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.605413875312905,
+        "image_mean": 10.478098206187,
+        "site_person_mean": 10.626116446513343,
+        "median": 10.150553627450739,
+        "p90": 15.61479003915675,
+        "gt5": 0.9160186625194401,
+        "gt10": 0.5163297045101088,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.605413875312905,
+            "image_mean": 10.478098206187,
+            "site_person_mean": 10.626116446513343,
+            "median": 10.150553627450739,
+            "p90": 15.61479003915675,
+            "gt5": 0.9160186625194401,
+            "gt10": 0.5163297045101088,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.08237860002554953,
+      "inherited_fit_seconds": 2.5694153000367805,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.33130794052278,
+        "image_mean": 10.167599811439823,
+        "site_person_mean": 10.351408292167408,
+        "median": 9.824553173503123,
+        "p90": 15.327417436397893,
+        "gt5": 0.9082426127527217,
+        "gt10": 0.4867807153965785,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.33130794052278,
+            "image_mean": 10.167599811439823,
+            "site_person_mean": 10.351408292167408,
+            "median": 9.824553173503123,
+            "p90": 15.327417436397893,
+            "gt5": 0.9082426127527217,
+            "gt10": 0.4867807153965785,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.32800809998298064,
+      "inherited_fit_seconds": 2.5694153000367805,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.750293075073092,
+        "image_mean": 10.514533478412483,
+        "site_person_mean": 10.774401320043104,
+        "median": 10.06432708325714,
+        "p90": 15.816011475661902,
+        "gt5": 0.9066874027993779,
+        "gt10": 0.505443234836703,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.750293075073092,
+            "image_mean": 10.514533478412483,
+            "site_person_mean": 10.774401320043104,
+            "median": 10.06432708325714,
+            "p90": 15.816011475661902,
+            "gt5": 0.9066874027993779,
+            "gt10": 0.505443234836703,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.3407811999786645,
+      "inherited_fit_seconds": 2.5694153000367805,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.16755563880146,
+        "image_mean": 10.033734780350537,
+        "site_person_mean": 10.184358261537032,
+        "median": 9.562624221394493,
+        "p90": 15.055817234899692,
+        "gt5": 0.9097978227060654,
+        "gt10": 0.4525660964230171,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.16755563880146,
+            "image_mean": 10.033734780350537,
+            "site_person_mean": 10.184358261537032,
+            "median": 9.562624221394493,
+            "p90": 15.055817234899692,
+            "gt5": 0.9097978227060654,
+            "gt10": 0.4525660964230171,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.0846531999995932,
+      "inherited_fit_seconds": 2.716830499994103,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.024199248846104,
+        "image_mean": 9.883236761153954,
+        "site_person_mean": 10.039029035981313,
+        "median": 9.456941572069196,
+        "p90": 14.762713854540824,
+        "gt5": 0.9051321928460342,
+        "gt10": 0.4416796267496112,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.024199248846104,
+            "image_mean": 9.883236761153954,
+            "site_person_mean": 10.039029035981313,
+            "median": 9.456941572069196,
+            "p90": 14.762713854540824,
+            "gt5": 0.9051321928460342,
+            "gt10": 0.4416796267496112,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 0.34738529997412115,
+      "inherited_fit_seconds": 2.716830499994103,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.0003,
+      "metrics": {
+        "person_mean": 10.156666663682408,
+        "image_mean": 9.979963922049112,
+        "site_person_mean": 10.174653014218672,
+        "median": 9.528598655033676,
+        "p90": 15.160216998467673,
+        "gt5": 0.9035769828926905,
+        "gt10": 0.45412130637636083,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 10.156666663682408,
+            "image_mean": 9.979963922049112,
+            "site_person_mean": 10.174653014218672,
+            "median": 9.528598655033676,
+            "p90": 15.160216998467673,
+            "gt5": 0.9035769828926905,
+            "gt10": 0.45412130637636083,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      },
+      "adapt_seconds": 1.3361665999982506,
+      "inherited_fit_seconds": 2.716830499994103,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.882892453196693,
+        "image_mean": 11.042878810940737,
+        "site_person_mean": 10.826676906318657,
+        "median": 9.949418419893934,
+        "p90": 18.945448505149354,
+        "gt5": 0.8513931888544891,
+        "gt10": 0.4984520123839009,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.882892453196693,
+            "image_mean": 11.042878810940737,
+            "site_person_mean": 10.826676906318657,
+            "median": 9.949418419893934,
+            "p90": 18.945448505149354,
+            "gt5": 0.8513931888544891,
+            "gt10": 0.4984520123839009,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.08035130001371726,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.742759355986324,
+        "image_mean": 8.794583417577599,
+        "site_person_mean": 8.768797917052936,
+        "median": 7.969883483974424,
+        "p90": 14.838900934060959,
+        "gt5": 0.8328173374613003,
+        "gt10": 0.3157894736842105,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.742759355986324,
+            "image_mean": 8.794583417577599,
+            "site_person_mean": 8.768797917052936,
+            "median": 7.969883483974424,
+            "p90": 14.838900934060959,
+            "gt5": 0.8328173374613003,
+            "gt10": 0.3157894736842105,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3132192000048235,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.201094400741601,
+        "image_mean": 10.321793508934553,
+        "site_person_mean": 10.203847134573179,
+        "median": 9.87657752550445,
+        "p90": 15.973254117246155,
+        "gt5": 0.891640866873065,
+        "gt10": 0.47678018575851394,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.201094400741601,
+            "image_mean": 10.321793508934553,
+            "site_person_mean": 10.203847134573179,
+            "median": 9.87657752550445,
+            "p90": 15.973254117246155,
+            "gt5": 0.891640866873065,
+            "gt10": 0.47678018575851394,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.3022700999863446,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.995753418029302,
+        "image_mean": 9.979721540766196,
+        "site_person_mean": 9.966200200700367,
+        "median": 9.094743713056268,
+        "p90": 16.455473950574895,
+        "gt5": 0.891640866873065,
+        "gt10": 0.4024767801857585,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.995753418029302,
+            "image_mean": 9.979721540766196,
+            "site_person_mean": 9.966200200700367,
+            "median": 9.094743713056268,
+            "p90": 16.455473950574895,
+            "gt5": 0.891640866873065,
+            "gt10": 0.4024767801857585,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.09027869999408722,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 7.626944939462315,
+        "image_mean": 7.610031236215669,
+        "site_person_mean": 7.654659753576261,
+        "median": 7.189712178581247,
+        "p90": 11.741668086410797,
+        "gt5": 0.7894736842105263,
+        "gt10": 0.19195046439628483,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.626944939462315,
+            "image_mean": 7.610031236215669,
+            "site_person_mean": 7.654659753576261,
+            "median": 7.189712178581247,
+            "p90": 11.741668086410797,
+            "gt5": 0.7894736842105263,
+            "gt10": 0.19195046439628483,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.35099810000974685,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.97467240272453,
+        "image_mean": 11.171088118355735,
+        "site_person_mean": 10.978783719558301,
+        "median": 9.987137441546905,
+        "p90": 19.170895366426578,
+        "gt5": 0.8854489164086687,
+        "gt10": 0.4984520123839009,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.97467240272453,
+            "image_mean": 11.171088118355735,
+            "site_person_mean": 10.978783719558301,
+            "median": 9.987137441546905,
+            "p90": 19.170895366426578,
+            "gt5": 0.8854489164086687,
+            "gt10": 0.4984520123839009,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.3454588999738917,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.031111280349604,
+        "image_mean": 9.03900813966332,
+        "site_person_mean": 9.040423912762538,
+        "median": 8.681854524688376,
+        "p90": 15.301721973787517,
+        "gt5": 0.8018575851393189,
+        "gt10": 0.4055727554179567,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.031111280349604,
+            "image_mean": 9.03900813966332,
+            "site_person_mean": 9.040423912762538,
+            "median": 8.681854524688376,
+            "p90": 15.301721973787517,
+            "gt5": 0.8018575851393189,
+            "gt10": 0.4055727554179567,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.08156189997680485,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 7.94540015390933,
+        "image_mean": 7.989464210525416,
+        "site_person_mean": 7.95970092351878,
+        "median": 7.690528476422736,
+        "p90": 11.686676290109135,
+        "gt5": 0.8513931888544891,
+        "gt10": 0.2043343653250774,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.94540015390933,
+            "image_mean": 7.989464210525416,
+            "site_person_mean": 7.95970092351878,
+            "median": 7.690528476422736,
+            "p90": 11.686676290109135,
+            "gt5": 0.8513931888544891,
+            "gt10": 0.2043343653250774,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3303345999447629,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "scratch",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 13.346867978698384,
+        "image_mean": 13.664900655011278,
+        "site_person_mean": 13.35082915689416,
+        "median": 10.513145894045337,
+        "p90": 26.463291056705785,
+        "gt5": 0.9071207430340558,
+        "gt10": 0.5386996904024768,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.346867978698384,
+            "image_mean": 13.664900655011278,
+            "site_person_mean": 13.35082915689416,
+            "median": 10.513145894045337,
+            "p90": 26.463291056705785,
+            "gt5": 0.9071207430340558,
+            "gt10": 0.5386996904024768,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.3100926999468356,
+      "inherited_fit_seconds": 0.0,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.890518168044734,
+        "image_mean": 11.045297223768458,
+        "site_person_mean": 10.858898045420109,
+        "median": 9.37662786456241,
+        "p90": 21.26660195053876,
+        "gt5": 0.8235294117647058,
+        "gt10": 0.43653250773993807,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.890518168044734,
+            "image_mean": 11.045297223768458,
+            "site_person_mean": 10.858898045420109,
+            "median": 9.37662786456241,
+            "p90": 21.26660195053876,
+            "gt5": 0.8235294117647058,
+            "gt10": 0.43653250773993807,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.0806066999793984,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.579924592375452,
+        "image_mean": 9.677816584436767,
+        "site_person_mean": 9.591774022499617,
+        "median": 8.870704212233543,
+        "p90": 15.318051337567896,
+        "gt5": 0.8885448916408669,
+        "gt10": 0.3684210526315789,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.579924592375452,
+            "image_mean": 9.677816584436767,
+            "site_person_mean": 9.591774022499617,
+            "median": 8.870704212233543,
+            "p90": 15.318051337567896,
+            "gt5": 0.8885448916408669,
+            "gt10": 0.3684210526315789,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.33083910000277683,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 12.37267331028626,
+        "image_mean": 12.610949300422488,
+        "site_person_mean": 12.36573334577859,
+        "median": 10.955422549022376,
+        "p90": 21.896557522636922,
+        "gt5": 0.9040247678018576,
+        "gt10": 0.5820433436532507,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 12.37267331028626,
+            "image_mean": 12.610949300422488,
+            "site_person_mean": 12.36573334577859,
+            "median": 10.955422549022376,
+            "p90": 21.896557522636922,
+            "gt5": 0.9040247678018576,
+            "gt10": 0.5820433436532507,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.272524699976202,
+      "inherited_fit_seconds": 3.6716831999947317,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.2214587891384,
+        "image_mean": 10.318831242699014,
+        "site_person_mean": 10.212438137151397,
+        "median": 8.722718470690507,
+        "p90": 18.351404137744865,
+        "gt5": 0.8390092879256966,
+        "gt10": 0.4148606811145511,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.2214587891384,
+            "image_mean": 10.318831242699014,
+            "site_person_mean": 10.212438137151397,
+            "median": 8.722718470690507,
+            "p90": 18.351404137744865,
+            "gt5": 0.8390092879256966,
+            "gt10": 0.4148606811145511,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.0825619000243023,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.130633789674249,
+        "image_mean": 8.154568884507619,
+        "site_person_mean": 8.14644261334431,
+        "median": 7.8418679216558225,
+        "p90": 12.23242720280596,
+        "gt5": 0.8606811145510835,
+        "gt10": 0.22910216718266255,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.130633789674249,
+            "image_mean": 8.154568884507619,
+            "site_person_mean": 8.14644261334431,
+            "median": 7.8418679216558225,
+            "p90": 12.23242720280596,
+            "gt5": 0.8606811145510835,
+            "gt10": 0.22910216718266255,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.31997780001256615,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.577906068934915,
+        "image_mean": 10.767401139955172,
+        "site_person_mean": 10.57706292280853,
+        "median": 9.262413012912635,
+        "p90": 18.293123554696834,
+        "gt5": 0.8792569659442725,
+        "gt10": 0.4520123839009288,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.577906068934915,
+            "image_mean": 10.767401139955172,
+            "site_person_mean": 10.57706292280853,
+            "median": 9.262413012912635,
+            "p90": 18.293123554696834,
+            "gt5": 0.8792569659442725,
+            "gt10": 0.4520123839009288,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.2660417000297457,
+      "inherited_fit_seconds": 2.6250261000241153,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.174633253709864,
+        "image_mean": 9.217859437164686,
+        "site_person_mean": 9.170070338046736,
+        "median": 9.007109821110323,
+        "p90": 15.328519947418004,
+        "gt5": 0.8111455108359134,
+        "gt10": 0.42105263157894735,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.174633253709864,
+            "image_mean": 9.217859437164686,
+            "site_person_mean": 9.170070338046736,
+            "median": 9.007109821110323,
+            "p90": 15.328519947418004,
+            "gt5": 0.8111455108359134,
+            "gt10": 0.42105263157894735,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.08420949999708682,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 7.9135939876051244,
+        "image_mean": 7.963432843122018,
+        "site_person_mean": 7.930875613385488,
+        "median": 7.611337677832172,
+        "p90": 11.52221323806364,
+        "gt5": 0.8452012383900929,
+        "gt10": 0.21671826625386997,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.9135939876051244,
+            "image_mean": 7.963432843122018,
+            "site_person_mean": 7.930875613385488,
+            "median": 7.611337677832172,
+            "p90": 11.52221323806364,
+            "gt5": 0.8452012383900929,
+            "gt10": 0.21671826625386997,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3176519999979064,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 11.627255808516788,
+        "image_mean": 11.81245902624695,
+        "site_person_mean": 11.648450128677837,
+        "median": 10.739588152884105,
+        "p90": 18.923831458124866,
+        "gt5": 0.9009287925696594,
+        "gt10": 0.5541795665634675,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 11.627255808516788,
+            "image_mean": 11.81245902624695,
+            "site_person_mean": 11.648450128677837,
+            "median": 10.739588152884105,
+            "p90": 18.923831458124866,
+            "gt5": 0.9009287925696594,
+            "gt10": 0.5541795665634675,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.260458899952937,
+      "inherited_fit_seconds": 2.318552600045223,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.137269595631885,
+        "image_mean": 9.156074347280349,
+        "site_person_mean": 9.15312859505951,
+        "median": 8.642424892905897,
+        "p90": 14.1367301037083,
+        "gt5": 0.8173374613003096,
+        "gt10": 0.3684210526315789,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.137269595631885,
+            "image_mean": 9.156074347280349,
+            "site_person_mean": 9.15312859505951,
+            "median": 8.642424892905897,
+            "p90": 14.1367301037083,
+            "gt5": 0.8173374613003096,
+            "gt10": 0.3684210526315789,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.08097289997385815,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.707411785358921,
+        "image_mean": 8.746700578532385,
+        "site_person_mean": 8.736484733912649,
+        "median": 8.494756430481875,
+        "p90": 12.957751033543424,
+        "gt5": 0.8947368421052632,
+        "gt10": 0.30030959752321984,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.707411785358921,
+            "image_mean": 8.746700578532385,
+            "site_person_mean": 8.736484733912649,
+            "median": 8.494756430481875,
+            "p90": 12.957751033543424,
+            "gt5": 0.8947368421052632,
+            "gt10": 0.30030959752321984,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.314217799983453,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 13.18253388010959,
+        "image_mean": 13.504824798986153,
+        "site_person_mean": 13.193436355296996,
+        "median": 10.768181745598337,
+        "p90": 24.720717828619463,
+        "gt5": 0.9102167182662538,
+        "gt10": 0.5696594427244582,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.18253388010959,
+            "image_mean": 13.504824798986153,
+            "site_person_mean": 13.193436355296996,
+            "median": 10.768181745598337,
+            "p90": 24.720717828619463,
+            "gt5": 0.9102167182662538,
+            "gt10": 0.5696594427244582,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.2552225000108592,
+      "inherited_fit_seconds": 2.5491560000227764,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.878210634430303,
+        "image_mean": 8.872698873852935,
+        "site_person_mean": 8.916465402139249,
+        "median": 8.277195055801718,
+        "p90": 13.828521280821596,
+        "gt5": 0.8359133126934984,
+        "gt10": 0.3188854489164087,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.878210634430303,
+            "image_mean": 8.872698873852935,
+            "site_person_mean": 8.916465402139249,
+            "median": 8.277195055801718,
+            "p90": 13.828521280821596,
+            "gt5": 0.8359133126934984,
+            "gt10": 0.3188854489164087,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.081059499992989,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.884354082239405,
+        "image_mean": 8.92642408693403,
+        "site_person_mean": 8.907475382894258,
+        "median": 8.129401191246581,
+        "p90": 13.787899714611822,
+        "gt5": 0.8761609907120743,
+        "gt10": 0.3157894736842105,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.884354082239405,
+            "image_mean": 8.92642408693403,
+            "site_person_mean": 8.907475382894258,
+            "median": 8.129401191246581,
+            "p90": 13.787899714611822,
+            "gt5": 0.8761609907120743,
+            "gt10": 0.3157894736842105,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.31856990000233054,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 13.278057562100546,
+        "image_mean": 13.65540716537512,
+        "site_person_mean": 13.279619241287376,
+        "median": 10.088069061242525,
+        "p90": 27.538185517911312,
+        "gt5": 0.8699690402476781,
+        "gt10": 0.5077399380804953,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.278057562100546,
+            "image_mean": 13.65540716537512,
+            "site_person_mean": 13.279619241287376,
+            "median": 10.088069061242525,
+            "p90": 27.538185517911312,
+            "gt5": 0.8699690402476781,
+            "gt10": 0.5077399380804953,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.2555552000412717,
+      "inherited_fit_seconds": 2.6380715000559576,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.426911373237541,
+        "image_mean": 9.443332320966423,
+        "site_person_mean": 9.46005525683571,
+        "median": 9.020493580998263,
+        "p90": 15.224540012035444,
+        "gt5": 0.8173374613003096,
+        "gt10": 0.4086687306501548,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.426911373237541,
+            "image_mean": 9.443332320966423,
+            "site_person_mean": 9.46005525683571,
+            "median": 9.020493580998263,
+            "p90": 15.224540012035444,
+            "gt5": 0.8173374613003096,
+            "gt10": 0.4086687306501548,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.0821340000256896,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.012171157116187,
+        "image_mean": 9.106469138565496,
+        "site_person_mean": 9.033195126213986,
+        "median": 8.530860475453956,
+        "p90": 13.853627740369932,
+        "gt5": 0.8761609907120743,
+        "gt10": 0.3281733746130031,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.012171157116187,
+            "image_mean": 9.106469138565496,
+            "site_person_mean": 9.033195126213986,
+            "median": 8.530860475453956,
+            "p90": 13.853627740369932,
+            "gt5": 0.8761609907120743,
+            "gt10": 0.3281733746130031,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.35024940001312643,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 13.799213805615219,
+        "image_mean": 14.136368957064175,
+        "site_person_mean": 13.81024085152513,
+        "median": 10.933646638948778,
+        "p90": 27.795313396382785,
+        "gt5": 0.8885448916408669,
+        "gt10": 0.5634674922600619,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.799213805615219,
+            "image_mean": 14.136368957064175,
+            "site_person_mean": 13.81024085152513,
+            "median": 10.933646638948778,
+            "p90": 27.795313396382785,
+            "gt5": 0.8885448916408669,
+            "gt10": 0.5634674922600619,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.330147799977567,
+      "inherited_fit_seconds": 2.366240100003779,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.653911705457894,
+        "image_mean": 8.660947481137915,
+        "site_person_mean": 8.656678758706368,
+        "median": 8.301488413282872,
+        "p90": 14.0660463579593,
+        "gt5": 0.8173374613003096,
+        "gt10": 0.3126934984520124,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.653911705457894,
+            "image_mean": 8.660947481137915,
+            "site_person_mean": 8.656678758706368,
+            "median": 8.301488413282872,
+            "p90": 14.0660463579593,
+            "gt5": 0.8173374613003096,
+            "gt10": 0.3126934984520124,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.09102250001160428,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.896207995797534,
+        "image_mean": 8.944884096306417,
+        "site_person_mean": 8.921604418173722,
+        "median": 8.793211198315397,
+        "p90": 12.97114359203215,
+        "gt5": 0.8947368421052632,
+        "gt10": 0.3219814241486068,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.896207995797534,
+            "image_mean": 8.944884096306417,
+            "site_person_mean": 8.921604418173722,
+            "median": 8.793211198315397,
+            "p90": 12.97114359203215,
+            "gt5": 0.8947368421052632,
+            "gt10": 0.3219814241486068,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3536531000281684,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 11.527184278268575,
+        "image_mean": 11.751369049259084,
+        "site_person_mean": 11.524449081352653,
+        "median": 10.05225445156347,
+        "p90": 20.932831157663703,
+        "gt5": 0.8854489164086687,
+        "gt10": 0.5077399380804953,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 11.527184278268575,
+            "image_mean": 11.751369049259084,
+            "site_person_mean": 11.524449081352653,
+            "median": 10.05225445156347,
+            "p90": 20.932831157663703,
+            "gt5": 0.8854489164086687,
+            "gt10": 0.5077399380804953,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.403887799999211,
+      "inherited_fit_seconds": 2.490863499988336,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.984802619633065,
+        "image_mean": 8.959519519238647,
+        "site_person_mean": 9.011389150062357,
+        "median": 8.663847417884096,
+        "p90": 13.152305912600395,
+        "gt5": 0.8544891640866873,
+        "gt10": 0.33436532507739936,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.984802619633065,
+            "image_mean": 8.959519519238647,
+            "site_person_mean": 9.011389150062357,
+            "median": 8.663847417884096,
+            "p90": 13.152305912600395,
+            "gt5": 0.8544891640866873,
+            "gt10": 0.33436532507739936,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.09477339999284595,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.93654752244722,
+        "image_mean": 9.005964025114793,
+        "site_person_mean": 8.94597501187463,
+        "median": 8.73043357624708,
+        "p90": 13.359419151865529,
+        "gt5": 0.8761609907120743,
+        "gt10": 0.3560371517027864,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.93654752244722,
+            "image_mean": 9.005964025114793,
+            "site_person_mean": 8.94597501187463,
+            "median": 8.73043357624708,
+            "p90": 13.359419151865529,
+            "gt5": 0.8761609907120743,
+            "gt10": 0.3560371517027864,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.37478259997442365,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.781556712279997,
+        "image_mean": 10.942073393668789,
+        "site_person_mean": 10.783348752276744,
+        "median": 10.482700997873254,
+        "p90": 17.61072019637739,
+        "gt5": 0.8885448916408669,
+        "gt10": 0.5325077399380805,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.781556712279997,
+            "image_mean": 10.942073393668789,
+            "site_person_mean": 10.783348752276744,
+            "median": 10.482700997873254,
+            "p90": 17.61072019637739,
+            "gt5": 0.8885448916408669,
+            "gt10": 0.5325077399380805,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.4388043999788351,
+      "inherited_fit_seconds": 2.5501759000471793,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 7.891144565338921,
+        "image_mean": 7.86502656913643,
+        "site_person_mean": 7.9233366583551295,
+        "median": 7.483205805633992,
+        "p90": 11.5284157972967,
+        "gt5": 0.7585139318885449,
+        "gt10": 0.22291021671826625,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 7.891144565338921,
+            "image_mean": 7.86502656913643,
+            "site_person_mean": 7.9233366583551295,
+            "median": 7.483205805633992,
+            "p90": 11.5284157972967,
+            "gt5": 0.7585139318885449,
+            "gt10": 0.22291021671826625,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.09924349997891113,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 8.023986402836382,
+        "image_mean": 8.08009812923638,
+        "site_person_mean": 8.05098451266634,
+        "median": 7.828260947895797,
+        "p90": 12.24094666936011,
+        "gt5": 0.8328173374613003,
+        "gt10": 0.23529411764705882,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 8.023986402836382,
+            "image_mean": 8.08009812923638,
+            "site_person_mean": 8.05098451266634,
+            "median": 7.828260947895797,
+            "p90": 12.24094666936011,
+            "gt5": 0.8328173374613003,
+            "gt10": 0.23529411764705882,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.38169299997389317,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 12.223085071310722,
+        "image_mean": 12.441641705605546,
+        "site_person_mean": 12.247199471792332,
+        "median": 10.819312220290698,
+        "p90": 21.986806039532432,
+        "gt5": 0.9071207430340558,
+        "gt10": 0.5727554179566563,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 12.223085071310722,
+            "image_mean": 12.441641705605546,
+            "site_person_mean": 12.247199471792332,
+            "median": 10.819312220290698,
+            "p90": 21.986806039532432,
+            "gt5": 0.9071207430340558,
+            "gt10": 0.5727554179566563,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.48885009996593,
+      "inherited_fit_seconds": 2.6120174000388943,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 9.533592256039999,
+        "image_mean": 9.645079790976716,
+        "site_person_mean": 9.540850131896939,
+        "median": 9.298502318514668,
+        "p90": 14.278984849320395,
+        "gt5": 0.8947368421052632,
+        "gt10": 0.4117647058823529,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 9.533592256039999,
+            "image_mean": 9.645079790976716,
+            "site_person_mean": 9.540850131896939,
+            "median": 9.298502318514668,
+            "p90": 14.278984849320395,
+            "gt5": 0.8947368421052632,
+            "gt10": 0.4117647058823529,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.08228969998890534,
+      "inherited_fit_seconds": 2.5748999000061303,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.32926515529372,
+        "image_mean": 10.456323452141842,
+        "site_person_mean": 10.332561293981648,
+        "median": 9.927576007105449,
+        "p90": 16.174387970450486,
+        "gt5": 0.8854489164086687,
+        "gt10": 0.49226006191950467,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.32926515529372,
+            "image_mean": 10.456323452141842,
+            "site_person_mean": 10.332561293981648,
+            "median": 9.927576007105449,
+            "p90": 16.174387970450486,
+            "gt5": 0.8854489164086687,
+            "gt10": 0.49226006191950467,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3194536000373773,
+      "inherited_fit_seconds": 2.5748999000061303,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 17,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.745483833038373,
+        "image_mean": 10.919343060940871,
+        "site_person_mean": 10.753502015203239,
+        "median": 9.72123088996536,
+        "p90": 18.44768503379733,
+        "gt5": 0.8885448916408669,
+        "gt10": 0.4613003095975232,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.745483833038373,
+            "image_mean": 10.919343060940871,
+            "site_person_mean": 10.753502015203239,
+            "median": 9.72123088996536,
+            "p90": 18.44768503379733,
+            "gt5": 0.8885448916408669,
+            "gt10": 0.4613003095975232,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.2674181000329554,
+      "inherited_fit_seconds": 2.5748999000061303,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 11.593206978856134,
+        "image_mean": 11.828630917997716,
+        "site_person_mean": 11.5971179194415,
+        "median": 10.044518367842494,
+        "p90": 21.53921600505415,
+        "gt5": 0.8978328173374613,
+        "gt10": 0.5077399380804953,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 11.593206978856134,
+            "image_mean": 11.828630917997716,
+            "site_person_mean": 11.5971179194415,
+            "median": 10.044518367842494,
+            "p90": 21.53921600505415,
+            "gt5": 0.8978328173374613,
+            "gt10": 0.5077399380804953,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.08860429999185726,
+      "inherited_fit_seconds": 2.5518219000077806,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 11.093264288696243,
+        "image_mean": 11.327962552566628,
+        "site_person_mean": 11.095621984304216,
+        "median": 9.783041772586685,
+        "p90": 19.933805157106264,
+        "gt5": 0.9071207430340558,
+        "gt10": 0.47987616099071206,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 11.093264288696243,
+            "image_mean": 11.327962552566628,
+            "site_person_mean": 11.095621984304216,
+            "median": 9.783041772586685,
+            "p90": 19.933805157106264,
+            "gt5": 0.9071207430340558,
+            "gt10": 0.47987616099071206,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3299694000161253,
+      "inherited_fit_seconds": 2.5518219000077806,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 29,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 10.390515242866206,
+        "image_mean": 10.567789849544416,
+        "site_person_mean": 10.403135684403978,
+        "median": 9.471193343544961,
+        "p90": 18.03988190137772,
+        "gt5": 0.9040247678018576,
+        "gt10": 0.4613003095975232,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 10.390515242866206,
+            "image_mean": 10.567789849544416,
+            "site_person_mean": 10.403135684403978,
+            "median": 9.471193343544961,
+            "p90": 18.03988190137772,
+            "gt5": 0.9040247678018576,
+            "gt10": 0.4613003095975232,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.3157425000099465,
+      "inherited_fit_seconds": 2.5518219000077806,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 64,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 13.227039044457966,
+        "image_mean": 13.578635366282677,
+        "site_person_mean": 13.224333935975878,
+        "median": 10.078473544821739,
+        "p90": 27.282652398250413,
+        "gt5": 0.9040247678018576,
+        "gt10": 0.5046439628482973,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.227039044457966,
+            "image_mean": 13.578635366282677,
+            "site_person_mean": 13.224333935975878,
+            "median": 10.078473544821739,
+            "p90": 27.282652398250413,
+            "gt5": 0.9040247678018576,
+            "gt10": 0.5046439628482973,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.07980899995891377,
+      "inherited_fit_seconds": 2.6983600999810733,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 256,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 13.047649130246077,
+        "image_mean": 13.427734422870541,
+        "site_person_mean": 13.035176681658896,
+        "median": 9.647514596216087,
+        "p90": 27.74912209253639,
+        "gt5": 0.8823529411764706,
+        "gt10": 0.47058823529411764,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.047649130246077,
+            "image_mean": 13.427734422870541,
+            "site_person_mean": 13.035176681658896,
+            "median": 9.647514596216087,
+            "p90": 27.74912209253639,
+            "gt5": 0.8823529411764706,
+            "gt10": 0.47058823529411764,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 0.3238631999702193,
+      "inherited_fit_seconds": 2.6983600999810733,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "skin_long",
+      "seed": 43,
+      "step": 1024,
+      "lr": 0.003,
+      "metrics": {
+        "person_mean": 11.33470072808764,
+        "image_mean": 11.538945189713266,
+        "site_person_mean": 11.345007529995087,
+        "median": 10.023502873868615,
+        "p90": 19.900617348123035,
+        "gt5": 0.9318885448916409,
+        "gt10": 0.5015479876160991,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 11.33470072808764,
+            "image_mean": 11.538945189713266,
+            "site_person_mean": 11.345007529995087,
+            "median": 10.023502873868615,
+            "p90": 19.900617348123035,
+            "gt5": 0.9318885448916409,
+            "gt10": 0.5015479876160991,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      },
+      "adapt_seconds": 1.3558360999450088,
+      "inherited_fit_seconds": 2.6983600999810733,
+      "numeric_bytes": 10996,
+      "serialized_bytes": 13794
+    }
+  ],
+  "zero_shot_diagnostic": [
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 19.23878566620842,
+        "image_mean": 18.978410874530816,
+        "site_person_mean": 19.257900324035496,
+        "median": 17.099818079741446,
+        "p90": 32.61324059395399,
+        "gt5": 0.9913793103448276,
+        "gt10": 0.9267241379310345,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 16.611321493922624,
+            "image_mean": 16.962947800698608,
+            "site_person_mean": 16.61132149392262,
+            "median": 17.128618197581496,
+            "p90": 24.36523170967467,
+            "gt5": 0.9875,
+            "gt10": 0.875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 20.552517752351317,
+            "image_mean": 20.039180913389874,
+            "site_person_mean": 20.581189739091936,
+            "median": 17.099818079741446,
+            "p90": 33.19570487397265,
+            "gt5": 0.993421052631579,
+            "gt10": 0.9539473684210527,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 18.28721218853654,
+        "image_mean": 18.033636761240576,
+        "site_person_mean": 18.313793501911803,
+        "median": 16.2177777019312,
+        "p90": 30.61950295787505,
+        "gt5": 0.9827586206896551,
+        "gt10": 0.9008620689655172,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 16.25826060039891,
+            "image_mean": 16.569640536209196,
+            "site_person_mean": 16.25826060039891,
+            "median": 16.590030870669683,
+            "p90": 23.429714579015563,
+            "gt5": 0.975,
+            "gt10": 0.875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 19.30168798260535,
+            "image_mean": 18.804161090204463,
+            "site_person_mean": 19.341559952668252,
+            "median": 15.810786036345398,
+            "p90": 32.16372248547467,
+            "gt5": 0.9868421052631579,
+            "gt10": 0.9144736842105263,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "clean_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 18.922846657643557,
+        "image_mean": 18.600261996096197,
+        "site_person_mean": 18.95076794018546,
+        "median": 16.56227994720563,
+        "p90": 32.31472737762109,
+        "gt5": 0.9956896551724138,
+        "gt10": 0.9181034482758621,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 16.634475391684582,
+            "image_mean": 17.012333638517376,
+            "site_person_mean": 16.634475391684585,
+            "median": 17.16307408646183,
+            "p90": 24.698984510927442,
+            "gt5": 1.0,
+            "gt10": 0.875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 20.06703229062304,
+            "image_mean": 19.43601376324295,
+            "site_person_mean": 20.108914214435895,
+            "median": 16.175584118061145,
+            "p90": 33.53574446754751,
+            "gt5": 0.993421052631579,
+            "gt10": 0.9407894736842105,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 15.224659940305342,
+        "image_mean": 15.633298478576204,
+        "site_person_mean": 15.15455569663937,
+        "median": 13.97393991365784,
+        "p90": 26.105356998495317,
+        "gt5": 0.9482758620689655,
+        "gt10": 0.7844827586206896,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 15.396524009200576,
+            "image_mean": 15.825092134468452,
+            "site_person_mean": 15.396524009200574,
+            "median": 15.287343945613271,
+            "p90": 27.519607559020034,
+            "gt5": 0.8875,
+            "gt10": 0.7125,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 15.138727905857724,
+            "image_mean": 15.53235444915923,
+            "site_person_mean": 15.03357154035877,
+            "median": 13.762724002427419,
+            "p90": 24.564524625591922,
+            "gt5": 0.9802631578947368,
+            "gt10": 0.8223684210526315,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 17.796746398736936,
+        "image_mean": 18.313934375255776,
+        "site_person_mean": 17.709425643165055,
+        "median": 17.61445396179004,
+        "p90": 30.219879594174692,
+        "gt5": 0.9698275862068966,
+        "gt10": 0.7887931034482759,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 17.842939753109544,
+            "image_mean": 18.38131891428572,
+            "site_person_mean": 17.842939753109544,
+            "median": 18.208759446197952,
+            "p90": 31.242046893455836,
+            "gt5": 0.925,
+            "gt10": 0.75,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 17.773649721550633,
+            "image_mean": 18.278468828397912,
+            "site_person_mean": 17.64266858819281,
+            "median": 17.460341319355408,
+            "p90": 29.308557119881566,
+            "gt5": 0.993421052631579,
+            "gt10": 0.8092105263157895,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 16.958344995740333,
+        "image_mean": 17.309159628636156,
+        "site_person_mean": 16.859643949431597,
+        "median": 16.55049588722686,
+        "p90": 28.431462365181954,
+        "gt5": 0.9396551724137931,
+        "gt10": 0.7974137931034483,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 16.382962520329436,
+            "image_mean": 16.841312336645334,
+            "site_person_mean": 16.382962520329436,
+            "median": 16.53441813746469,
+            "p90": 29.727380858995584,
+            "gt5": 0.8625,
+            "gt10": 0.7375,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 17.246036233445782,
+            "image_mean": 17.555395045473432,
+            "site_person_mean": 17.097984663982675,
+            "median": 16.555929650742556,
+            "p90": 27.40980887544001,
+            "gt5": 0.9802631578947368,
+            "gt10": 0.8289473684210527,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 15.653353110260097,
+        "image_mean": 15.359852015926474,
+        "site_person_mean": 15.591002536858001,
+        "median": 14.687325517850063,
+        "p90": 24.636649845323078,
+        "gt5": 0.9698275862068966,
+        "gt10": 0.7629310344827587,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 12.454528114939503,
+            "image_mean": 12.2452475961949,
+            "site_person_mean": 12.454528114939507,
+            "median": 12.757187747028173,
+            "p90": 15.83820149288444,
+            "gt5": 0.9875,
+            "gt10": 0.7875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 17.252765607920395,
+            "image_mean": 16.999117499995723,
+            "site_person_mean": 17.15923974781725,
+            "median": 18.57068892954186,
+            "p90": 25.17831845028025,
+            "gt5": 0.9605263157894737,
+            "gt10": 0.75,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 16.013373163877244,
+        "image_mean": 15.611697257947332,
+        "site_person_mean": 15.934093657496646,
+        "median": 14.264116189469322,
+        "p90": 26.98582622314092,
+        "gt5": 0.9612068965517241,
+        "gt10": 0.7327586206896551,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 11.616586868197702,
+            "image_mean": 11.334659406618199,
+            "site_person_mean": 11.616586868197704,
+            "median": 12.023335052874808,
+            "p90": 16.15906307078275,
+            "gt5": 0.925,
+            "gt10": 0.6625,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 18.211766311717017,
+            "image_mean": 17.862769811278454,
+            "site_person_mean": 18.09284705214612,
+            "median": 18.99311267823382,
+            "p90": 27.453140530710428,
+            "gt5": 0.9802631578947368,
+            "gt10": 0.7697368421052632,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "mixed",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 17.041021077279677,
+        "image_mean": 16.895738581883172,
+        "site_person_mean": 17.01019491881661,
+        "median": 17.266464763688724,
+        "p90": 24.782159238004933,
+        "gt5": 0.9568965517241379,
+        "gt10": 0.8577586206896551,
+        "n_images": 232,
+        "n_people": 6,
+        "camera": {
+          "SLR": {
+            "person_mean": 14.229854706376372,
+            "image_mean": 14.133729530632598,
+            "site_person_mean": 14.229854706376376,
+            "median": 14.824159155306422,
+            "p90": 17.759645902499315,
+            "gt5": 1.0,
+            "gt10": 0.8875,
+            "n_images": 80,
+            "n_people": 2
+          },
+          "ipod": {
+            "person_mean": 18.446604262731327,
+            "image_mean": 18.34942755622558,
+            "site_person_mean": 18.400365025036724,
+            "median": 20.168894350570497,
+            "p90": 25.57294127796035,
+            "gt5": 0.9342105263157895,
+            "gt10": 0.8421052631578947,
+            "n_images": 152,
+            "n_people": 4
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 16.979761157182196,
+        "image_mean": 16.464141091945553,
+        "site_person_mean": 16.97064105974034,
+        "median": 15.405509254006407,
+        "p90": 23.6917198447585,
+        "gt5": 0.9968895800933126,
+        "gt10": 0.9097978227060654,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 16.979761157182196,
+            "image_mean": 16.464141091945553,
+            "site_person_mean": 16.97064105974034,
+            "median": 15.405509254006407,
+            "p90": 23.6917198447585,
+            "gt5": 0.9968895800933126,
+            "gt10": 0.9097978227060654,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 16.062793375022615,
+        "image_mean": 15.573790344351494,
+        "site_person_mean": 16.05756049446794,
+        "median": 14.5151012230115,
+        "p90": 22.81067666351767,
+        "gt5": 0.9922239502332815,
+        "gt10": 0.880248833592535,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 16.062793375022615,
+            "image_mean": 15.573790344351494,
+            "site_person_mean": 16.05756049446794,
+            "median": 14.5151012230115,
+            "p90": 22.81067666351767,
+            "gt5": 0.9922239502332815,
+            "gt10": 0.880248833592535,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "clean_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 16.554119195359807,
+        "image_mean": 15.97714005666879,
+        "site_person_mean": 16.551354761489634,
+        "median": 14.675232053517535,
+        "p90": 23.931037337268727,
+        "gt5": 0.995334370139969,
+        "gt10": 0.8942457231726283,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 16.554119195359807,
+            "image_mean": 15.97714005666879,
+            "site_person_mean": 16.551354761489634,
+            "median": 14.675232053517535,
+            "p90": 23.931037337268727,
+            "gt5": 0.995334370139969,
+            "gt10": 0.8942457231726283,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 15.259247201352954,
+        "image_mean": 15.517535756467055,
+        "site_person_mean": 15.227801983785257,
+        "median": 14.258989935077803,
+        "p90": 23.732107173457685,
+        "gt5": 0.9922239502332815,
+        "gt10": 0.8055987558320373,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 15.259247201352954,
+            "image_mean": 15.517535756467055,
+            "site_person_mean": 15.227801983785257,
+            "median": 14.258989935077803,
+            "p90": 23.732107173457685,
+            "gt5": 0.9922239502332815,
+            "gt10": 0.8055987558320373,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 18.338857736838364,
+        "image_mean": 18.68169225112519,
+        "site_person_mean": 18.298657216520585,
+        "median": 17.95009291715508,
+        "p90": 27.71152693570579,
+        "gt5": 0.9984447900466563,
+        "gt10": 0.8911353032659409,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 18.338857736838364,
+            "image_mean": 18.68169225112519,
+            "site_person_mean": 18.298657216520585,
+            "median": 17.95009291715508,
+            "p90": 27.71152693570579,
+            "gt5": 0.9984447900466563,
+            "gt10": 0.8911353032659409,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 17.1500417603328,
+        "image_mean": 17.355337041968838,
+        "site_person_mean": 17.10582056612908,
+        "median": 16.56496343470525,
+        "p90": 26.200308927054696,
+        "gt5": 0.9937791601866252,
+        "gt10": 0.8491446345256609,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 17.1500417603328,
+            "image_mean": 17.355337041968838,
+            "site_person_mean": 17.10582056612908,
+            "median": 16.56496343470525,
+            "p90": 26.200308927054696,
+            "gt5": 0.9937791601866252,
+            "gt10": 0.8491446345256609,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 12.70333429131545,
+        "image_mean": 12.301856839564069,
+        "site_person_mean": 12.679727219356835,
+        "median": 10.986532851041222,
+        "p90": 20.16053204051712,
+        "gt5": 0.9844479004665629,
+        "gt10": 0.609642301710731,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 12.70333429131545,
+            "image_mean": 12.301856839564069,
+            "site_person_mean": 12.679727219356835,
+            "median": 10.986532851041222,
+            "p90": 20.16053204051712,
+            "gt5": 0.9844479004665629,
+            "gt10": 0.609642301710731,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 12.561703395379393,
+        "image_mean": 12.032023794402624,
+        "site_person_mean": 12.52975414423145,
+        "median": 10.388142966917647,
+        "p90": 21.154356708029198,
+        "gt5": 0.9580093312597201,
+        "gt10": 0.5287713841368584,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 12.561703395379393,
+            "image_mean": 12.032023794402624,
+            "site_person_mean": 12.52975414423145,
+            "median": 10.388142966917647,
+            "p90": 21.154356708029198,
+            "gt5": 0.9580093312597201,
+            "gt10": 0.5287713841368584,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "slr_to_ipod",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 14.479582953886908,
+        "image_mean": 14.166979593481535,
+        "site_person_mean": 14.473522432759204,
+        "median": 13.975885937531237,
+        "p90": 22.14541811823098,
+        "gt5": 0.9455676516329704,
+        "gt10": 0.7465007776049767,
+        "n_images": 643,
+        "n_people": 16,
+        "camera": {
+          "ipod": {
+            "person_mean": 14.479582953886908,
+            "image_mean": 14.166979593481535,
+            "site_person_mean": 14.473522432759204,
+            "median": 13.975885937531237,
+            "p90": 22.14541811823098,
+            "gt5": 0.9455676516329704,
+            "gt10": 0.7465007776049767,
+            "n_images": 643,
+            "n_people": 16
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 14.817065105775447,
+        "image_mean": 14.773093082913359,
+        "site_person_mean": 14.894811533063447,
+        "median": 14.717409480354096,
+        "p90": 22.033149287074284,
+        "gt5": 0.9814241486068112,
+        "gt10": 0.7739938080495357,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 14.817065105775447,
+            "image_mean": 14.773093082913359,
+            "site_person_mean": 14.894811533063447,
+            "median": 14.717409480354096,
+            "p90": 22.033149287074284,
+            "gt5": 0.9814241486068112,
+            "gt10": 0.7739938080495357,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 14.651330899501692,
+        "image_mean": 14.608211958232062,
+        "site_person_mean": 14.72373888882053,
+        "median": 14.703586517126329,
+        "p90": 20.98902885986937,
+        "gt5": 0.9690402476780186,
+        "gt10": 0.7832817337461301,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 14.651330899501692,
+            "image_mean": 14.608211958232062,
+            "site_person_mean": 14.72373888882053,
+            "median": 14.703586517126329,
+            "p90": 20.98902885986937,
+            "gt5": 0.9690402476780186,
+            "gt10": 0.7832817337461301,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "clean_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 14.759280822308781,
+        "image_mean": 14.720053044093394,
+        "site_person_mean": 14.846778967258519,
+        "median": 14.251895424903873,
+        "p90": 22.38271710420658,
+        "gt5": 0.9814241486068112,
+        "gt10": 0.7585139318885449,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 14.759280822308781,
+            "image_mean": 14.720053044093394,
+            "site_person_mean": 14.846778967258519,
+            "median": 14.251895424903873,
+            "p90": 22.38271710420658,
+            "gt5": 0.9814241486068112,
+            "gt10": 0.7585139318885449,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 13.910347128478687,
+        "image_mean": 14.265834962989906,
+        "site_person_mean": 13.906313409452267,
+        "median": 13.675188561840985,
+        "p90": 23.392305138376113,
+        "gt5": 0.9102167182662538,
+        "gt10": 0.6873065015479877,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.910347128478687,
+            "image_mean": 14.265834962989906,
+            "site_person_mean": 13.906313409452267,
+            "median": 13.675188561840985,
+            "p90": 23.392305138376113,
+            "gt5": 0.9102167182662538,
+            "gt10": 0.6873065015479877,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 15.855813189255292,
+        "image_mean": 16.30184474156399,
+        "site_person_mean": 15.847676890081111,
+        "median": 16.20957177599279,
+        "p90": 27.102188830224463,
+        "gt5": 0.9102167182662538,
+        "gt10": 0.7492260061919505,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 15.855813189255292,
+            "image_mean": 16.30184474156399,
+            "site_person_mean": 15.847676890081111,
+            "median": 16.20957177599279,
+            "p90": 27.102188830224463,
+            "gt5": 0.9102167182662538,
+            "gt10": 0.7492260061919505,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "rendered_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 14.914002509515516,
+        "image_mean": 15.303733779992674,
+        "site_person_mean": 14.934844530727768,
+        "median": 15.077685893134891,
+        "p90": 24.125957503460935,
+        "gt5": 0.9102167182662538,
+        "gt10": 0.7739938080495357,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 14.914002509515516,
+            "image_mean": 15.303733779992674,
+            "site_person_mean": 14.934844530727768,
+            "median": 15.077685893134891,
+            "p90": 24.125957503460935,
+            "gt5": 0.9102167182662538,
+            "gt10": 0.7739938080495357,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 17,
+      "metrics": {
+        "person_mean": 13.577475323291733,
+        "image_mean": 13.76098921300836,
+        "site_person_mean": 13.540322391365955,
+        "median": 12.723448058405014,
+        "p90": 20.298434634587647,
+        "gt5": 0.9969040247678018,
+        "gt10": 0.8018575851393189,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.577475323291733,
+            "image_mean": 13.76098921300836,
+            "site_person_mean": 13.540322391365955,
+            "median": 12.723448058405014,
+            "p90": 20.298434634587647,
+            "gt5": 0.9969040247678018,
+            "gt10": 0.8018575851393189,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 29,
+      "metrics": {
+        "person_mean": 13.321183518531772,
+        "image_mean": 13.513420127075689,
+        "site_person_mean": 13.283701474484333,
+        "median": 12.570191748347845,
+        "p90": 20.476223870965885,
+        "gt5": 0.9659442724458205,
+        "gt10": 0.7306501547987616,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 13.321183518531772,
+            "image_mean": 13.513420127075689,
+            "site_person_mean": 13.283701474484333,
+            "median": 12.570191748347845,
+            "p90": 20.476223870965885,
+            "gt5": 0.9659442724458205,
+            "gt10": 0.7306501547987616,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    },
+    {
+      "protocol": "ipod_to_slr",
+      "arm": "shuffled_palette",
+      "seed": 43,
+      "metrics": {
+        "person_mean": 14.695778085421704,
+        "image_mean": 14.900043070197444,
+        "site_person_mean": 14.662021713985512,
+        "median": 15.013583728522606,
+        "p90": 19.250557341664564,
+        "gt5": 0.9814241486068112,
+        "gt10": 0.8978328173374613,
+        "n_images": 323,
+        "n_people": 8,
+        "camera": {
+          "SLR": {
+            "person_mean": 14.695778085421704,
+            "image_mean": 14.900043070197444,
+            "site_person_mean": 14.662021713985512,
+            "median": 15.013583728522606,
+            "p90": 19.250557341664564,
+            "gt5": 0.9814241486068112,
+            "gt10": 0.8978328173374613,
+            "n_images": 323,
+            "n_people": 8
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "source_lock_sha256": "58a4257349bc78a90194f10b9f1edb82938b4d6e70edf121ea8d1c2b62d737ba",
+  "selection_sha256": "2dd0910579aeb175a7f84f5cf8b0eca9efae1f78f18375cd8de78e2f98775d8f",
+  "results_sha256": "5c30abe091cc5c432a9076b02f220bc2dd67fdc0aa022b102092ffb93f69d767",
+  "parent_NR_verification_sha256": "3e4079df5d688136ef59be6b599633b0bc7c44d9d21f410eaeefc2aef0699c65",
+  "parent_NG_verification_sha256": "57b1d6b00b51e9f761ad34b2062f28a1186cd403f0ba40a52e24b0d105014e25",
+  "checks": {
+    "bank_models": 5556,
+    "exact_NR_models": 3540,
+    "saved_QR_heads": 5040,
+    "oof_rows": 787100,
+    "banks": 12,
+    "candidate_scores": 420,
+    "choices": 84,
+    "policies": 12,
+    "selected_models": 381,
+    "final_rows": 5020818,
+    "transform_cases": 12573,
+    "dose_cases": 1524
+  },
+  "maxima": {
+    "qr_fit": 5.808723344102873e-06,
+    "qr_query": 5.117927528885957e-06,
+    "oof": 4.760636329592671e-13,
+    "direct": 1.3642420526593924e-12,
+    "consumer": 1.1795009413617663e-12,
+    "qr_stress": 2.4781709839771793e-06
+  },
+  "complete_timing_fits": 270,
+  "exact_timing_payloads": 270,
+  "tests_passed": 33,
+  "pytest_output": ".................................                                        [100%]\n33 passed in 1.45s\n",
+  "lint": "All checks passed!\n",
+  "local_markdown_links_checked": 19,
+  "comparisons": {
+    "head_vs_FG": {
+      "better": 9,
+      "worse": 75,
+      "tie": 0
+    },
+    "head_vs_NR": {
+      "better": 5,
+      "worse": 5,
+      "tie": 74
+    },
+    "policy_vs_FG": {
+      "better": 0,
+      "worse": 12,
+      "tie": 0
+    },
+    "policy_vs_NR": {
+      "better": 2,
+      "worse": 1,
+      "tie": 9
+    }
+  },
+  "alpha_counts": {
+    "10.0": 67,
+    "100.0": 10,
+    "1.0": 7
+  },
+  "previous_goal_turn_classification": "progress",
+  "goal_status": "active",
+  "terminal_evidence": "Primary PID30112/session54705 exit0; first audit exit1 format-only; corrected audit82044 exit0; runtime41219 exit0. NG PID34636 direct exit0; NR verifier57298 exit0.",
+  "artifact_sha256": {
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/paired.csv": "9227e703bf90c377229c1c9980b442bfd964d84a9d2d7b3ac35e2c303098cdfb",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/workflow.json": "f5b1670b6f5be15c756fad7fabaf4095ed5ef910cb920571f9b7d2b01a017945",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/report.md": "696dbbb7b0583daef39995be2c731f65563f53a9c887e333c0844d2238a86192",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/results.json": "5c30abe091cc5c432a9076b02f220bc2dd67fdc0aa022b102092ffb93f69d767",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/all_doses.csv": "f134c4fe2f17991634ba7794828a53b5492ef16232860a276ddcc96cc8275e09",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/runtime.json": "cf2c5fe8cc7bb7359207b9f8a07b228f2c41c68850fd50fc4712fbf816312cec",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/policies.csv": "5e8a580adc42bf9cd71758c441f7220589614c43f607656c8d9eaa1f0dd233ba",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/final_complete.json": "996c8b949ba4e30888537640ca840685ae1bda9cfd284b525d7085705ad808ac",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/all_models.csv": "8b2e2a6330bd7fb1332720f22e96eed9722b22deff88103a5473a33332c0ae0d",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/selections.json": "2dd0910579aeb175a7f84f5cf8b0eca9efae1f78f18375cd8de78e2f98775d8f",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/progress.json": "d0375b8cefb0b052eb8385e3afc364a59417b38a5bd8a7d3c186c8ed23136920",
+    "docs/research/chromaseed_neural_shrinkage_next_decision.md": "8c09c96fa401b402e3fd33a4e7d2d466a0c53f1146ebe48afb8574b7a67cab3e",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/inner_candidates.csv": "ee3c7b5c5d05828e672aa6c4cd2dc8a5ce0a0fb46625886d98ed0dfe0e9a5141",
+    "scripts/chromaseed_neural_shrinkage_audit.py": "292d22185e1f259baa48c3756e173fb097c4f7caf8f38322a423c7050bf64ad5",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/audit.json": "1f558b60645112b1e5709461a789e21dd2858e04314a1424da657c8b01e7d015",
+    "docs/benchmarks/chromaseed_neural_shrinkage_v1/summary.json": "af73391f231779439a3e13ee99a317deb474decb157b7b0c14f4b5e6b98ef6d1",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/inner_complete.json": "050d30879c9a7f742537efbbef6a14f8f34c644ac16dae3ddfb00cbde335d825",
+    "scripts/chromaseed_neural_shrinkage_train.py": "16f4c450301d55358d23d9f7c4ea78b4c6ad2e678a0839fe90139d709564a849",
+    "experiments/runs/chromaseed_neural_shrinkage_v1/source_lock.json": "58a4257349bc78a90194f10b9f1edb82938b4d6e70edf121ea8d1c2b62d737ba",
+    "docs/architecture/chromaseed_neural_shrinkage_model_card.md": "ef1570def4de46cc86ee26896361acc5a19403e5fb45afbca782311a9905d08c",
+    "scripts/chromaseed_neural_shrinkage_report.py": "1d2c5a7b1fe5193b0a254e20a666fd9c41de06aacc308cfe3f9b728783cf2e52",
+    "scripts/chromaseed_neural_shrinkage_runtime.py": "a39077b8bcce35d9c95794be0909cd1828b15e8df09bc158d6e0a5bd38b8bd1b"
+  },
+  "shortcut_sha256": "d24044007c75db997ca997e945c7cf527264b40fb038990d8d1807ca83bc235d"
+}

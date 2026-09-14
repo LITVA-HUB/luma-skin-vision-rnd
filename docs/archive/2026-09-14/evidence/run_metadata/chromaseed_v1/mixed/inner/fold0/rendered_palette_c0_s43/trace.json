@@ -1,0 +1,40 @@
+{
+  "steps": 1024,
+  "batch_size": 256,
+  "lr": 0.0003,
+  "seed": 43,
+  "fit_seconds": 1.2583516000304371,
+  "checkpoints": {
+    "64": {
+      "seconds": 0.08001269999658689,
+      "weighted_normalized_mse": 0.04776990786194801
+    },
+    "256": {
+      "seconds": 0.3133380000363104,
+      "weighted_normalized_mse": 0.016546495258808136
+    },
+    "1024": {
+      "seconds": 1.257963899988681,
+      "weighted_normalized_mse": 0.012648479081690311
+    }
+  },
+  "peak_allocated_bytes": 70544896,
+  "n_fit_rows": 506,
+  "artifacts": {
+    "64": {
+      "sha256": "5d69f09ad6da4148178b8bf3461d3ed951e456acca9bcbaba97aae69b3277b57",
+      "serialized_bytes": 13794,
+      "numeric_bytes": 10996
+    },
+    "256": {
+      "sha256": "b75c2dc0d75106403d0d9de9b0da7b5d9fcef534f1d0da2bce7bf8c3dfd8d800",
+      "serialized_bytes": 13794,
+      "numeric_bytes": 10996
+    },
+    "1024": {
+      "sha256": "5bd0be5ee620dd78e5ca7364d2bb536fb12f42b4ae3ee12a0d96b2414654d1e7",
+      "serialized_bytes": 13794,
+      "numeric_bytes": 10996
+    }
+  }
+}

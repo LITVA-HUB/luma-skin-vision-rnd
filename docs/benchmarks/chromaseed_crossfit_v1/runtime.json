@@ -1,0 +1,4777 @@
+{
+  "source_lock_sha256": "bf6b8d289bab901007d925588a90ab8337fe231291c87ce96ecb01ae0b2b808e",
+  "settings_sha256": "6e8fe0c8e4a2035ebc271c5164c2bde09fb46fe36d1300b3c6026946e06e1041",
+  "results_sha256": "5ce1a44e759334d8f76222870b22873584e10484deb29f295b9cc563c87b391b",
+  "audit_sha256": "3ead4c746a2fe14b6a7c33012badcf8d7531ac28110a6a9ac437225951e43184",
+  "runtime_source_sha256": "724e1a096fce2064ef28b6980dfe453c08dadd94f7289ac9238b47924ae087a6",
+  "dependencies": {
+    "scripts/chromaseed_crossfit.py": "bdb97d79ff1e773a30dc57637a8893d85ddd320c2b92b189f86dc09969002394",
+    "scripts/chromaseed_hybrid.py": "7d078cfa51fb9da79acf61f34a0180d39c0a3e13a78ee81987dbd1c5c65f69c9",
+    "scripts/chromaseed_hybrid_runtime.py": "d4db6c36421b96ba96aabbf1308c84956318a09c6cf2b465b89ec02e4dfd9314",
+    "scripts/chromaseed_hybrid_numpy.py": "6cffc54c57d8b59ee5015f1f79a79fff9269d520f55e49974855765b7316af5a",
+    "scripts/chromaseed_affine_audit.py": "eedb5736f06f73d10110c93392295bd40264e8532a78c6de583ab170e495accb",
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28"
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "threads": 1,
+    "numpy": "2.5.3"
+  },
+  "records": [
+    {
+      "role": "mixed",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_raw_s17",
+      "numeric_bytes": 21973,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 101.0,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_raw_s29",
+      "numeric_bytes": 21973,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 56.7,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_raw_s43",
+      "numeric_bytes": 21973,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 19.55,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 72.3,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_projected_s17",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.6,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.765876499528531e-13,
+        "initialization_us": 62.8,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_projected_s29",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 1.9895196601282805e-13,
+        "initialization_us": 55.3,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_projected_s43",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 51.8,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_blend_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 23.0,
+        "p95_us": 23.625,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.5579538487363607e-13,
+        "initialization_us": 112.9,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_blend_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 23.2,
+        "p95_us": 23.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 103.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_blend_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 23.0,
+        "p95_us": 23.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.6290081223123707e-13,
+        "initialization_us": 97.9,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_uniform_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.8,
+        "p95_us": 34.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 98.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_uniform_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 104.9,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_uniform_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.325,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.542233338928781e-13,
+        "initialization_us": 98.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_support_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.6,
+        "p95_us": 25.025,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 92.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_support_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 25.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 95.6,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_support_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 25.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 97.0,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_raw_s17",
+      "numeric_bytes": 21973,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 66.7,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_raw_s29",
+      "numeric_bytes": 21973,
+      "numpy_only": {
+        "median_us": 12.2,
+        "p95_us": 12.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 56.4,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_raw_s43",
+      "numeric_bytes": 21973,
+      "numpy_only": {
+        "median_us": 12.3,
+        "p95_us": 12.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 54.7,
+        "cached_array_bytes": 44640
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_projected_s17",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.329070518200751e-13,
+        "initialization_us": 58.0,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_projected_s29",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.765876499528531e-13,
+        "initialization_us": 58.0,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_projected_s43",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 55.9,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_blend_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 23.4,
+        "p95_us": 23.924999999999997,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 96.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_blend_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 23.0,
+        "p95_us": 23.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.481659405224491e-13,
+        "initialization_us": 92.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_blend_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 23.2,
+        "p95_us": 23.8,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 96.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_uniform_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 87.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_uniform_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 90.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_uniform_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.225,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 89.3,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_support_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 24.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.968558980384842e-13,
+        "initialization_us": 91.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_support_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.2,
+        "p95_us": 24.7,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 88.0,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_support_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 25.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 97.3,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_x_fixed_norm_s17",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.126388037344441e-13,
+        "initialization_us": 54.5,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_x_fixed_norm_s29",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 54.6,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_x_fixed_norm_s43",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 53.4,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_x_fixed_perceptual_s17",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.7,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 56.6,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_x_fixed_perceptual_s29",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 13.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 53.2,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_x_fixed_perceptual_s43",
+      "numeric_bytes": 14181,
+      "numpy_only": {
+        "median_us": 13.8,
+        "p95_us": 14.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 7.389644451905042e-13,
+        "initialization_us": 55.6,
+        "cached_array_bytes": 29056
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "h_constant",
+      "origin": "H",
+      "seed": null,
+      "name": "h_constant",
+      "numeric_bytes": 12,
+      "numpy_only": {
+        "median_us": 1.1,
+        "p95_us": 1.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 0.0,
+        "initialization_us": 7.8,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_norm_uniform_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 91.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_norm_uniform_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.8,
+        "p95_us": 23.5,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 87.6,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_norm_uniform_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.6,
+        "p95_us": 23.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 90.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_norm_support_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 25.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 88.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_norm_support_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 36.9,
+        "p95_us": 41.925,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 89.6,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_norm_support_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 24.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.831690603168681e-13,
+        "initialization_us": 107.1,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_perceptual_uniform_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.826450433232822e-13,
+        "initialization_us": 91.4,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_perceptual_uniform_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.6,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 93.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_perceptual_uniform_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.526512829121202e-13,
+        "initialization_us": 89.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_perceptual_support_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 24.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.897504706808832e-13,
+        "initialization_us": 90.1,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_perceptual_support_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 25.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 113.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_perceptual_support_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 25.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 87.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_norm_uniform_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.8,
+        "p95_us": 23.2,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 89.4,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_norm_uniform_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 88.9,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_norm_uniform_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 104.5,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_norm_support_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.5,
+        "p95_us": 25.1,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 97.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_norm_support_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.2,
+        "p95_us": 24.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 97.3,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_norm_support_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.6,
+        "p95_us": 25.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.684341886080801e-13,
+        "initialization_us": 98.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_perceptual_uniform_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.7,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 95.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_perceptual_uniform_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.8,
+        "p95_us": 23.3,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 103.9,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_perceptual_uniform_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 22.9,
+        "p95_us": 23.4,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 103.7,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_perceptual_support_s17",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 25.0,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 5.826450433232822e-13,
+        "initialization_us": 92.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_perceptual_support_s29",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.2,
+        "p95_us": 24.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 6.323830348264892e-13,
+        "initialization_us": 96.2,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_perceptual_support_s43",
+      "numeric_bytes": 27503,
+      "numpy_only": {
+        "median_us": 24.4,
+        "p95_us": 24.9,
+        "query_count": 696,
+        "verification_rows": 232,
+        "max_lab_drift": 8.810729923425242e-13,
+        "initialization_us": 90.8,
+        "cached_array_bytes": 73088
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_raw_s17",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 9.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 48.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_raw_s29",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.9,
+        "p95_us": 10.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.375077994860476e-13,
+        "initialization_us": 46.5,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_raw_s43",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 10.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 45.2,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_projected_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 16.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.7711166694643907e-13,
+        "initialization_us": 49.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_projected_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.197442310920451e-13,
+        "initialization_us": 47.9,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_projected_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.623767952376511e-13,
+        "initialization_us": 49.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_blend_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 19.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.1671553440683056e-13,
+        "initialization_us": 82.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_blend_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 19.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.0605739337042905e-13,
+        "initialization_us": 84.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_blend_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 19.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4868995751603507e-13,
+        "initialization_us": 81.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 18.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 87.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 19.05999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.410605131648481e-13,
+        "initialization_us": 83.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 18.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 85.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.3,
+        "p95_us": 20.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.765876499528531e-13,
+        "initialization_us": 96.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 87.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 85.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_raw_s17",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 9.95999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.384404281969182e-13,
+        "initialization_us": 49.4,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_raw_s29",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.8,
+        "p95_us": 14.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 53.2,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_raw_s43",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 9.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0373923942097463e-12,
+        "initialization_us": 51.8,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_projected_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.181721801112872e-13,
+        "initialization_us": 53.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_projected_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 53.0,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_projected_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.755396159656812e-13,
+        "initialization_us": 58.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_blend_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.0,
+        "p95_us": 19.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 95.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_blend_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 19.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.476419235288631e-13,
+        "initialization_us": 95.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_blend_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.2,
+        "p95_us": 19.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 87.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.384404281969182e-13,
+        "initialization_us": 85.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.673861546209082e-13,
+        "initialization_us": 89.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 19.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.2221335055073723e-12,
+        "initialization_us": 87.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 20.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.100187187665142e-13,
+        "initialization_us": 84.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.963318810448982e-13,
+        "initialization_us": 86.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.4,
+        "p95_us": 20.7,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1226575225009583e-12,
+        "initialization_us": 90.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_x_fixed_norm_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.4158453015843406e-13,
+        "initialization_us": 50.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_x_fixed_norm_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 47.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_x_fixed_norm_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.2,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.339550858072471e-13,
+        "initialization_us": 46.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_x_fixed_perceptual_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 48.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_x_fixed_perceptual_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 11.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 6.892264536872972e-13,
+        "initialization_us": 59.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_x_fixed_perceptual_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 12.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 5.044853423896711e-13,
+        "initialization_us": 52.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_constant",
+      "origin": "H",
+      "seed": null,
+      "name": "h_constant",
+      "numeric_bytes": 12,
+      "numpy_only": {
+        "median_us": 1.1,
+        "p95_us": 1.2,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 0.0,
+        "initialization_us": 8.1,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.25999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 81.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.339550858072471e-13,
+        "initialization_us": 84.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.05999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.192202140984591e-13,
+        "initialization_us": 82.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_norm_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 24.1,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.659295089164516e-13,
+        "initialization_us": 90.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_norm_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.21999999999998,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.481659405224491e-13,
+        "initialization_us": 94.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_norm_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 23.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.476419235288631e-13,
+        "initialization_us": 90.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0942358130705543e-12,
+        "initialization_us": 93.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 21.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.744915819785092e-13,
+        "initialization_us": 92.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.35999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.2079226507921703e-12,
+        "initialization_us": 89.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 24.0,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.450218385609332e-13,
+        "initialization_us": 86.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.95999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.958078640513122e-13,
+        "initialization_us": 88.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 23.5,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.1368683772161603e-12,
+        "initialization_us": 88.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 22.55999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 84.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.7,
+        "p95_us": 21.45999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.304023721284466e-13,
+        "initialization_us": 81.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 21.25999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 88.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_norm_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.15999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 81.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_norm_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 22.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 3.623767952376511e-13,
+        "initialization_us": 231.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_norm_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.8,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 4.405364961712621e-13,
+        "initialization_us": 89.9,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 22.25999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 8.100187187665142e-13,
+        "initialization_us": 88.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 22.3,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.389644451905042e-13,
+        "initialization_us": 106.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.4,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 1.0373923942097463e-12,
+        "initialization_us": 106.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 22.6,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.166001291305292e-13,
+        "initialization_us": 94.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 23.9,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 7.247535904753022e-13,
+        "initialization_us": 87.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.25999999999999,
+        "query_count": 1929,
+        "verification_rows": 643,
+        "max_lab_drift": 9.876544027065393e-13,
+        "initialization_us": 95.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_raw_s17",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 10.85999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 52.3,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_raw_s29",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.6,
+        "p95_us": 10.15999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 47.3,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_raw_s43",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 10.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.902744876744691e-13,
+        "initialization_us": 46.7,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_projected_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 12.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.2026824808563106e-13,
+        "initialization_us": 57.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_projected_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 12.55999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.7408297026122455e-13,
+        "initialization_us": 53.9,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_projected_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 11.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.334310688136611e-13,
+        "initialization_us": 47.8,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_blend_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.0,
+        "p95_us": 22.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.913225216616411e-13,
+        "initialization_us": 83.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_blend_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 21.25999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.126388037344441e-13,
+        "initialization_us": 88.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_blend_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.0,
+        "p95_us": 21.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 84.9,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.45999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.694822225952521e-13,
+        "initialization_us": 161.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.65999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 80.9,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 20.65999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.831690603168681e-13,
+        "initialization_us": 79.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_norm_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 24.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 84.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_norm_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 22.91999999999998,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 79.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_support",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_norm_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 78.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_raw_s17",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.6,
+        "p95_us": 9.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 43.8,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_raw_s29",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.7,
+        "p95_us": 10.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2150280781497713e-12,
+        "initialization_us": 47.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_raw_s43",
+      "numeric_bytes": 20284,
+      "numpy_only": {
+        "median_us": 9.6,
+        "p95_us": 10.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 42.1,
+        "cached_array_bytes": 41272
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_projected_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 11.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 45.5,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_projected_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 12.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.263256414560601e-13,
+        "initialization_us": 46.4,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_projected_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.759999999999991,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.400124791776761e-13,
+        "initialization_us": 45.3,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_blend_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.9,
+        "p95_us": 22.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.258016244624741e-13,
+        "initialization_us": 77.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_blend_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.1,
+        "p95_us": 22.45999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.094947017729282e-13,
+        "initialization_us": 78.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_blend_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 19.0,
+        "p95_us": 21.25999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 7.105427357601002e-13,
+        "initialization_us": 78.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 20.65999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 91.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 21.579999999999973,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2292389328649733e-12,
+        "initialization_us": 83.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.41999999999998,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.379164112033322e-13,
+        "initialization_us": 81.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 23.0,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.465938895416912e-13,
+        "initialization_us": 77.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 23.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2008172234345693e-12,
+        "initialization_us": 92.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 23.25999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.805489753489383e-13,
+        "initialization_us": 79.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_x_fixed_norm_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 12.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.9895196601282805e-13,
+        "initialization_us": 49.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_x_fixed_norm_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.5579538487363607e-13,
+        "initialization_us": 47.2,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_x_fixed_norm",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_x_fixed_norm_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 12.619999999999981,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 2.8421709430404007e-13,
+        "initialization_us": 48.8,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 17,
+      "name": "h_x_fixed_perceptual_s17",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.759999999999991,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.552713678800501e-13,
+        "initialization_us": 54.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 29,
+      "name": "h_x_fixed_perceptual_s29",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.1,
+        "p95_us": 11.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 50.7,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_x_fixed_perceptual",
+      "origin": "H",
+      "seed": 43,
+      "name": "h_x_fixed_perceptual_s43",
+      "numeric_bytes": 12492,
+      "numpy_only": {
+        "median_us": 11.0,
+        "p95_us": 11.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 85.1,
+        "cached_array_bytes": 25688
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_constant",
+      "origin": "H",
+      "seed": null,
+      "name": "h_constant",
+      "numeric_bytes": 12,
+      "numpy_only": {
+        "median_us": 1.1,
+        "p95_us": 1.2,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 0.0,
+        "initialization_us": 7.3,
+        "cached_array_bytes": 24
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 20.05999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.907985046680551e-13,
+        "initialization_us": 86.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.939999999999966,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 85.7,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 21.179999999999975,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.973799150320701e-13,
+        "initialization_us": 83.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_norm_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.41999999999998,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 81.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_norm_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 24.25999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.979039320256561e-13,
+        "initialization_us": 85.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_norm_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.044853423896711e-13,
+        "initialization_us": 94.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.25999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 83.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 21.279999999999973,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2079226507921703e-12,
+        "initialization_us": 85.2,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.0089706847793423e-12,
+        "initialization_us": 80.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "in_matched_perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.394884621840902e-13,
+        "initialization_us": 80.8,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "in_matched_perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2150280781497713e-12,
+        "initialization_us": 210.9,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "in_matched_perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.1,
+        "p95_us": 23.45999999999999,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.805489753489383e-13,
+        "initialization_us": 79.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_norm_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 27.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.836930773104541e-13,
+        "initialization_us": 76.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_norm_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.5,
+        "p95_us": 20.5,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.050093593832571e-13,
+        "initialization_us": 80.5,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_norm_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 21.019999999999982,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.689582056016661e-13,
+        "initialization_us": 79.9,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_norm_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.0,
+        "p95_us": 20.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 3.907985046680551e-13,
+        "initialization_us": 78.6,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_norm_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 4.121147867408581e-13,
+        "initialization_us": 78.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_norm_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.7,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 5.044853423896711e-13,
+        "initialization_us": 78.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_perceptual_uniform_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.1,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.536993168992922e-13,
+        "initialization_us": 91.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_perceptual_uniform_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.6,
+        "p95_us": 18.9,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.1937117960769683e-12,
+        "initialization_us": 78.3,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_perceptual_uniform_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 18.8,
+        "p95_us": 19.3,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 9.947598300641403e-13,
+        "initialization_us": 110.4,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 17,
+      "name": "out_person_perceptual_support_s17",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 6.252776074688882e-13,
+        "initialization_us": 81.1,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 29,
+      "name": "out_person_perceptual_support_s29",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.4,
+        "p95_us": 20.6,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.2079226507921703e-12,
+        "initialization_us": 91.0,
+        "cached_array_bytes": 66648
+      }
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "seed": 43,
+      "name": "out_person_perceptual_support_s43",
+      "numeric_bytes": 24278,
+      "numpy_only": {
+        "median_us": 20.2,
+        "p95_us": 20.4,
+        "query_count": 969,
+        "verification_rows": 323,
+        "max_lab_drift": 1.0231815394945443e-12,
+        "initialization_us": 117.7,
+        "cached_array_bytes": 66648
+      }
+    }
+  ],
+  "full_fit_records": [
+    {
+      "role": "mixed",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "median_seconds": 0.032117500028107315,
+      "seconds": [
+        0.03237889998126775,
+        0.032117500028107315,
+        0.03202530002454296
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.0323676000116393
+        },
+        {
+          "fit_seconds": 0.03210899996338412
+        },
+        {
+          "fit_seconds": 0.03201620001345873
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.04325210000388324,
+      "seconds": [
+        0.04295810003532097,
+        0.04338600003393367,
+        0.04325210000388324
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.04290240001864731
+        },
+        {
+          "fit_seconds": 0.04331800004001707
+        },
+        {
+          "fit_seconds": 0.04320339998230338
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.04356680001365021,
+      "seconds": [
+        0.04406589997233823,
+        0.043146800016984344,
+        0.04356680001365021
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.04401129996404052
+        },
+        {
+          "fit_seconds": 0.04309430002467707
+        },
+        {
+          "fit_seconds": 0.04347169998800382
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.043259199999738485,
+      "seconds": [
+        0.043249999987892807,
+        0.043259199999738485,
+        0.044539500027894974
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.04318889998830855
+        },
+        {
+          "fit_seconds": 0.043207300011999905
+        },
+        {
+          "fit_seconds": 0.04448840004624799
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_norm_support",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "median_seconds": 0.04462890001013875,
+      "seconds": [
+        0.04496089997701347,
+        0.04445869999472052,
+        0.04462890001013875
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.04489889997057617
+        },
+        {
+          "fit_seconds": 0.04439920000731945
+        },
+        {
+          "fit_seconds": 0.04456789995310828
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "median_seconds": 0.035223200044129044,
+      "seconds": [
+        0.03490809997310862,
+        0.035864599980413914,
+        0.035223200044129044
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.03489940002327785
+        },
+        {
+          "fit_seconds": 0.03585179999936372
+        },
+        {
+          "fit_seconds": 0.03521279996493831
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.04553220001980662,
+      "seconds": [
+        0.04510480002500117,
+        0.04827959998510778,
+        0.04553220001980662
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.0450457000406459
+        },
+        {
+          "fit_seconds": 0.04823360004229471
+        },
+        {
+          "fit_seconds": 0.04546329996082932
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.04581530002178624,
+      "seconds": [
+        0.04581530002178624,
+        0.045836999954190105,
+        0.04545999999390915
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.045754300022963434
+        },
+        {
+          "fit_seconds": 0.045788199990056455
+        },
+        {
+          "fit_seconds": 0.04539919999660924
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.046435700030997396,
+      "seconds": [
+        0.04709720000391826,
+        0.046435700030997396,
+        0.04602020001038909
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.04704510001465678
+        },
+        {
+          "fit_seconds": 0.046380900021176785
+        },
+        {
+          "fit_seconds": 0.04596860002493486
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "support",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.04711970000062138,
+      "seconds": [
+        0.04656239994801581,
+        0.04711970000062138,
+        0.047173400002066046
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.04650150000816211
+        },
+        {
+          "fit_seconds": 0.04705769999418408
+        },
+        {
+          "fit_seconds": 0.04710899997735396
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.6023730000015348,
+      "seconds": [
+        0.6167049999930896,
+        0.6023730000015348,
+        0.5946216000011191
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.6164783000131138,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6022606999613345,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.59447310003452,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "median_seconds": 0.6004686999949627,
+      "seconds": [
+        0.5963968000141904,
+        0.6004686999949627,
+        0.6005163000081666
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.5962601999635808,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6003308999934234,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6003889000276104,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.6405635999981314,
+      "seconds": [
+        0.6395559000084177,
+        0.6433401000103913,
+        0.6405635999981314
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.6394203000236303,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6431990999844857,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6404393000411801,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "support",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.637606100004632,
+      "seconds": [
+        0.6382440000306815,
+        0.637606100004632,
+        0.6360451000509784
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.6381177000002936,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6373659999808297,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6359047000296414,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.5963603000272997,
+      "seconds": [
+        0.5963603000272997,
+        0.5969839000026695,
+        0.594978799985256
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.5962078999727964,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.5967953999643214,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.5948186999885365,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "median_seconds": 0.6018776000128128,
+      "seconds": [
+        0.6018776000128128,
+        0.5964480999973603,
+        0.6071444000117481
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.6016920999973081,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.5961740000057034,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6069796999800019,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.6497487999731675,
+      "seconds": [
+        0.6489195000031032,
+        0.6497487999731675,
+        0.6581747999880463
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.6487373999552801,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6495772000052966,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6579921999946237,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "mixed",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 734,
+      "kind": "support",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.6398805999779142,
+      "seconds": [
+        0.6398805999779142,
+        0.647972300008405,
+        0.6383456999901682
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.6397255000192672,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6478246999904513,
+          "teacher_subsets": 18
+        },
+        {
+          "fit_seconds": 0.6381208999664523,
+          "teacher_subsets": 18
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "median_seconds": 0.009279599995352328,
+      "seconds": [
+        0.009361499978695065,
+        0.009279599995352328,
+        0.009276799974031746
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.00935469998512417
+        },
+        {
+          "fit_seconds": 0.009273200004827231
+        },
+        {
+          "fit_seconds": 0.00927039998350665
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.012220599979627877,
+      "seconds": [
+        0.012291599996387959,
+        0.012220599979627877,
+        0.012128799979109317
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.012282699986826628
+        },
+        {
+          "fit_seconds": 0.012212400033604354
+        },
+        {
+          "fit_seconds": 0.012120800034608692
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.012205199978780001,
+      "seconds": [
+        0.012198399985209107,
+        0.012212999979965389,
+        0.012205199978780001
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.012188000022433698
+        },
+        {
+          "fit_seconds": 0.012202800018712878
+        },
+        {
+          "fit_seconds": 0.012194900016766042
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.012503500038292259,
+      "seconds": [
+        0.01245139999082312,
+        0.01251949998550117,
+        0.012503500038292259
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.012441699975170195
+        },
+        {
+          "fit_seconds": 0.012509800028055906
+        },
+        {
+          "fit_seconds": 0.01249419996747747
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_norm_support",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.012756400043144822,
+      "seconds": [
+        0.012740100035443902,
+        0.012756400043144822,
+        0.013121799973305315
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.012727900000754744
+        },
+        {
+          "fit_seconds": 0.01274469995405525
+        },
+        {
+          "fit_seconds": 0.013109999999869615
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "median_seconds": 0.010466600011568516,
+      "seconds": [
+        0.010427900007925928,
+        0.010466600011568516,
+        0.010698899975977838
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.010421300015877932
+        },
+        {
+          "fit_seconds": 0.010460000019520521
+        },
+        {
+          "fit_seconds": 0.010690699971746653
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.013376099988818169,
+      "seconds": [
+        0.013430399994831532,
+        0.013369599997531623,
+        0.013376099988818169
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.013421099982224405
+        },
+        {
+          "fit_seconds": 0.013360899989493191
+        },
+        {
+          "fit_seconds": 0.013367500039748847
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.013426700024865568,
+      "seconds": [
+        0.013426700024865568,
+        0.013412499974947423,
+        0.013481000030878931
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.013416400004643947
+        },
+        {
+          "fit_seconds": 0.013402300013694912
+        },
+        {
+          "fit_seconds": 0.01347080001141876
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.013642299978528172,
+      "seconds": [
+        0.013737700006458908,
+        0.013642299978528172,
+        0.013634599978104234
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.013727500045206398
+        },
+        {
+          "fit_seconds": 0.01363240001956001
+        },
+        {
+          "fit_seconds": 0.013624600018374622
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.013871100032702088,
+      "seconds": [
+        0.013828199997078627,
+        0.013871100032702088,
+        0.01394790003541857
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.013815700018312782
+        },
+        {
+          "fit_seconds": 0.013859599945135415
+        },
+        {
+          "fit_seconds": 0.01393600000301376
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.08568339998601004,
+      "seconds": [
+        0.08636659994954243,
+        0.08536269998876378,
+        0.08568339998601004
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.08633070002542809,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08533930004341528,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08565500000258908,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.0852856999845244,
+      "seconds": [
+        0.08508079999592155,
+        0.08560649998253211,
+        0.0852856999845244
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.08506030001444742,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08558199997060001,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08525750000262633,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.09503249998670071,
+      "seconds": [
+        0.09503249998670071,
+        0.09446759999264032,
+        0.09564080002019182
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.09500929998466745,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.09444379998603836,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.09561289998237044,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.0949978000135161,
+      "seconds": [
+        0.09528920002048835,
+        0.09497949999058619,
+        0.0949978000135161
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.09526590001769364,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.0949537999695167,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.09498069999972358,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "uniform",
+      "alpha": 1.0,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.08574690000386909,
+      "seconds": [
+        0.08574690000386909,
+        0.08517430000938475,
+        0.08970970002701506
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.08571949996985495,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08515260001877323,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08968199999071658,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.08845360000850633,
+      "seconds": [
+        0.08781900000758469,
+        0.08935500000370666,
+        0.08845360000850633
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.08779750001849607,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08932939998339862,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.08842540002660826,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.0988626999896951,
+      "seconds": [
+        0.09936620004009455,
+        0.09821720002219081,
+        0.0988626999896951
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.09934040001826361,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.09819409996271133,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.09883610001998022,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 323,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 1,
+      "median_seconds": 0.09763699996983632,
+      "seconds": [
+        0.0983542000176385,
+        0.09763699996983632,
+        0.09609899995848536
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.09832980000646785,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.09761190001154318,
+          "teacher_subsets": 8
+        },
+        {
+          "fit_seconds": 0.0960767000215128,
+          "teacher_subsets": 8
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_raw",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "median_seconds": 0.015674899972509593,
+      "seconds": [
+        0.01562039996497333,
+        0.015674899972509593,
+        0.015747700002975762
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.015613000025041401
+        },
+        {
+          "fit_seconds": 0.015667299972847104
+        },
+        {
+          "fit_seconds": 0.01574050000635907
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_projected",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.02075710002100095,
+      "seconds": [
+        0.020765400025993586,
+        0.0206152000464499,
+        0.02075710002100095
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.02075409999815747
+        },
+        {
+          "fit_seconds": 0.020605099969543517
+        },
+        {
+          "fit_seconds": 0.02074710000306368
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_blend",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "blend",
+      "alpha": 1.0,
+      "rho": 0.25,
+      "power": 0,
+      "median_seconds": 0.020777599944267422,
+      "seconds": [
+        0.020734699966851622,
+        0.020777599944267422,
+        0.020912500040140003
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.02072029997361824
+        },
+        {
+          "fit_seconds": 0.02076439996017143
+        },
+        {
+          "fit_seconds": 0.020898999995552003
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_uniform",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 0,
+      "median_seconds": 0.021255700034089386,
+      "seconds": [
+        0.021255700034089386,
+        0.021367400011513382,
+        0.021178899973165244
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.021242300048470497
+        },
+        {
+          "fit_seconds": 0.021355200035031885
+        },
+        {
+          "fit_seconds": 0.021167099999729544
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_norm_support",
+      "origin": "H",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 1,
+      "median_seconds": 0.02174709999235347,
+      "seconds": [
+        0.02174709999235347,
+        0.02185389999067411,
+        0.021611900010611862
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.0217306999838911
+        },
+        {
+          "fit_seconds": 0.021839699998963624
+        },
+        {
+          "fit_seconds": 0.021598100021947175
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_raw",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "raw",
+      "alpha": 0.1,
+      "rho": 0.0,
+      "power": 0,
+      "median_seconds": 0.017806600022595376,
+      "seconds": [
+        0.017820200009737164,
+        0.01776419999077916,
+        0.017806600022595376
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.01781190000474453
+        },
+        {
+          "fit_seconds": 0.01775110000744462
+        },
+        {
+          "fit_seconds": 0.017798200016841292
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_projected",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "projected",
+      "alpha": 0.1,
+      "rho": 1.0,
+      "power": 0,
+      "median_seconds": 0.02274560002842918,
+      "seconds": [
+        0.023442600038833916,
+        0.022530100017320365,
+        0.02274560002842918
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.023432399961166084
+        },
+        {
+          "fit_seconds": 0.02251899999100715
+        },
+        {
+          "fit_seconds": 0.02273510000668466
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_blend",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "blend",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 0,
+      "median_seconds": 0.02280630002496764,
+      "seconds": [
+        0.02269069995963946,
+        0.022837699973024428,
+        0.02280630002496764
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.022678399982396513
+        },
+        {
+          "fit_seconds": 0.022823699982836843
+        },
+        {
+          "fit_seconds": 0.022793999989517033
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_uniform",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.023168700048699975,
+      "seconds": [
+        0.02321700000902638,
+        0.023168700048699975,
+        0.023134099959861487
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.023204100027214736
+        },
+        {
+          "fit_seconds": 0.02315729996189475
+        },
+        {
+          "fit_seconds": 0.023121599981095642
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "h_perceptual_support",
+      "origin": "H",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "median_seconds": 0.024116899992804974,
+      "seconds": [
+        0.023698000004515052,
+        0.024276399984955788,
+        0.024116899992804974
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.023683200008235872
+        },
+        {
+          "fit_seconds": 0.024260899983346462
+        },
+        {
+          "fit_seconds": 0.024100899987388402
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_uniform",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 0,
+      "median_seconds": 0.281126799993217,
+      "seconds": [
+        0.26714050001464784,
+        0.281126799993217,
+        0.28342359996167943
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.2670375000452623,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.2810114999883808,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.2833025000290945,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_norm_support",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 1,
+      "median_seconds": 0.27750680001918226,
+      "seconds": [
+        0.27750680001918226,
+        0.27844689995981753,
+        0.27719180000713095
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.27740999998059124,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.2783388000098057,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.277092200005427,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_uniform",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.3113869000226259,
+      "seconds": [
+        0.31368650001240894,
+        0.3113869000226259,
+        0.3113018000149168
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.31347879994427785,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.31128279998665676,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.3112005000002682,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "in_matched_perceptual_support",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "median_seconds": 0.3068339000456035,
+      "seconds": [
+        0.3089186000288464,
+        0.3068339000456035,
+        0.3034345000050962
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.3088065999909304,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.30670369998551905,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.3033335999934934,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_uniform",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 0,
+      "median_seconds": 0.26999489997979254,
+      "seconds": [
+        0.26999489997979254,
+        0.27068139996845275,
+        0.26881480001611635
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.2698765999521129,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.2705695000477135,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.26870639994740486,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_norm_support",
+      "origin": "C",
+      "loss": "norm",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.25,
+      "power": 1,
+      "median_seconds": 0.2655362000223249,
+      "seconds": [
+        0.2655362000223249,
+        0.2680448000319302,
+        0.26496279996354133
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.2654241999844089,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.2679434000165202,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.2648619000101462,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_uniform",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "uniform",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 0,
+      "median_seconds": 0.3004513999912888,
+      "seconds": [
+        0.2998043000116013,
+        0.3004513999912888,
+        0.3052284000441432
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.2997441000188701,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.30034959997283295,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.30512809997890145,
+          "teacher_subsets": 16
+        }
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "family": "out_person_perceptual_support",
+      "origin": "C",
+      "loss": "perceptual",
+      "seed": 17,
+      "n_fit_rows": 643,
+      "kind": "support",
+      "alpha": 0.1,
+      "rho": 0.5,
+      "power": 1,
+      "median_seconds": 0.2995276000001468,
+      "seconds": [
+        0.2995276000001468,
+        0.29915219999384135,
+        0.30088930000783876
+      ],
+      "details": [
+        {
+          "fit_seconds": 0.29942019999725744,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.299033299961593,
+          "teacher_subsets": 16
+        },
+        {
+          "fit_seconds": 0.3007771999691613,
+          "teacher_subsets": 16
+        }
+      ]
+    }
+  ],
+  "C_complete_fits_including_warmups": 96,
+  "H_complete_fits_including_warmups": 120,
+  "scope": "183 actual one-record consumers;20 warmups/3 passes.216 complete fits,96 C include n-person excluded-teacher pool plus native tables/routing and full student geometry/readout/export;120 same-run H controls. No imports/I/O/grid selection/image extraction/phone or GPU timing. Cached arrays exclude process, temporaries and retained caller objects. One CPU thread, no concurrent heavy work."
+}

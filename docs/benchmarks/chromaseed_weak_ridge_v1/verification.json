@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "completed_unix": 1789281964.2574532,
+  "tests_passed": 26,
+  "pytest_seconds": 1.45,
+  "pytest_command": "python -m pytest tests/test_chromaseed_weak_ridge.py tests/test_chromaseed_perceptual.py tests/test_chromaseed_perceptual_protocol.py tests/test_chromaseed_condensed_exact.py -q",
+  "pytest_evidence": "Captured 26 passed in 1.45s before primary fits; tested frozen numerical sources still match. Not rerun for documentation edits.",
+  "tested_sources": {
+    "scripts/chromaseed_condensed_exact.py": "81b9483e2f744eee6dd43e195023d9c98a4587bd5e1157caf1ca66aa4bd858ec",
+    "scripts/chromaseed_perceptual.py": "2c92fced648e0e72230dd38707d4b6e0e1aecf64062eb18be9c5d41e21735a2a",
+    "scripts/chromaseed_perceptual_train.py": "c9f42dd4b2a8ac947497fd7f2dc77b3fc2742bbd28e650df377390ab3b617519",
+    "scripts/chromaseed_perceptual_reference.py": "5b386f30ca16574b64a4cfebd2e940d8f2cbebb2b94ebd1863ff1d96b7f41d0c",
+    "docs/research/chromaseed_perceptual_v1_protocol.md": "a79ac611997e5b05eb1e72b1357e5be97a6ebb413fd1b80ab96071724405d446",
+    "tests/test_chromaseed_perceptual.py": "bb712ba0f8ccb98040673f700b4490aec27cd14050d9d415324364acd448e7e6",
+    "tests/test_chromaseed_perceptual_protocol.py": "316572ab7a2e10b98574f6a9952ff5fa55927dc4f583d14e08fd7c98c17ef59b",
+    "tests/fixtures/ciede2000_sharma.txt": "44aebb39107128328add54fbef5ac8ee89909e50508f448a1580adea2058a4b8",
+    "scripts/chromaseed_weak_ridge.py": "32662cb75298e84ab5aeee76e3efd2965d779c67c385c2992d2e41a0c6e6b6ca",
+    "scripts/chromaseed_weak_ridge_train.py": "9a9e540e461919a9c494a19354a51cef9111c483aee1171a7ab34ae1e823d042",
+    "docs/research/chromaseed_weak_ridge_v1_protocol.md": "cf7e03c0a360a16f1bd078ac5066d5a2848d81766b3fe6410d1c601b1e66eb5a",
+    "tests/test_chromaseed_weak_ridge.py": "58f8c7deb778941920703f18471291e013f6fcd03da362101735db0df6e55202",
+    "scripts/chromaseed_perceptual_audit.py": "e1dddfa2516c9232393635ff88761d1a35b2160992ce3b58c4485be613f777a6"
+  },
+  "ruff": "Fresh check passed all 5 W scripts and 1 W test file",
+  "git_diff_check": "passed",
+  "original_repository_git_status": "clean",
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "source_lock_sha256": "c16e607e05cc9750ccc3275c16d482c2fb863c693d920ab366b0e0200c1d33e8",
+  "selection_sha256": "c455b980d26f39ec6f5230819aaf06eead19332b9ff44d455029827fbf13cef4",
+  "source_locks_verified": [
+    {
+      "run": "skin_local_search_v1",
+      "source_lock_sha256": "9665568430b03e66cc5bb5b6b564a7bffd1e9a9e4fb726660c27e31116c57ea5",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "skin_local_search_compact_v1",
+      "source_lock_sha256": "f2ffca50caf33e79247d7b15ca4c899c2347d6265ba690db9a886c40c2440906",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_v1",
+      "source_lock_sha256": "286cf15eeb9dc5cbba45aa88db4751c7b9829db1ba2ba3a5a5ddf2d2a9539deb",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_frozen_v1",
+      "source_lock_sha256": "2a2834f81b283ba76cecc3dd0101144183c6f26968772bf2c3c1d6eb5c9b2626",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_v1",
+      "source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+      "source_bindings_checked": 6
+    },
+    {
+      "run": "chromaseed_refine_precision_v1",
+      "source_lock_sha256": "46562a2cda469546787ed6f04036eecf3a940be7e0075030c513ad4085a7d360",
+      "source_bindings_checked": 4
+    },
+    {
+      "run": "chromaseed_kernel_v1",
+      "source_lock_sha256": "27adebf6f28ea0e3eecd9006ef43fc94b37e9482bdb73e6d4398703b48e6bb4f",
+      "source_bindings_checked": 7
+    },
+    {
+      "run": "chromaseed_fast_kernel_v1",
+      "source_lock_sha256": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+      "source_bindings_checked": 10
+    },
+    {
+      "run": "chromaseed_condensed_exact_v1",
+      "source_lock_sha256": "204f8c1352e56e5656d89ed3dc258c63f95965d30f42aea347fbee7868f99b8f",
+      "source_bindings_checked": 18
+    },
+    {
+      "run": "chromaseed_perceptual_v1",
+      "source_lock_sha256": "9ce75fddcfc3241b271318da51eead680d78a9e51877b346aed64716b5550e92",
+      "source_bindings_checked": 25
+    },
+    {
+      "run": "chromaseed_weak_ridge_v1",
+      "source_lock_sha256": "c16e607e05cc9750ccc3275c16d482c2fb863c693d920ab366b0e0200c1d33e8",
+      "source_bindings_checked": 31
+    }
+  ],
+  "source_bindings_checked_total": 123,
+  "parent_artifact_bindings_checked": 136,
+  "current_selected_model_prediction_hashes_checked": 90,
+  "current_bank_file_hashes_checked": 21,
+  "independent_audit_sha256": "d1aa61fb4cc5fc759face8bf1669dabfa9472b9bade8d813a4f872fa57fdaa04",
+  "independent_audit_checks": {
+    "banks": 12,
+    "stored_readouts": 8748,
+    "exact_parent_payloads": 2916,
+    "oof_query_rows": 1239300,
+    "choices": 15,
+    "iterative_trajectories": 1944,
+    "selected_models": 45,
+    "selected_query_rows": 17970,
+    "independent_refits": 45,
+    "positive_step_probe_readouts": 18
+  },
+  "independent_audit_maxima": {
+    "oof_prediction_drift": 2.1316282072803006e-10,
+    "selected_prediction_drift": 2.3376856006507296e-11,
+    "svd_prediction_drift": 0.0003687715889100218,
+    "positive_step_probe_drift": 0.0005199111837246306,
+    "objective_increase": 0.0,
+    "normal_equation_residual": 9.569043594077718e-16
+  },
+  "runtime_sha256": "73af1593483785e0732c79782fb3517d56304952c808433589f548d22e5a2f3e",
+  "active_study_processes": 0,
+  "terminal_evidence": "Training session 46551/PID 33824 and audit sessions 60251/76553 returned exit 0; runtime returned exit 0 directly. Fresh process scan confirms none active.",
+  "local_markdown_links_checked": 42,
+  "figures_visually_inspected": [
+    "search_transfer.png",
+    "penalty.png"
+  ],
+  "artifact_sha256": {
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\audit.json": "d1aa61fb4cc5fc759face8bf1669dabfa9472b9bade8d813a4f872fa57fdaa04",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\penalty.png": "cf81e6af7858d1684af2c2e2e02933b5d7125e252e147f07ae2497dd89275139",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\penalty.svg": "27e8cb3e6bafefa5e7b9a784bca265b1ad476153501a1e0375ed03604840ee5c",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\report.md": "951f3016e11db75dc2b5674b9ffaae93cd329698ce9cd3458a0ea7d382371c88",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\reproduce.md": "c465b35278fa30096fa96dc3ecfad5902727ae54cf25656a9148c61ce909efe4",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\runtime.json": "73af1593483785e0732c79782fb3517d56304952c808433589f548d22e5a2f3e",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\search_transfer.png": "c9e10f49e9486cf6bc48419e4436c01de2bdaa6028c161c7b6ff9e4da4bd04cf",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\search_transfer.svg": "76a544e813fbae48d98b6ccb461448e7dc8433f108ef09e285c4212d2bed5cef",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\selections.json": "c455b980d26f39ec6f5230819aaf06eead19332b9ff44d455029827fbf13cef4",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\source_lock.json": "c16e607e05cc9750ccc3275c16d482c2fb863c693d920ab366b0e0200c1d33e8",
+    "docs\\benchmarks\\chromaseed_weak_ridge_v1\\summary.json": "69d2555ea1182703c3ffe40eb2a65fc1d6ce2d7b41c2c4bcf576daf1f8dc4f52",
+    "docs\\research\\chromaseed_weak_ridge_next_decision.md": "b7faa6144cf89b8da5a1cc60de5fc79cc10c670f12e96be804a407473a635d48",
+    "docs\\architecture\\chromaseed_weak_ridge_model_card.md": "ed6996803c8ffada0fd0c6142082627523482a7284065c8f9c406838ef021169",
+    "docs\\superpowers\\plans\\2026-09-13-chromaseed-weak-ridge.md": "83b3858febeba6e2666032dd619771e7d7062c68b323ec63e699e07b23f5d983"
+  },
+  "postprocess_sources": {
+    "scripts/chromaseed_weak_ridge_audit.py": "757a6af83acee889f1c6419989aac5abc66fc51bde2bc2b524080bc10190e857",
+    "scripts/chromaseed_weak_ridge_runtime.py": "015e19fd16ebb5b1a27cfd78bb80566271b958e840cd4109f13538c6ac8fd9f8",
+    "scripts/chromaseed_weak_ridge_report.py": "78da7b3896ab4a2b05d0ff9e81d30c7e63c84c8191693a417d18b15bb4bbcec8"
+  },
+  "shortcut_sha256": "5476edf3e7a7b45c575ab33b65adf983509bcfe561034dd9c66884c500e9b394",
+  "goal_classification": "progress; broad goal active; inner person-selection stability diagnostic planned, not launched",
+  "evidence_limits": "Historically reused original TRAIN only; numerical/audit/runtime verification does not establish ordinary-phone facial quality or independent scientific confirmation."
+}

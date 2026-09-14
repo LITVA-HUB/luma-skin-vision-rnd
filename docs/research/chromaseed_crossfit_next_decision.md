@@ -1,0 +1,11 @@
+# C next decision: inspect and isolate input feature groups
+
+C is verified progress, not broad-goal completion. Fixed-H person-excluded residual targets fail to produce a robust gain. They reuse the same252 teachers as a matched inclusion control, and independent native decoding/routing/QR fits validate the result. In-matched gives only a tiny mixed benefit while teacher-inclusive training costs about14 times H's single fit. The same general mechanism already failed to win in the older large-network experiment. Preserve both failures; do not expand cross-fitting folds, mixing strengths or teacher grids merely to obtain a favorable held score.
+
+The next useful question is in the input representation. Inventory existing direct-RGB/quantile baselines first to avoid repeating an old experiment. Then register a compact feature-group ablation: explicit central RGB statistics versus distribution shape/correlations, with original raw36 and projected16 controls, matched kernels/readouts, complete size/response/full-fit accounting and inner-only selection. A small subset is a hypothesis, not a known camera-invariant representation. Do not infer real-phone accuracy from camera separability or a lower internal score. Fixed encoded-sRGB statistics cannot be assumed to supply calibrated reflectance; any physical color conversion must state and test its assumptions.
+
+This new feature-group study is planned, not implemented or launched. Register the entire grid and source/data boundary before new fits. Preserve all mixed/transfer/stress negatives. There is still a concrete learning question, so the full goal is active, not blocked; compatibility tests and small reused-data gains do not establish compact/fast/high-quality deployment.
+
+Only original TRAIN remains authorized; no new data, agents, publication or uploads. The24 historically reused people cannot establish ordinary-phone facial quality through more searches. That requirement ultimately needs independent instrument-referenced facial acquisition and end-to-end extraction validation. Preserve C/H/X/A read-only receipts and every old source/input binding; never call G/GS verifier mains.
+
+[C report](../benchmarks/chromaseed_crossfit_v1/report.md) · [Verification](../benchmarks/chromaseed_crossfit_v1/verification.json) · [Active goal](chromaseed_active_goal.md).

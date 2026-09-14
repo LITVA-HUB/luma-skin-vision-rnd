@@ -1,0 +1,67 @@
+{
+  "classification": "Verification-consumer preparation passed; HR primary remains running. Not a full audit or quality result.",
+  "verification_protocol_sha256": "3c5f4feed96c18e39cc5ec750163425778b9ee2397633bd4f4860dcb44b147d9",
+  "original_source_files_unchanged": 185,
+  "tests": {
+    "chunk_id": "60b3e2",
+    "wall_time_seconds": 2.5483212,
+    "exit_code": 0,
+    "original_token_count": 26,
+    "output": "..............                                                           [100%]\r\n14 passed in 1.73s\r\n"
+  },
+  "lint": {
+    "chunk_id": "756186",
+    "wall_time_seconds": 0.197903,
+    "exit_code": 0,
+    "original_token_count": 5,
+    "output": "All checks passed!\n"
+  },
+  "primary_entrypoint_guards": [
+    {
+      "script": "chromaseed_head_range_audit.py",
+      "exit_code": 1,
+      "expected_rejection": "HR primary must be complete and its recorded worker confirmed dead"
+    },
+    {
+      "script": "chromaseed_head_range_runtime.py",
+      "exit_code": 1,
+      "expected_rejection": "HR primary must be complete and its recorded worker confirmed dead"
+    },
+    {
+      "script": "chromaseed_head_range_report.py",
+      "exit_code": 1,
+      "expected_rejection": "HR primary must be complete and its recorded worker confirmed dead"
+    }
+  ],
+  "observed_live_process_guard": {
+    "pids": [
+      26808,
+      42200
+    ],
+    "result": "Competing research workers rejected before GPU benchmark initialization"
+  },
+  "partial_probe": {
+    "path": "verification_v1/probes/e56b1604476bbb77/result.json",
+    "sha256": "a98d4e96f54657de1fb40c4517f27c3d1f70d8b532ea0f7663b1f35751891d76",
+    "protocol_sha256": "83756c94795eae67daec9021cf3b47169c6ecc6c42ab40fea96cea70c4e33495",
+    "session_id": 42012,
+    "exit_code": 0,
+    "banks": 4,
+    "models": 72,
+    "vectors": 16416,
+    "maximum_native_lab": 0.000007610323443429934,
+    "seconds": 20.33808630000567,
+    "full_primary_audit": false
+  },
+  "full_outputs_absent": [
+    "audit.json",
+    "runtime.json",
+    "verification.json"
+  ],
+  "unexecuted_until_primary_terminal_success": [
+    "Full 126-inner-bank and 42-final-bank audit",
+    "189 CPU model timings",
+    "42 complete construction replays",
+    "Final HR report and verification seal"
+  ]
+}

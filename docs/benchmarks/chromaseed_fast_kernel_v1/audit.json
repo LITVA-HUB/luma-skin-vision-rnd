@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "source_lock_sha256": "b7936dca21e8474e3e8745edc8d9af566c432f0654e4a26e902ad26e88d1da21",
+  "selection_sha256": "237ef7a98d2cd1cadf38494fe572b56482482dc58a48d2c66833125fd284ea74",
+  "audit_source_sha256": "86bf04413ebe7895a19ab69ef92788f5a21dd7ca3c1fa720e54a186cebd53627",
+  "dependencies": {
+    "scripts/chromaseed_kernel_audit.py": "f68ec73e09176848c96b5e54fb6f9c3647d8b1a0fb67900f7a59547634e77e28",
+    "scripts/chromaseed_refine_audit.py": "63ad91c019edfa64522fe30f01830308dd26a863ec45460b09cff4eef130c653",
+    "scripts/skin_local_search_train.py": "c39e36191354c39bdbdf0d4ba7a073be27b844bc9ec9a24c0c954cfde55704bc",
+    "src/luma_skin_vision/color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+  },
+  "checks": {
+    "bank_hashes": 21,
+    "normalizers_widths_centers": 4860,
+    "oof_probe_rows": 10935,
+    "matched_dense_column_controls": 972,
+    "primary_choices": 45,
+    "fast_choices": 9,
+    "size_choices": 3,
+    "selected_artifact_hashes": 270,
+    "svd_refits": 135,
+    "final_prediction_rows": 53910
+  },
+  "maxima": {
+    "prediction_component_drift": 1.1795009413617663e-12,
+    "svd_component_drift": 6.998932960300408e-06,
+    "matched_dense_column_component_drift": 1.8996781307123456e-05
+  },
+  "paired": [
+    {
+      "role": "mixed",
+      "rank": 64,
+      "arm": "column_pairs1024",
+      "n_people": 6,
+      "mean_delta_vs_matched_dense": -0.006286121554226328,
+      "descriptive_person_bootstrap_95": [
+        -0.012515179979460425,
+        0.0018593858462239155
+      ]
+    },
+    {
+      "role": "mixed",
+      "rank": 128,
+      "arm": "column_pairs1024",
+      "n_people": 6,
+      "mean_delta_vs_matched_dense": 0.4774059134504736,
+      "descriptive_person_bootstrap_95": [
+        0.2226732316870709,
+        0.7163498040082866
+      ]
+    },
+    {
+      "role": "mixed",
+      "rank": 256,
+      "arm": "column_pairs1024",
+      "n_people": 6,
+      "mean_delta_vs_matched_dense": 0.0017879596520586165,
+      "descriptive_person_bootstrap_95": [
+        -0.001139331309033172,
+        0.00487347978054542
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "rank": 64,
+      "arm": "column_pairs1024",
+      "n_people": 16,
+      "mean_delta_vs_matched_dense": -0.04469102352156884,
+      "descriptive_person_bootstrap_95": [
+        -0.0969088812915798,
+        0.0005886988703249488
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "rank": 128,
+      "arm": "column_pairs1024",
+      "n_people": 16,
+      "mean_delta_vs_matched_dense": -0.005955153146435799,
+      "descriptive_person_bootstrap_95": [
+        -0.01660353556594739,
+        0.00539800334515537
+      ]
+    },
+    {
+      "role": "slr_to_ipod",
+      "rank": 256,
+      "arm": "column_pairs1024",
+      "n_people": 16,
+      "mean_delta_vs_matched_dense": -0.00910582639191454,
+      "descriptive_person_bootstrap_95": [
+        -0.012551817647110509,
+        -0.005737561957644866
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "rank": 64,
+      "arm": "column_pairs1024",
+      "n_people": 8,
+      "mean_delta_vs_matched_dense": -0.5071558493775685,
+      "descriptive_person_bootstrap_95": [
+        -1.0467956230166944,
+        -0.06604279455143718
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "rank": 128,
+      "arm": "column_pairs1024",
+      "n_people": 8,
+      "mean_delta_vs_matched_dense": -0.011455856387655006,
+      "descriptive_person_bootstrap_95": [
+        -0.04002384948210792,
+        0.01904844865377564
+      ]
+    },
+    {
+      "role": "ipod_to_slr",
+      "rank": 256,
+      "arm": "column_pairs1024",
+      "n_people": 8,
+      "mean_delta_vs_matched_dense": 0.025393061018235574,
+      "descriptive_person_bootstrap_95": [
+        0.014497205306249539,
+        0.03801333558712727
+      ]
+    }
+  ],
+  "evidence": "separate width/decision/direct-kernel/SVD calculation on reused exploratory people, not external replication or fresh confirmation"
+}

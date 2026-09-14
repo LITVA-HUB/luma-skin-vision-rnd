@@ -1,0 +1,25 @@
+# Palette pretraining P2 — shared local encoder
+
+The previous continuation is progress: measured palette P1 was prepared and audited, and the HR production job was recovered without changing its numerical sources or completed banks. HR remains the only GPU training process. This auxiliary study uses CPU and does not read any native held labels or change HR.
+
+## Mechanism and boundary
+
+The prior hard spectral-decoder study did not show consistent gains. Here the intervention is an initialization for the shared local encoder, not a constrained final color decoder. Its layers are 18→384→256 with SiLU, matching the token1/token2 layers of patch5m, soft5m and dynamic5m. The native model will still be free to adjust all parameters. A later matched native experiment is required before claiming a real-image color gain.
+
+Use only the 19 original TRAIN UMINHO sources and frozen P1 masks/centres. In each source, traverse the original 1024 P1 centres in their stored random order. Keep the first 128 centres whose 16×16 crop (y−8:y+8,x−8:x+8) fits the source and is entirely inside the frozen qualified mask. If a source has fewer than 128 valid centres, fail explicitly; do not lower its mask threshold or silently substitute centres. Overlapping patches remain correlated and retain the source group.
+
+For each patch save the original mean 33-band reflectance, source coordinates and linear RGB rendered by the P1 D65/CIE1931 matrix. The auxiliary target is the mean reflectance plus the derived D65/CIE1964 Lab of that mean spectrum. No measured native photo label is replaced by these derived coordinates. Reflectance values above 1 remain unmodified; no logit-reflectance transform.
+
+Generate 8 fixed views per patch: identity and 7 photometric perturbations. For each source/centre/view, seed PCG64 from SHA256 of its stable key. Perturbations use three channel gains exp(U[−0.25,0.25]), exposure 2**U[−0.5,0.5], and encoded-RGB gamma U[0.85,1.15]. Apply gains/exposure in linear RGB, encode sRGB, clip the rendered input to0…1, apply gamma and round to8bits. These are simplified photometric simulations, not measured camera responses or new camera photographs.
+
+Extract exactly the native 18 patch statistics: per-channel q10/q50/q90, mean, population standard deviation and mean horizontal/vertical absolute gradient. Confirm their order/numbers against the frozen MSKCC feature routine on synthetic crops. Preserve the same clean spectral target for all views. Each source contributes128patches×8views=1024examples; total19,456examples. Record actual clipping counts and hashes. Original5validation/5test cubes remain unopened.
+
+## Fixed learning contrast
+
+Six auxiliary models: seeds17/29/43 × aligned targets / shuffled targets. Aligned and shuffled share the same input examples, initial encoder parameters, sampling and optimizer. The control applies a single fixed seed770019 permutation to complete patch target vectors before their 8-view repetition; spectral/Lab coordinates stay together. The control is useful for distinguishing learned input/target structure from additional optimization, not sufficient to prove skin specificity over arbitrary color pretraining.
+
+The encoder has105,856parameters; append a temporary256→36linear auxiliary head, yielding115,108trainable parameters. Initialize token layers with the exact AS per-layer seed convention; initialize the auxiliary head with its own stable seed. Standardize features/targets from the auxiliary TRAIN data only. All6models use AdamWlr0.001, wd0.01, clip5, batch128, deterministic FP32,2048steps, cosine schedule0.001→0.0001 over2048steps, and independent per-seed replacement draws shared between aligned/shuffled. Use original BankAdamW. Every source has equal sampling weight because each contributes1024examples. CPU only, one thread, no CUDA context. No epoch/model selection from auxiliary training errors; export only the fixed2048step encoder, while recording losses128steps apart and initial/final full training MSE as optimization diagnostics.
+
+Verify every encoder export with an independent NumPy SiLU consumer. For a native fit normalization (mn,sn), transfer a pretraining first layer (Wp,bp) with normalization(mp,sp) using Wn=(sn/sp)[:,None]*Wp and bn=bp+((mn−mp)/sp)@Wp. This preserves the raw-token encoder function apart from FP32 rounding; test and audit with fixed tolerances before later native fitting. The auxiliary head does not count as required native inference capacity.
+
+Freeze data source, encoder/fitter, tests, this protocol, P1 receipts/masks, original cubes, CIE/color and reused initializer/optimizer dependencies before preparing inputs or fitting. Record every exported parameter, state hash, actual step count, failures and elapsed work. Independent readback must reproduce source patch means, derived targets, view provenance, feature order, shuffled-label grouping, encoder outputs and normalization transfer. This study is preparation of initializations, not evidence of improved native accuracy. It neither seals nor completes the overall research goal.

@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "scripts/chromaseed_refine_precision.py": "56df57f9f58c42370739124e3cfa1d9aa92e4e2a408a3df8d83872d79ca061e2",
+    "scripts/chromaseed_refine_numpy.py": "320fcab7cff60e3ef3bc8758ee1777e6d33455a18f76d8e66f64caf35e884e28",
+    "scripts/chromaseed_refine_audit.py": "63ad91c019edfa64522fe30f01830308dd26a863ec45460b09cff4eef130c653",
+    "docs/research/chromaseed_refine_precision_protocol.md": "c50273bcad75860abff42275890fbe4126c433ee66c0b4a5a164ef576a555ab4"
+  },
+  "primary_source_lock_sha256": "ebf9c90bc32142ede9a0a40d1d77cb4037b327435faf81444f140e8ad66fc7d5",
+  "primary_results_sha256": "1e5c63733fc180942f900691faf8e03b8056dfda3cb872d53f11bcce36a77f6b",
+  "cache_sha256": "d7e7b4b4fc4574d620cbac8364dd8bb91be51769f4045bb8b4ddf2ad840556e0",
+  "precisions": [
+    "fp16_storage",
+    "int8_channels"
+  ],
+  "arithmetic": "decode to float32 before inference",
+  "evidence": "post-hoc storage evaluation on reused exploratory rows; no training or threshold retuning"
+}

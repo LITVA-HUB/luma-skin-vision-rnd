@@ -1,0 +1,7517 @@
+{
+  "schema": "luma.chromaseed.compute-structure.v1",
+  "inputs": [
+    {
+      "path": "C:\\Users\\dimal\\Documents\\просто\\.worktrees\\luma-local-search\\scripts\\chromaseed_architecture_scale.py",
+      "sha256": "ad76f5b04f65536df1768a7c60c1051020547a77cc6776b244417e53569a9047"
+    },
+    {
+      "path": "C:\\Users\\dimal\\Documents\\просто\\.worktrees\\luma-local-search\\scripts\\chromaseed_head_range.py",
+      "sha256": "2810908381b5c7242a87baa1c5e146b3663ab393097f3d6556dc34d9e904562a"
+    },
+    {
+      "path": "C:\\Users\\dimal\\Documents\\просто\\.worktrees\\luma-local-search\\scripts\\chromaseed_refine.py",
+      "sha256": "a055383293111bc52b2672e71e8cd6201396ba98c73260a1d35b64a104a1156c"
+    },
+    {
+      "path": "D:\\Luma-RnD\\chromaseed_palette_transfer_v1\\registration.json",
+      "sha256": "90a9a78bc46f5ca1f40befe0cd04e8861374868d41710c099c7573da7a2add17"
+    },
+    {
+      "path": "C:\\Users\\dimal\\Documents\\просто\\.worktrees\\luma-local-search\\scripts\\chromaseed_compute_structure.py",
+      "sha256": "f9980ec455e3b583fce440e049a9721b4914395426f9809a974603c34aea3b6d"
+    },
+    {
+      "path": "C:\\Users\\dimal\\Documents\\просто\\.worktrees\\luma-local-search\\tests\\test_chromaseed_compute_structure.py",
+      "sha256": "5b657d96202d1107e11f4433493818d7077d4777f7dfbddf9028572317d1943a"
+    },
+    {
+      "path": "C:\\Users\\dimal\\Documents\\просто\\luma-skin-vision-rnd\\.venv\\Lib\\site-packages\\torch\\utils\\flop_counter.py",
+      "sha256": "dfe14a8a0f8572cea1c19c87e6ceb24bdfea31f79355bc0671dacb61b364097c"
+    }
+  ],
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "python": "3.12.6"
+  },
+  "cases": 42,
+  "single_model_cases": [
+    {
+      "variant": "patch_small",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 17374,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 5760
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            1,
+            1,
+            96
+          ],
+          "macs": 6144
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            1,
+            1,
+            64
+          ],
+          "macs": 3072
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 202272
+      },
+      "bank_linear_macs": 101136,
+      "linear_macs": 101136,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "mlp1": 5760,
+        "mlp2": 6144,
+        "mlp3": 3072,
+        "head": 144
+      },
+      "fixed_linear_macs": 101136,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch_small",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 17374,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 5760
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            1,
+            1,
+            96
+          ],
+          "macs": 6144
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            1,
+            1,
+            64
+          ],
+          "macs": 3072
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 202272
+      },
+      "bank_linear_macs": 101136,
+      "linear_macs": 101136,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "mlp1": 5760,
+        "mlp2": 6144,
+        "mlp3": 3072,
+        "head": 144
+      },
+      "fixed_linear_macs": 101136,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch_small",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 17374,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 5760
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            1,
+            1,
+            96
+          ],
+          "macs": 6144
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            1,
+            1,
+            64
+          ],
+          "macs": 3072
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 202272
+      },
+      "bank_linear_macs": 101136,
+      "linear_macs": 101136,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "mlp1": 5760,
+        "mlp2": 6144,
+        "mlp3": 3072,
+        "head": 144
+      },
+      "fixed_linear_macs": 101136,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch5m",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4962566,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 523264
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            1,
+            1,
+            1792
+          ],
+          "macs": 2752512
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            1,
+            1,
+            1536
+          ],
+          "macs": 1572864
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1024
+          ],
+          "macs": 3072
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 23171072
+      },
+      "bank_linear_macs": 11585536,
+      "linear_macs": 11585536,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "mlp1": 523264,
+        "mlp2": 2752512,
+        "mlp3": 1572864,
+        "head": 3072
+      },
+      "fixed_linear_macs": 11585536,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch5m",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4962566,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 523264
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            1,
+            1,
+            1792
+          ],
+          "macs": 2752512
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            1,
+            1,
+            1536
+          ],
+          "macs": 1572864
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1024
+          ],
+          "macs": 3072
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 23171072
+      },
+      "bank_linear_macs": 11585536,
+      "linear_macs": 11585536,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "mlp1": 523264,
+        "mlp2": 2752512,
+        "mlp3": 1572864,
+        "head": 3072
+      },
+      "fixed_linear_macs": 11585536,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch5m",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4962566,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 523264
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            1,
+            1,
+            1792
+          ],
+          "macs": 2752512
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            1,
+            1,
+            1536
+          ],
+          "macs": 1572864
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1024
+          ],
+          "macs": 3072
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 23171072
+      },
+      "bank_linear_macs": 11585536,
+      "linear_macs": 11585536,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "mlp1": 523264,
+        "mlp2": 2752512,
+        "mlp3": 1572864,
+        "head": 3072
+      },
+      "fixed_linear_macs": 11585536,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft_small",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 2880
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            24
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 328128
+      },
+      "bank_linear_macs": 164064,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft_small",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 2880
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            24
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 328128
+      },
+      "bank_linear_macs": 164064,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft_small",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 2880
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            24
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 328128
+      },
+      "bank_linear_macs": 164064,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft5m",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 327040
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            256
+          ],
+          "macs": 4194304
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 57263360
+      },
+      "bank_linear_macs": 28631680,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft5m",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 327040
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            256
+          ],
+          "macs": 4194304
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 57263360
+      },
+      "bank_linear_macs": 28631680,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft5m",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 327040
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            256
+          ],
+          "macs": 4194304
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 57263360
+      },
+      "bank_linear_macs": 28631680,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic_small",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 2880
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            24
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 328128
+      },
+      "bank_linear_macs": 164064,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic_small",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 2880
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            24
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 328128
+      },
+      "bank_linear_macs": 164064,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic_small",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            32
+          ],
+          "macs": 49152
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            60
+          ],
+          "macs": 2880
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            24
+          ],
+          "macs": 36864
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            51
+          ],
+          "macs": 1224
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            123
+          ],
+          "macs": 5904
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 2304
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            48
+          ],
+          "macs": 144
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 328128
+      },
+      "bank_linear_macs": 164064,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic5m",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 327040
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            256
+          ],
+          "macs": 4194304
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 57263360
+      },
+      "bank_linear_macs": 28631680,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic5m",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 327040
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            256
+          ],
+          "macs": 4194304
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 57263360
+      },
+      "bank_linear_macs": 28631680,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic5m",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        1,
+        1,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 442368
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            1,
+            1,
+            64,
+            384
+          ],
+          "macs": 6291456
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            1,
+            1,
+            292
+          ],
+          "macs": 327040
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            1,
+            1,
+            64,
+            256
+          ],
+          "macs": 4194304
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            1,
+            1,
+            1123
+          ],
+          "macs": 287488
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            1,
+            1,
+            2499
+          ],
+          "macs": 2798880
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 1254400
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            1120
+          ],
+          "macs": 3360
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 57263360
+      },
+      "bank_linear_macs": 28631680,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "pool5m",
+      "head_mode": "unit",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4851846,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 589824
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            1572
+          ],
+          "macs": 4829184
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            3072
+          ],
+          "macs": 9216
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 10856448
+      },
+      "bank_linear_macs": 5428224,
+      "linear_macs": 5428224,
+      "by_layer_linear_macs": {
+        "token1": 589824,
+        "mlp1": 4829184,
+        "head": 9216
+      },
+      "fixed_linear_macs": 5428224,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "pool5m",
+      "head_mode": "wide",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4851846,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 589824
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            1572
+          ],
+          "macs": 4829184
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            3072
+          ],
+          "macs": 9216
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 10856448
+      },
+      "bank_linear_macs": 5428224,
+      "linear_macs": 5428224,
+      "by_layer_linear_macs": {
+        "token1": 589824,
+        "mlp1": 4829184,
+        "head": 9216
+      },
+      "fixed_linear_macs": 5428224,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "pool5m",
+      "head_mode": "linear",
+      "slots": 1,
+      "batch": 1,
+      "parameters_per_model_including_anchor": 4851846,
+      "output_shape": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            1,
+            1,
+            64,
+            18
+          ],
+          "macs": 589824
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            1,
+            1,
+            1572
+          ],
+          "macs": 4829184
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            1,
+            1,
+            3072
+          ],
+          "macs": 9216
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 10856448
+      },
+      "bank_linear_macs": 5428224,
+      "linear_macs": 5428224,
+      "by_layer_linear_macs": {
+        "token1": 589824,
+        "mlp1": 4829184,
+        "head": 9216
+      },
+      "fixed_linear_macs": 5428224,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    }
+  ],
+  "bank_cases": [
+    {
+      "variant": "patch_small",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 17374,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 2211840
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            6,
+            64,
+            96
+          ],
+          "macs": 2359296
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            6,
+            64,
+            64
+          ],
+          "macs": 1179648
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 77672448
+      },
+      "bank_linear_macs": 38836224,
+      "linear_macs": 101136,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "mlp1": 5760,
+        "mlp2": 6144,
+        "mlp3": 3072,
+        "head": 144
+      },
+      "fixed_linear_macs": 101136,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch_small",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 17374,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 2211840
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            6,
+            64,
+            96
+          ],
+          "macs": 2359296
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            6,
+            64,
+            64
+          ],
+          "macs": 1179648
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 77672448
+      },
+      "bank_linear_macs": 38836224,
+      "linear_macs": 101136,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "mlp1": 5760,
+        "mlp2": 6144,
+        "mlp3": 3072,
+        "head": 144
+      },
+      "fixed_linear_macs": 101136,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch_small",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 17374,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 2211840
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            6,
+            64,
+            96
+          ],
+          "macs": 2359296
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            6,
+            64,
+            64
+          ],
+          "macs": 1179648
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 77672448
+      },
+      "bank_linear_macs": 38836224,
+      "linear_macs": 101136,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "mlp1": 5760,
+        "mlp2": 6144,
+        "mlp3": 3072,
+        "head": 144
+      },
+      "fixed_linear_macs": 101136,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch5m",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4962566,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 200933376
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            6,
+            64,
+            1792
+          ],
+          "macs": 1056964608
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            6,
+            64,
+            1536
+          ],
+          "macs": 603979776
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1024
+          ],
+          "macs": 1179648
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 8897691648
+      },
+      "bank_linear_macs": 4448845824,
+      "linear_macs": 11585536,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "mlp1": 523264,
+        "mlp2": 2752512,
+        "mlp3": 1572864,
+        "head": 3072
+      },
+      "fixed_linear_macs": 11585536,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch5m",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4962566,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 200933376
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            6,
+            64,
+            1792
+          ],
+          "macs": 1056964608
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            6,
+            64,
+            1536
+          ],
+          "macs": 603979776
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1024
+          ],
+          "macs": 1179648
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 8897691648
+      },
+      "bank_linear_macs": 4448845824,
+      "linear_macs": 11585536,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "mlp1": 523264,
+        "mlp2": 2752512,
+        "mlp3": 1572864,
+        "head": 3072
+      },
+      "fixed_linear_macs": 11585536,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "patch5m",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4962566,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 200933376
+        },
+        {
+          "layer": "mlp2",
+          "input_shape": [
+            6,
+            64,
+            1792
+          ],
+          "macs": 1056964608
+        },
+        {
+          "layer": "mlp3",
+          "input_shape": [
+            6,
+            64,
+            1536
+          ],
+          "macs": 603979776
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1024
+          ],
+          "macs": 1179648
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 8897691648
+      },
+      "bank_linear_macs": 4448845824,
+      "linear_macs": 11585536,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "mlp1": 523264,
+        "mlp2": 2752512,
+        "mlp3": 1572864,
+        "head": 3072
+      },
+      "fixed_linear_macs": 11585536,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft_small",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 1105920
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            24
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 126001152
+      },
+      "bank_linear_macs": 63000576,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft_small",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 1105920
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            24
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 126001152
+      },
+      "bank_linear_macs": 63000576,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft_small",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 1105920
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            24
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 126001152
+      },
+      "bank_linear_macs": 63000576,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft5m",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 125583360
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            256
+          ],
+          "macs": 1610612736
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 21989130240
+      },
+      "bank_linear_macs": 10994565120,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft5m",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 125583360
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            256
+          ],
+          "macs": 1610612736
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 21989130240
+      },
+      "bank_linear_macs": 10994565120,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "soft5m",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 125583360
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            256
+          ],
+          "macs": 1610612736
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 21989130240
+      },
+      "bank_linear_macs": 10994565120,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic_small",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 1105920
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            24
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 126001152
+      },
+      "bank_linear_macs": 63000576,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic_small",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 1105920
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            24
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 126001152
+      },
+      "bank_linear_macs": 63000576,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic_small",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 15246,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            32
+          ],
+          "macs": 18874368
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            60
+          ],
+          "macs": 1105920
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            24
+          ],
+          "macs": 14155776
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            51
+          ],
+          "macs": 470016
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            123
+          ],
+          "macs": 2267136
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 884736
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            48
+          ],
+          "macs": 55296
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 126001152
+      },
+      "bank_linear_macs": 63000576,
+      "linear_macs": 164064,
+      "by_layer_linear_macs": {
+        "token1": 36864,
+        "token2": 49152,
+        "context": 2880,
+        "key": 36864,
+        "query": 4896,
+        "update1": 23616,
+        "update2": 9216,
+        "head": 576
+      },
+      "fixed_linear_macs": 125760,
+      "per_pass_linear_macs": [
+        9576,
+        9576,
+        9576,
+        9576
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 135336,
+          "linear_mac_reduction": 0.17510239906378,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 144912,
+          "linear_mac_reduction": 0.11673493270918667,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 154488,
+          "linear_mac_reduction": 0.058367466354593334,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 164064,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic5m",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 125583360
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            256
+          ],
+          "macs": 1610612736
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 21989130240
+      },
+      "bank_linear_macs": 10994565120,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic5m",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 125583360
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            256
+          ],
+          "macs": 1610612736
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 21989130240
+      },
+      "bank_linear_macs": 10994565120,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "dynamic5m",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4846822,
+      "output_shape": [
+        6,
+        64,
+        4,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 169869312
+        },
+        {
+          "layer": "token2",
+          "input_shape": [
+            6,
+            64,
+            64,
+            384
+          ],
+          "macs": 2415919104
+        },
+        {
+          "layer": "context",
+          "input_shape": [
+            6,
+            64,
+            292
+          ],
+          "macs": 125583360
+        },
+        {
+          "layer": "key",
+          "input_shape": [
+            6,
+            64,
+            64,
+            256
+          ],
+          "macs": 1610612736
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        },
+        {
+          "layer": "query",
+          "input_shape": [
+            6,
+            64,
+            1123
+          ],
+          "macs": 110395392
+        },
+        {
+          "layer": "update1",
+          "input_shape": [
+            6,
+            64,
+            2499
+          ],
+          "macs": 1074769920
+        },
+        {
+          "layer": "update2",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 481689600
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            1120
+          ],
+          "macs": 1290240
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 21989130240
+      },
+      "bank_linear_macs": 10994565120,
+      "linear_macs": 28631680,
+      "by_layer_linear_macs": {
+        "token1": 442368,
+        "token2": 6291456,
+        "context": 327040,
+        "key": 4194304,
+        "query": 1149952,
+        "update1": 11195520,
+        "update2": 5017600,
+        "head": 13440
+      },
+      "fixed_linear_macs": 11255168,
+      "per_pass_linear_macs": [
+        4344128,
+        4344128,
+        4344128,
+        4344128
+      ],
+      "passes": 4,
+      "prefix_counterfactuals": [
+        {
+          "passes": 1,
+          "linear_macs": 15599296,
+          "linear_mac_reduction": 0.4551735699756354,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 2,
+          "linear_macs": 19943424,
+          "linear_mac_reduction": 0.3034490466504236,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 3,
+          "linear_macs": 24287552,
+          "linear_mac_reduction": 0.1517245233252118,
+          "is_executed_early_exit": false
+        },
+        {
+          "passes": 4,
+          "linear_macs": 28631680,
+          "linear_mac_reduction": 0.0,
+          "is_executed_early_exit": false
+        }
+      ],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "pool5m",
+      "head_mode": "unit",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4851846,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 226492416
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            1572
+          ],
+          "macs": 1854406656
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            3072
+          ],
+          "macs": 3538944
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 4168876032
+      },
+      "bank_linear_macs": 2084438016,
+      "linear_macs": 5428224,
+      "by_layer_linear_macs": {
+        "token1": 589824,
+        "mlp1": 4829184,
+        "head": 9216
+      },
+      "fixed_linear_macs": 5428224,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "pool5m",
+      "head_mode": "wide",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4851846,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 226492416
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            1572
+          ],
+          "macs": 1854406656
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            3072
+          ],
+          "macs": 3538944
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 4168876032
+      },
+      "bank_linear_macs": 2084438016,
+      "linear_macs": 5428224,
+      "by_layer_linear_macs": {
+        "token1": 589824,
+        "mlp1": 4829184,
+        "head": 9216
+      },
+      "fixed_linear_macs": 5428224,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    },
+    {
+      "variant": "pool5m",
+      "head_mode": "linear",
+      "slots": 6,
+      "batch": 64,
+      "parameters_per_model_including_anchor": 4851846,
+      "output_shape": [
+        6,
+        64,
+        1,
+        3
+      ],
+      "trace": [
+        {
+          "layer": "token1",
+          "input_shape": [
+            6,
+            64,
+            64,
+            18
+          ],
+          "macs": 226492416
+        },
+        {
+          "layer": "mlp1",
+          "input_shape": [
+            6,
+            64,
+            1572
+          ],
+          "macs": 1854406656
+        },
+        {
+          "layer": "head",
+          "input_shape": [
+            6,
+            64,
+            3072
+          ],
+          "macs": 3538944
+        }
+      ],
+      "operator_flops": {
+        "aten.bmm": 4168876032
+      },
+      "bank_linear_macs": 2084438016,
+      "linear_macs": 5428224,
+      "by_layer_linear_macs": {
+        "token1": 589824,
+        "mlp1": 4829184,
+        "head": 9216
+      },
+      "fixed_linear_macs": 5428224,
+      "per_pass_linear_macs": [],
+      "passes": 1,
+      "prefix_counterfactuals": [],
+      "cuda_initialized": false,
+      "latency_seconds": null,
+      "quality_metric": null
+    }
+  ],
+  "scope": "Dense linear multiply-accumulate counts inside Bank.forward only; one MAC counted as two FLOPs.",
+  "parameter_scope": "Per-model parameters include frozen 643-parameter anchor; anchor execution is outside this forward trace.",
+  "excluded_work": [
+    "anchor prediction",
+    "normalization",
+    "nonlinearities",
+    "attention elementwise scoring and pooling",
+    "gating/top-k/reductions",
+    "memory traffic",
+    "backward/optimizer",
+    "image decoding/segmentation"
+  ],
+  "limitations": [
+    "No learned weights or dataset examples were used.",
+    "Counts do not establish latency, training throughput or quality.",
+    "Prefix costs are arithmetic projections, not an implemented or calibrated early-exit policy.",
+    "A dense mask changes connected values; the current forward trace does not skip linear layers."
+  ],
+  "documentation": "https://docs.pytorch.org/docs/2.8/meta.html",
+  "gpu_context_initialized": false,
+  "latency_seconds": null,
+  "quality_metric": null,
+  "created_utc": "2026-09-14T08:29:44.982885+00:00"
+}

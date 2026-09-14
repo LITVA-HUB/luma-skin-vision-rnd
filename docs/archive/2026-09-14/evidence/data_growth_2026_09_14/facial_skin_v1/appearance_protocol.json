@@ -1,0 +1,21 @@
+{
+  "task": "extract visible color from an image by semantic skin mask",
+  "reference": "author LaPa skin+nose mask on the same192x192 RGB image",
+  "primary": "CIEDE2000 between channel-wise median encoded RGB colors converted to CIELAB",
+  "secondary": "CIEDE2000 between mean encoded RGB colors converted to CIELAB",
+  "color_convention": "assumed sRGB, IEC transfer, D65/CIE1931 2deg; no ICC/camera/illuminant correction",
+  "minimum_mask_pixels": 16,
+  "missing_mask_policy": "missing color, report coverage; compare errors also on common coverage",
+  "subset": "same128 lowest SHA256(LumaSegTest128|stem) as the already fixed held segmentation comparison",
+  "selectors": "none: fixed final training selection, CNN logit0, frozen UCI threshold",
+  "physical_skin_truth": false,
+  "neither_native_Lab_nor_phone_tone_accuracy": true,
+  "held_results_present_at_freeze": false,
+  "held_protocol_present_at_freeze": false,
+  "protocol_sha256": "42d917ced2431a70b29d1a21041d40070f5b3ad87e3d13df1cf6b023b4b97083",
+  "sources": {
+    "scripts\\skin_face_appearance.py": "1a235576da5e1572accc35387f4f44a6400c5b2a7bb4cc3652ef38aa56733bd9",
+    "src\\luma_skin_vision\\color.py": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46",
+    "scripts\\skin_face_segment.py": "e66589cdf8ab369e6754da9292df36bdfd6413754a2dd2d65c50f3c504f4cff9"
+  }
+}

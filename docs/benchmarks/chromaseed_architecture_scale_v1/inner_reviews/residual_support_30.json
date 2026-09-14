@@ -1,0 +1,509 @@
+{
+  "classification": "provisional inner-only range diagnostic; no training, final-role evaluation or selector change",
+  "source_lock_sha256": "a8a2a840d70ee7cbe726404260bcb7224dd319594003512bfa925309270ce0e6",
+  "margin": 0.0001,
+  "near_boundary_threshold": 0.95,
+  "structural_cap": "NP anchor +/- fit-only target standard deviation per Lab coordinate; tanh or four0.25*tanh increments",
+  "target_ranges": [
+    {
+      "role": "mixed",
+      "rows": 734,
+      "people": 18,
+      "outside_any_person_fraction": 0.2714915323344891,
+      "outside_component_person_fractions": [
+        0.019000300212050517,
+        0.23113100322047872,
+        0.04842916386563167
+      ],
+      "mean_person_euclidean_distance_to_box": 0.43487950793947466,
+      "max_required_normalized_correction": 4.462472260399197,
+      "interpretation": "Known inner targets beyond a necessary output box; Euclidean Lab distance is not DeltaE00"
+    },
+    {
+      "role": "slr_to_ipod",
+      "rows": 323,
+      "people": 8,
+      "outside_any_person_fraction": 0.34373170106865764,
+      "outside_component_person_fractions": [
+        0.05349692577953447,
+        0.20586297760210803,
+        0.18237629922412527
+      ],
+      "mean_person_euclidean_distance_to_box": 0.7043795838586915,
+      "max_required_normalized_correction": 5.616220872171156,
+      "interpretation": "Known inner targets beyond a necessary output box; Euclidean Lab distance is not DeltaE00"
+    },
+    {
+      "role": "ipod_to_slr",
+      "rows": 643,
+      "people": 16,
+      "outside_any_person_fraction": 0.2661022125908907,
+      "outside_component_person_fractions": [
+        0.029967327569071753,
+        0.20261054395081324,
+        0.09662097091335158
+      ],
+      "mean_person_euclidean_distance_to_box": 0.4663903169115768,
+      "max_required_normalized_correction": 2.614430509682852,
+      "interpretation": "Known inner targets beyond a necessary output box; Euclidean Lab distance is not DeltaE00"
+    }
+  ],
+  "learned_residuals": [
+    {
+      "role": "mixed",
+      "variant": "patch_small",
+      "step": 128,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.0036359659072205445
+    },
+    {
+      "role": "mixed",
+      "variant": "patch_small",
+      "step": 128,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.24563457508019287
+    },
+    {
+      "role": "mixed",
+      "variant": "patch_small",
+      "step": 512,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.044752855490959476
+    },
+    {
+      "role": "mixed",
+      "variant": "patch_small",
+      "step": 512,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.3224625780098804
+    },
+    {
+      "role": "mixed",
+      "variant": "patch_small",
+      "step": 2048,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.32397129077843506
+    },
+    {
+      "role": "mixed",
+      "variant": "patch_small",
+      "step": 2048,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.7729693645233066
+    },
+    {
+      "role": "mixed",
+      "variant": "patch5m",
+      "step": 128,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.2599351598732837
+    },
+    {
+      "role": "mixed",
+      "variant": "patch5m",
+      "step": 128,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.38142303257445126
+    },
+    {
+      "role": "mixed",
+      "variant": "patch5m",
+      "step": 512,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.27961375255516846
+    },
+    {
+      "role": "mixed",
+      "variant": "patch5m",
+      "step": 512,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.8167551785566247
+    },
+    {
+      "role": "mixed",
+      "variant": "patch5m",
+      "step": 2048,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.8539632588483728
+    },
+    {
+      "role": "mixed",
+      "variant": "patch5m",
+      "step": 2048,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.02146464646464646,
+      "near_component_person_fractions": [
+        0.005892255892255892,
+        0.015151515151515152,
+        0.005892255892255892
+      ],
+      "max_normalized_correction": 1.000000143418705
+    },
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 128,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.006476961695794764
+    },
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 128,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.15613651193374609
+    },
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 512,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.04263186372512793
+    },
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 512,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.27336287416213967
+    },
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 2048,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.24474882997268652
+    },
+    {
+      "role": "mixed",
+      "variant": "soft_small",
+      "step": 2048,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.6780937454670567
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 128,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.2756135455488584
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 128,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.4713582580555607
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 512,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.3010637751936338
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 512,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.8180744712489282
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 2048,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.8217431542399788
+    },
+    {
+      "role": "mixed",
+      "variant": "soft5m",
+      "step": 2048,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.03328583019658534,
+      "near_component_person_fractions": [
+        0.0025252525252525255,
+        0.02865620056695571,
+        0.007996632996632995
+      ],
+      "max_normalized_correction": 0.9998752107954666
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 128,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.0064361921187683965
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 128,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.15433478273147558
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 512,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.041775464188995116
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 512,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.2770338050245664
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 2048,
+      "rate": 1e-05,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.2471117965101621
+    },
+    {
+      "role": "mixed",
+      "variant": "dynamic_small",
+      "step": 2048,
+      "rate": 0.0001,
+      "near_boundary_person_fraction": 0.0,
+      "near_component_person_fractions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_normalized_correction": 0.7860378162700922
+    }
+  ],
+  "input_sha256": {
+    "experiments/runs/chromaseed_widen_v1/inner/mixed/m31/fold0/rows.npz": "b85ce3c05a0bb145984698483d32168467abcc3e0d5efcaf3835dd814efc9942",
+    "experiments/runs/chromaseed_widen_v1/inner/mixed/m31/fold0/warm_models.npz": "af0e197a9def7587d51ec396b32dcda68c28d4bd3700f56ce0dbbc916c0726aa",
+    "experiments/runs/chromaseed_widen_v1/inner/mixed/m31/fold1/rows.npz": "9f528a619d3467ad5ead64c4ef2999aac57055ad919bc6f0416510d3ae7fbaf2",
+    "experiments/runs/chromaseed_widen_v1/inner/mixed/m31/fold1/warm_models.npz": "35e607a75920e606d296e9c9d83adc9a3146916caa935fb2ec0e7e6939401055",
+    "experiments/runs/chromaseed_widen_v1/inner/mixed/m31/fold2/rows.npz": "b226470dc2d1fd8032ac74342c20d096a0c0de26fec0d4156a18cca3439430e6",
+    "experiments/runs/chromaseed_widen_v1/inner/mixed/m31/fold2/warm_models.npz": "3db55da8be39d0119a311f16b8146f190df884ec9754ece4e09c719541c4adc3",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold0/oof_128.npz": "336775c49101c195dc95bebcbf5126a3d2c4b72fba14bed4ec6f07e32671cee2",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold1/oof_128.npz": "a050af5efbc8be8a92e3b61063718d87ef8d3ca8e2ea9500547e7306a96b5889",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold2/oof_128.npz": "94ff251f18796f128d0332c761234e53b06077a5906a9147c7a36422d502cb02",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold0/oof_512.npz": "53f55ea6c8793820c2548cf5d2f6d9ab006d652aaeae61a40159e4a948ec0026",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold1/oof_512.npz": "8b5bf4b0fa8357e7c093755ac6d5429e57303187bc7449c81c69fa015411fbd4",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold2/oof_512.npz": "8c239bb18ee5c071b0ae78ca5af6b7a2b7983faf74c3d9c9824d41e8c4369cca",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold0/oof_2048.npz": "0fd5f10ae62efe103c89a6551560f9408ac73881595282c994b18fef4ff0644c",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold1/oof_2048.npz": "233444746fbd5793befb77df4035fa74a631b0a4bc1781d1be7282fa9ab69b8a",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch_small/fold2/oof_2048.npz": "eeda802e3e01bcc2064399815fa1ca0202c24194fe784671b2b62a5f9b9d93b4",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold0/oof_128.npz": "b3eb7d8d20bb4d06d23c8dfec502010183915cf78d4da65343c7774409fe972b",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold1/oof_128.npz": "3752f27b26c3daeacdae03600a0846a8a9f4790b406a67d1d590603ce65249cb",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold2/oof_128.npz": "31fa886dab829a60691aa02bbeb16dbddf17fa7846ff92794da9ee3bb8d53a65",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold0/oof_512.npz": "5a27b2677cc46cd4e1e97ecbf32429837c2b2ecdfec9f78e4b78174b1695f997",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold1/oof_512.npz": "fc442e056825d9b6362f3f84ddd55e4ad53fc424a19d4a71804dcc43c81aebc5",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold2/oof_512.npz": "b70e0d8db123fbc5439a58ac025a443d1af7043ed9758267ff24e3df29fd77ec",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold0/oof_2048.npz": "6c043eae36d0bd7214fd48777cbb920372432d30dfec7fe4fbb86074761018f3",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold1/oof_2048.npz": "4d44e08d31c1acab5cda9bf5e1df91526c7c77b61aae38dde31dd462e4f8f282",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/patch5m/fold2/oof_2048.npz": "2ab883009174e33c495d7c1df624e65a32c9cb0659b52607296a412b001e9a93",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold0/oof_128.npz": "1133c0f237b9500fce010f9c491e72a0c38a6d81079f8ee4260f05fe6b7c17d0",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold1/oof_128.npz": "5a080dbdf3364dbac252ab5ebb777c7a7c9dfece1a4548d5fe45d23e7218dd1c",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold2/oof_128.npz": "cffa594e74478ff431e67cf4777b458dbab32107fce832b804cd1d8ac8ae9ed9",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold0/oof_512.npz": "3189d84f8110fc7d63364f657c42c04230bb7f2df6cc5d0bbea25fee1d908c35",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold1/oof_512.npz": "e9860f07b50a09c546e24192c08aedac11c24fbfca0085ddc80de0f03e3ab882",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold2/oof_512.npz": "52cfa275c7b95ddc199d9ef90f630fec37f83774c5cdf8ccaf8df4b8c68f5f14",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold0/oof_2048.npz": "a5ea20b7e6e87edb587bbc922bd2ff4dbda54416a518f15d36be74252a681d90",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold1/oof_2048.npz": "9120207b98e0ae1d05ea7dd7bb70598322150f9bcc3a84ec7c7493de00f1d38c",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft_small/fold2/oof_2048.npz": "3fe1e1a878719044cc5d7e72e3037ca0ed3029136f7af2de25f5158b0d9c3050",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold0/oof_128.npz": "c6b978988c016512075294132b7759371e18904902451d46c92ff368b4a9e16c",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold1/oof_128.npz": "be51e3a07766a1e99d064a39284643075576c732990cd53aa07cdc8cf06ad3d7",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold2/oof_128.npz": "e2c0e1fdf40aeac7578c48dc84ce570181d6d8e7eec0fc3342180784988c64cb",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold0/oof_512.npz": "0b7f66643e7f84d6a2ba4418e7a25886ee027fbf923aa65b8c414f867e1c2526",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold1/oof_512.npz": "05f3b33d3a7423a36077675d26eb328fd53da3ea4c0b5825b841d0625906474a",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold2/oof_512.npz": "bdbd345f3336b8749eae19646b9205813eef51345e26d053fa3bd72cdf039818",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold0/oof_2048.npz": "11aa9950edd9cc8820a4445cc3847e24e95d7c55921bb1f390a573d4a26385e5",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold1/oof_2048.npz": "2bad02118d1c7fa8c13e380f1ac72d498c5f43deec44fa257cf06482874c7b95",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/soft5m/fold2/oof_2048.npz": "790c12a545e04629baf5bc877bede41b5db3fc8dd37320b26e9b58291f9956bc",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold0/oof_128.npz": "8d397ba08534fc738fccd0e851b60b2bc8dfdc16fe3d1fa69d7a5dde9ce96867",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold1/oof_128.npz": "4bdf391dea525ea11ed9db4f2150efd12ba964983ad0886de5f792842761ddb0",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold2/oof_128.npz": "18c7f40645b8b39497d467614ba6ceaa6e2a1d785622c371596f8748a9f0b8d1",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold0/oof_512.npz": "30d5d8aeaaba5794858d8cdc4152c8ffda3e9182e20cc709503e0e05d4a2c219",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold1/oof_512.npz": "6a0684dbef28769f0488f3448958b8bbdb261243b6f44f77fc147d490448c85d",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold2/oof_512.npz": "d97ffc1a1067f510616fa1746f65a4ef61f0c92918e643279b2af86742883afc",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold0/oof_2048.npz": "e99858c29e1fc77521093c94d4d354169fe568996fdb9b4afafa0b616772ee8d",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold1/oof_2048.npz": "2d1b14f713c539457c6b359378efb3f2b1ccd3daa701146fd3b365d5058dd6bb",
+    "experiments/runs/chromaseed_architecture_scale_v1/inner/mixed/dynamic_small/fold2/oof_2048.npz": "6e5be2064077d360a796a09b2d436c8a7e91e872a3706f43c7134b44679205d3",
+    "experiments/runs/chromaseed_widen_v1/inner/slr_to_ipod/m31/fold0/rows.npz": "6eb5c5c0689a77125f184679e20f06690a810a03fa3b5cef4397a991bf4abd73",
+    "experiments/runs/chromaseed_widen_v1/inner/slr_to_ipod/m31/fold0/warm_models.npz": "a5b844a6a374bebd019472d44b3ef3d0e3a95fb7fd6d2d1c65a0dd2e66d76ade",
+    "experiments/runs/chromaseed_widen_v1/inner/slr_to_ipod/m31/fold1/rows.npz": "a3cdd68c07fcef783503434036be0b00c1a6902494e9d3019cae99a9ac32802d",
+    "experiments/runs/chromaseed_widen_v1/inner/slr_to_ipod/m31/fold1/warm_models.npz": "3406f6c6c9e8869d0021c7e69e3d5f906191ea13dde68b2867a3cfd85b7f75cc",
+    "experiments/runs/chromaseed_widen_v1/inner/slr_to_ipod/m31/fold2/rows.npz": "ec4178b5fd16147bf42b451a2ea361bc98f43df222fa1ef7c93a7d7a6c20fc4d",
+    "experiments/runs/chromaseed_widen_v1/inner/slr_to_ipod/m31/fold2/warm_models.npz": "f837f5458d556fd83f1ac7109406e8bb3c09c2328ccef5357b8add1b36342b11",
+    "experiments/runs/chromaseed_widen_v1/inner/ipod_to_slr/m31/fold0/rows.npz": "c7013aea0bdd65f130256f6048cf24e9484bc5698655cd1810659ae6f52e6e44",
+    "experiments/runs/chromaseed_widen_v1/inner/ipod_to_slr/m31/fold0/warm_models.npz": "474dd82b4c64b04aa0225437a733dc7faeed29240b33f9132a45c2d4ba70fe43",
+    "experiments/runs/chromaseed_widen_v1/inner/ipod_to_slr/m31/fold1/rows.npz": "5556728037abdd9f46aeb4cb97cc523d6b13be8998a28005c0a911e7b0992509",
+    "experiments/runs/chromaseed_widen_v1/inner/ipod_to_slr/m31/fold1/warm_models.npz": "50c9e70e6bf4d8541151b01019a54b72dc6f28ee37c13744dadc49effb072082",
+    "experiments/runs/chromaseed_widen_v1/inner/ipod_to_slr/m31/fold2/rows.npz": "1a6dcbfa4c35cf1b1ac39019663bee1a7ab0c5631adb32fb3615a80a3b7c292e",
+    "experiments/runs/chromaseed_widen_v1/inner/ipod_to_slr/m31/fold2/warm_models.npz": "5a6bb17e816233a608922aa7729006690897e669821e89f162d7cb90f59048b4"
+  },
+  "analysis_sha256": "0e15bece7384af7b109d895d27dffa2c94f8b1ae71c04d4321bbc5b8b2fe2240"
+}

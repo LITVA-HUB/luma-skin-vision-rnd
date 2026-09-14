@@ -1,0 +1,13 @@
+# HR recovery result — 14 September 2026, 06:12 Moscow
+
+Training has resumed successfully. Process42200/session13677 is running `scripts/chromaseed_head_range_recovery.py resume`; the dashboard reports19/168complete banks, mixed/soft5m/wide/fold1. At the recorded observation, GPU utilization was100%, memory3730MiB and temperature51°C. Provisional remaining training time was7h39m; selected final-step counts and independent verification are not yet included as known costs.
+
+The first process22100/session73932 ended with exit1. Windows denied replacing the progress file after18complete banks, at the step1664 callback. Regression tests reproduced this with an open reader handle and verified recovery after release; four tests pass. The I/O-only adapter and its protocol are separately frozen. All185original source hashes are unchanged. See the [recovery contract](chromaseed_head_range_recovery_v1.md).
+
+The restarted bank reached2048steps and saved successfully. An observer compared the six losses at step1536 with the previous attempt: all were exactly identical. It also checked every one of the162preserved files from18complete banks and all8files of the restarted bank. Observer45160 ended with exit0. ReceiptSHA55e6c63f4afbe1b51fd572953cb4a3adb37c6c0993b678d4310746ed49826129.
+
+An additional independent NumPy check of all19complete inner banks ended with exit0 in session2453. It checked342checkpoint models and83,376OOFvectors, including the resumed large iterative model. Maximum Lab difference was7.914289483e-6, below the original0.002absolute/1e-6relative tolerance. Fit/query participant separation, normalizers and warm parents were also checked. ReceiptSHA297e3ac066af45c2ff78ad96f3e1d5a8445d1379fadeb7aed845975677850946. This remains a partial inner-bank check, not the full primary audit or evidence of improved final accuracy.
+
+Preserved evidence is under `D:/Luma-RnD/chromaseed_head_range_v1/recovery_v1`. The new production log is `production_recovery_v1.log`; the original `production_v1.log` remains intact. Include357.0525681999861seconds of discarded partial-bank work when accounting for operational training costs. The resumed job's timer alone omits the first attempt. Never overwrite the original source lock or old bank receipts to accommodate a recovery.
+
+The separate measured [palette P1](../benchmarks/skin_spectral_palette_v1/report.md) is prepared and verified. It has not changed the running HR search. The whole research goal remains active; full HR selection, evaluation, independent audit, cost/runtime measurements and a later registered palette-transfer experiment are outstanding.

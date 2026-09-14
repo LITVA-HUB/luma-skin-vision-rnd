@@ -1,0 +1,166 @@
+{
+  "records": [
+    {
+      "n_rows": 1024,
+      "arm": "dense_exact",
+      "rank": 128,
+      "seconds": [
+        0.12364499998511747,
+        0.12489149998873472,
+        0.1262330999597907
+      ],
+      "median_ms": 124.89149998873472,
+      "incremental_tracemalloc_peak_bytes": 27592488,
+      "kernel_entries_evaluated": 1048576,
+      "landmark_phase_largest_matrix_shape": [
+        1024,
+        1024
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 1024,
+      "arm": "column_exact",
+      "rank": 128,
+      "seconds": [
+        0.1116156000061892,
+        0.11079230002360418,
+        0.1271540999878198
+      ],
+      "median_ms": 111.6156000061892,
+      "incremental_tracemalloc_peak_bytes": 27592488,
+      "kernel_entries_evaluated": 131072,
+      "landmark_phase_largest_matrix_shape": [
+        1024,
+        128
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 1024,
+      "arm": "column_pairs4096",
+      "rank": 128,
+      "seconds": [
+        0.011404599994421005,
+        0.011368200008291751,
+        0.01136239996412769
+      ],
+      "median_ms": 11.368200008291751,
+      "incremental_tracemalloc_peak_bytes": 4005076,
+      "kernel_entries_evaluated": 131072,
+      "landmark_phase_largest_matrix_shape": [
+        1024,
+        128
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 4096,
+      "arm": "dense_exact",
+      "rank": 128,
+      "seconds": [
+        1.917793000000529,
+        1.9705968000344,
+        1.950283300015144
+      ],
+      "median_ms": 1950.283300015144,
+      "incremental_tracemalloc_peak_bytes": 404066424,
+      "kernel_entries_evaluated": 16777216,
+      "landmark_phase_largest_matrix_shape": [
+        4096,
+        4096
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 4096,
+      "arm": "column_exact",
+      "rank": 128,
+      "seconds": [
+        1.6939458000124432,
+        1.6924210999859497,
+        1.6952738999971189
+      ],
+      "median_ms": 1693.9458000124432,
+      "incremental_tracemalloc_peak_bytes": 336811568,
+      "kernel_entries_evaluated": 524288,
+      "landmark_phase_largest_matrix_shape": [
+        4096,
+        128
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 4096,
+      "arm": "column_pairs4096",
+      "rank": 128,
+      "seconds": [
+        0.031219399999827147,
+        0.031465700012631714,
+        0.031481900019571185
+      ],
+      "median_ms": 31.465700012631714,
+      "incremental_tracemalloc_peak_bytes": 14425300,
+      "kernel_entries_evaluated": 524288,
+      "landmark_phase_largest_matrix_shape": [
+        4096,
+        128
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 8192,
+      "arm": "dense_exact",
+      "rank": 128,
+      "seconds": [
+        7.75737389997812,
+        7.822391499998048,
+        7.79183900001226
+      ],
+      "median_ms": 7791.83900001226,
+      "incremental_tracemalloc_peak_bytes": 1613303912,
+      "kernel_entries_evaluated": 67108864,
+      "landmark_phase_largest_matrix_shape": [
+        8192,
+        8192
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 8192,
+      "arm": "column_exact",
+      "rank": 128,
+      "seconds": [
+        6.91717480000807,
+        6.887658299994655,
+        6.888075299968477
+      ],
+      "median_ms": 6888.075299968477,
+      "incremental_tracemalloc_peak_bytes": 1344706080,
+      "kernel_entries_evaluated": 1048576,
+      "landmark_phase_largest_matrix_shape": [
+        8192,
+        128
+      ],
+      "numeric_payload_bytes": 20284
+    },
+    {
+      "n_rows": 8192,
+      "arm": "column_pairs4096",
+      "rank": 128,
+      "seconds": [
+        0.06323540001176298,
+        0.06481110001914203,
+        0.0640138000017032
+      ],
+      "median_ms": 64.0138000017032,
+      "incremental_tracemalloc_peak_bytes": 28318865,
+      "kernel_entries_evaluated": 1048576,
+      "landmark_phase_largest_matrix_shape": [
+        8192,
+        128
+      ],
+      "numeric_payload_bytes": 20284
+    }
+  ]
+}

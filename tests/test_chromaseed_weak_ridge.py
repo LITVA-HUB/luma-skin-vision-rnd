@@ -1,0 +1,52 @@
+import sys
+from pathlib import Path
+
+import numpy as np
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+
+
+def data():
+    rng = np.random.default_rng(518)
+    latent = rng.normal(size=(65, 5))
+    x = (latent @ rng.normal(size=(5, 36)) + rng.normal(size=(65, 36)) * 1e-5).astype(np.float32)
+    y = rng.normal([50, 11, 19], [8, 4, 6], (65, 3))
+    return x, y, rng.uniform(.4, 2, 65), rng.normal(size=(11, 36)).astype(np.float32)
+
+
+@pytest.mark.parametrize("family", ["norm_mse", "constant_de2", "local_de2", "local_irls", "midpoint_irls"])
+def test_original_alpha_payloads_are_unchanged(family):
+    from chromaseed_perceptual import fit_single as original
+    from chromaseed_weak_ridge import ALPHAS, fit_single
+    x, y, w, _ = data()
+    steps = 4 if family.endswith("irls") else (0 if family == "norm_mse" else 1)
+    expected, _ = original(x, y, w, family, 17, 1, 0, steps, rank=18)
+    actual, _ = fit_single(x, y, w, family, 17, 1, ALPHAS.index(.1), steps, rank=18)
+    for field in actual:
+        np.testing.assert_array_equal(actual[field], expected[field])
+
+
+@pytest.mark.parametrize("family", ["norm_mse", "constant_de2", "local_de2", "local_irls", "midpoint_irls"])
+def test_weak_penalty_unseen_predictions_match_independent_reference(family):
+    from chromaseed_kernel import predict_kernel
+    from chromaseed_perceptual_audit import reference_readouts
+    from chromaseed_weak_ridge import fit_single
+    x, y, w, query = data()
+    steps = 4 if family.endswith("irls") else (0 if family == "norm_mse" else 1)
+    model, _ = fit_single(x, y, w, family, 17, 1, 0, steps, rank=18)
+    coefficients, _ = reference_readouts(model, x, y, w, family, .0001, steps)
+    reference = {**model, "coefficient": coefficients[steps]}
+    np.testing.assert_allclose(predict_kernel(model, query), predict_kernel(reference, query), rtol=0, atol=.0002)
+
+
+def test_expanded_grid_includes_exact_controls_and_zero_aliases():
+    from chromaseed_weak_ridge import ALPHAS, key
+    from chromaseed_weak_ridge_train import candidate_grid
+    assert ALPHAS == (.0001, .0003, .001, .003, .01, .03, .1, 1., 10.)
+    assert len(list(candidate_grid("norm_mse"))) == 27
+    grid = list(candidate_grid("local_irls"))
+    assert len(grid) == 108
+    for wi, ai, step in grid:
+        if step == 0:
+            assert key("local_irls", 17, wi, ai, step) == key("norm_mse", 17, wi, ai, 0)
