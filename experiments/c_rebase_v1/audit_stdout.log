@@ -1,0 +1,321 @@
+{
+  "experiment": "C_REBASE_V1",
+  "overall": {
+    "delta_e00": {
+      "n": 966,
+      "mean": 4.618814171491631,
+      "median": 3.8965214425535315,
+      "p90": 8.055976660809876,
+      "p95": 10.190053002831329,
+      "max": 21.374734553677868,
+      "fraction_gt_5": 0.34679089026915116,
+      "fraction_gt_10": 0.055900621118012424
+    },
+    "people": 24,
+    "mae_lab": {
+      "L": 3.5795085101641977,
+      "a": 2.272298469582717,
+      "b": 2.365019609706987
+    },
+    "rmse_lab": {
+      "L": 4.854051049294107,
+      "a": 2.879121424210533,
+      "b": 2.97485428876371
+    },
+    "person_balanced_mean": 4.577774992715052,
+    "mean_of_person_medians": 4.163241257561134,
+    "equal_person_weighted_median": 3.883224760577013,
+    "patient_cluster_bootstrap": {
+      "unit": "patient",
+      "draws": 2000,
+      "seed": 9123,
+      "method": "percentile_95_interval",
+      "intervals": {
+        "mean": [
+          4.089248687708251,
+          5.343246530087784
+        ],
+        "median": [
+          3.578645798181604,
+          4.436576777184563
+        ],
+        "p95": [
+          8.112416160709126,
+          13.254542029284648
+        ]
+      },
+      "interpretation": "Fixed-recipe OOF descriptive uncertainty; not an independent confirmatory experiment."
+    }
+  },
+  "quartiles": [
+    {
+      "quantile": "Q1",
+      "coverage": 0.2443064182194617,
+      "sites": 62,
+      "boundaries": [
+        null,
+        7.027119964117624
+      ],
+      "delta_e00": {
+        "n": 236,
+        "mean": 3.4911309232616357,
+        "median": 3.2370688936753256,
+        "p90": 5.77439426721213,
+        "p95": 6.36471110555023,
+        "max": 13.19279152175113,
+        "fraction_gt_5": 0.17372881355932204,
+        "fraction_gt_10": 0.00847457627118644
+      },
+      "people": 12,
+      "mae_lab": {
+        "L": 2.348397043016416,
+        "a": 2.061258343904002,
+        "b": 1.7006171553379137
+      },
+      "rmse_lab": {
+        "L": 3.018018951590395,
+        "a": 2.483735093198188,
+        "b": 2.1440787429145995
+      },
+      "person_balanced_mean": 3.559523540368056,
+      "mean_of_person_medians": 3.525310732412947,
+      "equal_person_weighted_median": 3.3335483962231938,
+      "global_p95_tail_count": 2,
+      "fraction_global_p95_tail": 0.04081632653061224
+    },
+    {
+      "quantile": "Q2",
+      "coverage": 0.2515527950310559,
+      "sites": 62,
+      "boundaries": [
+        7.027119964117624,
+        9.390654009555092
+      ],
+      "delta_e00": {
+        "n": 243,
+        "mean": 4.384031621625757,
+        "median": 3.99556237065619,
+        "p90": 7.273866238252851,
+        "p95": 8.116192093077306,
+        "max": 11.224458895667752,
+        "fraction_gt_5": 0.345679012345679,
+        "fraction_gt_10": 0.01646090534979424
+      },
+      "people": 17,
+      "mae_lab": {
+        "L": 3.237600906670605,
+        "a": 2.4141230133961815,
+        "b": 2.215100796572921
+      },
+      "rmse_lab": {
+        "L": 4.020030683347152,
+        "a": 2.9635866724396345,
+        "b": 2.7594147221010075
+      },
+      "person_balanced_mean": 4.505199631943417,
+      "mean_of_person_medians": 4.319407938583333,
+      "equal_person_weighted_median": 4.251702806913783,
+      "global_p95_tail_count": 2,
+      "fraction_global_p95_tail": 0.04081632653061224
+    },
+    {
+      "quantile": "Q3",
+      "coverage": 0.2463768115942029,
+      "sites": 61,
+      "boundaries": [
+        9.390654009555092,
+        13.71375402081404
+      ],
+      "delta_e00": {
+        "n": 238,
+        "mean": 4.62404464683703,
+        "median": 4.027755504369994,
+        "p90": 8.377289397412861,
+        "p95": 9.578959154569972,
+        "max": 13.479114769899834,
+        "fraction_gt_5": 0.3907563025210084,
+        "fraction_gt_10": 0.037815126050420166
+      },
+      "people": 19,
+      "mae_lab": {
+        "L": 3.426076036427252,
+        "a": 2.119269256772167,
+        "b": 2.448877616149688
+      },
+      "rmse_lab": {
+        "L": 4.446048363651079,
+        "a": 2.8406896454312682,
+        "b": 2.975795082420498
+      },
+      "person_balanced_mean": 4.7418292070449315,
+      "mean_of_person_medians": 4.316267782985387,
+      "equal_person_weighted_median": 4.11305923247965,
+      "global_p95_tail_count": 8,
+      "fraction_global_p95_tail": 0.16326530612244897
+    },
+    {
+      "quantile": "Q4",
+      "coverage": 0.2567287784679089,
+      "sites": 62,
+      "boundaries": [
+        13.71375402081404,
+        null
+      ],
+      "delta_e00": {
+        "n": 248,
+        "mean": 5.922210387126269,
+        "median": 4.797719339217444,
+        "p90": 11.846330874479147,
+        "p95": 14.231826139550728,
+        "max": 21.374734553677868,
+        "fraction_gt_5": 0.4717741935483871,
+        "fraction_gt_10": 0.15725806451612903
+      },
+      "people": 13,
+      "mae_lab": {
+        "L": 5.240562448741123,
+        "a": 2.4785953335918767,
+        "b": 3.0729690619285943
+      },
+      "rmse_lab": {
+        "L": 6.949205504384688,
+        "a": 3.1677543970267394,
+        "b": 3.759979237278263
+      },
+      "person_balanced_mean": 5.4740931914580715,
+      "mean_of_person_medians": 4.848778776695189,
+      "equal_person_weighted_median": 4.470716057582533,
+      "global_p95_tail_count": 37,
+      "fraction_global_p95_tail": 0.7551020408163265
+    }
+  ],
+  "decomposition": {
+    "status": "LEAKY_DIAGNOSTIC_ONLY",
+    "identity": "image-weighted MSE(pred-target) = MSE(pred-site_mean_pred) + MSE(site_mean_pred-target); target fixed within site",
+    "units": "squared Lab coordinate units; not perceptual DeltaE00 variance",
+    "mse_Lab": {
+      "L": 23.561811589153216,
+      "a": 8.289340175348087,
+      "b": 8.849758039375837
+    },
+    "within_site_prediction_variation_mse_Lab": {
+      "L": 6.825677231004464,
+      "a": 1.212269952560623,
+      "b": 1.3346482897373455
+    },
+    "site_mean_prediction_bias_mse_Lab": {
+      "L": 16.736134358148718,
+      "a": 7.077070222787455,
+      "b": 7.5151097496384995
+    },
+    "within_site_fraction_per_coordinate": {
+      "L": 0.2896923780744726,
+      "a": 0.14624444490356764,
+      "b": 0.15081183957787356
+    },
+    "within_site_fraction_sum_coordinate_mse": 0.23027975341252951,
+    "site_mean_bias_fraction_sum_coordinate_mse": 0.7697202465874696,
+    "within_site_fraction_patient_bootstrap_95_ci": [
+      0.1707135976227453,
+      0.312965989481111
+    ],
+    "mean_cross_term_Lab": [
+      7.723290606088045e-16,
+      -4.394920130607245e-16,
+      1.498686153324228e-16
+    ],
+    "oracle_evaluations": [
+      {
+        "name": "same_site_mean_prediction_multiframe",
+        "status": "LEAKY_DIAGNOSTIC_ONLY",
+        "definition": "Mean frozen OOF predictions over all images of a site including this image; privileged grouping and multiple captures, not single-photo deployment.",
+        "coverage": 1.0,
+        "delta_e00": {
+          "n": 966,
+          "mean": 3.9879775581386414,
+          "median": 3.4777662413718984,
+          "p90": 7.374736614214168,
+          "p95": 9.07531684044696,
+          "max": 18.844269704973524,
+          "fraction_gt_5": 0.2349896480331263,
+          "fraction_gt_10": 0.033126293995859216
+        },
+        "people": 24,
+        "mae_lab": {
+          "L": 2.92618084046385,
+          "a": 2.1053046167512988,
+          "b": 2.2037579624621664
+        },
+        "rmse_lab": {
+          "L": 4.0909820774660846,
+          "a": 2.6602763433123737,
+          "b": 2.7413700497449263
+        },
+        "person_balanced_mean": 3.9588929309804435,
+        "mean_of_person_medians": 3.530224895830363,
+        "equal_person_weighted_median": 3.446974488812873
+      },
+      {
+        "name": "same_site_other_images_mean_prediction",
+        "status": "LEAKY_DIAGNOSTIC_ONLY",
+        "definition": "Mean frozen OOF predictions of other same-site images; excludes this image, needs other captures and exact site identity.",
+        "coverage": 0.9989648033126294,
+        "delta_e00": {
+          "n": 965,
+          "mean": 4.068660218711176,
+          "median": 3.4832499777801957,
+          "p90": 7.243069671555974,
+          "p95": 9.135279154427579,
+          "max": 19.94502450972603,
+          "fraction_gt_5": 0.24041450777202072,
+          "fraction_gt_10": 0.03419689119170984
+        },
+        "people": 24,
+        "mae_lab": {
+          "L": 2.9991444641205454,
+          "a": 2.1239734386041866,
+          "b": 2.2210663436378013
+        },
+        "rmse_lab": {
+          "L": 4.188589222117873,
+          "a": 2.6879611024053602,
+          "b": 2.7703616245994933
+        },
+        "person_balanced_mean": 4.038781499004933,
+        "mean_of_person_medians": 3.685667270051154,
+        "equal_person_weighted_median": 3.4729350100512537
+      },
+      {
+        "name": "patient_other_unique_sites_residual_bias_correction",
+        "status": "LEAKY_DIAGNOSTIC_ONLY",
+        "definition": "Subtract mean Lab residual of the patient's other unique sites, each site equally weighted; uses that held-out patient's other instrument targets and is leaky.",
+        "coverage": 1.0,
+        "delta_e00": {
+          "n": 966,
+          "mean": 4.145759315884776,
+          "median": 3.657421495508884,
+          "p90": 7.323617678646514,
+          "p95": 8.676326830796548,
+          "max": 21.35493898680407,
+          "fraction_gt_5": 0.28778467908902694,
+          "fraction_gt_10": 0.020703933747412008
+        },
+        "people": 24,
+        "mae_lab": {
+          "L": 3.212169034407789,
+          "a": 2.023125080620502,
+          "b": 2.002486789384887
+        },
+        "rmse_lab": {
+          "L": 4.228855555598225,
+          "a": 2.554312071922502,
+          "b": 2.5834022228594598
+        },
+        "person_balanced_mean": 4.147231670738761,
+        "mean_of_person_medians": 3.769434939715732,
+        "equal_person_weighted_median": 3.6592266382465874
+      }
+    ],
+    "interpretation": "An algebraic decomposition of this frozen estimator. Within-site prediction variation combines capture changes and model sensitivity; site mean bias combines estimator bias and shared capture/reference ambiguity. Neither term uniquely identifies a causal data/model share."
+  }
+}

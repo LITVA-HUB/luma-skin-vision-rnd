@@ -1,64 +1,46 @@
-# Luma — состояние ветки на 15 сентября 2026
+# Luma — состояние на 15 сентября 2026
 
 Ветка: `research/luma-audit-recovery-2026-09-15`.
-Исходный commit: `9cad271aad159d73083259967b4107b2ce828eb1`.
+Исходный commit проекта: `9cad271aad159d73083259967b4107b2ce828eb1`.
+Дообучение и публикация этой аналитической работы в отдельной ветке разрешены владельцем. Merge и платные ресурсы не использовались.
 
-Владелец разрешил публиковать текущую работу в отдельной GitHub-ветке.
-Публикация не означает разрешение на merge, оплату ресурсов, отправку
-участнических фотографий или новый architecture search.
+## Текущий результат
 
-## Выполнено
+**C_REBASE_V1 выполнен. Аудит завершён. Диагностический вывод MIXED.**
 
-- Новый reference/capture audit на исходных MSKCC TRAIN:
-  **966 изображений / 24 человека / 248 exact sites**.
-- Проверены 744 пары приборных assessments и 1 421 пара фотографий одного site.
-- Сохранены измеренные агрегаты, обезличенные признаки/маски, графики,
-  диагностические oracle, фиксированные срезы и команды воспроизведения.
-- Подготовлен анализатор сохранённых C OOF с проверкой исходных indices,
-  targets, patient groups и фиксированных диагностических masks.
-- Проверены полная доступная Git-история, remote refs, releases и workflow
-  artifacts на наличие потерянного эксперимента C.
+- TRAIN: 966 снимков /24 человека /248 sites, шесть person-disjoint folds по4 человека.
+- До OOF в GitHub commit `b744a5130d144b350885db4f92ce6801c614fcac` сохранены config, mapping, preprocessing, versions, hashes и diagnostic quantiles.
+- Обучено шесть MLP36→64→3 с нуля по одному фиксированному рецепту,100эпох. Нового model search и error predictor нет.
+- OOF ΔE00 mean4.618814 /median3.896521 /p9510.190053; >5=34.6791%, >10=5.5901%.
+- Fold0 перемещён в quarantine и воспроизведён с нуля в новом процессе. Predictions/веса/нормализация/RNG совпадают побитово, maximum Lab difference0. Итог: `BITWISE_REPRODUCED_FOLD_0`.
+- Готовы top50, patient/site/device/mode/anatomical strata, correlations с patient-bootstrap, заранее зафиксированные counterfactuals и leaky oracles.
+- Аудит повторён только по опубликованным обезличенным rows: все численные результаты совпали.
 
-## Текущий блокер C
+Полные результаты и ограничения: [REPORT_RU.md](experiments/c_rebase_v1/REPORT_RU.md).
+Репродукция: [COMMANDS.md](experiments/c_rebase_v1/COMMANDS.md).
+OOF SHA256: `f0b492bc17087c86359f9c05527fbf01863651c9d6bd3b444cc8bc52cdf0affa`.
 
-Статус: **BLOCKED_EXACT_C_EXPERIMENT_STATE**.
+## Что установлено
 
-Старый `LUMA_TRAIN_OOF_C.zip` владелец признал утраченным. Новое обучение для
-его воспроизведения разрешено, но точные C person→fold assignments и полный
-training config не найдены в доступных источниках. Архитектура 36→64 ReLU→3 и
-50+50 эпох известны; они не определяют optimizer/LR/normalization/траекторию.
-Оригинальные 966 TRAIN-изображений доступны локально, это не data-access blocker.
+Q4 нестабильности capture содержит37/49(75.5%) ошибок выше общегоp95. Один patient P12 или palms/soles вместе —126/966снимков,39/49ошибок хвоста. При этом даже стабильный срез reference/capture/clipping оставляет median3.699,p958.291 при51.14%coverage.
 
-Новый C OOF не создан. Production C и inference не изменялись. Численное
-сравнение с историческими 5.050/4.423/11.008 не выполнено. Другие folds или
-подбор параметров до этих агрегатов не выдаются за воспроизведение C.
+Within-site prediction variation составляет23.03% суммы coordinate MSE; site-mean bias76.97%. Это алгебраическое разложение фиксированного estimator, не причинные доли. ТолькоIID-assumption reference-noise proxy равен5.20% coordinateMSE, допущения не подтверждены. Истинный физический floor не идентифицируется без независимых повторных reference acquisitions exactsite, которых нет в release.
 
-Для точного продолжения нужен прежний trainer/config и назначения folds
-либо однозначный исходный код их построения. Если они также утрачены,
-потребуется согласовать новую фиксированную OOF-точку отсчёта с отдельным
-названием. Ниже ничего не запланировано к фоновому выполнению.
+## Историческое и неизменное
 
-## Навигация
+Исторический C: **HISTORICAL_NOT_REPRODUCIBLE** из-за потерянных folds и полного training config. Пользователь разрешил новый фиксированный протокол. Старые агрегаты не использовались для настройки или controlled comparison.
 
-- [Новый reference/capture отчёт](docs/benchmarks/mskcc_error_floor_audit_2026_09_15/REPORT_RU.md)
-- [Исходные агрегаты и обезличенные признаки](docs/benchmarks/mskcc_error_floor_audit_2026_09_15/data/)
-- [Команды аудита](docs/benchmarks/mskcc_error_floor_audit_2026_09_15/COMMANDS.md)
-- [Отчёт восстановления C](docs/benchmarks/c_oof_recovery_2026_09_15/REPORT_RU.md)
-- [Machine-readable reproduction gate](docs/benchmarks/c_oof_recovery_2026_09_15/reproduction_gate.json)
-- [Audit scripts](scripts/error_floor/)
-- [Аналитический ZIP](artifacts/LUMA_ERROR_FLOOR_AUDIT.zip)
+Production C / face inference не менялись. Текущая поставка аналитическая; trainedfoldweights не назначены production моделью. Историческая source-validation, calibration и test не использовались и не оценивались. Независимая selfie/instrument приёмка не выполнена, целевая точность2/5не достигнута. Фоновых тренировок нет.
 
-Каталог первого аудита — сохранённый снимок прежней поставки. Его STATE и
-отчёт описывают момент до признания ZIP утраченным; **актуальное состояние —
-этот файл и отдельный recovery report**. Исторические отчёты не переписываются.
+## Сохранённые материалы
 
-## Состав публикации
+- [Новые checkpoints, логи, OOF](experiments/c_rebase_v1/run/)
+- [Повтор fold0](experiments/c_rebase_v1/reproduction_fresh/)
+- [Статус повторения](experiments/c_rebase_v1/reproduction_result.json)
+- [Зафиксированный протокол](experiments/c_rebase_v1/PROTOCOL_RU.md)
+- [Первый reference/capture audit](docs/benchmarks/mskcc_error_floor_audit_2026_09_15/REPORT_RU.md)
+- [История восстановления потерянного C](docs/benchmarks/c_oof_recovery_2026_09_15/REPORT_RU.md)
 
-Публикуются код, отчёты, численные результаты, обезличенные производные,
-воспроизводимые команды и SHA256 manifests. Исходные фотографии, raw API/CSV
-с прямыми participant/image/site IDs, приватные mappings и secrets не входят.
-Новые обученные веса отсутствуют; они не подменяются пустыми файлами.
+Старые отчёты и их STATE сохранены как исторические снимки. Первоначальный `run/oof_metrics.json` содержит PENDING повторения на момент окончания обучения; более поздний `reproduction_result.json` подтверждает успешный repeat.
 
-Результаты oracle/контрфактических срезов — `LEAKY_DIAGNOSTIC_ONLY`.
-Наблюдаемый цвет изображения не приравнивается к приборному Lab.
-Точность на произвольных селфи не подтверждена.
+GitHub содержит код, config/mapping/manifest, веса, логи, обезличенные OOF/diagnostics и отчёт. Фотографии, прямые IDs и приватный полный mapping не публикуются. Приватный список24людей сохранён отдельно владельцу; его SHA256 включён в публичный mapping. Oracle/привилегированные срезы всегда LEAKY_DIAGNOSTIC_ONLY.

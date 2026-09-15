@@ -1,6 +1,7 @@
-> **Ветка аудита MSKCC и восстановления C — 15 сентября 2026.**
-> [Текущий STATE](STATE.md) · [Новые измерения reference/capture](docs/benchmarks/mskcc_error_floor_audit_2026_09_15/REPORT_RU.md) · [Проверка восстановления C OOF](docs/benchmarks/c_oof_recovery_2026_09_15/REPORT_RU.md) · [Аналитический ZIP](artifacts/LUMA_ERROR_FLOOR_AUDIT.zip).
-> Ниже сохранён прежний архив. Новое обучение C не выполнено: исходные TRAIN-данные доступны, точные C-folds и полный рецепт запуска не восстановлены.
+> **C_REBASE_V1 — фиксированный OOF и error-floor audit, 15 сентября 2026.**
+> [Отчёт с метриками](experiments/c_rebase_v1/REPORT_RU.md) · [Текущий STATE](STATE.md) · [OOF и веса](experiments/c_rebase_v1/run/) · [Команды](experiments/c_rebase_v1/COMMANDS.md).
+> 966 TRAIN / 24 человека / 6 folds. Mean 4.619, median 3.897, p95 10.190 ΔE00. Fold 0 повторён побитово. Вывод MIXED; точность селфи не подтверждена. Исторический C: HISTORICAL_NOT_REPRODUCIBLE; production не менялся.
+> Ниже сохранён прежний архив; актуальное разрешение владельца и состояние работы — в STATE.
 
 <p align="center"><b>LUMA · CHROMASEED</b><br>Исследовательский архив · 14 сентября 2026</p>
 
