@@ -1,0 +1,48 @@
+{
+  "experiment": "STW_TRANSFER_RERUN_V2",
+  "seed": 17,
+  "threads": 2,
+  "pretrained": "data/stw_transfer_rerun_v2/mobilenet_v3_small-047dcff4.pth",
+  "data": "data/stw_transfer_rerun_v2",
+  "architecture": "MobileNetV3-small ImageNet1kV1; frozen features[0:9]; trainable features[9:]; global+skin-weighted pooling 1152->128 ReLU LayerNorm; scalar ordinal score + 9 ordered thresholds",
+  "initialization": "torch.manual_seed(17); torchvision default random initialization then official backbone state; thresholds -2 + k*0.5",
+  "normalization": "RGB/255; fixed ImageNet mean [0.485,0.456,0.406], std [0.229,0.224,0.225]. No per-image color normalization. Fold-only initial-embedding/target population mean/std, clamp std 1e-6.",
+  "input": "STW: YuNet eye alignment of supplied face crop; EasyPortrait face parsing skin=1; RGB128 bilinear, mask128 nearest. MSKCC: central 80% clinical image crop, RGB128 bilinear, all-one mask; no facial parser.",
+  "augmentation": "none; different same-source same-group TRAIN captures are real paired views, not independently labelled new images",
+  "determinism": "CPU float32, torch deterministic algorithms, 2 intraop/1 interop threads; explicit torch generators; no stochastic NumPy/Python operations",
+  "batchnorm": "running means/variances frozen; tail affine parameters trainable; prefix always eval and no gradients",
+  "optimizer": "AdamW betas [0.9,0.999], eps 1e-8, foreach=false; fresh per experiment/fold; all states persisted on resume",
+  "pretrain": {
+    "lr": 0.0003,
+    "epochs": 12,
+    "eta_min": 0.00003,
+    "anchors": 32,
+    "weight_decay": 0.0001,
+    "consistency": {"B": 0.0, "C": 0.1},
+    "clip": 5.0,
+    "loss": "mean BCE for 9 cumulative MST thresholds on both views; C adds mean (1-cosine) for different frames of known groups",
+    "scheduler": "CosineAnnealingLR T_max=12, step after each epoch",
+    "selection": "fixed final epoch12; no early stopping"
+  },
+  "transfer": {
+    "head_lr": 0.001,
+    "encoder_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "frozen_epochs": 100,
+    "limited_epochs": 20,
+    "batch_size": 64,
+    "clip": 5.0,
+    "loss": "MSE standardized native instrument Lab D65/10deg",
+    "scheduler": "none",
+    "head": "Linear(128,64)->ReLU->Linear(64,3)",
+    "seed_rule": "17+fold",
+    "roles": "exact C_REBASE_V1 966 TRAIN rows /24 people /6 saved folds; no other MSKCC roles"
+  },
+  "comparison": {
+    "primary": "limited",
+    "bootstrap_people": 10000,
+    "bootstrap_seed": 20260915,
+    "promotion": "paired mean DeltaE candidate-minus-comparator 95% CI strictly below0 AND lower median AND lower p95; C also must pass against B",
+    "mst_selection": "validation equal-group MAE then within-one then B; useful only if MAE >=0.1 below TRAIN-group-median constant predictor; freeze before test"
+  }
+}
