@@ -1,0 +1,88 @@
+{
+  "source": "Measured directional reflectance datao; dimensionless, no clipping",
+  "expected_cube": "MATLAB float64 H x W x 33; background all-zero",
+  "measured_wavelength_nm": [
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720
+  ],
+  "derived_target_conventions": [
+    "D65/CIE1931 2deg",
+    "D65/CIE1964 10deg"
+  ],
+  "integration": "1nm sum 360..830nm, linear interpolation between measured bands, constant endpoint extrapolation",
+  "xyz_units": "Relative XYZ with perfect-reflector Y=1; multiply all XYZ by100 for Y=100",
+  "source_rgb_convention": "Author-rendered D65/CIE2006 10deg; distinct from our two explicit conventions",
+  "uncertainty": "400..720nm truncation and endpoint extrapolation; finite filter bandwidth; no physical accuracy inferred from numerical checks",
+  "foreground_is_not_verified_skin": true,
+  "derived_rgb_is_independent_camera_photo": false,
+  "color_checks": {
+    "2deg": {
+      "white_xyz_y1": [
+        0.9504705586542832,
+        1.0000000000000002,
+        1.0888287363958846
+      ],
+      "perfect_reflector_lab": [
+        99.99999999999999,
+        5.551115123125783e-14,
+        -2.220446049250313e-14
+      ]
+    },
+    "10deg": {
+      "white_xyz_y1": [
+        0.9481106006237401,
+        1.0000000000000002,
+        1.073046695432118
+      ],
+      "perfect_reflector_lab": [
+        100.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "matrix_sha256": "f390eb59be1013669a36153571f4a58ea8204b3b4180ac86b12ca3221b56aad5",
+  "source_table_hashes": {
+    "CIE_xyz_1931_2deg.csv": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+    "CIE_xyz_1931_2deg.csv_metadata.json": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8",
+    "CIE_xyz_1964_10deg.csv": "1b27fd4e8ca1167b47c3a6aee3aafe56abc57eae51fa20032cb83704224a27dc",
+    "CIE_xyz_1964_10deg.csv_metadata.json": "3769f7f56e663124df57fa63f99f13db2e9f09a39f92795eb44507cff771e994",
+    "CIE_std_illum_D65.csv": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+    "CIE_std_illum_D65.csv_metadata_v2.json": "71994379b81c65db111f652e747a00b599b5456c2a8242e9a0d6f379f560a14e"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

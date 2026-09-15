@@ -1,0 +1,58 @@
+{
+  "dataset": "STW",
+  "checked_date_utc": "2026-09-15",
+  "status": "PARTIAL_RELEASE_DOWNLOADED_AND_PAIRED",
+  "official_repo": "https://github.com/vitorpmh/STW",
+  "official_repo_commit": "172e4906de9e91d7cee1090e63a34db95fe03f69",
+  "author_drive_folder": "https://drive.google.com/drive/folders/1jPVDyY0m_WH9VRwS6uaEtLyAhiWKF7ye",
+  "arxiv_stale_release_statement": {
+    "url": "https://arxiv.org/abs/2603.02475",
+    "description": "Abstract still says data/code forthcoming, but author GitHub actually links a partial release."
+  },
+  "code_license": "No SPDX license. Author code only inspected, not executed or republished.",
+  "weights": "No weights acquired, no training performed.",
+  "combined_data_annotation_license": "Author README says specific license is in development and instructs compliance with each constituent dataset license. No standalone annotation license claimed.",
+  "research_use_scope": "Qualify each source separately; keep participant photos and original labels/IDs private.",
+  "source_qualification": {
+    "FairFace": {
+      "full_face_images_paired": 1031,
+      "source_person_keys": 1031,
+      "official_url": "https://github.com/joojs/fairface",
+      "data_license": "CC BY 4.0",
+      "evidence": "Author dataset README explicitly lists CC BY 4.0 in Data section.",
+      "role": "apparent-tone MST auxiliary; not instrument Lab",
+      "standalone_STW_annotation_license": "No distinct final text; STW author currently delegates to source dataset license."
+    },
+    "Brazilian Faces": {
+      "full_face_images_paired": 2782,
+      "source_person_keys": 200,
+      "official_url": "https://fei.edu.br/~cet/facedatabase.html",
+      "data_license": "Research use granted to researchers; redistribution/reproduction of database prohibited.",
+      "upstream_delivery_caveat": "STW authors supply crops; retrieve original FEI files from official provider for clean provenance before adopting this subset.",
+      "research_permission_verified_via": "Official webpage read with web tool; direct byte download timed out."
+    },
+    "Faces 94": {
+      "full_face_images_paired": 3040,
+      "source_person_keys": 152,
+      "official_url": "https://cswww.essex.ac.uk/mv/allfaces/",
+      "data_license": "Current official license not recovered in STW check; see repeated-capture qualification."
+    },
+    "Faces 95": {
+      "full_face_images_paired": 1440,
+      "source_person_keys": 72,
+      "official_url": "https://cswww.essex.ac.uk/mv/allfaces/",
+      "data_license": "Current official license not recovered in STW check; see repeated-capture qualification."
+    },
+    "LFW": {
+      "full_face_images_paired": 5985,
+      "source_person_keys": 423,
+      "official_url": "https://vis-www.cs.umass.edu/lfw/",
+      "data_license": "Current rights text not recovered from unavailable official page in this environment."
+    }
+  },
+  "not_downloaded_restricted_sources": ["Casia Face Africa", "Casia V5", "CelebA"],
+  "identities": "Source-scoped keys only; global biological identity and cross-source near-duplicate overlap not established.",
+  "label_semantics": "Human perceived/apparent MST 1..10, assigned per person across available photos. Never used as absolute Lab or instrument ground truth.",
+  "additional_owner_action_required_for_acquired_files": "None for obtaining this public partial release. Source-specific rights/annotation clarification remains before unqualified redistribution or commercial claims.",
+  "blocked_sources_not_rechecked": ["DAST", "CHROMA-FIT"]
+}

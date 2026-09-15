@@ -1,0 +1,497 @@
+{
+  "dataset": "STW",
+  "checked_at_utc_date": "2026-09-15",
+  "status": "PARTIAL_RELEASE_DOWNLOADED_AND_PAIRED",
+  "target": "Human apparent-tone MST integer 1..10; per-person annotation",
+  "not_targets": [
+    "instrument Lab",
+    "reflectance",
+    "pseudo-Lab"
+  ],
+  "metadata": {
+    "rows": 42312,
+    "source_person_keys": 3587,
+    "people_with_repeats": 2556,
+    "min_images_per_person": 1,
+    "max_images_per_person": 530,
+    "unique_paths": 42312,
+    "unique_new_tokens": 3587,
+    "MST_conflicting_source_person_keys": 0
+  },
+  "actual_download": {
+    "archive_bytes": 636672248,
+    "archive_sha256": "6bca3b5074c115d7f871a58414f0b24654e9ff2c90461ed901d4090dcd5d0e95",
+    "metadata_bytes": 3818026,
+    "metadata_sha256": "ef98d1a0a23ca338b150542a2b596146f76308e58708276c0cf07314fd9a0d57",
+    "jpeg_files": 28483,
+    "uncompressed_bytes": 633796290,
+    "decoded_and_uniquely_paired_files": 28483,
+    "decode_or_pairing_failures": 0,
+    "failure_reasons": {}
+  },
+  "full_face": {
+    "rows": 14278,
+    "source_person_keys": 1878,
+    "people_with_repeats": 847,
+    "min_images_per_person": 1,
+    "max_images_per_person": 530
+  },
+  "skin_only": {
+    "rows": 14205,
+    "source_person_keys": 1849,
+    "people_with_repeats": 847,
+    "min_images_per_person": 1,
+    "max_images_per_person": 530
+  },
+  "full_face_without_skin_only": 73,
+  "skin_only_without_full_face": 0,
+  "sources_metadata": {
+    "Brazilian Faces": {
+      "rows": 2800,
+      "source_person_keys": 200,
+      "people_with_repeats": 200,
+      "min_images_per_person": 14,
+      "max_images_per_person": 14
+    },
+    "Casia Face Africa": {
+      "rows": 24655,
+      "source_person_keys": 1105,
+      "people_with_repeats": 1105,
+      "min_images_per_person": 2,
+      "max_images_per_person": 67
+    },
+    "Casia V5": {
+      "rows": 2500,
+      "source_person_keys": 500,
+      "people_with_repeats": 500,
+      "min_images_per_person": 5,
+      "max_images_per_person": 5
+    },
+    "CelebA": {
+      "rows": 823,
+      "source_person_keys": 104,
+      "people_with_repeats": 104,
+      "min_images_per_person": 5,
+      "max_images_per_person": 10
+    },
+    "Faces 94": {
+      "rows": 3078,
+      "source_person_keys": 152,
+      "people_with_repeats": 152,
+      "min_images_per_person": 20,
+      "max_images_per_person": 22
+    },
+    "Faces 95": {
+      "rows": 1440,
+      "source_person_keys": 72,
+      "people_with_repeats": 72,
+      "min_images_per_person": 20,
+      "max_images_per_person": 20
+    },
+    "FairFace": {
+      "rows": 1031,
+      "source_person_keys": 1031,
+      "people_with_repeats": 0,
+      "min_images_per_person": 1,
+      "max_images_per_person": 1
+    },
+    "LFW": {
+      "rows": 5985,
+      "source_person_keys": 423,
+      "people_with_repeats": 423,
+      "min_images_per_person": 5,
+      "max_images_per_person": 530
+    }
+  },
+  "sources_paired_full_face": {
+    "Brazilian Faces": {
+      "rows": 2782,
+      "source_person_keys": 200,
+      "people_with_repeats": 200,
+      "min_images_per_person": 13,
+      "max_images_per_person": 14
+    },
+    "Faces 94": {
+      "rows": 3040,
+      "source_person_keys": 152,
+      "people_with_repeats": 152,
+      "min_images_per_person": 20,
+      "max_images_per_person": 20
+    },
+    "Faces 95": {
+      "rows": 1440,
+      "source_person_keys": 72,
+      "people_with_repeats": 72,
+      "min_images_per_person": 20,
+      "max_images_per_person": 20
+    },
+    "FairFace": {
+      "rows": 1031,
+      "source_person_keys": 1031,
+      "people_with_repeats": 0,
+      "min_images_per_person": 1,
+      "max_images_per_person": 1
+    },
+    "LFW": {
+      "rows": 5985,
+      "source_person_keys": 423,
+      "people_with_repeats": 423,
+      "min_images_per_person": 5,
+      "max_images_per_person": 530
+    }
+  },
+  "MST_distribution_full_face": {
+    "1": 1298,
+    "2": 5685,
+    "3": 4104,
+    "4": 1464,
+    "5": 945,
+    "6": 454,
+    "7": 182,
+    "8": 81,
+    "9": 43,
+    "10": 22
+  },
+  "image_dimensions": {
+    "(300, 300)": 28483
+  },
+  "image_modes": {
+    "RGB": 28483
+  },
+  "image_formats": {
+    "JPEG": 28483
+  },
+  "identical_byte_groups": 0,
+  "identical_byte_groups_across_different_source_images": 0,
+  "image_camera_exposure_illuminant_session_metadata": "NOT_RELEASED in supplied six-column annotation CSV",
+  "physical_identity_linkage_across_source_datasets": "UNKNOWN; source-person key is an annotation grouping, not proven global identity",
+  "author_split_audit": {
+    "SKF_TRAIN_Fold_1.csv": {
+      "sha256": "2794a0658b96aa10b9fbaf146720adfec0c0bf1e3150882c172f555a0b96652c",
+      "metadata": {
+        "rows": 18534,
+        "source_person_keys": 2280,
+        "people_with_repeats": 1612,
+        "min_images_per_person": 1,
+        "max_images_per_person": 236
+      },
+      "paired_full_face": {
+        "rows": 9088,
+        "source_person_keys": 1214,
+        "people_with_repeats": 550,
+        "min_images_per_person": 1,
+        "max_images_per_person": 236
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_TRAIN_Fold_2.csv": {
+      "sha256": "9493ec661aa5dbb5b325427d9b4663466c6a3c1a8a855df5b62edbe2eb1d288a",
+      "metadata": {
+        "rows": 18713,
+        "source_person_keys": 2281,
+        "people_with_repeats": 1607,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 9223,
+        "source_person_keys": 1219,
+        "people_with_repeats": 546,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_TRAIN_Fold_3.csv": {
+      "sha256": "3bf462230910d70c796e6d50ad0dbd177fafb2208aea2663ccfa5393d5a93fca",
+      "metadata": {
+        "rows": 18925,
+        "source_person_keys": 2281,
+        "people_with_repeats": 1620,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 9171,
+        "source_person_keys": 1189,
+        "people_with_repeats": 532,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_TRAIN_Fold_4.csv": {
+      "sha256": "3aadc1f969768e31f38761476d80ab854495a3a79ca06220f1f4c3c1d783f4e6",
+      "metadata": {
+        "rows": 19109,
+        "source_person_keys": 2281,
+        "people_with_repeats": 1626,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 9531,
+        "source_person_keys": 1204,
+        "people_with_repeats": 552,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_TRAIN_Fold_5.csv": {
+      "sha256": "15d776fa2e6492439d31d9df96f000e16b6de2c956ea8711215b7f86d186e0dd",
+      "metadata": {
+        "rows": 18951,
+        "source_person_keys": 2281,
+        "people_with_repeats": 1623,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 9307,
+        "source_person_keys": 1206,
+        "people_with_repeats": 552,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_VAL_Fold_1.csv": {
+      "sha256": "07bc7b371b381e972133afd1363520159043772d6efa893ca7a43d8fbb130d5b",
+      "metadata": {
+        "rows": 5024,
+        "source_person_keys": 571,
+        "people_with_repeats": 410,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 2492,
+        "source_person_keys": 294,
+        "people_with_repeats": 133,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_VAL_Fold_2.csv": {
+      "sha256": "e69dac0dec3aa4ca9003b530d6c1d95b0ac6aa02a05f14cb3125c728afdf8d52",
+      "metadata": {
+        "rows": 4845,
+        "source_person_keys": 570,
+        "people_with_repeats": 415,
+        "min_images_per_person": 1,
+        "max_images_per_person": 236
+      },
+      "paired_full_face": {
+        "rows": 2357,
+        "source_person_keys": 289,
+        "people_with_repeats": 137,
+        "min_images_per_person": 1,
+        "max_images_per_person": 236
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_VAL_Fold_3.csv": {
+      "sha256": "260f39d75a464c8db87a2348e52b9273624893cc06645b91601771afd5118451",
+      "metadata": {
+        "rows": 4633,
+        "source_person_keys": 570,
+        "people_with_repeats": 402,
+        "min_images_per_person": 1,
+        "max_images_per_person": 71
+      },
+      "paired_full_face": {
+        "rows": 2409,
+        "source_person_keys": 319,
+        "people_with_repeats": 151,
+        "min_images_per_person": 1,
+        "max_images_per_person": 71
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_VAL_Fold_4.csv": {
+      "sha256": "de8aac737d5595da5bf73f0af6a6c26ef314523e965ba0facc49cf5b85541694",
+      "metadata": {
+        "rows": 4449,
+        "source_person_keys": 570,
+        "people_with_repeats": 396,
+        "min_images_per_person": 1,
+        "max_images_per_person": 60
+      },
+      "paired_full_face": {
+        "rows": 2049,
+        "source_person_keys": 304,
+        "people_with_repeats": 131,
+        "min_images_per_person": 1,
+        "max_images_per_person": 60
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "SKF_VAL_Fold_5.csv": {
+      "sha256": "8c4a7a3013eae89ac1497076ec6da7829843a2cec025ecbdbcc430bfa2e43782",
+      "metadata": {
+        "rows": 4607,
+        "source_person_keys": 570,
+        "people_with_repeats": 399,
+        "min_images_per_person": 1,
+        "max_images_per_person": 144
+      },
+      "paired_full_face": {
+        "rows": 2273,
+        "source_person_keys": 302,
+        "people_with_repeats": 131,
+        "min_images_per_person": 1,
+        "max_images_per_person": 144
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "holdout_train.csv": {
+      "sha256": "94a7836f44224e15eef9402c86db7950bf24936b18ca909a69d6010a301564db",
+      "metadata": {
+        "rows": 19186,
+        "source_person_keys": 2280,
+        "people_with_repeats": 1624,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 9406,
+        "source_person_keys": 1190,
+        "people_with_repeats": 538,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "holdout_val.csv": {
+      "sha256": "47c710d304b5438cfd79421020d2b588e5980b6799583d2b590a0929e39d236f",
+      "metadata": {
+        "rows": 4372,
+        "source_person_keys": 571,
+        "people_with_repeats": 398,
+        "min_images_per_person": 1,
+        "max_images_per_person": 109
+      },
+      "paired_full_face": {
+        "rows": 2174,
+        "source_person_keys": 318,
+        "people_with_repeats": 145,
+        "min_images_per_person": 1,
+        "max_images_per_person": 109
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "test.csv": {
+      "sha256": "d12ccde6114785cd4c0620402c7ae410c8c6a4b9774f82e8128834dbcfd9f1e9",
+      "metadata": {
+        "rows": 5820,
+        "source_person_keys": 713,
+        "people_with_repeats": 506,
+        "min_images_per_person": 1,
+        "max_images_per_person": 77
+      },
+      "paired_full_face": {
+        "rows": 2698,
+        "source_person_keys": 370,
+        "people_with_repeats": 164,
+        "min_images_per_person": 1,
+        "max_images_per_person": 77
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "train.csv": {
+      "sha256": "f8c40f5074561f8b792692d2369fcdba5ccb808db86e73af3e59d342585d2ca1",
+      "metadata": {
+        "rows": 23558,
+        "source_person_keys": 2851,
+        "people_with_repeats": 2022,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "paired_full_face": {
+        "rows": 11580,
+        "source_person_keys": 1508,
+        "people_with_repeats": 683,
+        "min_images_per_person": 1,
+        "max_images_per_person": 530
+      },
+      "rows_absent_from_main_csv": 0,
+      "MST_conflicts_vs_main_csv": 0,
+      "source_person_conflicts_vs_main_csv": 0
+    },
+    "overlap_train__test": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "overlap_holdout_train__holdout_val": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "overlap_SKF_TRAIN_Fold_1__SKF_VAL_Fold_1": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "overlap_SKF_TRAIN_Fold_2__SKF_VAL_Fold_2": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "overlap_SKF_TRAIN_Fold_3__SKF_VAL_Fold_3": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "overlap_SKF_TRAIN_Fold_4__SKF_VAL_Fold_4": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "overlap_SKF_TRAIN_Fold_5__SKF_VAL_Fold_5": {
+      "source_person_keys_all_metadata": 0,
+      "source_person_keys_paired_full_face": 0
+    },
+    "train_test_union": {
+      "rows": 29378,
+      "source_person_keys": 3564,
+      "people_with_repeats": 2528,
+      "min_images_per_person": 1,
+      "max_images_per_person": 530,
+      "unique_source_paths": 29378,
+      "source_rows": {
+        "Faces 94": 3040,
+        "Faces 95": 1440,
+        "Brazilian Faces": 2800,
+        "Casia V5": 2500,
+        "CelebA": 823,
+        "Casia Face Africa": 11759,
+        "LFW": 5985,
+        "FairFace": 1031
+      },
+      "paired_full_face_rows_unassigned": 0
+    }
+  }
+}

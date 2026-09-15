@@ -1,3 +1,5 @@
+> **Новые данные, 15 сентября 2026:** получены STW (14 278 full-face +14 205 производных вариантов), Georgia Tech (750 RGB) и ORL (400 grayscale). ENCoDE закрыт credentialing/DUA; UMINHO сейчас HTTP403. [Фактическая доступность, pairing и ограничения](docs/data/access_2026_09_15/REPORT_RU.md). Новых instrument pairs/оценки качества нет; C_REBASE_V1 frozen.
+
 > **C_REBASE_V1 — фиксированный OOF и error-floor audit, 15 сентября 2026.**
 > [Отчёт с метриками](experiments/c_rebase_v1/REPORT_RU.md) · [Текущий STATE](STATE.md) · [OOF и веса](experiments/c_rebase_v1/run/) · [Команды](experiments/c_rebase_v1/COMMANDS.md).
 > 966 TRAIN / 24 человека / 6 folds. Mean 4.619, median 3.897, p95 10.190 ΔE00. Fold 0 повторён побитово. Вывод MIXED; точность селфи не подтверждена. Исторический C: HISTORICAL_NOT_REPRODUCIBLE; production не менялся.

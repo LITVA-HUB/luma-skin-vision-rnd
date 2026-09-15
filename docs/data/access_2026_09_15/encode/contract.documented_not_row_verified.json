@@ -1,0 +1,83 @@
+{
+  "dataset": "ENCoDE",
+  "version": "1.0.0",
+  "status": "BLOCKED_CREDENTIALS_DUA",
+  "documentation_received": true,
+  "participant_rows_received": false,
+  "pairing_verified_on_released_rows": false,
+  "downloaded_people": 0,
+  "downloaded_images": 0,
+  "downloaded_instrument_pairs": 0,
+  "published_cohort_people": 128,
+  "image_contract": {
+    "storage": "Image record; iPhone and Android folders separated",
+    "filename_documented": "<person_id>_<location_id>",
+    "representation": "Processed/masked smartphone skin-site images, not guaranteed full-face/original JPEGs",
+    "image_source_reference": "MEASUREMENT.MEASUREMENT_SOURCE_VALUE documents original image path for extracted image features",
+    "image_preprocessing": "Authors describe largest contour above median grayscale brightness, mask, RGB/LCH mean and SD; this is apparent pixel color, not instrument supervision"
+  },
+  "identity_contract": {
+    "person": "PERSON.person_id; deidentified identity",
+    "visit": "VISIT_OCCURRENCE; one admission per person according to documentation",
+    "capture_session": "No explicit independent capture/session key verified; visit is not automatically equivalent to unique capture",
+    "join_constraints": "Use person_id + visit_occurrence_id + exact anatomical site + instrument + measurement time/acquisition when present. Never nearest-join across sites or visits; reject ambiguous multiple matches."
+  },
+  "released_locations": {
+    "1": "finger left dorsal",
+    "3": "palm left dorsal",
+    "5": "finger right dorsal",
+    "7": "palm right dorsal",
+    "9": "forehead",
+    "10": "earlobe outer",
+    "11": "earlobe inner",
+    "12": "sternum",
+    "13": "toe left dorsal",
+    "15": "toe right dorsal"
+  },
+  "excluded_images": "Ventral finger/palm/toe images omitted for biometric privacy; derived features may remain. A feature row does not prove image availability.",
+  "phones": [
+    "iPhone SE 2020",
+    "Google Pixel 4a"
+  ],
+  "instrument_contract": {
+    "devices": [
+      "Delfin SkinColorCatch",
+      "Konica-Minolta CM-700d",
+      "Variable Spectro 1 Pro"
+    ],
+    "table": "MEASUREMENT, linked through CONCEPT for non-standard concepts",
+    "concept_template": "SKINTONE@<Location>_<device manufacturer>.<measure>",
+    "value": "value_as_number, unit_concept_id; exact Lab component concepts must be checked in released CONCEPT",
+    "units": "CIE L*, a*, b* coordinate values are distinct from RGB, LCH, MST and clinical EHR values. Actual unit mapping not yet received.",
+    "illuminant_observer": "UNVERIFIED_PER_INSTRUMENT_RELEASE_CONFIGURATION; do not impose MSKCC D65/10 or convert D65/2 to10 without spectra/justification",
+    "repeat_rule": "Preserve independent readings as separate acquisition records; no averaging until repetition identifiers and conventions are verified"
+  },
+  "forbidden_targets": [
+    "Image RGB or derived image Lab/LCH used as instrument ground truth",
+    "MST converted to Lab",
+    "Arbitrary same-person anatomical-site label copies",
+    "Mixing different instruments/illuminants/observers in one undifferentiated regression target"
+  ],
+  "first_import_checks": [
+    "Decode exact image filename/folder identity and device mapping",
+    "Require one unambiguous person/visit/site/acquisition link for each image",
+    "Collect L/a/b only from same actual instrument/acquisition",
+    "Verify unit and observer/illuminant from released metadata or author clarification",
+    "Reject incomplete/duplicate/ambiguous pairs rather than guessing",
+    "Count unique people/sites/captures/devices and missing images before splitting"
+  ],
+  "usable_for_now": "Documentation only; no instrument-labelled training signal acquired",
+  "potential_use_after_access": "Site-matched smartphone/instrument calibration or camera-transfer supervision; forehead crops do not establish full-face selfie validation",
+  "required_owner_action": "PhysioNet credentialing + accepted CITI Data or Specimens Only Research training + project DUA, performed by the owner in their own account. Do not send credentials in chat.",
+  "sources": [
+    "https://physionet.org/content/encode-skin-color/1.0.0/",
+    "https://github.com/aiwonglab/ENCoDE_tutorial",
+    "https://physionet.org/content/encode-skin-color/view-license/1.0.0/",
+    "https://physionet.org/content/encode-skin-color/view-dua/1.0.0/"
+  ],
+  "rights": {
+    "dataset": "PhysioNet Credentialed Health Data License 1.5.0; qualified researcher restricted access and no sharing access",
+    "tutorial_code": "MIT; this does not license participant data",
+    "agreements_accepted_by_agent": false
+  }
+}

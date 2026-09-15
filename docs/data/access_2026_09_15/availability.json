@@ -1,0 +1,103 @@
+{
+  "as_of": "2026-09-15",
+  "stage": "DATA_ACQUISITION_QUALIFICATION",
+  "new_training_executed": false,
+  "new_instrument_pairs": 0,
+  "counts_are_not_additive": true,
+  "datasets": [
+    {
+      "dataset": "ENCoDE",
+      "status": "BLOCKED_CREDENTIALS_DUA",
+      "downloaded_people": 0,
+      "downloaded_images": 0,
+      "downloaded_instrument_pairs": 0,
+      "public_documents": 6,
+      "contract_status": "DOCUMENTED_NOT_ROW_VERIFIED",
+      "owner_action": "Credentialed PhysioNet account, required CITI training, personal project DUA acceptance"
+    },
+    {
+      "dataset": "Multi-PIE",
+      "status": "BLOCKED_EXTERNAL_DISTRIBUTION",
+      "downloaded_people": 0,
+      "downloaded_images": 0,
+      "access": "Official order route did not deliver files; no order or contract accepted"
+    },
+    {
+      "dataset": "Georgia Tech",
+      "status": "DOWNLOADED_QUALIFIED_RIGHTS_UNRESOLVED",
+      "downloaded_source_people": 50,
+      "downloaded_images": 750,
+      "images_per_person": 15,
+      "same_person_pairs": 5250,
+      "people_with_multiple_exif_dates": 30,
+      "target": "source identity and capture timestamp",
+      "not_target": "instrument Lab or calibrated illumination",
+      "source_use_grant": "not recovered; no claim that formal approval is required"
+    },
+    {
+      "dataset": "AT&T ORL",
+      "status": "DOWNLOADED_QUALIFIED_ACHROMATIC_ONLY",
+      "downloaded_source_people": 40,
+      "downloaded_images": 400,
+      "images_per_person": 10,
+      "same_person_pairs": 1800,
+      "target": "source identity",
+      "use": "limited achromatic auxiliary/control, source attribution"
+    },
+    {
+      "dataset": "STW partial release",
+      "status": "DOWNLOADED_PAIRED_SOURCE_RIGHTS_DIFFER",
+      "downloaded_source_person_keys": 1878,
+      "downloaded_images": 14278,
+      "skin_only_derivative_variants": 14205,
+      "repeated_source_person_keys": 847,
+      "target": "human per-person MST apparent tone category",
+      "cross_source_biological_identity_overlap": "UNKNOWN",
+      "strict_confirmed_source_image_license_subset": {
+        "source": "FairFace",
+        "images": 1031,
+        "license": "CC BY 4.0"
+      },
+      "separate_combined_annotation_license": "WIP in current author README; not claimed unrestricted"
+    },
+    {
+      "dataset": "STW/Faces95",
+      "status": "SUBSET_OF_STW_DO_NOT_ADD_COUNTS",
+      "downloaded_source_people": 72,
+      "downloaded_images": 1440,
+      "images_per_person": 20,
+      "same_person_pairs": 13680,
+      "target": "source identity; separate human MST",
+      "illumination_ids": null,
+      "upstream_rights": "not reverified; official Essex host inaccessible"
+    },
+    {
+      "dataset": "UMINHO-HSFD",
+      "status": "BLOCKED_SOURCE_HTTP",
+      "downloaded_people": 0,
+      "downloaded_images": 0,
+      "downloaded_cubes": 0,
+      "restored_historical_train_source_entries": 19,
+      "expected_train_source_bytes": 1975360986,
+      "missing_originals_not_p2": "P2 weights not required for fresh spectral preparation"
+    },
+    {
+      "dataset": "DAST",
+      "status": "BLOCKED_EXTERNAL",
+      "source_of_status": "OWNER_MESSAGE",
+      "checked_this_stage": false
+    },
+    {
+      "dataset": "CHROMA-FIT",
+      "status": "BLOCKED_EXTERNAL",
+      "source_of_status": "OWNER_MESSAGE",
+      "checked_this_stage": false
+    }
+  ],
+  "raw_archive_durable_save": {
+    "status": "FAILED_BEFORE_UPLOAD",
+    "reason": "runtime storage authorization unavailable",
+    "local_files_exist": true,
+    "participant_images_published_to_git": false
+  }
+}

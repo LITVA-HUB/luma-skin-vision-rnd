@@ -1,0 +1,2128 @@
+[
+  {
+    "dataset": "georgia_tech",
+    "downloaded": true,
+    "people": 50,
+    "images": 750,
+    "decoded": 750,
+    "decode_failures": 0,
+    "images_per_person": {
+      "15": 50
+    },
+    "same_person_pairs": 5250,
+    "source_image_modes": {
+      "RGB": 750
+    },
+    "dimensions": {
+      "640x480": 750
+    },
+    "true_nonidentical_rgb_channels_images": 750,
+    "identical_rgb_channels_images": 0,
+    "icc_images": 0,
+    "exif_images": 749,
+    "unique_file_sha256": 750,
+    "author_face_boxes": 750,
+    "validated_author_face_boxes": 750,
+    "camera_models": {
+      "SONY HANDYCAM": 749
+    },
+    "camera_model_metadata_images": 749,
+    "physical_camera_unit_ids_present": 0,
+    "session_ids_present": 0,
+    "illumination_ids_present": 0,
+    "capture_date_metadata_images": 749,
+    "unique_capture_dates": 16,
+    "people_by_known_capture_date_count": {
+      "3": 3,
+      "1": 20,
+      "2": 27
+    },
+    "exif_color_spaces": {
+      "1": 749
+    },
+    "capture_index_is_not_session_or_illumination": true,
+    "native_color_space": "749 JPEGs self-declare sRGB by EXIF ColorSpace=1; one unspecified; no ICC or instrument calibration",
+    "target": "same-person membership only",
+    "absolute_lab_target": false,
+    "within_person_median_encoded_rgb_euclidean": {
+      "count": 5250,
+      "mean": 0.07541955703056157,
+      "median": 0.043492300025135,
+      "p95": 0.277289835849878,
+      "min": 0.0,
+      "max": 0.6771607732309721
+    },
+    "within_person_brightness_proxy_difference": {
+      "count": 5250,
+      "mean": 0.04077900997198879,
+      "median": 0.023261960784313807,
+      "p95": 0.15328470588235302,
+      "min": 0.0,
+      "max": 0.3884823529411764
+    },
+    "within_person_same_date_brightness_proxy_difference": {
+      "count": 3767,
+      "mean": 0.02357326899753796,
+      "median": 0.017924705882352898,
+      "p95": 0.06301113725490194,
+      "min": 0.0,
+      "max": 0.15819529411764705
+    },
+    "within_person_different_date_brightness_proxy_difference": {
+      "count": 1469,
+      "mean": 0.08510809167233944,
+      "median": 0.06506196078431375,
+      "p95": 0.2182486274509804,
+      "min": 2.1960784313712622e-05,
+      "max": 0.3884823529411764
+    },
+    "variability_caveat": "Central face rectangle includes non-skin; observed changes mix light, pose, expression, alignment and capture. These statistics are not an illumination ground truth.",
+    "private_manifest_sha256": "d0aeadc634e534a48321c6bf13a69ec08556c2b53396e1a78f03ab8f248ab27b",
+    "per_person": [
+      {
+        "person": "P001",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 3,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.08302641647335822,
+          "median": 0.07553474621277734,
+          "p95": 0.23290949033840053,
+          "min": 0.0039215686274509665,
+          "max": 0.2506738323842648
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.04271459197012137,
+          "median": 0.04031686274509805,
+          "p95": 0.12732627450980394,
+          "min": 0.000550588235294136,
+          "max": 0.14403294117647059
+        }
+      },
+      {
+        "person": "P002",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.051344919211185204,
+          "median": 0.046566047400148705,
+          "p95": 0.10927203805951821,
+          "min": 0.0039215686274509665,
+          "max": 0.14420765496625013
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.027914450046685343,
+          "median": 0.025027058823529402,
+          "p95": 0.06182243137254902,
+          "min": 0.00024705882352943354,
+          "max": 0.08019647058823531
+        }
+      },
+      {
+        "person": "P003",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.0495965886865436,
+          "median": 0.0438444701470547,
+          "p95": 0.10874711658574517,
+          "min": 0.005545935538718,
+          "max": 0.14215348204228906
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.028220093370681616,
+          "median": 0.024913725490196048,
+          "p95": 0.06524596078431372,
+          "min": 0.0013843137254901938,
+          "max": 0.08175058823529413
+        }
+      },
+      {
+        "person": "P004",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.14445248967707047,
+          "median": 0.09354400346569852,
+          "p95": 0.31797048334096717,
+          "min": 0.0,
+          "max": 0.3601870589240795
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.08188154621848738,
+          "median": 0.05319843137254898,
+          "p95": 0.1812199215686274,
+          "min": 0.0,
+          "max": 0.21016941176470583
+        }
+      },
+      {
+        "person": "P005",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.04672296531047667,
+          "median": 0.04187089510600518,
+          "p95": 0.09600107923968594,
+          "min": 0.0,
+          "max": 0.12917387523137738
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02607766946778713,
+          "median": 0.021810196078431487,
+          "p95": 0.05673678431372552,
+          "min": 0.0,
+          "max": 0.07506039215686289
+        }
+      },
+      {
+        "person": "P006",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.07267709235266112,
+          "median": 0.06689694944796859,
+          "p95": 0.14837179988747204,
+          "min": 0.0,
+          "max": 0.1924767245773808
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.0414757198879552,
+          "median": 0.03755294117647057,
+          "p95": 0.09069788235294118,
+          "min": 0.0,
+          "max": 0.12180941176470594
+        }
+      },
+      {
+        "person": "P007",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.047990307726084445,
+          "median": 0.03441162504859649,
+          "p95": 0.14493100314031684,
+          "min": 0.0,
+          "max": 0.1632993161855452
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.027851458450046673,
+          "median": 0.018758431372549067,
+          "p95": 0.08536752941176466,
+          "min": 0.0,
+          "max": 0.09718980392156856
+        }
+      },
+      {
+        "person": "P008",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.12592474826247657,
+          "median": 0.07113081234202763,
+          "p95": 0.2941016157689786,
+          "min": 0.0039215686274509665,
+          "max": 0.349129746887137
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.06901688888888889,
+          "median": 0.04285411764705893,
+          "p95": 0.1625254901960785,
+          "min": 0.0013843137254901938,
+          "max": 0.19666039215686282
+        }
+      },
+      {
+        "person": "P009",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.05441198885939829,
+          "median": 0.043137254901960735,
+          "p95": 0.1303147275543888,
+          "min": 0.005545935538718,
+          "max": 0.1976797358608401
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.033216896358543406,
+          "median": 0.027723137254901886,
+          "p95": 0.07920062745098037,
+          "min": 0.00026745098039215875,
+          "max": 0.12129019607843133
+        }
+      },
+      {
+        "person": "P010",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.04976987658512168,
+          "median": 0.045732956038002384,
+          "p95": 0.09991915319696738,
+          "min": 0.0039215686274509665,
+          "max": 0.11653065065179315
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02515594397759103,
+          "median": 0.02246431372549018,
+          "p95": 0.05558243137254903,
+          "min": 0.00033960784313724623,
+          "max": 0.06673882352941174
+        }
+      },
+      {
+        "person": "P011",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.08227219174983508,
+          "median": 0.07388801443692852,
+          "p95": 0.18143259709178525,
+          "min": 0.0039215686274509665,
+          "max": 0.2175675530459639
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.03549494677871147,
+          "median": 0.032756862745098037,
+          "p95": 0.07914305882352936,
+          "min": 0.0002831372549019773,
+          "max": 0.10135999999999995
+        }
+      },
+      {
+        "person": "P012",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.0682717577161232,
+          "median": 0.06298971923219221,
+          "p95": 0.13711535645765854,
+          "min": 0.0,
+          "max": 0.18284773689215317
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.03186660690943044,
+          "median": 0.028552156862745037,
+          "p95": 0.06729458823529408,
+          "min": 0.0,
+          "max": 0.09539372549019609
+        }
+      },
+      {
+        "person": "P013",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.16103019339578153,
+          "median": 0.10089945357073414,
+          "p95": 0.3467915239770155,
+          "min": 0.0039215686274509665,
+          "max": 0.36725338399862156
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.09042104948646128,
+          "median": 0.05627058823529413,
+          "p95": 0.1958952156862746,
+          "min": 1.8039215686438403e-05,
+          "max": 0.211569411764706
+        }
+      },
+      {
+        "person": "P014",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.07126028879409865,
+          "median": 0.05882352941176466,
+          "p95": 0.15965885912490152,
+          "min": 0.005545935538718,
+          "max": 0.1897001823129071
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.03814892997198878,
+          "median": 0.03192313725490192,
+          "p95": 0.08555858823529408,
+          "min": 0.0005505882352941915,
+          "max": 0.10483294117647057
+        }
+      },
+      {
+        "person": "P015",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.024606404464363546,
+          "median": 0.021118293361311786,
+          "p95": 0.05719050904811587,
+          "min": 0.0,
+          "max": 0.06949037312419358
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.014201561157796451,
+          "median": 0.012315294117647091,
+          "p95": 0.0333074509803922,
+          "min": 0.0,
+          "max": 0.04003372549019604
+        }
+      },
+      {
+        "person": "P016",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.05538106195299514,
+          "median": 0.0438444701470547,
+          "p95": 0.145742833685137,
+          "min": 0.0,
+          "max": 0.17542171957917674
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.027776881419234345,
+          "median": 0.019607843137254832,
+          "p95": 0.0758484705882353,
+          "min": 0.0,
+          "max": 0.09159137254901956
+        }
+      },
+      {
+        "person": "P017",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.03154243321228249,
+          "median": 0.025715445193341208,
+          "p95": 0.06897168838894854,
+          "min": 0.0039215686274509665,
+          "max": 0.0912976213868456
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.017791746031746023,
+          "median": 0.015403137254901944,
+          "p95": 0.04127294117647057,
+          "min": 0.00026745098039210324,
+          "max": 0.05488627450980388
+        }
+      },
+      {
+        "person": "P018",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.13986331097172994,
+          "median": 0.14139416766525442,
+          "p95": 0.2919712500137209,
+          "min": 0.0039215686274509665,
+          "max": 0.3104981053618442
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.06406114659197013,
+          "median": 0.057456470588235276,
+          "p95": 0.1370519215686275,
+          "min": 0.0002831372549019773,
+          "max": 0.1468345098039215
+        }
+      },
+      {
+        "person": "P019",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 3,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.09166258402123763,
+          "median": 0.06949037312419347,
+          "p95": 0.20510958208630942,
+          "min": 0.0039215686274509665,
+          "max": 0.26856303793355185
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.055816590102707744,
+          "median": 0.04369882352941168,
+          "p95": 0.12860000000000005,
+          "min": 1.5686274509874032e-05,
+          "max": 0.16670196078431376
+        }
+      },
+      {
+        "person": "P020",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.129660713710219,
+          "median": 0.059344101766359035,
+          "p95": 0.27780295746622446,
+          "min": 0.0,
+          "max": 0.2899575065978618
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.05698588982259569,
+          "median": 0.0319388235294118,
+          "p95": 0.12579796078431366,
+          "min": 0.0,
+          "max": 0.13329411764705879
+        }
+      },
+      {
+        "person": "P021",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.1603909022708506,
+          "median": 0.039019115180651785,
+          "p95": 0.3475744803938697,
+          "min": 0.0039215686274509665,
+          "max": 0.35677654636608175
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.09386030252100842,
+          "median": 0.022129411764705953,
+          "p95": 0.2038804705882353,
+          "min": 0.00013372549019607938,
+          "max": 0.20846588235294128
+        }
+      },
+      {
+        "person": "P022",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.041830227604110114,
+          "median": 0.040184120650821976,
+          "p95": 0.09104460208818745,
+          "min": 0.0039215686274509665,
+          "max": 0.10796784233675455
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02370345471521941,
+          "median": 0.02337215686274513,
+          "p95": 0.053182745098039205,
+          "min": 0.0005866666666666798,
+          "max": 0.05988862745098039
+        }
+      },
+      {
+        "person": "P023",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.04854658595293607,
+          "median": 0.04488440447944935,
+          "p95": 0.10229203132406446,
+          "min": 0.0039215686274509665,
+          "max": 0.13545032187584732
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.029207783380018677,
+          "median": 0.026349803921568715,
+          "p95": 0.06591403921568632,
+          "min": 0.0005662745098038435,
+          "max": 0.08603215686274512
+        }
+      },
+      {
+        "person": "P024",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.06345996777483205,
+          "median": 0.054621130498761286,
+          "p95": 0.1467375236962985,
+          "min": 0.003921568627451022,
+          "max": 0.2038461398959533
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.03575073762838471,
+          "median": 0.03053882352941173,
+          "p95": 0.08340188235294115,
+          "min": 0.00028313725490192176,
+          "max": 0.11567607843137251
+        }
+      },
+      {
+        "person": "P025",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.15314957991417832,
+          "median": 0.046730883481619544,
+          "p95": 0.5297703665836732,
+          "min": 0.0039215686274509665,
+          "max": 0.6771607732309721
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.08605411017740426,
+          "median": 0.026030588235294083,
+          "p95": 0.30074854901960774,
+          "min": 0.000566274509803899,
+          "max": 0.3884823529411764
+        }
+      },
+      {
+        "person": "P026",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.09735857096747107,
+          "median": 0.10028793609838756,
+          "p95": 0.2510311226073789,
+          "min": 0.0039215686274509665,
+          "max": 0.2937841246222235
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.05743428571428571,
+          "median": 0.05711999999999995,
+          "p95": 0.1521984313725489,
+          "min": 0.0011372549019607048,
+          "max": 0.178029411764706
+        }
+      },
+      {
+        "person": "P027",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.03310056737800516,
+          "median": 0.028549450546198132,
+          "p95": 0.07209428340058462,
+          "min": 0.0039215686274509665,
+          "max": 0.09163389369057194
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.01988673015873016,
+          "median": 0.016520000000000035,
+          "p95": 0.047369254901960804,
+          "min": 0.0008337254901960578,
+          "max": 0.057727058823529354
+        }
+      },
+      {
+        "person": "P028",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.035662653429957246,
+          "median": 0.029607193863806884,
+          "p95": 0.07901131171391501,
+          "min": 0.0,
+          "max": 0.10449343211352337
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02003347899159663,
+          "median": 0.01651999999999998,
+          "p95": 0.0446379607843137,
+          "min": 0.0,
+          "max": 0.05768627450980396
+        }
+      },
+      {
+        "person": "P029",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.08349766445948728,
+          "median": 0.06175692450205345,
+          "p95": 0.2731255499938942,
+          "min": 0.005545935538718,
+          "max": 0.3487110334531731
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.04179866293183939,
+          "median": 0.03275686274509798,
+          "p95": 0.12378682352941171,
+          "min": 1.803921568621636e-05,
+          "max": 0.16378196078431373
+        }
+      },
+      {
+        "person": "P030",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.022872392382261877,
+          "median": 0.017093721347218382,
+          "p95": 0.0526420634383882,
+          "min": 0.0,
+          "max": 0.07704659884073926
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.01335560784313727,
+          "median": 0.011198431372549056,
+          "p95": 0.03211560784313723,
+          "min": 0.0,
+          "max": 0.04594196078431373
+        }
+      },
+      {
+        "person": "P031",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.03564866665946687,
+          "median": 0.022866478019001164,
+          "p95": 0.09810078173330887,
+          "min": 0.0,
+          "max": 0.13234931004459774
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.019835637721755377,
+          "median": 0.010930980392156842,
+          "p95": 0.05865568627450985,
+          "min": 0.0,
+          "max": 0.08129254901960792
+        }
+      },
+      {
+        "person": "P032",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.07614588346196934,
+          "median": 0.061131204973019174,
+          "p95": 0.2240172727162398,
+          "min": 0.0039215686274509665,
+          "max": 0.2741173665459027
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.044597228758169925,
+          "median": 0.035865098039215726,
+          "p95": 0.1289658039215686,
+          "min": 0.0008337254901960578,
+          "max": 0.15819529411764705
+        }
+      },
+      {
+        "person": "P033",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.04713276764443944,
+          "median": 0.043315141243871605,
+          "p95": 0.11952745611080914,
+          "min": 0.0,
+          "max": 0.13646833444161036
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02199669841269841,
+          "median": 0.017450980392156867,
+          "p95": 0.06386243137254899,
+          "min": 0.0,
+          "max": 0.07287372549019605
+        }
+      },
+      {
+        "person": "P034",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.05957435290551881,
+          "median": 0.05882352941176472,
+          "p95": 0.11266094264865716,
+          "min": 0.005545935538718039,
+          "max": 0.13327565072914846
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02742071335200746,
+          "median": 0.022149019607843157,
+          "p95": 0.06004203921568628,
+          "min": 2.1960784313712622e-05,
+          "max": 0.0895764705882352
+        }
+      },
+      {
+        "person": "P035",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.07730716526621943,
+          "median": 0.07714633558002357,
+          "p95": 0.15551380273382615,
+          "min": 0.0039215686274509665,
+          "max": 0.1688097509806344
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.03518201307189543,
+          "median": 0.03423764705882354,
+          "p95": 0.07520454901960782,
+          "min": 0.0008337254901961133,
+          "max": 0.08438666666666667
+        }
+      },
+      {
+        "person": "P036",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.048510717174848415,
+          "median": 0.04539543883447141,
+          "p95": 0.09360953240062557,
+          "min": 0.0039215686274509665,
+          "max": 0.1099438883833426
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02873045751633987,
+          "median": 0.026298039215686297,
+          "p95": 0.05860078431372546,
+          "min": 0.0008337254901960023,
+          "max": 0.0703098039215686
+        }
+      },
+      {
+        "person": "P037",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.036564017319402974,
+          "median": 0.02934633244528583,
+          "p95": 0.08212812541199761,
+          "min": 0.005545935538718,
+          "max": 0.10595494969495138
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.01933542483660132,
+          "median": 0.014836862745098045,
+          "p95": 0.04912329411764707,
+          "min": 2.039215686272522e-05,
+          "max": 0.06299686274509808
+        }
+      },
+      {
+        "person": "P038",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.028728085247791402,
+          "median": 0.02111829336131179,
+          "p95": 0.07249573123786125,
+          "min": 0.0039215686274509665,
+          "max": 0.09354400346569858
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.015745464052287602,
+          "median": 0.01176470588235301,
+          "p95": 0.04132674509803928,
+          "min": 0.00028313725490192176,
+          "max": 0.051247843137254945
+        }
+      },
+      {
+        "person": "P039",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.09107564579369323,
+          "median": 0.11279197661387969,
+          "p95": 0.1788940349483458,
+          "min": 0.0039215686274509665,
+          "max": 0.19438484284539187
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.04678035480859009,
+          "median": 0.05878274509803921,
+          "p95": 0.09347450980392152,
+          "min": 1.568627450981852e-05,
+          "max": 0.10241882352941173
+        }
+      },
+      {
+        "person": "P040",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.06278621632664359,
+          "median": 0.06311167427227872,
+          "p95": 0.13064180517831758,
+          "min": 0.0039215686274509665,
+          "max": 0.14467346467213107
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.027611040149393085,
+          "median": 0.025774117647058892,
+          "p95": 0.06464062745098037,
+          "min": 0.0005505882352940805,
+          "max": 0.07587372549019605
+        }
+      },
+      {
+        "person": "P041",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 3,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.18705598329968484,
+          "median": 0.18081791189644716,
+          "p95": 0.4177304034594014,
+          "min": 0.0,
+          "max": 0.4959660416746546
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.10405124183006537,
+          "median": 0.09549725490196082,
+          "p95": 0.23470384313725484,
+          "min": 0.0,
+          "max": 0.28517333333333333
+        }
+      },
+      {
+        "person": "P042",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.09343715143448134,
+          "median": 0.07950248993220896,
+          "p95": 0.21042253295977703,
+          "min": 0.00679235610811322,
+          "max": 0.28214180559096513
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.05158630812324929,
+          "median": 0.0437035294117647,
+          "p95": 0.1174312156862744,
+          "min": 0.0002988235294117958,
+          "max": 0.15699176470588228
+        }
+      },
+      {
+        "person": "P043",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.05374777919819897,
+          "median": 0.03281019711898335,
+          "p95": 0.16735439647635622,
+          "min": 0.0039215686274509665,
+          "max": 0.20486208449582707
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02894997572362279,
+          "median": 0.017940392156862717,
+          "p95": 0.0908475294117647,
+          "min": 0.00026745098039221427,
+          "max": 0.11617490196078428
+        }
+      },
+      {
+        "person": "P044",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.02949881514444091,
+          "median": 0.02772967769359012,
+          "p95": 0.05270085046945447,
+          "min": 0.0039215686274509665,
+          "max": 0.0708057650402658
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.013515309056956108,
+          "median": 0.012276862745098038,
+          "p95": 0.03080925490196078,
+          "min": 0.0002831372549019773,
+          "max": 0.04488156862745096
+        }
+      },
+      {
+        "person": "P045",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.042474722780298804,
+          "median": 0.03441162504859654,
+          "p95": 0.10216975327334356,
+          "min": 0.0039215686274509665,
+          "max": 0.1408492940868076
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02371758730158729,
+          "median": 0.020441568627450946,
+          "p95": 0.05784580392156857,
+          "min": 0.0002831372549020328,
+          "max": 0.0781278431372548
+        }
+      },
+      {
+        "person": "P046",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.13827902716190096,
+          "median": 0.07069708383262721,
+          "p95": 0.3597107857144079,
+          "min": 0.005545935538718,
+          "max": 0.4268929619034753
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.07942818300653595,
+          "median": 0.04145411764705875,
+          "p95": 0.20611733333333332,
+          "min": 0.0011372549019607603,
+          "max": 0.24796470588235286
+        }
+      },
+      {
+        "person": "P047",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.017518806489920827,
+          "median": 0.01616904166908882,
+          "p95": 0.034634356338540576,
+          "min": 0.0,
+          "max": 0.048665386847022964
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.009848545284780588,
+          "median": 0.008676862745098046,
+          "p95": 0.02228674509803927,
+          "min": 0.0,
+          "max": 0.030790588235294125
+        }
+      },
+      {
+        "person": "P048",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.047510442394523976,
+          "median": 0.03862297177174948,
+          "p95": 0.10163381422926072,
+          "min": 0.0039215686274509665,
+          "max": 0.13629919370182567
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.02808527357609709,
+          "median": 0.022963137254901844,
+          "p95": 0.0629259607843136,
+          "min": 0.0005662745098039546,
+          "max": 0.08347450980392151
+        }
+      },
+      {
+        "person": "P049",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 2,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.24904058191923245,
+          "median": 0.07969569189373167,
+          "p95": 0.5277387077403466,
+          "min": 0.0039215686274510775,
+          "max": 0.5542606978526982
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.13912966573295982,
+          "median": 0.04732627450980392,
+          "p95": 0.29661035294117644,
+          "min": 0.0008337254901960578,
+          "max": 0.3115545098039215
+        }
+      },
+      {
+        "person": "P050",
+        "images": 15,
+        "pairs": 105,
+        "known_capture_dates": 1,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 105,
+          "mean": 0.027603578638269823,
+          "median": 0.02571544519334113,
+          "p95": 0.0593565575759238,
+          "min": 0.0,
+          "max": 0.06585433577939866
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 105,
+          "mean": 0.016227615312791783,
+          "median": 0.016787450980392138,
+          "p95": 0.03911341176470588,
+          "min": 0.0,
+          "max": 0.04511294117647058
+        }
+      }
+    ],
+    "rights_status": "RIGHTS_UNRESOLVED: author public face-research download, but no explicit dataset use grant or license found in page/README/archive; not cleared for training or redistribution"
+  },
+  {
+    "dataset": "att_orl",
+    "downloaded": true,
+    "people": 40,
+    "images": 400,
+    "decoded": 400,
+    "decode_failures": 0,
+    "images_per_person": {
+      "10": 40
+    },
+    "same_person_pairs": 1800,
+    "source_image_modes": {
+      "L": 400
+    },
+    "dimensions": {
+      "92x112": 400
+    },
+    "true_nonidentical_rgb_channels_images": 0,
+    "identical_rgb_channels_images": 400,
+    "icc_images": 0,
+    "exif_images": 0,
+    "unique_file_sha256": 400,
+    "author_face_boxes": 0,
+    "validated_author_face_boxes": 0,
+    "camera_models": {},
+    "camera_model_metadata_images": 0,
+    "physical_camera_unit_ids_present": 0,
+    "session_ids_present": 0,
+    "illumination_ids_present": 0,
+    "capture_date_metadata_images": 0,
+    "unique_capture_dates": 0,
+    "people_by_known_capture_date_count": {
+      "0": 40
+    },
+    "exif_color_spaces": {},
+    "capture_index_is_not_session_or_illumination": true,
+    "native_color_space": "8-bit grayscale PGM",
+    "target": "same-person membership only",
+    "absolute_lab_target": false,
+    "within_person_median_encoded_rgb_euclidean": {
+      "count": 1800,
+      "mean": 0.07092729189338697,
+      "median": 0.047546492756792735,
+      "p95": 0.21735539545962382,
+      "min": 0.0,
+      "max": 0.3056560248650961
+    },
+    "within_person_brightness_proxy_difference": {
+      "count": 1800,
+      "mean": 0.04094989106753813,
+      "median": 0.027450980392156876,
+      "p95": 0.12549019607843137,
+      "min": 0.0,
+      "max": 0.17647058823529416
+    },
+    "within_person_same_date_brightness_proxy_difference": null,
+    "within_person_different_date_brightness_proxy_difference": null,
+    "variability_caveat": "Central face rectangle includes non-skin; observed changes mix light, pose, expression, alignment and capture. These statistics are not an illumination ground truth.",
+    "private_manifest_sha256": "6bd85f6b6371189750aae4cb6abe02352cc84f67c6e2b541e5d3110ede56d054",
+    "per_person": [
+      {
+        "person": "P001",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.030490131863086113,
+          "median": 0.027169424432453074,
+          "p95": 0.06656508985950974,
+          "min": 0.0,
+          "max": 0.08830062940547224
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.01760348583878,
+          "median": 0.015686274509803977,
+          "p95": 0.03843137254901968,
+          "min": 0.0,
+          "max": 0.0509803921568629
+        }
+      },
+      {
+        "person": "P002",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.01728277276397704,
+          "median": 0.01358471221622644,
+          "p95": 0.04279184348111346,
+          "min": 0.0,
+          "max": 0.04415031470273612
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.009978213507625244,
+          "median": 0.007843137254901933,
+          "p95": 0.0247058823529411,
+          "min": 0.0,
+          "max": 0.025490196078431282
+        }
+      },
+      {
+        "person": "P003",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.08935721813340095,
+          "median": 0.08830062940547224,
+          "p95": 0.2024122120217747,
+          "min": 0.0,
+          "max": 0.22414775156773722
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.05159041394335513,
+          "median": 0.050980392156862675,
+          "p95": 0.11686274509803923,
+          "min": 0.0,
+          "max": 0.12941176470588234
+        }
+      },
+      {
+        "person": "P004",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.0925269843171871,
+          "median": 0.13584712216226497,
+          "p95": 0.18203514369743504,
+          "min": 0.0,
+          "max": 0.19018597102717094
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.05342047930283227,
+          "median": 0.07843137254901977,
+          "p95": 0.10509803921568622,
+          "min": 0.0,
+          "max": 0.1098039215686275
+        }
+      },
+      {
+        "person": "P005",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.13433770969379527,
+          "median": 0.1358471221622648,
+          "p95": 0.2703357731029071,
+          "min": 0.00679235610811322,
+          "max": 0.278486600432643
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.07755991285403051,
+          "median": 0.07843137254901955,
+          "p95": 0.156078431372549,
+          "min": 0.0039215686274509665,
+          "max": 0.16078431372549018
+        }
+      },
+      {
+        "person": "P006",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.07547062342348052,
+          "median": 0.054338848864905955,
+          "p95": 0.18882749980554828,
+          "min": 0.0,
+          "max": 0.19697832713528415
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.04357298474945537,
+          "median": 0.03137254901960784,
+          "p95": 0.10901960784313727,
+          "min": 0.0,
+          "max": 0.11372549019607847
+        }
+      },
+      {
+        "person": "P007",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.06754620796401499,
+          "median": 0.061131204973019174,
+          "p95": 0.142639478270378,
+          "min": 0.0,
+          "max": 0.15622419048660444
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.03899782135076251,
+          "median": 0.0352941176470587,
+          "p95": 0.08235294117647052,
+          "min": 0.0,
+          "max": 0.09019607843137245
+        }
+      },
+      {
+        "person": "P008",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.09343263179826883,
+          "median": 0.08150827329735902,
+          "p95": 0.19426138469203863,
+          "min": 0.0,
+          "max": 0.23773246378396348
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.053943355119825696,
+          "median": 0.04705882352941171,
+          "p95": 0.11215686274509792,
+          "min": 0.0,
+          "max": 0.13725490196078427
+        }
+      },
+      {
+        "person": "P009",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.018188420245058824,
+          "median": 0.013584712216226633,
+          "p95": 0.04007490103786818,
+          "min": 0.0,
+          "max": 0.047546492756792735
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.010501089324618778,
+          "median": 0.007843137254902044,
+          "p95": 0.02313725490196083,
+          "min": 0.0,
+          "max": 0.027450980392156876
+        }
+      },
+      {
+        "person": "P010",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.07871586023069016,
+          "median": 0.08830062940547224,
+          "p95": 0.16845043148120842,
+          "min": 0.0,
+          "max": 0.1833936149190575
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.0454466230936819,
+          "median": 0.050980392156862786,
+          "p95": 0.0972549019607842,
+          "min": 0.0,
+          "max": 0.10588235294117643
+        }
+      },
+      {
+        "person": "P011",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.02852789565407564,
+          "median": 0.02716942443245288,
+          "p95": 0.06656508985950974,
+          "min": 0.0,
+          "max": 0.0747159171892458
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.01647058823529411,
+          "median": 0.015686274509803755,
+          "p95": 0.03843137254901948,
+          "min": 0.0,
+          "max": 0.04313725490196085
+        }
+      },
+      {
+        "person": "P012",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.08090450830997105,
+          "median": 0.10188534162169868,
+          "p95": 0.16165807537309515,
+          "min": 0.0,
+          "max": 0.16980890270283108
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.046710239651416074,
+          "median": 0.05882352941176472,
+          "p95": 0.09333333333333321,
+          "min": 0.0,
+          "max": 0.0980392156862745
+        }
+      },
+      {
+        "person": "P013",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.052225671409048484,
+          "median": 0.047546492756792735,
+          "p95": 0.10731922650818924,
+          "min": 0.0,
+          "max": 0.142639478270378
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.030152505446623075,
+          "median": 0.027450980392156765,
+          "p95": 0.0619607843137255,
+          "min": 0.0,
+          "max": 0.0823529411764704
+        }
+      },
+      {
+        "person": "P014",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.04588613904147615,
+          "median": 0.047546492756792735,
+          "p95": 0.10460228406494392,
+          "min": 0.0,
+          "max": 0.12905476605415156
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.02649237472766882,
+          "median": 0.027450980392156876,
+          "p95": 0.06039215686274496,
+          "min": 0.0,
+          "max": 0.07450980392156847
+        }
+      },
+      {
+        "person": "P015",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.015245065931543072,
+          "median": 0.01358471221622644,
+          "p95": 0.03396178054056629,
+          "min": 0.0,
+          "max": 0.03396178054056629
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.008801742919389986,
+          "median": 0.007843137254901933,
+          "p95": 0.019607843137254943,
+          "min": 0.0,
+          "max": 0.019607843137254943
+        }
+      },
+      {
+        "person": "P016",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.110111639574858,
+          "median": 0.061131204973019174,
+          "p95": 0.272373479935341,
+          "min": 0.0,
+          "max": 0.2920713126488696
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.06357298474945534,
+          "median": 0.03529411764705881,
+          "p95": 0.15725490196078426,
+          "min": 0.0,
+          "max": 0.16862745098039222
+        }
+      },
+      {
+        "person": "P017",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.04694272776940487,
+          "median": 0.04075413664867951,
+          "p95": 0.10731922650818924,
+          "min": 0.0,
+          "max": 0.11547005383792512
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.027102396514161253,
+          "median": 0.02352941176470591,
+          "p95": 0.0619607843137255,
+          "min": 0.0,
+          "max": 0.06666666666666665
+        }
+      },
+      {
+        "person": "P018",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.0635462649225706,
+          "median": 0.0679235610811324,
+          "p95": 0.14807336315686875,
+          "min": 0.0,
+          "max": 0.16980890270283108
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.03668845315904145,
+          "median": 0.039215686274509776,
+          "p95": 0.0854901960784315,
+          "min": 0.0,
+          "max": 0.0980392156862746
+        }
+      },
+      {
+        "person": "P019",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.03260330931894362,
+          "median": 0.027169424432453074,
+          "p95": 0.08014980207573631,
+          "min": 0.0,
+          "max": 0.08830062940547224
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.018823529411764742,
+          "median": 0.015686274509803977,
+          "p95": 0.046274509803921594,
+          "min": 0.0,
+          "max": 0.0509803921568629
+        }
+      },
+      {
+        "person": "P020",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.14618659757128175,
+          "median": 0.1766012588109443,
+          "p95": 0.29207131264886954,
+          "min": 0.00339617805405661,
+          "max": 0.3056560248650961
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.08440087145969498,
+          "median": 0.10196078431372546,
+          "p95": 0.16862745098039217,
+          "min": 0.0019607843137254832,
+          "max": 0.17647058823529416
+        }
+      },
+      {
+        "person": "P021",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.06792356108113246,
+          "median": 0.06113120497301937,
+          "p95": 0.14807336315686875,
+          "min": 0.0,
+          "max": 0.16301654659471784
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.03921568627450981,
+          "median": 0.03529411764705892,
+          "p95": 0.08549019607843139,
+          "min": 0.0,
+          "max": 0.09411764705882353
+        }
+      },
+      {
+        "person": "P022",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.01411300658019086,
+          "median": 0.006792356108113316,
+          "p95": 0.036678722983811474,
+          "min": 0.0,
+          "max": 0.054338848864905955
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.008148148148148151,
+          "median": 0.003921568627451022,
+          "p95": 0.02117647058823528,
+          "min": 0.0,
+          "max": 0.03137254901960784
+        }
+      },
+      {
+        "person": "P023",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.10671546152080147,
+          "median": 0.15962036854066125,
+          "p95": 0.19697832713528415,
+          "min": 0.0,
+          "max": 0.20377068324339737
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.06161220043572985,
+          "median": 0.09215686274509804,
+          "p95": 0.11372549019607847,
+          "min": 0.0,
+          "max": 0.11764705882352933
+        }
+      },
+      {
+        "person": "P024",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.03139577934416787,
+          "median": 0.04075413664867951,
+          "p95": 0.0679235610811324,
+          "min": 0.0,
+          "max": 0.0679235610811324
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.018126361655773426,
+          "median": 0.02352941176470591,
+          "p95": 0.03921568627450983,
+          "min": 0.0,
+          "max": 0.03921568627450983
+        }
+      },
+      {
+        "person": "P025",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.11894170251540523,
+          "median": 0.10867769772981191,
+          "p95": 0.2581095321083033,
+          "min": 0.0,
+          "max": 0.27169424432452977
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.06867102396514162,
+          "median": 0.06274509803921557,
+          "p95": 0.14901960784313725,
+          "min": 0.0,
+          "max": 0.1568627450980392
+        }
+      },
+      {
+        "person": "P026",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.04981061145949708,
+          "median": 0.04754649275679254,
+          "p95": 0.10731922650818924,
+          "min": 0.0,
+          "max": 0.11547005383792512
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.0287581699346405,
+          "median": 0.027450980392156876,
+          "p95": 0.06196078431372548,
+          "min": 0.0,
+          "max": 0.06666666666666665
+        }
+      },
+      {
+        "person": "P027",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.03909378293336291,
+          "median": 0.03396178054056629,
+          "p95": 0.08150827329735902,
+          "min": 0.0,
+          "max": 0.10867769772981191
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.022570806100217864,
+          "median": 0.019607843137254943,
+          "p95": 0.04705882352941182,
+          "min": 0.0,
+          "max": 0.06274509803921557
+        }
+      },
+      {
+        "person": "P028",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.054187907618059,
+          "median": 0.061131204973019174,
+          "p95": 0.10867769772981191,
+          "min": 0.0,
+          "max": 0.12905476605415175
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.03128540305010896,
+          "median": 0.03529411764705881,
+          "p95": 0.06274509803921569,
+          "min": 0.0,
+          "max": 0.0745098039215687
+        }
+      },
+      {
+        "person": "P029",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.13720559338388752,
+          "median": 0.1766012588109443,
+          "p95": 0.26897730188128444,
+          "min": 0.00679235610811322,
+          "max": 0.29207131264886943
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.07921568627450978,
+          "median": 0.10196078431372546,
+          "p95": 0.1552941176470588,
+          "min": 0.0039215686274509665,
+          "max": 0.1686274509803921
+        }
+      },
+      {
+        "person": "P030",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.0858855694559208,
+          "median": 0.10188534162169868,
+          "p95": 0.17252584514607633,
+          "min": 0.0,
+          "max": 0.1833936149190577
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.04958605664488017,
+          "median": 0.05882352941176472,
+          "p95": 0.09960784313725486,
+          "min": 0.0,
+          "max": 0.10588235294117654
+        }
+      },
+      {
+        "person": "P031",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.11003616895143456,
+          "median": 0.1426394782703781,
+          "p95": 0.20377068324339737,
+          "min": 0.0,
+          "max": 0.22414775156773703
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.0635294117647059,
+          "median": 0.08235294117647057,
+          "p95": 0.11764705882352944,
+          "min": 0.0,
+          "max": 0.12941176470588234
+        }
+      },
+      {
+        "person": "P032",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.04558425654778219,
+          "median": 0.04075413664867951,
+          "p95": 0.09373451429196265,
+          "min": 0.0,
+          "max": 0.1358471221622648
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.02631808278867098,
+          "median": 0.0235294117647058,
+          "p95": 0.05411764705882346,
+          "min": 0.0,
+          "max": 0.07843137254901944
+        }
+      },
+      {
+        "person": "P033",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.10271551847935692,
+          "median": 0.1018853416216986,
+          "p95": 0.20105374080015193,
+          "min": 0.0,
+          "max": 0.2173553954596237
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.05930283224400871,
+          "median": 0.05882352941176466,
+          "p95": 0.11607843137254897,
+          "min": 0.0,
+          "max": 0.12549019607843132
+        }
+      },
+      {
+        "person": "P034",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.05773502691896259,
+          "median": 0.054338848864905955,
+          "p95": 0.127696294832529,
+          "min": 0.0,
+          "max": 0.1392433002163215
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.033333333333333326,
+          "median": 0.03137254901960779,
+          "p95": 0.07372549019607838,
+          "min": 0.0,
+          "max": 0.08039215686274503
+        }
+      },
+      {
+        "person": "P035",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.09328169055142188,
+          "median": 0.0679235610811324,
+          "p95": 0.22278928034611437,
+          "min": 0.0,
+          "max": 0.278486600432643
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.05385620915032678,
+          "median": 0.039215686274509776,
+          "p95": 0.12862745098039205,
+          "min": 0.0,
+          "max": 0.16078431372549018
+        }
+      },
+      {
+        "person": "P036",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.08981004187394184,
+          "median": 0.06792356108113258,
+          "p95": 0.2214308091244917,
+          "min": 0.0,
+          "max": 0.23773246378396368
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.051851851851851864,
+          "median": 0.03921568627450989,
+          "p95": 0.12784313725490193,
+          "min": 0.0,
+          "max": 0.13725490196078427
+        }
+      },
+      {
+        "person": "P037",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.12633782361090634,
+          "median": 0.20377068324339728,
+          "p95": 0.23637399256234093,
+          "min": 0.0,
+          "max": 0.2377324637839636
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.07294117647058822,
+          "median": 0.11764705882352927,
+          "p95": 0.13647058823529404,
+          "min": 0.0,
+          "max": 0.13725490196078421
+        }
+      },
+      {
+        "person": "P038",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.047621963380216153,
+          "median": 0.04075413664867951,
+          "p95": 0.10052687040007582,
+          "min": 0.00679235610811322,
+          "max": 0.10867769772981191
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.02749455337690633,
+          "median": 0.02352941176470591,
+          "p95": 0.058039215686274404,
+          "min": 0.0039215686274509665,
+          "max": 0.0627450980392158
+        }
+      },
+      {
+        "person": "P039",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.06399908866311145,
+          "median": 0.06452738302707578,
+          "p95": 0.14943183437849133,
+          "min": 0.0,
+          "max": 0.16301654659471784
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.03694989106753811,
+          "median": 0.03725490196078429,
+          "p95": 0.08627450980392148,
+          "min": 0.0,
+          "max": 0.09411764705882353
+        }
+      },
+      {
+        "person": "P040",
+        "images": 10,
+        "pairs": 45,
+        "known_capture_dates": 0,
+        "within_person_median_encoded_rgb_euclidean": {
+          "count": 45,
+          "mean": 0.07516874092978658,
+          "median": 0.061131204973019174,
+          "p95": 0.19018597102717094,
+          "min": 0.0,
+          "max": 0.21735539545962382
+        },
+        "within_person_brightness_proxy_difference": {
+          "count": 45,
+          "mean": 0.04339869281045757,
+          "median": 0.03529411764705881,
+          "p95": 0.10980392156862762,
+          "min": 0.0,
+          "max": 0.12549019607843148
+        }
+      }
+    ],
+    "rights_status": "Author archive supplies download with attribution instruction to AT&T Laboratories Cambridge / Olivetti Research Laboratory; no standardized license or commercial grant asserted"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "dataset": "STW official Faces95 derived full-face crops",
+  "downloaded": true,
+  "people": 72,
+  "images": 1440,
+  "decoded": 1440,
+  "decode_failures": 0,
+  "repeated_captures_per_person": 20,
+  "within_person_pairs": 13680,
+  "distinct_file_sha256": 1440,
+  "dimensions": {
+    "300x300": 1440
+  },
+  "image_modes": {
+    "RGB": 1440
+  },
+  "true_color_images": 1440,
+  "exif_images": 0,
+  "icc_images": 0,
+  "camera_metadata_images": 0,
+  "session_metadata_images": 0,
+  "illumination_metadata_images": 0,
+  "pair_relation": "same source token identity; capture number 1..20; no lighting target assigned",
+  "source_transformation": "Official STW MediaPipe face crops resized to 300x300, JPEG, not original Essex frames",
+  "within_person_median_encoded_rgb_euclidean": {
+    "count": 13680,
+    "mean": 0.0547663635571028,
+    "median": 0.03529411764705884,
+    "p95": 0.15394342295208246,
+    "min": 0.0,
+    "max": 0.6044433701960283
+  },
+  "within_person_encoded_brightness_proxy_difference": {
+    "count": 13680,
+    "mean": 0.0272439591503268,
+    "median": 0.017381960784313727,
+    "p95": 0.07757725490196077,
+    "min": 0.0,
+    "max": 0.3051082352941176
+  },
+  "diagnostic_roi": "central 150x150 of derived face crop; includes non-skin; not absolute color or illumination GT",
+  "usable_for": "repeated identity/capture invariance research candidate; upstream rights unverified; no Lab target",
+  "rights_status": "STW instructs following each source license; Essex source page returns 502/timeouts; exact research grant not retrieved",
+  "original_essex_bytes_obtained": false,
+  "downloaded_official_stw_derivative": true,
+  "additional_network_bytes": 0,
+  "manifest_sha256": "0a87c56c1f1a1167c3a93e8fe2ba54ba3814dbbc0a62ff43687054ed679463d5"
+}

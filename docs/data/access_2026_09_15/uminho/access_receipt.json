@@ -1,0 +1,21 @@
+{
+  "status": "BLOCKED_SOURCE_HTTP",
+  "checked_server_date": "Tue, 15 Sep 2026 11:41:05 GMT",
+  "url": "https://api.figshare.com/v2/articles/25598670",
+  "http_status": 403,
+  "response_server": "awselb/2.0",
+  "response_content_type": "text/html",
+  "response_bytes": 118,
+  "response_sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
+  "response_body": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+  "check_command": "urllib.request.urlopen(API_URL, timeout=20); catch HTTPError; record status, headers, and body",
+  "official_article_web_check": {
+    "url": "https://figshare.com/articles/dataset/reflectance_files/25598670",
+    "status": 403
+  },
+  "login_or_agreement_page_observed": false,
+  "scope": "Observed source HTTP refusal from this environment; not a claim that public data are unavailable everywhere",
+  "known_official_file_download_urls_in_preserved_metadata": 0,
+  "downloaded_cubes_this_run": 0,
+  "fresh_metadata_received": false
+}

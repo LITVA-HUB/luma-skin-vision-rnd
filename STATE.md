@@ -4,7 +4,19 @@
 Исходный commit проекта: `9cad271aad159d73083259967b4107b2ce828eb1`.
 Дообучение и публикация этой аналитической работы в отдельной ветке разрешены владельцем. Merge и платные ресурсы не использовались.
 
-## Текущий результат
+## Текущий этап: новые данные, baseline frozen
+
+Последнее задание владельца: ENCoDE → реальные repeated captures → STW → UMINHO. DAST и CHROMA-FIT — BLOCKED_EXTERNAL; их больше не проверяли. MSKCC architecture search, новый error predictor и BioSkin не запускались.
+
+Фактически получены и декодированы: STW 14 278 full-face +14 205 skin-only производных JPEG, Georgia Tech 750 RGB /50 людей, AT&T/ORL 400 grayscale /40 людей. Faces95 1 440 /72 уже входит в STW. Image/label joins проверены; rights/capture metadata и неизвестное cross-source identity overlap записаны отдельно. Все эти числа описывают данные, не качество новой модели.
+
+ENCoDE: HTTP403 на Files, 0 participant images/metadata, требуется личный credentialed PhysioNet/CITI/DUA. Публичный контракт восстановлен; реальные image↔instrument joins ещё не проверены. UMINHO: официальный Figshare403, 0 кубов сейчас; exact19 прежних TRAIN sources/hashes и независимая от P2 подготовка восстановлены.
+
+Отчёт начинается фактической таблицей: [DATA_ACCESS_REPORT](docs/data/access_2026_09_15/REPORT_RU.md). Код: [scripts/data_access](scripts/data_access/). Нового instrument supervision пока нет; MST и identity не превращались в Lab. C_REBASE_V1 и текущий inference не менялись, новых тренировок нет.
+
+Фотоархивы и прямые IDs находятся только в ignored data cache. Приватное долговременное сохранение четырёх ZIP не удалось из-за ошибки авторизации runtime storage; наличие durable copies не заявляется. Код, агрегаты, контракты и source hashes сохраняются в текущей GitHub ветке; локальная сохранность фото не гарантируется после окончания жизни workspace.
+
+## Сохранённый результат C_REBASE_V1
 
 **C_REBASE_V1 выполнен. Аудит завершён. Диагностический вывод MIXED.**
 
