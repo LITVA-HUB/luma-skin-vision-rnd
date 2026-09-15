@@ -1,0 +1,223 @@
+{
+  "status": "REFERENCE_AND_CAPTURE_DIAGNOSTICS_ONLY_C_OOF_MISSING",
+  "mask_definition_frozen_without_C_errors": true,
+  "thresholds": {
+    "site_reference_pair_mean_p80": 3.562761642774102,
+    "site_capture_pair_median_color_mean_p80": 15.084910778391388,
+    "image_original_high_plus_low_clip_p80": 0.004319775552172747
+  },
+  "tie_policy": "Include all values <= percentile; report actual image coverage",
+  "single_image_site_policy": "Capture variability unknown, excluded only from capture-stable masks",
+  "subset_reference_summary_policy": "Use complete triplet at each retained site once; not image-weighted",
+  "subset_capture_summary_policy": "Use original full-site capture-pair mean; do not recompute after excluding images",
+  "warning": "These masks use TRAIN reference data and repeated images and are not deployable gates. They do not remove latent noise or identify attainable model accuracy. No main metric is altered.",
+  "subsets": [
+    {
+      "name": "all_TRAIN",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "images": 966,
+      "coverage": 1.0,
+      "people": 24,
+      "sites": 248,
+      "instrument_pairs_on_retained_sites": {
+        "n": 744,
+        "mean": 2.5756980288371447,
+        "median": 2.3332930174516884,
+        "p90": 4.9003243623310135,
+        "p95": 5.7964176148432935,
+        "max": 10.173621692087108
+      },
+      "site_equal_weight_mean_observed_median_variability": {
+        "n": 247,
+        "mean": 10.65817916886486,
+        "median": 9.9589343616668,
+        "p90": 16.311105008719945,
+        "p95": 17.603568995923943,
+        "max": 20.84509396213621
+      },
+      "C_error": null,
+      "C_error_status": "BLOCKED_MISSING_SAVED_OOF_PREDICTIONS"
+    },
+    {
+      "name": "lower_80pct_site_reference_variability",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "images": 774,
+      "coverage": 0.8012422360248447,
+      "people": 24,
+      "sites": 198,
+      "instrument_pairs_on_retained_sites": {
+        "n": 594,
+        "mean": 2.0755472137951436,
+        "median": 2.012316816845841,
+        "p90": 3.832707483484867,
+        "p95": 4.29288051711447,
+        "max": 5.257461137865487
+      },
+      "site_equal_weight_mean_observed_median_variability": {
+        "n": 197,
+        "mean": 10.877564568703054,
+        "median": 10.067001053133751,
+        "p90": 16.311105008719945,
+        "p95": 17.712868142828047,
+        "max": 20.84509396213621
+      },
+      "C_error": null,
+      "C_error_status": "BLOCKED_MISSING_SAVED_OOF_PREDICTIONS"
+    },
+    {
+      "name": "lower_80pct_site_capture_variability",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "images": 765,
+      "coverage": 0.7919254658385093,
+      "people": 22,
+      "sites": 197,
+      "instrument_pairs_on_retained_sites": {
+        "n": 591,
+        "mean": 2.651872178746582,
+        "median": 2.342771361009089,
+        "p90": 4.967948785043631,
+        "p95": 6.054123530411276,
+        "max": 10.173621692087108
+      },
+      "site_equal_weight_mean_observed_median_variability": {
+        "n": 197,
+        "mean": 9.090392418851813,
+        "median": 8.589162895847275,
+        "p90": 13.163485196193735,
+        "p95": 14.17687457354335,
+        "max": 14.972916254764817
+      },
+      "C_error": null,
+      "C_error_status": "BLOCKED_MISSING_SAVED_OOF_PREDICTIONS"
+    },
+    {
+      "name": "lower_80pct_image_clipping_proxy",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "images": 773,
+      "coverage": 0.8002070393374742,
+      "people": 24,
+      "sites": 241,
+      "instrument_pairs_on_retained_sites": {
+        "n": 723,
+        "mean": 2.5862392948471564,
+        "median": 2.332094236530322,
+        "p90": 4.902671629459797,
+        "p95": 5.8677402544538015,
+        "max": 10.173621692087108
+      },
+      "site_equal_weight_mean_observed_median_variability": {
+        "n": 240,
+        "mean": 10.462619508419769,
+        "median": 9.82034018304596,
+        "p90": 16.204846422921722,
+        "p95": 17.269858790266863,
+        "max": 20.82272682610582
+      },
+      "C_error": null,
+      "C_error_status": "BLOCKED_MISSING_SAVED_OOF_PREDICTIONS"
+    },
+    {
+      "name": "reference_and_capture_stable",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "images": 601,
+      "coverage": 0.6221532091097308,
+      "people": 22,
+      "sites": 154,
+      "instrument_pairs_on_retained_sites": {
+        "n": 462,
+        "mean": 2.1177719476681123,
+        "median": 2.0337593747220817,
+        "p90": 3.8238902085540887,
+        "p95": 4.339721703505819,
+        "max": 5.199911267436771
+      },
+      "site_equal_weight_mean_observed_median_variability": {
+        "n": 154,
+        "mean": 9.218807340131955,
+        "median": 8.710765700512582,
+        "p90": 13.089130054548544,
+        "p95": 14.15443178834659,
+        "max": 14.972916254764817
+      },
+      "C_error": null,
+      "C_error_status": "BLOCKED_MISSING_SAVED_OOF_PREDICTIONS"
+    },
+    {
+      "name": "reference_capture_and_clipping_stable",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "images": 494,
+      "coverage": 0.5113871635610766,
+      "people": 22,
+      "sites": 153,
+      "instrument_pairs_on_retained_sites": {
+        "n": 459,
+        "mean": 2.1193644192040213,
+        "median": 2.025412095958556,
+        "p90": 3.8266231852784713,
+        "p95": 4.343758852676376,
+        "max": 5.199911267436771
+      },
+      "site_equal_weight_mean_observed_median_variability": {
+        "n": 153,
+        "mean": 9.184742971725079,
+        "median": 8.673729827286925,
+        "p90": 13.03520321569985,
+        "p95": 14.011834632041284,
+        "max": 14.972916254764817
+      },
+      "C_error": null,
+      "C_error_status": "BLOCKED_MISSING_SAVED_OOF_PREDICTIONS"
+    }
+  ],
+  "assessment_order": [
+    {
+      "pair": "1->2",
+      "signed_mean_difference_Lab": [
+        0.10887096774193548,
+        0.2217741935483871,
+        -0.05241935483870968
+      ],
+      "delta_e00": {
+        "n": 248,
+        "mean": 2.4640439544819497,
+        "median": 2.24198811855899,
+        "p90": 4.561083986925421,
+        "p95": 5.52536925257411,
+        "max": 8.733524378619071
+      }
+    },
+    {
+      "pair": "1->3",
+      "signed_mean_difference_Lab": [
+        -0.04435483870967742,
+        0.1774193548387097,
+        -0.04838709677419355
+      ],
+      "delta_e00": {
+        "n": 248,
+        "mean": 2.751208902475765,
+        "median": 2.4405696273053445,
+        "p90": 5.235755857510637,
+        "p95": 5.849777146670631,
+        "max": 10.155180948190141
+      }
+    },
+    {
+      "pair": "2->3",
+      "signed_mean_difference_Lab": [
+        -0.1532258064516129,
+        -0.04435483870967742,
+        0.004032258064516129
+      ],
+      "delta_e00": {
+        "n": 248,
+        "mean": 2.51184122955372,
+        "median": 2.3358274408298723,
+        "p90": 4.743429991129113,
+        "p95": 6.072266864890162,
+        "max": 10.173621692087108
+      }
+    }
+  ],
+  "no_model_loaded_or_fitted": true
+}

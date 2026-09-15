@@ -1,0 +1,51 @@
+{
+  "manifest_sha256": "ad3669c87d92410b080b6d06a37ae392fe0f85fd96aa79a1ba20ed334b2bae08",
+  "protocol_sha256": "311d39245c369c5f703fdb53fc6741b64071b24ef72ed699aac1c4dd845e596e",
+  "source_sha256": {
+    "mskcc-skin-tone-labeling-dataset.csv": "016d6576b14805f78c952baff00a289e2d9bc68da7e9c5d135d084a3ab29d02a",
+    "s1.csv": "e4ffed01711f28867fb68478d8bb50edbd7aaa49ba99d21c63c766d92bb56b6b",
+    "s2.csv": "e5216919e7f298c63b778c47e5af44fd26df13ea11bb24d6ae8baea3a3bdb29c",
+    "s4.csv": "fa199d796470034d3e6d08ad5d4713945df200ece0963c7c4e7117afe187a60f",
+    "s7.csv": "dc1a2751af485afc8553d119656c1861de55d7f976b7c5ac7722db5199509b47"
+  },
+  "excluded_missing_images": 3,
+  "roles": {
+    "train": {
+      "people": 24,
+      "sites": 248,
+      "images": 966,
+      "devices": {
+        "ipod": 643,
+        "SLR": 323
+      }
+    },
+    "validation": {
+      "people": 6,
+      "sites": 66,
+      "images": 264,
+      "devices": {
+        "ipod": 132,
+        "SLR": 132
+      }
+    },
+    "calibration": {
+      "people": 6,
+      "sites": 55,
+      "images": 208,
+      "devices": {
+        "SLR": 131,
+        "ipod": 77
+      }
+    },
+    "test": {
+      "people": 10,
+      "sites": 105,
+      "images": 400,
+      "devices": {
+        "ipod": 248,
+        "SLR": 152
+      }
+    }
+  },
+  "numeric_endpoints_decoded": false
+}

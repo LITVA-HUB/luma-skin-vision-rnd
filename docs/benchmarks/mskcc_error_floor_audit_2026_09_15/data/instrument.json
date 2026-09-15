@@ -1,0 +1,5287 @@
+{
+  "scope": "TRAIN_ONLY_DIAGNOSTIC_NO_TRAINING_NO_RESERVED_ENDPOINTS",
+  "counts": {
+    "images": 966,
+    "people": 24,
+    "exact_sites": 248,
+    "recorded_assessments": 744,
+    "triplet_pair_comparisons": 744,
+    "unique_reference_triplets": 248,
+    "source_s4_rows_per_site": {
+      "1": 248
+    },
+    "images_per_site": {
+      "1": 1,
+      "2": 8,
+      "3": 7,
+      "4": 232
+    },
+    "image_device_counts": {
+      "ipod": 643,
+      "SLR": 323
+    },
+    "image_type_counts": {
+      "dermoscopic": 729,
+      "clinical: close-up": 237
+    },
+    "image_mode_counts": {
+      "NP-C": 236,
+      "NP-NC": 237,
+      "P-C": 246,
+      "P-NC": 247
+    }
+  },
+  "provenance": {
+    "source_sha256": {
+      "mskcc-skin-tone-labeling-dataset.csv": "016d6576b14805f78c952baff00a289e2d9bc68da7e9c5d135d084a3ab29d02a",
+      "s7.csv": "dc1a2751af485afc8553d119656c1861de55d7f976b7c5ac7722db5199509b47",
+      "s4.csv": "fa199d796470034d3e6d08ad5d4713945df200ece0963c7c4e7117afe187a60f",
+      "s2.csv": "e5216919e7f298c63b778c47e5af44fd26df13ea11bb24d6ae8baea3a3bdb29c",
+      "s1.csv": "e4ffed01711f28867fb68478d8bb50edbd7aaa49ba99d21c63c766d92bb56b6b",
+      "supplemental-data-dictionary.txt": "1f02d2560bf48003efdc79863524d12cb4acbd46fd3bd25a8dc201dc94d0eaff"
+    },
+    "original_acquisition_all_sha_verified": true,
+    "role_recipe": "original skin_mskcc_data.patient_roles; not recreated GroupKFold",
+    "role_script_sha256": "12f7ce2df93ca3586fa068d92751670c33372f7f69bad4d2ca550463e4de0fc5",
+    "original_split_receipt_sha256": "4bd7ac3ce0276a6cfb4be7e0cf38d61bd8873706ce5d7e10a615fbf38fc30ed4",
+    "audit_script_sha256": "60382f231c36fadfac894f29885a05a55ea349e03f27068a824858941390e0af",
+    "private_row_mapping_sha256": "4adc523045104f319bbca38c9636a25c703c7afa67d5f6b49bbade9b33d1b6d6",
+    "S7_vs_S4_repetition_exact_match": true,
+    "numeric_decode_roles": [
+      "train"
+    ],
+    "old_receipts_modified": false
+  },
+  "conventions": {
+    "instrument": "SkinColorCatch manufacturer D65 / 10-degree, original repo verified source_context.json",
+    "delta_e00": "CIEDE2000 kL=kC=kH=1 between instrument Lab values only",
+    "published_image_lab": "Only used for within-image nearest-neighbour selection; observer unknown in CSV dictionary; no cross-observer DeltaE metric computed"
+  },
+  "instrument_repeatability": {
+    "assessment_interpretation": "Dictionary documents 1st/2nd/3rd colorimeter assessments; unique recordings, but timing/repositioning/random independence is not encoded in tables.",
+    "pairwise_delta_e00": {
+      "n": 744,
+      "mean": 2.5756980288371447,
+      "median": 2.3332930174516884,
+      "p90": 4.9003243623310135,
+      "p95": 5.7964176148432935,
+      "max": 10.173621692087108,
+      "fraction_gt_2": 0.5887096774193549,
+      "fraction_gt_5": 0.09543010752688172,
+      "fraction_gt_10": 0.002688172043010753
+    },
+    "patient_balanced": {
+      "patient_balanced_mean": 2.566422637543773,
+      "patient_bootstrap_mean_95_ci": [
+        2.3619526966432356,
+        2.7737276781039077
+      ],
+      "bootstrap_unit": "patient",
+      "draws": 10000,
+      "seed": 73019
+    },
+    "coordinate_absolute_pair_differences": {
+      "L": {
+        "n": 744,
+        "mean": 1.2903225806451613,
+        "median": 1.0,
+        "p90": 3.0,
+        "p95": 4.0,
+        "max": 9.0,
+        "fraction_gt_2": 0.15725806451612903,
+        "fraction_gt_5": 0.009408602150537635,
+        "fraction_gt_10": 0.0
+      },
+      "a": {
+        "n": 744,
+        "mean": 1.510752688172043,
+        "median": 1.0,
+        "p90": 3.0,
+        "p95": 4.0,
+        "max": 8.0,
+        "fraction_gt_2": 0.20430107526881722,
+        "fraction_gt_5": 0.01478494623655914,
+        "fraction_gt_10": 0.0
+      },
+      "b": {
+        "n": 744,
+        "mean": 1.6827956989247312,
+        "median": 1.0,
+        "p90": 4.0,
+        "p95": 5.0,
+        "max": 7.0,
+        "fraction_gt_2": 0.2513440860215054,
+        "fraction_gt_5": 0.03225806451612903,
+        "fraction_gt_10": 0.0
+      }
+    },
+    "within_site_assessment_sample_sd": {
+      "L": {
+        "n": 248,
+        "mean": 1.0482232060297076,
+        "median": 1.0,
+        "p90": 2.0816659994661326,
+        "p95": 2.516611478423583,
+        "max": 4.725815626252609,
+        "fraction_gt_2": 0.11693548387096774,
+        "fraction_gt_5": 0.0,
+        "fraction_gt_10": 0.0
+      },
+      "a": {
+        "n": 248,
+        "mean": 1.220857095030918,
+        "median": 1.1547005383792517,
+        "p90": 2.3094010767585034,
+        "p95": 2.8867513459481287,
+        "max": 4.358898943540674,
+        "fraction_gt_2": 0.17338709677419356,
+        "fraction_gt_5": 0.0,
+        "fraction_gt_10": 0.0
+      },
+      "b": {
+        "n": 248,
+        "mean": 1.3598050485242914,
+        "median": 1.1547005383792515,
+        "p90": 2.5166114784235836,
+        "p95": 3.0550504633038935,
+        "max": 4.041451884327381,
+        "fraction_gt_2": 0.23387096774193547,
+        "fraction_gt_5": 0.0,
+        "fraction_gt_10": 0.0
+      }
+    },
+    "single_assessment_vs_triplet_mean": {
+      "warning": "Same reading contributes to its reference, descriptive only",
+      "delta_e00": {
+        "n": 744,
+        "mean": 1.5194583139888878,
+        "median": 1.3100410000524045,
+        "p90": 2.7875441976610342,
+        "p95": 3.3794978474607578,
+        "max": 6.018695319347131,
+        "fraction_gt_2": 0.2594086021505376,
+        "fraction_gt_5": 0.006720430107526882,
+        "fraction_gt_10": 0.0
+      }
+    },
+    "held_assessment_vs_other_two_mean": {
+      "warning": "Assesses single-reading vs two-reading mean disagreement, not a deployable color-model error floor",
+      "delta_e00": {
+        "n": 744,
+        "mean": 2.280897777014421,
+        "median": 1.95556218070495,
+        "p90": 4.182500569846406,
+        "p95": 5.0517237439461224,
+        "max": 9.123448121532624,
+        "fraction_gt_2": 0.4825268817204301,
+        "fraction_gt_5": 0.053763440860215055,
+        "fraction_gt_10": 0.0
+      }
+    },
+    "triplet_target_sensitivity_to_omitting_one_assessment": {
+      "warning": "Reference perturbation, not known latent truth",
+      "delta_e00": {
+        "n": 744,
+        "mean": 0.7611015491915967,
+        "median": 0.6468027352998255,
+        "p90": 1.3761062132509936,
+        "p95": 1.6715583493458424,
+        "max": 3.100456991734335,
+        "fraction_gt_2": 0.024193548387096774,
+        "fraction_gt_5": 0.0,
+        "fraction_gt_10": 0.0
+      }
+    },
+    "iid_assumption_only_coordinate_noise_variance_of_triplet_mean": {
+      "L": 0.5613799283154122,
+      "a": 0.7213261648745519,
+      "b": 0.8785842293906811
+    },
+    "strata": {
+      "device": [
+        {
+          "group": "SLR",
+          "sites": 85,
+          "people": 8,
+          "pairwise_delta_e00": {
+            "n": 255,
+            "mean": 2.593941397809016,
+            "median": 2.3332930174516884,
+            "p90": 4.7802220911965945,
+            "p95": 5.633314374478524,
+            "max": 10.173621692087108,
+            "fraction_gt_2": 0.6235294117647059,
+            "fraction_gt_5": 0.09411764705882353,
+            "fraction_gt_10": 0.00784313725490196
+          }
+        },
+        {
+          "group": "ipod",
+          "sites": 163,
+          "people": 16,
+          "pairwise_delta_e00": {
+            "n": 489,
+            "mean": 2.5661846155696044,
+            "median": 2.3332930174516884,
+            "p90": 4.907366163717362,
+            "p95": 5.846184525113996,
+            "max": 9.451322574286982,
+            "fraction_gt_2": 0.5705521472392638,
+            "fraction_gt_5": 0.09611451942740286,
+            "fraction_gt_10": 0.0
+          }
+        }
+      ],
+      "anatomic_site": [
+        {
+          "group": "abdomen",
+          "sites": 24,
+          "people": 24,
+          "pairwise_delta_e00": {
+            "n": 72,
+            "mean": 1.844868270652026,
+            "median": 1.7277168776042733,
+            "p90": 3.9031694181446115,
+            "p95": 4.435829044340497,
+            "max": 5.199911267436771,
+            "fraction_gt_2": 0.4166666666666667,
+            "fraction_gt_5": 0.013888888888888888,
+            "fraction_gt_10": 0.0
+          }
+        },
+        {
+          "group": "dorsal forearm",
+          "sites": 21,
+          "people": 21,
+          "pairwise_delta_e00": {
+            "n": 63,
+            "mean": 2.81589091207293,
+            "median": 2.418351211750022,
+            "p90": 5.339093305007702,
+            "p95": 5.972612056446217,
+            "max": 6.771632666150548,
+            "fraction_gt_2": 0.6825396825396826,
+            "fraction_gt_5": 0.14285714285714285,
+            "fraction_gt_10": 0.0
+          }
+        },
+        {
+          "group": "head/neck",
+          "sites": 23,
+          "people": 23,
+          "pairwise_delta_e00": {
+            "n": 69,
+            "mean": 2.070328180069807,
+            "median": 2.031252279277143,
+            "p90": 4.089613079064595,
+            "p95": 4.56250411314547,
+            "max": 6.58119275551621,
+            "fraction_gt_2": 0.5362318840579711,
+            "fraction_gt_5": 0.043478260869565216,
+            "fraction_gt_10": 0.0
+          }
+        },
+        {
+          "group": "lower back",
+          "sites": 22,
+          "people": 22,
+          "pairwise_delta_e00": {
+            "n": 66,
+            "mean": 2.1953752629172927,
+            "median": 2.0723777210755725,
+            "p90": 4.038017415156282,
+            "p95": 4.6351476437903285,
+            "max": 9.451322574286982,
+            "fraction_gt_2": 0.5303030303030303,
+            "fraction_gt_5": 0.045454545454545456,
+            "fraction_gt_10": 0.0
+          }
+        },
+        {
+          "group": "lower leg",
+          "sites": 46,
+          "people": 24,
+          "pairwise_delta_e00": {
+            "n": 138,
+            "mean": 2.614492233610161,
+            "median": 2.4627880428606668,
+            "p90": 4.823440156185902,
+            "p95": 5.443314926710834,
+            "max": 10.173621692087108,
+            "fraction_gt_2": 0.6014492753623188,
+            "fraction_gt_5": 0.09420289855072464,
+            "fraction_gt_10": 0.007246376811594203
+          }
+        },
+        {
+          "group": "palms/soles",
+          "sites": 22,
+          "people": 22,
+          "pairwise_delta_e00": {
+            "n": 66,
+            "mean": 3.6619844840636238,
+            "median": 3.332206399420725,
+            "p90": 6.5808396687849235,
+            "p95": 7.576187928579321,
+            "max": 10.155180948190141,
+            "fraction_gt_2": 0.8484848484848485,
+            "fraction_gt_5": 0.21212121212121213,
+            "fraction_gt_10": 0.015151515151515152
+          }
+        },
+        {
+          "group": "upper back",
+          "sites": 23,
+          "people": 23,
+          "pairwise_delta_e00": {
+            "n": 69,
+            "mean": 2.7658032637279946,
+            "median": 2.3521502199563,
+            "p90": 5.200660603391234,
+            "p95": 5.883438458014033,
+            "max": 8.733524378619071,
+            "fraction_gt_2": 0.6086956521739131,
+            "fraction_gt_5": 0.13043478260869565,
+            "fraction_gt_10": 0.0
+          }
+        },
+        {
+          "group": "upper chest",
+          "sites": 24,
+          "people": 24,
+          "pairwise_delta_e00": {
+            "n": 72,
+            "mean": 2.39719951186577,
+            "median": 1.8811981491559224,
+            "p90": 4.907366163717362,
+            "p95": 5.642114171192645,
+            "max": 8.961610160172535,
+            "fraction_gt_2": 0.4861111111111111,
+            "fraction_gt_5": 0.08333333333333333,
+            "fraction_gt_10": 0.0
+          }
+        },
+        {
+          "group": "ventral forearm",
+          "sites": 43,
+          "people": 23,
+          "pairwise_delta_e00": {
+            "n": 129,
+            "mean": 2.7318649960617742,
+            "median": 2.5080808164353074,
+            "p90": 4.9827018982830955,
+            "p95": 6.109226617742791,
+            "max": 7.710707258861767,
+            "fraction_gt_2": 0.5968992248062015,
+            "fraction_gt_5": 0.10077519379844961,
+            "fraction_gt_10": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "site_repeatability": {
+    "image_pair_target_delta_e00": {
+      "n": 1421,
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "fraction_gt_2": 0.0,
+      "fraction_gt_5": 0.0,
+      "fraction_gt_10": 0.0
+    },
+    "independent_across_acquisition_site_remeasurement": "NOT_IDENTIFIABLE: one reference triplet per tag_id; no independent session repeated targets",
+    "all_image_targets_are_copied_from_one_site_triplet": true,
+    "zero_pair_target_difference_interpretation": "Label reuse; not evidence that repeatability noise or biological change equals zero."
+  },
+  "oracles": [
+    {
+      "name": "same_site_leave_image_out",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "definition": "Other image targets at exact patient+tag_id; shares the same S4 reference triplet, so zero is tautological.",
+      "eligible_images": 965,
+      "total_images": 966,
+      "coverage": 0.9989648033126294,
+      "eligible_people": 24,
+      "delta_e00": {
+        "n": 965,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "fraction_gt_2": 0.0,
+        "fraction_gt_5": 0.0,
+        "fraction_gt_10": 0.0
+      },
+      "patient_balanced": {
+        "patient_balanced_mean": 0.0,
+        "patient_bootstrap_mean_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_unit": "patient",
+        "draws": 10000,
+        "seed": 73019
+      }
+    },
+    {
+      "name": "same_site_nearest_observed",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "definition": "Other exact-site image nearest in authors' published median image Lab Euclidean coordinates; reference triplet is shared.",
+      "eligible_images": 965,
+      "total_images": 966,
+      "coverage": 0.9989648033126294,
+      "eligible_people": 24,
+      "delta_e00": {
+        "n": 965,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "fraction_gt_2": 0.0,
+        "fraction_gt_5": 0.0,
+        "fraction_gt_10": 0.0
+      },
+      "patient_balanced": {
+        "patient_balanced_mean": 0.0,
+        "patient_bootstrap_mean_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_unit": "patient",
+        "draws": 10000,
+        "seed": 73019
+      }
+    },
+    {
+      "name": "patient_other_sites",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "definition": "Equal-site mean of other unique measurement sites of same person, excluding all images sharing target site's reference.",
+      "eligible_images": 966,
+      "total_images": 966,
+      "coverage": 1.0,
+      "eligible_people": 24,
+      "delta_e00": {
+        "n": 966,
+        "mean": 5.004133952736396,
+        "median": 4.2801297725511995,
+        "p90": 9.064798602149256,
+        "p95": 10.89534632981731,
+        "max": 16.17590027652919,
+        "fraction_gt_2": 0.8612836438923396,
+        "fraction_gt_5": 0.3944099378881988,
+        "fraction_gt_10": 0.07867494824016563
+      },
+      "patient_balanced": {
+        "patient_balanced_mean": 4.9213720634794536,
+        "patient_bootstrap_mean_95_ci": [
+          4.457831186554686,
+          5.381367396043008
+        ],
+        "bootstrap_unit": "patient",
+        "draws": 10000,
+        "seed": 73019
+      }
+    },
+    {
+      "name": "patient_same_camera_other_sites",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "definition": "Same-person/same-device other unique sites; camera is person-confounded, so equals patient oracle.",
+      "eligible_images": 966,
+      "total_images": 966,
+      "coverage": 1.0,
+      "eligible_people": 24,
+      "delta_e00": {
+        "n": 966,
+        "mean": 5.004133952736396,
+        "median": 4.2801297725511995,
+        "p90": 9.064798602149256,
+        "p95": 10.89534632981731,
+        "max": 16.17590027652919,
+        "fraction_gt_2": 0.8612836438923396,
+        "fraction_gt_5": 0.3944099378881988,
+        "fraction_gt_10": 0.07867494824016563
+      },
+      "patient_balanced": {
+        "patient_balanced_mean": 4.9213720634794536,
+        "patient_bootstrap_mean_95_ci": [
+          4.457831186554686,
+          5.381367396043008
+        ],
+        "bootstrap_unit": "patient",
+        "draws": 10000,
+        "seed": 73019
+      }
+    },
+    {
+      "name": "same_camera_anatomic_region_other_sites",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "definition": "Mean of other unique TRAIN sites with same device and recorded anatomical region; target's exact tag_id excluded; references from other people are used.",
+      "eligible_images": 966,
+      "total_images": 966,
+      "coverage": 1.0,
+      "eligible_people": 24,
+      "delta_e00": {
+        "n": 966,
+        "mean": 10.13899055865771,
+        "median": 8.476055070521461,
+        "p90": 18.033680406383667,
+        "p95": 24.450914566461588,
+        "max": 34.98605795579316,
+        "fraction_gt_2": 0.9958592132505176,
+        "fraction_gt_5": 0.8364389233954451,
+        "fraction_gt_10": 0.4057971014492754
+      },
+      "patient_balanced": {
+        "patient_balanced_mean": 10.418045634821496,
+        "patient_bootstrap_mean_95_ci": [
+          8.37479430614234,
+          12.713548310217718
+        ],
+        "bootstrap_unit": "patient",
+        "draws": 10000,
+        "seed": 73019
+      }
+    },
+    {
+      "name": "same_site_leave_reference_observation_out",
+      "status": "LEAKY_DIAGNOSTIC_ONLY",
+      "eligible_images": 0,
+      "total_images": 966,
+      "coverage": 0,
+      "delta_e00": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "p90": null,
+        "p95": null,
+        "max": null
+      },
+      "reason": "Each exact site has one S4 triplet only; excluding its shared reference removes all same-site neighbours."
+    }
+  ],
+  "per_site_diagnostics": [
+    {
+      "site_id": "S001",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.3041727666088436,
+      "pairwise_max_delta_e00": 1.4710792080338952,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        63.333333333333336,
+        8.666666666666666,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S002",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 1.500625983302058,
+      "pairwise_max_delta_e00": 2.044413511999253,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        1.0
+      ],
+      "mean_target_lab": [
+        51.333333333333336,
+        9.333333333333334,
+        20.0
+      ]
+    },
+    {
+      "site_id": "S003",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 0.6818833307516735,
+      "pairwise_max_delta_e00": 1.0228249961275102,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896257,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        63.0,
+        8.333333333333334,
+        10.333333333333334
+      ]
+    },
+    {
+      "site_id": "S004",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.347842725550917,
+      "pairwise_max_delta_e00": 1.5788973654707106,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        40.333333333333336,
+        12.0,
+        15.666666666666666
+      ]
+    },
+    {
+      "site_id": "S005",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.197924812651378,
+      "pairwise_max_delta_e00": 3.349224692864771,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.0,
+        2.0
+      ],
+      "mean_target_lab": [
+        59.0,
+        12.0,
+        4.0
+      ]
+    },
+    {
+      "site_id": "S006",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.610213580266283,
+      "pairwise_max_delta_e00": 1.7462374521838706,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        1.0
+      ],
+      "mean_target_lab": [
+        71.66666666666667,
+        4.666666666666667,
+        8.0
+      ]
+    },
+    {
+      "site_id": "S007",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 0.8206967543690667,
+      "pairwise_max_delta_e00": 1.2310451315536002,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        51.666666666666664,
+        13.333333333333334,
+        21.333333333333332
+      ]
+    },
+    {
+      "site_id": "S008",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.0967894916010756,
+      "pairwise_max_delta_e00": 3.1451842374016135,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        2.886751345948129
+      ],
+      "mean_target_lab": [
+        65.0,
+        4.666666666666667,
+        19.666666666666668
+      ]
+    },
+    {
+      "site_id": "S009",
+      "person_id": "P15",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.3103337419278873,
+      "pairwise_max_delta_e00": 1.965500612891831,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        53.0,
+        10.333333333333334,
+        24.333333333333332
+      ]
+    },
+    {
+      "site_id": "S010",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.2167367927605146,
+      "pairwise_max_delta_e00": 4.664933651421595,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        2.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        66.33333333333333,
+        7.0,
+        13.666666666666666
+      ]
+    },
+    {
+      "site_id": "S011",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.7669461815522074,
+      "pairwise_max_delta_e00": 5.2264535945014154,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        1.1547005383792517,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        41.333333333333336,
+        12.333333333333334,
+        15.666666666666666
+      ]
+    },
+    {
+      "site_id": "S012",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.497563379437378,
+      "pairwise_max_delta_e00": 2.1507593430531133,
+      "repeat_sd_lab": [
+        1.0,
+        0.5773502691896258,
+        1.0
+      ],
+      "mean_target_lab": [
+        63.0,
+        2.3333333333333335,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S013",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.845342262829181,
+      "pairwise_max_delta_e00": 3.7000622732896615,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        1.5275252316519465,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        66.33333333333333,
+        4.333333333333333,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S014",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.3349920591931463,
+      "pairwise_max_delta_e00": 2.0024880887897196,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        54.0,
+        8.333333333333334,
+        24.333333333333332
+      ]
+    },
+    {
+      "site_id": "S015",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.5656693580752712,
+      "pairwise_max_delta_e00": 2.3485040371129067,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        65.66666666666667,
+        5.333333333333333,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S016",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 3.1868147274643963,
+      "pairwise_max_delta_e00": 4.7802220911965945,
+      "repeat_sd_lab": [
+        0.0,
+        2.309401076758503,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        40.0,
+        7.333333333333333,
+        16.333333333333332
+      ]
+    },
+    {
+      "site_id": "S017",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.9796510446309266,
+      "pairwise_max_delta_e00": 3.406522244357549,
+      "repeat_sd_lab": [
+        1.0,
+        1.5275252316519468,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        58.0,
+        10.333333333333334,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S018",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 4.515819831318304,
+      "pairwise_max_delta_e00": 6.10884155311567,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        2.6457513110645907,
+        2.0
+      ],
+      "mean_target_lab": [
+        65.66666666666667,
+        7.0,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S019",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 3.291932680784677,
+      "pairwise_max_delta_e00": 4.558053253287702,
+      "repeat_sd_lab": [
+        1.0,
+        1.5275252316519465,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        64.0,
+        3.3333333333333335,
+        14.333333333333334
+      ]
+    },
+    {
+      "site_id": "S020",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 4.851621282879905,
+      "pairwise_max_delta_e00": 7.241835996600566,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        3.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        54.666666666666664,
+        9.0,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S021",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.6418586952404446,
+      "pairwise_max_delta_e00": 2.4627880428606668,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        37.666666666666664,
+        9.666666666666666,
+        12.666666666666666
+      ]
+    },
+    {
+      "site_id": "S022",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 3.560136302325573,
+      "pairwise_max_delta_e00": 5.199911267436771,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        1.7320508075688772,
+        1.0
+      ],
+      "mean_target_lab": [
+        71.33333333333333,
+        5.0,
+        11.0
+      ]
+    },
+    {
+      "site_id": "S023",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 1.9448427510712472,
+      "pairwise_max_delta_e00": 2.823283002525706,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        0.5773502691896258,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        70.33333333333333,
+        3.6666666666666665,
+        20.666666666666668
+      ]
+    },
+    {
+      "site_id": "S024",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 3.315499632110948,
+      "pairwise_max_delta_e00": 4.123342999674617,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.1547005383792515,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        63.0,
+        3.6666666666666665,
+        8.333333333333334
+      ]
+    },
+    {
+      "site_id": "S025",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 3.3047693785402785,
+      "pairwise_max_delta_e00": 3.8375104601463916,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        2.0816659994661326,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        55.333333333333336,
+        7.666666666666667,
+        21.666666666666668
+      ]
+    },
+    {
+      "site_id": "S026",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 4.377919416793831,
+      "pairwise_max_delta_e00": 6.109719980210507,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        1.5275252316519468,
+        3.2145502536643185
+      ],
+      "mean_target_lab": [
+        60.333333333333336,
+        10.333333333333334,
+        17.666666666666668
+      ]
+    },
+    {
+      "site_id": "S027",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 4.249167028120477,
+      "pairwise_max_delta_e00": 6.105535981527308,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        3.055050463303893,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        54.333333333333336,
+        9.333333333333334,
+        13.666666666666666
+      ]
+    },
+    {
+      "site_id": "S028",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 3.669103688740686,
+      "pairwise_max_delta_e00": 5.386947569423922,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.3094010767585034,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        62.333333333333336,
+        9.333333333333334,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S029",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 0.844273409373303,
+      "pairwise_max_delta_e00": 1.2664101140599544,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.0
+      ],
+      "mean_target_lab": [
+        47.666666666666664,
+        12.333333333333334,
+        24.0
+      ]
+    },
+    {
+      "site_id": "S030",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.018502402771255,
+      "pairwise_max_delta_e00": 2.937595441444462,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896258,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        65.66666666666667,
+        5.333333333333333,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S031",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.6257966876015806,
+      "pairwise_max_delta_e00": 2.2168733683746398,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896258,
+        1.0
+      ],
+      "mean_target_lab": [
+        56.333333333333336,
+        7.333333333333333,
+        20.0
+      ]
+    },
+    {
+      "site_id": "S032",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 3.658957979570392,
+      "pairwise_max_delta_e00": 5.418964869412202,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.1547005383792517,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        32.666666666666664,
+        6.666666666666667,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S033",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.803420919020476,
+      "pairwise_max_delta_e00": 2.705131378530714,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896258,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        30.333333333333332,
+        4.333333333333333,
+        12.333333333333334
+      ]
+    },
+    {
+      "site_id": "S034",
+      "person_id": "P01",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 3.1258262274267476,
+      "pairwise_max_delta_e00": 4.4197837884050015,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        1.7320508075688772,
+        1.0
+      ],
+      "mean_target_lab": [
+        33.333333333333336,
+        7.0,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S035",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 5.184683208996544,
+      "pairwise_max_delta_e00": 6.182034209732854,
+      "repeat_sd_lab": [
+        2.0,
+        2.8867513459481287,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        61.0,
+        8.666666666666666,
+        15.333333333333334
+      ]
+    },
+    {
+      "site_id": "S036",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.377496732800824,
+      "pairwise_max_delta_e00": 2.816748544385435,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.7320508075688772,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        59.333333333333336,
+        11.0,
+        6.333333333333333
+      ]
+    },
+    {
+      "site_id": "S037",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.4622351203342774,
+      "pairwise_max_delta_e00": 3.510741835533067,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        0.5773502691896257,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        58.333333333333336,
+        13.333333333333334,
+        8.666666666666666
+      ]
+    },
+    {
+      "site_id": "S038",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.6437466141679595,
+      "pairwise_max_delta_e00": 2.1772400749627665,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        46.666666666666664,
+        11.666666666666666,
+        23.333333333333332
+      ]
+    },
+    {
+      "site_id": "S039",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 4.1748767753643365,
+      "pairwise_max_delta_e00": 5.749666082591182,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        2.0816659994661326,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        53.0,
+        7.666666666666667,
+        21.333333333333332
+      ]
+    },
+    {
+      "site_id": "S040",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.1572853752081524,
+      "pairwise_max_delta_e00": 3.6555873196883173,
+      "repeat_sd_lab": [
+        2.0,
+        1.5275252316519468,
+        1.0
+      ],
+      "mean_target_lab": [
+        63.0,
+        9.666666666666666,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S041",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.8765678970491197,
+      "pairwise_max_delta_e00": 2.8148518455736795,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        44.666666666666664,
+        8.666666666666666,
+        19.333333333333332
+      ]
+    },
+    {
+      "site_id": "S042",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.1690270094197874,
+      "pairwise_max_delta_e00": 3.0053876793963736,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.5275252316519465,
+        1.0
+      ],
+      "mean_target_lab": [
+        68.33333333333333,
+        7.333333333333333,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S043",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 1.8741238026740987,
+      "pairwise_max_delta_e00": 2.389104173496591,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        50.666666666666664,
+        15.666666666666666,
+        17.333333333333332
+      ]
+    },
+    {
+      "site_id": "S044",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.7094919618061764,
+      "pairwise_max_delta_e00": 3.068518726866228,
+      "repeat_sd_lab": [
+        1.0,
+        1.7320508075688772,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        51.0,
+        12.0,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S045",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 0.953854314296703,
+      "pairwise_max_delta_e00": 1.4307814714450544,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896257,
+        0.0
+      ],
+      "mean_target_lab": [
+        67.33333333333333,
+        1.6666666666666667,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S046",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.9466117806137222,
+      "pairwise_max_delta_e00": 2.254678555337044,
+      "repeat_sd_lab": [
+        1.0,
+        0.5773502691896258,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        55.0,
+        7.333333333333333,
+        19.666666666666668
+      ]
+    },
+    {
+      "site_id": "S047",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 2.903695523482945,
+      "pairwise_max_delta_e00": 3.0225069196921424,
+      "repeat_sd_lab": [
+        1.0,
+        1.5275252316519465,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        64.0,
+        4.333333333333333,
+        21.666666666666668
+      ]
+    },
+    {
+      "site_id": "S048",
+      "person_id": "P17",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 3.143817376655178,
+      "pairwise_max_delta_e00": 3.9207221704363047,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.5275252316519465,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        39.0,
+        7.333333333333333,
+        21.0
+      ]
+    },
+    {
+      "site_id": "S049",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.8101361585744111,
+      "pairwise_max_delta_e00": 2.546197300917447,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        68.33333333333333,
+        2.0,
+        15.666666666666666
+      ]
+    },
+    {
+      "site_id": "S050",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 1.8350734224175145,
+      "pairwise_max_delta_e00": 2.646248598661003,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        33.666666666666664,
+        7.0,
+        10.333333333333334
+      ]
+    },
+    {
+      "site_id": "S051",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.224526773113918,
+      "pairwise_max_delta_e00": 3.3367901596708776,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        0.5773502691896258,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        50.0,
+        5.333333333333333,
+        12.666666666666666
+      ]
+    },
+    {
+      "site_id": "S052",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.3162943878654345,
+      "pairwise_max_delta_e00": 4.563167314750528,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.5275252316519468,
+        3.4641016151377544
+      ],
+      "mean_target_lab": [
+        65.66666666666667,
+        8.333333333333334,
+        9.0
+      ]
+    },
+    {
+      "site_id": "S053",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 2.551406063172607,
+      "pairwise_max_delta_e00": 3.5992140088696853,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.5275252316519465,
+        1.0
+      ],
+      "mean_target_lab": [
+        68.33333333333333,
+        3.6666666666666665,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S054",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 2.728617665594656,
+      "pairwise_max_delta_e00": 3.925191159271373,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.0,
+        3.0550504633038935
+      ],
+      "mean_target_lab": [
+        75.66666666666667,
+        1.0,
+        17.666666666666668
+      ]
+    },
+    {
+      "site_id": "S055",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.011536768647317,
+      "pairwise_max_delta_e00": 3.0173051529709753,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896257,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        37.666666666666664,
+        14.333333333333334,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S056",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 2.775119517464301,
+      "pairwise_max_delta_e00": 3.2762925038800805,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        0.5773502691896257,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        56.333333333333336,
+        8.333333333333334,
+        22.666666666666668
+      ]
+    },
+    {
+      "site_id": "S057",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 3.385303686004687,
+      "pairwise_max_delta_e00": 5.007763758148425,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.1547005383792517,
+        2.6457513110645907
+      ],
+      "mean_target_lab": [
+        43.333333333333336,
+        11.333333333333334,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S058",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 4.508152477736505,
+      "pairwise_max_delta_e00": 6.680162479265737,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        3.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        71.33333333333333,
+        2.0,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S059",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.0457128175532457,
+      "pairwise_max_delta_e00": 1.219143416516148,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        30.0,
+        4.666666666666667,
+        11.333333333333334
+      ]
+    },
+    {
+      "site_id": "S060",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.8942845979412761,
+      "pairwise_max_delta_e00": 2.8414268969119143,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        46.666666666666664,
+        9.333333333333334,
+        23.666666666666668
+      ]
+    },
+    {
+      "site_id": "S061",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.163713355200581,
+      "pairwise_max_delta_e00": 3.165003670984015,
+      "repeat_sd_lab": [
+        1.0,
+        1.5275252316519468,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        53.0,
+        11.333333333333334,
+        22.666666666666668
+      ]
+    },
+    {
+      "site_id": "S062",
+      "person_id": "P22",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.2963083638179325,
+      "pairwise_max_delta_e00": 3.01961473110324,
+      "repeat_sd_lab": [
+        1.0,
+        1.0,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        49.0,
+        11.0,
+        21.0
+      ]
+    },
+    {
+      "site_id": "S063",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.9311898905768698,
+      "pairwise_max_delta_e00": 2.7979707416634816,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.0,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        63.666666666666664,
+        8.0,
+        10.333333333333334
+      ]
+    },
+    {
+      "site_id": "S064",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.413884203599364,
+      "pairwise_max_delta_e00": 5.1050621271472245,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        2.081665999466133,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        61.333333333333336,
+        2.3333333333333335,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S065",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.9694182856346452,
+      "pairwise_max_delta_e00": 2.5602779452638162,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.0
+      ],
+      "mean_target_lab": [
+        58.666666666666664,
+        13.666666666666666,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S066",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.5552875595510964,
+      "pairwise_max_delta_e00": 3.2552334001590792,
+      "repeat_sd_lab": [
+        1.0,
+        0.5773502691896257,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        42.0,
+        12.666666666666666,
+        17.333333333333332
+      ]
+    },
+    {
+      "site_id": "S067",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.728032180364668,
+      "pairwise_max_delta_e00": 4.70978604524856,
+      "repeat_sd_lab": [
+        1.0,
+        2.6457513110645907,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        57.0,
+        11.0,
+        9.333333333333334
+      ]
+    },
+    {
+      "site_id": "S068",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 0.7579981472264362,
+      "pairwise_max_delta_e00": 1.1369972208396544,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        58.666666666666664,
+        18.0,
+        13.666666666666666
+      ]
+    },
+    {
+      "site_id": "S069",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 0.6241662941876559,
+      "pairwise_max_delta_e00": 0.9362494412814839,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        55.0,
+        5.666666666666667,
+        23.666666666666668
+      ]
+    },
+    {
+      "site_id": "S070",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.2011545226871356,
+      "pairwise_max_delta_e00": 3.2895664576241095,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        47.666666666666664,
+        12.0,
+        25.0
+      ]
+    },
+    {
+      "site_id": "S071",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.1128414002838138,
+      "pairwise_max_delta_e00": 1.3789266248571983,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        65.66666666666667,
+        4.333333333333333,
+        17.666666666666668
+      ]
+    },
+    {
+      "site_id": "S072",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.1294856483139797,
+      "pairwise_max_delta_e00": 2.7544836852324615,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896258,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        66.66666666666667,
+        5.666666666666667,
+        6.333333333333333
+      ]
+    },
+    {
+      "site_id": "S073",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 3.2715774424782413,
+      "pairwise_max_delta_e00": 4.907366163717362,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.3094010767585034,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        61.666666666666664,
+        10.666666666666666,
+        10.666666666666666
+      ]
+    },
+    {
+      "site_id": "S074",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 4.150964288205262,
+      "pairwise_max_delta_e00": 5.533418564927976,
+      "repeat_sd_lab": [
+        2.8867513459481287,
+        1.1547005383792517,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        40.333333333333336,
+        10.333333333333334,
+        14.333333333333334
+      ]
+    },
+    {
+      "site_id": "S075",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.6405550721788045,
+      "pairwise_max_delta_e00": 2.4310808117516385,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.0,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        66.33333333333333,
+        2.0,
+        7.666666666666667
+      ]
+    },
+    {
+      "site_id": "S076",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 4.004450890147483,
+      "pairwise_max_delta_e00": 5.08689515876548,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        2.081665999466133,
+        2.0816659994661326
+      ],
+      "mean_target_lab": [
+        53.0,
+        14.666666666666666,
+        6.666666666666667
+      ]
+    },
+    {
+      "site_id": "S077",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.5491931909916423,
+      "pairwise_max_delta_e00": 3.8237897864874637,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        29.666666666666668,
+        4.666666666666667,
+        10.0
+      ]
+    },
+    {
+      "site_id": "S078",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 2.1661768423242407,
+      "pairwise_max_delta_e00": 2.9732222079747253,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        37.666666666666664,
+        9.666666666666666,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S079",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.631785880482602,
+      "pairwise_max_delta_e00": 2.168921471711299,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896257,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        51.333333333333336,
+        11.666666666666666,
+        21.333333333333332
+      ]
+    },
+    {
+      "site_id": "S080",
+      "person_id": "P05",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.651088161378693,
+      "pairwise_max_delta_e00": 3.664192593560907,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        63.666666666666664,
+        6.666666666666667,
+        8.666666666666666
+      ]
+    },
+    {
+      "site_id": "S081",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 0.8952838776681622,
+      "pairwise_max_delta_e00": 1.3429258165022433,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        73.0,
+        3.0,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S082",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.5589322806418238,
+      "pairwise_max_delta_e00": 2.3383984209627355,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792515,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        71.0,
+        3.6666666666666665,
+        13.333333333333334
+      ]
+    },
+    {
+      "site_id": "S083",
+      "person_id": "P01",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 0.6953282272447662,
+      "pairwise_max_delta_e00": 1.0429923408671493,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        40.0,
+        5.333333333333333,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S084",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 3.169667494493521,
+      "pairwise_max_delta_e00": 4.265556491719512,
+      "repeat_sd_lab": [
+        1.0,
+        2.0816659994661326,
+        1.0
+      ],
+      "mean_target_lab": [
+        63.0,
+        7.333333333333333,
+        13.0
+      ]
+    },
+    {
+      "site_id": "S085",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.8852088616640723,
+      "pairwise_max_delta_e00": 2.4147235747008566,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        48.666666666666664,
+        11.0,
+        20.333333333333332
+      ]
+    },
+    {
+      "site_id": "S086",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.9555831706776954,
+      "pairwise_max_delta_e00": 4.220422663324835,
+      "repeat_sd_lab": [
+        1.0,
+        2.5166114784235836,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        55.0,
+        14.333333333333334,
+        24.333333333333332
+      ]
+    },
+    {
+      "site_id": "S087",
+      "person_id": "P01",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 2.6178688084989963,
+      "pairwise_max_delta_e00": 3.9268032127484944,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        41.666666666666664,
+        7.666666666666667,
+        17.666666666666668
+      ]
+    },
+    {
+      "site_id": "S088",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 4.4434090946697005,
+      "pairwise_max_delta_e00": 6.337653331034095,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        2.0816659994661326,
+        2.8867513459481287
+      ],
+      "mean_target_lab": [
+        48.333333333333336,
+        9.333333333333334,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S089",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.0000768513644416,
+      "pairwise_max_delta_e00": 2.277521061041928,
+      "repeat_sd_lab": [
+        1.0,
+        1.0,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        57.0,
+        5.0,
+        19.666666666666668
+      ]
+    },
+    {
+      "site_id": "S090",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.6363781460216507,
+      "pairwise_max_delta_e00": 2.42979237631073,
+      "repeat_sd_lab": [
+        0.0,
+        1.0,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        57.0,
+        7.0,
+        16.333333333333332
+      ]
+    },
+    {
+      "site_id": "S091",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 4.2018794480045525,
+      "pairwise_max_delta_e00": 5.510420529631217,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        2.516611478423583,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        53.666666666666664,
+        9.666666666666666,
+        14.666666666666666
+      ]
+    },
+    {
+      "site_id": "S092",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 4.037228359981078,
+      "pairwise_max_delta_e00": 5.758703389160415,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        1.7320508075688772,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        64.33333333333333,
+        6.0,
+        9.666666666666666
+      ]
+    },
+    {
+      "site_id": "S093",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.0860840743941964,
+      "pairwise_max_delta_e00": 1.6291261115912947,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896257,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        48.0,
+        10.333333333333334,
+        24.333333333333332
+      ]
+    },
+    {
+      "site_id": "S094",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 3.4924504703320465,
+      "pairwise_max_delta_e00": 3.764471917682626,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.5275252316519468,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        56.666666666666664,
+        9.666666666666666,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S095",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 0.8474703329565342,
+      "pairwise_max_delta_e00": 1.2712335378670305,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        40.0,
+        11.0,
+        18.0
+      ]
+    },
+    {
+      "site_id": "S096",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 7.086859689689088,
+      "pairwise_max_delta_e00": 10.173621692087108,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        3.511884584284246,
+        4.041451884327381
+      ],
+      "mean_target_lab": [
+        58.666666666666664,
+        8.666666666666666,
+        14.333333333333334
+      ]
+    },
+    {
+      "site_id": "S097",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.0253427262960821,
+      "pairwise_max_delta_e00": 1.2754746658955094,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.0
+      ],
+      "mean_target_lab": [
+        54.333333333333336,
+        12.333333333333334,
+        10.0
+      ]
+    },
+    {
+      "site_id": "S098",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.0361351700742065,
+      "pairwise_max_delta_e00": 1.5542027551113098,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        67.33333333333333,
+        5.333333333333333,
+        19.666666666666668
+      ]
+    },
+    {
+      "site_id": "S099",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 0.9425777010778261,
+      "pairwise_max_delta_e00": 1.2953199389406196,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        55.0,
+        7.666666666666667,
+        20.666666666666668
+      ]
+    },
+    {
+      "site_id": "S100",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.991644819103257,
+      "pairwise_max_delta_e00": 2.742855947801319,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        0.5773502691896257,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        40.333333333333336,
+        11.666666666666666,
+        15.333333333333334
+      ]
+    },
+    {
+      "site_id": "S101",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.7903037307865586,
+      "pairwise_max_delta_e00": 3.5050925176033894,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.1547005383792517,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        47.0,
+        10.666666666666666,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S102",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.147288583815826,
+      "pairwise_max_delta_e00": 2.8743793278584118,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        58.333333333333336,
+        11.0,
+        14.0
+      ]
+    },
+    {
+      "site_id": "S103",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.8404037055819784,
+      "pairwise_max_delta_e00": 4.1045913494624795,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.5275252316519468,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        61.666666666666664,
+        10.666666666666666,
+        13.333333333333334
+      ]
+    },
+    {
+      "site_id": "S104",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 1.6159304377320438,
+      "pairwise_max_delta_e00": 2.307070154384614,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        67.66666666666667,
+        6.0,
+        9.666666666666666
+      ]
+    },
+    {
+      "site_id": "S105",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 0.5231466760711023,
+      "pairwise_max_delta_e00": 0.7847200141066535,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896257,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        40.0,
+        12.333333333333334,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S106",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.372478449656986,
+      "pairwise_max_delta_e00": 4.6837954540884486,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        1.5275252316519465,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        66.66666666666667,
+        6.333333333333333,
+        6.666666666666667
+      ]
+    },
+    {
+      "site_id": "S107",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.835589215942261,
+      "pairwise_max_delta_e00": 2.7533838239133916,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        52.666666666666664,
+        9.666666666666666,
+        20.333333333333332
+      ]
+    },
+    {
+      "site_id": "S108",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.1285306293510673,
+      "pairwise_max_delta_e00": 4.494435443149932,
+      "repeat_sd_lab": [
+        2.0,
+        1.1547005383792517,
+        1.0
+      ],
+      "mean_target_lab": [
+        63.0,
+        4.666666666666667,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S109",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 0.7601961643541236,
+      "pairwise_max_delta_e00": 1.1402942465311854,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        53.666666666666664,
+        12.0,
+        20.666666666666668
+      ]
+    },
+    {
+      "site_id": "S110",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.492720649754105,
+      "pairwise_max_delta_e00": 4.858560355930476,
+      "repeat_sd_lab": [
+        1.0,
+        1.5275252316519468,
+        3.0550504633038935
+      ],
+      "mean_target_lab": [
+        48.0,
+        10.666666666666666,
+        22.333333333333332
+      ]
+    },
+    {
+      "site_id": "S111",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.9159273362992983,
+      "pairwise_max_delta_e00": 2.4492831617464894,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.0
+      ],
+      "mean_target_lab": [
+        50.666666666666664,
+        10.333333333333334,
+        18.0
+      ]
+    },
+    {
+      "site_id": "S112",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.8820324364446335,
+      "pairwise_max_delta_e00": 3.872672893496307,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.1547005383792517,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        51.333333333333336,
+        7.666666666666667,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S113",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.6613689252934176,
+      "pairwise_max_delta_e00": 2.492267589225125,
+      "repeat_sd_lab": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        75.0,
+        0.0,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S114",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.0332165975230425,
+      "pairwise_max_delta_e00": 3.0498248962845635,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.1547005383792517,
+        0.0
+      ],
+      "mean_target_lab": [
+        69.66666666666667,
+        0.3333333333333333,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S115",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.856657614162792,
+      "pairwise_max_delta_e00": 2.254350245948994,
+      "repeat_sd_lab": [
+        1.0,
+        0.5773502691896257,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        59.0,
+        13.666666666666666,
+        15.333333333333334
+      ]
+    },
+    {
+      "site_id": "S116",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.7727862540147281,
+      "pairwise_max_delta_e00": 2.659179381022092,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792515,
+        0.0
+      ],
+      "mean_target_lab": [
+        72.0,
+        2.3333333333333335,
+        10.0
+      ]
+    },
+    {
+      "site_id": "S117",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.7866216336713197,
+      "pairwise_max_delta_e00": 3.995195240365401,
+      "repeat_sd_lab": [
+        1.0,
+        1.0,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        60.0,
+        18.0,
+        13.333333333333334
+      ]
+    },
+    {
+      "site_id": "S118",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 3.928927631778551,
+      "pairwise_max_delta_e00": 5.213656262898046,
+      "repeat_sd_lab": [
+        2.516611478423583,
+        2.0816659994661326,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        58.666666666666664,
+        13.333333333333334,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S119",
+      "person_id": "P17",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 4.569320297887222,
+      "pairwise_max_delta_e00": 6.3843588920755385,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.0,
+        3.0550504633038935
+      ],
+      "mean_target_lab": [
+        39.333333333333336,
+        9.0,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S120",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 3.397695681898645,
+      "pairwise_max_delta_e00": 4.727661948243048,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.7320508075688772,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        66.33333333333333,
+        5.0,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S121",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 5.97711649076118,
+      "pairwise_max_delta_e00": 8.961610160172535,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        3.605551275463989,
+        3.2145502536643185
+      ],
+      "mean_target_lab": [
+        60.666666666666664,
+        14.0,
+        17.333333333333332
+      ]
+    },
+    {
+      "site_id": "S122",
+      "person_id": "P01",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 0.9830999481014291,
+      "pairwise_max_delta_e00": 1.4746499221521436,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        46.333333333333336,
+        7.0,
+        21.333333333333332
+      ]
+    },
+    {
+      "site_id": "S123",
+      "person_id": "P17",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 1.6072505417521434,
+      "pairwise_max_delta_e00": 2.4108758126282153,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        35.666666666666664,
+        10.333333333333334,
+        16.333333333333332
+      ]
+    },
+    {
+      "site_id": "S124",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 3.588994643356063,
+      "pairwise_max_delta_e00": 4.967948785043631,
+      "repeat_sd_lab": [
+        2.516611478423583,
+        1.1547005383792517,
+        1.0
+      ],
+      "mean_target_lab": [
+        55.333333333333336,
+        9.666666666666666,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S125",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.3029618261141456,
+      "pairwise_max_delta_e00": 1.9544427391712182,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896258,
+        0.0
+      ],
+      "mean_target_lab": [
+        66.33333333333333,
+        6.666666666666667,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S126",
+      "person_id": "P22",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.6288016266687357,
+      "pairwise_max_delta_e00": 2.123485355246566,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        56.333333333333336,
+        11.0,
+        26.0
+      ]
+    },
+    {
+      "site_id": "S127",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.7524090457119634,
+      "pairwise_max_delta_e00": 2.6286135685679453,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        0.5773502691896258,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        32.0,
+        5.666666666666667,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S128",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.5941480111108695,
+      "pairwise_max_delta_e00": 1.8183099413172852,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        51.333333333333336,
+        9.333333333333334,
+        23.0
+      ]
+    },
+    {
+      "site_id": "S129",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.6887546927985777,
+      "pairwise_max_delta_e00": 2.332094236530322,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        45.666666666666664,
+        9.666666666666666,
+        24.0
+      ]
+    },
+    {
+      "site_id": "S130",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.1753739637656222,
+      "pairwise_max_delta_e00": 1.5783429420449644,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        73.0,
+        3.6666666666666665,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S131",
+      "person_id": "P15",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.815511042647883,
+      "pairwise_max_delta_e00": 2.6826003028608314,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.5275252316519468,
+        0.0
+      ],
+      "mean_target_lab": [
+        48.333333333333336,
+        11.666666666666666,
+        23.0
+      ]
+    },
+    {
+      "site_id": "S132",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 0.7937207776802094,
+      "pairwise_max_delta_e00": 1.190581166520314,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.0
+      ],
+      "mean_target_lab": [
+        59.666666666666664,
+        14.666666666666666,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S133",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.1934444682486376,
+      "pairwise_max_delta_e00": 2.5773214544535024,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        52.666666666666664,
+        10.666666666666666,
+        23.333333333333332
+      ]
+    },
+    {
+      "site_id": "S134",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 0.8744235940417413,
+      "pairwise_max_delta_e00": 1.311635391062612,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        31.0,
+        5.0,
+        13.666666666666666
+      ]
+    },
+    {
+      "site_id": "S135",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 3.120417312148426,
+      "pairwise_max_delta_e00": 4.55699197400564,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        1.7320508075688772,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        59.666666666666664,
+        6.0,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S136",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.9303863967816177,
+      "pairwise_max_delta_e00": 3.84951973248417,
+      "repeat_sd_lab": [
+        2.3094010767585034,
+        1.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        70.33333333333333,
+        4.0,
+        13.0
+      ]
+    },
+    {
+      "site_id": "S137",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.66881571935874,
+      "pairwise_max_delta_e00": 2.3287057753220326,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        50.333333333333336,
+        10.0,
+        20.0
+      ]
+    },
+    {
+      "site_id": "S138",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.6863371468570796,
+      "pairwise_max_delta_e00": 2.5295057202856195,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896257,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        49.333333333333336,
+        12.333333333333334,
+        21.0
+      ]
+    },
+    {
+      "site_id": "S139",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.6097213561593693,
+      "pairwise_max_delta_e00": 2.414582034239054,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792515,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        26.0,
+        3.6666666666666665,
+        8.333333333333334
+      ]
+    },
+    {
+      "site_id": "S140",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 6.427065778706873,
+      "pairwise_max_delta_e00": 9.079582297257456,
+      "repeat_sd_lab": [
+        4.725815626252609,
+        3.0550504633038935,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        52.666666666666664,
+        19.333333333333332,
+        8.333333333333334
+      ]
+    },
+    {
+      "site_id": "S141",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.1709804717912982,
+      "pairwise_max_delta_e00": 1.3782024956955228,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        67.66666666666667,
+        6.666666666666667,
+        9.333333333333334
+      ]
+    },
+    {
+      "site_id": "S142",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 0.8552225001551775,
+      "pairwise_max_delta_e00": 1.064499413372267,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        66.66666666666667,
+        12.0,
+        14.333333333333334
+      ]
+    },
+    {
+      "site_id": "S143",
+      "person_id": "P01",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 0.5666325305209299,
+      "pairwise_max_delta_e00": 0.8499487957813948,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        37.333333333333336,
+        9.0,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S144",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 0.9840588139410752,
+      "pairwise_max_delta_e00": 1.4760882209116128,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        73.66666666666667,
+        -0.3333333333333333,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S145",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 3.832930774897631,
+      "pairwise_max_delta_e00": 5.473036677893876,
+      "repeat_sd_lab": [
+        2.6457513110645907,
+        0.5773502691896257,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        43.0,
+        8.333333333333334,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S146",
+      "person_id": "P11",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.4057788687958572,
+      "pairwise_max_delta_e00": 3.454940972193918,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        66.66666666666667,
+        7.666666666666667,
+        12.666666666666666
+      ]
+    },
+    {
+      "site_id": "S147",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.515430091782508,
+      "pairwise_max_delta_e00": 3.773145137673762,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.7320508075688772,
+        0.0
+      ],
+      "mean_target_lab": [
+        63.0,
+        9.0,
+        5.0
+      ]
+    },
+    {
+      "site_id": "S148",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.0378637905239747,
+      "pairwise_max_delta_e00": 1.5567956857859622,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896258,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        30.0,
+        5.333333333333333,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S149",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.491445013566112,
+      "pairwise_max_delta_e00": 4.59830010652117,
+      "repeat_sd_lab": [
+        1.0,
+        2.5166114784235836,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        38.0,
+        11.333333333333334,
+        13.333333333333334
+      ]
+    },
+    {
+      "site_id": "S150",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.9729457177927054,
+      "pairwise_max_delta_e00": 2.5080808164353074,
+      "repeat_sd_lab": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        32.0,
+        4.0,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S151",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 1.521005522004265,
+      "pairwise_max_delta_e00": 2.0183662314289257,
+      "repeat_sd_lab": [
+        1.0,
+        0.5773502691896257,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        47.0,
+        9.666666666666666,
+        25.333333333333332
+      ]
+    },
+    {
+      "site_id": "S152",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 4.995783400365185,
+      "pairwise_max_delta_e00": 6.62266003896482,
+      "repeat_sd_lab": [
+        2.6457513110645907,
+        2.8867513459481287,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        62.0,
+        7.666666666666667,
+        6.666666666666667
+      ]
+    },
+    {
+      "site_id": "S153",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.1427617181416214,
+      "pairwise_max_delta_e00": 2.301836833747027,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.0,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        54.333333333333336,
+        13.0,
+        9.666666666666666
+      ]
+    },
+    {
+      "site_id": "S154",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.379096903358988,
+      "pairwise_max_delta_e00": 3.3140552127563367,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.5275252316519465,
+        1.0
+      ],
+      "mean_target_lab": [
+        64.33333333333333,
+        4.333333333333333,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S155",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 4.898748230807908,
+      "pairwise_max_delta_e00": 7.349624499975731,
+      "repeat_sd_lab": [
+        1.0,
+        2.516611478423583,
+        2.516611478423583
+      ],
+      "mean_target_lab": [
+        64.0,
+        7.333333333333333,
+        15.666666666666666
+      ]
+    },
+    {
+      "site_id": "S156",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.561611921163674,
+      "pairwise_max_delta_e00": 2.342417881745511,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.0,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        68.66666666666667,
+        10.0,
+        11.0
+      ]
+    },
+    {
+      "site_id": "S157",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 4.195596406925521,
+      "pairwise_max_delta_e00": 5.874925497567071,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        3.7859388972001824
+      ],
+      "mean_target_lab": [
+        34.333333333333336,
+        8.333333333333334,
+        15.333333333333334
+      ]
+    },
+    {
+      "site_id": "S158",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.066793258528842,
+      "pairwise_max_delta_e00": 2.5913554529281937,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.5275252316519468,
+        1.0
+      ],
+      "mean_target_lab": [
+        58.666666666666664,
+        10.666666666666666,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S159",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.316157361372594,
+      "pairwise_max_delta_e00": 2.676055806146427,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        32.666666666666664,
+        6.0,
+        13.666666666666666
+      ]
+    },
+    {
+      "site_id": "S160",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 3.5233901916748462,
+      "pairwise_max_delta_e00": 5.161016905063085,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.5166114784235836,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        64.33333333333333,
+        3.3333333333333335,
+        23.333333333333332
+      ]
+    },
+    {
+      "site_id": "S161",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.4787359715808948,
+      "pairwise_max_delta_e00": 3.2830525162744846,
+      "repeat_sd_lab": [
+        2.081665999466133,
+        0.5773502691896258,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        67.33333333333333,
+        4.333333333333333,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S162",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 3.1700833039430987,
+      "pairwise_max_delta_e00": 4.0569106829995345,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.0,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        29.666666666666668,
+        6.0,
+        12.333333333333334
+      ]
+    },
+    {
+      "site_id": "S163",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.2773961259363396,
+      "pairwise_max_delta_e00": 4.808388642009656,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        2.0816659994661326,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        71.33333333333333,
+        4.333333333333333,
+        14.666666666666666
+      ]
+    },
+    {
+      "site_id": "S164",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.8197267792125313,
+      "pairwise_max_delta_e00": 2.353299834839308,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896258,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        58.333333333333336,
+        6.666666666666667,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S165",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.2127583317479687,
+      "pairwise_max_delta_e00": 2.9129506094852937,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        1.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        66.66666666666667,
+        12.0,
+        10.0
+      ]
+    },
+    {
+      "site_id": "S166",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 7.112022057170653,
+      "pairwise_max_delta_e00": 10.155180948190141,
+      "repeat_sd_lab": [
+        3.214550253664318,
+        3.605551275463989,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        60.666666666666664,
+        8.0,
+        12.666666666666666
+      ]
+    },
+    {
+      "site_id": "S167",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.2740776665670306,
+      "pairwise_max_delta_e00": 1.9111164998505459,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        48.0,
+        10.666666666666666,
+        25.666666666666668
+      ]
+    },
+    {
+      "site_id": "S168",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.311056805552381,
+      "pairwise_max_delta_e00": 1.9665852083285715,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        57.666666666666664,
+        9.0,
+        20.0
+      ]
+    },
+    {
+      "site_id": "S169",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 0.8667566977574507,
+      "pairwise_max_delta_e00": 1.300135046636176,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.0
+      ],
+      "mean_target_lab": [
+        53.666666666666664,
+        10.333333333333334,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S170",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.504974091910325,
+      "pairwise_max_delta_e00": 5.257461137865487,
+      "repeat_sd_lab": [
+        1.1547005383792515,
+        2.309401076758503,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        27.333333333333332,
+        5.666666666666667,
+        7.333333333333333
+      ]
+    },
+    {
+      "site_id": "S171",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 2.5146527586873213,
+      "pairwise_max_delta_e00": 3.7049737480037646,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.5275252316519468,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        56.666666666666664,
+        8.666666666666666,
+        23.0
+      ]
+    },
+    {
+      "site_id": "S172",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 1.6953529082295498,
+      "pairwise_max_delta_e00": 2.068672508418386,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        41.333333333333336,
+        12.666666666666666,
+        17.333333333333332
+      ]
+    },
+    {
+      "site_id": "S173",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 5.201240672583417,
+      "pairwise_max_delta_e00": 7.037179787536655,
+      "repeat_sd_lab": [
+        3.214550253664318,
+        2.8867513459481287,
+        3.605551275463989
+      ],
+      "mean_target_lab": [
+        56.666666666666664,
+        15.333333333333334,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S174",
+      "person_id": "P14",
+      "images": 3,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.001356931163829,
+      "pairwise_max_delta_e00": 1.0890112374020875,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        68.66666666666667,
+        2.0,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S175",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 3.321255756292576,
+      "pairwise_max_delta_e00": 4.55666896668954,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.1547005383792517,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        60.0,
+        12.333333333333334,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S176",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 0.0,
+      "pairwise_max_delta_e00": 0.0,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        31.0,
+        9.0,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S177",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 2.0623523464438525,
+      "pairwise_max_delta_e00": 2.8512248935132813,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.5275252316519468,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        56.333333333333336,
+        13.333333333333334,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S178",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 3.903305046837618,
+      "pairwise_max_delta_e00": 4.714432270704916,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.3094010767585034,
+        3.0550504633038935
+      ],
+      "mean_target_lab": [
+        63.666666666666664,
+        3.3333333333333335,
+        20.333333333333332
+      ]
+    },
+    {
+      "site_id": "S179",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.951920377219126,
+      "pairwise_max_delta_e00": 3.888205624225845,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.5275252316519465,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        61.333333333333336,
+        3.6666666666666665,
+        20.666666666666668
+      ]
+    },
+    {
+      "site_id": "S180",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.7789731799787263,
+      "pairwise_max_delta_e00": 3.9181533172641454,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.7320508075688772,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        61.666666666666664,
+        3.0,
+        17.333333333333332
+      ]
+    },
+    {
+      "site_id": "S181",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.9753228115609602,
+      "pairwise_max_delta_e00": 2.6559510129245365,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896258,
+        1.0
+      ],
+      "mean_target_lab": [
+        67.33333333333333,
+        7.333333333333333,
+        11.0
+      ]
+    },
+    {
+      "site_id": "S182",
+      "person_id": "P17",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 3.9608212352272294,
+      "pairwise_max_delta_e00": 5.522092738464447,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.7320508075688772,
+        2.6457513110645907
+      ],
+      "mean_target_lab": [
+        38.666666666666664,
+        8.0,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S183",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 4.027223773021888,
+      "pairwise_max_delta_e00": 4.652556708346694,
+      "repeat_sd_lab": [
+        2.6457513110645907,
+        1.5275252316519465,
+        0.5773502691896257
+      ],
+      "mean_target_lab": [
+        72.0,
+        0.6666666666666666,
+        12.333333333333334
+      ]
+    },
+    {
+      "site_id": "S184",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.6447129175096842,
+      "pairwise_max_delta_e00": 1.9440863569945597,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        51.333333333333336,
+        7.0,
+        20.666666666666668
+      ]
+    },
+    {
+      "site_id": "S185",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 6.304390181486203,
+      "pairwise_max_delta_e00": 9.451322574286982,
+      "repeat_sd_lab": [
+        2.0,
+        3.511884584284246,
+        2.0
+      ],
+      "mean_target_lab": [
+        71.0,
+        7.666666666666667,
+        12.0
+      ]
+    },
+    {
+      "site_id": "S186",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.6992736016552334,
+      "pairwise_max_delta_e00": 3.9050971811804827,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        1.5275252316519465,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        71.66666666666667,
+        2.6666666666666665,
+        21.333333333333332
+      ]
+    },
+    {
+      "site_id": "S187",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 5.90323494751365,
+      "pairwise_max_delta_e00": 8.733524378619071,
+      "repeat_sd_lab": [
+        2.516611478423583,
+        3.5118845842842465,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        62.666666666666664,
+        6.666666666666667,
+        22.666666666666668
+      ]
+    },
+    {
+      "site_id": "S188",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.9100611790930437,
+      "pairwise_max_delta_e00": 3.764134382782085,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.7320508075688772,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        62.666666666666664,
+        7.0,
+        12.666666666666666
+      ]
+    },
+    {
+      "site_id": "S189",
+      "person_id": "P12",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.848864402966426,
+      "pairwise_max_delta_e00": 4.057582894919142,
+      "repeat_sd_lab": [
+        2.081665999466133,
+        0.5773502691896258,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        31.666666666666668,
+        4.333333333333333,
+        14.0
+      ]
+    },
+    {
+      "site_id": "S190",
+      "person_id": "P19",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 3.3799297444948766,
+      "pairwise_max_delta_e00": 4.418332772542455,
+      "repeat_sd_lab": [
+        1.0,
+        1.1547005383792515,
+        2.6457513110645907
+      ],
+      "mean_target_lab": [
+        72.0,
+        2.3333333333333335,
+        14.0
+      ]
+    },
+    {
+      "site_id": "S191",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.28363443270545,
+      "pairwise_max_delta_e00": 3.3782836208104485,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.0,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        65.33333333333333,
+        4.0,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S192",
+      "person_id": "P22",
+      "images": 1,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 1.9053196133238435,
+      "pairwise_max_delta_e00": 2.857979419985765,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.1547005383792517,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        56.333333333333336,
+        6.666666666666667,
+        18.0
+      ]
+    },
+    {
+      "site_id": "S193",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 2.513103423569781,
+      "pairwise_max_delta_e00": 2.8748093336055502,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.5275252316519468,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        58.666666666666664,
+        14.333333333333334,
+        6.666666666666667
+      ]
+    },
+    {
+      "site_id": "S194",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 3.6612183527880084,
+      "pairwise_max_delta_e00": 5.064610478944002,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.081665999466133,
+        1.0
+      ],
+      "mean_target_lab": [
+        70.66666666666667,
+        -0.3333333333333333,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S195",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 4.677461636695621,
+      "pairwise_max_delta_e00": 6.744996565595257,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        4.358898943540674,
+        1.0
+      ],
+      "mean_target_lab": [
+        53.0,
+        14.0,
+        6.0
+      ]
+    },
+    {
+      "site_id": "S196",
+      "person_id": "P22",
+      "images": 2,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 6.373452572284602,
+      "pairwise_max_delta_e00": 7.710707258861767,
+      "repeat_sd_lab": [
+        3.055050463303893,
+        2.081665999466133,
+        4.041451884327381
+      ],
+      "mean_target_lab": [
+        54.333333333333336,
+        10.666666666666666,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S197",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.2340768452766058,
+      "pairwise_max_delta_e00": 1.5440287563320463,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        73.66666666666667,
+        0.3333333333333333,
+        16.333333333333332
+      ]
+    },
+    {
+      "site_id": "S198",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.400551340854298,
+      "pairwise_max_delta_e00": 4.408289821381838,
+      "repeat_sd_lab": [
+        0.0,
+        1.7320508075688772,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        72.0,
+        1.0,
+        6.666666666666667
+      ]
+    },
+    {
+      "site_id": "S199",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 2.0179392132847482,
+      "pairwise_max_delta_e00": 2.8167794531766566,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792517,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        49.0,
+        8.333333333333334,
+        19.666666666666668
+      ]
+    },
+    {
+      "site_id": "S200",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.4843594546696104,
+      "pairwise_max_delta_e00": 3.7265391820044154,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        3.4641016151377544
+      ],
+      "mean_target_lab": [
+        72.0,
+        -2.0,
+        13.0
+      ]
+    },
+    {
+      "site_id": "S201",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 3.56818412433848,
+      "pairwise_max_delta_e00": 5.197411688514531,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.309401076758503,
+        1.0
+      ],
+      "mean_target_lab": [
+        63.333333333333336,
+        7.333333333333333,
+        13.0
+      ]
+    },
+    {
+      "site_id": "S202",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 4.406277228803383,
+      "pairwise_max_delta_e00": 6.002711079295244,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        2.5166114784235836,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        60.666666666666664,
+        9.666666666666666,
+        21.666666666666668
+      ]
+    },
+    {
+      "site_id": "S203",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.945778747837284,
+      "pairwise_max_delta_e00": 5.557094142008345,
+      "repeat_sd_lab": [
+        2.6457513110645907,
+        1.1547005383792517,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        61.0,
+        10.333333333333334,
+        11.666666666666666
+      ]
+    },
+    {
+      "site_id": "S204",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.5645118697397877,
+      "pairwise_max_delta_e00": 5.088157319689285,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        2.0816659994661326,
+        1.0
+      ],
+      "mean_target_lab": [
+        68.66666666666667,
+        4.333333333333333,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S205",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 4.936875235413477,
+      "pairwise_max_delta_e00": 5.348125726803966,
+      "repeat_sd_lab": [
+        2.0,
+        2.8867513459481287,
+        3.0550504633038935
+      ],
+      "mean_target_lab": [
+        57.0,
+        13.333333333333334,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S206",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.8489445769813724,
+      "pairwise_max_delta_e00": 2.536194767969813,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.1547005383792515,
+        1.0
+      ],
+      "mean_target_lab": [
+        71.66666666666667,
+        -2.6666666666666665,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S207",
+      "person_id": "P06",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 5.275501057606918,
+      "pairwise_max_delta_e00": 6.3329802280389575,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        2.6457513110645907,
+        2.3094010767585034
+      ],
+      "mean_target_lab": [
+        67.33333333333333,
+        4.0,
+        10.333333333333334
+      ]
+    },
+    {
+      "site_id": "S208",
+      "person_id": "P17",
+      "images": 2,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 3.741204205717127,
+      "pairwise_max_delta_e00": 5.589877409448766,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        0.5773502691896257,
+        3.0550504633038935
+      ],
+      "mean_target_lab": [
+        42.666666666666664,
+        8.666666666666666,
+        17.666666666666668
+      ]
+    },
+    {
+      "site_id": "S209",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 0.5540435181304529,
+      "pairwise_max_delta_e00": 0.8310652771956794,
+      "repeat_sd_lab": [
+        0.0,
+        0.5773502691896257,
+        0.0
+      ],
+      "mean_target_lab": [
+        48.0,
+        11.333333333333334,
+        23.0
+      ]
+    },
+    {
+      "site_id": "S210",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.9246194914851724,
+      "pairwise_max_delta_e00": 3.394569196890151,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.5275252316519468,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        57.666666666666664,
+        9.666666666666666,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S211",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 4.438636848315372,
+      "pairwise_max_delta_e00": 5.992630278681326,
+      "repeat_sd_lab": [
+        2.0816659994661326,
+        1.5275252316519465,
+        3.2145502536643185
+      ],
+      "mean_target_lab": [
+        67.33333333333333,
+        3.3333333333333335,
+        16.333333333333332
+      ]
+    },
+    {
+      "site_id": "S212",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 1.362207933823074,
+      "pairwise_max_delta_e00": 1.618897821328699,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896258,
+        1.0
+      ],
+      "mean_target_lab": [
+        56.333333333333336,
+        7.666666666666667,
+        20.0
+      ]
+    },
+    {
+      "site_id": "S213",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.8660100580581074,
+      "pairwise_max_delta_e00": 3.846563768104387,
+      "repeat_sd_lab": [
+        1.0,
+        2.081665999466133,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        41.0,
+        10.333333333333334,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S214",
+      "person_id": "P15",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 1.186111617150529,
+      "pairwise_max_delta_e00": 1.4753163708077843,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        47.666666666666664,
+        12.0,
+        24.333333333333332
+      ]
+    },
+    {
+      "site_id": "S215",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 1.527122325415176,
+      "pairwise_max_delta_e00": 2.2907625472044306,
+      "repeat_sd_lab": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        66.0,
+        4.0,
+        17.0
+      ]
+    },
+    {
+      "site_id": "S216",
+      "person_id": "P18",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.9107765829389607,
+      "pairwise_max_delta_e00": 2.249913557256096,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        1.0
+      ],
+      "mean_target_lab": [
+        57.333333333333336,
+        8.333333333333334,
+        20.0
+      ]
+    },
+    {
+      "site_id": "S217",
+      "person_id": "P05",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 1.2722395719171813,
+      "pairwise_max_delta_e00": 1.5955458619424265,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        57.333333333333336,
+        12.333333333333334,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S218",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.1253032486324352,
+      "pairwise_max_delta_e00": 3.187954872948653,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        0.5773502691896257,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        49.0,
+        10.666666666666666,
+        22.333333333333332
+      ]
+    },
+    {
+      "site_id": "S219",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.4283877435203665,
+      "pairwise_max_delta_e00": 3.489583969446723,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.1547005383792517,
+        1.0
+      ],
+      "mean_target_lab": [
+        72.33333333333333,
+        4.666666666666667,
+        11.0
+      ]
+    },
+    {
+      "site_id": "S220",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 4.423365343699714,
+      "pairwise_max_delta_e00": 6.58119275551621,
+      "repeat_sd_lab": [
+        1.0,
+        2.6457513110645907,
+        2.5166114784235836
+      ],
+      "mean_target_lab": [
+        61.0,
+        12.0,
+        19.333333333333332
+      ]
+    },
+    {
+      "site_id": "S221",
+      "person_id": "P20",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.424098170129369,
+      "pairwise_max_delta_e00": 4.447028165024067,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        1.5275252316519468,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        49.666666666666664,
+        8.666666666666666,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S222",
+      "person_id": "P14",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 4.778912316921578,
+      "pairwise_max_delta_e00": 6.97588284651972,
+      "repeat_sd_lab": [
+        2.081665999466133,
+        1.5275252316519465,
+        3.055050463303893
+      ],
+      "mean_target_lab": [
+        64.33333333333333,
+        4.666666666666667,
+        12.666666666666666
+      ]
+    },
+    {
+      "site_id": "S223",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.914957401847006,
+      "pairwise_max_delta_e00": 4.046939095155576,
+      "repeat_sd_lab": [
+        2.0,
+        0.0,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        54.0,
+        6.0,
+        16.666666666666668
+      ]
+    },
+    {
+      "site_id": "S224",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.13229871463617,
+      "pairwise_max_delta_e00": 3.011899605062519,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896258,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        63.666666666666664,
+        5.666666666666667,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S225",
+      "person_id": "P04",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.4305320205604135,
+      "pairwise_max_delta_e00": 2.0653776964146324,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        43.333333333333336,
+        10.0,
+        19.0
+      ]
+    },
+    {
+      "site_id": "S226",
+      "person_id": "P11",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 0.0,
+      "pairwise_max_delta_e00": 0.0,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_lab": [
+        59.0,
+        17.0,
+        14.0
+      ]
+    },
+    {
+      "site_id": "S227",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper chest",
+      "pairwise_mean_delta_e00": 2.0448653042106133,
+      "pairwise_max_delta_e00": 2.8507023220195387,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        0.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        67.0,
+        11.0,
+        10.0
+      ]
+    },
+    {
+      "site_id": "S228",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "head/neck",
+      "pairwise_mean_delta_e00": 4.013163447571906,
+      "pairwise_max_delta_e00": 5.5484144130071185,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        4.041451884327381
+      ],
+      "mean_target_lab": [
+        63.333333333333336,
+        8.333333333333334,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S229",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 1.0525495744866482,
+      "pairwise_max_delta_e00": 1.47946805490664,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.0,
+        1.0
+      ],
+      "mean_target_lab": [
+        45.666666666666664,
+        10.0,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S230",
+      "person_id": "P10",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 4.283786347659693,
+      "pairwise_max_delta_e00": 5.534798549700848,
+      "repeat_sd_lab": [
+        2.6457513110645907,
+        0.5773502691896257,
+        3.0
+      ],
+      "mean_target_lab": [
+        47.0,
+        10.333333333333334,
+        22.0
+      ]
+    },
+    {
+      "site_id": "S231",
+      "person_id": "P16",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 2.4668718463591532,
+      "pairwise_max_delta_e00": 3.5353883811290356,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.5275252316519468,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        50.333333333333336,
+        12.666666666666666,
+        17.333333333333332
+      ]
+    },
+    {
+      "site_id": "S232",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 1.3462156841427053,
+      "pairwise_max_delta_e00": 2.019323526214058,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        0.0
+      ],
+      "mean_target_lab": [
+        46.666666666666664,
+        9.333333333333334,
+        23.0
+      ]
+    },
+    {
+      "site_id": "S233",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.1852004226026622,
+      "pairwise_max_delta_e00": 3.054696531723576,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792515,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        65.0,
+        3.3333333333333335,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S234",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 2.8090654395704107,
+      "pairwise_max_delta_e00": 3.8996209621281035,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        0.5773502691896258,
+        2.0816659994661326
+      ],
+      "mean_target_lab": [
+        34.333333333333336,
+        6.666666666666667,
+        10.333333333333334
+      ]
+    },
+    {
+      "site_id": "S235",
+      "person_id": "P23",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 2.520532904624735,
+      "pairwise_max_delta_e00": 3.7807993569371026,
+      "repeat_sd_lab": [
+        0.5773502691896257,
+        1.1547005383792517,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        71.33333333333333,
+        4.333333333333333,
+        10.0
+      ]
+    },
+    {
+      "site_id": "S236",
+      "person_id": "P24",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "dorsal forearm",
+      "pairwise_mean_delta_e00": 4.514421777433699,
+      "pairwise_max_delta_e00": 6.771632666150548,
+      "repeat_sd_lab": [
+        3.4641016151377544,
+        1.7320508075688772,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        50.0,
+        4.0,
+        18.333333333333332
+      ]
+    },
+    {
+      "site_id": "S237",
+      "person_id": "P08",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "lower back",
+      "pairwise_mean_delta_e00": 3.4251209684715285,
+      "pairwise_max_delta_e00": 4.811999741899611,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.5275252316519465,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        67.66666666666667,
+        5.666666666666667,
+        14.0
+      ]
+    },
+    {
+      "site_id": "S238",
+      "person_id": "P09",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.947508482121187,
+      "pairwise_max_delta_e00": 4.344962305417867,
+      "repeat_sd_lab": [
+        2.6457513110645907,
+        0.5773502691896258,
+        1.0
+      ],
+      "mean_target_lab": [
+        66.0,
+        3.3333333333333335,
+        16.0
+      ]
+    },
+    {
+      "site_id": "S239",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "upper back",
+      "pairwise_mean_delta_e00": 2.5144123793224225,
+      "pairwise_max_delta_e00": 3.7716185689836337,
+      "repeat_sd_lab": [
+        1.1547005383792517,
+        1.7320508075688772,
+        1.1547005383792517
+      ],
+      "mean_target_lab": [
+        67.66666666666667,
+        5.0,
+        14.333333333333334
+      ]
+    },
+    {
+      "site_id": "S240",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.064256794808637,
+      "pairwise_max_delta_e00": 3.4808452259271885,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.1547005383792517,
+        1.1547005383792515
+      ],
+      "mean_target_lab": [
+        48.0,
+        8.333333333333334,
+        21.333333333333332
+      ]
+    },
+    {
+      "site_id": "S241",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 0.37187187022066004,
+      "pairwise_max_delta_e00": 0.5578078053309901,
+      "repeat_sd_lab": [
+        0.0,
+        0.0,
+        0.5773502691896258
+      ],
+      "mean_target_lab": [
+        45.0,
+        10.0,
+        22.333333333333332
+      ]
+    },
+    {
+      "site_id": "S242",
+      "person_id": "P17",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "abdomen",
+      "pairwise_mean_delta_e00": 1.8363431379048534,
+      "pairwise_max_delta_e00": 2.415239790434123,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        0.5773502691896257,
+        1.5275252316519465
+      ],
+      "mean_target_lab": [
+        37.333333333333336,
+        9.333333333333334,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S243",
+      "person_id": "P21",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "palms/soles",
+      "pairwise_mean_delta_e00": 3.2329267372652715,
+      "pairwise_max_delta_e00": 3.984921956293563,
+      "repeat_sd_lab": [
+        1.7320508075688772,
+        1.0,
+        2.0816659994661326
+      ],
+      "mean_target_lab": [
+        64.0,
+        6.0,
+        6.666666666666667
+      ]
+    },
+    {
+      "site_id": "S244",
+      "person_id": "P02",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.2901181263990256,
+      "pairwise_max_delta_e00": 3.413286407313044,
+      "repeat_sd_lab": [
+        1.5275252316519468,
+        0.0,
+        2.0
+      ],
+      "mean_target_lab": [
+        69.66666666666667,
+        2.0,
+        14.0
+      ]
+    },
+    {
+      "site_id": "S245",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 1.5250891680317948,
+      "pairwise_max_delta_e00": 2.0913300727022928,
+      "repeat_sd_lab": [
+        0.0,
+        1.1547005383792517,
+        1.5275252316519468
+      ],
+      "mean_target_lab": [
+        49.0,
+        8.333333333333334,
+        18.666666666666668
+      ]
+    },
+    {
+      "site_id": "S246",
+      "person_id": "P03",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "lower leg",
+      "pairwise_mean_delta_e00": 3.775218315885017,
+      "pairwise_max_delta_e00": 5.583449356715961,
+      "repeat_sd_lab": [
+        1.5275252316519465,
+        2.0,
+        1.7320508075688772
+      ],
+      "mean_target_lab": [
+        40.333333333333336,
+        11.0,
+        15.0
+      ]
+    },
+    {
+      "site_id": "S247",
+      "person_id": "P07",
+      "images": 4,
+      "device": "SLR",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.5561522140938835,
+      "pairwise_max_delta_e00": 3.3695916561248795,
+      "repeat_sd_lab": [
+        0.5773502691896258,
+        1.1547005383792517,
+        2.081665999466133
+      ],
+      "mean_target_lab": [
+        48.666666666666664,
+        7.666666666666667,
+        21.666666666666668
+      ]
+    },
+    {
+      "site_id": "S248",
+      "person_id": "P13",
+      "images": 4,
+      "device": "ipod",
+      "anatomic_site": "ventral forearm",
+      "pairwise_mean_delta_e00": 2.9014338830054514,
+      "pairwise_max_delta_e00": 4.214350506572104,
+      "repeat_sd_lab": [
+        1.0,
+        2.0816659994661326,
+        1.0
+      ],
+      "mean_target_lab": [
+        64.0,
+        4.333333333333333,
+        23.0
+      ]
+    }
+  ],
+  "limitations": [
+    "Only 24 independent people; comparisons within sites and pairs are dependent.",
+    "Three recorded assessments estimate short-term repeat disagreement, not calibrated accuracy against an external standard.",
+    "Same-site image oracles use the very same label acquisition and are tautologically perfect.",
+    "Do not subtract DeltaE00 repeatability from color-model DeltaE00 or claim a causal error-share percentage."
+  ]
+}

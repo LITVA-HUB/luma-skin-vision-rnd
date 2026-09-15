@@ -1,0 +1,48 @@
+{
+  "status": "BLOCKED_EXACT_C_EXPERIMENT_STATE",
+  "training_authorized": true,
+  "trained_models": 0,
+  "production_changes": false,
+  "new_folds_generated": false,
+  "data_intact": {
+    "audit_train_rows.private.json": {
+      "exists": true,
+      "sha256": "4adc523045104f319bbca38c9636a25c703c7afa67d5f6b49bbade9b33d1b6d6"
+    },
+    "capture/capture_features_anonymized.npz": {
+      "exists": true,
+      "sha256": "f77b7790bb57070a1af653eafd67acf6661709b0b98f86c3e8b06bb9d446d24b"
+    },
+    "capture/capture.json": {
+      "exists": true,
+      "sha256": "f2090ec762613ea68db0575751f789b75cbae0a96c12aefcc413183d1162e47a"
+    },
+    "instrument.json": {
+      "exists": true,
+      "sha256": "aac97cbaef7d0440fbee516d035eee4357e66bb4d3897da944b5a4a9141f5f04"
+    },
+    "diagnostic_subset_masks.anonymized.npz": {
+      "exists": true,
+      "sha256": "52168ffcfd153dd07507b15cd290426270fef4a566b4521c0433efaf337a92ba"
+    }
+  },
+  "identity_gate": {
+    "TRAIN_membership": "PASS_966_IMAGES_24_PEOPLE_248_SITES",
+    "C_fold_assignments": "MISSING",
+    "C_full_optimization_recipe": "MISSING",
+    "original_C_checkpoint_or_train_code": "MISSING"
+  },
+  "numerical_gate": {
+    "status": "NOT_RUN_IDENTITY_GATE_FAILED",
+    "historical": {
+      "mean": 5.050436,
+      "median": 4.423216,
+      "p95": 11.00797,
+      "fraction_gt5": 0.41511387163561075,
+      "fraction_gt10": 0.07453416149068323
+    },
+    "new_oof_metrics": null
+  },
+  "oof_anonymized_npz_created": false,
+  "reason": "Five aggregates and 50+50 epochs do not determine C folds or optimizer trajectory. No search to match historical aggregate is allowed."
+}

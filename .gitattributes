@@ -1176,3 +1176,8 @@ docs/archive/2026-09-14/figures/** -text
 docs/archive/2026-09-14/modules/** -whitespace
 docs/archive/2026-09-14/tests/** -whitespace
 docs/archive/2026-09-14/experiments/** -whitespace
+
+# Preserve SHA256-bound September 15 audit snapshots exactly, including source CRLF.
+docs/benchmarks/mskcc_error_floor_audit_2026_09_15/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/c_oof_recovery_2026_09_15/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/benchmarks/mskcc_error_floor_audit_2026_09_15/source_provenance/supplemental-data-dictionary.txt -whitespace

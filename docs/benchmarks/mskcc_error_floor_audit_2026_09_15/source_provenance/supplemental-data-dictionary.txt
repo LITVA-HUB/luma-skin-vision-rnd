@@ -1,0 +1,137 @@
+SUPPLEMENTAL DATA CONTENT DESCRIPTION
+
+s1.csv
+	Description: Characteristics of patients enrolled in the study.
+	Data elements:
+		patient_id 			ISIC Archive patient identifier
+		fst 				Patient's Fitzpatrick Skin Type based on in-clinic questionnaire
+		race 				Patient's self-reported race
+		ethnicity 			Patient's self-reported ethnicity
+		eye_color 			Patient's eye color
+		hair				Patient's hair color
+		dermatoscope 		Type of dermatoscopic device used during the visit
+		patient_sex 		Patient's biologic sex
+		patient_age_approx  Patient's age in 5-year bins
+
+s2.csv
+	Description: Characteristics of skin sites analyzed in the study.
+	Data elements:
+		tag_id 			Study local "tag" identifier for each unique skin site
+		patient_id 		ISIC Archive patient identifier
+		lesion_id 		ISIC Archive lesion identifier
+		type 			Distinguishes between lesion or normal-skin
+		anatomic_site	Location on the patient's body
+
+s3.csv
+	Description: Analysis of inter-rater agreement for in-person Pantone and MST on both lesional and non-lesional sites.
+	Data elements:
+		tag_id 					Study local "tag" identifier for each unique skin site
+		type					Distinguishes between lesion or normal-skin
+		anatomic_site			Location on the patient's body
+		mst_r1					Rater 1's in-person MST rating
+		mst_r2					Rater 2's in-person MST rating
+		pantone_r1				Rater 1's in-person Pantone rating
+		pantone_r2				Rater 2's in-person Pantone rating
+		pantone_r1_Red_Yellow	Rater 1's in-person Pantone rating; Red-Yellow component
+		pantone_r2_Red_Yellow	Rater 2's in-person Pantone rating; Red-Yellow component
+		pantone_r1_Dark_Light	Rater 1's in-person Pantone rating; dark-light component
+		pantone_r2_Dark_Light	Rater 2's in-person Pantone rating; dark-light component
+
+s4.csv
+	Description: Analysis of inter-rater agreement for in-person colorimeter device measurements on non-lesional sites.
+	Data elements:
+		tag_id 			Study local "tag" identifier for each unique skin site
+		type			Distinguishes between lesion or normal-skin
+		anatomic_site   Location on the patient's body
+		l_1 			"L*"-channel of 1st colorimeter assessment
+		l_2 			"L*"-channel of 2nd colorimeter assessment
+		l_3 			"L*"-channel of 3rd colorimeter assessment
+		average_l 		Average "L*"-channel across all assessments
+		a_1				"a*"-channel of 1st colorimeter assessment
+		a_2 			"a*"-channel of 2nd colorimeter assessment
+		a_3				"a*"-channel of 3rd colorimeter assessment
+		average_ita		Average "a*"-channel across all assessments
+		b_1 			"b*"-channel of 1st colorimeter assessment
+		b_2 			"b*"-channel of 2nd colorimeter assessment
+		b_3 			"b*"-channel of 3rd colorimeter assessment
+		average_b		Average "b*"-channel across all assessments
+		ita_1			ITA angle of 1st colorimeter assessment
+		ita_2			ITA angle of 2nd colorimeter assessment
+		ita_3			ITA angle of 3rd colorimeter assessment
+		average_ita		Average ITA angle across all assessments
+
+s5.csv
+	Description: Analysis of clustering of FST, MST, and Pantone classes in the 2-dimensional CIELAB color space on non-lesional sites.
+	Data elements:
+		tag_id		Study local "tag" identifier for each unique skin site
+		fst			Patient's Fitzpatrick Skin Type based on in-clinic questionnaire
+		average_l	Average "L*"-channel across all colorimeter assessments
+		average_a	Average "a*"-channel across all colorimeter assessments
+		average_b	Average "b*"-channel across all colorimeter assessments
+		mst_r1		Rater 1's in-person MST rating
+		mst_r2		Rater 2's in-person MST rating
+		pantone_r1	Rater 1's in-person Pantone rating
+		pantone_r2	Rater 2's in-person Pantone rating
+
+s6.csv
+	Description: Analysis of concordance between MST ratings of non-lesional sites performed by Rater 1 in-person versus thorugh 3D total body photographs (TBP).
+	Data elements:
+		tag_id				Study local "tag" identifier for each unique skin site
+		type  				Distinguishes between lesion or normal-skin
+		anatomic_site		Location on the patient's body
+		tbp_lighting		Lighting setting of TBP capture (white "w" or cross-polarized "xp")
+		mst_r1_inoffice		Rater 1's in-person MST rating
+		mst_tbp				Rater 1's TBP-based MST rating
+
+s7.csv
+	Description: Analysis of colorimeter vs. image-extracted ITA in non-lesional sites.
+	Data elements:
+		isic_id				ISIC Archive image identifer
+		dermoscopic_type	Dermoscopic type of the image (polarized/non-polarized contact/non-contact)
+		img_l				Median "L*"-channel of the image
+		img_a				Median "a*"-channel of the image
+		img_b				Median "b*"-channel of the image
+		img_ita				Image ITA derived from img_l and img_b through the formula ITA = tan-1((L*-50)/b*) * (180/pi) 
+		tag_id				Study local "tag" identifier for each unique skin site
+		type 				Distinguishes between lesion or normal-skin
+		anatomic_site		Location on the patient's body
+		l_1 				"L*"-channel of 1st colorimeter assessment
+		l_2 				"L*"-channel of 2nd colorimeter assessment
+		l_3 				"L*"-channel of 3rd colorimeter assessment
+		average_l 			Average "L*"-channel across all assessments
+		a_1					"a*"-channel of 1st colorimeter assessment
+		a_2 				"a*"-channel of 2nd colorimeter assessment
+		a_3					"a*"-channel of 3rd colorimeter assessment
+		average_a			Average "a*"-channel across all assessments
+		b_1 				"b*"-channel of 1st colorimeter assessment
+		b_2 				"b*"-channel of 2nd colorimeter assessment
+		b_3 				"b*"-channel of 3rd colorimeter assessment
+		average_b			Average "b*"-channel across all assessments
+		ita_1				ITA angle of 1st colorimeter assessment
+		ita_2				ITA angle of 2nd colorimeter assessment
+		ita_3				ITA angle of 3rd colorimeter assessment
+		average_ita			Average ITA angle across all assessments
+
+s8.csv
+	Description: Analysis of crowd-sourced FST vs. in-person FST rating.
+	Data elements:
+		isic_id					ISIC Archive image identifer
+		tag_id					Study local "tag" identifier for each unique skin site
+		fst 					Patient's Fitzpatrick Skin Type based on in-clinic questionnaire
+		type 					Distinguishes between lesion or normal-skin
+		anatomic_site 			Location on the patient's body
+		dermoscopic_type 		Dermoscopic type of the image (polarized/non-polarized contact/non-contact)
+		crowd_has_consensus 	Binary indication of whether enough reads were collected to attribute a label
+		crowd_qualified_reads 	Frequency of crowd reads for a given image
+		crowd_majority_label 	Crowd consensus FST label (majority label is defined as the FST label selected by at least 50% of qualified reads or the label selected by the majority if more than 12 qualified reads were collected)
+
+s9.csv
+	Description: Analysis of estimated risk scores from an AI algorithm (ADAE)
+	Data elements:
+		isic_id 			ISIC Archive image identifer
+		dermoscopic_type 	Dermoscopic type of the image (polarized/non-polarized contact/non-contact)
+		tag_id 				Study local "tag" identifier for each unique skin site
+		mst_r1 				Rater 1's in-person MST rating
+		mst_r2 				Rater 2's in-person MST rating
+		fst 				Patient's Fitzpatrick Skin Type based on in-clinic questionnaire
+		adae 				AI-assessed malignancy risk score

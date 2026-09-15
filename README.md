@@ -1,3 +1,7 @@
+> **Ветка аудита MSKCC и восстановления C — 15 сентября 2026.**
+> [Текущий STATE](STATE.md) · [Новые измерения reference/capture](docs/benchmarks/mskcc_error_floor_audit_2026_09_15/REPORT_RU.md) · [Проверка восстановления C OOF](docs/benchmarks/c_oof_recovery_2026_09_15/REPORT_RU.md) · [Аналитический ZIP](artifacts/LUMA_ERROR_FLOOR_AUDIT.zip).
+> Ниже сохранён прежний архив. Новое обучение C не выполнено: исходные TRAIN-данные доступны, точные C-folds и полный рецепт запуска не восстановлены.
+
 <p align="center"><b>LUMA · CHROMASEED</b><br>Исследовательский архив · 14 сентября 2026</p>
 
 ![Luma ChromaSeed — свет, цвет и исследовательский архив](docs/archive/2026-09-14/assets/cover.png)
