@@ -1,0 +1,30 @@
+{
+  "experiment": "C_REBASE_V1",
+  "phase": "BEFORE_ANY_OOF_RESULTS",
+  "capture_quartiles": {
+    "feature": "within_site_observed_mean_pair_mean_delta_e00",
+    "edges": [
+      7.027119964117624,
+      9.390654009555092,
+      13.71375402081404
+    ],
+    "unique_sites": 247,
+    "assignment": "Q1 <=q25; Q2 (q25,q50]; Q3 (q50,q75]; Q4 >q75; singleton unassigned"
+  },
+  "prior_counterfactual_thresholds": {
+    "site_reference_pair_mean_p80": 3.562761642774102,
+    "site_capture_pair_median_color_mean_p80": 15.084910778391388,
+    "image_original_high_plus_low_clip_p80": 0.004319775552172747
+  },
+  "bootstrap": {
+    "seed": 9123,
+    "draws": 2000
+  },
+  "frozen_before_oof": true,
+  "interpretation": "diagnostic only; no deployment thresholds or causal contribution claims",
+  "source_hashes": {
+    "docs/benchmarks/mskcc_error_floor_audit_2026_09_15/data/capture.json": "f2090ec762613ea68db0575751f789b75cbae0a96c12aefcc413183d1162e47a",
+    "docs/benchmarks/mskcc_error_floor_audit_2026_09_15/data/instrument.json": "aac97cbaef7d0440fbee516d035eee4357e66bb4d3897da944b5a4a9141f5f04",
+    "docs/benchmarks/mskcc_error_floor_audit_2026_09_15/data/diagnostic_subset_masks.anonymized.npz": "52168ffcfd153dd07507b15cd290426270fef4a566b4521c0433efaf337a92ba"
+  }
+}

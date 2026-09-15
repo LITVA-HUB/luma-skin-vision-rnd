@@ -1,0 +1,86 @@
+{
+  "experiment": "C_REBASE_V1",
+  "status": "FIXED_BEFORE_ANY_OOF_RESULTS",
+  "historical_C_status": "HISTORICAL_NOT_REPRODUCIBLE",
+  "seed": 17,
+  "architecture": [
+    36,
+    64,
+    3
+  ],
+  "activation": "ReLU",
+  "initialization": "torch_nn_Linear_default",
+  "epochs": 100,
+  "phase_boundary": 50,
+  "optimizer_boundary": "continue_state_and_rng",
+  "batch_size": 64,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false
+  },
+  "gradient_clip_norm": 5.0,
+  "scheduler": null,
+  "device": "cpu",
+  "num_threads": 1,
+  "dtype": "float32",
+  "loss": "mean_squared_error_standardized_Lab",
+  "normalization": {
+    "method": "training_rows_population_mean_std_float64",
+    "std_floor": 1e-06
+  },
+  "shuffle": "numpy_RandomState_seed_plus_fold_permutation_each_epoch",
+  "sampling": "uniform_images_no_weights",
+  "early_stopping": false,
+  "versions": {
+    "python": "3.12.14",
+    "pytorch": "2.8.0+cpu",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  },
+  "preprocessing": {
+    "source": "scripts/error_floor/capture_audit.py:decode_one,color36",
+    "decode": "Pillow EXIF transpose; embedded ICC to sRGB; unprofiled RGB assumed sRGB",
+    "roi": "central square side=floor(0.8*min(width,height)); floor centered; no facial parser on clinical/dermoscopic inputs",
+    "resize": "128x128 Pillow LANCZOS",
+    "input": "encoded sRGB channels /255, float64",
+    "color36": "27 quantile-major RGB values q=.01,.05,.1,.25,.5,.75,.9,.95,.99; RGB mean; population std; RG,RB,GB correlations (constant channels=0)",
+    "augmentations": null
+  },
+  "target": {
+    "space": "CIELAB",
+    "illuminant": "D65",
+    "observer": "10 degree",
+    "definition": "arithmetic coordinate mean of the three S4 instrument assessments for exact site/tag; shared across site images"
+  },
+  "observed_color": {
+    "space": "sRGB-derived CIELAB",
+    "illuminant": "D65",
+    "observer": "2 degree",
+    "cross_observer_delta_e_allowed": false
+  },
+  "training_scope": {
+    "images": 966,
+    "people": 24,
+    "sites": 248,
+    "roles": [
+      "TRAIN"
+    ]
+  },
+  "selection": "None: one fixed recipe; no OOF-based changes within this experiment",
+  "reproduction": {
+    "fold": 0,
+    "fresh_process": true,
+    "expected": "bitwise identical predictions and tensor state on frozen CPU runtime",
+    "fallback_atol": 1e-06,
+    "fallback_rtol": 0
+  }
+}

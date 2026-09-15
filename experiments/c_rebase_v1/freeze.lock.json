@@ -1,0 +1,69 @@
+{
+  "experiment": "C_REBASE_V1",
+  "phase": "BEFORE_ANY_OOF_RESULTS",
+  "created_utc": "2026-09-15T10:37:48.770551+00:00",
+  "files": {
+    "config": {
+      "path": "experiments/c_rebase_v1/config.lock.json",
+      "sha256": "4fff05671a3c8418e68cd0a72a39726688477efa7b19a0f142b66cbf021c7822"
+    },
+    "mapping": {
+      "path": "experiments/c_rebase_v1/person_folds.lock.json",
+      "sha256": "75c5f33e43594d45c2d7f0559ec1f03fed35a11078b4c7f31e636a617b7c96e0"
+    },
+    "features": {
+      "path": "docs/benchmarks/mskcc_error_floor_audit_2026_09_15/data/capture_features_anonymized.npz",
+      "sha256": "f77b7790bb57070a1af653eafd67acf6661709b0b98f86c3e8b06bb9d446d24b"
+    },
+    "trainer": {
+      "path": "scripts/c_rebase_v1/train.py",
+      "sha256": "0fe362966920bfbbe62ddcd8044b8ef4e210dfddf194c67e6e64ab4cead4e407"
+    },
+    "color": {
+      "path": "src/luma_skin_vision/color.py",
+      "sha256": "679005e5d5dd33bc891da8bc94f7954bf313cc092c007204c0c8f10f7a7fad46"
+    },
+    "diagnostic_plan": {
+      "path": "experiments/c_rebase_v1/diagnostic_plan.lock.json",
+      "sha256": "3f5621c2e605065137878e181e7acaa70f4507d83b03364fac61fb3f34c0997b"
+    },
+    "diagnose": {
+      "path": "scripts/c_rebase_v1/diagnose.py",
+      "sha256": "2568e509eb33a81ffdfa8010abc3b5753127daa0fd2c5562f75a9aa2a3f6119b"
+    },
+    "prepare": {
+      "path": "scripts/c_rebase_v1/prepare.py",
+      "sha256": "0d761a16df1934b9ed6de515d258d158627e747ee1e315e53d1f36d364f129e4"
+    },
+    "capture": {
+      "path": "scripts/error_floor/capture_audit.py",
+      "sha256": "3697edf5bf5c1cfb3ab349f26412b28878a759124cc44def1ff130fee3340c8a"
+    },
+    "audit_helper": {
+      "path": "scripts/error_floor/c_oof_audit.py",
+      "sha256": "1273c7580e2636032824e5ff3d8fc527462954081f465294541d666448af0dc0"
+    },
+    "original_environment": {
+      "path": "docs/benchmarks/mskcc_error_floor_audit_2026_09_15/data/environment.json",
+      "sha256": "8abcae0c85ab597c88c9d74602273227b401f69b39b3d4a899d8ebbd266ced19"
+    },
+    "environment": {
+      "path": "experiments/c_rebase_v1/environment.lock.json",
+      "sha256": "e98a5edee321a677c7cfeb6a83511a679ba6f336f9849155483d22c175dab89f"
+    },
+    "train_manifest": {
+      "path": "experiments/c_rebase_v1/train_manifest.lock.json",
+      "sha256": "b2b02a497cb17afa9491eb5596f143ee57936791fdbb98a2d15bc9655374abd5"
+    },
+    "protocol": {
+      "path": "experiments/c_rebase_v1/PROTOCOL_RU.md",
+      "sha256": "9b159a51b75e60f655b03cbd0ba2f10493493229a310923dda437d2bd36fac10"
+    },
+    "requirements": {
+      "path": "experiments/c_rebase_v1/requirements.txt",
+      "sha256": "a1a053604c2737790e054f7e9ece90f62de7eff940926e3f9590007043c96109"
+    }
+  },
+  "model_or_recipe_changes_after_first_OOF": "FORBIDDEN",
+  "historical_C": "HISTORICAL_NOT_REPRODUCIBLE"
+}
